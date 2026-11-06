@@ -1,0 +1,6 @@
+node_modules/
+output/*.mp4
+output/*.part
+.DS_Store
+*.log
+.hyperframes/

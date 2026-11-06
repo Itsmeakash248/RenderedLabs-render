@@ -1,0 +1,12 @@
+{
+  "name": "renderedlabs-render",
+  "version": "1.0.0",
+  "description": "Cloud Render Runner & Video Distribution Hub for RenderedLabs",
+  "type": "module",
+  "scripts": {
+    "render": "node tools/render-one.mjs"
+  },
+  "dependencies": {
+    "hyperframes": "^0.8.145"
+  }
+}
