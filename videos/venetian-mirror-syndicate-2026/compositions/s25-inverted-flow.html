@@ -1,0 +1,728 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s25-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s25-inverted-flow"] .s25-stage{position:absolute;inset:0;transform-origin:50% 54%;}
+[data-composition-id="s25-inverted-flow"] .s25-ground{position:absolute;inset:0;background:
+  radial-gradient(40% 40% at 84% 30%, rgba(255,240,205,0.55) 0%, rgba(255,240,205,0.16) 58%, rgba(255,240,205,0) 82%),
+  radial-gradient(38% 38% at 22% 60%, rgba(232,154,60,0.18) 0%, rgba(232,154,60,0.05) 54%, rgba(232,154,60,0) 78%),
+  linear-gradient(172deg, #FBF1DA 0%, #F2DFBC 38%, #E2C7A0 70%, #C6A276 100%);}
+[data-composition-id="s25-inverted-flow"] .s25-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="s25-inverted-flow"] .s25-p-bg{z-index:1;}
+[data-composition-id="s25-inverted-flow"] .s25-p-mg{z-index:2;}
+[data-composition-id="s25-inverted-flow"] .s25-p-fg{z-index:4;}
+[data-composition-id="s25-inverted-flow"] .s25-grain{position:absolute;inset:0;z-index:6;pointer-events:none;
+  background-image:radial-gradient(rgba(43,31,23,0.55) 0.4px, transparent 0.5px);background-size:3px 3px;
+  opacity:0.12;mix-blend-mode:multiply;}
+[data-composition-id="s25-inverted-flow"] .s25-vignette{position:absolute;inset:0;z-index:7;pointer-events:none;
+  background:
+    linear-gradient(to top, rgba(30,24,19,0.50) 0%, rgba(30,24,19,0.16) 12%, rgba(30,24,19,0) 28%),
+    linear-gradient(to right, rgba(43,31,23,0.22) 0%, rgba(43,31,23,0.04) 18%, rgba(43,31,23,0) 36%),
+    linear-gradient(to left, rgba(43,31,23,0.18) 0%, rgba(43,31,23,0) 26%),
+    radial-gradient(106% 86% at 50% 48%, rgba(43,31,23,0) 42%, rgba(43,31,23,0.38) 100%);}
+[data-composition-id="s25-inverted-flow"] .s25-tag{position:absolute;left:86px;top:92px;z-index:8;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;
+  background:linear-gradient(180deg,#FDFAF4 0%,#F1E7D6 100%);
+  box-shadow:0 12px 30px rgba(43,31,23,0.26),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s25-inverted-flow"] .s25-tag-dot{width:15px;height:15px;border-radius:50%;background:#C2593F;
+  box-shadow:0 0 0 5px rgba(194,89,63,0.20),inset 0 0 0 3px #A8462F;}
+[data-composition-id="s25-inverted-flow"] .s25-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.16em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s25-inverted-flow"] .s25-rule{position:absolute;left:86px;top:158px;height:5px;width:0;z-index:8;background:#C2593F;border-radius:4px;
+  box-shadow:0 2px 6px rgba(43,31,23,0.25);}
+[data-composition-id="s25-inverted-flow"] .s25-mote{transform-box:fill-box;transform-origin:50% 50%;}
+</style>
+
+<div id="root" data-composition-id="s25-inverted-flow" data-width="1920" data-height="1080" data-start="0" data-duration="20.043">
+  <div class="s25-stage" id="s25-stage">
+    <div class="s25-ground"></div>
+
+    <!-- BG · the archive, late light from the right -->
+    <svg class="s25-plane s25-p-bg" id="s25-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s25-wallgrad" x1="0" y1="0" x2="0.9" y2="0.4">
+          <stop offset="0" stop-color="#F4E5C8"/><stop offset="0.55" stop-color="#FBF1DA"/><stop offset="1" stop-color="#FFF6E0"/>
+        </linearGradient>
+        <linearGradient id="s25-wallshadegrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="880">
+          <stop offset="0" stop-color="#F8EED8" stop-opacity="0"/>
+          <stop offset="0.58" stop-color="#D9BE96" stop-opacity="0.22"/>
+          <stop offset="1" stop-color="#B08C60" stop-opacity="0.42"/>
+        </linearGradient>
+        <linearGradient id="s25-floorgrad" x1="0" y1="0" x2="0.06" y2="1">
+          <stop offset="0" stop-color="#C99A67"/><stop offset="0.4" stop-color="#A97445"/><stop offset="1" stop-color="#6E4826"/>
+        </linearGradient>
+        <linearGradient id="s25-windowgrad" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#FFFDF6"/><stop offset="0.5" stop-color="#FFF0CE"/><stop offset="1" stop-color="#F6DBA8"/>
+        </linearGradient>
+        <linearGradient id="s25-shelfgrad" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#C99A67"/><stop offset="0.44" stop-color="#A2743F"/><stop offset="1" stop-color="#6E4826"/>
+        </linearGradient>
+        <radialGradient id="s25-poolgrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFE8B4" stop-opacity="0.5"/>
+          <stop offset="0.55" stop-color="#FFCE7C" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="s25-shaftgrad" x1="0.6" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFF6D8" stop-opacity="0.55"/><stop offset="1" stop-color="#FFF6D8" stop-opacity="0"/>
+        </linearGradient>
+        <pattern id="s25-hairpat" width="120" height="120" patternUnits="userSpaceOnUse">
+          <path d="M0,24 C30,18 60,30 120,22" stroke="#A97445" stroke-width="3" fill="none" opacity="0.12"/>
+          <path d="M0,70 C40,62 70,76 120,66" stroke="#A97445" stroke-width="3" fill="none" opacity="0.10"/>
+          <path d="M0,108 C26,102 62,114 120,106" stroke="#A97445" stroke-width="3" fill="none" opacity="0.09"/>
+        </pattern>
+        <filter id="s25-bblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="34"/></filter>
+        <filter id="s25-mblur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="12"/></filter>
+        <filter id="s25-grainf" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="2" seed="25" result="n"/>
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.13  0 0 0 0 0.10  0 0 0 0 0.07  0 0 0 0.5 0"/>
+        </filter>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s25-wallgrad)"/>
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s25-hairpat)" opacity="0.66"/>
+      <rect x="0" y="0" width="1920" height="880" fill="url(#s25-wallshadegrad)"/>
+
+      <!-- panelling -->
+      <g stroke="#C9A87C" stroke-width="6" opacity="0.24">
+        <path d="M0,86 H1920"/><path d="M0,822 H1920"/>
+        <path d="M46,86 V822"/><path d="M1612,86 V822"/>
+      </g>
+
+      <!-- the tall window, right, the source of the late light -->
+      <g id="s25-window" transform="translate(1662,110)">
+        <g id="s25-window-in">
+          <path d="M-26,-22 H246 V610 H-26 Z" fill="#6E4826" stroke="#3A2A1E" stroke-width="6"/>
+          <path d="M-12,-8 H232 V596 H-12 Z" fill="url(#s25-windowgrad)"/>
+          <path d="M-12,-8 H232 V210 H-12 Z" fill="#FFFDF6" opacity="0.5"/>
+          <g stroke="#6E4826" stroke-width="10">
+            <path d="M110,-8 V596"/><path d="M-12,196 H232"/><path d="M-12,398 H232"/>
+          </g>
+          <g stroke="#8A5F36" stroke-width="4" opacity="0.3">
+            <path d="M30,-8 V596"/><path d="M190,-8 V596"/>
+          </g>
+          <path d="M-40,596 H260 L292,632 H-72 Z" fill="#D8C4A0" stroke="#6E4826" stroke-width="6"/>
+          <path d="M-40,596 H260" stroke="#FFF6E0" stroke-width="5" opacity="0.55"/>
+          <path d="M-40,632 H292" stroke="#8A6B49" stroke-width="6" opacity="0.35"/>
+        </g>
+      </g>
+      <path d="M1612,150 L1180,860 L1660,860 L1900,150 Z" fill="url(#s25-shaftgrad)" opacity="0.5" filter="url(#s25-mblur)"/>
+
+      <!-- shelf silhouettes, left -->
+      <g id="s25-shelf" transform="translate(-20,236)">
+        <g id="s25-shelf-in">
+          <rect x="0" y="0" width="196" height="18" fill="url(#s25-shelfgrad)" stroke="#3A2A1E" stroke-width="5"/>
+          <rect x="0" y="244" width="196" height="18" fill="url(#s25-shelfgrad)" stroke="#3A2A1E" stroke-width="5"/>
+          <g stroke="#3A2A1E" stroke-width="4">
+            <rect x="16" y="-118" width="42" height="118" fill="#8A5F36"/>
+            <rect x="62" y="-96" width="34" height="96" fill="#A97445"/>
+            <rect x="100" y="-132" width="48" height="132" fill="#6E4826"/>
+            <rect x="152" y="-88" width="30" height="88" fill="#B98A5C"/>
+            <rect x="22" y="126" width="38" height="118" fill="#A97445"/>
+            <rect x="64" y="150" width="46" height="94" fill="#8A5F36"/>
+            <rect x="114" y="120" width="32" height="124" fill="#C99A67"/>
+            <rect x="150" y="146" width="34" height="98" fill="#6E4826"/>
+          </g>
+          <g stroke="#F0D8AE" stroke-width="3" opacity="0.3">
+            <path d="M16,-100 H58"/><path d="M100,-112 H148"/><path d="M22,146 H60"/><path d="M114,140 H146"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- dado + table -->
+      <g id="s25-dado">
+        <path d="M0,822 H1920 V842 H0 Z" fill="#C9A87C" opacity="0.55"/>
+        <path d="M0,822 H1920" stroke="#F6E6C6" stroke-width="5" opacity="0.55"/>
+        <path d="M0,842 H1920" stroke="#8A6B49" stroke-width="6" opacity="0.38"/>
+        <path d="M0,850 H1920" stroke="#3A2A1E" stroke-width="18" opacity="0.1" filter="url(#s25-mblur)"/>
+      </g>
+      <g id="s25-table">
+        <path d="M-40,842 H1960 V1080 H-40 Z" fill="url(#s25-floorgrad)"/>
+        <path d="M-40,842 H1960" stroke="#4A2E1C" stroke-width="8" opacity="0.38"/>
+        <path d="M-40,864 H1960" stroke="#F0D8AE" stroke-width="4" opacity="0.2"/>
+        <g stroke="#6E4826" stroke-width="4" opacity="0.26">
+          <path d="M-40,918 C300,912 700,926 1120,918 C1440,912 1720,924 1920,918"/>
+          <path d="M-40,992 C320,986 720,1000 1140,992 C1460,986 1740,998 1920,992"/>
+          <path d="M-40,1054 C300,1048 700,1062 1120,1054 C1440,1048 1720,1060 1920,1054"/>
+        </g>
+        <path d="M-40,1080 H1920 V1058 H-40 Z" fill="#4A2E1C" opacity="0.4"/>
+      </g>
+
+      <ellipse cx="1500" cy="880" rx="420" ry="120" fill="url(#s25-poolgrad)" opacity="0.8"/>
+      <ellipse cx="900" cy="900" rx="620" ry="46" fill="#3A2A1E" opacity="0.2" filter="url(#s25-bblur)"/>
+      <ellipse cx="1560" cy="330" rx="330" ry="300" fill="#FFF6DC" opacity="0.3" filter="url(#s25-bblur)"/>
+      <rect x="0" y="0" width="1920" height="1080" filter="url(#s25-grainf)" opacity="0.05" style="mix-blend-mode:multiply"/>
+
+      <g fill="#FFD98E" opacity="0.5">
+        <circle class="s25-mote" cx="1500" cy="300" r="4"/><circle class="s25-mote" cx="1620" cy="420" r="3"/>
+        <circle class="s25-mote" cx="1380" cy="240" r="3.5"/><circle class="s25-mote" cx="1740" cy="360" r="3"/>
+        <circle class="s25-mote" cx="1260" cy="400" r="4"/><circle class="s25-mote" cx="1820" cy="260" r="3"/>
+        <circle class="s25-mote" cx="1080" cy="200" r="4"/><circle class="s25-mote" cx="600" cy="260" r="2.5"/>
+      </g>
+    </svg>
+
+    <!-- MG · the chart, the coin river, the five export routes -->
+    <svg class="s25-plane s25-p-mg" id="s25-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s25-sheetgrad" x1="0" y1="0" x2="0.35" y2="1">
+          <stop offset="0" stop-color="#FEF8EA"/><stop offset="0.5" stop-color="#F9EDD2"/><stop offset="1" stop-color="#EFDCB8"/>
+        </linearGradient>
+        <linearGradient id="s25-landgrad" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#EBD3A8"/><stop offset="0.55" stop-color="#DCC091"/><stop offset="1" stop-color="#C4A171"/>
+        </linearGradient>
+        <linearGradient id="s25-rivergrad" x1="0" y1="0" x2="1" y2="0.4">
+          <stop offset="0" stop-color="#C89D42" stop-opacity="0.25"/>
+          <stop offset="0.5" stop-color="#E3BB64" stop-opacity="0.95"/>
+          <stop offset="1" stop-color="#C89D42" stop-opacity="0.4"/>
+        </linearGradient>
+        <linearGradient id="s25-coingrad" x1="0.15" y1="0" x2="0.85" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.35" stop-color="#E3BB64"/>
+          <stop offset="0.72" stop-color="#C89D42"/><stop offset="1" stop-color="#8E6A22"/>
+        </linearGradient>
+        <linearGradient id="s25-routegrad" x1="0" y1="0" x2="1" y2="0.5">
+          <stop offset="0" stop-color="#A8462F"/><stop offset="0.6" stop-color="#C2593F"/><stop offset="1" stop-color="#D9A24E"/>
+        </linearGradient>
+        <radialGradient id="s25-glassgrad" cx="38%" cy="32%" r="72%">
+          <stop offset="0" stop-color="#FFFDF4" stop-opacity="0.6"/>
+          <stop offset="0.55" stop-color="#FFF0CE" stop-opacity="0.22"/>
+          <stop offset="1" stop-color="#E8C489" stop-opacity="0.08"/>
+        </radialGradient>
+        <radialGradient id="s25-flaregrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFF9E4" stop-opacity="0.95"/>
+          <stop offset="0.38" stop-color="#FFD98E" stop-opacity="0.5"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="s25-crystgrad" x1="0" y1="0" x2="0.8" y2="1">
+          <stop offset="0" stop-color="#FFFCF0"/><stop offset="0.4" stop-color="#FBEBC4"/>
+          <stop offset="0.75" stop-color="#EFCF95"/><stop offset="1" stop-color="#C89D42"/>
+        </linearGradient>
+        <linearGradient id="s25-cryst2grad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFF6D8" stop-opacity="0.92"/>
+          <stop offset="0.5" stop-color="#F0D08E" stop-opacity="0.75"/>
+          <stop offset="1" stop-color="#B98A5C" stop-opacity="0.5"/>
+        </linearGradient>
+        <linearGradient id="s25-papergrad" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#FDF6E4"/><stop offset="0.6" stop-color="#F2E2C2"/><stop offset="1" stop-color="#DFC49A"/>
+        </linearGradient>
+        <pattern id="s25-gratpat" width="128" height="128" patternUnits="userSpaceOnUse">
+          <path d="M128,0 V128 M0,128 H128" fill="none" stroke="#A97445" stroke-width="3" opacity="0.14"/>
+        </pattern>
+        <clipPath id="s25-sheetclip"><rect x="-640" y="-350" width="1280" height="700" rx="5"/></clipPath>
+        <filter id="s25-soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+        <filter id="s25-deep" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>
+        <filter id="s25-glowf" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="16"/></filter>
+      </defs>
+
+      <g id="s25-map" transform="translate(880,530) rotate(-1.6)">
+        <g id="s25-map-in">
+          <ellipse cx="16" cy="48" rx="702" ry="386" fill="#3A2A1E" opacity="0.26" filter="url(#s25-deep)"/>
+          <rect x="-640" y="-350" width="1280" height="700" rx="5" fill="url(#s25-sheetgrad)" stroke="#6E4826" stroke-width="7"/>
+          <rect x="-624" y="-334" width="1248" height="668" rx="3" fill="none" stroke="#B08C60" stroke-width="3" opacity="0.55"/>
+          <g clip-path="url(#s25-sheetclip)">
+            <rect x="-640" y="-350" width="1280" height="700" fill="url(#s25-gratpat)"/>
+
+            <g id="s25-landfill" opacity="0">
+              <path d="M -486,74 C -498,120 -470,168 -430,192 L -388,208 L -344,204 L -306,186 L -278,158 L -262,126 L -268,86 L -276,40 L -258,-4 L -224,-26 L -192,-52 L -158,-72 L -118,-90 L -76,-96 L -46,-122 L -16,-142 L 12,-160 L 22,-206 L 58,-234 L 90,-200 L 80,-164 L 120,-154 L 170,-136 L 220,-114 L 270,-86 L 320,-54 L 358,-18 L 374,20 L 346,58 L 310,84 L 288,126 L 252,154 L 216,146 L 204,110 L 222,70 L 192,50 L 160,68 L 180,114 L 170,170 L 160,226 L 130,260 L 110,242 L 120,194 L 110,148 L 80,110 L 50,70 L 10,60 L -30,42 L -80,52 L -130,32 L -190,22 L -240,40 L -270,74 L -306,90 L -348,98 L -402,94 L -444,78 Z" fill="url(#s25-landgrad)"/>
+              <path d="M -330,-150 C -356,-176 -350,-222 -318,-244 C -288,-264 -254,-252 -242,-222 C -232,-196 -246,-168 -264,-150 C -282,-132 -310,-130 -330,-150 Z" fill="url(#s25-landgrad)"/>
+              <path d="M 44,-344 L 96,-338 L 140,-312 L 174,-276 L 198,-234 L 212,-192 L 188,-174 L 154,-190 L 124,-212 L 96,-240 L 74,-274 L 56,-308 Z" fill="url(#s25-landgrad)"/>
+              <ellipse cx="-382" cy="-186" rx="26" ry="34" fill="url(#s25-landgrad)"/>
+              <ellipse cx="86" cy="206" rx="16" ry="30" fill="url(#s25-landgrad)"/>
+              <path d="M 128,268 L 168,262 L 176,286 L 140,296 Z" fill="url(#s25-landgrad)"/>
+            </g>
+
+            <g fill="none" stroke="#8A6B49" stroke-width="6">
+              <path id="s25-coast" stroke-dasharray="4200" stroke-dashoffset="4200" d="M -486,74 C -498,120 -470,168 -430,192 L -388,208 L -344,204 L -306,186 L -278,158 L -262,126 L -268,86 L -276,40 L -258,-4 L -224,-26 L -192,-52 L -158,-72 L -118,-90 L -76,-96 L -46,-122 L -16,-142 L 12,-160 L 22,-206 L 58,-234 L 90,-200 L 80,-164 L 120,-154 L 170,-136 L 220,-114 L 270,-86 L 320,-54 L 358,-18 L 374,20 L 346,58 L 310,84 L 288,126 L 252,154 L 216,146 L 204,110 L 222,70 L 192,50 L 160,68 L 180,114 L 170,170 L 160,226 L 130,260 L 110,242 L 120,194 L 110,148 L 80,110 L 50,70 L 10,60 L -30,42 L -80,52 L -130,32 L -190,22 L -240,40 L -270,74 L -306,90 L -348,98 L -402,94 L -444,78 Z"/>
+              <path id="s25-coast2" stroke-dasharray="700" stroke-dashoffset="700" d="M -330,-150 C -356,-176 -350,-222 -318,-244 C -288,-264 -254,-252 -242,-222 C -232,-196 -246,-168 -264,-150 C -282,-132 -310,-130 -330,-150 Z"/>
+              <path id="s25-coast3" stroke-dasharray="620" stroke-dashoffset="620" d="M 44,-344 L 96,-338 L 140,-312 L 174,-276 L 198,-234 L 212,-192 L 188,-174 L 154,-190 L 124,-212 L 96,-240 L 74,-274 L 56,-308 Z"/>
+            </g>
+            <g id="s25-islands" opacity="0" fill="none" stroke="#8A6B49" stroke-width="5">
+              <ellipse cx="-382" cy="-186" rx="26" ry="34"/>
+              <ellipse cx="86" cy="206" rx="16" ry="30"/>
+              <path d="M 128,268 L 168,262 L 176,286 L 140,296 Z"/>
+            </g>
+
+            <!-- interior cartography: ranges, rivers, boundaries -->
+            <g id="s25-mapdetail" opacity="0">
+              <g fill="none" stroke="#8A6B49" stroke-width="3" opacity="0.55">
+                <path d="M20,62 l12,-17 l12,17 M46,68 l12,-17 l12,17 M72,58 l12,-17 l12,17 M98,70 l12,-17 l12,17 M124,62 l12,-17 l12,17 M150,74 l12,-17 l12,17"/>
+                <path d="M-266,22 l10,-15 l10,15 M-242,26 l10,-15 l10,15 M-218,20 l10,-15 l10,15 M-194,28 l10,-15 l10,15"/>
+                <path d="M250,18 l11,-16 l11,16 M274,32 l11,-16 l11,16 M298,48 l11,-16 l11,16 M232,4 l11,-16 l11,16"/>
+                <path d="M62,-300 l11,-16 l11,16 M88,-286 l11,-16 l11,16 M114,-296 l11,-16 l11,16 M140,-278 l11,-16 l11,16"/>
+              </g>
+              <g fill="none" stroke="#A97445" stroke-width="3" opacity="0.42">
+                <path d="M92,-140 C78,-104 100,-74 80,-38 C70,-18 74,10 58,36"/>
+                <path d="M-96,-46 C-72,-20 -70,10 -44,34 C-24,52 -14,72 -6,94"/>
+                <path d="M44,-56 C96,-42 150,-16 206,10 C232,22 258,28 282,30"/>
+                <path d="M-206,120 C-160,134 -120,128 -78,140 C-46,150 -20,146 4,154"/>
+              </g>
+              <g fill="none" stroke="#B08C60" stroke-width="3" opacity="0.4" stroke-dasharray="12 10">
+                <path d="M-250,44 C-160,58 -84,34 0,52"/>
+                <path d="M196,44 C240,64 282,72 322,66"/>
+                <path d="M-58,-92 C-30,-70 6,-66 34,-46"/>
+              </g>
+            </g>
+
+            <!-- compass rose, cartouche, scale bar -->
+            <g id="s25-compass" transform="translate(-496,-236)">
+              <g id="s25-compass-in">
+                <circle r="46" fill="none" stroke="#8A6B49" stroke-width="4" opacity="0.55"/>
+                <circle r="34" fill="none" stroke="#8A6B49" stroke-width="3" opacity="0.4"/>
+                <path d="M0,-58 L12,-12 L58,0 L12,12 L0,58 L-12,12 L-58,0 L-12,-12 Z" fill="url(#s25-coingrad)" stroke="#6E4826" stroke-width="3"/>
+                <path d="M0,-58 L0,58 M-58,0 L58,0" stroke="#6E4826" stroke-width="3" opacity="0.45"/>
+                <circle r="7" fill="#6E4826"/>
+              </g>
+            </g>
+            <g transform="translate(348,-284)">
+              <g id="s25-cartouche">
+                <path d="M0,0 H236 V86 H0 Z" fill="#F6E7C8" stroke="#8A6B49" stroke-width="4"/>
+                <path d="M10,10 H226 V76 H10 Z" fill="none" stroke="#B08C60" stroke-width="3" opacity="0.6"/>
+                <g stroke="#A97445" stroke-width="3" opacity="0.42">
+                  <path d="M26,34 H206"/><path d="M26,52 H176"/><path d="M26,68 H140"/>
+                </g>
+              </g>
+            </g>
+            <g transform="translate(268,296)">
+              <g id="s25-scalebar">
+                <path d="M0,0 H180" stroke="#6E4826" stroke-width="5"/>
+                <path d="M0,-12 V12 M60,-8 V8 M120,-8 V8 M180,-12 V12" stroke="#6E4826" stroke-width="4"/>
+                <path d="M0,0 H60" stroke="#8A5F36" stroke-width="9" opacity="0.45"/>
+                <path d="M120,0 H180" stroke="#8A5F36" stroke-width="9" opacity="0.45"/>
+              </g>
+            </g>
+
+            <!-- city studs -->
+            <g id="s25-paris" transform="translate(-170,-30)">
+              <circle r="27" fill="none" stroke="#C2593F" stroke-width="4" opacity="0.45"/>
+              <circle r="13" fill="url(#s25-coingrad)" stroke="#6E4826" stroke-width="4"/>
+              <circle r="4" fill="#6E4826"/>
+            </g>
+            <g class="s25-city" transform="translate(-300,-205)">
+              <circle r="15" fill="none" stroke="#8A6B49" stroke-width="3" opacity="0.5"/>
+              <circle r="8" fill="url(#s25-coingrad)" stroke="#6E4826" stroke-width="3"/>
+            </g>
+            <g class="s25-city" transform="translate(-55,-128)">
+              <circle r="15" fill="none" stroke="#8A6B49" stroke-width="3" opacity="0.5"/>
+              <circle r="8" fill="url(#s25-coingrad)" stroke="#6E4826" stroke-width="3"/>
+            </g>
+            <g class="s25-city" transform="translate(85,-85)">
+              <circle r="15" fill="none" stroke="#8A6B49" stroke-width="3" opacity="0.5"/>
+              <circle r="8" fill="url(#s25-coingrad)" stroke="#6E4826" stroke-width="3"/>
+            </g>
+            <g class="s25-city" transform="translate(275,15)">
+              <circle r="15" fill="none" stroke="#8A6B49" stroke-width="3" opacity="0.5"/>
+              <circle r="8" fill="url(#s25-coingrad)" stroke="#6E4826" stroke-width="3"/>
+            </g>
+            <g class="s25-city" transform="translate(-330,150)">
+              <circle r="15" fill="none" stroke="#8A6B49" stroke-width="3" opacity="0.5"/>
+              <circle r="8" fill="url(#s25-coingrad)" stroke="#6E4826" stroke-width="3"/>
+            </g>
+            <g id="s25-venice" transform="translate(158,66)">
+              <circle r="19" fill="none" stroke="#C2593F" stroke-width="4" opacity="0.5"/>
+              <circle r="9" fill="url(#s25-coingrad)" stroke="#6E4826" stroke-width="3"/>
+            </g>
+
+            <!-- the coin river: Paris to Venice -->
+            <path id="s25-rivercasing" d="M -170,-30 C -120,-72 -66,-24 -16,-44 C 34,-64 62,-16 92,4 C 118,22 138,44 158,66"
+              fill="none" stroke="#6E4826" stroke-width="52" stroke-linecap="round" opacity="0.16"/>
+            <path id="s25-riverbase" d="M -170,-30 C -120,-72 -66,-24 -16,-44 C 34,-64 62,-16 92,4 C 118,22 138,44 158,66"
+              fill="none" stroke="url(#s25-rivergrad)" stroke-width="40" stroke-linecap="round" opacity="0.42"/>
+            <path id="s25-rivercore" d="M -170,-30 C -120,-72 -66,-24 -16,-44 C 34,-64 62,-16 92,4 C 118,22 138,44 158,66"
+              fill="none" stroke="#B98A5C" stroke-width="15" stroke-linecap="round" opacity="0.6"/>
+            <path id="s25-riverflow" d="M -170,-30 C -120,-72 -66,-24 -16,-44 C 34,-64 62,-16 92,4 C 118,22 138,44 158,66"
+              fill="none" stroke="url(#s25-coingrad)" stroke-width="23" stroke-linecap="round" stroke-dasharray="2 28" stroke-dashoffset="0"/>
+            <path id="s25-riverflow2" d="M -170,-30 C -120,-72 -66,-24 -16,-44 C 34,-64 62,-16 92,4 C 118,22 138,44 158,66"
+              fill="none" stroke="#FFE9B0" stroke-width="9" stroke-linecap="round" stroke-dasharray="2 22" opacity="0.85" stroke-dashoffset="0"/>
+
+            <g transform="translate(10,-40) rotate(12)">
+              <g id="s25-chev">
+                <path d="M-26,-20 L12,0 L-26,20 L-14,0 Z" fill="url(#s25-coingrad)" stroke="#6E4826" stroke-width="3"/>
+              </g>
+            </g>
+
+            <!-- five export routes, drawn outward from Paris -->
+            <g fill="none" stroke="url(#s25-routegrad)" stroke-width="15" stroke-linecap="round">
+              <path id="s25-route1" stroke-dasharray="620" stroke-dashoffset="620" d="M -170,-30 C -206,-78 -246,-132 -290,-196"/>
+              <path id="s25-route2" stroke-dasharray="620" stroke-dashoffset="620" d="M -170,-30 C -140,-70 -96,-104 -55,-128"/>
+              <path id="s25-route3" stroke-dasharray="620" stroke-dashoffset="620" d="M -170,-30 C -120,-54 -20,-74 85,-85"/>
+              <path id="s25-route4" stroke-dasharray="620" stroke-dashoffset="620" d="M -170,-30 C -60,6 110,30 275,15"/>
+              <path id="s25-route5" stroke-dasharray="620" stroke-dashoffset="620" d="M -170,-30 C -222,18 -276,86 -330,150"/>
+            </g>
+            <g fill="url(#s25-coingrad)" stroke="#6E4826" stroke-width="3">
+              <g transform="translate(-302,-208) rotate(234)"><g class="s25-head"><path d="M-22,-16 L14,0 L-22,16 L-11,0 Z"/></g></g>
+              <g transform="translate(-64,-135) rotate(214)"><g class="s25-head"><path d="M-22,-16 L14,0 L-22,16 L-11,0 Z"/></g></g>
+              <g transform="translate(76,-86) rotate(-8)"><g class="s25-head"><path d="M-22,-16 L14,0 L-22,16 L-11,0 Z"/></g></g>
+              <g transform="translate(266,14) rotate(-8)"><g class="s25-head"><path d="M-22,-16 L14,0 L-22,16 L-11,0 Z"/></g></g>
+              <g transform="translate(-338,158) rotate(146)"><g class="s25-head"><path d="M-22,-16 L14,0 L-22,16 L-11,0 Z"/></g></g>
+            </g>
+
+            <!-- export coin stacks at the borders -->
+            <g transform="translate(-272,-206)">
+              <ellipse cx="0" cy="10" rx="20" ry="6" fill="#3A2A1E" opacity="0.25"/>
+              <g fill="url(#s25-coingrad)" stroke="#6E4826" stroke-width="3">
+                <ellipse class="s25-coin" cx="0" cy="0" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-9" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-18" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-27" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-36" rx="15" ry="6.5"/>
+              </g>
+            </g>
+            <g transform="translate(-27,-129)">
+              <ellipse cx="0" cy="10" rx="20" ry="6" fill="#3A2A1E" opacity="0.25"/>
+              <g fill="url(#s25-coingrad)" stroke="#6E4826" stroke-width="3">
+                <ellipse class="s25-coin" cx="0" cy="0" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-9" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-18" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-27" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-36" rx="15" ry="6.5"/>
+              </g>
+            </g>
+            <g transform="translate(113,-86)">
+              <ellipse cx="0" cy="10" rx="20" ry="6" fill="#3A2A1E" opacity="0.25"/>
+              <g fill="url(#s25-coingrad)" stroke="#6E4826" stroke-width="3">
+                <ellipse class="s25-coin" cx="0" cy="0" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-9" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-18" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-27" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-36" rx="15" ry="6.5"/>
+              </g>
+            </g>
+            <g transform="translate(303,14)">
+              <ellipse cx="0" cy="10" rx="20" ry="6" fill="#3A2A1E" opacity="0.25"/>
+              <g fill="url(#s25-coingrad)" stroke="#6E4826" stroke-width="3">
+                <ellipse class="s25-coin" cx="0" cy="0" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-9" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-18" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-27" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-36" rx="15" ry="6.5"/>
+              </g>
+            </g>
+            <g transform="translate(-302,149)">
+              <ellipse cx="0" cy="10" rx="20" ry="6" fill="#3A2A1E" opacity="0.25"/>
+              <g fill="url(#s25-coingrad)" stroke="#6E4826" stroke-width="3">
+                <ellipse class="s25-coin" cx="0" cy="0" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-9" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-18" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-27" rx="15" ry="6.5"/>
+                <ellipse class="s25-coin" cx="0" cy="-36" rx="15" ry="6.5"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+
+      <!-- the pour into the lens, and the lens itself -->
+      <path id="s25-pour" d="M 1036,590 C 1160,600 1320,646 1508,694" fill="none"
+        stroke="url(#s25-coingrad)" stroke-width="22" stroke-linecap="round" stroke-dasharray="3 26" opacity="0"/>
+      <g id="s25-lens" transform="translate(1520,700)">
+        <g id="s25-lens-in">
+          <ellipse cx="6" cy="104" rx="124" ry="24" fill="#3A2A1E" opacity="0.3" filter="url(#s25-soft)"/>
+          <circle r="104" fill="url(#s25-glassgrad)"/>
+          <circle r="104" fill="none" stroke="url(#s25-coingrad)" stroke-width="17"/>
+          <circle r="88" fill="none" stroke="#8A6B49" stroke-width="3" opacity="0.5"/>
+          <path d="M-58,-66 C-38,-84 -6,-90 20,-82" fill="none" stroke="#FFFDF6" stroke-width="10" opacity="0.8"/>
+          <path d="M-30,68 C-6,84 30,78 48,58" fill="none" stroke="#FFF6D8" stroke-width="5" opacity="0.42"/>
+          <path d="M86,60 L152,142" stroke="#C89D42" stroke-width="18" stroke-linecap="round"/>
+          <path d="M86,60 L152,142" stroke="#8E6A22" stroke-width="7" stroke-linecap="round"/>
+          <circle r="44" fill="none" stroke="#FFF6D8" stroke-width="3" opacity="0.26"/>
+        </g>
+        <circle id="s25-lensflare" r="150" fill="url(#s25-flaregrad)" opacity="0"/>
+      </g>
+    </svg>
+
+    <!-- FG · the near coin stack and the ambassador's letter -->
+    <svg class="s25-plane s25-p-fg" id="s25-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s25-fgwoodgrad" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#B98A5C"/><stop offset="0.42" stop-color="#8A5F36"/><stop offset="1" stop-color="#4A2E1C"/>
+        </linearGradient>
+        <linearGradient id="s25-sealgrad" x1="0.2" y1="0" x2="0.8" y2="1">
+          <stop offset="0" stop-color="#D97A5C"/><stop offset="0.5" stop-color="#C2593F"/><stop offset="1" stop-color="#8E3A28"/>
+        </linearGradient>
+        <filter id="s25-fsoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="9"/></filter>
+        <filter id="s25-fblur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="14"/></filter>
+        <filter id="s25-fglow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="22"/></filter>
+      </defs>
+
+      <!-- out-of-focus near coin stack, bottom right -->
+      <g transform="translate(1706,1014)" opacity="0.95">
+        <g id="s25-nearstack" filter="url(#s25-fblur)">
+          <ellipse cx="0" cy="26" rx="86" ry="20" fill="#3A2A1E" opacity="0.4"/>
+          <g fill="url(#s25-coingrad)" stroke="#6E4826" stroke-width="6">
+            <ellipse cx="0" cy="10" rx="66" ry="26"/>
+            <ellipse cx="0" cy="-12" rx="66" ry="26"/>
+            <ellipse cx="0" cy="-34" rx="66" ry="26"/>
+            <ellipse cx="0" cy="-56" rx="66" ry="26"/>
+          </g>
+          <path d="M-46,-64 C-24,-78 24,-78 46,-64" fill="none" stroke="#FFF6D8" stroke-width="7" opacity="0.5"/>
+        </g>
+      </g>
+      <path d="M-40,1080 L-40,1032 L560,1014 L700,1080 Z" fill="#4A2E1C" opacity="0.5" filter="url(#s25-fsoft)"/>
+
+      <!-- the ambassador's letter, curling -->
+      <g id="s25-letter" transform="translate(322,812) rotate(-7)">
+        <g id="s25-letter-in">
+          <ellipse cx="196" cy="252" rx="236" ry="34" fill="#3A2A1E" opacity="0.28" filter="url(#s25-fsoft)"/>
+          <path d="M0,6 L296,0 L392,12 L386,214 L4,232 Z" fill="url(#s25-papergrad)" stroke="#6E4826" stroke-width="5"/>
+          <path d="M14,22 L282,16 L378,26" fill="none" stroke="#C9A87C" stroke-width="3" opacity="0.55"/>
+          <g stroke="#B99A6E" stroke-width="3" opacity="0.45">
+            <path d="M34,66 H276"/><path d="M34,90 H252"/><path d="M34,114 H288"/>
+            <path d="M34,138 H232"/><path d="M34,162 H264"/><path d="M34,186 H208"/>
+          </g>
+          <path d="M34,206 H150" stroke="#C2593F" stroke-width="3" opacity="0.4" stroke-dasharray="9 7"/>
+          <path d="M296,2 L392,12 L386,214 L300,220 Z" fill="#D8BC92" stroke="#8A6B49" stroke-width="4"/>
+          <g id="s25-peel">
+            <path d="M296,2 L392,12 L386,214 L300,220 Z" fill="url(#s25-papergrad)" stroke="#8A6B49" stroke-width="5"/>
+            <path d="M310,26 L376,34 L372,196 L312,202 Z" fill="none" stroke="#C9A87C" stroke-width="3" opacity="0.5"/>
+            <path d="M296,2 L300,220" stroke="#8A6B49" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(196,180)">
+            <g id="s25-seal">
+              <circle r="40" fill="url(#s25-sealgrad)" stroke="#8E3A28" stroke-width="5"/>
+              <circle r="27" fill="none" stroke="#8E3A28" stroke-width="4" opacity="0.6"/>
+              <path d="M-13,-9 L13,-9 L7,11 L-7,11 Z" fill="#A8462F" stroke="#8E3A28" stroke-width="3"/>
+              <path d="M-24,-18 C-14,-30 8,-32 20,-22" fill="none" stroke="#E8A08A" stroke-width="6" opacity="0.55"/>
+            </g>
+          </g>
+          <path id="s25-drip" d="M196,216 C196,246 188,262 194,294" fill="none" stroke="#C2593F" stroke-width="9" stroke-linecap="round" stroke-dasharray="90" stroke-dashoffset="90"/>
+        </g>
+      </g>
+    </svg>
+
+    <!-- FG · the seam: the poured river becomes a chandelier crystal field -->
+    <svg class="s25-plane s25-p-fg" id="s25-crystal" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g transform="translate(1520,700)">
+        <g id="s25-crystal-in" opacity="0">
+          <circle id="s25-crystglow" r="1560" fill="url(#s25-flaregrad)" opacity="0.55"/>
+          <g stroke="#8A5F36" stroke-width="6" fill="none" opacity="0.5">
+            <path d="M0,0 C 220,-120 460,-176 700,-190"/>
+            <path d="M0,0 C -220,-120 -460,-176 -700,-190"/>
+            <path d="M0,0 C 260,90 520,150 780,180"/>
+            <path d="M0,0 C -260,90 -520,150 -780,180"/>
+            <path d="M0,0 C 60,-260 90,-520 80,-780"/>
+            <path d="M0,0 C -60,260 -90,520 -80,780"/>
+          </g>
+          <g transform="translate(880,0) rotate(90)">
+            <path d="M0,-190 L50,-60 L34,104 L0,182 L-34,104 L-50,-60 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="5"/>
+            <path d="M0,-190 L0,182" stroke="#FFF9E4" stroke-width="4" opacity="0.6"/>
+            <path d="M-28,-44 L-8,64" stroke="#FFF9E4" stroke-width="7" opacity="0.45"/>
+            <path d="M28,-56 L12,72" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(622,622) rotate(135)">
+            <path d="M0,-190 L50,-60 L34,104 L0,182 L-34,104 L-50,-60 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="5"/>
+            <path d="M0,-190 L0,182" stroke="#FFF9E4" stroke-width="4" opacity="0.6"/>
+            <path d="M-28,-44 L-8,64" stroke="#FFF9E4" stroke-width="7" opacity="0.45"/>
+            <path d="M28,-56 L12,72" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(0,880) rotate(180)">
+            <path d="M0,-190 L50,-60 L34,104 L0,182 L-34,104 L-50,-60 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="5"/>
+            <path d="M0,-190 L0,182" stroke="#FFF9E4" stroke-width="4" opacity="0.6"/>
+            <path d="M-28,-44 L-8,64" stroke="#FFF9E4" stroke-width="7" opacity="0.45"/>
+            <path d="M28,-56 L12,72" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(-622,622) rotate(225)">
+            <path d="M0,-190 L50,-60 L34,104 L0,182 L-34,104 L-50,-60 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="5"/>
+            <path d="M0,-190 L0,182" stroke="#FFF9E4" stroke-width="4" opacity="0.6"/>
+            <path d="M-28,-44 L-8,64" stroke="#FFF9E4" stroke-width="7" opacity="0.45"/>
+            <path d="M28,-56 L12,72" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(-880,0) rotate(270)">
+            <path d="M0,-190 L50,-60 L34,104 L0,182 L-34,104 L-50,-60 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="5"/>
+            <path d="M0,-190 L0,182" stroke="#FFF9E4" stroke-width="4" opacity="0.6"/>
+            <path d="M-28,-44 L-8,64" stroke="#FFF9E4" stroke-width="7" opacity="0.45"/>
+            <path d="M28,-56 L12,72" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(-622,-622) rotate(315)">
+            <path d="M0,-190 L50,-60 L34,104 L0,182 L-34,104 L-50,-60 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="5"/>
+            <path d="M0,-190 L0,182" stroke="#FFF9E4" stroke-width="4" opacity="0.6"/>
+            <path d="M-28,-44 L-8,64" stroke="#FFF9E4" stroke-width="7" opacity="0.45"/>
+            <path d="M28,-56 L12,72" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(0,-880) rotate(0)">
+            <path d="M0,-190 L50,-60 L34,104 L0,182 L-34,104 L-50,-60 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="5"/>
+            <path d="M0,-190 L0,182" stroke="#FFF9E4" stroke-width="4" opacity="0.6"/>
+            <path d="M-28,-44 L-8,64" stroke="#FFF9E4" stroke-width="7" opacity="0.45"/>
+            <path d="M28,-56 L12,72" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(622,-622) rotate(45)">
+            <path d="M0,-190 L50,-60 L34,104 L0,182 L-34,104 L-50,-60 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="5"/>
+            <path d="M0,-190 L0,182" stroke="#FFF9E4" stroke-width="4" opacity="0.6"/>
+            <path d="M-28,-44 L-8,64" stroke="#FFF9E4" stroke-width="7" opacity="0.45"/>
+            <path d="M28,-56 L12,72" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(1340,560) rotate(112) scale(1.25)">
+            <path d="M0,-190 L50,-60 L34,104 L0,182 L-34,104 L-50,-60 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="5"/>
+            <path d="M0,-190 L0,182" stroke="#FFF9E4" stroke-width="4" opacity="0.6"/>
+            <path d="M-28,-44 L-8,64" stroke="#FFF9E4" stroke-width="7" opacity="0.45"/>
+            <path d="M28,-56 L12,72" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(560,1340) rotate(157) scale(1.25)">
+            <path d="M0,-190 L50,-60 L34,104 L0,182 L-34,104 L-50,-60 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="5"/>
+            <path d="M0,-190 L0,182" stroke="#FFF9E4" stroke-width="4" opacity="0.6"/>
+            <path d="M-28,-44 L-8,64" stroke="#FFF9E4" stroke-width="7" opacity="0.45"/>
+            <path d="M28,-56 L12,72" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(-560,1340) rotate(202) scale(1.25)">
+            <path d="M0,-190 L50,-60 L34,104 L0,182 L-34,104 L-50,-60 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="5"/>
+            <path d="M0,-190 L0,182" stroke="#FFF9E4" stroke-width="4" opacity="0.6"/>
+            <path d="M-28,-44 L-8,64" stroke="#FFF9E4" stroke-width="7" opacity="0.45"/>
+            <path d="M28,-56 L12,72" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(-1340,560) rotate(247) scale(1.25)">
+            <path d="M0,-190 L50,-60 L34,104 L0,182 L-34,104 L-50,-60 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="5"/>
+            <path d="M0,-190 L0,182" stroke="#FFF9E4" stroke-width="4" opacity="0.6"/>
+            <path d="M-28,-44 L-8,64" stroke="#FFF9E4" stroke-width="7" opacity="0.45"/>
+            <path d="M28,-56 L12,72" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(-1340,-560) rotate(292) scale(1.25)">
+            <path d="M0,-190 L50,-60 L34,104 L0,182 L-34,104 L-50,-60 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="5"/>
+            <path d="M0,-190 L0,182" stroke="#FFF9E4" stroke-width="4" opacity="0.6"/>
+            <path d="M-28,-44 L-8,64" stroke="#FFF9E4" stroke-width="7" opacity="0.45"/>
+            <path d="M28,-56 L12,72" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(-560,-1340) rotate(337) scale(1.25)">
+            <path d="M0,-190 L50,-60 L34,104 L0,182 L-34,104 L-50,-60 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="5"/>
+            <path d="M0,-190 L0,182" stroke="#FFF9E4" stroke-width="4" opacity="0.6"/>
+            <path d="M-28,-44 L-8,64" stroke="#FFF9E4" stroke-width="7" opacity="0.45"/>
+            <path d="M28,-56 L12,72" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(560,-1340) rotate(22) scale(1.25)">
+            <path d="M0,-190 L50,-60 L34,104 L0,182 L-34,104 L-50,-60 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="5"/>
+            <path d="M0,-190 L0,182" stroke="#FFF9E4" stroke-width="4" opacity="0.6"/>
+            <path d="M-28,-44 L-8,64" stroke="#FFF9E4" stroke-width="7" opacity="0.45"/>
+            <path d="M28,-56 L12,72" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(1340,-560) rotate(67) scale(1.25)">
+            <path d="M0,-190 L50,-60 L34,104 L0,182 L-34,104 L-50,-60 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="5"/>
+            <path d="M0,-190 L0,182" stroke="#FFF9E4" stroke-width="4" opacity="0.6"/>
+            <path d="M-28,-44 L-8,64" stroke="#FFF9E4" stroke-width="7" opacity="0.45"/>
+            <path d="M28,-56 L12,72" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          </g>
+          <g transform="translate(0,0)">
+            <path d="M0,-340 L56,-140 L36,90 L0,210 L-36,90 L-56,-140 Z" fill="url(#s25-crystgrad)" stroke="#8A5F36" stroke-width="6"/>
+            <path d="M0,-340 L0,210" stroke="#FFFDF4" stroke-width="5" opacity="0.7"/>
+            <path d="M-32,-70 L-8,80" stroke="#FFFDF4" stroke-width="9" opacity="0.5"/>
+            <path d="M32,-86 L12,90" stroke="#C89D42" stroke-width="5" opacity="0.5"/>
+            <path d="M0,210 L-34,320 L0,392 L34,320 Z" fill="url(#s25-cryst2grad)" stroke="#8A5F36" stroke-width="4"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+
+    <div class="s25-grain"></div>
+    <div class="s25-vignette"></div>
+
+    <div class="s25-tag" id="s25-tag">
+      <span class="s25-tag-dot"></span>
+      <span class="s25-tag-text">TRADE INVERTED</span>
+    </div>
+    <div class="s25-rule" id="s25-rule"></div>
+  </div>
+</div>
+
+<script>
+(function initS25(){
+  var ID = "s25-inverted-flow";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, { duration: 20.043 }, 0);
+
+  // ── PHASE 1 · the chart draws itself out of the archive ─────────────────
+  tl.fromTo("#s25-bg", { scale: 1.05, x: -10, y: -6 }, { scale: 1, x: 0, y: 0, duration: 20.0, ease: "sine.out" }, 0.05);
+  tl.fromTo("#s25-window-in", { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "power2.out" }, 0.18);
+  tl.fromTo("#s25-shelf-in", { y: -30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "power2.out" }, 0.36);
+  tl.fromTo("#s25-dado", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "power2.out" }, 0.52);
+  tl.fromTo("#s25-table", { y: 54, opacity: 0 }, { y: 0, opacity: 1, duration: 0.85, ease: "power2.out" }, 0.64);
+  tl.fromTo("#s25-map-in", { scale: 0.93, y: 38, opacity: 0, svgOrigin: "0 0" }, { scale: 1, y: 0, opacity: 1, duration: 0.95, ease: "power3.out" }, 0.82);
+  tl.fromTo("#s25-landfill", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "sine.out" }, 1.22);
+  tl.fromTo("#s25-coast", { strokeDashoffset: 4200 }, { strokeDashoffset: 0, duration: 1.7, ease: "power2.inOut" }, 1.08);
+  tl.fromTo("#s25-coast2", { strokeDashoffset: 700 }, { strokeDashoffset: 0, duration: 1.0, ease: "power2.inOut" }, 1.55);
+  tl.fromTo("#s25-coast3", { strokeDashoffset: 620 }, { strokeDashoffset: 0, duration: 0.9, ease: "power2.inOut" }, 1.72);
+  tl.fromTo("#s25-islands", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 1.98);
+  tl.fromTo("#s25-mapdetail", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "sine.out" }, 2.02);
+  tl.fromTo("#s25-compass-in", { scale: 0.4, rotation: -60, opacity: 0 }, { scale: 1, rotation: 0, opacity: 1, duration: 0.85, ease: "back.out(1.8)" }, 1.72);
+  tl.fromTo("#s25-cartouche", { y: -18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 1.96);
+  tl.fromTo("#s25-scalebar", { x: -26, opacity: 0 }, { x: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 2.10);
+  tl.fromTo(".s25-city", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(2.4)", stagger: 0.09 }, 2.22);
+  tl.fromTo("#s25-paris", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "back.out(2)", transformOrigin: "50% 50%" }, 2.58);
+  tl.fromTo("#s25-venice", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "back.out(2)", transformOrigin: "50% 50%" }, 2.78);
+  tl.fromTo("#s25-rivercasing", { opacity: 0 }, { opacity: 0.16, duration: 0.7, ease: "sine.out" }, 2.80);
+  tl.fromTo("#s25-riverbase", { strokeWidth: 6, opacity: 0 }, { strokeWidth: 40, opacity: 0.42, duration: 0.9, ease: "power2.out" }, 2.86);
+  tl.fromTo("#s25-rivercore", { strokeWidth: 3, opacity: 0 }, { strokeWidth: 15, opacity: 0.5, duration: 0.8, ease: "power2.out" }, 3.06);
+  tl.fromTo("#s25-riverflow", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out" }, 3.22);
+  tl.fromTo("#s25-riverflow2", { opacity: 0 }, { opacity: 0.8, duration: 0.5, ease: "sine.out" }, 3.32);
+  tl.fromTo("#s25-chev", { scale: 0.2, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(2)" }, 3.40);
+  tl.fromTo("#s25-lens-in", { y: 40, x: 50, opacity: 0 }, { y: 0, x: 0, opacity: 1, duration: 0.9, ease: "power3.out" }, 3.44);
+  tl.fromTo("#s25-letter-in", { y: 46, rotation: -3, opacity: 0 }, { y: 0, rotation: 0, opacity: 1, duration: 0.9, ease: "power3.out" }, 3.60);
+  tl.fromTo(".s25-mote", { y: 0, x: 0 }, { y: -66, x: 10, duration: 7.6, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 0.24 }, 1.10);
+
+  // ── PHASE 2 · the river runs toward Venice ─────────────────────────────
+  tl.to("#s25-riverflow", { strokeDashoffset: -360, duration: 5.0, ease: "none" }, 4.00);
+  tl.to("#s25-riverflow2", { strokeDashoffset: -300, duration: 5.0, ease: "none" }, 4.00);
+  tl.to("#s25-chev", { x: 18, duration: 1.2, ease: "sine.inOut", yoyo: true, repeat: 2 }, 4.20);
+  tl.to("#s25-paris", { scale: 1.14, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 2, transformOrigin: "50% 50%" }, 4.40);
+  tl.to("#s25-venice", { scale: 1.2, duration: 1.6, ease: "sine.inOut", yoyo: true, repeat: 2, transformOrigin: "50% 50%" }, 5.10);
+  tl.to("#s25-lens-in", { rotation: 1.6, duration: 4.4, ease: "sine.inOut", yoyo: true, repeat: 1, transformOrigin: "50% 50%" }, 5.40);
+  tl.to("#s25-rivercore", { strokeWidth: 19, duration: 1.8, ease: "sine.inOut", yoyo: true, repeat: 2 }, 5.80);
+  tl.to("#s25-map-in", { rotation: 0.9, duration: 6.0, ease: "sine.inOut", svgOrigin: "0 0" }, 5.00);
+  tl.to("#s25-compass-in", { rotation: 96, duration: 5.2, ease: "sine.inOut" }, 4.10);
+  tl.to("#s25-cartouche", { y: -6, duration: 2.2, ease: "sine.inOut", yoyo: true, repeat: 2 }, 6.10);
+  tl.to("#s25-paris", { rotation: 12, duration: 3.0, ease: "sine.inOut", yoyo: true, repeat: 1, transformOrigin: "50% 50%" }, 6.40);
+  tl.to("#s25-riverflow", { opacity: 0.72, duration: 1.6, ease: "sine.inOut", yoyo: true, repeat: 2 }, 6.80);
+  tl.to("#s25-venice", { opacity: 0.75, duration: 1.1, ease: "sine.inOut", yoyo: true, repeat: 3 }, 7.20);
+
+  // ── PHASE 3 · the flow reverses and splits into five routes ────────────
+  tl.to("#s25-chev", { rotation: 180, duration: 0.55, ease: "power3.inOut" }, 9.10);
+  tl.to("#s25-riverflow", { strokeDashoffset: 300, duration: 4.4, ease: "power2.inOut" }, 9.25);
+  tl.to("#s25-riverflow2", { strokeDashoffset: 240, duration: 4.4, ease: "power2.inOut" }, 9.25);
+  tl.fromTo("#s25-route1", { strokeDashoffset: 620 }, { strokeDashoffset: 0, duration: 0.9, ease: "power2.inOut" }, 9.30);
+  tl.fromTo("#s25-route2", { strokeDashoffset: 620 }, { strokeDashoffset: 0, duration: 0.8, ease: "power2.inOut" }, 9.44);
+  tl.fromTo("#s25-route3", { strokeDashoffset: 620 }, { strokeDashoffset: 0, duration: 0.95, ease: "power2.inOut" }, 9.58);
+  tl.fromTo("#s25-route4", { strokeDashoffset: 620 }, { strokeDashoffset: 0, duration: 1.05, ease: "power2.inOut" }, 9.72);
+  tl.fromTo("#s25-route5", { strokeDashoffset: 620 }, { strokeDashoffset: 0, duration: 0.9, ease: "power2.inOut" }, 9.86);
+  tl.fromTo(".s25-head", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.45, ease: "back.out(2.6)", stagger: 0.07 }, 10.02);
+  tl.to("#s25-riverbase", { opacity: 0.18, duration: 2.2, ease: "sine.inOut" }, 10.40);
+  tl.to("#s25-rivercore", { strokeWidth: 11, duration: 2.4, ease: "sine.inOut" }, 10.40);
+  tl.to("#s25-riverflow", { opacity: 0.62, duration: 2.0, ease: "sine.inOut" }, 10.60);
+  tl.to(".s25-city", { scale: 1.16, duration: 0.9, ease: "sine.inOut", yoyo: true, repeat: 3, stagger: 0.08, transformOrigin: "50% 50%" }, 10.80);
+  tl.to("#s25-paris", { scale: 1.3, duration: 1.2, ease: "sine.out", transformOrigin: "50% 50%" }, 11.20);
+  tl.to("#s25-route1", { opacity: 0.82, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 3 }, 11.40);
+  tl.to("#s25-route4", { opacity: 0.82, duration: 1.5, ease: "sine.inOut", yoyo: true, repeat: 3 }, 11.70);
+  tl.to("#s25-map-in", { rotation: -0.4, duration: 5.0, ease: "sine.inOut", svgOrigin: "0 0" }, 11.60);
+  tl.to("#s25-compass-in", { rotation: 190, duration: 4.6, ease: "sine.inOut" }, 11.20);
+  tl.to("#s25-lens-in", { scale: 1.06, duration: 2.6, ease: "sine.inOut", yoyo: true, repeat: 1, transformOrigin: "50% 50%" }, 11.40);
+  tl.to("#s25-cartouche", { opacity: 0.82, duration: 1.8, ease: "sine.inOut", yoyo: true, repeat: 3 }, 12.20);
+  tl.to("#s25-chev", { x: 26, duration: 1.6, ease: "sine.inOut", yoyo: true, repeat: 2 }, 12.60);
+  tl.to("#s25-riverflow", { strokeDashoffset: 620, duration: 3.0, ease: "power1.inOut" }, 13.40);
+
+  // ── PHASE 4 · export stacks rise, the letter curls ─────────────────────
+  tl.fromTo(".s25-coin", { y: 26, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)", stagger: 0.03 }, 15.00);
+  tl.fromTo("#s25-nearstack", { y: 26, opacity: 0 }, { y: 0, opacity: 0.95, duration: 0.8, ease: "power3.out" }, 15.20);
+  tl.to("#s25-letter-in", { y: -10, rotation: -1.6, duration: 1.4, ease: "power2.out" }, 15.40);
+  tl.to("#s25-peel", { scaleX: 0.4, rotation: -7, skewY: 3, duration: 1.7, ease: "power2.inOut", transformOrigin: "0% 50%" }, 15.70);
+  tl.to("#s25-seal", { scaleY: 0.56, y: 13, rotation: 6, duration: 1.9, ease: "power2.inOut", transformOrigin: "50% 0%" }, 16.10);
+  tl.to("#s25-drip", { strokeDashoffset: 0, duration: 1.3, ease: "power2.out" }, 16.60);
+  tl.to("#s25-letter-in", { rotation: -2.4, duration: 2.4, ease: "sine.inOut" }, 17.20);
+  tl.to("#s25-seal", { scaleY: 0.5, duration: 1.6, ease: "sine.inOut", transformOrigin: "50% 0%" }, 18.00);
+  tl.to(".s25-coin", { y: -3, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 3, stagger: 0.05 }, 16.40);
+
+  // ── TAG ────────────────────────────────────────────────────────────────
+  tl.fromTo("#s25-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -14 }, { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.6, ease: "power3.inOut" }, 14.60);
+  tl.fromTo("#s25-rule", { width: 0 }, { width: 372, duration: 0.5, ease: "power2.out" }, 15.00);
+
+  // ── SEAM · the river pours through the lens into chandelier crystal ────
+  tl.to("#s25-tag", { clipPath: "inset(0% 100% 0% 0%)", duration: 0.22, ease: "power2.in" }, 18.10);
+  tl.to("#s25-rule", { width: 0, duration: 0.22, ease: "power2.in" }, 18.10);
+  tl.fromTo("#s25-pour", { opacity: 0, strokeDashoffset: 0 }, { opacity: 1, strokeDashoffset: -420, duration: 0.8, ease: "power2.in" }, 18.06);
+  tl.to("#s25-lensflare", { scale: 1.6, opacity: 0.95, duration: 0.7, ease: "power2.in", transformOrigin: "50% 50%" }, 18.26);
+  tl.to("#s25-lens-in", { scale: 1.2, duration: 0.55, ease: "power2.in", transformOrigin: "50% 50%" }, 18.32);
+  tl.set("#s25-crystal-in", { scale: 0.02, opacity: 1, svgOrigin: "0 0" }, 18.52);
+  tl.to("#s25-crystal-in", { scale: 1, duration: 1.05, ease: "power3.in", svgOrigin: "0 0" }, 18.54);
+  tl.to("#s25-crystglow", { opacity: 0.85, duration: 0.5, ease: "sine.out" }, 18.66);
+  tl.to("#s25-crystal-in", { scale: 1.22, duration: 0.34, ease: "power2.in", svgOrigin: "0 0" }, 19.66);
+  tl.to("#s25-crystal-in", { rotation: 2.2, duration: 0.80, ease: "sine.out", svgOrigin: "0 0" }, 19.20);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>
+

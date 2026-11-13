@@ -1,0 +1,293 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="wbg08-template">
+<style>
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="wbg-08-hall-under-construction"] .w-stage{position:absolute;inset:0;}
+[data-composition-id="wbg-08-hall-under-construction"] .w-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="wbg-08-hall-under-construction"] .w-p1{z-index:1;}
+[data-composition-id="wbg-08-hall-under-construction"] .w-p2{z-index:2;}
+[data-composition-id="wbg-08-hall-under-construction"] .w-p3{z-index:3;}
+[data-composition-id="wbg-08-hall-under-construction"] .w-haze{position:absolute;inset:0;z-index:5;pointer-events:none;
+  background:
+    radial-gradient(34% 42% at 16% 14%, rgba(255,226,172,0.36) 0%, rgba(255,226,172,0.10) 60%, rgba(255,226,172,0) 84%),
+    radial-gradient(58% 42% at 88% 94%, rgba(74,46,28,0.24) 0%, rgba(74,46,28,0) 78%),
+    linear-gradient(180deg, rgba(43,31,23,0.28) 0%, rgba(43,31,23,0) 15%, rgba(43,31,23,0) 70%, rgba(30,24,19,0.48) 100%);}
+</style>
+
+<div id="root" data-composition-id="wbg-08-hall-under-construction" data-width="1920" data-height="1080" data-start="0" data-duration="60.000">
+  <div class="w-stage" id="wbg08-stage">
+
+    <!-- far · the unfinished arcade and the work-light wash -->
+    <svg class="w-plane w-p1" id="wbg08-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w08-wall" x1="0" y1="0" x2="0.06" y2="1">
+          <stop offset="0" stop-color="#FBF1DA"/><stop offset="0.32" stop-color="#F6E6C6"/>
+          <stop offset="0.66" stop-color="#E9D4AF"/><stop offset="1" stop-color="#D2B58A"/>
+        </linearGradient>
+        <linearGradient id="w08-beam" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#6E4826"/><stop offset="0.5" stop-color="#8A5F36"/>
+          <stop offset="1" stop-color="#4A2E1C"/>
+        </linearGradient>
+        <linearGradient id="w08-arch" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#6E4826" stop-opacity="0.34"/>
+          <stop offset="0.55" stop-color="#8A5F36" stop-opacity="0.20"/>
+          <stop offset="1" stop-color="#A97445" stop-opacity="0.06"/>
+        </linearGradient>
+        <linearGradient id="w08-archdeep" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#4A2E1C" stop-opacity="0.46"/>
+          <stop offset="0.6" stop-color="#6E4826" stop-opacity="0.26"/>
+          <stop offset="1" stop-color="#8A5F36" stop-opacity="0.08"/>
+        </linearGradient>
+        <linearGradient id="w08-shaft" x1="0" y1="0" x2="0.6" y2="1">
+          <stop offset="0" stop-color="#FFF6DC" stop-opacity="0.54"/>
+          <stop offset="0.5" stop-color="#FFE8B4" stop-opacity="0.20"/>
+          <stop offset="1" stop-color="#FFE8B4" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="w08-worklight" cx="16%" cy="13%" r="46%">
+          <stop offset="0" stop-color="#FFF3CE" stop-opacity="0.62"/>
+          <stop offset="0.38" stop-color="#FFE2AC" stop-opacity="0.24"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="w08-blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="42"/></filter>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#w08-wall)"/>
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#w08-worklight)"/>
+
+      <!-- the shaft from the high left opening -->
+      <g opacity="0.8">
+        <path d="M96,-40 L400,-40 L792,1080 L352,1080 Z" fill="url(#w08-shaft)"/>
+        <path d="M436,-40 L540,-40 L880,1080 L744,1080 Z" fill="url(#w08-shaft)" opacity="0.55"/>
+      </g>
+
+      <!-- the great transverse beam -->
+      <rect x="0" y="0" width="1920" height="82" fill="url(#w08-beam)" opacity="0.76"/>
+      <path d="M0,82 H1920" stroke="#FBF1DA" stroke-width="6" opacity="0.26"/>
+      <path d="M0,100 H1920" stroke="#4A2E1C" stroke-width="8" opacity="0.24"/>
+      <g stroke="#3A2A1E" stroke-width="5" opacity="0.16">
+        <path d="M120,12 V82"/><path d="M560,12 V82"/><path d="M980,12 V82"/>
+        <path d="M1420,12 V82"/><path d="M1820,12 V82"/>
+      </g>
+
+      <!-- far arcade, left and right, the middle left open -->
+      <g opacity="0.86">
+        <path d="M-40,884 V430 C-40,330 46,268 152,268 C258,268 344,330 344,430 V884 Z" fill="url(#w08-arch)"/>
+        <path d="M14,884 V438 C14,352 80,300 152,300 C224,300 290,352 290,438 V884 Z" fill="url(#w08-archdeep)" opacity="0.66"/>
+        <path d="M-40,884 V430 C-40,330 46,268 152,268 C258,268 344,330 344,430"
+              fill="none" stroke="#4A2E1C" stroke-width="7" opacity="0.22"/>
+
+        <path d="M1210,884 V404 C1210,300 1298,238 1404,238 C1510,238 1598,300 1598,404 V884 Z" fill="url(#w08-arch)"/>
+        <path d="M1268,884 V414 C1268,326 1336,274 1404,274 C1472,274 1540,326 1540,414 V884 Z" fill="url(#w08-archdeep)" opacity="0.62"/>
+        <path d="M1210,884 V404 C1210,300 1298,238 1404,238 C1510,238 1598,300 1598,404"
+              fill="none" stroke="#4A2E1C" stroke-width="7" opacity="0.20"/>
+
+        <path d="M1622,884 V446 C1622,356 1686,306 1762,306 C1838,306 1902,356 1902,446 V884 Z" fill="url(#w08-arch)" opacity="0.8"/>
+        <path d="M1622,884 V446 C1622,356 1686,306 1762,306 C1838,306 1902,356 1902,446"
+              fill="none" stroke="#6E4826" stroke-width="6" opacity="0.18"/>
+      </g>
+
+      <!-- the spring course over the arcade -->
+      <g opacity="0.56">
+        <path d="M0,884 H1920" stroke="#6E4826" stroke-width="7" opacity="0.24"/>
+        <path d="M0,860 H1920" stroke="#F6E6C6" stroke-width="5" opacity="0.18"/>
+      </g>
+
+      <!-- the first arch centering, left bay, in shadow -->
+      <g opacity="0.62">
+        <path d="M64,900 C64,760 132,676 244,676 C356,676 424,760 424,900"
+              fill="none" stroke="#8A5F36" stroke-width="30" opacity="0.5"/>
+        <path d="M96,900 C96,784 152,714 244,714 C336,714 392,784 392,900"
+              fill="none" stroke="#6E4826" stroke-width="7" opacity="0.34"/>
+      </g>
+
+      <ellipse cx="286" cy="160" rx="300" ry="240" fill="#FFF6DC" opacity="0.30" filter="url(#w08-blur)"/>
+    </svg>
+
+    <!-- mid · scaffold ribs, crates, the centering under the great arch -->
+    <svg class="w-plane w-p2" id="wbg08-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w08-pole" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#4A2E1C"/><stop offset="0.4" stop-color="#8A5F36"/>
+          <stop offset="0.72" stop-color="#A97445"/><stop offset="1" stop-color="#6E4826"/>
+        </linearGradient>
+        <linearGradient id="w08-plank" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#C99A67"/><stop offset="0.5" stop-color="#A97445"/>
+          <stop offset="1" stop-color="#6E4826"/>
+        </linearGradient>
+        <linearGradient id="w08-crate" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#B08050"/><stop offset="0.5" stop-color="#8A5F36"/>
+          <stop offset="1" stop-color="#5C3A20"/>
+        </linearGradient>
+        <linearGradient id="w08-centering" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#C99A67" stop-opacity="0.62"/>
+          <stop offset="0.6" stop-color="#A97445" stop-opacity="0.42"/>
+          <stop offset="1" stop-color="#6E4826" stop-opacity="0.26"/>
+        </linearGradient>
+        <radialGradient id="w08-bulb" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFFDF6" stop-opacity="0.92"/>
+          <stop offset="0.42" stop-color="#FFE2AC" stop-opacity="0.6"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <!-- scaffold bays at both edges -->
+      <g opacity="0.92">
+        <rect x="84" y="110" width="24" height="970" fill="url(#w08-pole)"/>
+        <rect x="292" y="110" width="22" height="970" fill="url(#w08-pole)"/>
+        <rect x="1604" y="110" width="24" height="970" fill="url(#w08-pole)"/>
+        <rect x="1812" y="110" width="22" height="970" fill="url(#w08-pole)"/>
+        <g stroke="#6E4826" stroke-width="8" opacity="0.5">
+          <path d="M84,270 H314"/><path d="M84,540 H314"/><path d="M84,800 H314"/>
+          <path d="M1604,270 H1834"/><path d="M1604,540 H1834"/><path d="M1604,800 H1834"/>
+        </g>
+        <g stroke="#4A2E1C" stroke-width="7" opacity="0.34">
+          <path d="M84,270 L314,540"/><path d="M314,270 L84,540"/>
+          <path d="M84,540 L314,800"/><path d="M314,540 L84,800"/>
+          <path d="M1604,270 L1834,540"/><path d="M1834,270 L1604,540"/>
+          <path d="M1604,540 L1834,800"/><path d="M1834,540 L1604,800"/>
+        </g>
+        <g stroke="#F6E6C6" stroke-width="4" opacity="0.14">
+          <path d="M96,112 V1070"/><path d="M1616,112 V1070"/>
+        </g>
+      </g>
+
+      <!-- the long walkway and its rails -->
+      <rect x="0" y="792" width="1920" height="26" fill="url(#w08-plank)" opacity="0.86"/>
+      <path d="M0,792 H1920" stroke="#F6E6C6" stroke-width="5" opacity="0.22"/>
+      <path d="M0,818 H1920" stroke="#4A2E1C" stroke-width="7" opacity="0.30"/>
+      <g stroke="#6E4826" stroke-width="6" opacity="0.34">
+        <path d="M0,744 H470"/><path d="M1450,744 H1920"/>
+        <path d="M120,744 V792"/><path d="M360,744 V792"/>
+        <path d="M1560,744 V792"/><path d="M1800,744 V792"/>
+      </g>
+
+      <!-- the great arch centering, a timber rib across the lower middle -->
+      <g opacity="0.88">
+        <path d="M540,912 C540,742 664,630 960,630 C1256,630 1380,742 1380,912"
+              fill="none" stroke="url(#w08-centering)" stroke-width="30" opacity="0.9"/>
+        <path d="M586,912 C586,764 700,664 960,664 C1220,664 1334,764 1334,912"
+              fill="none" stroke="#8A5F36" stroke-width="9" opacity="0.34"/>
+        <g stroke="#6E4826" stroke-width="7" opacity="0.30">
+          <path d="M960,640 V912"/>
+          <path d="M708,690 L680,912"/><path d="M1212,690 L1240,912"/>
+          <path d="M812,660 L790,912"/><path d="M1108,660 L1130,912"/>
+        </g>
+        <path d="M540,912 H1380" stroke="#4A2E1C" stroke-width="8" opacity="0.28"/>
+      </g>
+
+      <!-- crate stacks, left and right -->
+      <g opacity="0.94">
+        <rect x="46" y="806" width="216" height="132" fill="url(#w08-crate)"/>
+        <path d="M46,806 H262" stroke="#F6E6C6" stroke-width="4" opacity="0.18"/>
+        <g stroke="#4A2E1C" stroke-width="6" opacity="0.42">
+          <path d="M46,806 L262,938"/><path d="M262,806 L46,938"/>
+        </g>
+        <rect x="104" y="714" width="150" height="92" fill="url(#w08-crate)" opacity="0.9"/>
+        <path d="M104,714 H254" stroke="#F6E6C6" stroke-width="4" opacity="0.16"/>
+        <path d="M104,760 H254" stroke="#4A2E1C" stroke-width="5" opacity="0.28"/>
+
+        <rect x="1524" y="788" width="238" height="150" fill="url(#w08-crate)"/>
+        <path d="M1524,788 H1762" stroke="#F6E6C6" stroke-width="4" opacity="0.18"/>
+        <g stroke="#4A2E1C" stroke-width="6" opacity="0.42">
+          <path d="M1524,788 L1762,938"/><path d="M1762,788 L1524,938"/>
+        </g>
+        <rect x="1586" y="688" width="166" height="100" fill="url(#w08-crate)" opacity="0.88"/>
+        <path d="M1586,688 H1752" stroke="#F6E6C6" stroke-width="4" opacity="0.16"/>
+        <path d="M1586,738 H1752" stroke="#4A2E1C" stroke-width="5" opacity="0.26"/>
+        <rect x="1652" y="620" width="108" height="68" fill="url(#w08-crate)" opacity="0.82"/>
+      </g>
+
+      <!-- the hanging work lamp, high left -->
+      <g>
+        <path d="M300,0 V148" stroke="#4A2E1C" stroke-width="5" opacity="0.72"/>
+        <path d="M256,200 L344,200 L322,148 L278,148 Z" fill="#6E4826" opacity="0.94"/>
+        <path d="M256,200 H344" stroke="#3A2A1E" stroke-width="7" opacity="0.6"/>
+        <ellipse cx="300" cy="212" rx="19" ry="25" fill="url(#w08-bulb)"/>
+        <ellipse cx="300" cy="236" rx="132" ry="154" fill="url(#w08-bulb)" opacity="0.34" filter="url(#w08-blur)"/>
+        <path d="M272,148 C276,120 324,120 328,148" fill="none" stroke="#4A2E1C" stroke-width="6" opacity="0.6"/>
+      </g>
+    </svg>
+
+    <!-- near · floor, dust, foreground weight -->
+    <svg class="w-plane w-p3" id="wbg08-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w08-floor" x1="0" y1="0" x2="0.03" y2="1">
+          <stop offset="0" stop-color="#C99A67"/><stop offset="0.38" stop-color="#A97445"/>
+          <stop offset="0.76" stop-color="#7A4F2C"/><stop offset="1" stop-color="#4A2E1C"/>
+        </linearGradient>
+        <linearGradient id="w08-floorshade" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#2B1F17" stop-opacity="0"/>
+          <stop offset="1" stop-color="#2B1F17" stop-opacity="0.56"/>
+        </linearGradient>
+        <radialGradient id="w08-dustglow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFF3CE" stop-opacity="0.34"/>
+          <stop offset="1" stop-color="#FFF3CE" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <path d="M0,938 H1920 V1080 H0 Z" fill="url(#w08-floor)"/>
+      <path d="M0,938 H1920 V1080 H0 Z" fill="url(#w08-floorshade)"/>
+      <path d="M0,938 H1920" stroke="#F6E6C6" stroke-width="6" opacity="0.24"/>
+      <g stroke="#4A2E1C" stroke-width="5" opacity="0.18">
+        <path d="M0,978 H1920"/><path d="M0,1032 H1920"/>
+        <path d="M360,938 L332,1080"/><path d="M880,938 L872,1080"/>
+        <path d="M1400,938 L1424,1080"/>
+      </g>
+
+      <!-- a dark foreground corner, bottom right -->
+      <path d="M1920,1044 C1810,1028 1710,1032 1620,1052 C1700,1064 1808,1072 1920,1074 Z" fill="#3A2A1E" opacity="0.42"/>
+
+      <!-- dust in the shaft -->
+      <ellipse cx="410" cy="500" rx="260" ry="300" fill="url(#w08-dustglow)" opacity="0.34"/>
+      <g fill="#FFE8B4">
+        <circle class="w08-mote" cx="330" cy="220" r="4.5" opacity="0.55"/>
+        <circle class="w08-mote" cx="420" cy="340" r="4" opacity="0.5"/>
+        <circle class="w08-mote" cx="250" cy="520" r="5" opacity="0.45"/>
+        <circle class="w08-mote" cx="470" cy="680" r="4" opacity="0.42"/>
+        <circle class="w08-mote" cx="640" cy="420" r="4.5" opacity="0.4"/>
+        <circle class="w08-mote" cx="760" cy="300" r="3.5" opacity="0.38"/>
+        <circle class="w08-mote" cx="1180" cy="620" r="4" opacity="0.3"/>
+        <circle class="w08-mote" cx="1340" cy="700" r="3.5" opacity="0.28"/>
+        <circle class="w08-mote" cx="900" cy="840" r="4.5" opacity="0.32"/>
+        <circle class="w08-mote" cx="1560" cy="400" r="4" opacity="0.3"/>
+        <circle class="w08-mote" cx="1700" cy="600" r="3.5" opacity="0.26"/>
+        <circle class="w08-mote" cx="1120" cy="200" r="4" opacity="0.34"/>
+      </g>
+      <g fill="#FFF3CE" opacity="0.24">
+        <circle class="w08-mote2" cx="300" cy="600" r="6"/>
+        <circle class="w08-mote2" cx="520" cy="740" r="5"/>
+        <circle class="w08-mote2" cx="700" cy="560" r="5"/>
+        <circle class="w08-mote2" cx="980" cy="460" r="4.5"/>
+      </g>
+    </svg>
+
+    <div class="w-haze"></div>
+  </div>
+</div>
+
+<script>
+(function initWbg08(){
+  var ID = "wbg-08-hall-under-construction";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, { duration: 60.000 }, 0);
+
+  // three drift rates: far arcade, scaffold, near floor and dust
+  tl.fromTo("#wbg08-bg", { x: 0, y: 0 }, { x: -20, y: 6, duration: 60, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+  tl.fromTo("#wbg08-mg", { x: 0, y: 0 }, { x: -46, y: -8, duration: 46, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+  tl.fromTo("#wbg08-fg", { x: 0, y: 0 }, { x: -92, y: 12, duration: 36, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+
+  // dust lifts through the work-light shaft
+  tl.fromTo(".w08-mote", { y: 0, x: 0 }, { y: -170, x: 30, duration: 24, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 1.2 }, 0);
+  tl.fromTo(".w08-mote2", { y: 0, x: 0 }, { y: -220, x: -24, duration: 34, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 2.2 }, 2);
+
+  // the lamp breathes, the shaft widens a touch
+  tl.to("#wbg08-bg", { opacity: 0.94, duration: 17, ease: "sine.inOut", yoyo: true, repeat: 1 }, 3);
+  tl.to(".w08-mote", { opacity: 0.62, duration: 9, ease: "sine.inOut", yoyo: true, repeat: 2, stagger: 0.8 }, 4);
+
+  // the scaffold settles, a slow sway in the near bay
+  tl.to("#wbg08-mg", { opacity: 0.96, duration: 22, ease: "sine.inOut", yoyo: true, repeat: 1 }, 8);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

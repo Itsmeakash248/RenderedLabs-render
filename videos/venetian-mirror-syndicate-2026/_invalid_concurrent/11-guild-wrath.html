@@ -1,0 +1,62 @@
+<template id="s11-template">
+  <div id="root" data-composition-id="s11-guild-wrath" data-width="1920" data-height="1080" data-start="180.00" data-duration="18.00">
+    <div class="s11-cam" id="s11-cam">
+      <div id="s11-bg" class="wbg-container">
+        <svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <radialGradient id="s11Umbra" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#C2593F" stop-opacity="0.20"/>
+              <stop offset="60%" stop-color="#2B1F17" stop-opacity="0.62"/>
+              <stop offset="100%" stop-color="#050814" stop-opacity="0.92"/>
+            </radialGradient>
+          </defs>
+          <rect width="1920" height="1080" fill="#050814"/>
+          <rect width="1920" height="1080" fill="url(#s11Umbra)"/>
+          <g opacity="0.55" fill="#1E1813">
+            <rect x="0" y="880" width="1920" height="200"/>
+            <path d="M0,880 L280,720 L520,880 Z"/>
+            <path d="M1440,880 L1680,700 L1920,880 Z"/>
+          </g>
+          <g opacity="0.36" stroke="#5C5248" stroke-width="8">
+            <path d="M120,760 L420,760"/>
+            <path d="M1500,760 L1800,760"/>
+          </g>
+        </svg>
+      </div>
+      <div id="s11-fg" class="hero-container">
+        <svg viewBox="0 0 1920 1080">
+          <defs>
+            <radialGradient id="s11SealGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#C2593F" stop-opacity="0.46"/>
+              <stop offset="100%" stop-color="#C2593F" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="s11Glow" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="18"/>
+            </filter>
+          </defs>
+          <ellipse cx="960" cy="620" rx="400" ry="300" fill="url(#s11SealGlow)" filter="url(#s11Glow)"/>
+          <circle cx="960" cy="620" r="230" stroke="#C2593F" stroke-width="28" fill="none"/>
+          <circle cx="960" cy="620" r="150" stroke="#C89D42" stroke-width="14" fill="none"/>
+          <path d="M960,470 L1060,620 L960,770 L860,620 Z" stroke="#1E1813" stroke-width="20" fill="none"/>
+          <path d="M1320,220 L1180,700" stroke="#C89D42" stroke-width="26" stroke-linecap="round"/>
+          <path d="M1180,700 L1240,742 L1160,760 Z" fill="#C89D42"/>
+        </svg>
+      </div>
+      <div id="s11-text" class="text-container" style="position: absolute; top: 100px; left: 100px; color: #F5EFEB; font-family: 'Archivo Black'; font-size: 64px; background: rgba(5,8,20,0.58); padding: 14px 28px; border-radius: 10px;">
+        GUILD WRATH
+      </div>
+    </div>
+  </div>
+  <script>
+    (function initS11() {
+      const ID = 's11-guild-wrath';
+      const tl = gsap.timeline({ paused: true });
+      tl.to({}, { duration: 18.00 }, 0);
+      tl.from('#s11-fg', { duration: 2.2, opacity: 0, scale: 0.88, ease: 'power2.inOut' }, 1.2);
+      tl.from('#s11-text', { duration: 0.7, opacity: 0, scale: 0.86, ease: 'back.out(1.7)' }, 2.4);
+      tl.to('#s11-fg', { duration: 8.0, rotation: 8, transformOrigin: '50% 60%', ease: 'sine.inOut', yoyo: true, repeat: 1 }, 7.0);
+      window.__timelines = window.__timelines || {};
+      window.__timelines[ID] = tl;
+    })();
+  </script>
+</template>

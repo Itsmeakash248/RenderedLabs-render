@@ -1,0 +1,60 @@
+<template id="s13-template">
+  <div id="root" data-composition-id="s13-hall-of-mirrors" data-width="1920" data-height="1080" data-start="216.00" data-duration="18.00">
+    <div class="s13-cam" id="s13-cam">
+      <div id="s13-bg" class="wbg-container">
+        <svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="s13Gold" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#C89D42" stop-opacity="0.34"/>
+              <stop offset="55%" stop-color="#151B3B" stop-opacity="0.60"/>
+              <stop offset="100%" stop-color="#070A12" stop-opacity="0.90"/>
+            </linearGradient>
+          </defs>
+          <rect width="1920" height="1080" fill="#070A12"/>
+          <rect width="1920" height="1080" fill="url(#s13Gold)"/>
+          <g opacity="0.72">
+            <rect x="140" y="300" width="240" height="700" fill="#151B3B"/>
+            <rect x="1540" y="300" width="240" height="700" fill="#151B3B"/>
+            <rect x="430" y="360" width="200" height="640" fill="#1E1813"/>
+            <rect x="1290" y="360" width="200" height="640" fill="#1E1813"/>
+            <rect x="0" y="980" width="1920" height="100" fill="#2B1F17"/>
+          </g>
+        </svg>
+      </div>
+      <div id="s13-fg" class="hero-container">
+        <svg viewBox="0 0 1920 1080">
+          <defs>
+            <radialGradient id="s13ArchGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#C89D42" stop-opacity="0.42"/>
+              <stop offset="100%" stop-color="#C89D42" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="s13Blur" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="18"/>
+            </filter>
+          </defs>
+          <ellipse cx="960" cy="520" rx="520" ry="380" fill="url(#s13ArchGlow)" filter="url(#s13Blur)"/>
+          <path d="M620,940 L620,480 Q960,180 1300,480 L1300,940" stroke="#C89D42" stroke-width="32" fill="none"/>
+          <path d="M760,940 L760,540 Q960,320 1160,540 L1160,940" stroke="#D9822B" stroke-width="16" fill="none"/>
+          <g stroke="#EAE0D0" stroke-width="12" opacity="0.8">
+            <path d="M880,860 L880,560 Q960,470 1040,560 L1040,860" fill="none"/>
+          </g>
+        </svg>
+      </div>
+      <div id="s13-text" class="text-container" style="position: absolute; top: 100px; left: 100px; color: #C89D42; font-family: 'Archivo Black'; font-size: 60px; background: rgba(7,10,18,0.55); padding: 14px 28px; border-radius: 10px;">
+        HALL OF MIRRORS
+      </div>
+    </div>
+  </div>
+  <script>
+    (function initS13() {
+      const ID = 's13-hall-of-mirrors';
+      const tl = gsap.timeline({ paused: true });
+      tl.to({}, { duration: 18.00 }, 0);
+      tl.from('#s13-fg', { duration: 2.4, opacity: 0, scale: 0.92, ease: 'power2.inOut' }, 1.2);
+      tl.from('#s13-text', { duration: 0.7, opacity: 0, scale: 0.85, ease: 'back.out(1.7)' }, 2.6);
+      tl.to('#s13-fg', { duration: 8.0, scale: 1.04, transformOrigin: '50% 60%', ease: 'sine.inOut', yoyo: true, repeat: 1 }, 7.0);
+      window.__timelines = window.__timelines || {};
+      window.__timelines[ID] = tl;
+    })();
+  </script>
+</template>

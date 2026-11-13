@@ -1,0 +1,615 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s02-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s02-bought-people"] .s02-stage{position:absolute;inset:0;transform-origin:50% 52%;}
+[data-composition-id="s02-bought-people"] .s02-ground{position:absolute;inset:0;background:
+  radial-gradient(120% 92% at 28% 22%, #FCF8F2 0%, #F5EFEB 40%, #EEE4D7 70%, #DCCAB2 100%);}
+[data-composition-id="s02-bought-people"] .s02-plane{position:absolute;inset:0;}
+[data-composition-id="s02-bought-people"] .s02-p-bg{z-index:1;}
+[data-composition-id="s02-bought-people"] .s02-p-mg{z-index:2;}
+[data-composition-id="s02-bought-people"] .s02-p-fg{z-index:3;}
+[data-composition-id="s02-bought-people"] .s02-art{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="s02-bought-people"] .s02-grain{position:absolute;inset:0;z-index:5;pointer-events:none;opacity:0.055;mix-blend-mode:multiply;}
+[data-composition-id="s02-bought-people"] .s02-vignette{position:absolute;inset:0;z-index:6;pointer-events:none;
+  background:radial-gradient(120% 96% at 46% 48%, rgba(43,31,23,0) 48%, rgba(43,31,23,0.17) 100%);}
+[data-composition-id="s02-bought-people"] .s02-tag{position:absolute;left:86px;top:914px;z-index:7;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;background:rgba(250,247,240,0.96);
+  box-shadow:0 12px 30px rgba(43,31,23,0.24),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s02-bought-people"] .s02-tag-dot{width:14px;height:14px;border-radius:50%;background:#C2593F;box-shadow:0 0 0 4px rgba(194,89,63,0.18);}
+[data-composition-id="s02-bought-people"] .s02-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.14em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s02-bought-people"] .s02-tag-rule{position:absolute;left:86px;top:982px;height:5px;width:0;z-index:7;background:#C2593F;border-radius:4px;}
+[data-composition-id="s02-bought-people"] .s02-glyph{transform-box:fill-box;transform-origin:50% 50%;}
+[data-composition-id="s02-bought-people"] .s02-head{transform-box:fill-box;transform-origin:50% 50%;}
+[data-composition-id="s02-bought-people"] .s02-shoulder{transform-box:fill-box;transform-origin:50% 100%;}
+[data-composition-id="s02-bought-people"] .s02-apron{transform-box:fill-box;transform-origin:50% 0%;}
+[data-composition-id="s02-bought-people"] .s02-mote{transform-box:fill-box;transform-origin:50% 50%;}
+</style>
+
+<div id="root" data-composition-id="s02-bought-people" data-width="1920" data-height="1080" data-start="18.993" data-duration="17.183">
+  <div class="s02-stage" id="s02-stage">
+    <div class="s02-ground" id="s02-ground"></div>
+
+    <!-- PLANE BG · depth 0.98 · archival graticule, lamp pool, umber shadow mass -->
+    <div class="s02-plane s02-p-bg" id="s02-plane-bg">
+      <svg class="s02-art" id="s02-art-bg" viewBox="0 0 1920 1080" aria-hidden="true">
+        <defs>
+          <radialGradient id="s02-lamp" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#D9822B" stop-opacity="0.26"/>
+            <stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="s02-vellum-wash" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#FAF7F0" stop-opacity="0.9"/>
+            <stop offset="1" stop-color="#FAF7F0" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="s02-soft" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="14"/>
+          </filter>
+        </defs>
+
+        <circle cx="250" cy="120" r="380" fill="url(#s02-lamp)"/>
+        <circle cx="700" cy="860" r="440" fill="url(#s02-vellum-wash)"/>
+
+        <g stroke="#5C5248" stroke-width="4" opacity="0.07">
+          <path d="M0,120 H1100 M0,240 H1100 M0,360 H1100 M0,480 H1100 M0,600 H1100 M0,720 H1100 M0,840 H1100 M0,960 H1100"/>
+          <path d="M120,0 V1080 M240,0 V1080 M360,0 V1080 M480,0 V1080 M600,0 V1080 M720,0 V1080 M840,0 V1080 M960,0 V1080 M1080,0 V1080"/>
+        </g>
+        <g stroke="#5C5248" stroke-width="5" opacity="0.17">
+          <path d="M114,114 h12 M120,108 v12 M234,234 h12 M240,228 v12 M354,354 h12 M360,348 v12 M474,474 h12 M480,468 v12 M594,594 h12 M600,588 v12 M714,714 h12 M720,708 v12 M834,834 h12 M840,828 v12 M954,954 h12 M960,948 v12"/>
+        </g>
+
+        <g fill="none" stroke="#5C5248" stroke-width="6" opacity="0.09">
+          <circle cx="430" cy="540" r="300"/>
+          <circle cx="430" cy="540" r="236"/>
+          <path d="M430,240 v-28 M430,840 v28 M130,540 h-28 M730,540 h28 M218,328 l-20,-20 M642,752 l20,20 M642,328 l20,-20 M218,752 l-20,20"/>
+        </g>
+
+        <ellipse cx="850" cy="800" rx="380" ry="170" fill="#2B1F17" opacity="0.36" filter="url(#s02-soft)"/>
+        <ellipse cx="780" cy="910" rx="440" ry="120" fill="#2B1F17" opacity="0.18" filter="url(#s02-soft)"/>
+        <path d="M-40,1030 C300,966 720,990 1060,1024 L1060,1120 L-40,1120 Z" fill="#C9B49A" opacity="0.22"/>
+      </svg>
+    </div>
+
+    <!-- PLANE MG · depth 1.00 · torn portrait folio, formula sheet, glassmasters, route -->
+    <div class="s02-plane s02-p-mg" id="s02-plane-mg">
+      <svg class="s02-art" id="s02-art-mg" viewBox="0 0 1920 1080" aria-hidden="true">
+        <defs>
+          <linearGradient id="s02-brass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#F2D68E"/><stop offset="0.45" stop-color="#C89D42"/><stop offset="1" stop-color="#7E5A1B"/>
+          </linearGradient>
+          <linearGradient id="s02-brass-h" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#8A6420"/><stop offset="0.4" stop-color="#E8C77E"/><stop offset="1" stop-color="#C89D42"/>
+          </linearGradient>
+          <linearGradient id="s02-panel-warm" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#D9822B" stop-opacity="0.10"/>
+            <stop offset="0.55" stop-color="#C2593F" stop-opacity="0.05"/>
+            <stop offset="1" stop-color="#2B1F17" stop-opacity="0.30"/>
+          </linearGradient>
+          <linearGradient id="s02-ledger-wash" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#F5EFEB"/><stop offset="0.6" stop-color="#EAE0D0"/><stop offset="1" stop-color="#DCCBB2"/>
+          </linearGradient>
+          <linearGradient id="s02-sweep-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#FFF3D6" stop-opacity="0"/>
+            <stop offset="0.5" stop-color="#FFD98E" stop-opacity="0.6"/>
+            <stop offset="1" stop-color="#FFF3D6" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="s02-folio-fill" x1="0" y1="0" x2="0.3" y2="1">
+            <stop offset="0" stop-color="#F2E9DA"/><stop offset="1" stop-color="#DFD0B9"/>
+          </linearGradient>
+          <linearGradient id="s02-sheet" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#EAE0D0"/><stop offset="0.55" stop-color="#E3D6C1"/><stop offset="1" stop-color="#DCCCB4"/>
+          </linearGradient>
+          <radialGradient id="s02-glyph-glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#D9822B" stop-opacity="0.34"/>
+            <stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="s02-photo-grade" x="-5%" y="-5%" width="110%" height="110%">
+            <feColorMatrix type="saturate" values="0.84"/>
+            <feComponentTransfer>
+              <feFuncR type="linear" slope="1.05" intercept="0.01"/>
+              <feFuncG type="linear" slope="1.0"/>
+              <feFuncB type="linear" slope="0.88"/>
+            </feComponentTransfer>
+          </filter>
+          <filter id="s02-blur" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="14"/>
+          </filter>
+          <filter id="s02-blur-sm" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="6"/>
+          </filter>
+          <filter id="s02-grain" x="0" y="0" width="100%" height="100%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.86" numOctaves="2" seed="11" result="n"/>
+            <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0.5 0"/>
+          </filter>
+
+          <clipPath id="s02-torn-clip">
+            <path d="M1118,-40 L1140,62 L1104,128 L1132,196 L1100,262 L1138,330 L1106,398 L1142,466 L1102,534 L1136,602 L1108,670 L1140,738 L1104,806 L1134,874 L1100,942 L1138,1010 L1112,1120 L1960,1120 L1960,-40 Z" transform="translate(-34,0)"/>
+          </clipPath>
+          <clipPath id="s02-panel-reveal"><rect id="s02-reveal-rect" x="1000" y="-40" width="960" height="0"/></clipPath>
+          <clipPath id="s02-panel-inner"><rect x="1096" y="0" width="824" height="1080"/></clipPath>
+          <clipPath id="s02-folio-clip"><rect id="s02-folio-fill-rect" x="-330" y="396" width="680" height="0"/></clipPath>
+        </defs>
+
+        <!-- ============ TORN PORTRAIT FOLIO ============ -->
+        <g clip-path="url(#s02-torn-clip)">
+          <g id="s02-panel-ledger">
+            <rect x="1060" y="-20" width="880" height="1120" fill="url(#s02-ledger-wash)"/>
+            <g stroke="#5C5248" stroke-width="5" opacity="0.5">
+              <path d="M1090,96 H1880 M1090,160 H1880 M1090,224 H1880 M1090,288 H1880 M1090,352 H1880 M1090,416 H1880 M1090,480 H1880 M1090,544 H1880 M1090,608 H1880 M1090,672 H1880 M1090,736 H1880 M1090,800 H1880 M1090,864 H1880 M1090,928 H1880 M1090,992 H1880"/>
+            </g>
+            <g stroke="#1E1813" stroke-width="12" stroke-linecap="round" opacity="0.72">
+              <path d="M1120,140 v26 M1142,140 v26 M1164,140 v26 M1186,140 v26 M1120,268 v26 M1142,268 v26 M1164,268 v26"/>
+              <path d="M1120,396 v26 M1142,396 v26 M1164,396 v26 M1186,396 v26 M1208,396 v26 M1120,524 v26 M1142,524 v26"/>
+              <path d="M1120,652 v26 M1142,652 v26 M1164,652 v26 M1120,780 v26 M1142,780 v26 M1164,780 v26 M1186,780 v26"/>
+            </g>
+            <g fill="#C89D42" stroke="#1E1813" stroke-width="5">
+              <circle cx="1760" cy="140" r="14"/><circle cx="1760" cy="204" r="14"/><circle cx="1760" cy="268" r="14"/>
+              <circle cx="1760" cy="332" r="14"/><circle cx="1760" cy="396" r="14"/><circle cx="1760" cy="460" r="14"/>
+              <circle cx="1760" cy="524" r="14"/><circle cx="1760" cy="588" r="14"/><circle cx="1760" cy="652" r="14"/>
+            </g>
+            <path d="M1090,64 H1880" stroke="#1E1813" stroke-width="16"/>
+            <path d="M1090,64 H1880" stroke="#C89D42" stroke-width="5" transform="translate(0,-7)"/>
+          </g>
+
+          <g clip-path="url(#s02-panel-reveal)">
+            <g id="s02-panel-plate">
+              <image href="plates/processed/art-colbert.jpg" x="1040" y="0" width="900" height="1080"
+                     preserveAspectRatio="xMidYMid slice" filter="url(#s02-photo-grade)"/>
+              <rect x="1040" y="0" width="900" height="1080" fill="url(#s02-panel-warm)"/>
+              <rect x="1040" y="0" width="900" height="1080" fill="#2B1F17" opacity="0.05"/>
+              <g stroke="#C89D42" stroke-width="5" opacity="0.9">
+                <path d="M1852,36 h44 v44 M1852,1044 h44 v-44"/>
+                <path d="M1876,60 h20 v20 M1876,1020 h20 v-20" opacity="0.55"/>
+              </g>
+              <g clip-path="url(#s02-panel-inner)">
+                <rect id="s02-sweep" x="1050" y="-760" width="880" height="250" fill="url(#s02-sweep-grad)"
+                      opacity="0" transform="rotate(17 1100 300)"/>
+              </g>
+            </g>
+          </g>
+        </g>
+
+        <!-- torn vellum lip: shadow, paper, 14px ink rule, 6px brass bevel, fibres -->
+        <g id="s02-tear-lip">
+          <path d="M1118,-40 L1140,62 L1104,128 L1132,196 L1100,262 L1138,330 L1106,398 L1142,466 L1102,534 L1136,602 L1108,670 L1140,738 L1104,806 L1134,874 L1100,942 L1138,1010 L1112,1120"
+                fill="none" stroke="#2B1F17" stroke-width="44" opacity="0.30" filter="url(#s02-blur)" transform="translate(-14,16)"/>
+          <path id="s02-lip-vel" d="M1118,-40 L1140,62 L1104,128 L1132,196 L1100,262 L1138,330 L1106,398 L1142,466 L1102,534 L1136,602 L1108,670 L1140,738 L1104,806 L1134,874 L1100,942 L1138,1010 L1112,1120"
+                fill="none" stroke="#EAE0D0" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"
+                stroke-dasharray="1180" stroke-dashoffset="1180"/>
+          <path d="M1094,-40 L1116,62 L1080,128 L1108,196 L1076,262 L1114,330 L1082,398 L1118,466 L1078,534 L1112,602 L1084,670 L1116,738 L1080,806 L1110,874 L1076,942 L1114,1010 L1088,1120"
+                fill="none" stroke="#FAF7F0" stroke-width="4" opacity="0.75"/>
+          <path id="s02-lip-ink" d="M1118,-40 L1140,62 L1104,128 L1132,196 L1100,262 L1138,330 L1106,398 L1142,466 L1102,534 L1136,602 L1108,670 L1140,738 L1104,806 L1134,874 L1100,942 L1138,1010 L1112,1120"
+                fill="none" stroke="#1E1813" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"
+                stroke-dasharray="1180" stroke-dashoffset="1180"/>
+          <path id="s02-lip-brass" d="M1128,-40 L1150,62 L1114,128 L1142,196 L1110,262 L1148,330 L1116,398 L1152,466 L1112,534 L1146,602 L1118,670 L1150,738 L1114,806 L1144,874 L1110,942 L1148,1010 L1122,1120"
+                fill="none" stroke="url(#s02-brass)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"
+                stroke-dasharray="1180" stroke-dashoffset="1180"/>
+          <g id="s02-lip-fibres" stroke="#EAE0D0" stroke-width="4" stroke-linecap="round" opacity="0.7">
+            <path d="M1102,196 l-30,10"/>
+            <path d="M1112,406 l28,-8"/>
+            <path d="M1098,596 l-26,12"/>
+            <path d="M1110,806 l30,-6"/>
+            <path d="M1100,972 l-28,10"/>
+          </g>
+        </g>
+
+        <!-- second archival sheet: torn vellum layer filling the field between folio and plate -->
+        <g id="s02-sheet" transform="translate(780,480) rotate(9)">
+          <path d="M-260,-380 H190 L214,-344 L198,-318 L226,-286 L206,-252 L234,-218 L214,-184 L240,-150 L220,-116 L246,-82 L224,-48 L250,-14 L230,20 L256,54 L232,88 L258,122 L236,156 L260,190 L238,224 L262,258 L240,292 L264,326 L242,360 L260,380 H-260 Z"
+                fill="#2B1F17" opacity="0.35" filter="url(#s02-blur)" transform="translate(18,26)"/>
+          <path d="M-278,-362 L-258,-362 L-256,-300 L-260,-240 L-257,-180 L-260,-120 L-256,-60 L-259,0 L-256,60 L-260,120 L-257,180 L-260,240 L-256,300 L-260,362 L-278,362 Z"
+                fill="#C9B49A" opacity="0.55"/>
+          <path d="M-260,-380 H190 L214,-344 L198,-318 L226,-286 L206,-252 L234,-218 L214,-184 L240,-150 L220,-116 L246,-82 L224,-48 L250,-14 L230,20 L256,54 L232,88 L258,122 L236,156 L260,190 L238,224 L262,258 L240,292 L264,326 L242,360 L260,380 H-260 Z"
+                fill="url(#s02-sheet)" stroke="#1E1813" stroke-width="18" stroke-linejoin="round"/>
+          <path d="M-252,-372 H186 M-252,372 H256" stroke="#FAF7F0" stroke-width="4" opacity="0.45"/>
+          <g stroke="#5C5248" stroke-width="5" opacity="0.34">
+            <path d="M-224,-310 H186 M-224,-256 H186 M-224,-202 H178 M-224,-148 H186 M-224,-94 H172 M-224,-40 H186"/>
+            <path d="M-224,14 H184 M-224,68 H170 M-224,122 H186 M-224,176 H180 M-224,230 H186 M-224,284 H174"/>
+          </g>
+          <path d="M-196,-344 V338" stroke="#8A7A63" stroke-width="3" opacity="0.35"/>
+          <path d="M-230,-326 L180,304" stroke="#FAF7F0" stroke-width="5" opacity="0.28"/>
+          <path d="M-228,-324 L182,306" stroke="#2B1F17" stroke-width="2" opacity="0.14"/>
+          <ellipse cx="86" cy="248" rx="122" ry="88" fill="#8A7A63" opacity="0.08" filter="url(#s02-blur-sm)"/>
+          <path d="M-244,-364 h44 M-244,-364 v44" fill="none" stroke="#C89D42" stroke-width="6" opacity="0.55"/>
+          <path d="M148,-320 h30 v30" fill="none" stroke="#C89D42" stroke-width="6" opacity="0.5"/>
+          <path d="M-160,340 H140" stroke="#5C5248" stroke-width="4" opacity="0.3"/>
+        </g>
+
+        <!-- ============ VELLUM FORMULA FOLIO · 12° isometric tilt ============ -->
+        <g id="s02-folio-wrap" transform="translate(410,510) rotate(-7) skewX(-6)">
+          <g id="s02-folio">
+            <!-- dark crack exposed by the tear -->
+            <path id="s02-crack" d="M138,-382 L176,-344 L148,-306 L180,-268 L152,-230 L178,-192 L150,-154 L182,-116 L154,-78 L180,-40 L152,-2 L176,36 L148,74 L178,112 L150,150 L180,188 L152,226 L176,264 L148,302 L178,340 L152,382 L128,382 L120,-382 Z"
+                  fill="#2B1F17" opacity="0" filter="url(#s02-blur-sm)"/>
+
+            <!-- peeled flap sits UNDER the body -->
+            <g id="s02-folio-flap" opacity="0" style="transform-box:fill-box;transform-origin:0% 62%">
+              <path d="M150,-380 L168,-344 L142,-306 L172,-268 L146,-230 L170,-192 L144,-154 L174,-116 L148,-78 L172,-40 L146,-2 L168,36 L142,74 L170,112 L144,150 L172,188 L146,226 L168,264 L142,302 L170,340 L148,380 L314,380 L314,-380 Z"
+                    fill="#E4D7C2" stroke="#1E1813" stroke-width="20" stroke-linejoin="round"/>
+              <g stroke="#5C5248" stroke-width="5" opacity="0.4">
+                <path d="M196,-300 H284 M196,-236 H284 M196,-172 H284 M196,-108 H284 M196,-44 H284"/>
+              </g>
+              <path d="M196,60 q44,26 88,0" stroke="#C89D42" stroke-width="7" fill="none"/>
+              <circle cx="252" cy="150" r="26" fill="#C2593F" opacity="0.55"/>
+              <path d="M226,150 h52 M252,124 v52" stroke="#FAF7F0" stroke-width="6"/>
+            </g>
+
+            <path id="s02-folio-border" d="M-310,-380 L150,-380 L168,-344 L142,-306 L172,-268 L146,-230 L170,-192 L144,-154 L174,-116 L148,-78 L172,-40 L146,-2 L168,36 L142,74 L170,112 L144,150 L172,188 L146,226 L168,264 L142,302 L170,340 L148,380 L-310,380 Z"
+                  fill="none" stroke="#1E1813" stroke-width="20" stroke-linejoin="round"
+                  stroke-dasharray="2800" stroke-dashoffset="2800"/>
+
+            <g clip-path="url(#s02-folio-clip)">
+              <path d="M-310,-380 L150,-380 L168,-344 L142,-306 L172,-268 L146,-230 L170,-192 L144,-154 L174,-116 L148,-78 L172,-40 L146,-2 L168,36 L142,74 L170,112 L144,150 L172,188 L146,226 L168,264 L142,302 L170,340 L148,380 L-310,380 Z"
+                    fill="url(#s02-folio-fill)"/>
+              <rect x="-288" y="-358" width="470" height="716" fill="#F5EFEB" opacity="0.30"/>
+            </g>
+
+            <g id="s02-folio-rules" opacity="0">
+              <path d="M-282,-382 L-282,382" stroke="#FAF7F0" stroke-width="5" opacity="0.6"/>
+              <path d="M-270,-328 H118" stroke="#1E1813" stroke-width="12"/>
+              <path d="M-270,-310 H60" stroke="#C89D42" stroke-width="5"/>
+              <g stroke="#5C5248" stroke-width="6" opacity="0.45">
+                <path d="M-270,-252 H110 M-270,-206 H96 M-270,-160 H110 M-270,-114 H88 M-270,-68 H104"/>
+              </g>
+              <path d="M-290,300 L120,180" stroke="#5C5248" stroke-width="4" opacity="0.35"/>
+              <circle cx="-248" cy="300" r="24" fill="url(#s02-brass)" stroke="#1E1813" stroke-width="6"/>
+              <path d="M-260,300 a12,12 0 0 1 24,0" stroke="#FAF7F0" stroke-width="4" fill="none" opacity="0.7"/>
+            </g>
+
+            <g class="s02-glyph" id="s02-glyph-1" opacity="0">
+              <circle cx="-176" cy="-140" r="55" fill="url(#s02-glyph-glow)"/>
+              <circle cx="-176" cy="-140" r="48" fill="none" stroke="#C2593F" stroke-width="10"/>
+              <path d="M-176,-168 L-150,-120 L-202,-120 Z" fill="none" stroke="#C2593F" stroke-width="8" stroke-linejoin="round"/>
+              <circle cx="-176" cy="-140" r="7" fill="#C2593F"/>
+            </g>
+            <g class="s02-glyph" id="s02-glyph-2" opacity="0">
+              <circle cx="-22" cy="-208" r="40" fill="url(#s02-glyph-glow)"/>
+              <circle cx="-22" cy="-208" r="35" fill="none" stroke="#C2593F" stroke-width="10"/>
+              <rect x="-42" y="-228" width="40" height="40" fill="none" stroke="#C2593F" stroke-width="8"/>
+            </g>
+            <g class="s02-glyph" id="s02-glyph-3" opacity="0">
+              <circle cx="-196" cy="34" r="48" fill="url(#s02-glyph-glow)"/>
+              <circle cx="-196" cy="34" r="42" fill="none" stroke="#C2593F" stroke-width="10"/>
+              <path d="M-220,22 a26,26 0 1 0 46,20" fill="none" stroke="#C2593F" stroke-width="8" stroke-linecap="round"/>
+              <circle cx="-176" cy="30" r="6" fill="#C2593F"/>
+            </g>
+            <g class="s02-glyph" id="s02-glyph-4" opacity="0">
+              <circle cx="-28" cy="96" r="34" fill="url(#s02-glyph-glow)"/>
+              <circle cx="-28" cy="96" r="29" fill="none" stroke="#C2593F" stroke-width="9"/>
+              <path d="M-28,74 v44 M-50,96 h44" stroke="#C2593F" stroke-width="8"/>
+            </g>
+            <g class="s02-glyph" id="s02-glyph-5" opacity="0">
+              <circle cx="-168" cy="248" r="44" fill="url(#s02-glyph-glow)"/>
+              <circle cx="-168" cy="248" r="38" fill="none" stroke="#C2593F" stroke-width="10"/>
+              <path d="M-168,220 L-146,248 L-168,276 L-190,248 Z" fill="none" stroke="#C2593F" stroke-width="8" stroke-linejoin="round"/>
+            </g>
+
+            <path id="s02-perf" d="M126,-372 L126,372" stroke="#5C5248" stroke-width="8" stroke-dasharray="0 900" opacity="0.85"/>
+          </g>
+        </g>
+
+        <!-- torn fibres -->
+        <g id="s02-fibres" opacity="0">
+          <path id="s02-fibre-1" d="M604,520 l34,-12 l-8,26 Z" fill="#EAE0D0" stroke="#5C5248" stroke-width="4"/>
+          <path id="s02-fibre-2" d="M596,596 l-30,-18 l26,-6 Z" fill="#F5EFEB" stroke="#5C5248" stroke-width="4"/>
+          <path id="s02-fibre-3" d="M612,664 l28,10 l-24,14 Z" fill="#E4D7C2" stroke="#5C5248" stroke-width="4"/>
+        </g>
+
+        <!-- ============ THREE GLASSMASTER SILHOUETTES ============ -->
+        <g id="s02-figures" opacity="0">
+          <g transform="translate(660,884) scale(0.84)">
+            <g id="s02-fig-1" style="transform-box:fill-box;transform-origin:50% 100%">
+              <ellipse cx="0" cy="6" rx="88" ry="24" fill="#2B1F17" opacity="0.34" filter="url(#s02-blur-sm)"/>
+              <rect x="-38" y="-126" width="26" height="132" rx="13" fill="#1E1813"/>
+              <rect x="12" y="-126" width="26" height="132" rx="13" fill="#1E1813"/>
+              <rect x="-56" y="-306" width="112" height="200" rx="52" fill="#2B1F17" stroke="#1E1813" stroke-width="26"/>
+              <path d="M-72,-256 L-88,-166" stroke="#1E1813" stroke-width="26" stroke-linecap="round"/>
+              <path d="M72,-256 L88,-166" stroke="#1E1813" stroke-width="26" stroke-linecap="round"/>
+              <path d="M-64,-268 V-128" stroke="#B9A78C" stroke-width="4" opacity="0.42"/>
+              <path d="M64,-268 V-128" stroke="#B9A78C" stroke-width="4" opacity="0.42"/>
+              <g class="s02-shoulder" opacity="0">
+                <path d="M-86,-266 Q0,-312 86,-266" fill="none" stroke="#1E1813" stroke-width="26" stroke-linecap="round"/>
+                <path d="M-84,-270 Q0,-314 84,-270" fill="none" stroke="#EAE0D0" stroke-width="9" stroke-linecap="round"/>
+              </g>
+              <path class="s02-apron" d="M-50,-252 L50,-252 L60,-104 L-60,-104 Z" fill="#EAE0D0" stroke="#1E1813" stroke-width="12" stroke-linejoin="round"
+                    opacity="0"/>
+              <path d="M-30,-232 V-118 M30,-232 V-118" stroke="#5C5248" stroke-width="5" opacity="0.6"/>
+              <g class="s02-head" opacity="0">
+                <circle cx="0" cy="-354" r="26" fill="#1E1813"/>
+                <path d="M-14,-368 a22,22 0 0 1 26,-2" fill="none" stroke="#FAF7F0" stroke-width="8" stroke-linecap="round"/>
+              </g>
+            </g>
+          </g>
+          <g transform="translate(762,900) scale(0.92)">
+            <g id="s02-fig-2" style="transform-box:fill-box;transform-origin:50% 100%">
+              <ellipse cx="0" cy="6" rx="88" ry="24" fill="#2B1F17" opacity="0.34" filter="url(#s02-blur-sm)"/>
+              <rect x="-38" y="-126" width="26" height="132" rx="13" fill="#1E1813"/>
+              <rect x="12" y="-126" width="26" height="132" rx="13" fill="#1E1813"/>
+              <rect x="-56" y="-306" width="112" height="200" rx="52" fill="#2B1F17" stroke="#1E1813" stroke-width="26"/>
+              <path d="M-72,-256 L-88,-166" stroke="#1E1813" stroke-width="26" stroke-linecap="round"/>
+              <path d="M72,-256 L88,-166" stroke="#1E1813" stroke-width="26" stroke-linecap="round"/>
+              <path d="M-64,-268 V-128" stroke="#B9A78C" stroke-width="4" opacity="0.42"/>
+              <path d="M64,-268 V-128" stroke="#B9A78C" stroke-width="4" opacity="0.42"/>
+              <g class="s02-shoulder" opacity="0">
+                <path d="M-86,-266 Q0,-312 86,-266" fill="none" stroke="#1E1813" stroke-width="26" stroke-linecap="round"/>
+                <path d="M-84,-270 Q0,-314 84,-270" fill="none" stroke="#EAE0D0" stroke-width="9" stroke-linecap="round"/>
+              </g>
+              <path class="s02-apron" d="M-50,-252 L50,-252 L60,-104 L-60,-104 Z" fill="#EAE0D0" stroke="#1E1813" stroke-width="12" stroke-linejoin="round"
+                    opacity="0"/>
+              <path d="M-30,-232 V-118 M30,-232 V-118" stroke="#5C5248" stroke-width="5" opacity="0.6"/>
+              <g class="s02-head" opacity="0">
+                <circle cx="0" cy="-354" r="26" fill="#1E1813"/>
+                <path d="M-14,-368 a22,22 0 0 1 26,-2" fill="none" stroke="#FAF7F0" stroke-width="8" stroke-linecap="round"/>
+              </g>
+            </g>
+          </g>
+          <g transform="translate(866,918)">
+            <g id="s02-fig-3" style="transform-box:fill-box;transform-origin:50% 100%">
+              <ellipse cx="0" cy="6" rx="90" ry="25" fill="#2B1F17" opacity="0.36" filter="url(#s02-blur-sm)"/>
+              <rect x="-38" y="-126" width="26" height="132" rx="13" fill="#1E1813"/>
+              <rect x="12" y="-126" width="26" height="132" rx="13" fill="#1E1813"/>
+              <rect x="-56" y="-306" width="112" height="200" rx="52" fill="#2B1F17" stroke="#1E1813" stroke-width="26"/>
+              <path d="M-72,-256 L-88,-166" stroke="#1E1813" stroke-width="26" stroke-linecap="round"/>
+              <path d="M72,-256 L88,-166" stroke="#1E1813" stroke-width="26" stroke-linecap="round"/>
+              <path d="M-64,-268 V-128" stroke="#B9A78C" stroke-width="4" opacity="0.42"/>
+              <path d="M64,-268 V-128" stroke="#B9A78C" stroke-width="4" opacity="0.42"/>
+              <g class="s02-shoulder" opacity="0">
+                <path d="M-86,-266 Q0,-312 86,-266" fill="none" stroke="#1E1813" stroke-width="26" stroke-linecap="round"/>
+                <path d="M-84,-270 Q0,-314 84,-270" fill="none" stroke="#EAE0D0" stroke-width="9" stroke-linecap="round"/>
+              </g>
+              <path class="s02-apron" d="M-50,-252 L50,-252 L60,-104 L-60,-104 Z" fill="#EAE0D0" stroke="#1E1813" stroke-width="12" stroke-linejoin="round"
+                    opacity="0"/>
+              <path d="M-30,-232 V-118 M30,-232 V-118" stroke="#5C5248" stroke-width="5" opacity="0.6"/>
+              <g class="s02-head" opacity="0">
+                <circle cx="0" cy="-354" r="26" fill="#1E1813"/>
+                <path d="M-14,-368 a22,22 0 0 1 26,-2" fill="none" stroke="#FAF7F0" stroke-width="8" stroke-linecap="round"/>
+              </g>
+            </g>
+          </g>
+        </g>
+
+        <!-- the lead glassmaster raises the blowpipe; gather anchors the route -->
+        <g id="s02-pipe" opacity="0">
+          <circle cx="1120" cy="700" r="38" fill="url(#s02-glyph-glow)" opacity="0.65"/>
+          <path id="s02-pipe-shaft" d="M900,762 L1120,700" fill="none" stroke="#2B1F17" stroke-width="6" stroke-linecap="round"
+                stroke-dasharray="230" stroke-dashoffset="230"/>
+          <path id="s02-pipe-hi" d="M912,755 L1114,697" fill="none" stroke="#8A7A63" stroke-width="2" opacity="0.6"
+                stroke-dasharray="208" stroke-dashoffset="208"/>
+          <circle cx="1120" cy="700" r="22" fill="#D9822B" stroke="#8A4A14" stroke-width="4"/>
+          <circle cx="1120" cy="700" r="9" fill="#FFC86B" opacity="0.85"/>
+          <path d="M1106,690 a18,18 0 0 1 26,2" fill="none" stroke="#FAF7F0" stroke-width="6" stroke-linecap="round"/>
+        </g>
+
+        <!-- ============ TERRACOTTA ROUTE ARROW + PARIS PIN ============ -->
+        <g id="s02-route">
+          <path id="s02-route-glow" d="M1120,700 Q1400,520 1678,285" fill="none" stroke="#D9822B" stroke-width="30" opacity="0.22" filter="url(#s02-blur-sm)"
+                stroke-dasharray="900" stroke-dashoffset="900"/>
+          <path id="s02-route-line" d="M1120,700 Q1400,520 1678,285" fill="none" stroke="#C2593F" stroke-width="14" stroke-linecap="round"
+                stroke-dasharray="900" stroke-dashoffset="900"/>
+          <path id="s02-route-hi" d="M1117,695 Q1397,515 1675,280" fill="none" stroke="#F2D68E" stroke-width="5" stroke-linecap="round"
+                stroke-dasharray="900" stroke-dashoffset="900" opacity="0.9"/>
+          <g transform="translate(1678,285) rotate(-40.2)">
+            <g id="s02-arrowhead" opacity="0" transform="scale(0)">
+              <path d="M0,0 L-54,-26 L-54,26 Z" fill="#C2593F" stroke="#8E3524" stroke-width="5" stroke-linejoin="round"/>
+              <path d="M-8,-3 L-44,-16" stroke="#F2D68E" stroke-width="4" opacity="0.8"/>
+            </g>
+          </g>
+          <g class="s02-shock" id="s02-shock-1" opacity="0" transform="translate(1720,250) scale(0.55) translate(-1720,-250)"><circle cx="1720" cy="250" r="44" fill="none" stroke="#C2593F" stroke-width="4"/></g>
+          <g class="s02-shock" id="s02-shock-2" opacity="0" transform="translate(1720,250) scale(0.55) translate(-1720,-250)"><circle cx="1720" cy="250" r="58" fill="none" stroke="#C89D42" stroke-width="3"/></g>
+          <g class="s02-shock" id="s02-shock-3" opacity="0" transform="translate(1720,250) scale(0.55) translate(-1720,-250)"><circle cx="1720" cy="250" r="72" fill="none" stroke="#C2593F" stroke-width="2"/></g>
+          <g id="s02-pin" transform="translate(1720,250) scale(0) translate(-1720,-250)">
+            <ellipse cx="1720" cy="402" rx="64" ry="16" fill="#2B1F17" opacity="0.3" filter="url(#s02-blur-sm)"/>
+            <path d="M1720,284 V354" stroke="#1E1813" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="1720" cy="250" r="50" fill="#D9822B" opacity="0.16" filter="url(#s02-blur-sm)"/>
+            <circle cx="1720" cy="250" r="30" fill="url(#s02-brass)" stroke="#1E1813" stroke-width="10"/>
+            <circle cx="1720" cy="250" r="12" fill="#2B1F17"/>
+            <circle cx="1720" cy="250" r="4" fill="#FAF7F0" opacity="0.45"/>
+            <path d="M1702,234 a24,24 0 0 1 28,-5" fill="none" stroke="#FAF7F0" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="1720" cy="354" r="5" fill="#C89D42" stroke="#1E1813" stroke-width="3"/>
+            <rect x="1664" y="354" width="112" height="40" rx="5" fill="#EAE0D0" stroke="#1E1813" stroke-width="5"/>
+            <path d="M1678,370 H1762" stroke="#C89D42" stroke-width="3" opacity="0.85"/>
+            <path d="M1678,366 H1762 M1678,378 H1744" stroke="#5C5248" stroke-width="4" opacity="0.6"/>
+          </g>
+        </g>
+
+        <!-- ============ BRASS QUESTION BADGE ============ -->
+        <g id="s02-badge" opacity="0.35" style="transform-box:fill-box;transform-origin:50% 50%;transform:scale(0.72)">
+          <circle cx="200" cy="180" r="72" fill="#2B1F17" opacity="0.22" filter="url(#s02-blur-sm)" transform="translate(6,10)"/>
+          <circle cx="200" cy="180" r="70" fill="#F5EFEB" stroke="#1E1813" stroke-width="12"/>
+          <circle cx="200" cy="180" r="58" fill="none" stroke="#C89D42" stroke-width="4" opacity="0.7"/>
+          <path id="s02-q-arc-1" d="M148,196 A54,54 0 0 1 252,164" fill="none" stroke="url(#s02-brass-h)" stroke-width="14" stroke-linecap="round"
+                stroke-dasharray="220" stroke-dashoffset="220"/>
+          <path id="s02-q-arc-2" d="M144,164 A60,60 0 0 1 206,118" fill="none" stroke="#C89D42" stroke-width="10" stroke-linecap="round"
+                stroke-dasharray="180" stroke-dashoffset="180"/>
+          <path id="s02-q-hook" d="M200,196 q0,20 0,24" stroke="#C2593F" stroke-width="12" stroke-linecap="round"
+                stroke-dasharray="30" stroke-dashoffset="30"/>
+          <circle id="s02-q-dot" cx="200" cy="240" r="9" fill="#C2593F" style="transform-box:fill-box;transform-origin:50% 50%;transform:scale(0)"/>
+        </g>
+
+        <g fill="#FAF7F0" opacity="0.7">
+          <circle class="s02-mote" cx="520" cy="300" r="4"/>
+          <circle class="s02-mote" cx="640" cy="210" r="3"/>
+          <circle class="s02-mote" cx="740" cy="360" r="5"/>
+          <circle class="s02-mote" cx="980" cy="300" r="3"/>
+          <circle class="s02-mote" cx="900" cy="700" r="4"/>
+          <circle class="s02-mote" cx="1040" cy="820" r="3"/>
+          <circle class="s02-mote" cx="330" cy="840" r="4"/>
+        </g>
+
+        <rect x="0" y="0" width="1920" height="1080" filter="url(#s02-grain)" opacity="0.05" style="mix-blend-mode:multiply"/>
+      </svg>
+    </div>
+
+    <!-- PLANE FG · depth 1.08 · torn folio corner -->
+    <div class="s02-plane s02-p-fg" id="s02-plane-fg">
+      <svg class="s02-art" id="s02-art-fg" viewBox="0 0 1920 1080" aria-hidden="true">
+        <defs>
+          <filter id="s02-fg-shadow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="16"/>
+          </filter>
+        </defs>
+        <g id="s02-fg-corner">
+          <path d="M-40,928 L52,946 L96,918 L148,962 L186,934 L232,978 L280,950 L330,996 L376,972 L424,1020 L470,1000 L520,1080 L-40,1080 Z"
+                fill="#2B1F17" opacity="0.34" filter="url(#s02-fg-shadow)" transform="translate(10,18)"/>
+          <path d="M-40,912 L52,930 L96,902 L148,946 L186,918 L232,962 L280,934 L330,980 L376,956 L424,1004 L470,984 L520,1080 L-40,1080 Z"
+                fill="#EAE0D0" stroke="#1E1813" stroke-width="16" stroke-linejoin="round"/>
+          <g stroke="#5C5248" stroke-width="5" opacity="0.42">
+            <path d="M-20,972 L300,1062 M20,942 L360,1042 M120,930 L440,1020"/>
+          </g>
+          <path d="M-40,912 L52,930 L96,902 L148,946 L186,918 L232,962 L280,934 L330,980 L376,956 L424,1004 L470,984"
+                fill="none" stroke="#FAF7F0" stroke-width="5" opacity="0.7"/>
+          <path d="M6,930 L60,948 L104,920" fill="none" stroke="#C89D42" stroke-width="5" opacity="0.55"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="s02-tag" id="s02-tag">
+      <span class="s02-tag-dot"></span>
+      <span class="s02-tag-text">TALENT RAID</span>
+    </div>
+    <div class="s02-tag-rule" id="s02-tag-rule"></div>
+  </div>
+</div>
+
+<script>
+(function initS02(){
+  var ID = "s02-bought-people";
+  var root = document.querySelector('[data-composition-id="' + ID + '"]');
+  var tl = gsap.timeline({ paused: true });
+
+  // ── SLOT GUARD ────────────────────────────────────────────────────────────
+  tl.to({}, { duration: 17.183 }, 0);
+
+  // ── BG plane · 0.98 parallax ─────────────────────────────────────────────
+  tl.fromTo("#s02-plane-bg", { scale: 1.04, x: -18, transformOrigin: "50% 48%" },
+            { scale: 1.0, x: 0, duration: 16.8, ease: "sine.out" }, 0.10);
+  tl.to("#s02-plane-bg", { y: -14, duration: 16.8, ease: "sine.inOut" }, 0.10);
+
+  // ── PHASE 1 (0–3s): the folio rips down; brass question badge forms ──────
+  tl.fromTo("#s02-reveal-rect", { attr: { height: 0 } },
+            { attr: { height: 1160 }, duration: 1.28, ease: "power3.inOut" }, 0.18);
+  tl.fromTo("#s02-panel-plate", { y: -70 }, { y: 0, duration: 1.6, ease: "power2.out" }, 0.18);
+
+  tl.fromTo("#s02-lip-vel", { attr: { "stroke-dashoffset": 1180 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 1.20, ease: "power2.inOut" }, 0.20);
+  tl.fromTo("#s02-lip-ink", { attr: { "stroke-dashoffset": 1180 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 1.20, ease: "power2.inOut" }, 0.24);
+  tl.fromTo("#s02-lip-brass", { attr: { "stroke-dashoffset": 1180 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 1.24, ease: "power2.inOut" }, 0.34);
+
+  tl.fromTo("#s02-badge", { scale: 0.72, y: 18, opacity: 0.35 },
+            { scale: 1, y: 0, opacity: 1, duration: 0.55, ease: "back.out(1.9)" }, 0.30);
+  tl.fromTo("#s02-q-arc-1", { attr: { "stroke-dashoffset": 220 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 0.85, ease: "power2.out" }, 0.52);
+  tl.fromTo("#s02-q-arc-2", { attr: { "stroke-dashoffset": 180 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 0.75, ease: "power2.out" }, 0.90);
+  tl.fromTo("#s02-q-hook", { attr: { "stroke-dashoffset": 30 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 0.32, ease: "power2.out" }, 1.70);
+  tl.fromTo("#s02-q-dot", { scale: 0 }, { scale: 1, duration: 0.34, ease: "back.out(3)" }, 1.96);
+  tl.to("#s02-badge", { y: -5, duration: 2.4, ease: "sine.inOut", yoyo: true, repeat: 5 }, 2.60);
+
+  // ── PHASE 2 (3–7s): formula folio draws, glyphs bloom, paper tears ───────
+  tl.fromTo("#s02-folio-border", { attr: { "stroke-dashoffset": 2800 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 1.05, ease: "power2.inOut" }, 3.05);
+  tl.fromTo("#s02-folio-fill-rect", { attr: { y: 396, height: 0 } },
+            { attr: { y: -386, height: 782 }, duration: 1.05, ease: "power2.out" }, 3.42);
+  tl.set("#s02-folio-rules", { opacity: 1 }, 4.10);
+  tl.set("#s02-folio-flap", { opacity: 1 }, 4.42);
+
+  var glyphs = ["#s02-glyph-1","#s02-glyph-2","#s02-glyph-3","#s02-glyph-4","#s02-glyph-5"];
+  glyphs.forEach(function(g, i){
+    tl.fromTo(g, { scale: 0.16, rotation: -76, opacity: 0 },
+                 { scale: 1, rotation: 0, opacity: 1, duration: 0.72, ease: "back.out(2.4)" }, 4.02 + i * 0.34);
+    tl.to(g + " circle:first-child", { opacity: 0.55, duration: 1.6, ease: "sine.inOut", yoyo: true, repeat: 4 }, 4.10 + i * 0.34);
+  });
+
+  tl.fromTo("#s02-perf", { attr: { "stroke-dasharray": "0 900" } },
+            { attr: { "stroke-dasharray": "6 16" }, duration: 0.55, ease: "none" }, 5.02);
+
+  tl.to("#s02-folio", { x: 12, rotation: -1.3, duration: 0.6, ease: "power2.out", transformOrigin: "50% 60%" }, 5.72);
+  tl.set("#s02-crack", { opacity: 0.9 }, 5.78);
+  tl.to("#s02-folio-flap", { rotation: 17, x: 30, y: 6, duration: 0.86, ease: "power3.out" }, 5.80);
+  tl.to("#s02-folio-flap", { rotation: 14.5, duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: 3 }, 6.72);
+  tl.set("#s02-fibres", { opacity: 1 }, 5.80);
+  tl.fromTo("#s02-fibre-1", { x: 0, y: 0, rotation: 0, opacity: 1 }, { x: 84, y: -54, rotation: 42, opacity: 0, duration: 0.9, ease: "power2.out" }, 5.82);
+  tl.fromTo("#s02-fibre-2", { x: 0, y: 0, rotation: 0, opacity: 1 }, { x: -54, y: -40, rotation: -36, opacity: 0, duration: 0.82, ease: "power2.out" }, 5.90);
+  tl.fromTo("#s02-fibre-3", { x: 0, y: 0, rotation: 0, opacity: 1 }, { x: 66, y: 40, rotation: 30, opacity: 0, duration: 0.86, ease: "power2.out" }, 5.98);
+
+  // ── PHASE 3 (7–12s): glassmasters socket and step out of the tear ────────
+  tl.set("#s02-figures", { opacity: 1 }, 6.82);
+  var figs = [["#s02-fig-1", 7.05], ["#s02-fig-2", 7.55], ["#s02-fig-3", 8.05]];
+  figs.forEach(function(f){
+    var fig = f[0], t0 = f[1];
+    // CSS transforms with transform-box:fill-box — reliable on nested SVG groups
+    tl.fromTo(fig + " .s02-head", { scale: 0, opacity: 0 },
+              { scale: 1, opacity: 1, duration: 0.42, ease: "back.out(3)" }, t0);
+    tl.fromTo(fig + " .s02-shoulder", { scale: 0, opacity: 0 },
+              { scale: 1, opacity: 1, duration: 0.40, ease: "back.out(3)" }, t0 + 0.12);
+    tl.fromTo(fig + " .s02-apron", { scaleY: 0, opacity: 0 },
+              { scaleY: 1, opacity: 1, duration: 0.46, ease: "power3.out" }, t0 + 0.24);
+    tl.fromTo(fig + " ellipse:first-child", { opacity: 0.55 },
+              { opacity: 0.36, duration: 0.5, ease: "power2.out" }, t0);
+  });
+
+  tl.to("#s02-fig-1", { x: 96, rotation: 2, transformOrigin: "50% 100%", duration: 1.9, ease: "power2.inOut" }, 9.00);
+  tl.to("#s02-fig-2", { x: 96, rotation: 2, transformOrigin: "50% 100%", duration: 1.9, ease: "power2.inOut" }, 9.16);
+  tl.to("#s02-fig-3", { x: 96, rotation: 2, transformOrigin: "50% 100%", duration: 1.9, ease: "power2.inOut" }, 9.32);
+  tl.to("#s02-fig-1", { y: -3, duration: 1.15, ease: "sine.inOut", yoyo: true, repeat: 4 }, 11.0);
+  tl.to("#s02-fig-2", { y: -4, duration: 1.1, ease: "sine.inOut", yoyo: true, repeat: 4 }, 11.2);
+  tl.to("#s02-fig-3", { y: -3, duration: 1.05, ease: "sine.inOut", yoyo: true, repeat: 4 }, 11.4);
+
+  // the lead glassmaster lifts the blowpipe once the trio has settled
+  tl.to("#s02-pipe", { opacity: 1, duration: 0.26, ease: "sine.out" }, 11.22);
+  tl.fromTo("#s02-pipe-shaft", { attr: { "stroke-dashoffset": 230 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 0.50, ease: "power2.out" }, 11.22);
+  tl.fromTo("#s02-pipe-hi", { attr: { "stroke-dashoffset": 208 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 0.45, ease: "power2.out" }, 11.36);
+
+  // ── PHASE 4 (12–17.18s): route fires to the Paris pin; document is read ──
+  tl.fromTo("#s02-route-line", { attr: { "stroke-dashoffset": 900 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 1.42, ease: "power2.inOut" }, 12.05);
+  tl.fromTo("#s02-route-hi", { attr: { "stroke-dashoffset": 900 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 1.36, ease: "power2.inOut" }, 12.16);
+  tl.fromTo("#s02-route-glow", { attr: { "stroke-dashoffset": 900 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 1.42, ease: "power2.inOut" }, 12.18);
+  tl.fromTo("#s02-arrowhead", { attr: { transform: "scale(0)" }, opacity: 0 },
+            { attr: { transform: "scale(1)" }, opacity: 1, duration: 0.42, ease: "back.out(2.4)" }, 13.20);
+
+  tl.fromTo("#s02-pin",
+            { attr: { transform: "translate(1720,250) scale(0) translate(-1720,-250)" } },
+            { attr: { transform: "translate(1720,250) scale(1) translate(-1720,-250)" }, duration: 0.58, ease: "back.out(2.6)" }, 12.55);
+  [["#s02-shock-1", 12.55, 0.55], ["#s02-shock-2", 12.62, 0.38], ["#s02-shock-3", 12.69, 0.26]].forEach(function(s){
+    tl.fromTo(s[0], { attr: { transform: "translate(1720,250) scale(0.55) translate(-1720,-250)" }, opacity: 0 },
+              { attr: { transform: "translate(1720,250) scale(1) translate(-1720,-250)" }, opacity: s[2], duration: 0.55, ease: "back.out(2.2)" }, s[1]);
+  });
+
+  tl.to("#s02-sweep", { attr: { y: 980 }, opacity: 0.9, duration: 1.9, ease: "sine.inOut" }, 14.25);
+  tl.to("#s02-sweep", { opacity: 0, duration: 0.5, ease: "sine.out" }, 16.0);
+  tl.to("#s02-route-line", { opacity: 0.65, duration: 1.1, ease: "sine.inOut", yoyo: true, repeat: 1 }, 14.6);
+
+  // ── living hold ──────────────────────────────────────────────────────────
+  tl.fromTo("#s02-stage", { scale: 1.0, y: 0 }, { scale: 1.03, y: -10, duration: 17.0, ease: "sine.inOut", transformOrigin: "50% 52%" }, 0.15);
+  tl.fromTo(".s02-mote", { y: 0, x: 0 }, { y: -44, x: 14, duration: 4.2, ease: "sine.inOut", yoyo: true, repeat: 2, stagger: 0.18 }, 1.2);
+
+  // ── TAG ───────────────────────────────────────────────────────────────────
+  tl.fromTo("#s02-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -12 },
+            { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.64, ease: "power3.inOut" }, 2.05);
+  tl.fromTo("#s02-tag-rule", { width: 0 }, { width: 288, duration: 0.55, ease: "power2.out" }, 2.42);
+
+  // ── SEAM 17.0s: torn edge peels right, ruled ledger revealed ─────────────
+  tl.to("#s02-tag", { clipPath: "inset(0% 0% 0% 100%)", x: -8, duration: 0.28, ease: "power2.in" }, 16.90);
+  tl.to("#s02-tag-rule", { width: 0, duration: 0.27, ease: "power2.in" }, 16.90);
+  tl.to("#s02-panel-plate", { x: 830, rotation: 4.2, duration: 0.18, ease: "power2.in", transformOrigin: "0% 50%" }, 17.00);
+  tl.to("#s02-tear-lip", { x: 830, rotation: 2.6, duration: 0.18, ease: "power2.in", transformOrigin: "50% 50%" }, 17.00);
+  tl.to("#s02-folio", { x: 24, duration: 0.17, ease: "power2.in" }, 17.0);
+  tl.to("#s02-figures", { x: 18, duration: 0.17, ease: "power2.in" }, 17.0);
+  tl.to("#s02-stage", { x: 20, duration: 0.17, ease: "power2.in" }, 17.0);
+  tl.to("#s02-badge", { x: -10, duration: 0.17, ease: "power2.in" }, 17.0);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

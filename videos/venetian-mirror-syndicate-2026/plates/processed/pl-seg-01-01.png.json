@@ -1,0 +1,35 @@
+{
+  "asset_id": "pl-seg-01-01",
+  "source_url": "https://en.chateauversailles.fr/discover/estate/palace/hall-mirrors",
+  "publication_date": "2026-11-12",
+  "width": 1400,
+  "height": 1000,
+  "scale_factor": 1.0,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": [
+    {
+      "phrase": "whole length of the Hall of Mirrors (73m)",
+      "x": 547,
+      "y": 350,
+      "w": 366,
+      "h": 19
+    },
+    {
+      "phrase": "17 windows and 17 mirrored arcades",
+      "x": 670,
+      "y": -585,
+      "w": 300,
+      "h": 27
+    },
+    {
+      "phrase": "357 mirrors bedecking the 17 arches",
+      "x": 373,
+      "y": 606,
+      "w": 400,
+      "h": 19
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s12-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s12-before-dawn"] .s12-stage{position:absolute;inset:0;transform-origin:44% 48%;}
+[data-composition-id="s12-before-dawn"] .s12-ground{position:absolute;inset:0;background:
+  radial-gradient(44% 38% at 22% 16%, rgba(255,236,196,0.55) 0%, rgba(255,236,196,0) 70%),
+  radial-gradient(130% 104% at 52% 40%, #FCF6E8 0%, #F6EAD2 34%, #EBD8B8 66%, #D9BE97 100%);}
+[data-composition-id="s12-before-dawn"] .s12-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="s12-before-dawn"] .s12-p-bg{z-index:1;}
+[data-composition-id="s12-before-dawn"] .s12-p-mg{z-index:2;}
+[data-composition-id="s12-before-dawn"] .s12-p-fg{z-index:4;}
+[data-composition-id="s12-before-dawn"] .s12-grain{position:absolute;inset:0;z-index:6;pointer-events:none;
+  background-image:radial-gradient(rgba(43,31,23,0.55) 0.4px, transparent 0.5px);background-size:3px 3px;
+  opacity:0.10;mix-blend-mode:multiply;}
+[data-composition-id="s12-before-dawn"] .s12-vignette{position:absolute;inset:0;z-index:7;pointer-events:none;
+  background:
+    linear-gradient(to top, rgba(43,31,23,0.28) 0%, rgba(43,31,23,0.05) 13%, rgba(43,31,23,0) 30%),
+    linear-gradient(to right, rgba(43,31,23,0.20) 0%, rgba(43,31,23,0.03) 16%, rgba(43,31,23,0) 34%),
+    radial-gradient(116% 96% at 50% 46%, rgba(43,31,23,0) 54%, rgba(43,31,23,0.24) 100%);}
+[data-composition-id="s12-before-dawn"] .s12-tag{position:absolute;left:86px;top:92px;z-index:8;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;background:linear-gradient(180deg,#FDFAF4 0%,#F1E7D6 100%);
+  box-shadow:0 12px 30px rgba(43,31,23,0.26),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s12-before-dawn"] .s12-tag-dot{width:15px;height:15px;border-radius:50%;background:#C2593F;
+  box-shadow:0 0 0 5px rgba(194,89,63,0.20),inset 0 0 0 3px #A8462F;}
+[data-composition-id="s12-before-dawn"] .s12-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.14em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s12-before-dawn"] .s12-rule{position:absolute;left:86px;top:158px;height:5px;width:0;z-index:8;background:#C2593F;border-radius:4px;
+  box-shadow:0 2px 6px rgba(43,31,23,0.25);}
+[data-composition-id="s12-before-dawn"] .s12-mote{transform-box:fill-box;transform-origin:50% 50%;}
+[data-composition-id="s12-before-dawn"] #s12-rose,
+[data-composition-id="s12-before-dawn"] #s12-trees,
+[data-composition-id="s12-before-dawn"] .s12-wp,
+[data-composition-id="s12-before-dawn"] #s12-sweepneedle,
+[data-composition-id="s12-before-dawn"] #s12-needle,
+[data-composition-id="s12-before-dawn"] #s12-disc,
+[data-composition-id="s12-before-dawn"] #s12-wheelA,
+[data-composition-id="s12-before-dawn"] #s12-wheelB{transform-box:fill-box;transform-origin:50% 50%;}
+</style>
+
+<div id="root" data-composition-id="s12-before-dawn" data-width="1920" data-height="1080" data-start="0" data-duration="18.588">
+  <div class="s12-stage" id="s12-stage">
+    <div class="s12-ground"></div>
+
+    <!-- BG · gallery wall, cornice, shelf -->
+    <svg class="s12-plane s12-p-bg" id="s12-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <pattern id="s12-damask" width="132" height="166" patternUnits="userSpaceOnUse">
+          <g fill="none" stroke="#6E5338" stroke-width="3" opacity="0.55">
+            <path d="M66,12 C92,50 92,72 66,108 C40,72 40,50 66,12 Z"/>
+            <path d="M66,108 C82,130 82,146 66,164 C50,146 50,130 66,108 Z"/>
+            <path d="M0,84 C16,66 34,66 34,84 C34,102 16,102 0,84 Z"/>
+            <path d="M132,84 C116,66 98,66 98,84 C98,102 116,102 132,84 Z"/>
+          </g>
+        </pattern>
+        <linearGradient id="s12-wall" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F9EEDA"/><stop offset="0.5" stop-color="#F3E3C6"/><stop offset="1" stop-color="#E4CEA9"/>
+        </linearGradient>
+        <linearGradient id="s12-shelf" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#C9A87C"/><stop offset="0.4" stop-color="#A6815A"/><stop offset="1" stop-color="#6E5338"/>
+        </linearGradient>
+        <filter id="s12-bblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="30"/></filter>
+        <filter id="s12-grain" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="17" result="n"/>
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0.5 0"/>
+        </filter>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s12-wall)"/>
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s12-damask)" opacity="0.05"/>
+      <g id="s12-cornice">
+        <rect x="-20" y="-4" width="1960" height="42" fill="#4A3524"/>
+        <rect x="-20" y="38" width="1960" height="8" fill="#2B1F17" opacity="0.5"/>
+        <rect x="-20" y="6" width="1960" height="4" fill="#C89D42" opacity="0.3"/>
+        <g fill="#C89D42" opacity="0.32">
+          <circle cx="140" cy="22" r="5"/><circle cx="460" cy="22" r="5"/><circle cx="780" cy="22" r="5"/>
+          <circle cx="1100" cy="22" r="5"/><circle cx="1420" cy="22" r="5"/><circle cx="1740" cy="22" r="5"/>
+        </g>
+      </g>
+      <g id="s12-shelf">
+        <rect x="-20" y="906" width="1960" height="26" fill="url(#s12-shelf)"/>
+        <rect x="-20" y="932" width="1960" height="12" fill="#2B1F17" opacity="0.35"/>
+        <rect x="-20" y="896" width="1960" height="10" fill="#FFF0CE" opacity="0.28"/>
+      </g>
+      <ellipse cx="960" cy="1050" rx="1000" ry="160" fill="#2B1F17" opacity="0.18" filter="url(#s12-bblur)"/>
+      <rect x="0" y="0" width="1920" height="1080" filter="url(#s12-grain)" opacity="0.055" style="mix-blend-mode:multiply"/>
+
+      <g fill="#FFF3D8" opacity="0.42">
+        <circle class="s12-mote" cx="520" cy="330" r="4"/><circle class="s12-mote" cx="1180" cy="250" r="4"/>
+        <circle class="s12-mote" cx="1520" cy="420" r="3"/><circle class="s12-mote" cx="300" cy="620" r="3"/>
+        <circle class="s12-mote" cx="1700" cy="820" r="4"/>
+      </g>
+    </svg>
+
+    <!-- MG · the framed flight, the compass, the rolled map -->
+    <svg class="s12-plane s12-p-mg" id="s12-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s12-gilt" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.18" stop-color="#E6BF6A"/><stop offset="0.4" stop-color="#C89D42"/>
+          <stop offset="0.58" stop-color="#9E742A"/><stop offset="0.78" stop-color="#D9AE56"/><stop offset="1" stop-color="#7E5A1C"/>
+        </linearGradient>
+        <linearGradient id="s12-printsky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FBEBC8"/><stop offset="0.45" stop-color="#F6DCAE"/><stop offset="0.72" stop-color="#EFC489"/>
+          <stop offset="1" stop-color="#E4AE6C"/>
+        </linearGradient>
+        <linearGradient id="s12-hill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#9A7A54"/><stop offset="1" stop-color="#C3A176"/>
+        </linearGradient>
+        <linearGradient id="s12-hill2" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#7C5C3E"/><stop offset="1" stop-color="#A6815A"/>
+        </linearGradient>
+        <linearGradient id="s12-road" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#E8D2AC"/><stop offset="1" stop-color="#C9A87C"/>
+        </linearGradient>
+        <linearGradient id="s12-paper" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#FDF8EA"/><stop offset="0.6" stop-color="#F6EBD3"/><stop offset="1" stop-color="#E7D5B6"/>
+        </linearGradient>
+        <radialGradient id="s12-dial" cx="42%" cy="34%" r="70%">
+          <stop offset="0" stop-color="#FDF7E6"/><stop offset="0.6" stop-color="#F2E5C9"/><stop offset="1" stop-color="#DCC5A0"/>
+        </radialGradient>
+        <linearGradient id="s12-needleN" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#DE8262"/><stop offset="0.5" stop-color="#C2593F"/><stop offset="1" stop-color="#8E3524"/>
+        </linearGradient>
+        <linearGradient id="s12-brass" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.42" stop-color="#C89D42"/><stop offset="0.72" stop-color="#9E742A"/><stop offset="1" stop-color="#D9AE56"/>
+        </linearGradient>
+        <filter id="s12-mblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="20"/></filter>
+        <filter id="s12-msoft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+        <filter id="s12-msoft3" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+        <filter id="s12-frameshadow" x="-10%" y="-10%" width="130%" height="130%">
+          <feDropShadow dx="20" dy="30" stdDeviation="24" flood-color="#2B1F17" flood-opacity="0.42"/>
+        </filter>
+        <clipPath id="s12-printclip"><rect id="s12-printrect" x="260" y="250" width="930" height="0"/></clipPath>
+        <clipPath id="s12-mgclip"><rect x="0" y="0" width="1920" height="1080"/></clipPath>
+      </defs>
+
+      <!-- the framed print -->
+      <g id="s12-frame" filter="url(#s12-frameshadow)">
+        <rect x="200" y="190" width="1050" height="640" fill="url(#s12-gilt)" stroke="#1E1813" stroke-width="8"/>
+        <rect x="234" y="224" width="982" height="572" fill="none" stroke="#7E5A1C" stroke-width="4" opacity="0.8"/>
+        <rect x="244" y="234" width="962" height="552" fill="none" stroke="#FCEBB8" stroke-width="4" opacity="0.55"/>
+        <rect x="252" y="242" width="946" height="536" fill="#2B1F17" opacity="0.5"/>
+        <g fill="url(#s12-gilt)" stroke="#7E5A1C" stroke-width="4">
+          <rect x="214" y="204" width="34" height="34" transform="rotate(45 231 221)"/>
+          <rect x="1202" y="204" width="34" height="34" transform="rotate(45 1219 221)"/>
+          <rect x="214" y="782" width="34" height="34" transform="rotate(45 231 799)"/>
+          <rect x="1202" y="782" width="34" height="34" transform="rotate(45 1219 799)"/>
+        </g>
+        <rect x="260" y="250" width="930" height="520" fill="url(#s12-paper)"/>
+        <g clip-path="url(#s12-printclip)">
+          <rect x="260" y="250" width="930" height="520" fill="url(#s12-printsky)"/>
+          <circle cx="742" cy="646" r="118" fill="#FFE2A6" opacity="0.55"/>
+          <circle cx="742" cy="646" r="66" fill="#FFD98E" opacity="0.85"/>
+          <g fill="#F6D9AC" opacity="0.55">
+            <rect x="260" y="520" width="930" height="22"/><rect x="260" y="560" width="930" height="14"/>
+            <rect x="260" y="596" width="930" height="10"/>
+          </g>
+          <g id="s12-far">
+            <path d="M260,612 L330,542 L392,586 L448,528 L520,596 L586,556 L660,614 Z" fill="url(#s12-hill)" opacity="0.55"/>
+            <path d="M700,614 L780,540 L846,588 L910,520 L986,590 L1060,548 L1130,612 L1190,614 Z" fill="url(#s12-hill)" opacity="0.5"/>
+          </g>
+          <g id="s12-mid">
+            <path d="M260,660 C360,626 470,634 560,652 C660,672 760,640 860,646 C960,652 1080,630 1190,644 L1190,770 L260,770 Z"
+                  fill="url(#s12-hill2)" opacity="0.72"/>
+            <path d="M260,690 C380,662 520,684 640,676 C780,666 900,690 1040,676 C1110,670 1160,674 1190,678 L1190,770 L260,770 Z"
+                  fill="#7C5C3E" opacity="0.72"/>
+          </g>
+          <g id="s12-roadG">
+            <path d="M604,770 C632,706 660,668 676,632 L706,632 C700,672 690,712 704,770 Z" fill="url(#s12-road)" stroke="#8A6B49" stroke-width="4"/>
+            <path d="M622,770 C644,716 664,678 678,646 M690,770 C688,716 692,678 700,648" fill="none" stroke="#8A6B49" stroke-width="3" opacity="0.45"/>
+            <path d="M260,712 C330,700 420,706 480,718" fill="none" stroke="#A6815A" stroke-width="6" opacity="0.4"/>
+          </g>
+          <g id="s12-trees">
+            <g fill="#4A3524" opacity="0.72">
+              <path d="M330,712 C338,676 342,640 348,612 C354,640 358,676 366,712 Z"/>
+              <path d="M386,716 C392,690 396,664 400,644 C404,664 408,690 414,716 Z"/>
+              <path d="M1090,700 C1098,662 1102,632 1108,604 C1114,632 1118,662 1126,700 Z"/>
+              <path d="M1150,706 C1156,680 1160,656 1164,636 C1168,656 1172,680 1178,706 Z"/>
+            </g>
+          </g>
+          <g id="s12-carriage" transform="translate(676,672) scale(1.45)"><g id="s12-carriage-in">
+            <ellipse cx="0" cy="26" rx="52" ry="9" fill="#2B1F17" opacity="0.34" filter="url(#s12-msoft)"/>
+            <path d="M-30,-10 L22,-10 L34,-30 L-22,-30 Z" fill="#3A2A1E" stroke="#1E1813" stroke-width="3"/>
+            <path d="M-24,-30 L24,-30 L18,-52 L-18,-52 Z" fill="#5C4030" stroke="#1E1813" stroke-width="3"/>
+            <path d="M-34,2 H32" stroke="#1E1813" stroke-width="4"/>
+            <g id="s12-wheelA"><circle cx="-18" cy="10" r="13" fill="none" stroke="#2B1F17" stroke-width="4"/>
+              <path d="M-18,-3 V23 M-31,10 H-5" stroke="#2B1F17" stroke-width="3"/></g>
+            <g id="s12-wheelB"><circle cx="18" cy="10" r="13" fill="none" stroke="#2B1F17" stroke-width="4"/>
+              <path d="M18,-3 V23 M5,10 H31" stroke="#2B1F17" stroke-width="3"/></g>
+            <path d="M34,-26 C52,-34 66,-34 80,-26" fill="none" stroke="#3A2A1E" stroke-width="5"/>
+            <path d="M78,-34 C86,-40 92,-40 98,-36" fill="none" stroke="#3A2A1E" stroke-width="4"/>
+            <path d="M-34,-26 C-52,-34 -66,-34 -80,-26" fill="none" stroke="#3A2A1E" stroke-width="5"/>
+            <g fill="#3A2A1E" stroke="#1E1813" stroke-width="2">
+              <path d="M56,-34 C64,-38 76,-38 84,-32 C88,-29 92,-31 95,-36 L99,-42 L104,-38 L100,-32 C104,-26 102,-18 96,-15 L92,-4 L88,-4 L90,-15 L66,-15 L64,-4 L60,-4 L62,-15 C56,-19 54,-27 56,-34 Z"/>
+              <path d="M70,-15 L68,-3 M78,-15 L79,-3 M84,-15 L86,-3" stroke-width="3" fill="none"/>
+              <path d="M54,-32 C48,-36 44,-33 42,-28" fill="none" stroke-width="3"/>
+              <path d="M-56,-34 C-64,-38 -76,-38 -84,-32 C-88,-29 -92,-31 -95,-36 L-99,-42 L-104,-38 L-100,-32 C-104,-26 -102,-18 -96,-15 L-92,-4 L-88,-4 L-90,-15 L-66,-15 L-64,-4 L-60,-4 L-62,-15 C-56,-19 -54,-27 -56,-34 Z"/>
+              <path d="M-70,-15 L-68,-3 M-78,-15 L-79,-3 M-84,-15 L-86,-3" stroke-width="3" fill="none"/>
+              <path d="M-54,-32 C-48,-36 -44,-33 -42,-28" fill="none" stroke-width="3"/>
+            </g>
+          </g></g>
+          <g id="s12-village">
+            <g fill="#5C4030" opacity="0.7">
+              <path d="M880,676 L910,656 L940,676 Z"/><path d="M882,676 H938 V700 H882 Z"/>
+              <path d="M952,682 L976,666 L1000,682 Z"/><path d="M954,682 H998 V702 H954 Z"/>
+              <path d="M1014,690 L1032,678 L1050,690 Z"/><path d="M1016,690 H1048 V706 H1016 Z"/>
+            </g>
+            <g fill="#FFE7B4" opacity="0.8">
+              <rect x="898" y="684" width="8" height="9"/><rect x="914" y="684" width="8" height="9"/>
+              <rect x="968" y="690" width="7" height="8"/><rect x="982" y="690" width="7" height="8"/>
+              <rect x="1026" y="696" width="6" height="7"/>
+            </g>
+            <path d="M876,704 H1054" stroke="#5C4030" stroke-width="3" opacity="0.4"/>
+          </g>
+          <g id="s12-milestone" transform="translate(452,730)">
+            <path d="M-18,0 C-22,-40 -14,-58 0,-58 C14,-58 22,-40 18,0 Z" fill="#D3BC96" stroke="#8A6B49" stroke-width="4"/>
+            <path d="M-10,-44 H10 M-8,-32 H8" stroke="#8A6B49" stroke-width="3" opacity="0.6"/>
+          </g>
+          <g id="s12-crows" stroke="#3A2A1E" stroke-width="3" fill="none" opacity="0.5" stroke-linecap="round">
+            <path d="M940,392 C948,384 956,384 962,390"/><path d="M968,386 C976,378 984,378 990,384"/>
+          </g>
+          <g id="s12-hatch" stroke="#8A6B49" stroke-width="3" opacity="0.22">
+            <path d="M280,742 H560"/><path d="M300,756 H520"/><path d="M760,748 H1120"/><path d="M800,762 H1080"/>
+            <path d="M420,724 H560"/><path d="M900,730 H1060"/>
+            <path d="M272,700 C360,690 430,694 500,704"/><path d="M262,716 C360,706 450,710 520,720"/>
+            <path d="M1090,720 C1130,714 1166,716 1190,720"/><path d="M1090,736 C1134,730 1168,732 1190,736"/>
+          </g>
+          <g stroke="#5C5248" stroke-width="4" opacity="0.3">
+            <path d="M260,296 H1190"/><path d="M260,726 H1190"/>
+          </g>
+          <rect x="260" y="250" width="930" height="520" fill="none" stroke="#5C5248" stroke-width="5" opacity="0.5"/>
+        </g>
+
+        <!-- route across the print -->
+        <g id="s12-routewrap">
+          <path id="s12-route" d="M318,726 C430,700 520,672 612,644 C760,600 900,540 1052,494"
+                fill="none" stroke="#C2593F" stroke-width="6" stroke-linecap="round"
+                stroke-dasharray="12 10" opacity="0.85" stroke-dashoffset="900"/>
+          <g id="s12-wps">
+            <g class="s12-wp" transform="translate(318,726)"><circle r="13" fill="#C2593F" stroke="#FDF8EA" stroke-width="4"/><circle r="5" fill="#8B3323"/></g>
+            <g class="s12-wp" transform="translate(612,644)"><circle r="11" fill="#C2593F" stroke="#FDF8EA" stroke-width="4"/><circle r="4" fill="#8B3323"/></g>
+            <g class="s12-wp" transform="translate(842,570)"><circle r="11" fill="#C2593F" stroke="#FDF8EA" stroke-width="4"/><circle r="4" fill="#8B3323"/></g>
+            <g class="s12-wp" transform="translate(1052,494)">
+              <circle r="18" fill="none" stroke="#C2593F" stroke-width="5"/>
+              <path d="M0,-13 C5,-8 5,-3 1,0 C6,-2 9,2 8,6 C6,10 2,11 0,8 C-2,11 -6,10 -8,6 C-9,2 -6,-2 -1,0 C-5,-3 -5,-8 0,-13 Z" fill="#C2593F"/>
+            </g>
+          </g>
+        </g>
+      </g>
+
+      <!-- brass compass -->
+      <g id="s12-compass" transform="translate(1586,566)"><g id="s12-compass-in">
+        <ellipse cx="10" cy="22" rx="212" ry="204" fill="#2B1F17" opacity="0.34" filter="url(#s12-mblur)"/>
+        <circle r="196" fill="url(#s12-gilt)" stroke="#1E1813" stroke-width="8"/>
+        <circle r="178" fill="none" stroke="#7E5A1C" stroke-width="4" opacity="0.7"/>
+        <circle r="168" fill="url(#s12-dial)" stroke="#1E1813" stroke-width="5"/>
+        <circle r="150" fill="none" stroke="#8A6B49" stroke-width="3" opacity="0.45"/>
+        <g id="s12-ticks" stroke="#3A2A1E" stroke-width="7" stroke-linecap="round">
+          <path d="M0,-158 V-176"/><path d="M0,158 V176"/><path d="M-158,0 H-176"/><path d="M158,0 H176"/>
+          <path d="M112,-112 L124,-124"/><path d="M112,112 L124,124"/><path d="M-112,-112 L-124,-124"/><path d="M-112,112 L-124,124"/>
+        </g>
+        <g id="s12-rose" stroke="#8A6B49" stroke-width="3">
+          <g fill="#F6EBD3">
+            <path d="M0,-96 L14,-14 L0,0 L-14,-14 Z"/><path d="M0,96 L14,14 L0,0 L-14,14 Z"/>
+            <path d="M-96,0 L-14,-14 L0,0 L-14,14 Z"/><path d="M96,0 L14,-14 L0,0 L14,14 Z"/>
+          </g>
+          <g fill="#C9A87C" opacity="0.85">
+            <path d="M-64,-64 L-8,-16 L0,0 L-16,-8 Z"/><path d="M64,-64 L8,-16 L0,0 L16,-8 Z"/>
+            <path d="M-64,64 L-8,16 L0,0 L-16,8 Z"/><path d="M64,64 L8,16 L0,0 L16,8 Z"/>
+          </g>
+          <circle r="150" fill="none" stroke="#8A6B49" stroke-width="2" opacity="0.4"/>
+        </g>
+        <g id="s12-needle">
+          <path d="M0,-150 L20,0 L0,22 L-20,0 Z" fill="url(#s12-needleN)" stroke="#5F2417" stroke-width="3"/>
+          <path d="M0,150 L20,0 L0,-22 L-20,0 Z" fill="#5C5248" stroke="#1E1813" stroke-width="3" opacity="0.85"/>
+          <circle r="16" fill="url(#s12-brass)" stroke="#1E1813" stroke-width="5"/>
+          <circle r="6" fill="#3A2A1E"/>
+        </g>
+        <path d="M-150,-84 C-118,-146 -40,-172 30,-166" fill="none" stroke="#FFFBE9" stroke-width="10" opacity="0.40" stroke-linecap="round"/>
+        <g fill="#3A2A1E" font-family="Mono Archive, monospace" font-size="22" font-weight="500" opacity="0.6" text-anchor="middle">
+          <text x="0" y="-128" data-layout-ignore="true">N</text>
+        </g>
+        </g>
+      </g>
+
+      <!-- rolled map on the shelf -->
+      <g id="s12-roll" transform="translate(1600,946) rotate(-11)">
+        <ellipse cx="10" cy="30" rx="240" ry="26" fill="#2B1F17" opacity="0.3" filter="url(#s12-msoft)"/>
+        <rect x="-210" y="-34" width="420" height="68" fill="url(#s12-paper)" stroke="#1E1813" stroke-width="6"/>
+        <ellipse cx="210" cy="0" rx="26" ry="36" fill="#F6EBD3" stroke="#1E1813" stroke-width="6"/>
+        <ellipse cx="210" cy="0" rx="13" ry="20" fill="#C9A87C" stroke="#8A6B49" stroke-width="3"/>
+        <ellipse cx="-210" cy="0" rx="24" ry="34" fill="#E7D5B6" stroke="#1E1813" stroke-width="6"/>
+        <g stroke="#8A6B49" stroke-width="3" opacity="0.4">
+          <path d="M-180,-20 H150"/><path d="M-170,-6 H120"/><path d="M-176,8 H160"/><path d="M-160,22 H90"/>
+        </g>
+        <path d="M-120,-30 V30" stroke="#C2593F" stroke-width="6" opacity="0.6"/>
+        <path d="M60,-32 V32" stroke="#C2593F" stroke-width="4" opacity="0.4"/>
+      </g>
+
+    <!-- FG · seam: the compass needle sweeps the dial shut -->
+    <svg class="s12-plane s12-p-fg" id="s12-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <radialGradient id="s12-discg" cx="50%" cy="42%" r="60%">
+          <stop offset="0" stop-color="#3A2A1E"/><stop offset="0.55" stop-color="#2B1F17"/><stop offset="1" stop-color="#1E1813"/>
+        </radialGradient>
+        <linearGradient id="s12-sweepbrass" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.5" stop-color="#C89D42"/><stop offset="1" stop-color="#8A6323"/>
+        </linearGradient>
+        <filter id="s12-fgblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>
+      </defs>
+      <g filter="url(#s12-fgblur)" opacity="0.9">
+        <path d="M-40,1080 C120,980 260,930 420,912 L420,1080 Z" fill="#3A2A1E" opacity="0.5"/>
+        <path d="M1960,1080 C1800,970 1660,924 1500,906 L1500,1080 Z" fill="#3A2A1E" opacity="0.45"/>
+      </g>
+
+      <g id="s12-discwrap" transform="translate(1586,566)">
+        <g id="s12-disc">
+          <circle id="s12-discfill" cx="0" cy="0" r="1" fill="url(#s12-discg)"/>
+          <circle id="s12-discring" cx="0" cy="0" r="1" fill="none" stroke="url(#s12-sweepbrass)" stroke-width="22" opacity="0.9"/>
+        </g>
+        <g id="s12-sweepneedle" opacity="0">
+          <path d="M0,-1700 L120,-60 L0,120 L-120,-60 Z" fill="url(#s12-sweepbrass)" stroke="#1E1813" stroke-width="6"/>
+          <circle r="46" fill="#2B1F17"/>
+        </g>
+      </g>
+    </svg>
+
+    <div class="s12-grain"></div>
+    <div class="s12-vignette"></div>
+
+    <div class="s12-tag" id="s12-tag">
+      <span class="s12-tag-dot"></span>
+      <span class="s12-tag-text">LETTERS PATENT</span>
+    </div>
+    <div class="s12-rule" id="s12-rule"></div>
+  </div>
+</div>
+
+<script>
+(function initS12(){
+  var ID = "s12-before-dawn";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, { duration: 18.588 }, 0);
+
+  // ── wall and frame ───────────────────────────────────────────────────────
+  tl.fromTo("#s12-bg", { scale: 1.05, x: -8, y: -10 }, { scale: 1, x: 0, y: 0, duration: 18.3, ease: "sine.out" }, 0.05);
+  tl.fromTo("#s12-cornice", { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "power2.out" }, 0.10);
+  tl.fromTo("#s12-shelf", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }, 0.35);
+  tl.fromTo("#s12-frame", { y: -64, opacity: 0, rotation: -1.2 }, { y: 0, opacity: 1, rotation: 0, duration: 1.1, ease: "power3.out" }, 0.45);
+  tl.fromTo("#s12-printrect", { attr: { height: 0 } }, { attr: { height: 520 }, duration: 1.25, ease: "power3.inOut" }, 1.05);
+  tl.fromTo("#s12-frame", { scale: 1 }, { scale: 1.014, duration: 7.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 2.4);
+
+  // ── the dawn print builds ────────────────────────────────────────────────
+  tl.fromTo("#s12-far", { y: 34, opacity: 0 }, { y: 0, opacity: 1, duration: 1.0, ease: "power2.out" }, 2.10);
+  tl.fromTo("#s12-mid", { y: 46, opacity: 0 }, { y: 0, opacity: 1, duration: 1.0, ease: "power2.out" }, 2.45);
+  tl.fromTo("#s12-roadG", { y: 26, opacity: 0 }, { y: 0, opacity: 1, duration: 0.85, ease: "power2.out" }, 2.95);
+  tl.fromTo("#s12-trees", { scaleY: 0.3, opacity: 0 }, { scaleY: 1, opacity: 1, duration: 0.9, ease: "back.out(1.6)", transformOrigin: "50% 100%" }, 3.35);
+  tl.fromTo("#s12-hatch", { opacity: 0 }, { opacity: 0.22, duration: 0.8, ease: "sine.out" }, 3.7);
+  tl.fromTo("#s12-carriage-in", { x: -96, opacity: 0 }, { x: 0, opacity: 1, duration: 1.1, ease: "power2.out" }, 4.15);
+  tl.to("#s12-wheelA", { rotation: 420, duration: 4.4, ease: "none" }, 5.0);
+  tl.to("#s12-wheelB", { rotation: 420, duration: 4.4, ease: "none" }, 5.0);
+  tl.to("#s12-carriage-in", { x: 26, y: -16, duration: 4.2, ease: "sine.inOut" }, 5.4);
+  tl.to("#s12-carriage-in", { y: -12, duration: 0.24, ease: "sine.inOut", yoyo: true, repeat: 12 }, 5.6);
+
+  // ── the route draws ──────────────────────────────────────────────────────
+  tl.fromTo("#s12-route", { attr: { "stroke-dashoffset": 900 } }, { attr: { "stroke-dashoffset": 0 }, duration: 1.5, ease: "power2.inOut" }, 5.10);
+  tl.fromTo("#s12-wps g", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(2.6)", stagger: 0.26, transformOrigin: "50% 50%" }, 6.15);
+  tl.to("#s12-wps g:last-child", { scale: 1.16, duration: 0.8, ease: "sine.inOut", yoyo: true, repeat: 3, transformOrigin: "50% 50%" }, 8.0);
+
+  // ── compass and map roll ─────────────────────────────────────────────────
+  tl.fromTo("#s12-roll", { scaleX: 0.2, opacity: 0 }, { scaleX: 1, opacity: 1, duration: 0.9, ease: "power3.out" }, 1.55);
+  tl.fromTo("#s12-compass-in", { scale: 0.72, opacity: 0, rotation: -14 }, { scale: 1, opacity: 1, rotation: 0, duration: 1.0, ease: "power3.out" }, 2.25);
+  tl.fromTo("#s12-rose", { rotation: -40 }, { rotation: 0, duration: 1.4, ease: "power2.out", transformOrigin: "50% 50%" }, 2.9);
+  tl.fromTo("#s12-needle", { rotation: -118 }, { rotation: 24, duration: 1.9, ease: "elastic.out(1,0.6)", transformOrigin: "50% 50%" }, 3.55);
+  tl.to("#s12-needle", { rotation: -8, duration: 1.2, ease: "sine.inOut", transformOrigin: "50% 50%" }, 5.55);
+  tl.to("#s12-needle", { rotation: 3, duration: 2.4, ease: "sine.inOut", yoyo: true, repeat: 2, transformOrigin: "50% 50%" }, 6.9);
+
+  // ── living hold ──────────────────────────────────────────────────────────
+  tl.fromTo("#s12-stage", { scale: 1.0, x: 0 }, { scale: 1.026, x: -10, y: -8, duration: 18.3, ease: "sine.inOut" }, 0.10);
+  tl.fromTo(".s12-mote", { y: 0, x: 0 }, { y: -52, x: 14, duration: 6.6, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 0.22 }, 1.30);
+  tl.to("#s12-printsky", { opacity: 0.96, duration: 2.6, ease: "sine.inOut", yoyo: true, repeat: 2 }, 6.0);
+
+  // ── TAG ──────────────────────────────────────────────────────────────────
+  tl.fromTo("#s12-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -14 }, { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.6, ease: "power3.inOut" }, 3.55);
+  tl.fromTo("#s12-rule", { width: 0 }, { width: 306, duration: 0.5, ease: "power2.out" }, 3.92);
+
+  // ── SEAM: compass disc irises shut ───────────────────────────────────────
+  tl.fromTo("#s12-discfill", { attr: { r: 1 } }, { attr: { r: 2700 }, duration: 0.34, ease: "power3.in" }, 18.16);
+  tl.fromTo("#s12-discring", { attr: { r: 1 } }, { attr: { r: 2700 }, duration: 0.34, ease: "power3.in" }, 18.16);
+  tl.to("#s12-sweepneedle", { opacity: 1, duration: 0.01 }, 18.14);
+  tl.fromTo("#s12-sweepneedle", { rotation: -56 }, { rotation: 8, duration: 0.36, ease: "power2.in", transformOrigin: "50% 100%" }, 18.14);
+  tl.to("#s12-tag", { clipPath: "inset(0% 100% 0% 0%)", duration: 0.16, ease: "power2.in" }, 18.10);
+  tl.to("#s12-rule", { width: 0, duration: 0.16, ease: "power2.in" }, 18.10);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

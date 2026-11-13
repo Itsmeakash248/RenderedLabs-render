@@ -1,0 +1,586 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s04-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s04-zero-masters"] .s04-stage{position:absolute;inset:0;transform-origin:50% 50%;}
+[data-composition-id="s04-zero-masters"] .s04-ground{position:absolute;inset:0;background:
+  radial-gradient(120% 92% at 34% 24%, #FCF8F2 0%, #F5EFEB 42%, #EDE2D4 70%, #DAC8AE 100%);}
+[data-composition-id="s04-zero-masters"] .s04-plane{position:absolute;inset:0;}
+[data-composition-id="s04-zero-masters"] .s04-p-bg{z-index:1;}
+[data-composition-id="s04-zero-masters"] .s04-p-mg{z-index:2;}
+[data-composition-id="s04-zero-masters"] .s04-p-fg{z-index:3;}
+[data-composition-id="s04-zero-masters"] .s04-art{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="s04-zero-masters"] .s04-p-iris{z-index:8;}
+[data-composition-id="s04-zero-masters"] .s04-grain{position:absolute;inset:0;z-index:9;pointer-events:none;opacity:0.055;mix-blend-mode:multiply;}
+[data-composition-id="s04-zero-masters"] .s04-vignette{position:absolute;inset:0;z-index:9;pointer-events:none;
+  background:radial-gradient(115% 95% at 50% 48%, rgba(43,31,23,0) 46%, rgba(43,31,23,0.18) 100%);}
+[data-composition-id="s04-zero-masters"] .s04-tag{position:absolute;left:86px;top:62px;z-index:10;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;background:rgba(250,247,240,0.96);
+  box-shadow:0 12px 30px rgba(43,31,23,0.24),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s04-zero-masters"] .s04-tag-dot{width:14px;height:14px;border-radius:50%;background:#C2593F;box-shadow:0 0 0 4px rgba(194,89,63,0.18);}
+[data-composition-id="s04-zero-masters"] .s04-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.14em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s04-zero-masters"] .s04-tag-rule{position:absolute;left:86px;top:130px;height:5px;width:0;z-index:10;background:#C2593F;border-radius:4px;}
+[data-composition-id="s04-zero-masters"] .s04-mote{transform-box:fill-box;transform-origin:50% 50%;}
+</style>
+
+<div id="root" data-composition-id="s04-zero-masters" data-width="1920" data-height="1080" data-start="60.441" data-duration="22.660">
+  <div class="s04-stage" id="s04-stage">
+    <div class="s04-ground" id="s04-ground"></div>
+
+    <!-- PLANE BG · depth 0.97 · medallion ghost, umber mass, amber pool -->
+    <div class="s04-plane s04-p-bg" id="s04-plane-bg">
+      <svg class="s04-art" id="s04-art-bg" viewBox="0 0 1920 1080" aria-hidden="true">
+        <defs>
+          <radialGradient id="s04-lamp" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#D9822B" stop-opacity="0.24"/>
+            <stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="s04-balance-pool" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#D9822B" stop-opacity="0.14"/>
+            <stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="s04-soft" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="18"/>
+          </filter>
+        </defs>
+
+        <circle cx="430" cy="220" r="400" fill="url(#s04-lamp)"/>
+        <circle cx="520" cy="520" r="420" fill="url(#s04-balance-pool)"/>
+
+        <g fill="none" stroke="#5C5248" stroke-width="6" opacity="0.10">
+          <path d="M0,140 H1920 M0,280 H1920 M0,420 H1920 M0,560 H1920 M0,700 H1920 M0,840 H1920 M0,980 H1920"/>
+          <path d="M140,0 V1080 M280,0 V1080 M420,0 V1080 M560,0 V1080 M700,0 V1080 M840,0 V1080 M980,0 V1080 M1120,0 V1080 M1260,0 V1080 M1400,0 V1080 M1540,0 V1080 M1680,0 V1080 M1820,0 V1080"/>
+        </g>
+
+        <!-- ghost ceiling medallion behind the balance -->
+        <g id="s04-medallion" fill="none" stroke="#C89D42" stroke-width="8" opacity="0.16" transform="rotate(0 520 500)">
+          <circle cx="520" cy="500" r="330"/>
+          <circle cx="520" cy="500" r="286"/>
+          <circle cx="520" cy="500" r="120"/>
+          <path d="M520,150 v-30 M520,850 v30 M170,500 h-30 M870,500 h30 M283,263 l-22,-22 M757,737 l22,22 M757,263 l22,-22 M283,737 l-22,22"/>
+          <path d="M520,380 A120,120 0 0 1 640,500 A120,120 0 0 1 520,620 A120,120 0 0 1 400,500 A120,120 0 0 1 520,380 Z" stroke-width="4"/>
+        </g>
+
+        <ellipse cx="470" cy="760" rx="390" ry="180" fill="#2B1F17" opacity="0.26" filter="url(#s04-soft)"/>
+        <ellipse cx="510" cy="880" rx="470" ry="110" fill="#2B1F17" opacity="0.16" filter="url(#s04-soft)"/>
+        <path d="M-40,1030 C260,980 700,996 980,1020 L980,1120 L-40,1120 Z" fill="#C9B49A" opacity="0.2"/>
+      </svg>
+    </div>
+
+    <!-- PLANE MG · depth 1.00 · HUD medallion, balance, map, zero rack -->
+    <div class="s04-plane s04-p-mg" id="s04-plane-mg">
+      <svg class="s04-art" id="s04-art-mg" viewBox="0 0 1920 1080" aria-hidden="true">
+        <defs>
+          <linearGradient id="s04-brass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#F2D68E"/><stop offset="0.42" stop-color="#C89D42"/><stop offset="1" stop-color="#7C581A"/>
+          </linearGradient>
+          <linearGradient id="s04-brass-h" x1="504" y1="0" x2="536" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#7C581A"/><stop offset="0.42" stop-color="#E8C77E"/><stop offset="1" stop-color="#C89D42"/>
+          </linearGradient>
+          <linearGradient id="s04-beam" x1="0" y1="458" x2="0" y2="482" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#F6DFA2"/><stop offset="0.35" stop-color="#D8AE56"/><stop offset="1" stop-color="#8A6420"/>
+          </linearGradient>
+          <radialGradient id="s04-glass" cx="34%" cy="24%" r="78%">
+            <stop offset="0" stop-color="#FCF3E1"/><stop offset="0.40" stop-color="#F0DCBB"/><stop offset="0.76" stop-color="#DDC5A2"/><stop offset="1" stop-color="#BE9F76"/>
+          </radialGradient>
+          <linearGradient id="s04-map" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#E8DCC8"/><stop offset="0.55" stop-color="#DFD1BB"/><stop offset="1" stop-color="#D6C5AC"/>
+          </linearGradient>
+          <linearGradient id="s04-panel-dim" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#2B1F17" stop-opacity="0.55"/><stop offset="1" stop-color="#1A120C" stop-opacity="0.78"/>
+          </linearGradient>
+          <radialGradient id="s04-pinhole" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#FFD98E" stop-opacity="1"/>
+            <stop offset="0.35" stop-color="#D9822B" stop-opacity="0.85"/>
+            <stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="s04-iris-fill" cx="50%" cy="52%" r="72%">
+            <stop offset="0" stop-color="#2B1F17"/><stop offset="0.65" stop-color="#211710"/><stop offset="1" stop-color="#140D08"/>
+          </radialGradient>
+          <filter id="s04-photo-grade" x="-5%" y="-5%" width="110%" height="110%">
+            <feColorMatrix type="saturate" values="0.92"/>
+            <feComponentTransfer>
+              <feFuncR type="linear" slope="0.82" intercept="0.02"/>
+              <feFuncG type="linear" slope="0.74" intercept="0.015"/>
+              <feFuncB type="linear" slope="0.64" intercept="0.01"/>
+            </feComponentTransfer>
+          </filter>
+          <filter id="s04-blur" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="16"/>
+          </filter>
+          <filter id="s04-blur-sm" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="6"/>
+          </filter>
+          <filter id="s04-shadow-18" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="18"/>
+          </filter>
+          <filter id="s04-shadow-24" x="-45%" y="-45%" width="190%" height="190%">
+            <feGaussianBlur stdDeviation="24"/>
+          </filter>
+          <filter id="s04-grain" x="0" y="0" width="100%" height="100%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="31" result="n"/>
+            <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0.5 0"/>
+          </filter>
+
+          <clipPath id="s04-panel-clip"><rect x="860" y="140" width="980" height="750"/></clipPath>
+          <clipPath id="s04-panel-reveal"><rect id="s04-panel-rect" x="850" y="140" width="1000" height="0"/></clipPath>
+          <clipPath id="s04-map-clip"><rect id="s04-map-rect" x="-20" y="0" width="0" height="460"/></clipPath>
+          <mask id="s04-iris-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="1080">
+            <rect x="0" y="0" width="1920" height="1080" fill="#FAF7F0"/>
+            <circle id="s04-iris-hole" cx="960" cy="560" r="1500" fill="#000"/>
+          </mask>
+        </defs>
+
+        <!-- ============ C HUD PLATE (right) ============ -->
+        <g id="s04-panel">
+          <rect x="836" y="116" width="1028" height="798" fill="#2B1F17" opacity="0.30" filter="url(#s04-blur)"/>
+          <rect x="874" y="158" width="980" height="750" rx="6" fill="#2B1F17" opacity="0.36" filter="url(#s04-blur)"/>
+          <g clip-path="url(#s04-panel-reveal)">
+            <g clip-path="url(#s04-panel-clip)">
+              <image id="s04-plate" href="plates/processed/art-hall-detail.jpg" x="860" y="140" width="980" height="750"
+                     preserveAspectRatio="xMidYMid slice" filter="url(#s04-photo-grade)"/>
+              <rect x="860" y="140" width="980" height="750" fill="#D9822B" opacity="0.12"/>
+              <rect x="860" y="140" width="980" height="750" fill="#2B1F17" opacity="0.20"/>
+              <rect id="s04-plate-dim" x="860" y="140" width="980" height="750" fill="url(#s04-panel-dim)" opacity="0"/>
+              <rect x="872" y="152" width="956" height="726" fill="none" stroke="#5C5248" stroke-width="4" opacity="0.35"/>
+              <rect x="866" y="146" width="968" height="738" fill="none" stroke="url(#s04-brass)" stroke-width="6"/>
+            </g>
+          </g>
+          <g fill="none" stroke="#2B1F17" stroke-width="30" opacity="0.28" filter="url(#s04-blur-sm)" transform="translate(6,8)">
+            <path d="M860,266 V166 H932 M1788,166 H1840 V266 M1840,764 V864 H1768 M932,864 H860 V764"/>
+          </g>
+          <g fill="none" stroke="#2B1F17" stroke-width="8" opacity="0.42" transform="translate(8,10)">
+            <path d="M860,266 V166 H932 M1788,166 H1840 V266 M1840,764 V864 H1768 M932,864 H860 V764"/>
+          </g>
+          <g fill="none" stroke="url(#s04-brass)" stroke-width="26" stroke-linecap="square">
+            <path d="M860,266 V166 H932 M1788,166 H1840 V266 M1840,764 V864 H1768 M932,864 H860 V764"/>
+          </g>
+          <g fill="none" stroke="#F2D68E" stroke-width="3" opacity="0.6">
+            <path d="M872,250 V178 H918 M1794,178 H1828 V250 M1828,780 V852 H1782 M918,852 H872 V780"/>
+          </g>
+          <g stroke="#C89D42" stroke-width="4" opacity="0.8">
+            <path d="M1004,176 h44 M1004,176 v18 M1656,864 h44 M1656,864 v-18"/>
+          </g>
+          <g id="s04-panel-sweep" opacity="0">
+            <rect x="860" y="140" width="260" height="750" fill="#FFD98E" opacity="0.18"/>
+          </g>
+        </g>
+
+        <!-- ============ EUROPE GRATICULE MAP (under the balance) ============ -->
+        <g transform="translate(30,706) skewX(-8) scale(1,0.74)">
+          <rect id="s04-map-shadow" x="18" y="26" width="1010" height="446" rx="8" fill="#2B1F17" opacity="0" filter="url(#s04-shadow-24)"/>
+          <g clip-path="url(#s04-map-clip)">
+            <rect id="s04-map-ground" x="-10" y="-10" width="1000" height="440" rx="6" fill="url(#s04-map)" stroke="#8A7A63" stroke-width="8"/>
+            <rect x="-10" y="-10" width="1000" height="440" rx="6" fill="#2B1F17" opacity="0.05"/>
+            <rect x="-10" y="-10" width="1000" height="440" rx="6" fill="#C2593F" opacity="0.04"/>
+            <ellipse cx="760" cy="60" rx="380" ry="200" fill="#8A7A63" opacity="0.08"/>
+            <rect x="-18" y="-18" width="1016" height="456" rx="8" fill="none" stroke="url(#s04-brass)" stroke-width="10"/>
+            <g stroke="#5C5248" stroke-width="4" stroke-dasharray="14 12" opacity="0.22">
+              <path d="M0,70 H980 M0,140 H980 M0,210 H980 M0,280 H980 M0,350 H980"/>
+              <path d="M70,0 V420 M140,0 V420 M210,0 V420 M280,0 V420 M350,0 V420 M420,0 V420 M490,0 V420 M560,0 V420 M630,0 V420 M700,0 V420 M770,0 V420 M840,0 V420 M910,0 V420"/>
+            </g>
+
+            <!-- stylised landmasses: Iberia, France, the Italian boot, the Balkans -->
+            <g fill="#CDBB9F" stroke="#5C5248" stroke-width="8" stroke-linejoin="round">
+              <path d="M168,246 L214,226 L268,238 L286,270 L274,308 L238,330 L190,318 L164,286 Z"/>
+              <path d="M292,150 L344,138 L392,152 L410,182 L400,222 L364,246 L320,238 L296,208 Z"/>
+              <path d="M424,224 L456,212 L478,232 L470,262 L486,286 L476,310 L452,354 L434,342 L444,308 L430,282 L414,258 Z"/>
+              <path d="M500,206 L548,192 L596,204 L624,232 L612,266 L578,286 L534,278 L508,250 Z"/>
+              <path d="M444,364 L466,358 L478,372 L466,384 L448,380 Z"/>
+            </g>
+
+            <!-- compass rose, no lettering -->
+            <g transform="translate(858,326)" fill="none" stroke="#8A7A63" opacity="0.55">
+              <circle r="46" stroke-width="3"/>
+              <circle r="30" stroke-width="2" opacity="0.7"/>
+              <path d="M0,-58 L10,-12 L58,0 L10,12 L0,58 L-10,12 L-58,0 L-10,-12 Z" fill="#CDBB9F" stroke="#5C5248" stroke-width="4"/>
+              <circle r="5" fill="#C89D42" stroke="#5C5248" stroke-width="3"/>
+            </g>
+
+            <g stroke="#C2593F" stroke-width="6" fill="none">
+              <path id="s04-route" d="M470,300 Q420,244 334,214" stroke-dasharray="220" stroke-dashoffset="220"/>
+            </g>
+            <g id="s04-pin-paris" transform="translate(334,214) scale(0) translate(-334,-214)">
+              <circle cx="334" cy="214" r="18" fill="#2B1F17" opacity="0.3" filter="url(#s04-blur-sm)" transform="translate(2,4)"/>
+              <circle cx="334" cy="214" r="14" fill="url(#s04-brass)" stroke="#1E1813" stroke-width="5"/>
+              <circle cx="334" cy="214" r="5" fill="#1E1813"/>
+              <path d="M334,228 v20" stroke="#1E1813" stroke-width="5"/>
+            </g>
+            <g id="s04-pin-murano" transform="translate(470,300) scale(0) translate(-470,-300)">
+              <circle cx="470" cy="300" r="18" fill="#2B1F17" opacity="0.3" filter="url(#s04-blur-sm)" transform="translate(2,4)"/>
+              <circle cx="470" cy="300" r="14" fill="url(#s04-brass)" stroke="#1E1813" stroke-width="5"/>
+              <circle cx="470" cy="300" r="5" fill="#1E1813"/>
+              <path d="M470,314 v18" stroke="#1E1813" stroke-width="5"/>
+            </g>
+            <circle id="s04-map-shock" cx="334" cy="214" r="24" fill="none" stroke="#C2593F" stroke-width="6" opacity="0"
+                    transform="translate(334,214) scale(0.4) translate(-334,-214)"/>
+          </g>
+        </g>
+
+        <!-- ============ ZERO-MASTER RACK (bottom-left) ============ -->
+        <g id="s04-rack">
+          <rect x="96" y="944" width="540" height="26" rx="13" fill="#2B1F17" opacity="0.3" filter="url(#s04-blur-sm)" transform="translate(4,10)"/>
+          <path d="M104,948 H628" stroke="#1E1813" stroke-width="26" stroke-linecap="round" stroke-dasharray="540" stroke-dashoffset="540"/>
+          <path d="M104,948 H628" stroke="#C89D42" stroke-width="10" stroke-linecap="round" stroke-dasharray="540" stroke-dashoffset="540"/>
+          <g id="s04-sockets">
+            <g id="s04-socket-1" transform="translate(140,948) scale(0) translate(-140,-948)">
+              <circle cx="140" cy="948" r="24" fill="#2B1F17" opacity="0.28" filter="url(#s04-blur-sm)" transform="translate(3,6)"/>
+              <circle cx="140" cy="948" r="22" fill="#1E1813"/>
+              <circle cx="140" cy="948" r="15" fill="#0F0B08"/>
+              <path d="M124.4,932.4 A22,22 0 0 0 124.4,963.6" fill="none" stroke="#D9B45E" stroke-width="4"/>
+              <path d="M140,970 v14" stroke="#5C5248" stroke-width="4"/>
+              <rect x="122" y="984" width="36" height="26" rx="4" fill="#FAF7F0" stroke="#1E1813" stroke-width="4"/>
+              <path d="M132,992 h16" stroke="#C89D42" stroke-width="3"/>
+            </g>
+            <g id="s04-socket-2" transform="translate(248,948) scale(0) translate(-248,-948)">
+              <circle cx="248" cy="948" r="24" fill="#2B1F17" opacity="0.28" filter="url(#s04-blur-sm)" transform="translate(3,6)"/>
+              <circle cx="248" cy="948" r="22" fill="#1E1813"/>
+              <circle cx="248" cy="948" r="15" fill="#0F0B08"/>
+              <path d="M232.4,932.4 A22,22 0 0 0 232.4,963.6" fill="none" stroke="#D9B45E" stroke-width="4"/>
+              <path d="M248,970 v14" stroke="#5C5248" stroke-width="4"/>
+              <rect x="230" y="984" width="36" height="26" rx="4" fill="#FAF7F0" stroke="#1E1813" stroke-width="4"/>
+              <path d="M240,992 h16" stroke="#C89D42" stroke-width="3"/>
+            </g>
+            <g id="s04-socket-3" transform="translate(356,948) scale(0) translate(-356,-948)">
+              <circle cx="356" cy="948" r="24" fill="#2B1F17" opacity="0.28" filter="url(#s04-blur-sm)" transform="translate(3,6)"/>
+              <circle cx="356" cy="948" r="22" fill="#1E1813"/>
+              <circle cx="356" cy="948" r="15" fill="#0F0B08"/>
+              <path d="M340.4,932.4 A22,22 0 0 0 340.4,963.6" fill="none" stroke="#D9B45E" stroke-width="4"/>
+              <path d="M356,970 v14" stroke="#5C5248" stroke-width="4"/>
+              <rect x="338" y="984" width="36" height="26" rx="4" fill="#FAF7F0" stroke="#1E1813" stroke-width="4"/>
+              <path d="M348,992 h16" stroke="#C89D42" stroke-width="3"/>
+            </g>
+            <g id="s04-socket-4" transform="translate(464,948) scale(0) translate(-464,-948)">
+              <circle cx="464" cy="948" r="24" fill="#2B1F17" opacity="0.28" filter="url(#s04-blur-sm)" transform="translate(3,6)"/>
+              <circle cx="464" cy="948" r="22" fill="#1E1813"/>
+              <circle cx="464" cy="948" r="15" fill="#0F0B08"/>
+              <path d="M448.4,932.4 A22,22 0 0 0 448.4,963.6" fill="none" stroke="#D9B45E" stroke-width="4"/>
+              <path d="M464,970 v14" stroke="#5C5248" stroke-width="4"/>
+              <rect x="446" y="984" width="36" height="26" rx="4" fill="#FAF7F0" stroke="#1E1813" stroke-width="4"/>
+              <path d="M456,992 h16" stroke="#C89D42" stroke-width="3"/>
+            </g>
+            <g id="s04-socket-5" transform="translate(572,948) scale(0) translate(-572,-948)">
+              <circle cx="572" cy="948" r="24" fill="#2B1F17" opacity="0.28" filter="url(#s04-blur-sm)" transform="translate(3,6)"/>
+              <circle cx="572" cy="948" r="22" fill="#1E1813"/>
+              <circle cx="572" cy="948" r="15" fill="#0F0B08"/>
+              <path d="M556.4,932.4 A22,22 0 0 0 556.4,963.6" fill="none" stroke="#D9B45E" stroke-width="4"/>
+              <path d="M572,970 v14" stroke="#5C5248" stroke-width="4"/>
+              <rect x="554" y="984" width="36" height="26" rx="4" fill="#FAF7F0" stroke="#1E1813" stroke-width="4"/>
+              <path d="M564,992 h16" stroke="#C89D42" stroke-width="3"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- route fires off-frame -->
+        <path id="s04-fire" d="M640,940 Q860,906 1120,986 T1900,1020" fill="none" stroke="#C2593F" stroke-width="7" stroke-linecap="round" stroke-dasharray="1200" stroke-dashoffset="1200"/>
+        <path id="s04-fire-glow" d="M640,940 Q860,906 1120,986 T1900,1020" fill="none" stroke="#D9822B" stroke-width="22" opacity="0.2" filter="url(#s04-blur-sm)" stroke-dasharray="1200" stroke-dashoffset="1200"/>
+
+        <!-- ============ BRASS TRADE BALANCE ============ -->
+        <g id="s04-balance-shadow" fill="#2B1F17" opacity="0" filter="url(#s04-shadow-18)" transform="translate(22,26)">
+          <ellipse cx="250" cy="604" rx="126" ry="38"/>
+          <ellipse cx="790" cy="604" rx="126" ry="38"/>
+          <rect x="402" y="820" width="236" height="36" rx="16"/>
+        </g>
+        <g id="s04-balance">
+          <!-- column + plinth + capital -->
+          <g id="s04-column">
+            <path d="M520,806 V456" stroke="#1E1813" stroke-width="44" stroke-linecap="round" stroke-dasharray="360" stroke-dashoffset="360"/>
+            <path d="M520,806 V456" stroke="url(#s04-brass-h)" stroke-width="32" stroke-linecap="round" stroke-dasharray="360" stroke-dashoffset="360"/>
+            <path d="M506,800 V470" stroke="#FAF7F0" stroke-width="3" opacity="0.6" stroke-dasharray="340" stroke-dashoffset="340"/>
+          </g>
+          <g id="s04-plinth" transform="translate(520,817) scale(0) translate(-520,-817)">
+            <rect x="400" y="796" width="240" height="34" rx="10" fill="url(#s04-brass)" stroke="#1E1813" stroke-width="7"/>
+            <rect x="426" y="818" width="188" height="20" rx="8" fill="#8A6420" stroke="#1E1813" stroke-width="5"/>
+            <path d="M418,808 H622" stroke="#FAF7F0" stroke-width="3" opacity="0.6"/>
+          </g>
+          <g id="s04-capital" transform="translate(520,463) scale(0) translate(-520,-463)">
+            <rect x="452" y="438" width="136" height="30" rx="9" fill="url(#s04-brass)" stroke="#1E1813" stroke-width="7"/>
+            <circle cx="520" cy="470" r="18" fill="url(#s04-brass)" stroke="#1E1813" stroke-width="5"/>
+            <circle cx="520" cy="470" r="7" fill="#2B1F17"/>
+          </g>
+
+          <g id="s04-beam-assembly" transform="rotate(0 520 470)">
+            <!-- hanging rods -->
+            <path d="M250,470 V566 M790,470 V566" stroke="#1E1813" stroke-width="14" stroke-linecap="round"/>
+            <path d="M250,470 V566 M790,470 V566" stroke="#C89D42" stroke-width="7" stroke-linecap="round"/>
+
+            <!-- beam rivets, dropped first -->
+            <g id="s04-beam-beads" fill="#C89D42" stroke="#1E1813" stroke-width="4">
+              <circle class="s04-bead" cx="220" cy="470" r="14" transform="translate(220,420) scale(0) translate(-220,-420)"/>
+              <circle class="s04-bead" cx="258" cy="470" r="14" transform="translate(258,420) scale(0) translate(-258,-420)"/>
+              <circle class="s04-bead" cx="296" cy="470" r="14" transform="translate(296,420) scale(0) translate(-296,-420)"/>
+              <circle class="s04-bead" cx="334" cy="470" r="14" transform="translate(334,420) scale(0) translate(-334,-420)"/>
+              <circle class="s04-bead" cx="372" cy="470" r="14" transform="translate(372,420) scale(0) translate(-372,-420)"/>
+              <circle class="s04-bead" cx="410" cy="470" r="14" transform="translate(410,420) scale(0) translate(-410,-420)"/>
+              <circle class="s04-bead" cx="448" cy="470" r="14" transform="translate(448,420) scale(0) translate(-448,-420)"/>
+              <circle class="s04-bead" cx="486" cy="470" r="14" transform="translate(486,420) scale(0) translate(-486,-420)"/>
+              <circle class="s04-bead" cx="524" cy="470" r="14" transform="translate(524,420) scale(0) translate(-524,-420)"/>
+              <circle class="s04-bead" cx="562" cy="470" r="14" transform="translate(562,420) scale(0) translate(-562,-420)"/>
+              <circle class="s04-bead" cx="600" cy="470" r="14" transform="translate(600,420) scale(0) translate(-600,-420)"/>
+              <circle class="s04-bead" cx="638" cy="470" r="14" transform="translate(638,420) scale(0) translate(-638,-420)"/>
+              <circle class="s04-bead" cx="676" cy="470" r="14" transform="translate(676,420) scale(0) translate(-676,-420)"/>
+              <circle class="s04-bead" cx="714" cy="470" r="14" transform="translate(714,420) scale(0) translate(-714,-420)"/>
+              <circle class="s04-bead" cx="752" cy="470" r="14" transform="translate(752,420) scale(0) translate(-752,-420)"/>
+              <circle class="s04-bead" cx="790" cy="470" r="14" transform="translate(790,420) scale(0) translate(-790,-420)"/>
+              <circle class="s04-bead" cx="828" cy="470" r="14" transform="translate(828,420) scale(0) translate(-828,-420)"/>
+            </g>
+            <path id="s04-beam-outline" d="M210,470 H830" stroke="#1E1813" stroke-width="38" stroke-linecap="round" stroke-dasharray="640" stroke-dashoffset="640"/>
+            <path id="s04-beam-bar" d="M210,470 H830" stroke="url(#s04-beam)" stroke-width="24" stroke-linecap="round" stroke-dasharray="640" stroke-dashoffset="640"/>
+            <path id="s04-beam-hi" d="M216,461 H824" stroke="#FAF7F0" stroke-width="3" opacity="0.6" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <circle cx="210" cy="470" r="19" fill="url(#s04-brass)" stroke="#1E1813" stroke-width="6"/>
+            <circle cx="830" cy="470" r="19" fill="url(#s04-brass)" stroke="#1E1813" stroke-width="6"/>
+
+            <!-- needle -->
+            <g id="s04-needle">
+              <path d="M520,488 V600" stroke="#1E1813" stroke-width="16" stroke-linecap="round"/>
+              <path d="M520,488 V600" stroke="#D9B45E" stroke-width="8" stroke-linecap="round"/>
+              <path d="M520,600 L510,616 H530 Z" fill="#C2593F" stroke="#1E1813" stroke-width="4"/>
+            </g>
+
+            <!-- LEFT PAN · mirror plate -->
+            <g id="s04-left-rig" transform="translate(0,0) rotate(0 250 592)">
+              <path d="M140,590 A110,34 0 0 1 360,590 L348,606 A98,26 0 0 0 152,606 Z" fill="url(#s04-brass)" stroke="#1E1813" stroke-width="8"/>
+              <ellipse cx="250" cy="592" rx="96" ry="24" fill="#EAE0D0" stroke="#5C5248" stroke-width="4"/>
+              <g id="s04-mirror-plate" transform="translate(0,-56) translate(250,424) rotate(-12) translate(-250,-424)">
+                <rect x="184" y="420" width="132" height="172" rx="6" fill="#2B1F17" opacity="0.32" filter="url(#s04-blur-sm)" transform="translate(5,7)"/>
+                <rect x="188" y="424" width="124" height="164" rx="5" fill="url(#s04-glass)" stroke="#1E1813" stroke-width="8"/>
+                <rect x="193" y="429" width="114" height="154" rx="4" fill="none" stroke="#2B1F17" stroke-width="7" opacity="0.30"/>
+                <rect x="196" y="432" width="108" height="148" rx="3" fill="none" stroke="url(#s04-brass)" stroke-width="8"/>
+                <rect x="203" y="439" width="94" height="134" rx="2" fill="#2B1F17" opacity="0.08"/>
+                <path d="M206,470 L268,438" stroke="#FFF6E4" stroke-width="10" opacity="0.8"/>
+                <path d="M206,514 L250,490" stroke="#FFF6E4" stroke-width="6" opacity="0.58"/>
+                <path d="M192,430 V582" stroke="#F2D68E" stroke-width="3" opacity="0.5"/>
+                <rect x="188" y="570" width="124" height="12" rx="4" fill="#C89D42" stroke="#1E1813" stroke-width="4"/>
+              </g>
+            </g>
+
+            <!-- RIGHT PAN · coin stack -->
+            <g id="s04-right-rig" transform="translate(0,0) rotate(0 790 592)">
+              <path d="M680,590 A110,34 0 0 1 900,590 L888,606 A98,26 0 0 0 692,606 Z" fill="url(#s04-brass)" stroke="#1E1813" stroke-width="8"/>
+              <ellipse cx="790" cy="592" rx="96" ry="24" fill="#EAE0D0" stroke="#5C5248" stroke-width="4"/>
+              <g stroke="#1E1813" stroke-width="5">
+                <circle class="s04-coin" cx="742" cy="574" r="16" fill="#D9B45E" transform="translate(742,544) scale(0) translate(-742,-544)"/>
+                <circle class="s04-coin" cx="774" cy="574" r="16" fill="#C89D42" transform="translate(774,544) scale(0) translate(-774,-544)"/>
+                <circle class="s04-coin" cx="806" cy="574" r="16" fill="#D9B45E" transform="translate(806,544) scale(0) translate(-806,-544)"/>
+                <circle class="s04-coin" cx="838" cy="574" r="16" fill="#C89D42" transform="translate(838,544) scale(0) translate(-838,-544)"/>
+                <circle class="s04-coin" cx="758" cy="546" r="16" fill="#C89D42" transform="translate(758,516) scale(0) translate(-758,-516)"/>
+                <circle class="s04-coin" cx="790" cy="546" r="16" fill="#D9B45E" transform="translate(790,516) scale(0) translate(-790,-516)"/>
+                <circle class="s04-coin" cx="822" cy="546" r="16" fill="#C89D42" transform="translate(822,516) scale(0) translate(-822,-516)"/>
+                <circle class="s04-coin" cx="774" cy="518" r="16" fill="#D9B45E" transform="translate(774,488) scale(0) translate(-774,-488)"/>
+                <circle class="s04-coin" cx="806" cy="518" r="16" fill="#C89D42" transform="translate(806,488) scale(0) translate(-806,-488)"/>
+                <circle class="s04-coin" cx="790" cy="490" r="16" fill="#D9B45E" transform="translate(790,460) scale(0) translate(-790,-460)"/>
+                <circle class="s04-coin" cx="742" cy="546" r="16" fill="#C89D42" transform="translate(742,516) scale(0) translate(-742,-516)"/>
+                <circle class="s04-coin" cx="838" cy="546" r="16" fill="#D9B45E" transform="translate(838,516) scale(0) translate(-838,-516)"/>
+                <circle class="s04-coin" cx="726" cy="518" r="16" fill="#C89D42" transform="translate(726,488) scale(0) translate(-726,-488)"/>
+                <circle class="s04-coin" cx="854" cy="518" r="16" fill="#D9B45E" transform="translate(854,488) scale(0) translate(-854,-488)"/>
+              </g>
+              <path d="M742,580 q24,12 48,0" stroke="#8A6420" stroke-width="5" fill="none" opacity="0.6"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- amber pinhole, revealed as the iris closes -->
+        <circle id="s04-pinhole-glow" cx="960" cy="560" r="210" fill="url(#s04-pinhole)" opacity="0"/>
+
+        <g fill="#FAF7F0" opacity="0.6">
+          <circle class="s04-mote" cx="300" cy="230" r="4"/>
+          <circle class="s04-mote" cx="760" cy="180" r="3"/>
+          <circle class="s04-mote" cx="700" cy="940" r="4"/>
+          <circle class="s04-mote" cx="120" cy="620" r="3"/>
+          <circle class="s04-mote" cx="960" cy="1000" r="3"/>
+        </g>
+
+        <rect x="0" y="0" width="1920" height="1080" filter="url(#s04-grain)" opacity="0.05" style="mix-blend-mode:multiply"/>
+      </svg>
+    </div>
+
+    <!-- PLANE FG · depth 1.06 · brass pin + hanging tag -->
+    <div class="s04-plane s04-p-fg" id="s04-plane-fg">
+      <svg class="s04-art" id="s04-art-fg" viewBox="0 0 1920 1080" aria-hidden="true">
+        <defs>
+          <filter id="s04-fg-shadow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="16"/>
+          </filter>
+        </defs>
+        <g id="s04-fg-pin">
+          <ellipse cx="1802" cy="1042" rx="120" ry="40" fill="#2B1F17" opacity="0.3" filter="url(#s04-fg-shadow)"/>
+          <path d="M1802,884 L1758,982" stroke="#1E1813" stroke-width="18" stroke-linecap="round"/>
+          <path d="M1802,884 L1758,982" stroke="#D9B45E" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="1802" cy="884" r="27" fill="url(#s04-brass)" stroke="#1E1813" stroke-width="7"/>
+          <circle cx="1802" cy="884" r="10" fill="#2B1F17"/>
+          <path d="M1788,874 a18,18 0 0 1 24,-5" fill="none" stroke="#FAF7F0" stroke-width="5" stroke-linecap="round"/>
+          <g transform="rotate(-5 1798 1040)">
+            <path d="M1756,954 h88 v170 h-88 Z" fill="#2B1F17" opacity="0.3" filter="url(#s04-fg-shadow)" transform="translate(8,10)"/>
+            <path d="M1756,954 h88 v170 h-88 Z" fill="#EAE0D0" stroke="#1E1813" stroke-width="9"/>
+            <circle cx="1800" cy="972" r="8" fill="#F5EFEB" stroke="#1E1813" stroke-width="4"/>
+            <g stroke="#5C5248" stroke-width="4" opacity="0.5">
+              <path d="M1772,1002 H1828 M1772,1026 H1828 M1772,1050 H1816 M1772,1074 H1822 M1772,1098 H1806"/>
+            </g>
+            <path d="M1772,990 h50" stroke="#C89D42" stroke-width="5"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <!-- PLANE IRIS · heavy seam, arch closes to an amber pinhole -->
+    <div class="s04-plane s04-p-iris" id="s04-plane-iris">
+      <svg class="s04-art" id="s04-art-iris" viewBox="0 0 1920 1080" aria-hidden="true">
+        <defs>
+          <filter id="s04-iris-grain" x="0" y="0" width="100%" height="100%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="2" seed="41" result="n"/>
+            <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.1  0 0 0 0 0.07  0 0 0 0 0.05  0 0 0 0.6 0"/>
+          </filter>
+          <radialGradient id="s04-iris-pinhole" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#FFD98E" stop-opacity="0.95"/>
+            <stop offset="0.4" stop-color="#D9822B" stop-opacity="0.45"/>
+            <stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <g mask="url(#s04-iris-mask)" id="s04-iris-cover">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s04-iris-fill)"/>
+          <rect x="0" y="0" width="1920" height="1080" filter="url(#s04-iris-grain)" opacity="0.16" style="mix-blend-mode:multiply"/>
+          <circle cx="960" cy="560" r="470" fill="none" stroke="#C89D42" stroke-width="6" opacity="0.12"/>
+          <circle cx="960" cy="560" r="390" fill="none" stroke="#C89D42" stroke-width="3" opacity="0.10"/>
+        </g>
+        <circle id="s04-pinhole-bloom" cx="960" cy="560" r="180" fill="url(#s04-iris-pinhole)" opacity="0"/>
+        <circle id="s04-iris-rim" cx="960" cy="560" r="1500" fill="none" stroke="#D9822B" stroke-width="6" opacity="0"/>
+      </svg>
+    </div>
+
+    <div class="s04-tag" id="s04-tag">
+      <span class="s04-tag-dot"></span>
+      <span class="s04-tag-text">ZERO MASTERS</span>
+    </div>
+    <div class="s04-tag-rule" id="s04-tag-rule"></div>
+  </div>
+</div>
+
+<script>
+(function initS04(){
+  var ID = "s04-zero-masters";
+  var root = document.querySelector('[data-composition-id="' + ID + '"]');
+  var tl = gsap.timeline({ paused: true });
+
+  // round-trip scale about each element's own centre (keeps SVG transforms exact)
+  function about(dy, s){
+    return function(i, el){
+      var x = +el.getAttribute("cx");
+      var y = +el.getAttribute("cy") + dy;
+      return "translate(" + x + "," + y + ") scale(" + s + ") translate(" + (-x) + "," + (-y) + ")";
+    };
+  }
+
+  // ── SLOT GUARD ────────────────────────────────────────────────────────────
+  tl.to({}, { duration: 22.660 }, 0);
+
+  // ── BG plane · 0.97 parallax ─────────────────────────────────────────────
+  tl.fromTo("#s04-plane-bg", { scale: 1.04, x: -14, transformOrigin: "50% 46%" },
+            { scale: 1.0, x: 0, duration: 22.2, ease: "sine.out" }, 0.10);
+  tl.to("#s04-plane-bg", { y: -14, duration: 22.2, ease: "sine.inOut" }, 0.10);
+  tl.to("#s04-medallion", { attr: { transform: "rotate(3 520 500)" }, duration: 20, ease: "sine.inOut" }, 0.2);
+
+  // ── PHASE 1 (0–4s): column and beam assemble from brass beads ────────────
+  tl.fromTo("#s04-panel-rect", { attr: { height: 0 } },
+            { attr: { height: 780 }, duration: 1.30, ease: "power3.inOut" }, 0.20);
+  tl.fromTo("#s04-column path", { attr: { "stroke-dashoffset": 360 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 1.55, ease: "power2.inOut", stagger: 0.12 }, 0.55);
+  tl.fromTo("#s04-plinth", { attr: { transform: "translate(520,817) scale(0) translate(-520,-817)" } },
+            { attr: { transform: "translate(520,817) scale(1) translate(-520,-817)" }, duration: 0.50, ease: "back.out(2.6)" }, 1.75);
+  tl.fromTo("#s04-capital", { attr: { transform: "translate(520,463) scale(0) translate(-520,-463)" } },
+            { attr: { transform: "translate(520,463) scale(1) translate(-520,-463)" }, duration: 0.50, ease: "back.out(2.6)" }, 1.95);
+  tl.to("#s04-balance-shadow", { opacity: 0.32, duration: 0.9, ease: "sine.out" }, 1.95);
+
+  tl.fromTo(".s04-bead", { attr: { transform: about(-50, 0) } },
+            { attr: { transform: about(0, 1) }, duration: 0.46, ease: "back.out(3)", stagger: 0.085 }, 0.85);
+  tl.fromTo("#s04-beam-outline", { attr: { "stroke-dashoffset": 640 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 0.75, ease: "power2.inOut" }, 2.05);
+  tl.fromTo("#s04-beam-bar", { attr: { "stroke-dashoffset": 640 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 0.75, ease: "power2.inOut" }, 2.20);
+  tl.fromTo("#s04-beam-hi", { attr: { "stroke-dashoffset": 620 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 0.70, ease: "power2.inOut" }, 2.35);
+
+  // rack builds while the balance stands
+  tl.fromTo("#s04-rack > rect", { opacity: 0 }, { opacity: 0.3, duration: 0.55, ease: "sine.out" }, 2.38);
+  tl.fromTo("#s04-rack path", { attr: { "stroke-dashoffset": 540 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 0.85, ease: "power2.inOut", stagger: 0.10 }, 2.45);
+  [1,2,3,4,5].forEach(function(n, i){
+    var x = [140,248,356,464,572][n - 1];
+    var s0 = "translate(" + x + ",948) scale(0) translate(" + (-x) + ",-948)";
+    var s1 = "translate(" + x + ",948) scale(1) translate(" + (-x) + ",-948)";
+    tl.fromTo("#s04-socket-" + n, { attr: { transform: s0 } },
+              { attr: { transform: s1 }, duration: 0.42, ease: "back.out(3)" }, 3.10 + i * 0.14);
+  });
+
+  // FG pin
+  tl.fromTo("#s04-fg-pin", { y: -24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power2.out" }, 3.45);
+
+  // ── PHASE 2 (4–9s): the mirror pan loads, outweighs the coins ────────────
+  tl.to("#s04-mirror-plate", { attr: { transform: "translate(0,0) translate(250,424) rotate(0) translate(-250,-424)" }, duration: 0.85, ease: "power3.out" }, 4.35);
+  tl.fromTo(".s04-coin", { attr: { transform: about(-30, 0) } },
+            { attr: { transform: about(0, 1) }, duration: 0.34, ease: "back.out(3)", stagger: 0.11 }, 4.65);
+  tl.to("#s04-beam-assembly", { attr: { transform: "rotate(-9 520 470)" }, duration: 1.55, ease: "power2.inOut" }, 6.85);
+  tl.to("#s04-left-rig", { attr: { transform: "translate(0,44) rotate(9 250 592)" }, duration: 1.55, ease: "power2.inOut" }, 6.85);
+  tl.to("#s04-right-rig", { attr: { transform: "translate(0,-44) rotate(9 790 592)" }, duration: 1.55, ease: "power2.inOut" }, 6.85);
+  tl.to("#s04-beam-assembly", { attr: { transform: "rotate(-8.4 520 470)" }, duration: 0.7, ease: "sine.inOut" }, 8.40);
+
+  // ── PHASE 3 (9–16s): the Europe graticule map unfolds, route draws ───────
+  tl.fromTo("#s04-map-rect", { attr: { x: 480, width: 0 } },
+            { attr: { x: -20, width: 1000 }, duration: 1.55, ease: "power3.inOut" }, 9.15);
+  tl.fromTo("#s04-map-ground", { attr: { "stroke-dasharray": 2900, "stroke-dashoffset": 2900 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 1.4, ease: "power2.inOut" }, 9.3);
+  tl.to("#s04-map-shadow", { opacity: 0.32, duration: 1.2, ease: "sine.out" }, 9.25);
+  tl.fromTo("#s04-pin-murano", { attr: { transform: "translate(470,300) scale(0) translate(-470,-300)" } },
+            { attr: { transform: "translate(470,300) scale(1) translate(-470,-300)" }, duration: 0.42, ease: "back.out(3)" }, 12.20);
+  tl.fromTo("#s04-pin-paris", { attr: { transform: "translate(334,214) scale(0) translate(-334,-214)" } },
+            { attr: { transform: "translate(334,214) scale(1) translate(-334,-214)" }, duration: 0.46, ease: "back.out(3.4)" }, 13.15);
+  tl.fromTo("#s04-map-shock", { attr: { transform: "translate(334,214) scale(0.4) translate(-334,-214)" }, opacity: 0.8 },
+            { attr: { transform: "translate(334,214) scale(2.2) translate(-334,-214)" }, opacity: 0, duration: 0.9, ease: "power2.out" }, 13.18);
+  tl.fromTo("#s04-route", { attr: { "stroke-dashoffset": 220 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 1.35, ease: "power2.inOut" }, 13.70);
+  tl.to("#s04-route", { opacity: 0.62, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 3 }, 15.1);
+
+  // ── PHASE 4 (16–22.66s): beam snaps, route fires, medallion darkens, iris ─
+  tl.to("#s04-beam-assembly", { attr: { transform: "rotate(0 520 470)" }, duration: 0.55, ease: "back.out(2.6)" }, 16.20);
+  tl.to("#s04-left-rig", { attr: { transform: "translate(0,0) rotate(0 250 592)" }, duration: 0.55, ease: "back.out(2.6)" }, 16.20);
+  tl.to("#s04-right-rig", { attr: { transform: "translate(0,0) rotate(0 790 592)" }, duration: 0.55, ease: "back.out(2.6)" }, 16.20);
+  tl.to("#s04-beam-assembly", { attr: { transform: "rotate(0.9 520 470)" }, duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: 3 }, 16.9);
+
+  tl.fromTo("#s04-fire", { attr: { "stroke-dashoffset": 1200 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 1.05, ease: "power3.in" }, 17.30);
+  tl.fromTo("#s04-fire-glow", { attr: { "stroke-dashoffset": 1200 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 1.05, ease: "power3.in" }, 17.40);
+  tl.to("#s04-fire", { opacity: 0.45, duration: 1.3, ease: "sine.inOut", yoyo: true, repeat: 2 }, 18.5);
+
+  tl.to("#s04-panel-sweep", { x: 700, opacity: 1, duration: 1.5, ease: "sine.inOut" }, 17.9);
+  tl.to("#s04-panel-sweep", { opacity: 0, duration: 0.6, ease: "sine.out" }, 19.2);
+  tl.to("#s04-plate-dim", { opacity: 0.28, duration: 2.2, ease: "sine.in" }, 18.4);
+
+  // iris mask closes to a true pinhole (r attribute, not CSS scale)
+  tl.fromTo("#s04-iris-hole", { attr: { r: 1500 } },
+            { attr: { r: 18 }, duration: 2.0, ease: "power2.in" }, 20.55);
+  tl.fromTo("#s04-iris-rim", { attr: { r: 1500 }, opacity: 0 },
+            { attr: { r: 20 }, opacity: 1, duration: 2.0, ease: "power2.in" }, 20.55);
+  tl.to("#s04-pinhole-glow", { opacity: 0.9, duration: 1.1, ease: "sine.in" }, 21.5);
+  tl.to("#s04-pinhole-bloom", { opacity: 0.85, duration: 1.0, ease: "sine.in" }, 21.6);
+
+  // living hold
+  tl.fromTo("#s04-stage", { scale: 1.0 }, { scale: 1.028, y: -8, duration: 22.2, ease: "sine.inOut", transformOrigin: "50% 50%" }, 0.15);
+  tl.fromTo(".s04-mote", { y: 0, x: 0 }, { y: -46, x: 12, duration: 5.2, ease: "sine.inOut", yoyo: true, repeat: 2, stagger: 0.2 }, 0.9);
+
+  // ── TAG ───────────────────────────────────────────────────────────────────
+  tl.fromTo("#s04-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -12 },
+            { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.64, ease: "power3.inOut" }, 2.30);
+  tl.fromTo("#s04-tag-rule", { width: 0 }, { width: 322, duration: 0.55, ease: "power2.out" }, 2.68);
+
+  // ── SEAM: tag clears, iris takes the frame ───────────────────────────────
+  tl.to("#s04-tag", { clipPath: "inset(0% 0% 0% 100%)", x: -8, duration: 0.40, ease: "power2.in" }, 19.70);
+  tl.to("#s04-tag-rule", { width: 0, duration: 0.34, ease: "power2.in" }, 19.70);
+  tl.to("#s04-stage", { scale: 1.018, duration: 1.70, ease: "power2.in" }, 20.9);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

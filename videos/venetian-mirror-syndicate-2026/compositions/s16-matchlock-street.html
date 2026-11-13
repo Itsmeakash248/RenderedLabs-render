@@ -1,0 +1,656 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s16-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s16-matchlock-street"] .s16-stage{position:absolute;inset:0;transform-origin:50% 54%;}
+[data-composition-id="s16-matchlock-street"] .s16-ground{position:absolute;inset:0;background:
+  radial-gradient(50% 46% at 50% 62%, rgba(255,236,198,0.55) 0%, rgba(255,236,198,0.18) 54%, rgba(255,236,198,0) 80%),
+  radial-gradient(34% 30% at 8% 58%, rgba(255,206,124,0.55) 0%, rgba(255,206,124,0) 72%),
+  linear-gradient(178deg, #FCF4E2 0%, #F7E7C8 32%, #EFD7B0 62%, #DDBC92 100%);}
+[data-composition-id="s16-matchlock-street"] .s16-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="s16-matchlock-street"] .s16-p-bg{z-index:1;}
+[data-composition-id="s16-matchlock-street"] .s16-p-mg{z-index:2;}
+[data-composition-id="s16-matchlock-street"] .s16-p-fg{z-index:4;}
+[data-composition-id="s16-matchlock-street"] .s16-grain{position:absolute;inset:0;z-index:6;pointer-events:none;
+  background-image:radial-gradient(rgba(43,31,23,0.55) 0.4px, transparent 0.5px);background-size:3px 3px;
+  opacity:0.11;mix-blend-mode:multiply;}
+[data-composition-id="s16-matchlock-street"] .s16-vignette{position:absolute;inset:0;z-index:7;pointer-events:none;
+  background:
+    linear-gradient(to top, rgba(43,31,23,0.34) 0%, rgba(43,31,23,0.07) 15%, rgba(43,31,23,0) 30%),
+    linear-gradient(to right, rgba(43,31,23,0.22) 0%, rgba(43,31,23,0.04) 16%, rgba(43,31,23,0) 34%),
+    linear-gradient(to left, rgba(43,31,23,0.18) 0%, rgba(43,31,23,0) 30%),
+    radial-gradient(120% 94% at 50% 48%, rgba(43,31,23,0) 54%, rgba(43,31,23,0.24) 100%);}
+[data-composition-id="s16-matchlock-street"] .s16-tag{position:absolute;left:86px;top:92px;z-index:8;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;
+  background:linear-gradient(180deg,#FDFAF4 0%,#F1E7D6 100%);
+  box-shadow:0 12px 30px rgba(43,31,23,0.26),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s16-matchlock-street"] .s16-tag-dot{width:15px;height:15px;border-radius:50%;background:#C2593F;
+  box-shadow:0 0 0 5px rgba(194,89,63,0.20),inset 0 0 0 3px #A8462F;}
+[data-composition-id="s16-matchlock-street"] .s16-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.16em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s16-matchlock-street"] .s16-rule{position:absolute;left:86px;top:158px;height:5px;width:0;z-index:8;background:#C2593F;border-radius:4px;
+  box-shadow:0 2px 6px rgba(43,31,23,0.25);}
+[data-composition-id="s16-matchlock-street"] .s16-mote{transform-box:fill-box;transform-origin:50% 50%;}
+</style>
+
+<div id="root" data-composition-id="s16-matchlock-street" data-width="1920" data-height="1080" data-start="0" data-duration="16.899">
+  <div class="s16-stage" id="s16-stage">
+    <div class="s16-ground"></div>
+
+    <!-- BG · the street, the furnace wall, the arch -->
+    <svg class="s16-plane s16-p-bg" id="s16-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s16-sky" x1="0" y1="0" x2="0.06" y2="1">
+          <stop offset="0" stop-color="#FDF6E7"/><stop offset="0.42" stop-color="#F8E8C8"/><stop offset="1" stop-color="#EBCFA6"/>
+        </linearGradient>
+        <linearGradient id="s16-far" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#EBD4AC"/><stop offset="1" stop-color="#D3AE7C"/>
+        </linearGradient>
+        <linearGradient id="s16-mid" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#E6CA9E"/><stop offset="1" stop-color="#C99E6C"/>
+        </linearGradient>
+        <linearGradient id="s16-near" x1="0" y1="0" x2="0.08" y2="1">
+          <stop offset="0" stop-color="#E0C094"/><stop offset="1" stop-color="#BE9060"/>
+        </linearGradient>
+        <linearGradient id="s16-roof" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#B47A4A"/><stop offset="1" stop-color="#8E5A33"/>
+        </linearGradient>
+        <linearGradient id="s16-street" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#F0DAB4"/><stop offset="0.5" stop-color="#DFC094"/><stop offset="1" stop-color="#C9A272"/>
+        </linearGradient>
+        <linearGradient id="s16-brass" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.3" stop-color="#E3BB64"/><stop offset="0.62" stop-color="#C89D42"/>
+          <stop offset="0.85" stop-color="#9E742A"/><stop offset="1" stop-color="#D9AE56"/>
+        </linearGradient>
+        <radialGradient id="s16-fire" cx="50%" cy="58%" r="58%">
+          <stop offset="0" stop-color="#FFF6D8" stop-opacity="0.95"/>
+          <stop offset="0.34" stop-color="#FFCE7C" stop-opacity="0.72"/>
+          <stop offset="0.7" stop-color="#E89A3C" stop-opacity="0.34"/>
+          <stop offset="1" stop-color="#C2593F" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="s16-burn" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#FFF6DE"/><stop offset="0.42" stop-color="#FFD98E"/>
+          <stop offset="0.78" stop-color="#F0B54A"/><stop offset="1" stop-color="#C2593F"/>
+        </linearGradient>
+        <pattern id="s16-cobble" width="150" height="96" patternUnits="userSpaceOnUse">
+          <rect width="150" height="96" fill="none"/>
+          <ellipse cx="32" cy="26" rx="34" ry="15" fill="#D8B98C" opacity="0.5"/>
+          <ellipse cx="106" cy="30" rx="38" ry="16" fill="#D0AF80" opacity="0.45"/>
+          <ellipse cx="10" cy="70" rx="32" ry="15" fill="#D4B285" opacity="0.42"/>
+          <ellipse cx="78" cy="74" rx="36" ry="16" fill="#CBAA7C" opacity="0.45"/>
+          <ellipse cx="136" cy="68" rx="24" ry="13" fill="#D6B689" opacity="0.38"/>
+          <path d="M0,98 H150" stroke="#8E6238" stroke-width="3" opacity="0.18"/>
+        </pattern>
+        <filter id="s16-soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+        <filter id="s16-haze" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="30"/></filter>
+        <filter id="s16-grainf" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.86" numOctaves="2" seed="23" result="n"/>
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.14  0 0 0 0 0.10  0 0 0 0 0.07  0 0 0 0.5 0"/>
+        </filter>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s16-sky)"/>
+      <ellipse cx="980" cy="520" rx="640" ry="220" fill="#FFF3D8" opacity="0.5" filter="url(#s16-haze)"/>
+
+      <!-- far houses -->
+      <g id="s16-farhouses" opacity="0.9">
+        <path d="M540,610 H700 V430 H540 Z" fill="url(#s16-far)"/>
+        <path d="M520,432 L620,376 L720,432 Z" fill="#B98A5C"/>
+        <path d="M700,610 H840 V462 H700 Z" fill="url(#s16-far)"/>
+        <path d="M686,464 L770,414 L854,464 Z" fill="#B38456"/>
+        <g fill="#8A6B49" opacity="0.42">
+          <rect x="566" y="470" width="26" height="38" rx="3"/><rect x="620" y="470" width="26" height="38" rx="3"/>
+          <rect x="722" y="496" width="24" height="34" rx="3"/><rect x="772" y="496" width="24" height="34" rx="3"/>
+        </g>
+        <path d="M1090,604 H1230 V452 H1090 Z" fill="url(#s16-far)"/>
+        <path d="M1074,454 L1160,404 L1246,454 Z" fill="#B38456"/>
+        <path d="M1240,608 H1360 V486 H1240 Z" fill="url(#s16-far)"/>
+        <path d="M1226,488 L1300,446 L1374,488 Z" fill="#AD7F52"/>
+      </g>
+
+      <!-- the arch at the street's end -->
+      <g id="s16-arch">
+        <path d="M856,604 H1064 V498 C1064,438 1020,404 960,404 C900,404 856,438 856,498 Z" fill="#C79B6B"/>
+        <path d="M886,604 H1034 V502 C1034,456 1000,432 960,432 C920,432 886,456 886,502 Z" fill="#8C6238"/>
+        <path d="M906,604 H1014 V508 C1014,472 990,454 960,454 C930,454 906,472 906,508 Z" fill="#6B4526" opacity="0.85"/>
+        <path d="M960,454 V604" stroke="#4A2E1C" stroke-width="6" opacity="0.4"/>
+        <path d="M846,600 H1074" stroke="#8A6B49" stroke-width="8" opacity="0.5"/>
+      </g>
+
+      <!-- street -->
+      <path d="M-40,596 H1960 L1920,1080 H-20 Z" fill="url(#s16-street)"/>
+      <path d="M-40,596 H1960 L1956,626 H-38 Z" fill="#FAECCE" opacity="0.6"/>
+      <path d="M-40,600 H1960 L1920,1080 H-20 Z" fill="url(#s16-cobble)" opacity="0.5"/>
+      <g stroke="#8E6238" stroke-width="3" opacity="0.22">
+        <path d="M120,610 C180,720 260,900 320,1080"/>
+        <path d="M420,610 C440,730 470,910 500,1080"/>
+        <path d="M720,604 C720,730 720,910 720,1080"/>
+        <path d="M1200,604 C1200,730 1200,910 1200,1080"/>
+        <path d="M1500,604 C1480,730 1450,910 1420,1080"/>
+        <path d="M1800,604 C1740,720 1660,900 1600,1080"/>
+      </g>
+      <g fill="#EBD3A9" opacity="0.4">
+        <ellipse cx="240" cy="700" rx="52" ry="16"/>
+        <ellipse cx="620" cy="668" rx="44" ry="13"/>
+        <ellipse cx="1040" cy="720" rx="60" ry="18"/>
+        <ellipse cx="1560" cy="690" rx="48" ry="15"/>
+        <ellipse cx="380" cy="880" rx="86" ry="24"/>
+        <ellipse cx="1180" cy="900" rx="96" ry="27"/>
+        <ellipse cx="1740" cy="860" rx="74" ry="21"/>
+      </g>
+
+      <!-- left glassworks wall + furnace mouth -->
+      <g id="s16-workshop">
+        <path d="M-40,760 H392 V168 H-40 Z" fill="url(#s16-near)"/>
+        <path d="M-60,170 L176,116 L404,170 Z" fill="url(#s16-roof)"/>
+        <path d="M-60,168 H404" stroke="#5C3A20" stroke-width="10" opacity="0.6"/>
+        <g stroke="#8A5C34" stroke-width="4" opacity="0.3">
+          <path d="M-40,300 H392"/><path d="M-40,460 H392"/><path d="M-40,620 H392"/>
+          <path d="M120,180 V760"/><path d="M268,180 V760"/>
+        </g>
+        <rect x="36" y="246" width="112" height="146" fill="#7C4A2A" opacity="0.55"/>
+        <g stroke="#4A2E1C" stroke-width="5">
+          <path d="M36,318 H148"/><path d="M92,246 V392"/>
+        </g>
+        <path d="M196,760 V560 C196,506 232,472 286,472 C340,472 376,506 376,560 V760 Z" fill="#3A2A1E"/>
+        <path d="M214,760 V566 C214,520 244,492 286,492 C328,492 358,520 358,566 V760 Z" fill="#241812"/>
+        <ellipse id="s16-furnaceglow" cx="286" cy="650" rx="132" ry="120" fill="url(#s16-fire)" opacity="0.85"/>
+        <path d="M240,760 C244,690 262,646 286,632 C310,646 328,690 332,760 Z" fill="#E89A3C" opacity="0.75"/>
+        <path d="M256,760 C260,706 272,676 286,664 C300,676 312,706 316,760 Z" fill="#FFCE7C" opacity="0.9"/>
+        <path d="M270,760 C274,726 280,708 286,700 C292,708 298,726 302,760 Z" fill="#FFF6D8" opacity="0.9"/>
+        <path d="M210,760 H362" stroke="#1E1813" stroke-width="12" opacity="0.6"/>
+        <g stroke="#6E4A2C" stroke-width="7" opacity="0.7">
+          <path d="M196,556 H376"/><path d="M196,600 H376"/>
+        </g>
+        <path d="M286,472 V420" stroke="#4A2E1C" stroke-width="16"/>
+        <path d="M256,420 H316" stroke="#4A2E1C" stroke-width="12"/>
+        <rect x="36" y="646" width="94" height="114" fill="#6B4526" opacity="0.45"/>
+        <path d="M36,700 H130" stroke="#3A2A1E" stroke-width="6" opacity="0.5"/>
+      </g>
+
+      <!-- the guild sign, swinging -->
+      <g id="s16-signarm" transform="translate(392,252)">
+        <path d="M0,0 H96" stroke="#3A2A1E" stroke-width="12" stroke-linecap="round"/>
+        <path d="M0,0 L-26,44" stroke="#3A2A1E" stroke-width="9"/>
+        <path d="M96,4 V26" stroke="#3A2A1E" stroke-width="7"/>
+        <circle cx="96" cy="4" r="7" fill="#C89D42"/>
+      </g>
+      <g id="s16-sign" transform="translate(488,252)">
+        <g id="s16-sign-in">
+          <path d="M0,20 V40" stroke="#3A2A1E" stroke-width="5"/>
+          <path d="M-56,40 H56 V160 H-56 Z" fill="#8A5A32" stroke="#3A2A1E" stroke-width="6"/>
+          <path d="M-46,52 H46 V148 H-46 Z" fill="#A97445" opacity="0.6"/>
+          <path d="M-18,64 H18 L14,92 C28,96 30,116 14,122 C6,126 -6,126 -14,122 C-30,116 -28,96 -14,92 Z" fill="#F7E3B8" stroke="#3A2A1E" stroke-width="4"/>
+          <path d="M-10,124 H10 V134 H-10 Z" fill="#F7E3B8" stroke="#3A2A1E" stroke-width="4"/>
+          <path d="M-14,92 L14,92" stroke="#3A2A1E" stroke-width="3" opacity="0.5"/>
+        </g>
+      </g>
+
+      <!-- right houses -->
+      <g id="s16-righthouse">
+        <path d="M1436,796 H1960 V148 H1436 Z" fill="url(#s16-near)"/>
+        <path d="M1416,150 L1700,86 L1978,150 Z" fill="url(#s16-roof)"/>
+        <path d="M1416,148 H1980" stroke="#5C3A20" stroke-width="10" opacity="0.6"/>
+        <g stroke="#8A5C34" stroke-width="4" opacity="0.28">
+          <path d="M1436,300 H1960"/><path d="M1436,470 H1960"/><path d="M1436,640 H1960"/>
+          <path d="M1580,160 V796"/><path d="M1760,160 V796"/>
+        </g>
+        <g fill="#7C4A2A" opacity="0.55">
+          <rect x="1476" y="330" width="86" height="120" rx="4"/><rect x="1620" y="330" width="86" height="120" rx="4"/>
+          <rect x="1476" y="500" width="86" height="120" rx="4"/><rect x="1620" y="500" width="86" height="120" rx="4"/>
+        </g>
+        <g stroke="#5C3A20" stroke-width="5" opacity="0.7">
+          <path d="M1476,390 H1562"/><path d="M1476,560 H1562"/><path d="M1620,390 H1706"/><path d="M1620,560 H1706"/>
+        </g>
+        <rect x="1790" y="356" width="118" height="150" fill="#6B4526" opacity="0.5"/>
+        <path d="M1790,430 H1908" stroke="#3A2A1E" stroke-width="6" opacity="0.6"/>
+        <path d="M1716,796 V700 C1716,676 1734,660 1756,660 C1778,660 1796,676 1796,700 V796 Z" fill="#3A2A1E"/>
+      </g>
+
+      <!-- chimney pots -->
+      <g fill="#8E5A33" stroke="#5C3A20" stroke-width="4">
+        <rect x="636" y="352" width="26" height="44"/><rect x="742" y="382" width="22" height="38"/>
+        <rect x="1524" y="120" width="30" height="48"/><rect x="1826" y="132" width="26" height="42"/>
+      </g>
+
+      <!-- barrels and a cart at the curb -->
+      <g id="s16-barrels" transform="translate(1218,884)"><g id="s16-barrels-in">
+        <ellipse cx="0" cy="34" rx="86" ry="18" fill="#2B1F17" opacity="0.2"/>
+        <path d="M-58,-72 C-70,-24 -70,10 -58,34 L58,34 C70,10 70,-24 58,-72 Z" fill="#8A5A32" stroke="#3A2A1E" stroke-width="5"/>
+        <ellipse cx="0" cy="-72" rx="58" ry="14" fill="#A97445" stroke="#3A2A1E" stroke-width="5"/>
+        <g stroke="#3A2A1E" stroke-width="6" opacity="0.65">
+          <path d="M-64,-46 H64"/><path d="M-62,4 H62"/>
+        </g>
+        <path d="M-40,-70 V32" stroke="#6B4526" stroke-width="4" opacity="0.5"/>
+        <path d="M28,-70 V32" stroke="#6B4526" stroke-width="4" opacity="0.5"/>
+      </g></g>
+      <g fill="#FFD98E" opacity="0.55">
+        <circle class="s16-mote" cx="420" cy="560" r="4"/><circle class="s16-mote" cx="980" cy="470" r="3"/>
+        <circle class="s16-mote" cx="1320" cy="540" r="4"/><circle class="s16-mote" cx="760" cy="640" r="3"/>
+        <circle class="s16-mote" cx="1600" cy="500" r="3"/>
+      </g>
+      <rect x="0" y="0" width="1920" height="1080" filter="url(#s16-grainf)" opacity="0.05" style="mix-blend-mode:multiply"/>
+    </svg>
+
+    <!-- MG · the two factions, the carboy, the guard -->
+    <svg class="s16-plane s16-p-mg" id="s16-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s16-coat" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#4A3524"/><stop offset="1" stop-color="#2B1F17"/>
+        </linearGradient>
+        <linearGradient id="s16-coat2" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#543C28"/><stop offset="1" stop-color="#33251A"/>
+        </linearGradient>
+        <linearGradient id="s16-wood" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#8A5A32"/><stop offset="1" stop-color="#5C3A20"/>
+        </linearGradient>
+        <linearGradient id="s16-steel" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#B7A58C"/><stop offset="0.5" stop-color="#8A7A64"/><stop offset="1" stop-color="#5E5244"/>
+        </linearGradient>
+        <radialGradient id="s16-wax" cx="42%" cy="34%" r="66%">
+          <stop offset="0" stop-color="#D9704F"/><stop offset="0.5" stop-color="#C2593F"/><stop offset="1" stop-color="#93392A"/>
+        </radialGradient>
+        <radialGradient id="s16-glass" cx="36%" cy="30%" r="70%">
+          <stop offset="0" stop-color="#FFF9E8" stop-opacity="0.95"/>
+          <stop offset="0.45" stop-color="#E8D6AE" stop-opacity="0.7"/>
+          <stop offset="1" stop-color="#B08A5E" stop-opacity="0.55"/>
+        </radialGradient>
+        <radialGradient id="s16-lantern" cx="50%" cy="46%" r="52%">
+          <stop offset="0" stop-color="#FFF6D8" stop-opacity="0.95"/>
+          <stop offset="0.4" stop-color="#FFCE7C" stop-opacity="0.55"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="s16-msoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="10"/></filter>
+        <filter id="s16-smoke" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="16"/></filter>
+      </defs>
+
+      <!-- La Motta, left, facing right -->
+      <g id="s16-lamotta" transform="translate(470,926) scale(1.36)">
+        <g id="s16-lamotta-in">
+          <ellipse cx="10" cy="6" rx="96" ry="20" fill="#2B1F17" opacity="0.24" filter="url(#s16-msoft)"/>
+          <path d="M-44,0 L-36,-104 L-10,-104 L-6,0 Z" fill="#6B4526"/>
+          <path d="M6,0 L4,-104 L30,-104 L40,0 Z" fill="#57381F"/>
+          <path d="M-54,0 H2 V15 H-58 Z" fill="#2B1F17"/>
+          <path d="M0,0 H46 V15 H-4 Z" fill="#241812"/>
+          <path d="M-72,-100 C-66,-192 -50,-248 0,-256 C50,-248 66,-192 72,-100 C46,-78 -46,-78 -72,-100 Z" fill="url(#s16-coat)"/>
+          <path d="M-72,-100 C-56,-84 -28,-78 0,-78 C28,-78 56,-84 72,-100 L66,-120 C40,-106 -40,-106 -66,-120 Z" fill="#241812" opacity="0.75"/>
+          <path d="M-10,-252 L2,-150 L-4,-96" stroke="#1E1813" stroke-width="6" fill="none" opacity="0.55"/>
+          <path d="M-48,-208 C-16,-192 18,-178 48,-158" stroke="#C2593F" stroke-width="21" fill="none"/>
+          <path d="M-48,-208 C-16,-192 18,-178 48,-158" stroke="#D9704F" stroke-width="8" fill="none" opacity="0.5"/>
+          <path d="M-60,-150 H60" stroke="#241812" stroke-width="15"/>
+          <rect x="-15" y="-159" width="30" height="19" rx="4" fill="url(#s16-brass)" stroke="#7A5A1C" stroke-width="3"/>
+          <path d="M-32,-250 C-18,-266 18,-266 32,-250" fill="none" stroke="#E8D2AE" stroke-width="13"/>
+          <path d="M-13,-262 H13 V-284 H-13 Z" fill="#B98A5E"/>
+          <circle cx="0" cy="-298" r="25" fill="#C99A6C"/>
+          <path d="M-25,-298 C-25,-320 -13,-330 0,-330 C13,-330 25,-320 25,-298 Z" fill="#B0865C" opacity="0.6"/>
+          <circle cx="11" cy="-298" r="3.4" fill="#2B1F17" opacity="0.75"/>
+          <path d="M4,-286 C8,-283 14,-283 18,-286" stroke="#8A5F3C" stroke-width="3" fill="none"/>
+          <ellipse cx="2" cy="-320" rx="46" ry="9" fill="#2B1F17"/>
+          <path d="M-23,-322 C-21,-346 21,-346 23,-322 Z" fill="#3A2A1E"/>
+          <path d="M-23,-322 H23" stroke="#C89D42" stroke-width="3" opacity="0.55"/>
+          <!-- arm + matchlock -->
+          <g transform="translate(30,-236)">
+            <g id="s16-lm-arm">
+              <path d="M0,0 C28,6 54,20 66,34" stroke="#3A2A1E" stroke-width="27" fill="none" stroke-linecap="round"/>
+              <path d="M66,34 C82,34 94,30 106,24" stroke="#B98A5E" stroke-width="18" fill="none" stroke-linecap="round"/>
+              <g transform="translate(98,20) rotate(-8)">
+                <path d="M-34,-2 H150 V-14 H-34 Z" fill="url(#s16-steel)"/>
+                <path d="M-34,-8 H150" stroke="#FFF6DE" stroke-width="2" opacity="0.4"/>
+                <path d="M-52,6 C-34,0 -20,-2 -8,0 L-8,20 C-24,22 -40,20 -54,14 Z" fill="url(#s16-wood)" stroke="#3A2A1E" stroke-width="3"/>
+                <path d="M-16,-12 C-2,-24 12,-24 22,-12" stroke="#8A7A64" stroke-width="7" fill="none"/>
+                <circle cx="28" cy="-18" r="5" fill="#E89A3C"/>
+                <circle cx="28" cy="-18" r="10" fill="#FFCE7C" opacity="0.35"/>
+                <path d="M-6,20 L-14,44" stroke="#5C3A20" stroke-width="11"/>
+                <path d="M-80,-14 H-34" stroke="#5C3A20" stroke-width="12" stroke-linecap="round"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+
+      <!-- Rivetta, right, facing left (mirrored) -->
+      <g id="s16-rivetta" transform="translate(1450,926) scale(-1.36,1.36)">
+        <g id="s16-rivetta-in">
+          <ellipse cx="10" cy="6" rx="96" ry="20" fill="#2B1F17" opacity="0.24" filter="url(#s16-msoft)"/>
+          <path d="M-44,0 L-36,-104 L-10,-104 L-6,0 Z" fill="#6B4526"/>
+          <path d="M6,0 L4,-104 L30,-104 L40,0 Z" fill="#57381F"/>
+          <path d="M-54,0 H2 V15 H-58 Z" fill="#2B1F17"/>
+          <path d="M0,0 H46 V15 H-4 Z" fill="#241812"/>
+          <path d="M-72,-100 C-66,-192 -50,-248 0,-256 C50,-248 66,-192 72,-100 C46,-78 -46,-78 -72,-100 Z" fill="url(#s16-coat2)"/>
+          <path d="M-72,-100 C-56,-84 -28,-78 0,-78 C28,-78 56,-84 72,-100 L66,-120 C40,-106 -40,-106 -66,-120 Z" fill="#241812" opacity="0.75"/>
+          <path d="M-10,-252 L2,-150 L-4,-96" stroke="#1E1813" stroke-width="6" fill="none" opacity="0.55"/>
+          <path d="M-48,-208 C-16,-192 18,-178 48,-158" stroke="#8E5A33" stroke-width="21" fill="none"/>
+          <path d="M-48,-208 C-16,-192 18,-178 48,-158" stroke="#B4834F" stroke-width="8" fill="none" opacity="0.45"/>
+          <path d="M-60,-150 H60" stroke="#241812" stroke-width="15"/>
+          <rect x="-15" y="-159" width="30" height="19" rx="4" fill="url(#s16-brass)" stroke="#7A5A1C" stroke-width="3"/>
+          <path d="M-32,-250 C-18,-266 18,-266 32,-250" fill="none" stroke="#DCC69E" stroke-width="13"/>
+          <path d="M-13,-262 H13 V-284 H-13 Z" fill="#B98A5E"/>
+          <circle cx="0" cy="-298" r="25" fill="#C09062"/>
+          <path d="M-25,-298 C-25,-320 -13,-330 0,-330 C13,-330 25,-320 25,-298 Z" fill="#7C5334" opacity="0.6"/>
+          <circle cx="11" cy="-298" r="3.4" fill="#2B1F17" opacity="0.75"/>
+          <path d="M4,-286 C8,-283 14,-283 18,-286" stroke="#8A5F3C" stroke-width="3" fill="none"/>
+          <ellipse cx="2" cy="-320" rx="46" ry="9" fill="#2B1F17"/>
+          <path d="M-23,-322 C-21,-348 21,-348 23,-322 Z" fill="#33251A"/>
+          <path d="M-23,-322 H23" stroke="#C89D42" stroke-width="3" opacity="0.45"/>
+          <path d="M-46,-330 C-40,-352 -18,-358 2,-350" fill="none" stroke="#C2593F" stroke-width="8" opacity="0.8"/>
+          <g transform="translate(30,-236)">
+            <g id="s16-rv-arm">
+              <path d="M0,0 C28,6 54,20 66,34" stroke="#33251A" stroke-width="27" fill="none" stroke-linecap="round"/>
+              <path d="M66,34 C82,34 94,30 106,24" stroke="#B98A5E" stroke-width="18" fill="none" stroke-linecap="round"/>
+              <g transform="translate(98,20) rotate(-8)">
+                <path d="M-34,-2 H150 V-14 H-34 Z" fill="url(#s16-steel)"/>
+                <path d="M-34,-8 H150" stroke="#FFF6DE" stroke-width="2" opacity="0.4"/>
+                <path d="M-52,6 C-34,0 -20,-2 -8,0 L-8,20 C-24,22 -40,20 -54,14 Z" fill="url(#s16-wood)" stroke="#3A2A1E" stroke-width="3"/>
+                <path d="M-16,-12 C-2,-24 12,-24 22,-12" stroke="#8A7A64" stroke-width="7" fill="none"/>
+                <circle cx="28" cy="-18" r="5" fill="#E89A3C"/>
+                <circle cx="28" cy="-18" r="10" fill="#FFCE7C" opacity="0.35"/>
+                <path d="M-6,20 L-14,44" stroke="#5C3A20" stroke-width="11"/>
+                <path d="M-80,-14 H-34" stroke="#5C3A20" stroke-width="12" stroke-linecap="round"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+
+      <!-- crate and carboy between them -->
+      <g id="s16-crate" transform="translate(1000,900)"><g id="s16-crate-in">
+        <ellipse cx="0" cy="26" rx="104" ry="20" fill="#2B1F17" opacity="0.22" filter="url(#s16-msoft)"/>
+        <path d="M-84,-30 H84 V26 H-84 Z" fill="#8A5A32" stroke="#3A2A1E" stroke-width="6"/>
+        <path d="M-84,-30 H84" stroke="#A97445" stroke-width="6" opacity="0.7"/>
+        <g stroke="#5C3A20" stroke-width="5" opacity="0.6">
+          <path d="M-40,-30 V26"/><path d="M40,-30 V26"/><path d="M-84,0 H84"/>
+        </g>
+        <g id="s16-carboy">
+          <ellipse cx="0" cy="-30" rx="56" ry="12" fill="#2B1F17" opacity="0.3" filter="url(#s16-msoft)"/>
+          <path d="M-14,-32 H14 V-58 C14,-64 22,-66 26,-70" stroke="#C9A87C" stroke-width="8" fill="none"/>
+          <path d="M0,-22 C-48,-22 -60,-64 -46,-96 C-34,-124 34,-124 46,-96 C60,-64 48,-22 0,-22 Z" fill="url(#s16-glass)" stroke="#8A6B49" stroke-width="5"/>
+          <path d="M-34,-94 C-30,-112 -8,-118 6,-116" fill="none" stroke="#FFF9E8" stroke-width="8" opacity="0.75"/>
+          <path d="M-38,-52 C-30,-46 30,-46 38,-52" fill="none" stroke="#FFF9E8" stroke-width="4" opacity="0.4"/>
+        </g>
+      </g></g>
+
+      <!-- shards, hidden until the carboy bursts -->
+      <g id="s16-shards" opacity="0">
+        <g transform="translate(1000,790)">
+          <g id="s16-shard-a"><path d="M-20,-6 L14,-18 L6,16 Z" fill="#EFDDB4" stroke="#5C3A20" stroke-width="4"/></g>
+          <g id="s16-shard-b"><path d="M-14,-10 L18,4 L-8,14 Z" fill="#E3CFA4" stroke="#5C3A20" stroke-width="4"/></g>
+          <g id="s16-shard-c"><path d="M-18,2 L10,-14 L16,10 Z" fill="#F7EBD2" stroke="#5C3A20" stroke-width="4"/></g>
+          <g id="s16-shard-d"><path d="M-12,-14 L16,-2 L-4,14 Z" fill="#E8D6AE" stroke="#5C3A20" stroke-width="4"/></g>
+          <g id="s16-shard-e"><path d="M-16,-2 L12,-12 L10,14 Z" fill="#F2E4C6" stroke="#5C3A20" stroke-width="4"/></g>
+          <g id="s16-shard-f"><path d="M-10,-12 L14,6 L-14,10 Z" fill="#EBD8B2" stroke="#5C3A20" stroke-width="4"/></g>
+          <g id="s16-shard-g"><path d="M-18,-8 L8,-16 L2,12 Z" fill="#FBF1DA" stroke="#5C3A20" stroke-width="4"/></g>
+        </g>
+      </g>
+
+      <g id="s16-burst" opacity="0">
+        <circle cx="1000" cy="798" r="70" fill="#FFF6D8" opacity="0.95" filter="url(#s16-smoke)"/>
+        <circle cx="1000" cy="798" r="34" fill="#FFFBEF"/>
+        <path d="M1000,742 L1012,784 L1056,772 L1026,800 L1058,826 L1016,820 L1008,862 L992,820 L950,832 L978,802 L946,776 L988,784 Z" fill="#FFF6D8" opacity="0.9"/>
+      </g>
+
+      <!-- smoke puffs -->
+      <g id="s16-smoke1" opacity="0">
+        <ellipse cx="836" cy="628" rx="52" ry="34" fill="#D9BE95" opacity="0.8" filter="url(#s16-smoke)"/>
+        <ellipse cx="806" cy="600" rx="40" ry="26" fill="#E8D2AE" opacity="0.55" filter="url(#s16-smoke)"/>
+      </g>
+      <g id="s16-smoke2" opacity="0">
+        <ellipse cx="1084" cy="628" rx="52" ry="34" fill="#D9BE95" opacity="0.8" filter="url(#s16-smoke)"/>
+        <ellipse cx="1118" cy="602" rx="38" ry="25" fill="#E8D2AE" opacity="0.55" filter="url(#s16-smoke)"/>
+      </g>
+
+      <!-- royal guard arriving from the right -->
+      <g id="s16-guard" transform="translate(2010,846) scale(0.94)">
+        <g id="s16-guard-in">
+          <g id="s16-guard-a">
+            <ellipse cx="0" cy="4" rx="78" ry="17" fill="#2B1F17" opacity="0.2" filter="url(#s16-msoft)"/>
+            <path d="M-34,0 L-28,-96 L-6,-96 L-2,0 Z" fill="#5C4030"/>
+            <path d="M6,0 L4,-96 L26,-96 L34,0 Z" fill="#4A3524"/>
+            <path d="M-40,0 H2 V13 H-44 Z" fill="#241812"/>
+            <path d="M2,0 H44 V13 H-2 Z" fill="#1E1813"/>
+            <path d="M-60,-92 C-56,-176 -42,-228 0,-236 C42,-228 56,-176 60,-92 C38,-72 -38,-72 -60,-92 Z" fill="#4A3524"/>
+            <path d="M-60,-92 C-44,-78 -22,-72 0,-72 C22,-72 44,-78 60,-92 L55,-110 C34,-96 -34,-96 -55,-110 Z" fill="#2B1F17" opacity="0.7"/>
+            <path d="M-40,-170 H40" stroke="#241812" stroke-width="12"/>
+            <path d="M-40,-170 H40" stroke="#C89D42" stroke-width="4" opacity="0.6"/>
+            <path d="M-10,-238 H10 V-256 H-10 Z" fill="#B0865C"/>
+            <circle cx="0" cy="-266" r="19" fill="#C09062"/>
+            <path d="M-22,-266 C-22,-288 22,-288 22,-266 Z" fill="url(#s16-brass)" stroke="#7A5A1C" stroke-width="3"/>
+            <path d="M-4,-286 C0,-300 8,-304 14,-300" fill="none" stroke="#C2593F" stroke-width="6"/>
+            <path d="M-18,-266 H18" stroke="#7A5A1C" stroke-width="3" opacity="0.6"/>
+            <path d="M-26,-226 C-40,-190 -44,-150 -40,-108" stroke="#4A3524" stroke-width="18" fill="none" stroke-linecap="round"/>
+            <path d="M26,-226 C40,-190 44,-150 40,-108" stroke="#4A3524" stroke-width="18" fill="none" stroke-linecap="round"/>
+            <!-- halberd -->
+            <path d="M52,-420 L44,10" stroke="#5C3A20" stroke-width="9"/>
+            <path d="M30,-352 C46,-364 56,-364 62,-374 C58,-356 66,-344 78,-336 C60,-336 48,-342 30,-352 Z" fill="url(#s16-steel)" stroke="#3A2A1E" stroke-width="3"/>
+            <path d="M52,-420 L52,-392" stroke="#8A7A64" stroke-width="7"/>
+          </g>
+          <g id="s16-guard-b" transform="translate(118,6)">
+            <ellipse cx="0" cy="4" rx="78" ry="17" fill="#2B1F17" opacity="0.2" filter="url(#s16-msoft)"/>
+            <path d="M-34,0 L-28,-96 L-6,-96 L-2,0 Z" fill="#5C4030"/>
+            <path d="M6,0 L4,-96 L26,-96 L34,0 Z" fill="#4A3524"/>
+            <path d="M-40,0 H2 V13 H-44 Z" fill="#241812"/>
+            <path d="M2,0 H44 V13 H-2 Z" fill="#1E1813"/>
+            <path d="M-60,-92 C-56,-176 -42,-228 0,-236 C42,-228 56,-176 60,-92 C38,-72 -38,-72 -60,-92 Z" fill="#3A2A1E"/>
+            <path d="M-60,-92 C-44,-78 -22,-72 0,-72 C22,-72 44,-78 60,-92 L55,-110 C34,-96 -34,-96 -55,-110 Z" fill="#241812" opacity="0.7"/>
+            <path d="M-40,-170 H40" stroke="#241812" stroke-width="12"/>
+            <path d="M-40,-170 H40" stroke="#C89D42" stroke-width="4" opacity="0.6"/>
+            <path d="M-10,-238 H10 V-256 H-10 Z" fill="#B0865C"/>
+            <circle cx="0" cy="-266" r="19" fill="#C09062"/>
+            <path d="M-22,-266 C-22,-288 22,-288 22,-266 Z" fill="url(#s16-brass)" stroke="#7A5A1C" stroke-width="3"/>
+            <path d="M-4,-286 C0,-300 8,-304 14,-300" fill="none" stroke="#C2593F" stroke-width="6"/>
+            <path d="M-26,-226 C-40,-190 -44,-150 -40,-108" stroke="#3A2A1E" stroke-width="18" fill="none" stroke-linecap="round"/>
+            <path d="M26,-226 C40,-190 44,-150 40,-108" stroke="#3A2A1E" stroke-width="18" fill="none" stroke-linecap="round"/>
+            <path d="M52,-420 L44,10" stroke="#5C3A20" stroke-width="9"/>
+            <path d="M30,-352 C46,-364 56,-364 62,-374 C58,-356 66,-344 78,-336 C60,-336 48,-342 30,-352 Z" fill="url(#s16-steel)" stroke="#3A2A1E" stroke-width="3"/>
+            <!-- lantern -->
+            <path d="M-64,-300 L-64,-250" stroke="#3A2A1E" stroke-width="6"/>
+            <circle id="s16-guardglow" cx="-64" cy="-228" r="120" fill="url(#s16-lantern)" opacity="0.7"/>
+            <path d="M-80,-250 H-48 L-52,-206 H-76 Z" fill="#E8C077" fill-opacity="0.4" stroke="#2B1F17" stroke-width="5"/>
+            <path d="M-78,-250 H-50" stroke="#2B1F17" stroke-width="6"/>
+            <path d="M-70,-206 H-58" stroke="#2B1F17" stroke-width="6"/>
+            <path d="M-64,-236 C-58,-228 -58,-220 -64,-216 C-70,-220 -70,-228 -64,-236 Z" fill="#FFF3CE"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+
+    <!-- FG · cobble blur, flash burn, drifting smoke -->
+    <svg class="s16-plane s16-p-fg" id="s16-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s16-fgstone" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#8A6238"/><stop offset="0.6" stop-color="#5C3A20"/><stop offset="1" stop-color="#3A2A1E"/>
+        </linearGradient>
+        <radialGradient id="s16-flashgrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFF6DE" stop-opacity="1"/>
+          <stop offset="0.45" stop-color="#FFD98E" stop-opacity="0.95"/>
+          <stop offset="0.78" stop-color="#F0B54A" stop-opacity="0.85"/>
+          <stop offset="1" stop-color="#C2593F" stop-opacity="0.5"/>
+        </radialGradient>
+        <filter id="s16-fgblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter>
+        <filter id="s16-fgsmoke" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="22"/></filter>
+      </defs>
+
+      <g id="s16-fgstone" filter="url(#s16-fgblur)" opacity="0.96">
+        <path d="M-60,1080 L-60,1006 L620,986 L760,1080 Z" fill="url(#s16-fgstone)"/>
+        <path d="M-60,1024 L640,1000" stroke="#A97445" stroke-width="7" opacity="0.35"/>
+        <ellipse cx="210" cy="1044" rx="88" ry="20" fill="#241812" opacity="0.75"/>
+        <ellipse cx="520" cy="1030" rx="70" ry="17" fill="#241812" opacity="0.6"/>
+        <path d="M1290,1080 L1300,1016 L1920,1000 L1920,1080 Z" fill="url(#s16-fgstone)"/>
+        <ellipse cx="1600" cy="1042" rx="90" ry="20" fill="#241812" opacity="0.7"/>
+      </g>
+
+      <g id="s16-lowsmoke" opacity="0.5" filter="url(#s16-fgsmoke)">
+        <ellipse cx="700" cy="960" rx="300" ry="70" fill="#E8D6B4" opacity="0.35"/>
+        <ellipse cx="1240" cy="940" rx="260" ry="60" fill="#E8D6B4" opacity="0.3"/>
+      </g>
+
+      <g id="s16-shotlight" opacity="0">
+        <ellipse cx="960" cy="760" rx="620" ry="260" fill="#FFE4AC" opacity="0.55" filter="url(#s16-fgsmoke)"/>
+      </g>
+
+      <g id="s16-shot1" transform="translate(836,624)" opacity="0">
+        <path d="M0,-64 L13,-18 L62,-34 L31,2 L66,28 L18,24 L9,68 L-7,24 L-50,37 L-26,4 L-64,-15 L-15,-15 Z" fill="#FFF6D8"/>
+        <circle cx="0" cy="0" r="36" fill="#FFD98E" opacity="0.9"/>
+        <circle cx="0" cy="0" r="62" fill="#FFCE7C" opacity="0.4" filter="url(#s16-fgsmoke)"/>
+        <circle cx="0" cy="0" r="14" fill="#FFFBEF"/>
+      </g>
+      <g id="s16-shot2" transform="translate(1084,624)" opacity="0">
+        <path d="M0,-64 L13,-18 L62,-34 L31,2 L66,28 L18,24 L9,68 L-7,24 L-50,37 L-26,4 L-64,-15 L-15,-15 Z" fill="#FFF6D8"/>
+        <circle cx="0" cy="0" r="36" fill="#FFD98E" opacity="0.9"/>
+        <circle cx="0" cy="0" r="62" fill="#FFCE7C" opacity="0.4" filter="url(#s16-fgsmoke)"/>
+        <circle cx="0" cy="0" r="14" fill="#FFFBEF"/>
+      </g>
+
+      <g id="s16-flashwrap" transform="translate(960,636)">
+        <circle id="s16-flashouter" cx="0" cy="0" r="1" fill="url(#s16-flashgrad)" opacity="0"/>
+        <circle id="s16-flashring" cx="0" cy="0" r="1" fill="none" stroke="#FFD98E" stroke-width="90" opacity="0"/>
+        <circle id="s16-flashcore" cx="0" cy="0" r="1" fill="#FFF6DE" opacity="0"/>
+      </g>
+    </svg>
+
+    <div class="s16-grain"></div>
+    <div class="s16-vignette"></div>
+
+    <div class="s16-tag" id="s16-tag">
+      <span class="s16-tag-dot"></span>
+      <span class="s16-tag-text">MATCHLOCK</span>
+    </div>
+    <div class="s16-rule" id="s16-rule"></div>
+  </div>
+</div>
+
+<script>
+(function initS16(){
+  var ID = "s16-matchlock-street";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, { duration: 16.899 }, 0);
+
+  // ── PHASE 1: the street settles ──────────────────────────────────────────
+  tl.fromTo("#s16-bg", { scale: 1.06, x: -12, y: -10 }, { scale: 1, x: 0, y: 0, duration: 16.7, ease: "sine.out" }, 0.05);
+  tl.fromTo("#s16-farhouses", { y: -18, opacity: 0 }, { y: 0, opacity: 0.9, duration: 1.0, ease: "power2.out" }, 0.30);
+  tl.fromTo("#s16-arch", { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "power2.out" }, 0.46);
+  tl.fromTo("#s16-workshop", { x: -60, opacity: 0 }, { x: 0, opacity: 1, duration: 1.0, ease: "power2.out" }, 0.60);
+  tl.fromTo("#s16-righthouse", { x: 60, opacity: 0 }, { x: 0, opacity: 1, duration: 1.0, ease: "power2.out" }, 0.72);
+  tl.fromTo("#s16-barrels-in", { y: 34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }, 0.95);
+
+  // furnace catches and breathes
+  tl.fromTo("#s16-furnaceglow", { opacity: 0 }, { opacity: 0.85, duration: 1.3, ease: "sine.out" }, 0.80);
+  tl.to("#s16-furnaceglow", { opacity: 0.62, duration: 1.9, ease: "sine.inOut", yoyo: true, repeat: 5 }, 2.20);
+
+  // the guild sign swings
+  tl.set("#s16-sign-in", { rotation: -5, transformOrigin: "50% 0%" }, 1.20);
+  tl.to("#s16-sign-in", { rotation: 3, duration: 1.9, ease: "sine.inOut" }, 1.24);
+  tl.to("#s16-sign-in", { rotation: -2, duration: 1.6, ease: "sine.inOut" }, 3.18);
+  tl.to("#s16-sign-in", { rotation: 4.5, duration: 0.9, ease: "sine.out" }, 5.30);
+  tl.to("#s16-sign-in", { rotation: -1.5, duration: 2.2, ease: "sine.inOut" }, 6.20);
+
+  // ── PHASE 2: the factions step into the street ───────────────────────────
+  tl.fromTo("#s16-lamotta-in", { x: -300, opacity: 0 }, { x: 0, opacity: 1, duration: 0.9, ease: "power3.out" }, 1.35);
+  tl.fromTo("#s16-rivetta-in", { x: -300, opacity: 0 }, { x: 0, opacity: 1, duration: 0.9, ease: "power3.out" }, 1.65);
+  tl.fromTo("#s16-crate-in", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power2.out" }, 1.95);
+  tl.fromTo("#s16-carboy", { y: -26, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "back.out(2)" }, 2.30);
+
+  // they square up
+  tl.to("#s16-lamotta-in", { x: 22, duration: 0.6, ease: "power2.out" }, 2.62);
+  tl.to("#s16-rivetta-in", { x: 22, duration: 0.6, ease: "power2.out" }, 2.70);
+  tl.to("#s16-lm-arm", { x: -6, y: 4, duration: 0.4, ease: "power2.out" }, 3.10);
+  tl.to("#s16-rv-arm", { x: -6, y: 4, duration: 0.4, ease: "power2.out" }, 3.24);
+
+  // match cords catch
+  tl.fromTo("#s16-lm-arm circle", { attr: { r: 2 } }, { attr: { r: 5 }, duration: 0.4, ease: "back.out(3)" }, 3.60);
+  tl.fromTo("#s16-rv-arm circle", { attr: { r: 2 } }, { attr: { r: 5 }, duration: 0.4, ease: "back.out(3)" }, 3.72);
+
+  // ── PHASE 3: shots ───────────────────────────────────────────────────────
+  tl.set("#s16-shot1", { opacity: 1 }, 4.60);
+  tl.set("#s16-shot1", { scale: 0.2, rotation: -12, transformOrigin: "50% 50%" }, 4.60);
+  tl.to("#s16-shot1", { scale: 1.1, rotation: 6, duration: 0.10, ease: "power2.out" }, 4.61);
+  tl.to("#s16-shot1", { opacity: 0, scale: 0.9, duration: 0.22, ease: "sine.out" }, 4.72);
+  tl.set("#s16-shotlight", { opacity: 0 }, 4.60);
+  tl.to("#s16-shotlight", { opacity: 0.7, duration: 0.08, ease: "sine.out" }, 4.61);
+  tl.to("#s16-shotlight", { opacity: 0, duration: 0.42, ease: "sine.in" }, 4.72);
+
+  tl.set("#s16-smoke1", { opacity: 0 }, 4.60);
+  tl.set("#s16-smoke1", { x: 0, y: 0, scale: 0.4, transformOrigin: "50% 50%" }, 4.61);
+  tl.to("#s16-smoke1", { opacity: 0.9, duration: 0.12, ease: "sine.out" }, 4.62);
+  tl.to("#s16-smoke1", { x: -52, y: -64, scale: 1.5, duration: 1.5, ease: "power2.out" }, 4.64);
+  tl.to("#s16-smoke1", { opacity: 0, duration: 1.1, ease: "sine.in" }, 5.30);
+  tl.to("#s16-lamotta-in", { x: 46, duration: 0.10, ease: "power3.out" }, 4.62);
+  tl.to("#s16-lamotta-in", { x: 22, duration: 0.55, ease: "power2.out" }, 4.74);
+  tl.to("#s16-lm-arm", { x: -14, y: 10, duration: 0.09, ease: "power3.out" }, 4.62);
+  tl.to("#s16-lm-arm", { x: -6, y: 4, duration: 0.45, ease: "power2.out" }, 4.73);
+
+  tl.set("#s16-shot2", { opacity: 1 }, 6.20);
+  tl.set("#s16-shot2", { scale: 0.2, rotation: 10, transformOrigin: "50% 50%" }, 6.20);
+  tl.to("#s16-shot2", { scale: 1.1, rotation: -5, duration: 0.10, ease: "power2.out" }, 6.21);
+  tl.to("#s16-shot2", { opacity: 0, scale: 0.9, duration: 0.22, ease: "sine.out" }, 6.32);
+  tl.set("#s16-shotlight", { opacity: 0 }, 6.20);
+  tl.to("#s16-shotlight", { opacity: 0.7, duration: 0.08, ease: "sine.out" }, 6.21);
+  tl.to("#s16-shotlight", { opacity: 0, duration: 0.42, ease: "sine.in" }, 6.32);
+
+  tl.set("#s16-smoke2", { opacity: 0 }, 6.20);
+  tl.set("#s16-smoke2", { x: 0, y: 0, scale: 0.4, transformOrigin: "50% 50%" }, 6.21);
+  tl.to("#s16-smoke2", { opacity: 0.9, duration: 0.12, ease: "sine.out" }, 6.22);
+  tl.to("#s16-smoke2", { x: 54, y: -62, scale: 1.5, duration: 1.5, ease: "power2.out" }, 6.24);
+  tl.to("#s16-smoke2", { opacity: 0, duration: 1.1, ease: "sine.in" }, 6.90);
+  tl.to("#s16-rivetta-in", { x: 46, duration: 0.10, ease: "power3.out" }, 6.22);
+  tl.to("#s16-rivetta-in", { x: 22, duration: 0.55, ease: "power2.out" }, 6.34);
+  tl.to("#s16-rv-arm", { x: -14, y: 10, duration: 0.09, ease: "power3.out" }, 6.22);
+  tl.to("#s16-rv-arm", { x: -6, y: 4, duration: 0.45, ease: "power2.out" }, 6.33);
+
+  // the carboy takes a stray round
+  tl.set("#s16-shards", { opacity: 1 }, 7.72);
+  tl.set("#s16-burst", { opacity: 1, scale: 0.4, transformOrigin: "50% 50%" }, 7.86);
+  tl.to("#s16-burst", { scale: 1.7, duration: 0.34, ease: "power2.out" }, 7.88);
+  tl.to("#s16-burst", { opacity: 0, duration: 0.30, ease: "sine.in" }, 8.04);
+  tl.to("#s16-carboy", { scale: 1.16, duration: 0.10, ease: "power2.out", transformOrigin: "50% 100%" }, 7.70);
+  tl.to("#s16-carboy", { scale: 0.02, opacity: 0, duration: 0.22, ease: "power3.in", transformOrigin: "50% 100%" }, 7.82);
+  tl.set("#s16-shard-a", { x: 0, y: 0, rotation: 0 }, 7.80);
+  tl.set("#s16-shard-b", { x: 0, y: 0, rotation: 0 }, 7.80);
+  tl.set("#s16-shard-c", { x: 0, y: 0, rotation: 0 }, 7.80);
+  tl.set("#s16-shard-d", { x: 0, y: 0, rotation: 0 }, 7.80);
+  tl.set("#s16-shard-e", { x: 0, y: 0, rotation: 0 }, 7.80);
+  tl.set("#s16-shard-f", { x: 0, y: 0, rotation: 0 }, 7.80);
+  tl.set("#s16-shard-g", { x: 0, y: 0, rotation: 0 }, 7.80);
+  tl.to("#s16-shard-a", { x: -128, y: -96, rotation: -220, duration: 0.95, ease: "power2.out" }, 7.82);
+  tl.to("#s16-shard-b", { x: 118, y: -128, rotation: 190, duration: 0.95, ease: "power2.out" }, 7.84);
+  tl.to("#s16-shard-c", { x: -74, y: 44, rotation: 260, duration: 0.95, ease: "power2.out" }, 7.83);
+  tl.to("#s16-shard-d", { x: 96, y: 58, rotation: -160, duration: 0.95, ease: "power2.out" }, 7.85);
+  tl.to("#s16-shard-e", { x: -160, y: -40, rotation: 210, duration: 0.95, ease: "power2.out" }, 7.86);
+  tl.to("#s16-shard-f", { x: 152, y: -54, rotation: -240, duration: 0.95, ease: "power2.out" }, 7.84);
+  tl.to("#s16-shard-g", { x: 20, y: 96, rotation: 150, duration: 0.95, ease: "power2.out" }, 7.87);
+  tl.to("#s16-shards", { opacity: 0, duration: 0.4, ease: "sine.in" }, 8.55);
+
+  // ── PHASE 4: the royal guard arrives ─────────────────────────────────────
+  tl.fromTo("#s16-guard-in", { x: 0, opacity: 0 }, { x: 0, opacity: 1, duration: 0.6, ease: "sine.out" }, 9.20);
+  tl.to("#s16-guard-in", { x: -330, duration: 1.6, ease: "power2.out" }, 9.30);
+  tl.fromTo("#s16-guardglow", { opacity: 0 }, { opacity: 0.7, duration: 0.9, ease: "sine.out" }, 9.44);
+  tl.to("#s16-guardglow", { opacity: 0.5, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 3 }, 10.40);
+  tl.to("#s16-lamotta-in", { x: 12, duration: 0.8, ease: "power2.out" }, 10.10);
+  tl.to("#s16-rivetta-in", { x: 12, duration: 0.8, ease: "power2.out" }, 10.24);
+
+  // ── living hold ──────────────────────────────────────────────────────────
+  tl.fromTo("#s16-stage", { scale: 1, y: 0 }, { scale: 1.04, y: -12, duration: 16.6, ease: "sine.inOut" }, 0.10);
+  tl.fromTo(".s16-mote", { y: 0, x: 0 }, { y: -64, x: 14, duration: 6.8, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 0.22 }, 1.20);
+  tl.to("#s16-lamotta-in", { y: -5, duration: 3.2, ease: "sine.inOut", yoyo: true, repeat: 1 }, 11.40);
+  tl.to("#s16-rivetta-in", { y: -5, duration: 3.2, ease: "sine.inOut", yoyo: true, repeat: 1 }, 11.60);
+  tl.to("#s16-lowsmoke", { x: 40, duration: 6.0, ease: "sine.inOut", yoyo: true, repeat: 1 }, 8.60);
+
+  // ── TAG ──────────────────────────────────────────────────────────────────
+  tl.fromTo("#s16-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -14 }, { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.6, ease: "power3.inOut" }, 3.20);
+  tl.fromTo("#s16-rule", { width: 0 }, { width: 300, duration: 0.5, ease: "power2.out" }, 3.56);
+
+  // ── SEAM: the shot burns the frame out ───────────────────────────────────
+  tl.to("#s16-tag", { clipPath: "inset(0% 100% 0% 0%)", duration: 0.18, ease: "power2.in" }, 14.42);
+  tl.to("#s16-rule", { width: 0, duration: 0.18, ease: "power2.in" }, 14.42);
+  tl.set("#s16-flashcore", { opacity: 0.95 }, 15.34);
+  tl.set("#s16-flashring", { opacity: 0.9 }, 15.36);
+  tl.set("#s16-flashouter", { opacity: 1 }, 15.34);
+  tl.fromTo("#s16-flashouter", { attr: { r: 6 } }, { attr: { r: 1500 }, duration: 0.62, ease: "power2.in" }, 15.34);
+  tl.fromTo("#s16-flashring", { attr: { r: 6 } }, { attr: { r: 1500 }, duration: 0.60, ease: "power2.in" }, 15.38);
+  tl.fromTo("#s16-flashcore", { attr: { r: 4 } }, { attr: { r: 1400 }, duration: 0.56, ease: "power3.in" }, 15.42);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

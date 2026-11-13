@@ -1,0 +1,28 @@
+{
+  "asset_id": "pl-seg-02-01",
+  "source_url": "https://www.persee.fr/doc/versa_1285-8412_2017_num_20_1_1170",
+  "publication_date": "2017-06-01",
+  "width": 1400,
+  "height": 1000,
+  "scale_factor": 1.0,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": [
+    {
+      "phrase": "premier trimestre de 1660",
+      "x": 887,
+      "y": 350,
+      "w": 160,
+      "h": 16
+    },
+    {
+      "phrase": "120 000 livres de glaces",
+      "x": 614,
+      "y": 370,
+      "w": 151,
+      "h": 16
+    }
+  ]
+}

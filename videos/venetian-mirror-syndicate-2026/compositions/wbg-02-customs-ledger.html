@@ -1,0 +1,202 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="wbg02-template">
+<style>
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="wbg-02-customs-ledger"] .w-stage{position:absolute;inset:0;}
+[data-composition-id="wbg-02-customs-ledger"] .w-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="wbg-02-customs-ledger"] .w-p1{z-index:1;}
+[data-composition-id="wbg-02-customs-ledger"] .w-p2{z-index:2;}
+[data-composition-id="wbg-02-customs-ledger"] .w-p3{z-index:3;}
+[data-composition-id="wbg-02-customs-ledger"] .w-haze{position:absolute;inset:0;z-index:5;pointer-events:none;
+  background:
+    radial-gradient(34% 40% at 82% 76%, rgba(255,214,140,0.30) 0%, rgba(255,214,140,0.08) 60%, rgba(255,214,140,0) 84%),
+    radial-gradient(80% 62% at 50% 112%, rgba(74,46,28,0.34) 0%, rgba(74,46,28,0) 72%);}
+</style>
+
+<div id="root" data-composition-id="wbg-02-customs-ledger" data-width="1920" data-height="1080" data-start="0" data-duration="60.000">
+  <div class="w-stage" id="wbg02-stage">
+
+    <!-- far · the ruled field -->
+    <svg class="w-plane w-p1" id="wbg02-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w02-paper" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#FBF1DA"/><stop offset="0.44" stop-color="#F3E1C0"/>
+          <stop offset="0.78" stop-color="#E4CBA2"/><stop offset="1" stop-color="#CFB289"/>
+        </linearGradient>
+        <linearGradient id="w02-edge" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1920" y2="0">
+          <stop offset="0" stop-color="#8A5F36" stop-opacity="0.26"/>
+          <stop offset="0.24" stop-color="#8A5F36" stop-opacity="0.02"/>
+          <stop offset="0.76" stop-color="#8A5F36" stop-opacity="0.02"/>
+          <stop offset="1" stop-color="#8A5F36" stop-opacity="0.24"/>
+        </linearGradient>
+        <filter id="w02-blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="46"/></filter>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#w02-paper)"/>
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#w02-edge)"/>
+
+      <!-- the rule field -->
+      <g stroke="#8A6B49" stroke-width="3" opacity="0.20">
+        <path d="M0,148 H1920"/><path d="M0,202 H1920"/><path d="M0,256 H1920"/>
+        <path d="M0,310 H1920"/><path d="M0,364 H1920"/><path d="M0,418 H1920"/>
+        <path d="M0,472 H1920"/><path d="M0,526 H1920"/><path d="M0,580 H1920"/>
+        <path d="M0,634 H1920"/><path d="M0,688 H1920"/><path d="M0,742 H1920"/>
+        <path d="M0,796 H1920"/><path d="M0,850 H1920"/><path d="M0,904 H1920"/>
+        <path d="M0,958 H1920"/>
+      </g>
+      <g stroke="#6E4826" stroke-width="5" opacity="0.24">
+        <path d="M232,60 V1020"/><path d="M486,60 V1020"/>
+        <path d="M760,60 V1020"/><path d="M1180,60 V1020"/>
+        <path d="M1478,60 V1020"/><path d="M1706,60 V1020"/>
+      </g>
+      <g stroke="#B99A6E" stroke-width="3" opacity="0.16">
+        <path d="M232,60 V1020"/><path d="M1180,60 V1020"/>
+      </g>
+
+      <ellipse cx="1560" cy="820" rx="420" ry="320" fill="#FFE8B4" opacity="0.24" filter="url(#w02-blur)"/>
+    </svg>
+
+    <!-- mid · the column mass -->
+    <svg class="w-plane w-p2" id="wbg02-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w02-mass" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1080">
+          <stop offset="0" stop-color="#6E4826" stop-opacity="0.34"/>
+          <stop offset="0.5" stop-color="#8A5F36" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="#A97445" stop-opacity="0.05"/>
+        </linearGradient>
+        <linearGradient id="w02-massv" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1080">
+          <stop offset="0" stop-color="#4A2E1C" stop-opacity="0.30"/>
+          <stop offset="0.6" stop-color="#6E4826" stop-opacity="0.14"/>
+          <stop offset="1" stop-color="#A97445" stop-opacity="0.04"/>
+        </linearGradient>
+        <radialGradient id="w02-seal" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#C2593F" stop-opacity="0.55"/>
+          <stop offset="0.6" stop-color="#A8462F" stop-opacity="0.24"/>
+          <stop offset="1" stop-color="#A8462F" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <!-- the left column of tally rows -->
+      <g opacity="0.9">
+        <path d="M-40,120 H404 V1010 H-40 Z" fill="url(#w02-mass)"/>
+        <g stroke="#3A2A1E" stroke-width="6" opacity="0.26" stroke-linecap="round">
+          <path d="M48,192 V262"/><path d="M82,192 V262"/><path d="M116,192 V262"/><path d="M150,192 V262"/>
+          <path d="M48,262 H150"/><path d="M196,192 V262"/><path d="M230,192 V262"/>
+          <path d="M48,300 V370"/><path d="M82,300 V370"/><path d="M116,300 V370"/>
+          <path d="M48,370 H116"/><path d="M164,300 V370"/><path d="M198,300 V370"/><path d="M232,300 V370"/>
+          <path d="M48,408 V478"/><path d="M82,408 V478"/><path d="M116,408 V478"/><path d="M150,408 V478"/>
+          <path d="M48,478 H150"/><path d="M196,408 V478"/>
+          <path d="M48,516 V586"/><path d="M82,516 V586"/><path d="M116,516 V586"/>
+          <path d="M48,586 H116"/><path d="M164,516 V586"/><path d="M198,516 V586"/><path d="M232,516 V586"/>
+          <path d="M48,624 V694"/><path d="M82,624 V694"/><path d="M116,624 V694"/><path d="M150,624 V694"/>
+          <path d="M48,694 H150"/>
+          <path d="M48,732 V802"/><path d="M82,732 V802"/><path d="M116,732 V802"/>
+          <path d="M48,802 H116"/><path d="M164,732 V802"/><path d="M198,732 V802"/>
+          <path d="M48,840 V910"/><path d="M82,840 V910"/><path d="M116,840 V910"/><path d="M150,840 V910"/>
+          <path d="M48,910 H150"/><path d="M196,840 V910"/><path d="M230,840 V910"/>
+        </g>
+        <path d="M404,120 V1010" stroke="#4A2E1C" stroke-width="7" opacity="0.2"/>
+      </g>
+
+      <!-- the right column, heavier -->
+      <g opacity="0.85">
+        <path d="M1500,90 H1960 V1030 H1500 Z" fill="url(#w02-massv)"/>
+        <g stroke="#3A2A1E" stroke-width="6" opacity="0.28" stroke-linecap="round">
+          <path d="M1540,170 V244"/><path d="M1576,170 V244"/><path d="M1612,170 V244"/><path d="M1648,170 V244"/>
+          <path d="M1540,244 H1648"/><path d="M1694,170 V244"/><path d="M1730,170 V244"/>
+          <path d="M1540,282 V356"/><path d="M1576,282 V356"/><path d="M1612,282 V356"/>
+          <path d="M1540,356 H1612"/><path d="M1660,282 V356"/><path d="M1696,282 V356"/><path d="M1732,282 V356"/>
+          <path d="M1540,394 V468"/><path d="M1576,394 V468"/><path d="M1612,394 V468"/><path d="M1648,394 V468"/>
+          <path d="M1540,468 H1648"/><path d="M1694,394 V468"/>
+          <path d="M1540,506 V580"/><path d="M1576,506 V580"/><path d="M1612,506 V580"/>
+          <path d="M1540,580 H1612"/><path d="M1660,506 V580"/><path d="M1696,506 V580"/><path d="M1732,506 V580"/>
+          <path d="M1540,618 V692"/><path d="M1576,618 V692"/><path d="M1612,618 V692"/><path d="M1648,618 V692"/>
+          <path d="M1540,692 H1648"/><path d="M1694,618 V692"/>
+          <path d="M1540,730 V804"/><path d="M1576,730 V804"/><path d="M1612,730 V804"/>
+          <path d="M1540,804 H1612"/><path d="M1660,730 V804"/><path d="M1696,730 V804"/>
+          <path d="M1540,842 V916"/><path d="M1576,842 V916"/><path d="M1612,842 V916"/><path d="M1648,842 V916"/>
+          <path d="M1540,916 H1648"/>
+        </g>
+        <path d="M1500,90 V1030" stroke="#4A2E1C" stroke-width="7" opacity="0.22"/>
+      </g>
+
+      <!-- the wax seal, left -->
+      <g opacity="0.8" transform="translate(268,884)">
+        <circle cx="0" cy="0" r="86" fill="url(#w02-seal)"/>
+        <circle cx="0" cy="0" r="58" fill="#C2593F" opacity="0.30"/>
+        <circle cx="0" cy="0" r="58" fill="none" stroke="#A8462F" stroke-width="7" opacity="0.34"/>
+        <path d="M-30,-24 C-14,-40 14,-40 30,-24" fill="none" stroke="#8E3A28" stroke-width="6" opacity="0.3"/>
+        <path d="M-34,18 C-16,34 16,34 34,18" fill="none" stroke="#8E3A28" stroke-width="6" opacity="0.26"/>
+      </g>
+    </svg>
+
+    <!-- near · flecks, ghost rings, the desk edge -->
+    <svg class="w-plane w-p3" id="wbg02-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w02-desk" x1="0" y1="0" x2="0.05" y2="1">
+          <stop offset="0" stop-color="#A97445"/><stop offset="0.4" stop-color="#8A5C34"/>
+          <stop offset="1" stop-color="#4A2E1C"/>
+        </linearGradient>
+        <linearGradient id="w02-deskshade" gradientUnits="userSpaceOnUse" x1="0" y1="900" x2="0" y2="1080">
+          <stop offset="0" stop-color="#2B1F17" stop-opacity="0"/>
+          <stop offset="1" stop-color="#2B1F17" stop-opacity="0.55"/>
+        </linearGradient>
+      </defs>
+
+      <path d="M0,904 H1920 V1080 H0 Z" fill="url(#w02-desk)"/>
+      <path d="M0,904 H1920 V1080 H0 Z" fill="url(#w02-deskshade)"/>
+      <path d="M0,904 H1920" stroke="#F6E6C6" stroke-width="6" opacity="0.28"/>
+      <g stroke="#3A2A1E" stroke-width="4" opacity="0.16">
+        <path d="M0,948 H1920"/><path d="M0,1010 H1920"/>
+        <path d="M360,904 L336,1080"/><path d="M1080,904 L1074,1080"/><path d="M1660,904 L1684,1080"/>
+      </g>
+
+      <!-- ghost coin rings on the blotter -->
+      <g fill="none" stroke="#C89D42" stroke-width="5" opacity="0.16">
+        <circle class="w02-ring" cx="560" cy="812" r="34"/>
+        <circle class="w02-ring" cx="640" cy="836" r="28"/>
+        <circle class="w02-ring" cx="1290" cy="806" r="32"/>
+        <circle class="w02-ring" cx="1366" cy="832" r="24"/>
+        <circle class="w02-ring" cx="880" cy="846" r="26"/>
+      </g>
+
+      <!-- wax flecks -->
+      <g fill="#C2593F" opacity="0.28">
+        <circle class="w02-fleck" cx="476" cy="642" r="7"/>
+        <circle class="w02-fleck" cx="524" cy="704" r="5"/>
+        <circle class="w02-fleck" cx="1012" cy="588" r="6"/>
+        <circle class="w02-fleck" cx="1128" cy="676" r="4"/>
+        <circle class="w02-fleck" cx="832" cy="760" r="5"/>
+        <circle class="w02-fleck" cx="1420" cy="700" r="6"/>
+      </g>
+      <g fill="#FFE8B4" opacity="0.30">
+        <circle class="w02-dust" cx="700" cy="320" r="4"/>
+        <circle class="w02-dust" cx="980" cy="420" r="3.5"/>
+        <circle class="w02-dust" cx="1180" cy="300" r="4"/>
+        <circle class="w02-dust" cx="460" cy="480" r="3"/>
+        <circle class="w02-dust" cx="1320" cy="470" r="3.5"/>
+      </g>
+    </svg>
+
+    <div class="w-haze"></div>
+  </div>
+</div>
+
+<script>
+(function initWbg02(){
+  var ID = "wbg-02-customs-ledger";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, { duration: 60.000 }, 0);
+
+  tl.fromTo("#wbg02-bg", { x: 0, y: 0 }, { x: -34, y: 8, duration: 60, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+  tl.fromTo("#wbg02-mg", { x: 0, y: 0 }, { x: -70, y: -6, duration: 50, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+  tl.fromTo("#wbg02-fg", { x: 0, y: 0 }, { x: -118, y: 10, duration: 38, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+
+  tl.fromTo(".w02-dust", { y: 0, x: 0 }, { y: -140, x: 26, duration: 26, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 1.4 }, 0);
+  tl.fromTo(".w02-ring", { opacity: 0.16, scale: 1 }, { opacity: 0.30, scale: 1.05, duration: 9, ease: "sine.inOut", yoyo: true, repeat: 5, stagger: 0.8, transformOrigin: "50% 50%" }, 0);
+  tl.fromTo(".w02-fleck", { opacity: 0.22 }, { opacity: 0.40, duration: 7, ease: "sine.inOut", yoyo: true, repeat: 6, stagger: 0.6 }, 1);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

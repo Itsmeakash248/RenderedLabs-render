@@ -1,0 +1,58 @@
+<template id="s12-template">
+  <div id="root" data-composition-id="s12-deadly-reprisal" data-width="1920" data-height="1080" data-start="198.00" data-duration="18.00">
+    <div class="s12-cam" id="s12-cam">
+      <div id="s12-bg" class="wbg-container">
+        <svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <radialGradient id="s12Night" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#C2593F" stop-opacity="0.16"/>
+              <stop offset="70%" stop-color="#151B3B" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#070A12" stop-opacity="0.92"/>
+            </radialGradient>
+          </defs>
+          <rect width="1920" height="1080" fill="#070A12"/>
+          <rect width="1920" height="1080" fill="url(#s12Night)"/>
+          <g opacity="0.5">
+            <rect x="0" y="820" width="1920" height="260" fill="#2B1F17"/>
+            <rect x="120" y="700" width="220" height="380" fill="#151B3B"/>
+            <rect x="1480" y="660" width="260" height="420" fill="#151B3B"/>
+            <rect x="760" y="740" width="180" height="340" fill="#1E1813"/>
+            <rect x="1050" y="690" width="200" height="390" fill="#1E1813"/>
+          </g>
+        </svg>
+      </div>
+      <div id="s12-fg" class="hero-container">
+        <svg viewBox="0 0 1920 1080">
+          <defs>
+            <radialGradient id="s12Spill" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#C2593F" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#2B1F17" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="s12Blur" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="14"/>
+            </filter>
+          </defs>
+          <ellipse cx="960" cy="760" rx="420" ry="120" fill="url(#s12Spill)" filter="url(#s12Blur)"/>
+          <path d="M880,180 L1040,180 L1010,620 L910,620 Z" stroke="#1E1813" stroke-width="28" fill="none"/>
+          <path d="M900,600 L1020,600" stroke="#C2593F" stroke-width="24" stroke-linecap="round"/>
+          <circle cx="960" cy="760" r="56" fill="#2B1F17" stroke="#C2593F" stroke-width="16"/>
+        </svg>
+      </div>
+      <div id="s12-text" class="text-container" style="position: absolute; top: 100px; left: 100px; color: #F5EFEB; font-family: 'Archivo Black'; font-size: 64px; background: rgba(30,24,19,0.55); padding: 14px 28px; border-radius: 10px;">
+        REPRISALS
+      </div>
+    </div>
+  </div>
+  <script>
+    (function initS12() {
+      const ID = 's12-deadly-reprisal';
+      const tl = gsap.timeline({ paused: true });
+      tl.to({}, { duration: 18.00 }, 0);
+      tl.from('#s12-fg', { duration: 2.0, opacity: 0, y: 90, ease: 'power2.inOut' }, 1.2);
+      tl.from('#s12-text', { duration: 0.7, opacity: 0, scale: 0.85, ease: 'back.out(1.7)' }, 2.2);
+      tl.to('#s12-fg', { duration: 9.0, y: -18, ease: 'sine.inOut', yoyo: true, repeat: 1 }, 6.0);
+      window.__timelines = window.__timelines || {};
+      window.__timelines[ID] = tl;
+    })();
+  </script>
+</template>

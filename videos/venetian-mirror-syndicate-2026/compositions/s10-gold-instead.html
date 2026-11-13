@@ -1,0 +1,446 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s10-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s10-gold-instead"] .s10-stage{position:absolute;inset:0;transform-origin:46% 54%;}
+[data-composition-id="s10-gold-instead"] .s10-ground{position:absolute;inset:0;background:
+  radial-gradient(48% 42% at 16% 62%, rgba(255,226,166,0.58) 0%, rgba(255,214,140,0.20) 44%, rgba(255,214,140,0) 74%),
+  linear-gradient(118deg, rgba(43,31,23,0.30) 0%, rgba(43,31,23,0.05) 30%, rgba(43,31,23,0) 52%),
+  radial-gradient(130% 104% at 54% 44%, #FBF2DE 0%, #F4E4C6 38%, #E3CAA4 70%, #C4A277 100%);}
+[data-composition-id="s10-gold-instead"] .s10-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="s10-gold-instead"] .s10-p-bg{z-index:1;}
+[data-composition-id="s10-gold-instead"] .s10-p-map{z-index:2;}
+[data-composition-id="s10-gold-instead"] .s10-p-mg{z-index:3;}
+[data-composition-id="s10-gold-instead"] .s10-p-fg{z-index:4;}
+[data-composition-id="s10-gold-instead"] .s10-grain{position:absolute;inset:0;z-index:6;pointer-events:none;
+  background-image:radial-gradient(rgba(43,31,23,0.55) 0.4px, transparent 0.5px);background-size:3px 3px;
+  opacity:0.11;mix-blend-mode:multiply;}
+[data-composition-id="s10-gold-instead"] .s10-vignette{position:absolute;inset:0;z-index:7;pointer-events:none;
+  background:
+    linear-gradient(to top, rgba(43,31,23,0.32) 0%, rgba(43,31,23,0.07) 12%, rgba(43,31,23,0) 28%),
+    linear-gradient(to right, rgba(43,31,23,0.26) 0%, rgba(43,31,23,0.04) 16%, rgba(43,31,23,0) 34%),
+    radial-gradient(114% 94% at 52% 46%, rgba(43,31,23,0) 50%, rgba(43,31,23,0.28) 100%);}
+[data-composition-id="s10-gold-instead"] .s10-tag{position:absolute;left:86px;top:92px;z-index:8;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;background:linear-gradient(180deg,#FDFAF4 0%,#F1E7D6 100%);
+  box-shadow:0 12px 30px rgba(43,31,23,0.28),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s10-gold-instead"] .s10-tag-dot{width:15px;height:15px;border-radius:50%;background:#C2593F;
+  box-shadow:0 0 0 5px rgba(194,89,63,0.20),inset 0 0 0 3px #A8462F;}
+[data-composition-id="s10-gold-instead"] .s10-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.14em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s10-gold-instead"] .s10-rule{position:absolute;left:86px;top:158px;height:5px;width:0;z-index:8;background:#C2593F;border-radius:4px;
+  box-shadow:0 2px 6px rgba(43,31,23,0.25);}
+[data-composition-id="s10-gold-instead"] .s10-coin{transform-box:fill-box;transform-origin:50% 50%;}
+[data-composition-id="s10-gold-instead"] .s10-mote{transform-box:fill-box;transform-origin:50% 50%;}
+[data-composition-id="s10-gold-instead"] #s10-flame{transform-box:fill-box;transform-origin:50% 100%;}
+[data-composition-id="s10-gold-instead"] #s10-seal,
+[data-composition-id="s10-gold-instead"] #s10-paris,
+[data-composition-id="s10-gold-instead"] #s10-halo{transform-box:fill-box;transform-origin:50% 50%;}
+</style>
+
+<div id="root" data-composition-id="s10-gold-instead" data-width="1920" data-height="1080" data-start="0" data-duration="15.157">
+  <div class="s10-stage" id="s10-stage">
+    <div class="s10-ground"></div>
+
+    <!-- BG · desk grain, low candle glow, dust -->
+    <svg class="s10-plane s10-p-bg" id="s10-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <radialGradient id="s10-candlepool" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFE7B4" stop-opacity="0.62"/>
+          <stop offset="0.44" stop-color="#FFD48E" stop-opacity="0.24"/>
+          <stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="s10-damask" width="128" height="160" patternUnits="userSpaceOnUse">
+          <g fill="none" stroke="#6E5338" stroke-width="3" opacity="0.5">
+            <path d="M64,12 C88,48 88,68 64,104 C40,68 40,48 64,12 Z"/>
+            <path d="M64,104 C80,126 80,140 64,158 C48,140 48,126 64,104 Z"/>
+            <path d="M0,80 C16,64 32,64 32,80 C32,96 16,96 0,80 Z"/>
+            <path d="M128,80 C112,64 96,64 96,80 C96,96 112,96 128,80 Z"/>
+          </g>
+        </pattern>
+        <linearGradient id="s10-desk" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#F3E6CB" stop-opacity="0.5"/><stop offset="1" stop-color="#C9A87C" stop-opacity="0.34"/>
+        </linearGradient>
+        <filter id="s10-b1blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="30"/></filter>
+        <filter id="s10-grain" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="2" seed="29" result="n"/>
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0.5 0"/>
+        </filter>
+      </defs>
+
+      <circle id="s10-halo" cx="252" cy="806" r="430" fill="url(#s10-candlepool)"/>
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s10-desk)"/>
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s10-damask)" opacity="0.035"/>
+      <g stroke="#8A6B49" stroke-width="4" opacity="0.13">
+        <path d="M-40,232 C420,214 900,246 1400,224 C1660,212 1840,220 1960,228"/>
+        <path d="M-40,470 C380,452 860,486 1340,462 C1620,448 1820,456 1960,464"/>
+        <path d="M-40,704 C440,688 900,716 1420,694 C1680,684 1860,690 1960,696"/>
+        <path d="M-40,946 C400,930 880,958 1380,936 C1660,924 1840,930 1960,936"/>
+      </g>
+      <g stroke="#6E5338" stroke-width="3" opacity="0.09">
+        <path d="M320,0 C316,300 324,700 320,1080"/>
+        <path d="M980,0 C976,320 984,720 980,1080"/>
+        <path d="M1620,0 C1616,300 1624,700 1620,1080"/>
+      </g>
+      <ellipse cx="960" cy="1040" rx="980" ry="180" fill="#2B1F17" opacity="0.16" filter="url(#s10-b1blur)"/>
+
+      <g fill="#FCF2DC" opacity="0.4">
+        <circle class="s10-mote" cx="640" cy="240" r="4"/><circle class="s10-mote" cx="1180" cy="180" r="4"/>
+        <circle class="s10-mote" cx="900" cy="420" r="3"/><circle class="s10-mote" cx="1540" cy="300" r="4"/>
+        <circle class="s10-mote" cx="420" cy="560" r="3"/><circle class="s10-mote" cx="1320" cy="880" r="4"/>
+      </g>
+
+      <rect x="0" y="0" width="1920" height="1080" filter="url(#s10-grain)" opacity="0.06" style="mix-blend-mode:multiply"/>
+    </svg>
+
+    <!-- MAP · engraved plan of Paris, warm plate -->
+    <svg class="s10-plane s10-p-map" id="s10-map-plane" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s10-mappaper" x1="0" y1="0" x2="0.55" y2="1">
+          <stop offset="0" stop-color="#FDF7E8"/><stop offset="0.6" stop-color="#F4E7CE"/><stop offset="1" stop-color="#DFC9A6"/>
+        </linearGradient>
+        <filter id="s10-warmplate" x="-5%" y="-5%" width="110%" height="110%">
+          <feColorMatrix type="saturate" values="0.24"/>
+          <feComponentTransfer>
+            <feFuncR type="linear" slope="1.10" intercept="0.05"/>
+            <feFuncG type="linear" slope="1.00" intercept="0.03"/>
+            <feFuncB type="linear" slope="0.80" intercept="0.02"/>
+          </feComponentTransfer>
+        </filter>
+        <filter id="s10-mshadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="26" dy="34" stdDeviation="22" flood-color="#2B1F17" flood-opacity="0.40"/>
+        </filter>
+        <clipPath id="s10-map-clip"><rect id="s10-map-rect" x="-505" y="-385" width="0" height="770"/></clipPath>
+      </defs>
+
+      <g id="s10-map-wrap" transform="translate(1348,600) rotate(-3)">
+        <g id="s10-map-in">
+        <g clip-path="url(#s10-map-clip)">
+          <rect x="-505" y="-385" width="1010" height="770" fill="url(#s10-mappaper)" filter="url(#s10-mshadow)"/>
+          <image id="s10-mapphoto" href="plates/processed/art-paris-map.jpg" x="-497" y="-377" width="994" height="754"
+                 preserveAspectRatio="xMidYMid slice" filter="url(#s10-warmplate)" opacity="0.94"/>
+          <rect x="-497" y="-377" width="994" height="754" fill="#D9822B" opacity="0.20"/>
+          <rect x="-497" y="-377" width="994" height="754" fill="#C2593F" opacity="0.07"/>
+          <g stroke="#8E3524" stroke-width="5" opacity="0.55" fill="none">
+            <circle cx="196" cy="-104" r="24"/>
+            <path d="M196,-80 V-44 M196,-104 l16,-16 M196,-104 l-16,-16"/>
+          </g>
+          <path d="M-497,318 C-260,306 -40,312 180,302 C300,296 420,302 497,298" fill="none" stroke="#5C5248" stroke-width="4" opacity="0.3"/>
+          <rect x="-505" y="-385" width="1010" height="770" fill="none" stroke="#1E1813" stroke-width="9"/>
+          <rect x="-488" y="-368" width="976" height="736" fill="none" stroke="#5C5248" stroke-width="3" opacity="0.35"/>
+        </g>
+        </g>
+      </g>
+    </svg>
+
+    <!-- MG · Colbert in gilt, the letter of credit, gold -->
+    <svg class="s10-plane s10-p-mg" id="s10-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s10-gilt" x1="0" y1="0" x2="0.34" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.2" stop-color="#E6BF6A"/><stop offset="0.42" stop-color="#C89D42"/>
+          <stop offset="0.58" stop-color="#9E742A"/><stop offset="0.76" stop-color="#D9AE56"/><stop offset="1" stop-color="#7E5A1C"/>
+        </linearGradient>
+        <radialGradient id="s10-gold" cx="34%" cy="30%" r="72%">
+          <stop offset="0" stop-color="#FFF7D8"/><stop offset="0.34" stop-color="#FFDF94"/><stop offset="0.66" stop-color="#E8B24E"/><stop offset="1" stop-color="#A9741F"/>
+        </radialGradient>
+        <radialGradient id="s10-goldsoft" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFEBB4" stop-opacity="0.55"/><stop offset="1" stop-color="#E8B24E" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="s10-paper" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#FEFAF0"/><stop offset="0.55" stop-color="#F8EFDC"/><stop offset="1" stop-color="#E7D5B6"/>
+        </linearGradient>
+        <linearGradient id="s10-inkamber" x1="0" y1="0" x2="0.5" y2="1">
+          <stop offset="0" stop-color="#D07A22"/><stop offset="0.45" stop-color="#A9581A"/><stop offset="0.8" stop-color="#6E3A14"/><stop offset="1" stop-color="#3A2A1E"/>
+        </linearGradient>
+        <radialGradient id="s10-wax" cx="36%" cy="30%" r="70%">
+          <stop offset="0" stop-color="#D97A5C"/><stop offset="0.58" stop-color="#C2593F"/><stop offset="1" stop-color="#8B3323"/>
+        </radialGradient>
+        <linearGradient id="s10-flame" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0" stop-color="#E88C2A"/><stop offset="0.5" stop-color="#FFC46B"/><stop offset="1" stop-color="#FFF3CE"/>
+        </linearGradient>
+        <linearGradient id="s10-shine" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFF8DE" stop-opacity="0.85"/><stop offset="0.6" stop-color="#FFF8DE" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="s10-soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>
+        <filter id="s10-soft2" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="10"/></filter>
+        <filter id="s10-soft3" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="4"/></filter>
+        <filter id="s10-portraitgrade" x="-4%" y="-4%" width="108%" height="108%">
+          <feColorMatrix type="saturate" values="0.62"/>
+          <feComponentTransfer>
+            <feFuncR type="linear" slope="1.12" intercept="0.04"/>
+            <feFuncG type="linear" slope="1.02" intercept="0.04"/>
+            <feFuncB type="linear" slope="0.86" intercept="0.05"/>
+          </feComponentTransfer>
+        </filter>
+        <clipPath id="s10-portrait-clip"><ellipse cx="0" cy="0" rx="164" ry="210"/></clipPath>
+        <clipPath id="s10-letter-clip"><rect id="s10-letter-rect" x="-235" y="-150" width="0" height="300"/></clipPath>
+      </defs>
+
+      <!-- gilt oval portrait -->
+      <g id="s10-portrait" transform="translate(414,422) rotate(-4)">
+        <g id="s10-portrait-in">
+        <ellipse cx="20" cy="28" rx="206" ry="252" fill="#2B1F17" opacity="0.34" filter="url(#s10-soft2)"/>
+        <ellipse rx="196" ry="244" fill="url(#s10-gilt)" stroke="#1E1813" stroke-width="8"/>
+        <ellipse rx="180" ry="226" fill="none" stroke="#7E5A1C" stroke-width="4" opacity="0.72"/>
+        <ellipse rx="172" ry="218" fill="none" stroke="#FCEBB8" stroke-width="3" opacity="0.5" stroke-dasharray="7 9"/>
+        <path d="M-150,-176 C-96,-232 96,-232 150,-176" fill="none" stroke="#FFFBE9" stroke-width="12" opacity="0.42" stroke-linecap="round"/>
+        <g clip-path="url(#s10-portrait-clip)">
+          <rect x="-170" y="-216" width="340" height="432" fill="#3A2A1E"/>
+          <image href="plates/processed/art-colbert.jpg" x="-172" y="-219" width="344" height="438"
+                 preserveAspectRatio="xMidYMin slice" filter="url(#s10-portraitgrade)"/>
+          <rect x="-170" y="-216" width="340" height="432" fill="#D9822B" opacity="0.12"/>
+          <ellipse cx="0" cy="0" rx="164" ry="210" fill="none" stroke="#1E1813" stroke-width="6" opacity="0.5"/>
+          <path d="M-150,-150 C-110,-196 110,-196 150,-150" fill="none" stroke="#FFF4D2" stroke-width="8" opacity="0.20"/>
+        </g>
+        <g id="s10-portrait-crest">
+          <path d="M0,-262 L26,-246 V-222 C26,-206 12,-196 0,-190 C-12,-196 -26,-206 -26,-222 V-246 Z"
+                fill="url(#s10-gilt)" stroke="#1E1813" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M0,-250 V-206 M-14,-234 H14" stroke="#7E5A1C" stroke-width="4" opacity="0.8"/>
+        </g>
+        </g>
+      </g>
+
+      <!-- letter of credit, broken seal -->
+      <g id="s10-letter" transform="translate(520,862) rotate(-7)">
+        <g id="s10-letter-in">
+        <rect x="-212" y="-132" width="470" height="300" fill="#2B1F17" opacity="0.34" filter="url(#s10-soft2)" transform="translate(18,24)"/>
+        <g clip-path="url(#s10-letter-clip)">
+          <path d="M-235,-150 L235,-150 L235,120 C235,142 224,150 206,150 L-206,150 C-224,150 -235,142 -235,120 Z"
+                fill="url(#s10-paper)" stroke="#1E1813" stroke-width="9"/>
+          <rect x="-215" y="-130" width="430" height="260" fill="none" stroke="#5C5248" stroke-width="3" opacity="0.40"/>
+          <path d="M-215,-96 H215" stroke="#1E1813" stroke-width="6" opacity="0.8"/>
+          <g stroke="#5C5248" stroke-width="5" stroke-linecap="round" opacity="0.5">
+            <path class="s10-row" d="M-198,-62 H140"/>
+            <path class="s10-row" d="M-198,-26 H196"/>
+            <path class="s10-row" d="M-198,10 H120"/>
+            <path class="s10-row" d="M-198,46 H176"/>
+            <path class="s10-row" d="M-198,82 H92"/>
+          </g>
+          <g stroke="#C89D42" stroke-width="4" opacity="0.55">
+            <path d="M-198,-80 H-60"/><path d="M-198,-104 H-104"/>
+          </g>
+          <g id="s10-tally" stroke="#8E3524" stroke-width="4" opacity="0.7" stroke-linecap="round">
+            <path d="M112,-58 V-34"/><path d="M126,-58 V-34"/><path d="M140,-58 V-34"/><path d="M154,-58 V-34"/>
+            <path d="M108,-52 L158,-40"/>
+            <path d="M112,66 V90"/><path d="M126,66 V90"/><path d="M140,66 V90"/><path d="M154,66 V90"/>
+            <path d="M108,72 L158,84"/>
+          </g>
+          <path d="M-198,116 H-72" stroke="#5C5248" stroke-width="4" opacity="0.34"/>
+          <g stroke="#3A2A1E" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.6" transform="translate(-40,120)">
+            <path d="M0,0 C18,-18 32,10 50,-8 C64,-22 72,4 92,-8"/>
+            <path d="M10,14 C34,8 60,16 84,10"/>
+          </g>
+          <path d="M-235,-40 V120 C-235,142 -224,150 -206,150" fill="none" stroke="#C2593F" stroke-width="14" opacity="0.16"/>
+          <path d="M-30,-150 L-78,150" stroke="#8A6B49" stroke-width="4" opacity="0.14"/>
+          <path d="M-30,-150 L-78,150" stroke="#FFFFFF" stroke-width="2" opacity="0.35"/>
+          <path d="M-235,64 H235" stroke="#8A6B49" stroke-width="3" opacity="0.18"/>
+          <g id="s10-ribbon" transform="translate(-178,100)">
+            <path d="M-22,10 C-40,30 -52,46 -66,56 M22,10 C40,30 52,46 66,56" fill="none" stroke="#C2593F" stroke-width="12" opacity="0.55" stroke-linecap="round"/>
+            <circle r="30" fill="url(#s10-wax)" stroke="#8E3524" stroke-width="4"/>
+            <circle r="20" fill="none" stroke="#F0C7B6" stroke-width="3" opacity="0.4"/>
+            <path d="M0,-12 L4,-3 L13,-3 L6,2 L8,11 L0,6 L-8,11 L-6,2 L-13,-3 L-4,-3 Z" fill="#8E3524" opacity="0.55"/>
+          </g>
+          <g stroke="#3A2A1E" stroke-width="3" fill="none" opacity="0.5" stroke-linecap="round" transform="translate(-150,96)">
+            <path d="M0,0 C14,-22 22,8 36,-6 C48,-18 44,10 62,-2"/>
+            <path d="M4,10 H58"/>
+          </g>
+        </g>
+
+        <!-- wax seal: pressed, then cracked -->
+        <g transform="translate(196,-96)">
+          <g id="s10-seal">
+            <circle r="40" fill="url(#s10-wax)" stroke="#8E3524" stroke-width="5"/>
+            <circle r="29" fill="none" stroke="#F0C7B6" stroke-width="4" opacity="0.5"/>
+            <path d="M0,-17 L5,-5 L18,-5 L8,3 L12,16 L0,9 L-12,16 L-8,3 L-18,-5 L-5,-5 Z" fill="#8E3524" opacity="0.55"/>
+            <path d="M-26,26 C-34,40 -44,50 -56,56" fill="none" stroke="#8E3524" stroke-width="7" opacity="0.5"/>
+            <path d="M26,26 C34,40 44,50 56,56" fill="none" stroke="#8E3524" stroke-width="7" opacity="0.5"/>
+          </g>
+          <path id="s10-crack" d="M-6,-38 L2,-18 L-8,-6 L2,6 L-4,22 L4,38" fill="none" stroke="#5F2417" stroke-width="4"
+                stroke-linecap="round" stroke-dasharray="80" stroke-dashoffset="80"/>
+        </g>
+        </g>
+      </g>
+
+      <!-- amber inkwell and quill -->
+      <g id="s10-inkwell" transform="translate(716,506) scale(0.86)"><g id="s10-inkwell-in">
+        <ellipse cx="-88" cy="40" rx="164" ry="30" fill="#2B1F17" opacity="0.26" filter="url(#s10-soft3)"/>
+        <path d="M-60,26 C-70,-16 -46,-44 0,-44 C46,-44 70,-16 60,26 C38,42 -38,42 -60,26 Z"
+              fill="url(#s10-inkamber)" stroke="#1E1813" stroke-width="6"/>
+        <path d="M-44,4 C-38,-16 -26,-30 -8,-36 C-20,-20 -26,-4 -28,10 Z" fill="#FFE7B4" opacity="0.45"/>
+        <path d="M34,16 C42,2 46,-12 44,-26" fill="none" stroke="#F7C87E" stroke-width="5" opacity="0.35" stroke-linecap="round"/>
+        <ellipse cx="0" cy="-42" rx="44" ry="13" fill="url(#s10-gilt)" stroke="#1E1813" stroke-width="5"/>
+        <ellipse cx="0" cy="-42" rx="32" ry="8" fill="#241812"/>
+        <ellipse cx="-8" cy="-44" rx="12" ry="3" fill="#8A6B49" opacity="0.65"/>
+        <g id="s10-quill">
+          <path d="M2,-40 C26,-92 52,-152 74,-202" fill="none" stroke="#C9A87C" stroke-width="6" stroke-linecap="round"/>
+          <path d="M36,-112 C52,-146 64,-176 76,-204 C58,-190 48,-166 38,-140 C32,-126 30,-118 36,-112 Z"
+                fill="#FBF2DE" stroke="#8A6B49" stroke-width="4"/>
+          <path d="M44,-126 C54,-152 64,-178 72,-198 M40,-116 C48,-136 54,-152 60,-168"
+                fill="none" stroke="#C9A87C" stroke-width="3" opacity="0.6"/>
+          <path d="M14,-70 C22,-92 30,-112 40,-132" fill="none" stroke="#8A6B49" stroke-width="2" opacity="0.35"/>
+        </g>
+      </g></g>
+
+      <!-- gold route to Paris -->
+      <g id="s10-routewrap">
+        <path d="M742,782 C944,902 1240,706 1530,548" fill="none" stroke="#D9AE56" stroke-width="34" opacity="0.18" stroke-linecap="round" filter="url(#s10-soft3)"/>
+        <path d="M742,782 C944,902 1240,706 1530,548" fill="none" stroke="#7E5A1C" stroke-width="12" opacity="0.42" stroke-linecap="round"/>
+        <path id="s10-route" d="M742,782 C944,902 1240,706 1530,548" fill="none" stroke="url(#s10-gilt)" stroke-width="9"
+              stroke-linecap="round" stroke-dasharray="796" stroke-dashoffset="796"/>
+        <path id="s10-routehi" d="M742,776 C944,896 1240,700 1530,542" fill="none" stroke="#FFF3CE" stroke-width="3"
+              stroke-linecap="round" opacity="0.75" stroke-dasharray="796" stroke-dashoffset="796"/>
+        <g id="s10-glints" opacity="0">
+          <ellipse class="s10-glint" cx="880" cy="742" rx="16" ry="5" fill="#FFF6DC" opacity="0.8"/>
+          <ellipse class="s10-glint" cx="1040" cy="700" rx="18" ry="5" fill="#FFF6DC" opacity="0.7"/>
+          <ellipse class="s10-glint" cx="1200" cy="648" rx="16" ry="5" fill="#FFF6DC" opacity="0.8"/>
+          <ellipse class="s10-glint" cx="1340" cy="592" rx="18" ry="5" fill="#FFF6DC" opacity="0.7"/>
+        </g>
+        <g id="s10-paris">
+          <circle r="54" fill="url(#s10-goldsoft)"/>
+          <circle r="34" fill="none" stroke="#8E3524" stroke-width="5" opacity="0.85"/>
+          <path d="M0,-22 C7,-15 7,-8 2,-3 C9,-7 14,-3 12,3 C10,10 4,12 0,8 C-4,12 -10,10 -12,3 C-14,-3 -9,-7 -2,-3 C-7,-8 -7,-15 0,-22 Z"
+                fill="#8E3524" opacity="0.8"/>
+          <path d="M-11,12 H11" stroke="#8E3524" stroke-width="5" opacity="0.8"/>
+        </g>
+      </g>
+
+      <!-- coins: pile at the letter mouth, trail along the route -->
+      <g transform="translate(748,800)"><g class="s10-coin" opacity="0"><circle r="15" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="9" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-8,-9 A11,11 0 0 1 5,-10" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(794,794)"><g class="s10-coin" opacity="0"><circle r="20" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="12" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-10,-12 A14,14 0 0 1 7,-14" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(827,825)"><g class="s10-coin" opacity="0"><circle r="18" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="11" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-9,-11 A13,13 0 0 1 6,-13" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(869,808)"><g class="s10-coin" opacity="0"><circle r="16" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="10" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-8,-10 A12,12 0 0 1 5,-11" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(910,827)"><g class="s10-coin" opacity="0"><circle r="21" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="13" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-10,-13 A15,15 0 0 1 7,-15" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(949,803)"><g class="s10-coin" opacity="0"><circle r="19" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="12" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-10,-11 A14,14 0 0 1 6,-13" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(995,810)"><g class="s10-coin" opacity="0"><circle r="17" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="11" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-8,-10 A12,12 0 0 1 6,-12" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(1033,781)"><g class="s10-coin" opacity="0"><circle r="15" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="9" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-8,-9 A11,11 0 0 1 5,-10" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(1081,777)"><g class="s10-coin" opacity="0"><circle r="20" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="12" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-10,-12 A14,14 0 0 1 7,-14" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(1119,744)"><g class="s10-coin" opacity="0"><circle r="18" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="11" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-9,-11 A13,13 0 0 1 6,-13" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(1169,736)"><g class="s10-coin" opacity="0"><circle r="16" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="10" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-8,-10 A12,12 0 0 1 5,-11" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(1203,696)"><g class="s10-coin" opacity="0"><circle r="21" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="13" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-10,-13 A15,15 0 0 1 7,-15" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(1255,685)"><g class="s10-coin" opacity="0"><circle r="19" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="12" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-10,-11 A14,14 0 0 1 6,-13" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(1286,641)"><g class="s10-coin" opacity="0"><circle r="17" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="11" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-8,-10 A12,12 0 0 1 6,-12" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(1338,630)"><g class="s10-coin" opacity="0"><circle r="15" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="9" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-8,-9 A11,11 0 0 1 5,-10" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(1364,582)"><g class="s10-coin" opacity="0"><circle r="20" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="12" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-10,-12 A14,14 0 0 1 7,-14" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(1417,572)"><g class="s10-coin" opacity="0"><circle r="18" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="11" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-9,-11 A13,13 0 0 1 6,-13" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(768,812)"><g class="s10-coin" opacity="0"><circle r="16" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="10" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-8,-10 A12,12 0 0 1 5,-11" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(800,842)"><g class="s10-coin" opacity="0"><circle r="21" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="13" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-10,-13 A15,15 0 0 1 7,-15" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(742,846)"><g class="s10-coin" opacity="0"><circle r="19" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="12" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-10,-11 A14,14 0 0 1 6,-13" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(1478,520)"><g class="s10-coin" opacity="0"><circle r="17" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="10" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-8,-10 A12,12 0 0 1 6,-12" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(1516,556)"><g class="s10-coin" opacity="0"><circle r="19" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="12" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-10,-12 A14,14 0 0 1 7,-14" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(1556,528)"><g class="s10-coin" opacity="0"><circle r="16" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="9" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-8,-10 A12,12 0 0 1 5,-11" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+      <g transform="translate(1494,584)"><g class="s10-coin" opacity="0"><circle r="15" fill="url(#s10-gold)" stroke="#8A6323" stroke-width="3"/><circle r="9" fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.6"/><path d="M-7,-9 A11,11 0 0 1 5,-10" fill="none" stroke="#FFF8DE" stroke-width="3" opacity="0.8"/></g></g>
+
+    </svg>
+
+    <!-- FG · out-of-focus coin spill and the gold tear -->
+    <svg class="s10-plane s10-p-fg" id="s10-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <radialGradient id="s10-fgcoin" cx="34%" cy="28%" r="72%">
+          <stop offset="0" stop-color="#FFF3CC"/><stop offset="0.4" stop-color="#F2C870"/><stop offset="1" stop-color="#9A6A20"/>
+        </radialGradient>
+        <linearGradient id="s10-tearsheet" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FFEBB4"/><stop offset="0.34" stop-color="#E8B24E"/><stop offset="0.72" stop-color="#C08A2E"/><stop offset="1" stop-color="#8A6323"/>
+        </linearGradient>
+        <filter id="s10-fgblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter>
+      </defs>
+
+      <g id="s10-fgcoins" filter="url(#s10-fgblur)" opacity="0.9">
+        <g transform="translate(120,1052) scale(1.7)"><circle r="40" fill="url(#s10-fgcoin)" stroke="#8A6323" stroke-width="5"/><circle r="27" fill="none" stroke="#7E5A1C" stroke-width="4" opacity="0.6"/></g>
+        <g transform="translate(300,1088) scale(1.5)"><circle r="40" fill="url(#s10-fgcoin)" stroke="#8A6323" stroke-width="5"/><circle r="27" fill="none" stroke="#7E5A1C" stroke-width="4" opacity="0.6"/></g>
+        <g transform="translate(1660,1076) scale(1.8)"><circle r="40" fill="url(#s10-fgcoin)" stroke="#8A6323" stroke-width="5"/><circle r="27" fill="none" stroke="#7E5A1C" stroke-width="4" opacity="0.6"/></g>
+        <g transform="translate(1848,1042) scale(1.4)"><circle r="40" fill="url(#s10-fgcoin)" stroke="#8A6323" stroke-width="5"/><circle r="27" fill="none" stroke="#7E5A1C" stroke-width="4" opacity="0.6"/></g>
+      </g>
+
+      <g id="s10-tearwrap" transform="translate(960,540) rotate(-23)">
+        <rect id="s10-tearsheet" x="-1500" y="-8" width="3000" height="16" fill="url(#s10-tearsheet)" opacity="0"/>
+        <path id="s10-tearline" d="M-1500,0 H1500" stroke="#FFF3CE" stroke-width="5" stroke-linecap="round"
+              stroke-dasharray="3000" stroke-dashoffset="3000" opacity="0"/>
+      </g>
+    </svg>
+
+    <div class="s10-grain"></div>
+    <div class="s10-vignette"></div>
+
+    <div class="s10-tag" id="s10-tag">
+      <span class="s10-tag-dot"></span>
+      <span class="s10-tag-text">1664</span>
+    </div>
+    <div class="s10-rule" id="s10-rule"></div>
+  </div>
+</div>
+
+<script>
+(function initS10(){
+  var ID = "s10-gold-instead";
+  var root = document.querySelector('[data-composition-id="' + ID + '"]');
+  var tl = gsap.timeline({ paused: true });
+
+  tl.to({}, { duration: 15.157 }, 0);
+
+  // ── BG: desk, low candle, dust ───────────────────────────────────────────
+  tl.fromTo("#s10-bg", { scale: 1.05, x: 10, y: -8 }, { scale: 1, x: 0, y: 0, duration: 14.9, ease: "sine.out" }, 0.05);
+  tl.fromTo("#s10-halo", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 0.34, duration: 1.7, ease: "sine.out" }, 0.25);
+  tl.fromTo(".s10-mote", { y: 0, x: 0 }, { y: -54, x: 16, duration: 6.2, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 0.24 }, 1.10);
+
+  // ── PHASE 1: the Paris plate unrolls, then Colbert is hung ───────────────
+  tl.fromTo("#s10-map-in", { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 1.0, ease: "power2.out" }, 0.10);
+  tl.fromTo("#s10-map-rect", { attr: { width: 0 } }, { attr: { width: 1010 }, duration: 1.35, ease: "power3.inOut" }, 0.22);
+  tl.fromTo("#s10-mapphoto", { scale: 1.06 }, { scale: 1, duration: 2.4, ease: "sine.out", transformOrigin: "50% 50%" }, 0.30);
+  tl.fromTo("#s10-portrait-in", { y: -110, opacity: 0, rotation: -8 }, { y: 0, opacity: 1, rotation: 0, duration: 1.15, ease: "power3.out" }, 1.05);
+  tl.fromTo("#s10-portrait-crest", { scale: 0.2, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.45, ease: "back.out(2.4)" }, 1.85);
+  tl.fromTo("#s10-portrait-in", { scale: 1 }, { scale: 1.018, duration: 6.0, ease: "sine.inOut", yoyo: true, repeat: 1 }, 2.30);
+
+  // ── PHASE 2: the letter unrolls, the cipher writes, the seal cracks ─────
+  tl.fromTo("#s10-letter-in", { y: 34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.85, ease: "power2.out" }, 2.35);
+  tl.fromTo("#s10-letter-rect", { attr: { width: 0 } }, { attr: { width: 470 }, duration: 1.0, ease: "power3.inOut" }, 2.50);
+  tl.fromTo(".s10-row", { attr: { "stroke-dasharray": 400, "stroke-dashoffset": 400 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.45, ease: "power2.out", stagger: 0.09 }, 3.10);
+  tl.fromTo("#s10-tally", { opacity: 0, y: -10 }, { opacity: 0.7, y: 0, duration: 0.6, ease: "sine.out" }, 3.55);
+  tl.fromTo("#s10-seal", { scale: 0, opacity: 0, rotation: -26 }, { scale: 1, opacity: 1, rotation: 0, duration: 0.5, ease: "back.out(2.6)" }, 4.05);
+  tl.to("#s10-seal", { scale: 1.06, duration: 0.14, ease: "power2.in" }, 4.55);
+  tl.to("#s10-seal", { scale: 1, duration: 0.32, ease: "elastic.out(1,0.45)" }, 4.69);
+  tl.fromTo("#s10-crack", { attr: { "stroke-dashoffset": 80 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.22, ease: "power3.in" }, 4.95);
+
+  // ── PHASE 3: gold pours along the route ──────────────────────────────────
+  tl.fromTo(".s10-coin", { opacity: 0, scale: 0.45, x: -150, y: -130, rotation: -60 },
+            { opacity: 1, scale: 1, x: 0, y: 0, rotation: 0, duration: 0.62, ease: "back.out(1.8)", stagger: 0.062 }, 5.05);
+  tl.fromTo(".s10-coin", { scale: 1 }, { scale: 1.07, duration: 0.20, ease: "sine.inOut", stagger: 0.05, yoyo: true, repeat: 3 }, 6.60);
+  tl.fromTo("#s10-route", { attr: { "stroke-dashoffset": 796 } }, { attr: { "stroke-dashoffset": 0 }, duration: 1.05, ease: "power2.inOut" }, 6.85);
+  tl.fromTo("#s10-routehi", { attr: { "stroke-dashoffset": 796 } }, { attr: { "stroke-dashoffset": 0 }, duration: 1.05, ease: "power2.inOut" }, 6.92);
+  tl.to("#s10-glints", { opacity: 1, duration: 0.5, ease: "sine.out" }, 8.05);
+  tl.to(".s10-glint", { opacity: 0.15, duration: 0.9, ease: "sine.inOut", stagger: 0.28, yoyo: true, repeat: 3 }, 8.20);
+  tl.fromTo("#s10-paris", { scale: 0.3, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.55, ease: "back.out(2.6)" }, 7.80);
+  tl.to("#s10-paris", { scale: 1.10, duration: 0.9, ease: "sine.inOut", yoyo: true, repeat: 3 }, 8.35);
+  tl.fromTo("#s10-route", { opacity: 0.9 }, { opacity: 0.55, duration: 1.2, ease: "sine.inOut", yoyo: true, repeat: 2 }, 8.60);
+
+  // the candle gutters as the gold lands
+  tl.fromTo("#s10-flame", { scaleY: 0.5, scaleX: 0.78, opacity: 0 }, { scaleY: 1, scaleX: 1, opacity: 1, duration: 0.5, ease: "back.out(1.8)" }, 0.90);
+  tl.to("#s10-flame", { scaleY: 1.10, scaleX: 0.92, duration: 0.23, ease: "sine.inOut", yoyo: true, repeat: 24 }, 1.45);
+  tl.to("#s10-halo", { opacity: 0.42, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 7 }, 2.10);
+
+  tl.fromTo("#s10-inkwell-in", { y: 54, opacity: 0 }, { y: 0, opacity: 1, duration: 0.85, ease: "power2.out" }, 1.60);
+  tl.to("#s10-quill", { rotation: 2.2, duration: 4.0, ease: "sine.inOut", yoyo: true, repeat: 1, transformOrigin: "6px -44px" }, 4.20);
+
+  // ── living holds ─────────────────────────────────────────────────────────
+  tl.fromTo("#s10-stage", { scale: 1.0, x: 0 }, { scale: 1.028, x: -10, y: -8, duration: 14.9, ease: "sine.inOut" }, 0.10);
+  tl.to("#s10-map-wrap", { rotation: -2.4, duration: 5.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 2.60);
+  tl.to("#s10-letter", { rotation: -6.4, duration: 4.6, ease: "sine.inOut", yoyo: true, repeat: 1 }, 4.40);
+  tl.to("#s10-routewrap", { x: 5, y: -4, duration: 3.8, ease: "sine.inOut", yoyo: true, repeat: 1 }, 7.20);
+
+  // ── TAG ──────────────────────────────────────────────────────────────────
+  tl.fromTo("#s10-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -14 }, { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.6, ease: "power3.inOut" }, 1.50);
+  tl.fromTo("#s10-rule", { width: 0 }, { width: 186, duration: 0.5, ease: "power2.out" }, 1.86);
+
+  // ── SEAM: the gold route line whips the frame open ───────────────────────
+  tl.set("#s10-tearline", { opacity: 1 }, 14.32);
+  tl.fromTo("#s10-tearline", { attr: { "stroke-dashoffset": 3000 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.22, ease: "power4.in" }, 14.34);
+  tl.set("#s10-tearsheet", { opacity: 1 }, 14.52);
+  tl.fromTo("#s10-tearsheet", { attr: { height: 16, y: -8 } }, { attr: { height: 1500, y: -750 }, duration: 0.55, ease: "power3.in" }, 14.54);
+  tl.to("#s10-tearline", { opacity: 0, duration: 0.10 }, 14.92);
+  tl.to("#s10-tag", { clipPath: "inset(0% 100% 0% 0%)", duration: 0.18, ease: "power2.in" }, 14.40);
+  tl.to("#s10-rule", { width: 0, duration: 0.18, ease: "power2.in" }, 14.40);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

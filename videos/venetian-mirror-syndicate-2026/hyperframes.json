@@ -1,0 +1,5 @@
+{
+  "blocks": "compositions",
+  "components": "compositions/components",
+  "assets": "assets"
+}

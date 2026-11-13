@@ -1,0 +1,230 @@
+# RenderedLabs — Project Pipeline State Machine
+# Rebuilt at S6 after the invalid concurrent 18-scene rewrite. HANDOFF.md remains the narrative log.
+
+version: "3.0"
+
+project:
+  slug: "venetian-mirror-syndicate-2026"
+  realm: "terra-rose"
+  preset: "videos/venetian-mirror-syndicate-2026/preset.json"
+  format: "deep-dive"
+  benchmark: "kurzgesagt"
+  benchmark_why: "sole official benchmark studio for RenderedLabs (Kurzgesagt – In a Nutshell)"
+  created_at: "2026-11-11T23:24:00+05:30"
+  status: "in_progress"
+  runtime: "8:41"
+  palette_variance: "amber-margins" # BRAND_GUARD_SKIP_PALETTE=1
+
+orchestration:
+  current_phase: "phase_2_visual_composition"
+  current_stage: "s6_storyboard_done"
+  active_subagents: []
+  blockers: []
+  next_dispatch: "s7_builder"
+  contract_version: "4"
+
+# ==============================================================================
+# Phase 0: Investigative Grounding & Evidence
+# ==============================================================================
+investigation_and_evidence:
+  s0_setup:
+    status: "done"
+    owner: "producer"
+    stage_file: "assets/brand/stages/s0-setup.md"
+    completed_at: "2026-11-11T23:45:00+05:30"
+    gate_g0: "passed"
+    channel_context_seeded: true
+    learnings_appended: true
+    segments: []
+
+  s1_research:
+    status: "done"
+    owner: "researcher"
+    stage_file: "assets/brand/stages/s1-research.md"
+    dossier: "video-dossiers/venetian-mirror-syndicate-2026-dossier.md"
+    ledger: "video-dossiers/venetian-mirror-syndicate-2026-ledger.md"
+    sources_verified: 21
+    tier1_sources_verified: 10
+    stated_unknowns_count: 5
+    completed_at: "2026-11-12T00:10:00+05:30"
+    gate_g1: "passed"
+    learnings_appended: true
+
+  s2_packaging:
+    status: "done"
+    owner: "packager"
+    stage_file: "assets/brand/stages/s2-packaging.md"
+    packaging_path: "videos/venetian-mirror-syndicate-2026/PACKAGING.md"
+    titles_written: 3
+    thumbnails_rendered: 3
+    style_guide_ready: true
+    q_pkg: 0.993
+    completed_at: "2026-11-12T01:25:00+05:30"
+    gate_g2p: "passed"
+    learnings_appended: true
+
+  s3_evidence:
+    status: "done"
+    owner: "plate-scout"
+    stage_file: "assets/brand/stages/s3-evidence.md"
+    raw_dir: "videos/venetian-mirror-syndicate-2026/plates/raw/"
+    processed_dir: "videos/venetian-mirror-syndicate-2026/plates/processed/"
+    scout_manifest: "videos/venetian-mirror-syndicate-2026/plates/scout-manifest.json"
+    plates_manifest: "videos/venetian-mirror-syndicate-2026/plates/plates.json"
+    total_plates: 23
+    total_assets: 29
+    single_instance_used: true
+    quote_bounding_boxes_count: 21
+    triage_coverage_pct: 100
+    q_plates: 1.000
+    completed_at: "2026-11-12T01:49:00+05:30"
+    gate_g3e: "passed"
+    learnings_appended: true
+
+# ==============================================================================
+# Phase 1: Narrative Architecture & Audio Engineering
+# ==============================================================================
+narrative_and_audio:
+  s4_script:
+    status: "done"
+    owner: "writer"
+    stage_file: "assets/brand/stages/s4-script.md"
+    word_count: 1492
+    revisions: 1
+    anti_slop_clean: true
+    exclamation_marks: 0
+    stated_unknowns_count: 5
+    teasing_beats: 3
+    funnies_beats: 0
+    q_script: 1.000
+    completed_at: "2026-11-12T03:40:00+05:30"
+    gate_g4s: "passed"
+    learnings_appended: true
+
+  s5_voice:
+    status: "done"
+    owner: "voice"
+    stage_file: "assets/brand/stages/s5-voice.md"
+    voice_id: "en-US-ChristopherNeural"
+    voice_rate: "+11%"
+    runtime_seconds: 520.989
+    pause_optimized: true
+    transcript_ready: true
+    wpm: 171.8
+    integrated_lufs: -14.01
+    true_peak_dbtp: -1.46
+    max_silence_gap_s: 0.295
+    q_voice: 1.000
+    completed_at: "2026-11-12T07:13:00+05:30"
+    gate_g5v: "passed"
+    learnings_appended: true
+
+# ==============================================================================
+# Phase 2: Visual Choreography & Vector Scene Craft
+# ==============================================================================
+visual_composition:
+  s6_storyboard:
+    status: "done"
+    owner: "art-director"
+    stage_file: "assets/brand/stages/s6-storyboard.md"
+    storyboard_path: "videos/venetian-mirror-syndicate-2026/STORYBOARD.md"
+    scene_count: 27
+    total_scenes: 27
+    avg_duration: 19.296
+    runtime_seconds: 520.989
+    words_covered: 1492
+    worlds_planned: 9
+    timeline_beats_ready: true
+    timeline_beats_path: "videos/venetian-mirror-syndicate-2026/timeline.beats.json"
+    cues_path: "videos/venetian-mirror-syndicate-2026/cues.json"
+    sfx_cues_mapped: 34
+    plates_assigned: 29
+    heavy_seams: 5
+    max_onscreen_words: 3
+    bpm: 90
+    completed_at: "2026-11-12T10:53:00+05:30"
+    gate_g6b: "passed"
+    learnings_appended: true
+
+  s7_builder:
+    status: "pending"
+    owner: "builder"
+    stage_file: "assets/brand/stages/s7-builder.md"
+    total_blocks: 7
+    completed_blocks: 0
+    hand_authored_verified: false
+    slot_guard_active: false
+    determinism_clean: false
+    blocks: []
+    gate_g7b: null
+    learnings_appended: false
+
+  s7e_evaluator:
+    status: "pending"
+    owner: "evaluator"
+    stage_file: "assets/brand/stages/s7e-evaluator.md"
+    eval_log: "snapshots/EVAL_LOG.md"
+    mean_composite_q: null
+    gate_g7e: null
+    learnings_appended: false
+
+  world_bg:
+    status: "pending"
+    owner: "world-bg"
+    stage_file: "assets/brand/stages/world-bg.md"
+    file_pattern: "compositions/wbg-*.html"
+    worlds_count: 0
+    worlds_planned: 9
+    gate_clean: false
+    learnings_appended: false
+
+# ==============================================================================
+# Phase 3: Sound Design & Procedural Audio
+# ==============================================================================
+sound_design:
+  s8_sound:
+    status: "pending"
+    owner: "sound"
+    stage_file: "assets/brand/stages/s8-sound.md"
+    bgm_bed: ""
+    procedural_sfx_ready: false
+    beats_measured: false
+    cues_synced: false
+    mix_checked: false
+    audio_meta_ready: false
+    gate_g8s: null
+    learnings_appended: false
+
+# ==============================================================================
+# Phase 4: Master Assembly, QC & Release
+# ==============================================================================
+assembly_and_release:
+  s9_assembly_qa:
+    status: "pending"
+    owner: "qa"
+    stage_file: "assets/brand/stages/s9-assembly-qa.md"
+    master_index_ready: false
+    schedule_contiguous: false
+    brand_guard_clean: false
+    determinism_clean: false
+    video_qc_passed: false
+    measured_loudness_lufs: null
+    measured_true_peak_dbtp: null
+    snapshots_coverage_100_pct: false
+    review_rounds: 0
+    review_verdict: null
+    gate_g9q: null
+    learnings_appended: false
+
+  s10_release:
+    status: "pending"
+    youtube_status: "pending"
+    owner: "publisher"
+    stage_file: "assets/brand/stages/s10-release.md"
+    release_path: "videos/venetian-mirror-syndicate-2026/RELEASE.md"
+    description_chars: 0
+    tags_chars: 0
+    learnings_path: "videos/venetian-mirror-syndicate-2026/LEARNINGS.md"
+    channel_learnings_updated: false
+    gate_g10r: null
+    learnings_appended: false

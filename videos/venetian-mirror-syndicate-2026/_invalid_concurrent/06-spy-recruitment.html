@@ -1,0 +1,64 @@
+<template id="s06-template">
+  <div id="root" data-composition-id="s06-spy-recruitment" data-width="1920" data-height="1080" data-start="90.00" data-duration="18.00">
+    <div class="s06-cam" id="s06-cam">
+      <div id="s06-bg" class="wbg-container">
+        <svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <radialGradient id="s06Tavern" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#D9822B" stop-opacity="0.22"/>
+              <stop offset="62%" stop-color="#151B3B" stop-opacity="0.62"/>
+              <stop offset="100%" stop-color="#070A12" stop-opacity="0.92"/>
+            </radialGradient>
+          </defs>
+          <rect width="1920" height="1080" fill="#070A12"/>
+          <rect width="1920" height="1080" fill="url(#s06Tavern)"/>
+          <g opacity="0.62" fill="#1E1813">
+            <rect x="0" y="900" width="1920" height="180"/>
+            <rect x="180" y="200" width="200" height="700"/>
+            <rect x="1540" y="200" width="200" height="700"/>
+            <rect x="560" y="120" width="140" height="780"/>
+            <rect x="1220" y="120" width="140" height="780"/>
+          </g>
+          <g opacity="0.5" stroke="#C89D42" stroke-width="6">
+            <path d="M420,760 L700,760"/>
+            <path d="M1220,760 L1500,760"/>
+          </g>
+        </svg>
+      </div>
+      <div id="s06-fg" class="hero-container">
+        <svg viewBox="0 0 1920 1080">
+          <defs>
+            <radialGradient id="s06InkGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#C2593F" stop-opacity="0.50"/>
+              <stop offset="100%" stop-color="#C2593F" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="s06Blur" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="18"/>
+            </filter>
+          </defs>
+          <ellipse cx="760" cy="700" rx="300" ry="220" fill="url(#s06InkGlow)" filter="url(#s06Blur)"/>
+          <path d="M700,600 Q760,540 820,600 L840,780 L680,780 Z" stroke="#1E1813" stroke-width="26" fill="none"/>
+          <path d="M720,600 L760,660 L800,600" stroke="#C2593F" stroke-width="14" fill="none" stroke-linecap="round"/>
+          <circle cx="960" cy="430" r="120" fill="#1E1813" opacity="0.92"/>
+          <path d="M760,900 Q960,700 1160,900" stroke="#1E1813" stroke-width="30" fill="none" stroke-linecap="round"/>
+          <path d="M860,520 Q960,440 1060,520" stroke="#D9822B" stroke-width="14" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div id="s06-text" class="text-container" style="position: absolute; top: 100px; left: 100px; color: #C2593F; font-family: 'Archivo Black'; font-size: 64px; background: rgba(7,10,18,0.55); padding: 14px 28px; border-radius: 10px;">
+        SPY NETWORK
+      </div>
+    </div>
+  </div>
+  <script>
+    (function initS06() {
+      const ID = 's06-spy-recruitment';
+      const tl = gsap.timeline({ paused: true });
+      tl.to({}, { duration: 18.00 }, 0);
+      tl.from('#s06-fg', { duration: 2.2, opacity: 0, y: 60, ease: 'power2.inOut' }, 1.2);
+      tl.from('#s06-text', { duration: 0.7, opacity: 0, scale: 0.85, ease: 'back.out(1.7)' }, 2.4);
+      tl.to('#s06-fg', { duration: 8.0, scale: 1.05, transformOrigin: '50% 70%', ease: 'sine.inOut', yoyo: true, repeat: 1 }, 7.0);
+      window.__timelines = window.__timelines || {};
+      window.__timelines[ID] = tl;
+    })();
+  </script>
+</template>

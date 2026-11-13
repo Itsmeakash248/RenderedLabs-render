@@ -1,0 +1,461 @@
+{
+  "_note": "Single source of truth for SFX + beat marks on the 90 BPM grid for Venetian Mirror Syndicate. S6 art-director emits this; S7 builder + S8 sound consume it. Beats (not seconds) so picture and sound cannot drift. transcript.json stays the VO word-timing truth.",
+  "title": "RenderedLabs — Venetian Mirror Syndicate timeline beats",
+  "bpm": 90,
+  "duration_s": 520.989,
+  "fps": 60,
+  "marks": {
+    "hook": 0,
+    "act1": 124.651,
+    "act2": 285.245,
+    "act3": 455.125,
+    "act4": 622.266,
+    "mid1": 284.802,
+    "mid2": 454.68,
+    "mid3": 621.824,
+    "climax": 750.153,
+    "outro": 768,
+    "done": 781.484,
+    "w2": 85.5,
+    "w3": 181.5,
+    "w4": 280.5,
+    "w5": 375,
+    "w6": 477,
+    "w7": 562.5,
+    "w8": 648,
+    "w9": 730.5
+  },
+  "scenes": [
+    {
+      "id": "s01-gilded-tally",
+      "start_s": 0,
+      "end_s": 18.993,
+      "start_beat": 0.0,
+      "end_beat": 28.489
+    },
+    {
+      "id": "s02-bought-people",
+      "start_s": 18.993,
+      "end_s": 36.176,
+      "start_beat": 28.489,
+      "end_beat": 54.264
+    },
+    {
+      "id": "s03-three-documents",
+      "start_s": 36.176,
+      "end_s": 60.441,
+      "start_beat": 54.264,
+      "end_beat": 90.662
+    },
+    {
+      "id": "s04-zero-masters",
+      "start_s": 60.441,
+      "end_s": 83.101,
+      "start_beat": 90.662,
+      "end_beat": 124.651
+    },
+    {
+      "id": "s05-eight-hundred-days",
+      "start_s": 83.101,
+      "end_s": 100.747,
+      "start_beat": 124.651,
+      "end_beat": 151.12
+    },
+    {
+      "id": "s06-customs-hemorrhage",
+      "start_s": 100.747,
+      "end_s": 121.803,
+      "start_beat": 151.12,
+      "end_beat": 182.704
+    },
+    {
+      "id": "s07-mercury-mirror",
+      "start_s": 121.803,
+      "end_s": 138.411,
+      "start_beat": 182.704,
+      "end_beat": 207.617
+    },
+    {
+      "id": "s08-golden-cage",
+      "start_s": 138.411,
+      "end_s": 159.38,
+      "start_beat": 207.617,
+      "end_beat": 239.07
+    },
+    {
+      "id": "s09-ten-seals",
+      "start_s": 159.38,
+      "end_s": 175.006,
+      "start_beat": 239.07,
+      "end_beat": 262.509
+    },
+    {
+      "id": "s10-gold-instead",
+      "start_s": 175.006,
+      "end_s": 190.163,
+      "start_beat": 262.509,
+      "end_beat": 285.245
+    },
+    {
+      "id": "s11-three-masters",
+      "start_s": 190.163,
+      "end_s": 208.485,
+      "start_beat": 285.245,
+      "end_beat": 312.728
+    },
+    {
+      "id": "s12-before-dawn",
+      "start_s": 208.485,
+      "end_s": 227.073,
+      "start_beat": 312.728,
+      "end_beat": 340.61
+    },
+    {
+      "id": "s13-payroll-foundry",
+      "start_s": 227.073,
+      "end_s": 245.122,
+      "start_beat": 340.61,
+      "end_beat": 367.683
+    },
+    {
+      "id": "s14-first-mirror",
+      "start_s": 245.122,
+      "end_s": 267.586,
+      "start_beat": 367.683,
+      "end_beat": 401.379
+    },
+    {
+      "id": "s15-forged-replies",
+      "start_s": 267.586,
+      "end_s": 286.518,
+      "start_beat": 401.379,
+      "end_beat": 429.777
+    },
+    {
+      "id": "s16-matchlock-street",
+      "start_s": 286.518,
+      "end_s": 303.417,
+      "start_beat": 429.777,
+      "end_beat": 455.125
+    },
+    {
+      "id": "s17-january-1667",
+      "start_s": 303.417,
+      "end_s": 330.504,
+      "start_beat": 455.125,
+      "end_beat": 495.756
+    },
+    {
+      "id": "s18-no-proof",
+      "start_s": 330.504,
+      "end_s": 347.358,
+      "start_beat": 495.756,
+      "end_beat": 521.037
+    },
+    {
+      "id": "s19-terror-won",
+      "start_s": 347.358,
+      "end_s": 366.783,
+      "start_beat": 521.037,
+      "end_beat": 550.175
+    },
+    {
+      "id": "s20-tacit-knowledge",
+      "start_s": 366.783,
+      "end_s": 391.333,
+      "start_beat": 550.175,
+      "end_beat": 587.0
+    },
+    {
+      "id": "s21-paper-chain",
+      "start_s": 391.333,
+      "end_s": 414.844,
+      "start_beat": 587.0,
+      "end_beat": 622.266
+    },
+    {
+      "id": "s22-counting-room",
+      "start_s": 414.844,
+      "end_s": 431.465,
+      "start_beat": 622.266,
+      "end_beat": 647.197
+    },
+    {
+      "id": "s23-assembled-mosaic",
+      "start_s": 431.465,
+      "end_s": 447.814,
+      "start_beat": 647.197,
+      "end_beat": 671.721
+    },
+    {
+      "id": "s24-open-questions",
+      "start_s": 447.814,
+      "end_s": 467.834,
+      "start_beat": 671.721,
+      "end_beat": 701.751
+    },
+    {
+      "id": "s25-inverted-flow",
+      "start_s": 467.834,
+      "end_s": 487.877,
+      "start_beat": 701.751,
+      "end_beat": 731.816
+    },
+    {
+      "id": "s26-still-gilded",
+      "start_s": 487.877,
+      "end_s": 500.102,
+      "start_beat": 731.816,
+      "end_beat": 750.153
+    },
+    {
+      "id": "s27-human-hands",
+      "start_s": 500.102,
+      "end_s": 520.989,
+      "start_beat": 750.153,
+      "end_beat": 781.484
+    }
+  ],
+  "music": {
+    "template": "cine",
+    "key": "Dm",
+    "sections": [
+      {
+        "at": "hook",
+        "kind": "wonder"
+      },
+      {
+        "at": "act1",
+        "kind": "intrigue"
+      },
+      {
+        "at": "act2",
+        "kind": "tempo_climb"
+      },
+      {
+        "at": "act3",
+        "kind": "dark_tension"
+      },
+      {
+        "at": "act4",
+        "kind": "grand_scale"
+      },
+      {
+        "at": "climax",
+        "kind": "resolution"
+      },
+      {
+        "at": "outro",
+        "kind": "archival_hold"
+      }
+    ]
+  },
+  "sfx": [
+    {
+      "at": 1.5105,
+      "type": "impact",
+      "gain": 0.35,
+      "what": "mirror wall reveals: 73 metres of golden light"
+    },
+    {
+      "at": 38.8545,
+      "type": "whoosh",
+      "gain": 0.3,
+      "what": "talent-raid route tears the formula folio toward Paris"
+    },
+    {
+      "at": 77.4825,
+      "type": "click",
+      "gain": 0.28,
+      "what": "three-document stack sockets into a political weapon"
+    },
+    {
+      "at": 110.6895,
+      "type": "chime",
+      "gain": 0.3,
+      "what": "trade balance tips to zero master glassmakers"
+    },
+    {
+      "at": 124.6515,
+      "type": "sub",
+      "gain": 0.34,
+      "what": "act break: furnace-arch iris blooms over the lagoon"
+    },
+    {
+      "at": 151.1205,
+      "type": "click",
+      "gain": 0.28,
+      "what": "customs coin column collapses at 120,000 livres"
+    },
+    {
+      "at": 175.35,
+      "type": "whoosh",
+      "gain": 0.3,
+      "what": "216-crate convoy sweeps across the ledger terrain"
+    },
+    {
+      "at": 198.5265,
+      "type": "impact",
+      "gain": 0.35,
+      "what": "mercury platen compresses the tin amalgam sandwich"
+    },
+    {
+      "at": 221.9955,
+      "type": "sub",
+      "gain": 0.34,
+      "what": "brass cage bars socket around Murano"
+    },
+    {
+      "at": 239.07,
+      "type": "click",
+      "gain": 0.28,
+      "what": "ten Council seals stamp the decree"
+    },
+    {
+      "at": 262.509,
+      "type": "whoosh",
+      "gain": 0.3,
+      "what": "gold route line tears out of the folded letter"
+    },
+    {
+      "at": 285.2445,
+      "type": "impact",
+      "gain": 0.35,
+      "what": "act break: first three masters clear the lagoon gate"
+    },
+    {
+      "at": 305.748,
+      "type": "whoosh",
+      "gain": 0.3,
+      "what": "gondola prow cuts the frame into the October route"
+    },
+    {
+      "at": 327.396,
+      "type": "whoosh",
+      "gain": 0.3,
+      "what": "compass needle sweeps across the Alpine switchbacks"
+    },
+    {
+      "at": 352.3695,
+      "type": "click",
+      "gain": 0.28,
+      "what": "payroll tags swing and socket onto the brass rack"
+    },
+    {
+      "at": 377.9535,
+      "type": "chime",
+      "gain": 0.3,
+      "what": "first flawless mirror snaps from bubble to silver"
+    },
+    {
+      "at": 401.379,
+      "type": "riser",
+      "gain": 0.32,
+      "what": "forged replies pulse through the Venice-Paris threads"
+    },
+    {
+      "at": 417.7905,
+      "type": "whoosh",
+      "gain": 0.3,
+      "what": "letter shutter opens on the vanishing wives"
+    },
+    {
+      "at": 436.605,
+      "type": "sub",
+      "gain": 0.34,
+      "what": "matchlock volley erupts over the Paris street plan"
+    },
+    {
+      "at": 455.1255,
+      "type": "impact",
+      "gain": 0.35,
+      "what": "act break: muzzle flash contracts to a mercury bowl"
+    },
+    {
+      "at": 475.9665,
+      "type": "click",
+      "gain": 0.28,
+      "what": "January 1667 calendar locks; both name tags topple"
+    },
+    {
+      "at": 506.4015,
+      "type": "click",
+      "gain": 0.28,
+      "what": "toxicology balance locks tilted: no proof"
+    },
+    {
+      "at": 535.233,
+      "type": "sub",
+      "gain": 0.34,
+      "what": "workshop door closes; terror wins the frame"
+    },
+    {
+      "at": 561.225,
+      "type": "whoosh",
+      "gain": 0.3,
+      "what": "motion arcs detach and socket into apprentice arms"
+    },
+    {
+      "at": 586.9995,
+      "type": "click",
+      "gain": 0.28,
+      "what": "1669 survey, 1670 refusal, 1672 embargo chain locks"
+    },
+    {
+      "at": 604.404,
+      "type": "impact",
+      "gain": 0.35,
+      "what": "total embargo slams the portcullis down"
+    },
+    {
+      "at": 622.266,
+      "type": "sub",
+      "gain": 0.34,
+      "what": "act break: portcullis bars become the 17 arch frames"
+    },
+    {
+      "at": 647.1975,
+      "type": "impact",
+      "gain": 0.35,
+      "what": "17 arch frames socket; the count runs to 357"
+    },
+    {
+      "at": 659.367,
+      "type": "chime",
+      "gain": 0.3,
+      "what": "mosaic shards bloom into the gallery perspective"
+    },
+    {
+      "at": 676.9785,
+      "type": "click",
+      "gain": 0.28,
+      "what": "caliper closes on the disputed pane"
+    },
+    {
+      "at": 705.285,
+      "type": "impact",
+      "gain": 0.35,
+      "what": "trade flow inverts; export stacks rise at the borders"
+    },
+    {
+      "at": 722.268,
+      "type": "chime",
+      "gain": 0.3,
+      "what": "the ambassador's wax seal wilts"
+    },
+    {
+      "at": 750.153,
+      "type": "impact",
+      "gain": 0.35,
+      "what": "payoff: gilded trim inverts the room to an easel"
+    },
+    {
+      "at": 762.5445,
+      "type": "chime",
+      "gain": 0.3,
+      "what": "seven name tags socket; an amber handprint blooms"
+    }
+  ],
+  "_sfx_vocab": "sub | impact | riser | whoosh | chime | click (C4 SFX_Cue column; — = no cue; <=1 hit per 8s; ceiling <=0.35)",
+  "_rules": "marks in beats; run node tools/sync-cues.mjs after ANY edit; cues snap to beats.json hits +-40ms"
+}

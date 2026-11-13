@@ -1,0 +1,499 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s06-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s06-customs-hemorrhage"] .s06-stage{position:absolute;inset:0;transform-origin:50% 50%;}
+[data-composition-id="s06-customs-hemorrhage"] .s06-ground{position:absolute;inset:0;background:
+  radial-gradient(125% 95% at 40% 40%, #FBF7F0 0%, #F5EFEB 40%, #E9DCC9 74%, #C8B296 100%);}
+[data-composition-id="s06-customs-hemorrhage"] .s06-plane{position:absolute;inset:0;width:1920px;height:1080px;transform-origin:50% 50%;}
+[data-composition-id="s06-customs-hemorrhage"] .s06-tag{position:absolute;left:78px;top:908px;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;background:rgba(250,247,240,0.95);
+  box-shadow:0 12px 30px rgba(43,31,23,0.26),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s06-customs-hemorrhage"] .s06-tag-dot{width:15px;height:15px;border-radius:50%;background:#C2593F;
+  box-shadow:0 0 0 5px rgba(194,89,63,0.20),inset 0 0 0 3px #A8462F;}
+[data-composition-id="s06-customs-hemorrhage"] .s06-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.13em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s06-customs-hemorrhage"] .s06-rule{position:absolute;left:78px;top:974px;height:5px;width:0px;background:#C2593F;border-radius:4px;
+  box-shadow:0 2px 6px rgba(43,31,23,0.25);}
+[data-composition-id="s06-customs-hemorrhage"] .s06-crate{transform-box:fill-box;transform-origin:50% 80%;}
+[data-composition-id="s06-customs-hemorrhage"] .s06-coin{transform-box:fill-box;transform-origin:50% 50%;}
+[data-composition-id="s06-customs-hemorrhage"] .s06-tally{transform-box:fill-box;transform-origin:50% 100%;}
+[data-composition-id="s06-customs-hemorrhage"] .s06-roller{transform-box:fill-box;transform-origin:50% 50%;}
+</style>
+
+<div id="root" data-composition-id="s06-customs-hemorrhage" data-width="1920" data-height="1080" data-start="0" data-duration="21.056">
+  <div class="s06-stage" id="s06-stage">
+    <div class="s06-ground"></div>
+
+    <!-- BG plane — 0.960: map haze, ghost ledger columns, furnace underglow -->
+    <svg class="s06-plane s06-bg" id="s06-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <radialGradient id="s06-mapglow" cx="62%" cy="46%" r="60%">
+          <stop offset="0" stop-color="#FFD8A0" stop-opacity="0.40"/><stop offset="0.55" stop-color="#D9822B" stop-opacity="0.14"/><stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s06-furnaceglow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFB24D" stop-opacity="0.55"/><stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="s06-hazeband" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#2B1F17" stop-opacity="0"/><stop offset="0.5" stop-color="#2B1F17" stop-opacity="0.10"/><stop offset="1" stop-color="#2B1F17" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="s06-b1blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>
+        <filter id="s06-b2blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="10"/></filter>
+      </defs>
+      <ellipse cx="1200" cy="520" rx="780" ry="560" fill="url(#s06-mapglow)"/>
+      <!-- ghost ruled columns of the ledger behind everything -->
+      <g stroke="#2B1F17" opacity="0.10">
+        <path d="M120,0 L120,1080" stroke-width="7"/><path d="M260,0 L260,1080" stroke-width="5"/>
+        <path d="M420,0 L420,1080" stroke-width="5"/><path d="M560,0 L560,1080" stroke-width="7"/>
+      </g>
+      <g fill="#2B1F17" opacity="0.045">
+        <rect x="130" y="0" width="120" height="1080"/><rect x="430" y="0" width="120" height="1080"/>
+      </g>
+      <!-- haze bands across the map wall -->
+      <rect x="380" y="300" width="1600" height="120" fill="url(#s06-hazeband)"/>
+      <rect x="380" y="620" width="1600" height="90" fill="url(#s06-hazeband)"/>
+      <!-- mount shadow thrown down-right -->
+      <rect x="500" y="104" width="1392" height="908" fill="#2B1F17" opacity="0.26" filter="url(#s06-b1blur)"/>
+      <!-- furnace underglow through the paper -->
+      <ellipse cx="330" cy="900" rx="420" ry="230" fill="url(#s06-furnaceglow)"/>
+      <ellipse cx="1080" cy="330" rx="260" ry="160" fill="url(#s06-furnaceglow)" opacity="0.4"/>
+    </svg>
+    <!-- MG plane — 1.000: mounted map, ledger terrain, coin column, crate convoy -->
+    <svg class="s06-plane s06-mg" id="s06-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s06-brass" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#F3DA96"/><stop offset="0.36" stop-color="#C89D42"/><stop offset="0.74" stop-color="#A87A2B"/><stop offset="1" stop-color="#7E5A1C"/>
+        </linearGradient>
+        <linearGradient id="s06-mat" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#3A2C22"/><stop offset="0.5" stop-color="#2B1F17"/><stop offset="1" stop-color="#1E1813"/>
+        </linearGradient>
+        <linearGradient id="s06-paper" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#FBF5E8"/><stop offset="0.55" stop-color="#EFE1C9"/><stop offset="1" stop-color="#DDC7A6"/>
+        </linearGradient>
+        <radialGradient id="s06-amber" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFC46B" stop-opacity="0.9"/><stop offset="0.48" stop-color="#D9822B" stop-opacity="0.42"/><stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="s06-coin" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#F6E3A8"/><stop offset="0.4" stop-color="#C89D42"/><stop offset="1" stop-color="#8A6420"/>
+        </linearGradient>
+        <linearGradient id="s06-coinface" x1="0" y1="0" x2="0.6" y2="1">
+          <stop offset="0" stop-color="#FFEFC4"/><stop offset="0.55" stop-color="#D9B25E"/><stop offset="1" stop-color="#9C7526"/>
+        </linearGradient>
+        <filter id="s06-grade" x="-5%" y="-5%" width="110%" height="110%">
+          <feColorMatrix type="saturate" values="0.82"/>
+          <feComponentTransfer><feFuncR type="linear" slope="1.05"/><feFuncB type="linear" slope="0.88"/></feComponentTransfer>
+        </filter>
+        <filter id="s06-soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="12"/></filter>
+        <filter id="s06-soft2" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="4"/></filter>
+        <mask id="s06-reveal"><rect id="s06-pr" x="513" y="103" width="1358" height="0" fill="#fff"/></mask>
+        <clipPath id="s06-plate-clip"><rect x="520" y="110" width="1344" height="860"/></clipPath>
+      </defs>
+
+      <!-- 24px umber mat + 10px ink shadow -->
+      <rect x="510" y="100" width="1368" height="884" fill="#2B1F17" opacity="0.30" filter="url(#s06-soft2)" transform="translate(14,16)"/>
+      <rect x="508" y="98" width="1368" height="884" fill="none" stroke="url(#s06-mat)" stroke-width="24"/>
+      <rect x="520" y="110" width="1344" height="860" fill="none" stroke="#C89D42" stroke-width="3" opacity="0.55"/>
+
+      <!-- plate as world -->
+      <g clip-path="url(#s06-plate-clip)" mask="url(#s06-reveal)">
+        <rect x="520" y="110" width="1344" height="860" fill="#E8D9BF"/>
+        <image id="s06-photo" href="plates/processed/art-lagoon-map.jpg" x="520" y="110" width="1344" height="860"
+               preserveAspectRatio="xMidYMid slice" filter="url(#s06-grade)"/>
+        <rect x="520" y="110" width="1344" height="860" fill="#D9822B" opacity="0.12"/>
+        <rect x="520" y="110" width="1344" height="860" fill="#2B1F17" opacity="0.07"/>
+        <rect id="s06-drain" x="520" y="110" width="1344" height="860" fill="#2B1F17" opacity="0"/>
+        <rect x="520" y="110" width="1344" height="860" fill="url(#s06-mapinner)"/>
+      </g>
+      <defs>
+        <radialGradient id="s06-mapinner" cx="48%" cy="46%" r="70%">
+          <stop offset="0" stop-color="#2B1F17" stop-opacity="0"/><stop offset="0.72" stop-color="#2B1F17" stop-opacity="0.08"/><stop offset="1" stop-color="#2B1F17" stop-opacity="0.26"/>
+        </radialGradient>
+      </defs>
+
+      <!-- four 26px brass corner brackets -->
+      <g id="s06-brackets" fill="none" stroke-linecap="butt">
+        <g class="s06-bracket" id="s06-br-tl">
+          <path d="M512,204 L512,102 L618,102" stroke="#2B1F17" stroke-width="34" opacity="0.32" transform="translate(5,8)" filter="url(#s06-soft)"/>
+          <path d="M512,204 L512,102 L618,102" stroke="url(#s06-brass)" stroke-width="26"/>
+          <path d="M519,196 L519,109 L612,109" stroke="#FFF0C6" stroke-width="4" opacity="0.65"/>
+        </g>
+        <g class="s06-bracket" id="s06-br-tr">
+          <path d="M1872,204 L1872,102 L1766,102" stroke="#2B1F17" stroke-width="34" opacity="0.32" transform="translate(5,8)" filter="url(#s06-soft)"/>
+          <path d="M1872,204 L1872,102 L1766,102" stroke="url(#s06-brass)" stroke-width="26"/>
+          <path d="M1865,196 L1865,109 L1772,109" stroke="#FFF0C6" stroke-width="4" opacity="0.65"/>
+        </g>
+        <g class="s06-bracket" id="s06-br-br">
+          <path d="M1872,876 L1872,978 L1766,978" stroke="#2B1F17" stroke-width="34" opacity="0.32" transform="translate(5,8)" filter="url(#s06-soft)"/>
+          <path d="M1872,876 L1872,978 L1766,978" stroke="url(#s06-brass)" stroke-width="26"/>
+          <path d="M1865,884 L1865,971 L1772,971" stroke="#FFF0C6" stroke-width="4" opacity="0.65"/>
+        </g>
+        <g class="s06-bracket" id="s06-br-bl">
+          <path d="M512,876 L512,978 L618,978" stroke="#2B1F17" stroke-width="34" opacity="0.32" transform="translate(5,8)" filter="url(#s06-soft)"/>
+          <path d="M512,876 L512,978 L618,978" stroke="url(#s06-brass)" stroke-width="26"/>
+          <path d="M519,884 L519,971 L612,971" stroke="#FFF0C6" stroke-width="4" opacity="0.65"/>
+        </g>
+      </g>
+
+      <!-- compass reticle on the sea -->
+      <g id="s06-compass">
+        <circle cx="1742" cy="836" r="58" fill="#F5EFEB" opacity="0.82" stroke="#C89D42" stroke-width="10"/>
+        <circle cx="1742" cy="836" r="40" fill="none" stroke="#5C5248" stroke-width="5"/>
+        <g fill="#C89D42" stroke="#1E1813" stroke-width="3">
+          <polygon points="1742,786 1754,824 1742,818 1730,824"/>
+          <polygon points="1742,886 1730,848 1742,854 1754,848"/>
+          <polygon points="1692,836 1730,824 1724,836 1730,848"/>
+          <polygon points="1792,836 1754,848 1760,836 1754,824"/>
+        </g>
+        <path d="M1742,836 L1728,806" stroke="#C2593F" stroke-width="7" stroke-linecap="round"/>
+        <circle cx="1742" cy="836" r="8" fill="#1E1813"/>
+      </g>
+      <!-- ledger as terrain, left -->
+      <g id="s06-ledger">
+        <polygon points="-90,190 516,150 556,1006 -52,1046" fill="#2B1F17" opacity="0.30" transform="translate(14,18)" filter="url(#s06-soft)"/>
+        <polygon points="-52,1046 556,1006 556,1040 -52,1080" fill="#2B1F17"/>
+        <polygon points="-90,190 516,150 556,1006 -52,1046" fill="url(#s06-paper)"/>
+        <polygon points="-90,190 516,150 556,1006 -52,1046" fill="none" stroke="#1E1813" stroke-width="9"/>
+        <polygon points="-52,1046 556,1006 556,1040 -52,1080" fill="none" stroke="#1E1813" stroke-width="8"/>
+        <g stroke="#5C5248" stroke-width="5" opacity="0.26">
+          <path d="M-85,246 L529,206"/><path d="M-84,292 L530,252"/><path d="M-83,338 L531,298"/>
+          <path d="M-82,384 L532,344"/><path d="M-81,430 L533,390"/><path d="M-80,476 L534,436"/>
+          <path d="M-79,522 L535,482"/><path d="M-78,568 L536,528"/><path d="M-77,614 L537,574"/>
+          <path d="M-76,660 L538,620"/><path d="M-75,706 L539,666"/><path d="M-74,752 L540,712"/>
+          <path d="M-73,798 L541,758"/><path d="M-72,844 L542,804"/><path d="M-71,890 L543,850"/>
+          <path d="M-70,936 L544,896"/><path d="M-69,982 L545,942"/>
+        </g>
+        <g stroke="#5C5248" stroke-width="6" opacity="0.30">
+          <path d="M96,176 L120,1040"/><path d="M262,166 L286,1030"/><path d="M428,156 L452,1020"/>
+        </g>
+        <!-- seven contour ridges become canyon walls -->
+        <g class="s06-ridge">
+          <path d="M-83,300 L530,260 L530,282 L-83,322 Z" fill="#B79A74" opacity="0.55"/>
+          <path d="M-83,300 L530,260" fill="none" stroke="#2B1F17" stroke-width="6"/>
+          <path d="M-83,300 L530,260" fill="none" stroke="#C89D42" stroke-width="3" opacity="0.55"/>
+        </g>
+        <g class="s06-ridge">
+          <path d="M-83,400 L530,360 L530,382 L-83,422 Z" fill="#B79A74" opacity="0.55"/>
+          <path d="M-83,400 L530,360" fill="none" stroke="#2B1F17" stroke-width="6"/>
+          <path d="M-83,400 L530,360" fill="none" stroke="#C89D42" stroke-width="3" opacity="0.55"/>
+        </g>
+        <g class="s06-ridge">
+          <path d="M-83,500 L530,460 L530,482 L-83,522 Z" fill="#B79A74" opacity="0.55"/>
+          <path d="M-83,500 L530,460" fill="none" stroke="#2B1F17" stroke-width="6"/>
+          <path d="M-83,500 L530,460" fill="none" stroke="#C89D42" stroke-width="3" opacity="0.55"/>
+        </g>
+        <g class="s06-ridge">
+          <path d="M-83,600 L530,560 L530,582 L-83,622 Z" fill="#B79A74" opacity="0.55"/>
+          <path d="M-83,600 L530,560" fill="none" stroke="#2B1F17" stroke-width="6"/>
+          <path d="M-83,600 L530,560" fill="none" stroke="#C89D42" stroke-width="3" opacity="0.55"/>
+        </g>
+        <g class="s06-ridge">
+          <path d="M-83,700 L530,660 L530,682 L-83,722 Z" fill="#B79A74" opacity="0.55"/>
+          <path d="M-83,700 L530,660" fill="none" stroke="#2B1F17" stroke-width="6"/>
+          <path d="M-83,700 L530,660" fill="none" stroke="#C89D42" stroke-width="3" opacity="0.55"/>
+        </g>
+        <g class="s06-ridge">
+          <path d="M-83,800 L530,760 L530,782 L-83,822 Z" fill="#B79A74" opacity="0.55"/>
+          <path d="M-83,800 L530,760" fill="none" stroke="#2B1F17" stroke-width="6"/>
+          <path d="M-83,800 L530,760" fill="none" stroke="#C89D42" stroke-width="3" opacity="0.55"/>
+        </g>
+        <g class="s06-ridge">
+          <path d="M-83,900 L530,860 L530,882 L-83,922 Z" fill="#B79A74" opacity="0.55"/>
+          <path d="M-83,900 L530,860" fill="none" stroke="#2B1F17" stroke-width="6"/>
+          <path d="M-83,900 L530,860" fill="none" stroke="#C89D42" stroke-width="3" opacity="0.55"/>
+        </g>
+        <g id="s06-tallyfield"></g>
+      </g>
+
+      <!-- coin column: twelve brass tiers -->
+      <ellipse cx="304" cy="770" rx="82" ry="20" fill="#2B1F17" opacity="0.34" filter="url(#s06-soft)"/>
+      <g id="s06-coins">
+        <g id="s06-coin-col"></g>
+      </g>
+
+      <!-- belt conveyor + twelve isometric crates -->
+      <g id="s06-conveyor">
+        <path d="M560,902 L1920,878" stroke="#2B1F17" stroke-width="24" stroke-linecap="round"/>
+        <path d="M560,894 L1920,870" stroke="#C89D42" stroke-width="5" stroke-linecap="round"/>
+        <g id="s06-rollers"></g>
+      </g>
+      <g id="s06-crates"></g>
+
+      <!-- drained channel: canyon, furnace glow, ivory core -->
+      <g id="s06-channel">
+        <path id="s06-river-canyon" d="M760,300 C812,352 866,404 934,446 C1030,504 1118,548 1220,596 C1330,648 1440,678 1560,690 C1660,700 1760,682 1836,656"
+              fill="none" stroke="#2B1F17" stroke-width="30" stroke-linecap="round" opacity="0.30"/>
+        <path id="s06-river-glow" d="M760,300 C812,352 866,404 934,446 C1030,504 1118,548 1220,596 C1330,648 1440,678 1560,690 C1660,700 1760,682 1836,656"
+              fill="none" stroke="#D9822B" stroke-width="22" stroke-linecap="round" filter="url(#s06-soft)"/>
+        <path id="s06-river-core" d="M760,300 C812,352 866,404 934,446 C1030,504 1118,548 1220,596 C1330,648 1440,678 1560,690 C1660,700 1760,682 1836,656"
+              fill="none" stroke="#F3DA96" stroke-width="7" stroke-linecap="round"/>
+      </g>
+
+      <!-- furnace at the source of the channel -->
+      <g id="s06-furnace">
+        <ellipse cx="760" cy="302" rx="150" ry="120" fill="url(#s06-amber)"/>
+        <path d="M700,354 L700,286 A60,60 0 0 1 820,286 L820,354 Z" fill="#2B1F17" stroke="#1E1813" stroke-width="8"/>
+        <path d="M706,312 A54,54 0 0 1 814,312 L814,350 L706,350 Z" fill="#D9822B"/>
+        <path d="M716,320 A44,44 0 0 1 804,320 L804,348 L716,348 Z" fill="#FFC46B"/>
+        <circle cx="760" cy="296" r="50" fill="none" stroke="url(#s06-brass)" stroke-width="10"/>
+        <g stroke="#D9822B" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.8">
+          <path d="M736,250 C716,216 744,190 730,158"/>
+          <path d="M766,244 C750,208 778,184 764,148"/>
+          <path d="M796,252 C780,220 806,196 794,164"/>
+        </g>
+      </g>
+    </svg>
+    <!-- FG plane — 1.065: ledger cut edge, mercury bead, lagoon buoy -->
+    <svg class="s06-plane s06-fg" id="s06-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <radialGradient id="s06-vig" cx="50%" cy="47%" r="74%">
+          <stop offset="0.48" stop-color="#2B1F17" stop-opacity="0"/><stop offset="1" stop-color="#2B1F17" stop-opacity="0.17"/>
+        </radialGradient>
+        <radialGradient id="s06-merc" cx="38%" cy="30%" r="70%">
+          <stop offset="0" stop-color="#FFFDF6"/><stop offset="0.42" stop-color="#E7E0D2"/><stop offset="0.8" stop-color="#A9A296"/><stop offset="1" stop-color="#6E685E"/>
+        </radialGradient>
+        <radialGradient id="s06-ripple" cx="50%" cy="50%" r="50%">
+          <stop offset="0.4" stop-color="#D9822B" stop-opacity="0"/><stop offset="0.75" stop-color="#D9822B" stop-opacity="0.45"/><stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="s06-grain" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.86" numOctaves="2" seed="13" result="n"/>
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0.55 0"/>
+        </filter>
+        <filter id="s06-fgblur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="9"/></filter>
+      </defs>
+
+      <!-- ledger cut edge, bottom-left -->
+      <g id="s06-ledge">
+        <path d="M-20,976 L706,958 L706,1080 L-20,1080 Z" fill="#2B1F17" opacity="0.35" transform="translate(10,14)" filter="url(#s06-fgblur)"/>
+        <path d="M-20,976 L706,958 L706,1080 L-20,1080 Z" fill="#EAE0D0"/>
+        <path d="M-20,976 L706,958 L706,1006 L-20,1024 Z" fill="#D9C7AC"/>
+        <path d="M-20,976 L706,958" stroke="#1E1813" stroke-width="18" stroke-linecap="round"/>
+        <path d="M-20,1006 L706,988" stroke="#C89D42" stroke-width="5" opacity="0.7"/>
+        <g stroke="#5C5248" stroke-width="5" opacity="0.35">
+          <path d="M60,1040 L660,1024"/><path d="M180,1066 L560,1054"/>
+        </g>
+        <path d="M706,958 L706,1080" stroke="#1E1813" stroke-width="10"/>
+      </g>
+
+      <!-- the mercury bead and its trail -->
+      <path id="s06-beadtrail" d="M430,975 C700,966 1010,912 1330,855" fill="none" stroke="#FAF7F0" stroke-width="11" stroke-linecap="round" opacity="0"/>
+      <g id="s06-bead">
+        <ellipse cx="430" cy="980" rx="26" ry="10" fill="#2B1F17" opacity="0.28" filter="url(#s06-fgblur)"/>
+        <circle cx="430" cy="968" r="17" fill="url(#s06-merc)" stroke="#1E1813" stroke-width="5"/>
+        <path d="M419,960 A12,12 0 0 1 432,955" fill="none" stroke="#FFFDF6" stroke-width="5" stroke-linecap="round"/>
+      </g>
+
+      <!-- the buoy it becomes -->
+      <g id="s06-buoy" opacity="0">
+        <ellipse cx="1330" cy="880" rx="86" ry="22" fill="url(#s06-ripple)"/>
+        <ellipse cx="1330" cy="884" rx="54" ry="13" fill="none" stroke="#D9822B" stroke-width="5" opacity="0.55"/>
+        <path d="M1330,772 L1366,868 C1360,884 1300,884 1294,868 Z" fill="#C2593F" stroke="#1E1813" stroke-width="7"/>
+        <path d="M1306,824 L1354,824 L1362,848 L1298,848 Z" fill="#FAF7F0" opacity="0.85"/>
+        <rect x="1312" y="764" width="36" height="14" rx="5" fill="#C89D42" stroke="#1E1813" stroke-width="4"/>
+        <path d="M1330,764 L1330,742" stroke="#C89D42" stroke-width="7"/>
+        <circle cx="1330" cy="736" r="9" fill="none" stroke="#C89D42" stroke-width="6"/>
+        <ellipse cx="1330" cy="872" rx="36" ry="10" fill="#8E3A28" opacity="0.35"/>
+      </g>
+
+      <rect x="-220" y="-220" width="2360" height="1520" fill="url(#s06-vig)"/>
+      <rect x="-220" y="-220" width="2360" height="1520" filter="url(#s06-grain)" opacity="0.055" style="mix-blend-mode:multiply"/>
+    </svg>
+
+    <!-- FG: accession tag -->
+    <div class="s06-tag" id="s06-tag">
+      <span class="s06-tag-dot"></span>
+      <span class="s06-tag-text">120,000 LIVRES</span>
+    </div>
+    <div class="s06-rule" id="s06-tag-rule"></div>
+  </div>
+</div>
+
+<script>
+(function initS06(){
+  var ID = "s06-customs-hemorrhage";
+  var root = document.querySelector('[data-composition-id="' + ID + '"]');
+  var q = function(sel){ return root.querySelector(sel); };
+  var qa = function(sel){ return Array.prototype.slice.call(root.querySelectorAll(sel)); };
+  var tl = gsap.timeline({ paused: true });
+
+  // ── SLOT GUARD ────────────────────────────────────────────────────────────
+  tl.to({}, { duration: 21.056 }, 0);
+
+  var NS = "http://www.w3.org/2000/svg";
+
+  // ── PRE-STATE ─────────────────────────────────────────────────────────────
+  tl.set("#s06-pr", { attr: { y: 103, height: 0 } }, 0);
+  tl.set("#s06-tag", { clipPath: "inset(0% 100% 0% 0%)" }, 0);
+  qa(".s06-bracket").forEach(function(b){ tl.set(b, { opacity: 0 }, 0); });
+  qa(".s06-ridge").forEach(function(r){ tl.set(r, { scaleY: 0, transformOrigin: "50% 0%" }, 0); });
+  tl.set("#s06-compass", { scale: 0.6, opacity: 0, transformOrigin: "50% 50%" }, 0);
+  tl.set("#s06-furnace ellipse", { scale: 0.55, opacity: 0, transformOrigin: "50% 50%" }, 0);
+  tl.set("#s06-buoy", { opacity: 0, scale: 0.5, transformOrigin: "50% 90%" }, 0);
+  tl.set("#s06-beadtrail", { attr: { "stroke-dasharray": 980, "stroke-dashoffset": 980 } }, 0);
+  tl.set("#s06-channel path", { attr: { "stroke-dasharray": 1500, "stroke-dashoffset": 1500 } }, 0);
+
+  // ── ledger tally field: 18 × 12 strokes, drawn under the bracket beats ────
+  var tallyField = q("#s06-tallyfield");
+  var tallyMarks = [];
+  for (var tr = 0; tr < 12; tr++){
+    for (var tc = 0; tc < 18; tc++){
+      var tx = 64 + tc * 26;
+      var ty = 608 + tr * 17;
+      var tick = document.createElementNS(NS, "path");
+      tick.setAttribute("d", "M" + tx + "," + ty + " L" + tx + "," + (ty - 11));
+      tick.setAttribute("stroke", "#5C5248");
+      tick.setAttribute("stroke-width", "5");
+      tick.setAttribute("stroke-linecap", "butt");
+      tick.setAttribute("class", "s06-tally");
+      tallyField.appendChild(tick);
+      tallyMarks.push(tick);
+    }
+  }
+  tl.set(tallyMarks, { scaleY: 0 }, 0);
+
+  // ── PHASE 1: the mount takes the wall, brackets socket ────────────────────
+  tl.fromTo("#s06-pr", { attr: { y: 103, height: 0 } }, { attr: { y: 103, height: 874 }, duration: 1.45, ease: "power2.inOut" }, 0.18);
+  qa(".s06-bracket").forEach(function(b, i){
+    tl.set(b, { transformOrigin: (i % 2 ? "100%" : "0%") + " " + (i < 2 ? "0%" : "100%") }, 0);
+    tl.fromTo(b, { scale: 0.55, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.42, ease: "back.out(2.4)" }, 0.78 + i * 0.12);
+  });
+  tl.fromTo("#s06-compass", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(2)" }, 1.24);
+  tl.to("#s06-compass", { rotation: 14, duration: 18.6, ease: "sine.inOut", transformOrigin: "50% 50%" }, 1.3);
+
+  // ── PHASE 2: ledger terrain draws, contours become canyon walls ───────────
+  qa(".s06-ridge").forEach(function(r, i){
+    tl.to(r, { scaleY: 1, duration: 0.5, ease: "power2.out", transformOrigin: "50% 0%" }, 2.0 + i * 0.16);
+  });
+  tl.to(tallyMarks, { scaleY: 1, duration: 0.30, ease: "power2.out", stagger: { each: 0.004, from: "start" } }, 3.4);
+
+  // ── PHASE 3: twelve coins stack, then topple on the number ───────────────
+  var coinCol = q("#s06-coin-col");
+  for (var i = 0; i < 12; i++){
+    var cy = 760 - i * 24;
+    var g = document.createElementNS(NS, "g");
+    var rim = document.createElementNS(NS, "ellipse");
+    rim.setAttribute("cx", 302); rim.setAttribute("cy", cy); rim.setAttribute("rx", 34); rim.setAttribute("ry", 12);
+    rim.setAttribute("fill", "url(#s06-coin)"); rim.setAttribute("stroke", "#1E1813"); rim.setAttribute("stroke-width", "5");
+    var face = document.createElementNS(NS, "ellipse");
+    face.setAttribute("cx", 302); face.setAttribute("cy", cy - 3); face.setAttribute("rx", 25); face.setAttribute("ry", 7);
+    face.setAttribute("fill", "url(#s06-coinface)"); face.setAttribute("opacity", "0.7");
+    var spec = document.createElementNS(NS, "path");
+    spec.setAttribute("d", "M284," + (cy - 6) + " A22,8 0 0 1 316," + (cy - 7));
+    spec.setAttribute("fill", "none"); spec.setAttribute("stroke", "#FFF3D0"); spec.setAttribute("stroke-width", "4"); spec.setAttribute("stroke-linecap", "round");
+    g.appendChild(rim); g.appendChild(face); g.appendChild(spec);
+    g.setAttribute("class", "s06-coin");
+    coinCol.appendChild(g);
+    tl.set(g, { scale: 0, y: -40, transformOrigin: "50% 50%" }, 0);
+    tl.to(g, { scale: 1, y: 0, duration: 0.42, ease: "back.out(2.6)" }, 4.28 + i * 0.115);
+  }
+  tl.to("#s06-coins", { rotation: -27, duration: 0.55, ease: "power2.in", svgOrigin: "302 768" }, 6.05);
+  tl.to("#s06-coins", { y: 16, duration: 0.5, ease: "power2.in" }, 6.1);
+  tl.to("#s06-coins", { x: 34, duration: 0.7, ease: "power2.out" }, 6.35);
+  for (var d = 0; d < 6; d++){
+    var sc = document.createElementNS(NS, "g");
+    var se = document.createElementNS(NS, "ellipse");
+    se.setAttribute("cx", 302); se.setAttribute("cy", 744); se.setAttribute("rx", 26); se.setAttribute("ry", 9);
+    se.setAttribute("fill", "url(#s06-coin)"); se.setAttribute("stroke", "#1E1813"); se.setAttribute("stroke-width", "5");
+    sc.appendChild(se); sc.setAttribute("class", "s06-coin");
+    q("#s06-coins").appendChild(sc);
+    tl.set(sc, { opacity: 0 }, 0);
+    var dx = 90 + d * 62, dy = 26 + (d % 3) * 34;
+    tl.fromTo(sc, { x: 0, y: 0, rotation: 0, opacity: 0 },
+               { x: dx, y: dy, rotation: 220 + d * 40, opacity: 1, duration: 0.8, ease: "power2.out" }, 6.28 + d * 0.05);
+  }
+
+  // ── PHASE 4: conveyor and crate convoy ────────────────────────────────────
+  var belt = q("#s06-conveyor path");
+  var beltLen = belt.getTotalLength();
+  tl.set(belt, { attr: { "stroke-dasharray": beltLen, "stroke-dashoffset": beltLen } }, 0);
+  tl.to(belt, { attr: { "stroke-dashoffset": 0 }, duration: 1.25, ease: "power2.inOut" }, 8.0);
+
+  var rollerGroup = q("#s06-rollers");
+  for (var rr = 0; rr < 23; rr++){
+    var rxp = 590 + rr * 60;
+    var ryp = 902 - (rxp - 560) * 0.0166;
+    var ro = document.createElementNS(NS, "g");
+    var oc = document.createElementNS(NS, "circle");
+    oc.setAttribute("cx", 0); oc.setAttribute("cy", 0); oc.setAttribute("r", 10);
+    oc.setAttribute("fill", "#2B1F17"); oc.setAttribute("stroke", "#C89D42"); oc.setAttribute("stroke-width", "4");
+    var oh = document.createElementNS(NS, "circle");
+    oh.setAttribute("cx", 0); oh.setAttribute("cy", 0); oh.setAttribute("r", 3); oh.setAttribute("fill", "#C89D42");
+    ro.appendChild(oc); ro.appendChild(oh);
+    ro.setAttribute("class", "s06-roller");
+    rollerGroup.appendChild(ro);
+    tl.set(ro, { x: rxp, y: ryp, scale: 0 }, 0);
+    tl.to(ro, { scale: 1, duration: 0.3, ease: "back.out(2.4)" }, 8.2 + rr * 0.03);
+    tl.to(ro, { rotation: 620, duration: 11.4, ease: "none", transformOrigin: "50% 50%" }, 9.4);
+  }
+
+  var crateGroup = q("#s06-crates");
+  for (var c = 0; c < 12; c++){
+    (function(idx){
+      var cx = 700 + idx * 118;
+      var g = document.createElementNS(NS, "g");
+      g.setAttribute("class", "s06-crate");
+      function poly(pts, fill){
+        var e = document.createElementNS(NS, "polygon");
+        e.setAttribute("points", pts); e.setAttribute("fill", fill);
+        e.setAttribute("stroke", "#1E1813"); e.setAttribute("stroke-width", "12"); e.setAttribute("stroke-linejoin", "round");
+        g.appendChild(e);
+      }
+      poly("-80,-60 0,-84 80,-60 0,-36", "#E8D6B8");
+      poly("-80,-60 0,-36 0,60 -80,36", "#B08A5C");
+      poly("0,-36 80,-60 80,36 0,60", "#8F6A44");
+      var mark = document.createElementNS(NS, "g");
+      mark.setAttribute("class", "s06-stencilmark");
+      mark.style.transformBox = "fill-box"; mark.style.transformOrigin = "center";
+      var ring = document.createElementNS(NS, "circle");
+      ring.setAttribute("cx", 40); ring.setAttribute("cy", 8); ring.setAttribute("r", 16);
+      ring.setAttribute("fill", "none"); ring.setAttribute("stroke", "#C2593F"); ring.setAttribute("stroke-width", "8");
+      mark.appendChild(ring);
+      var bars = document.createElementNS(NS, "path");
+      bars.setAttribute("d", "M16,-14 L16,30 M32,-14 L32,30");
+      bars.setAttribute("stroke", "#C2593F"); bars.setAttribute("stroke-width", "7"); bars.setAttribute("stroke-linecap", "round");
+      mark.appendChild(bars);
+      g.appendChild(mark);
+      crateGroup.appendChild(g);
+      tl.set(g, { x: cx, y: 845, scale: 0.86 }, 0);
+      tl.set(mark, { opacity: 0, scale: 1.9 }, 0);
+      tl.fromTo(g, { scale: 0.36, y: 806 }, { scale: 0.86, y: 845, duration: 0.5, ease: "back.out(1.8)" }, 10.2 + idx * 0.38);
+      tl.fromTo(mark, { scale: 1.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.14, ease: "power3.in" }, 10.46 + idx * 0.38);
+      tl.to(g, { x: cx + 214, duration: 5.9, ease: "sine.inOut" }, 14.6);
+    })(c);
+  }
+
+  // ── PHASE 5: channel carves, furnace bloom ────────────────────────────────
+  tl.to("#s06-channel path", { attr: { "stroke-dashoffset": 0 }, duration: 4.4, ease: "power2.inOut" }, 15.9);
+  tl.fromTo("#s06-furnace ellipse", { scale: 0.55, opacity: 0 }, { scale: 1.22, opacity: 1, duration: 1.5, ease: "sine.out" }, 19.5);
+  tl.fromTo("#s06-furnace", { y: 0 }, { y: -6, duration: 0.7, ease: "sine.inOut", yoyo: true, repeat: 1 }, 19.6);
+  tl.to("#s06-drain", { opacity: 0.22, duration: 4.0, ease: "sine.in" }, 16.2);
+
+  // ── accession tag ─────────────────────────────────────────────────────────
+  tl.fromTo("#s06-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -12 },
+            { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.6, ease: "power3.inOut" }, 6.9);
+  tl.fromTo("#s06-tag-rule", { width: 0 }, { width: 352, duration: 0.55, ease: "power2.out" }, 7.24);
+  tl.fromTo("#s06-tag", { clipPath: "inset(0% 0% 0% 0%)" },
+            { clipPath: "inset(0% 0% 0% 100%)", duration: 0.38, ease: "power2.in" }, 20.3);
+  tl.to("#s06-tag-rule", { width: 0, duration: 0.32, ease: "power2.in" }, 20.3);
+
+  // ── SEAM: bead rolls off the ledger, becomes the lagoon buoy ──────────────
+  tl.to("#s06-bead", { x: 900, y: -122, duration: 0.24, ease: "power1.in" }, 20.76);
+  tl.to("#s06-bead", { opacity: 0, duration: 0.06 }, 20.99);
+  tl.to("#s06-beadtrail", { opacity: 0.8, duration: 0.05 }, 20.76);
+  tl.to("#s06-beadtrail", { attr: { "stroke-dashoffset": 0 }, duration: 0.24, ease: "power1.in" }, 20.76);
+  tl.to("#s06-beadtrail", { opacity: 0, duration: 0.05 }, 21.0);
+  tl.fromTo("#s06-buoy", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.09, ease: "back.out(2.6)", transformOrigin: "50% 90%" }, 20.96);
+  tl.to("#s06-buoy", { y: -7, duration: 0.04, ease: "sine.out" }, 21.01);
+
+  // ── Multi-plane parallax + camera ─────────────────────────────────────────
+  tl.fromTo("#s06-bg", { scale: 0.96, x: -6 }, { scale: 0.972, x: 6, duration: 20.9, ease: "sine.inOut" }, 0.1);
+  tl.fromTo("#s06-mg", { scale: 1.0, y: 4 }, { scale: 1.012, y: -4, duration: 20.9, ease: "sine.inOut" }, 0.1);
+  tl.fromTo("#s06-fg", { scale: 1.062, transformOrigin: "0% 100%" }, { scale: 1.075, duration: 20.9, ease: "sine.inOut", transformOrigin: "0% 100%" }, 0.1);
+  tl.fromTo("#s06-stage", { scale: 1.0 }, { scale: 1.026, duration: 20.8, ease: "sine.inOut" }, 0.2);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>
+

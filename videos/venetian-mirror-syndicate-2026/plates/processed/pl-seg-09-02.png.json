@@ -1,0 +1,13 @@
+{
+  "asset_id": "pl-seg-09-02",
+  "source_url": "https://www.persee.fr/doc/corr_0000-0002_1863_cor_2_2_924_t1_0484_0000_2",
+  "publication_date": "1863-01-01",
+  "width": 1400,
+  "height": 1000,
+  "scale_factor": 1.0,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": []
+}

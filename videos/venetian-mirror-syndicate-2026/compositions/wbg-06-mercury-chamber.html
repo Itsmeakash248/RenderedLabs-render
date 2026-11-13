@@ -1,0 +1,329 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="wbg06-template">
+<style>
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="wbg-06-mercury-chamber"] .w-stage{position:absolute;inset:0;
+  background:linear-gradient(180deg,#FBF1DA 0%,#F6E6C6 54%,#E9D4AF 100%);}
+[data-composition-id="wbg-06-mercury-chamber"] .w-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="wbg-06-mercury-chamber"] .w-p1{z-index:1;}
+[data-composition-id="wbg-06-mercury-chamber"] .w-p2{z-index:2;}
+[data-composition-id="wbg-06-mercury-chamber"] .w-p3{z-index:3;}
+[data-composition-id="wbg-06-mercury-chamber"] .w-haze{position:absolute;inset:0;z-index:5;pointer-events:none;
+  background:
+    radial-gradient(30% 38% at 84% 36%, rgba(255,253,246,0.40) 0%, rgba(252,235,184,0.14) 50%, rgba(252,235,184,0) 78%),
+    linear-gradient(180deg, rgba(74,46,28,0.10) 0%, rgba(74,46,28,0) 20%, rgba(74,46,28,0) 68%, rgba(43,31,23,0.34) 100%);}
+</style>
+
+<div id="root" data-composition-id="wbg-06-mercury-chamber" data-width="1920" data-height="1080" data-start="0" data-duration="60.000">
+  <div class="w-stage" id="wbg06-stage">
+
+    <!-- far · plaster wall, the tall pale window, the light shaft -->
+    <svg class="w-plane w-p1" id="wbg06-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w06-wall" x1="0" y1="0" x2="0.04" y2="1">
+          <stop offset="0" stop-color="#FBF1DA"/>
+          <stop offset="0.38" stop-color="#F6E6C6"/>
+          <stop offset="0.72" stop-color="#EFD9B4"/>
+          <stop offset="1" stop-color="#E9D4AF"/>
+        </linearGradient>
+        <linearGradient id="w06-window" gradientUnits="userSpaceOnUse" x1="0" y1="156" x2="0" y2="840">
+          <stop offset="0" stop-color="#FFFDF6"/>
+          <stop offset="0.42" stop-color="#FFF6DC"/>
+          <stop offset="0.78" stop-color="#FCEBB8"/>
+          <stop offset="1" stop-color="#F6E6C6"/>
+        </linearGradient>
+        <linearGradient id="w06-shaft" gradientUnits="userSpaceOnUse" x1="1750" y1="300" x2="1120" y2="1080">
+          <stop offset="0" stop-color="#FFFDF6" stop-opacity="0.62"/>
+          <stop offset="0.52" stop-color="#FFF6DC" stop-opacity="0.26"/>
+          <stop offset="1" stop-color="#FFF6DC" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="w06-sill" gradientUnits="userSpaceOnUse" x1="0" y1="838" x2="0" y2="880">
+          <stop offset="0" stop-color="#C99A67" stop-opacity="0.52"/>
+          <stop offset="1" stop-color="#6E4826" stop-opacity="0.44"/>
+        </linearGradient>
+        <radialGradient id="w06-wash" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFFDF6" stop-opacity="0.45"/>
+          <stop offset="0.52" stop-color="#FCEBB8" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="#FCEBB8" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#w06-wall)"/>
+
+      <!-- plaster panel seams, faint and edge-weighted -->
+      <g fill="none" stroke="#C99A67" stroke-width="4" opacity="0.14">
+        <path d="M470,0 V1080"/>
+        <path d="M1420,0 V1080"/>
+        <path d="M0,860 H470"/>
+        <path d="M1420,860 H1920"/>
+      </g>
+
+      <!-- window recess, right edge -->
+      <path d="M1596,850 L1596,334 C1596,222 1666,156 1750,156 C1834,156 1904,222 1904,334 L1904,850 Z"
+            fill="#E9D4AF" opacity="0.55"/>
+      <path d="M1596,850 L1596,334 C1596,222 1666,156 1750,156 C1834,156 1904,222 1904,334 L1904,850"
+            fill="none" stroke="#A97445" stroke-width="9" opacity="0.42"/>
+      <path d="M1622,850 L1622,340 C1622,238 1686,180 1750,180 C1814,180 1878,238 1878,340 L1878,850 Z"
+            fill="url(#w06-window)" opacity="0.94"/>
+
+      <!-- mullions and transoms -->
+      <g fill="none" stroke="#8A5F36" stroke-width="8" opacity="0.42">
+        <path d="M1750,180 V850"/>
+        <path d="M1624,424 H1876"/>
+        <path d="M1624,636 H1876"/>
+      </g>
+      <g fill="none" stroke="#A97445" stroke-width="4" opacity="0.26">
+        <path d="M1686,182 V848"/>
+        <path d="M1814,182 V848"/>
+        <path d="M1624,530 H1876"/>
+      </g>
+
+      <!-- the light shaft, soft, crossing the room to the floor -->
+      <path d="M1622,292 L1878,292 L1878,846 L1240,1080 L980,1080 Z"
+            fill="url(#w06-shaft)" opacity="0.38"/>
+      <ellipse cx="1740" cy="430" rx="300" ry="330" fill="url(#w06-wash)" opacity="0.40"/>
+
+      <!-- sill and stone jambs -->
+      <rect x="1586" y="846" width="332" height="28" fill="url(#w06-sill)"/>
+      <path d="M1596,874 H1904" fill="none" stroke="#6E4826" stroke-width="6" opacity="0.30"/>
+      <g fill="#A97445" opacity="0.32">
+        <path d="M1584,846 L1608,846 L1608,900 L1584,900 Z"/>
+        <path d="M1892,846 L1916,846 L1916,900 L1892,900 Z"/>
+      </g>
+
+      <!-- peg rail, top left, for hanging herbs -->
+      <rect x="30" y="178" width="400" height="20" fill="#6E4826" opacity="0.38"/>
+      <g fill="#8A5F36" opacity="0.45">
+        <circle cx="90" cy="206" r="7"/>
+        <circle cx="186" cy="206" r="7"/>
+        <circle cx="282" cy="206" r="7"/>
+        <circle cx="378" cy="206" r="7"/>
+      </g>
+
+      <!-- plaster wear at the edges -->
+      <path d="M0,600 C54,584 104,600 138,638 C170,674 178,734 168,800 L168,900 L0,900 Z"
+            fill="#FFF6DC" opacity="0.16"/>
+      <path d="M1920,700 C1860,690 1814,712 1798,754 L1798,880 L1920,880 Z"
+            fill="#C99A67" opacity="0.12"/>
+      <g fill="none" stroke="#8A5F36" stroke-width="4" opacity="0.13">
+        <path d="M210,640 C244,668 256,708 250,752"/>
+        <path d="M1350,600 C1378,628 1388,664 1382,702"/>
+        <path d="M1368,646 C1384,650 1394,660 1400,674"/>
+        <path d="M380,300 C406,320 416,348 412,380"/>
+      </g>
+    </svg>
+
+    <!-- mid · the apothecary shelf grid and the work counter -->
+    <svg class="w-plane w-p2" id="wbg06-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w06-cabinet" gradientUnits="userSpaceOnUse" x1="30" y1="250" x2="450" y2="1000">
+          <stop offset="0" stop-color="#6E4826" stop-opacity="0.20"/>
+          <stop offset="0.55" stop-color="#4A2E1C" stop-opacity="0.24"/>
+          <stop offset="1" stop-color="#2B1F17" stop-opacity="0.30"/>
+        </linearGradient>
+        <linearGradient id="w06-board" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="16">
+          <stop offset="0" stop-color="#A97445" stop-opacity="0.62"/>
+          <stop offset="1" stop-color="#6E4826" stop-opacity="0.52"/>
+        </linearGradient>
+        <linearGradient id="w06-counter" gradientUnits="userSpaceOnUse" x1="0" y1="880" x2="0" y2="920">
+          <stop offset="0" stop-color="#A97445" stop-opacity="0.50"/>
+          <stop offset="1" stop-color="#4A2E1C" stop-opacity="0.46"/>
+        </linearGradient>
+        <filter id="w06-shelfblur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5"/></filter>
+      </defs>
+
+      <!-- cabinet mass, left edge -->
+      <rect x="30" y="250" width="420" height="750" fill="url(#w06-cabinet)"/>
+      <g fill="url(#w06-board)">
+        <rect x="30" y="410" width="420" height="16"/>
+        <rect x="30" y="550" width="420" height="16"/>
+        <rect x="30" y="690" width="420" height="16"/>
+        <rect x="30" y="830" width="420" height="16"/>
+        <rect x="30" y="970" width="420" height="16"/>
+      </g>
+      <g fill="none" stroke="#6E4826" stroke-width="5" opacity="0.34">
+        <path d="M150,250 V970"/>
+        <path d="M290,250 V970"/>
+        <path d="M30,250 V1000"/>
+        <path d="M450,250 V1000"/>
+      </g>
+
+      <!-- row 1 · tall bottles -->
+      <g opacity="0.9">
+        <path d="M62,400 L62,338 C62,324 70,316 78,312 L78,292 L98,292 L98,312 C106,316 114,324 114,338 L114,400 Z"
+              fill="#C99A67" opacity="0.40" stroke="#8A5F36" stroke-width="4"/>
+        <rect x="76" y="282" width="24" height="12" fill="#E3BB64" opacity="0.50"/>
+        <path d="M172,400 L172,344 C172,330 180,322 188,318 L188,300 L208,300 L208,318 C216,322 224,330 224,338 L224,400 Z"
+              fill="#A97445" opacity="0.38" stroke="#8A5F36" stroke-width="4"/>
+        <rect x="186" y="290" width="24" height="12" fill="#E3BB64" opacity="0.46"/>
+        <path d="M318,400 L318,352 C318,338 326,330 334,326 L334,306 L354,306 L354,326 C362,330 370,338 370,348 L370,400 Z"
+              fill="#C99A67" opacity="0.36" stroke="#8A5F36" stroke-width="4"/>
+        <rect x="332" y="296" width="24" height="12" fill="#E3BB64" opacity="0.44"/>
+      </g>
+
+      <!-- row 2 · square jars and a round flask -->
+      <g opacity="0.86">
+        <path d="M56,544 L56,454 C56,444 64,436 74,436 L128,436 C138,436 146,444 146,454 L146,544 Z"
+              fill="#DCC29B" opacity="0.46" stroke="#8A5F36" stroke-width="4"/>
+        <path d="M64,500 L138,500 L138,536 L64,536 Z" fill="#E89A3C" opacity="0.18"/>
+        <path d="M166,544 L166,470 C166,460 174,452 184,452 L238,452 C248,452 256,460 256,470 L256,544 Z"
+              fill="#C99A67" opacity="0.40" stroke="#8A5F36" stroke-width="4"/>
+        <circle cx="342" cy="500" r="44" fill="#C99A67" opacity="0.38" stroke="#8A5F36" stroke-width="4"/>
+        <path d="M342,456 L342,428 L358,428 L358,456" fill="#A97445" opacity="0.42" stroke="#8A5F36" stroke-width="4"/>
+        <path d="M320,516 C336,508 350,508 364,516" fill="none" stroke="#E89A3C" stroke-width="4" opacity="0.26"/>
+      </g>
+
+      <!-- row 3 · flasks and a mortar -->
+      <g opacity="0.88">
+        <path d="M72,684 L72,640 C72,620 88,606 106,606 C124,606 140,620 140,640 L140,684 Z"
+              fill="#DCC29B" opacity="0.42" stroke="#8A5F36" stroke-width="4"/>
+        <path d="M106,606 L106,580 L118,580 L118,606" fill="#A97445" opacity="0.42" stroke="#8A5F36" stroke-width="4"/>
+        <path d="M186,684 L186,646 C186,626 202,612 220,612 C238,612 254,626 254,646 L254,684 Z"
+              fill="#C99A67" opacity="0.38" stroke="#8A5F36" stroke-width="4"/>
+        <path d="M220,612 L220,586 L232,586 L232,612" fill="#A97445" opacity="0.40" stroke="#8A5F36" stroke-width="4"/>
+        <path d="M314,684 C314,660 330,644 354,644 C378,644 394,660 394,684 Z"
+              fill="#8A5F36" opacity="0.42" stroke="#4A2E1C" stroke-width="4"/>
+        <path d="M354,644 L354,620" fill="none" stroke="#6E4826" stroke-width="9" stroke-linecap="round" opacity="0.55"/>
+        <path d="M340,620 L368,620" fill="none" stroke="#6E4826" stroke-width="7" stroke-linecap="round" opacity="0.48"/>
+      </g>
+
+      <!-- row 4 · bottles and a small balance -->
+      <g opacity="0.86">
+        <path d="M58,824 L58,746 C58,734 66,726 76,722 L76,704 L96,704 L96,722 C106,726 114,734 114,746 L114,824 Z"
+              fill="#C99A67" opacity="0.40" stroke="#8A5F36" stroke-width="4"/>
+        <path d="M174,824 L174,762 C174,750 182,742 192,738 L192,720 L212,720 L212,738 C222,742 230,750 230,760 L230,824 Z"
+              fill="#A97445" opacity="0.38" stroke="#8A5F36" stroke-width="4"/>
+        <path d="M300,824 L300,772 C300,760 308,752 318,748 L318,730 L338,730 L338,748 C348,752 356,760 356,770 L356,824 Z"
+              fill="#C99A67" opacity="0.36" stroke="#8A5F36" stroke-width="4"/>
+        <path d="M392,824 L392,788 L404,788 L404,824 Z" fill="#8A5F36" opacity="0.40"/>
+        <path d="M370,788 H426" fill="none" stroke="#6E4826" stroke-width="5" opacity="0.42"/>
+      </g>
+
+      <!-- row 5 · jars, folded cloth, a mortar -->
+      <g opacity="0.84">
+        <path d="M52,964 L52,896 C52,886 60,878 70,878 L120,878 C130,878 138,886 138,896 L138,964 Z"
+              fill="#DCC29B" opacity="0.44" stroke="#8A5F36" stroke-width="4"/>
+        <path d="M166,964 L166,912 C166,902 174,894 184,894 L228,894 C238,894 246,902 246,912 L246,964 Z"
+              fill="#C99A67" opacity="0.38" stroke="#8A5F36" stroke-width="4"/>
+        <path d="M292,964 C292,936 312,916 340,916 C368,916 388,936 388,964 Z"
+              fill="#8A5F36" opacity="0.42" stroke="#4A2E1C" stroke-width="4"/>
+        <path d="M340,916 L340,888" fill="none" stroke="#6E4826" stroke-width="9" stroke-linecap="round" opacity="0.52"/>
+      </g>
+
+      <!-- hanging dried herbs from the peg rail -->
+      <g opacity="0.72">
+        <path d="M90,206 C86,250 78,286 66,318" fill="none" stroke="#8A5F36" stroke-width="5" opacity="0.50"/>
+        <path d="M90,206 C94,248 104,284 116,314" fill="none" stroke="#8A5F36" stroke-width="5" opacity="0.44"/>
+        <path d="M78,250 C64,256 54,268 50,282" fill="none" stroke="#6E4826" stroke-width="4" opacity="0.36"/>
+        <path d="M104,258 C118,264 128,276 132,290" fill="none" stroke="#6E4826" stroke-width="4" opacity="0.34"/>
+        <path d="M186,206 C182,242 174,272 164,300" fill="none" stroke="#8A5F36" stroke-width="5" opacity="0.44"/>
+        <path d="M282,206 C278,246 270,278 258,306" fill="none" stroke="#8A5F36" stroke-width="5" opacity="0.42"/>
+        <path d="M378,206 C374,240 366,268 354,294" fill="none" stroke="#8A5F36" stroke-width="5" opacity="0.40"/>
+      </g>
+
+      <!-- work counter under the window -->
+      <rect x="1444" y="884" width="476" height="20" fill="url(#w06-counter)"/>
+      <g fill="none" stroke="#4A2E1C" stroke-width="7" opacity="0.34">
+        <path d="M1480,904 V1010"/>
+        <path d="M1880,904 V1010"/>
+      </g>
+      <g opacity="0.86">
+        <path d="M1500,884 C1500,860 1518,842 1544,842 C1570,842 1588,860 1588,884 Z"
+              fill="#8A5F36" opacity="0.42" stroke="#4A2E1C" stroke-width="4"/>
+        <path d="M1544,842 L1544,816" fill="none" stroke="#6E4826" stroke-width="9" stroke-linecap="round" opacity="0.50"/>
+        <path d="M1660,884 L1660,846 L1672,846 L1672,884 Z" fill="#A97445" opacity="0.42"/>
+        <path d="M1630,846 H1702" fill="none" stroke="#6E4826" stroke-width="5" opacity="0.42"/>
+        <path d="M1630,846 L1618,884" fill="none" stroke="#6E4826" stroke-width="4" opacity="0.36"/>
+        <path d="M1702,846 L1714,884" fill="none" stroke="#6E4826" stroke-width="4" opacity="0.36"/>
+        <path d="M1760,884 L1760,838 C1760,826 1768,818 1778,814 L1778,796 L1798,796 L1798,814 C1808,818 1816,826 1816,838 L1816,884 Z"
+              fill="#C99A67" opacity="0.38" stroke="#8A5F36" stroke-width="4"/>
+        <rect x="1776" y="786" width="24" height="12" fill="#E3BB64" opacity="0.46"/>
+        <path d="M1850,884 L1850,850 C1850,838 1858,830 1868,826 L1868,808 L1888,808 L1888,826 C1898,830 1906,838 1906,848 L1906,884 Z"
+              fill="#A97445" opacity="0.36" stroke="#8A5F36" stroke-width="4"/>
+      </g>
+    </svg>
+
+    <!-- near · vapour ribbons, pool, floating motes -->
+    <svg class="w-plane w-p3" id="wbg06-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w06-vapour" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FFFDF6" stop-opacity="0.60"/>
+          <stop offset="0.46" stop-color="#FFF6DC" stop-opacity="0.30"/>
+          <stop offset="1" stop-color="#E9D4AF" stop-opacity="0.14"/>
+        </linearGradient>
+        <linearGradient id="w06-pool" gradientUnits="userSpaceOnUse" x1="0" y1="960" x2="0" y2="1080">
+          <stop offset="0" stop-color="#FFFDF6" stop-opacity="0.34"/>
+          <stop offset="0.6" stop-color="#C99A67" stop-opacity="0.12"/>
+          <stop offset="1" stop-color="#FCEBB8" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="w06-vapourblur" x="-20%" y="-30%" width="140%" height="160%"><feGaussianBlur stdDeviation="8"/></filter>
+        <filter id="w06-poolblur" x="-20%" y="-40%" width="140%" height="180%"><feGaussianBlur stdDeviation="18"/></filter>
+      </defs>
+
+      <!-- vapour rising off the shelf and curling through the lower room -->
+      <g fill="none" stroke-linecap="round" filter="url(#w06-vapourblur)">
+        <g class="w06-vapour" stroke="#C99A67" stroke-width="38" opacity="0.16">
+          <path d="M118,902 C218,842 278,862 338,782 C398,702 498,692 598,732 C698,772 758,842 878,852"/>
+          <path d="M178,982 C298,922 358,942 438,862 C518,782 618,772 718,812 C818,852 878,922 998,932"/>
+          <path d="M78,822 C158,762 218,782 278,702 C338,622 438,612 518,652 C598,692 638,762 738,782"/>
+          <path d="M398,984 C378,864 438,784 408,684 C388,614 428,544 408,474"/>
+          <path d="M58,1004 C258,964 418,994 618,974 C818,954 1018,984 1218,968"/>
+        </g>
+        <g class="w06-vapour" stroke="url(#w06-vapour)" stroke-width="30" opacity="0.52">
+          <path d="M118,902 C218,842 278,862 338,782 C398,702 498,692 598,732 C698,772 758,842 878,852"/>
+          <path d="M178,982 C298,922 358,942 438,862 C518,782 618,772 718,812 C818,852 878,922 998,932"/>
+          <path d="M78,822 C158,762 218,782 278,702 C338,622 438,612 518,652 C598,692 638,762 738,782"/>
+          <path d="M398,984 C378,864 438,784 408,684 C388,614 428,544 408,474"/>
+          <path d="M58,1004 C258,964 418,994 618,974 C818,954 1018,984 1218,968"/>
+        </g>
+      </g>
+
+      <!-- a low vapour pool at the floor -->
+      <path d="M60,1080 C220,1004 420,982 640,990 C860,998 1080,1022 1280,1044 L1360,1080 Z"
+            fill="url(#w06-pool)" opacity="0.8" filter="url(#w06-poolblur)"/>
+
+      <!-- motes, held at the edges -->
+      <g fill="#FFFDF6">
+        <circle class="w06-mote" cx="96" cy="560" r="5" opacity="0.38"/>
+        <circle class="w06-mote" cx="158" cy="646" r="4" opacity="0.32"/>
+        <circle class="w06-mote" cx="248" cy="590" r="6" opacity="0.30"/>
+        <circle class="w06-mote" cx="330" cy="680" r="3.5" opacity="0.28"/>
+        <circle class="w06-mote" cx="420" cy="620" r="4.5" opacity="0.24"/>
+        <circle class="w06-mote" cx="1560" cy="520" r="4" opacity="0.28"/>
+        <circle class="w06-mote" cx="1660" cy="620" r="5" opacity="0.24"/>
+        <circle class="w06-mote" cx="1820" cy="560" r="3.5" opacity="0.22"/>
+      </g>
+      <g fill="#FCEBB8" opacity="0.26">
+        <circle class="w06-mote" cx="700" cy="470" r="3"/>
+        <circle class="w06-mote" cx="1180" cy="540" r="3.5"/>
+      </g>
+    </svg>
+
+    <div class="w-haze"></div>
+  </div>
+</div>
+
+<script>
+(function initWbg06(){
+  var ID = "wbg-06-mercury-chamber";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, {duration:60.000},0);
+
+  // wall 0.13 px/s, shelf 0.47 px/s, vapour 1.0 px/s
+  tl.fromTo("#wbg06-bg", { x: 0, y: 0 }, { x: 4, y: 2, duration: 30, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+  tl.fromTo("#wbg06-mg", { x: 0, y: 0 }, { x: 14, y: -3, duration: 30, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+  tl.fromTo("#wbg06-fg", { x: 0, y: 0 }, { x: 30, y: 6, duration: 30, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+
+  // vapour curls upward and leans with the room air
+  tl.fromTo(".w06-vapour", { x: 0, y: 0 }, { x: 8, y: -34, duration: 22, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 1.0 }, 0);
+
+  // motes turn slowly in the window light
+  tl.fromTo(".w06-mote", { x: 0, y: 0, opacity: 0.38 }, { x: 7, y: -22, opacity: 0.56, duration: 18, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 1.1 }, 1);
+
+  // the window breathes, never a flicker
+  tl.to("#wbg06-bg", { opacity: 0.95, duration: 20, ease: "sine.inOut", yoyo: true, repeat: 2 }, 0);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

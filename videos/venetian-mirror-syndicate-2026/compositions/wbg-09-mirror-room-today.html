@@ -1,0 +1,339 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="wbg09-template">
+<style>
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="wbg-09-mirror-room-today"] .w-stage{position:absolute;inset:0;}
+[data-composition-id="wbg-09-mirror-room-today"] .w-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="wbg-09-mirror-room-today"] .w-p1{z-index:1;}
+[data-composition-id="wbg-09-mirror-room-today"] .w-p2{z-index:2;}
+[data-composition-id="wbg-09-mirror-room-today"] .w-p3{z-index:3;}
+[data-composition-id="wbg-09-mirror-room-today"] .w-haze{position:absolute;inset:0;z-index:5;pointer-events:none;
+  background:
+    radial-gradient(34% 40% at 70% 8%, rgba(255,226,172,0.34) 0%, rgba(255,226,172,0.10) 58%, rgba(255,226,172,0) 82%),
+    radial-gradient(46% 36% at 16% 84%, rgba(255,243,206,0.24) 0%, rgba(255,243,206,0) 78%),
+    linear-gradient(180deg, rgba(43,31,23,0.24) 0%, rgba(43,31,23,0) 14%, rgba(43,31,23,0) 70%, rgba(30,24,19,0.42) 100%);}
+</style>
+
+<div id="root" data-composition-id="wbg-09-mirror-room-today" data-width="1920" data-height="1080" data-start="0" data-duration="60.000">
+  <div class="w-stage" id="wbg09-stage">
+
+    <!-- far · the mirror wall, gilt frames, reflected warm light -->
+    <svg class="w-plane w-p1" id="wbg09-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w09-wall" x1="0" y1="0" x2="0.05" y2="1">
+          <stop offset="0" stop-color="#FBF1DA"/><stop offset="0.34" stop-color="#F6E6C6"/>
+          <stop offset="0.68" stop-color="#E9D4AF"/><stop offset="1" stop-color="#D5B98F"/>
+        </linearGradient>
+        <linearGradient id="w09-mirror" x1="0" y1="0" x2="0.16" y2="1">
+          <stop offset="0" stop-color="#F6E6C6"/><stop offset="0.34" stop-color="#E9D4AF"/>
+          <stop offset="0.62" stop-color="#F1DFBE"/><stop offset="1" stop-color="#C9A87C"/>
+        </linearGradient>
+        <linearGradient id="w09-mirror2" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#DCC29B"/><stop offset="0.4" stop-color="#F1DFBE"/>
+          <stop offset="0.72" stop-color="#DCC29B"/><stop offset="1" stop-color="#B08C60"/>
+        </linearGradient>
+        <linearGradient id="w09-gilt" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.34" stop-color="#E3BB64"/>
+          <stop offset="0.7" stop-color="#C89D42"/><stop offset="1" stop-color="#9E742A"/>
+        </linearGradient>
+        <linearGradient id="w09-cornice" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#E3BB64"/><stop offset="0.5" stop-color="#C89D42"/>
+          <stop offset="1" stop-color="#8A5F36"/>
+        </linearGradient>
+        <linearGradient id="w09-reflection" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#FFF6DC" stop-opacity="0.42"/>
+          <stop offset="0.55" stop-color="#FFE8B4" stop-opacity="0.14"/>
+          <stop offset="1" stop-color="#FFE8B4" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="w09-chandglow" cx="70%" cy="9%" r="52%">
+          <stop offset="0" stop-color="#FFF3CE" stop-opacity="0.54"/>
+          <stop offset="0.4" stop-color="#FFE2AC" stop-opacity="0.20"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="w09-blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="40"/></filter>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#w09-wall)"/>
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#w09-chandglow)"/>
+
+      <!-- cornice -->
+      <rect x="0" y="0" width="1920" height="74" fill="url(#w09-cornice)" opacity="0.66"/>
+      <path d="M0,74 H1920" stroke="#FBF1DA" stroke-width="6" opacity="0.32"/>
+      <path d="M0,92 H1920" stroke="#8A5F36" stroke-width="8" opacity="0.24"/>
+
+      <!-- the mirror panels: seven tall lights across the wall -->
+      <g>
+        <path d="M44,924 V330 C44,246 96,204 162,204 C228,204 280,246 280,330 V924 Z" fill="url(#w09-mirror)" opacity="0.9"/>
+        <path d="M44,924 V330 C44,246 96,204 162,204 C228,204 280,246 280,330 V924"
+              fill="none" stroke="url(#w09-gilt)" stroke-width="7" opacity="0.6"/>
+
+        <path d="M312,924 V318 C312,232 366,188 434,188 C502,188 556,232 556,318 V924 Z" fill="url(#w09-mirror2)" opacity="0.88"/>
+        <path d="M312,924 V318 C312,232 366,188 434,188 C502,188 556,232 556,318 V924"
+              fill="none" stroke="url(#w09-gilt)" stroke-width="7" opacity="0.54"/>
+
+        <path d="M588,924 V326 C588,240 642,196 710,196 C778,196 832,240 832,326 V924 Z" fill="url(#w09-mirror)" opacity="0.86"/>
+        <path d="M588,924 V326 C588,240 642,196 710,196 C778,196 832,240 832,326 V924"
+              fill="none" stroke="url(#w09-gilt)" stroke-width="7" opacity="0.5"/>
+
+        <path d="M864,924 V314 C864,228 918,184 986,184 C1054,184 1108,228 1108,314 V924 Z" fill="url(#w09-mirror2)" opacity="0.84"/>
+        <path d="M864,924 V314 C864,228 918,184 986,184 C1054,184 1108,228 1108,314 V924"
+              fill="none" stroke="url(#w09-gilt)" stroke-width="7" opacity="0.46"/>
+
+        <path d="M1140,924 V330 C1140,244 1194,200 1262,200 C1330,200 1384,244 1384,330 V924 Z" fill="url(#w09-mirror)" opacity="0.86"/>
+        <path d="M1140,924 V330 C1140,244 1194,200 1262,200 C1330,200 1384,244 1384,330 V924"
+              fill="none" stroke="url(#w09-gilt)" stroke-width="7" opacity="0.5"/>
+
+        <path d="M1416,924 V318 C1416,232 1470,188 1538,188 C1606,188 1660,232 1660,318 V924 Z" fill="url(#w09-mirror2)" opacity="0.88"/>
+        <path d="M1416,924 V318 C1416,232 1470,188 1538,188 C1606,188 1660,232 1660,318 V924"
+              fill="none" stroke="url(#w09-gilt)" stroke-width="7" opacity="0.56"/>
+
+        <path d="M1692,924 V330 C1692,246 1744,204 1810,204 C1876,204 1928,246 1928,330 V924 Z" fill="url(#w09-mirror)" opacity="0.9"/>
+        <path d="M1692,924 V330 C1692,246 1744,204 1810,204 C1876,204 1928,246 1928,330 V924"
+              fill="none" stroke="url(#w09-gilt)" stroke-width="7" opacity="0.6"/>
+      </g>
+
+      <!-- gilt pilasters between the mirror panels -->
+      <g stroke="url(#w09-gilt)" stroke-width="9" opacity="0.30">
+        <path d="M296,214 V924"/><path d="M572,198 V924"/><path d="M848,194 V924"/>
+        <path d="M1124,200 V924"/><path d="M1400,198 V924"/><path d="M1676,214 V924"/>
+      </g>
+
+      <!-- rosettes at the arch heads -->
+      <g fill="#E3BB64" opacity="0.42">
+        <circle cx="162" cy="196" r="8"/><circle cx="434" cy="180" r="8"/>
+        <circle cx="710" cy="188" r="8"/><circle cx="986" cy="176" r="8"/>
+        <circle cx="1262" cy="192" r="8"/><circle cx="1538" cy="180" r="8"/>
+        <circle cx="1810" cy="196" r="8"/>
+      </g>
+
+      <!-- reflected warm light sliding down the glass -->
+      <g opacity="0.66">
+        <path d="M110,260 L214,260 L150,900 L66,900 Z" fill="url(#w09-reflection)"/>
+        <path d="M382,244 L470,244 L418,900 L342,900 Z" fill="url(#w09-reflection)" opacity="0.8"/>
+        <path d="M1490,244 L1578,244 L1526,900 L1450,900 Z" fill="url(#w09-reflection)" opacity="0.9"/>
+        <path d="M1760,260 L1864,260 L1800,900 L1716,900 Z" fill="url(#w09-reflection)" opacity="0.7"/>
+      </g>
+
+      <!-- gilt dado and floor line -->
+      <path d="M0,924 H1920 V956 H0 Z" fill="url(#w09-gilt)" opacity="0.34"/>
+      <path d="M0,924 H1920" stroke="#FCEBB8" stroke-width="5" opacity="0.34"/>
+      <path d="M0,956 H1920" stroke="#8A5F36" stroke-width="6" opacity="0.24"/>
+
+      <!-- the chandelier's halo, high right -->
+      <ellipse cx="1340" cy="150" rx="330" ry="280" fill="#FFF6DC" opacity="0.34" filter="url(#w09-blur)"/>
+    </svg>
+
+    <!-- mid · the chandelier crystal field -->
+    <svg class="w-plane w-p2" id="wbg09-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w09-brass" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.44" stop-color="#E3BB64"/>
+          <stop offset="0.78" stop-color="#C89D42"/><stop offset="1" stop-color="#9E742A"/>
+        </linearGradient>
+        <linearGradient id="w09-crystal" x1="0" y1="0" x2="0.5" y2="1">
+          <stop offset="0" stop-color="#FFF3CE"/><stop offset="0.4" stop-color="#FCEBB8"/>
+          <stop offset="0.72" stop-color="#E3BB64"/><stop offset="1" stop-color="#C89D42"/>
+        </linearGradient>
+        <linearGradient id="w09-crystal2" x1="0" y1="0" x2="0.5" y2="1">
+          <stop offset="0" stop-color="#FFE8B4"/><stop offset="0.5" stop-color="#E89A3C"/>
+          <stop offset="1" stop-color="#C2593F"/>
+        </linearGradient>
+        <radialGradient id="w09-glint" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFF6DC" stop-opacity="0.9"/>
+          <stop offset="0.4" stop-color="#FCEBB8" stop-opacity="0.5"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <!-- the chandelier stem and arms -->
+      <g transform="translate(1340,0) scale(1.35,1.16) translate(-1340,0)">
+        <path d="M1340,0 V58" stroke="#8A5F36" stroke-width="7" opacity="0.5"/>
+        <ellipse cx="1340" cy="66" rx="16" ry="10" fill="url(#w09-brass)" opacity="0.9"/>
+        <path d="M1340,66 V196" stroke="url(#w09-brass)" stroke-width="9" opacity="0.86"/>
+        <ellipse cx="1340" cy="128" rx="26" ry="12" fill="url(#w09-brass)" opacity="0.7"/>
+        <ellipse cx="1340" cy="196" rx="42" ry="14" fill="url(#w09-brass)" opacity="0.82"/>
+        <path d="M1340,196 C1280,196 1226,170 1196,128" fill="none" stroke="url(#w09-brass)" stroke-width="9" opacity="0.74"/>
+        <path d="M1340,196 C1400,196 1454,170 1484,128" fill="none" stroke="url(#w09-brass)" stroke-width="9" opacity="0.74"/>
+        <path d="M1340,196 C1300,216 1252,224 1212,214" fill="none" stroke="url(#w09-brass)" stroke-width="7" opacity="0.56"/>
+        <path d="M1340,196 C1380,216 1428,224 1468,214" fill="none" stroke="url(#w09-brass)" stroke-width="7" opacity="0.56"/>
+      </g>
+
+      <!-- crystal strands, all in the upper band -->
+      <g opacity="0.92" transform="translate(1340,0) scale(1.35,1.16) translate(-1340,0)">
+        <g class="w09-strand">
+          <path d="M1196,128 V214" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          <path d="M1178,150 C1178,176 1184,190 1196,206 C1208,190 1214,176 1214,150 C1206,158 1186,158 1178,150 Z" fill="url(#w09-crystal)" opacity="0.88"/>
+          <path d="M1196,206 L1196,232" stroke="#E3BB64" stroke-width="4" opacity="0.5"/>
+          <circle cx="1196" cy="242" r="9" fill="url(#w09-crystal2)" opacity="0.82"/>
+        </g>
+        <g class="w09-strand">
+          <path d="M1246,160 V238" stroke="#C89D42" stroke-width="4" opacity="0.46"/>
+          <path d="M1228,184 C1228,208 1234,222 1246,238 C1258,222 1264,208 1264,184 C1256,192 1236,192 1228,184 Z" fill="url(#w09-crystal)" opacity="0.8"/>
+          <circle cx="1246" cy="254" r="7" fill="#E89A3C" opacity="0.66"/>
+        </g>
+        <g class="w09-strand">
+          <path d="M1290,178 V246" stroke="#C89D42" stroke-width="4" opacity="0.42"/>
+          <path d="M1274,200 C1274,220 1280,232 1290,246 C1300,232 1306,220 1306,200 C1299,207 1281,207 1274,200 Z" fill="url(#w09-crystal2)" opacity="0.72"/>
+          <circle cx="1290" cy="260" r="6" fill="#FCEBB8" opacity="0.7"/>
+        </g>
+        <g class="w09-strand">
+          <path d="M1340,196 V264" stroke="#C89D42" stroke-width="5" opacity="0.5"/>
+          <path d="M1320,218 C1320,242 1328,256 1340,272 C1352,256 1360,242 1360,218 C1351,226 1329,226 1320,218 Z" fill="url(#w09-crystal)" opacity="0.9"/>
+          <circle cx="1340" cy="286" r="8" fill="#FFF3CE" opacity="0.72"/>
+        </g>
+        <g class="w09-strand">
+          <path d="M1390,178 V246" stroke="#C89D42" stroke-width="4" opacity="0.42"/>
+          <path d="M1374,200 C1374,220 1380,232 1390,246 C1400,232 1406,220 1406,200 C1399,207 1381,207 1374,200 Z" fill="url(#w09-crystal2)" opacity="0.72"/>
+          <circle cx="1390" cy="260" r="6" fill="#FCEBB8" opacity="0.7"/>
+        </g>
+        <g class="w09-strand">
+          <path d="M1434,160 V238" stroke="#C89D42" stroke-width="4" opacity="0.46"/>
+          <path d="M1416,184 C1416,208 1422,222 1434,238 C1446,222 1452,208 1452,184 C1444,192 1424,192 1416,184 Z" fill="url(#w09-crystal)" opacity="0.8"/>
+          <circle cx="1434" cy="254" r="7" fill="#E89A3C" opacity="0.66"/>
+        </g>
+        <g class="w09-strand">
+          <path d="M1484,128 V214" stroke="#C89D42" stroke-width="4" opacity="0.5"/>
+          <path d="M1466,150 C1466,176 1472,190 1484,206 C1496,190 1502,176 1502,150 C1494,158 1474,158 1466,150 Z" fill="url(#w09-crystal)" opacity="0.88"/>
+          <path d="M1484,206 L1484,232" stroke="#E3BB64" stroke-width="4" opacity="0.5"/>
+          <circle cx="1484" cy="242" r="9" fill="url(#w09-crystal2)" opacity="0.82"/>
+        </g>
+      </g>
+
+      <!-- the lower crystal curtain, a warm fringe -->
+      <g opacity="0.8" transform="translate(1340,0) scale(1.35,1.16) translate(-1340,0)">
+        <path d="M1212,214 V258" stroke="#C89D42" stroke-width="4" opacity="0.4"/>
+        <path d="M1224,214 V262" stroke="#C89D42" stroke-width="4" opacity="0.4"/>
+        <path d="M1236,214 V256" stroke="#C89D42" stroke-width="4" opacity="0.36"/>
+        <path d="M1468,214 V258" stroke="#C89D42" stroke-width="4" opacity="0.4"/>
+        <path d="M1456,214 V262" stroke="#C89D42" stroke-width="4" opacity="0.4"/>
+        <path d="M1444,214 V256" stroke="#C89D42" stroke-width="4" opacity="0.36"/>
+        <g fill="#FCEBB8">
+          <circle class="w09-glint" cx="1212" cy="266" r="5" opacity="0.62"/>
+          <circle class="w09-glint" cx="1224" cy="270" r="4" opacity="0.56"/>
+          <circle class="w09-glint" cx="1236" cy="264" r="4.5" opacity="0.5"/>
+          <circle class="w09-glint" cx="1468" cy="266" r="5" opacity="0.62"/>
+          <circle class="w09-glint" cx="1456" cy="270" r="4" opacity="0.56"/>
+          <circle class="w09-glint" cx="1444" cy="264" r="4.5" opacity="0.5"/>
+        </g>
+      </g>
+
+      <!-- candle cups on the arms -->
+      <g opacity="0.88" transform="translate(1340,0) scale(1.35,1.16) translate(-1340,0)">
+        <ellipse cx="1196" cy="124" rx="14" ry="7" fill="url(#w09-brass)"/>
+        <ellipse cx="1196" cy="112" rx="7" ry="12" fill="#FFF3CE" opacity="0.74"/>
+        <ellipse cx="1484" cy="124" rx="14" ry="7" fill="url(#w09-brass)"/>
+        <ellipse cx="1484" cy="112" rx="7" ry="12" fill="#FFF3CE" opacity="0.74"/>
+        <ellipse cx="1340" cy="190" rx="15" ry="8" fill="url(#w09-brass)"/>
+        <ellipse cx="1340" cy="176" rx="7" ry="13" fill="#FFF3CE" opacity="0.78"/>
+      </g>
+
+      <!-- glints scattered through the field -->
+      <g fill="#FCEBB8" transform="translate(1340,0) scale(1.35,1.16) translate(-1340,0)">
+        <circle class="w09-glint" cx="1148" cy="88" r="4" opacity="0.5"/>
+        <circle class="w09-glint" cx="1268" cy="112" r="3.5" opacity="0.44"/>
+        <circle class="w09-glint" cx="1312" cy="70" r="4" opacity="0.5"/>
+        <circle class="w09-glint" cx="1372" cy="96" r="3.5" opacity="0.42"/>
+        <circle class="w09-glint" cx="1412" cy="66" r="4" opacity="0.46"/>
+        <circle class="w09-glint" cx="1532" cy="102" r="3.5" opacity="0.4"/>
+        <circle class="w09-glint" cx="1568" cy="150" r="4" opacity="0.36"/>
+        <circle class="w09-glint" cx="1108" cy="152" r="3.5" opacity="0.34"/>
+      </g>
+
+      <!-- glints drifting out from the crystal field -->
+      <g fill="#FCEBB8">
+        <circle class="w09-glint" cx="1064" cy="66" r="3.5" opacity="0.38"/>
+        <circle class="w09-glint" cx="1620" cy="80" r="4" opacity="0.4"/>
+      </g>
+
+      <ellipse cx="1340" cy="170" rx="210" ry="150" fill="url(#w09-glint)" opacity="0.2" filter="url(#w09-blur)"/>
+      <ellipse cx="1340" cy="338" rx="250" ry="150" fill="url(#w09-glint)" opacity="0.16" filter="url(#w09-blur)"/>
+    </svg>
+
+    <!-- near · gilt band, tourist-light bokeh, warm haze -->
+    <svg class="w-plane w-p3" id="wbg09-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w09-band" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#E3BB64"/><stop offset="0.3" stop-color="#C89D42"/>
+          <stop offset="0.62" stop-color="#9E742A"/><stop offset="1" stop-color="#6E4826"/>
+        </linearGradient>
+        <linearGradient id="w09-bandlight" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#FCEBB8" stop-opacity="0.5"/>
+          <stop offset="0.5" stop-color="#E3BB64" stop-opacity="0.16"/>
+          <stop offset="1" stop-color="#9E742A" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="w09-bokeh" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFF6DC" stop-opacity="0.44"/>
+          <stop offset="0.56" stop-color="#FFE8B4" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="w09-bokeh2" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFF3CE" stop-opacity="0.34"/>
+          <stop offset="0.6" stop-color="#FCEBB8" stop-opacity="0.12"/>
+          <stop offset="1" stop-color="#C89D42" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <!-- the gilt band across the bottom -->
+      <path d="M0,1000 H1920 V1080 H0 Z" fill="url(#w09-band)"/>
+      <path d="M0,1000 H1920 V1080 H0 Z" fill="url(#w09-bandlight)"/>
+      <path d="M0,1000 H1920" stroke="#FCEBB8" stroke-width="6" opacity="0.5"/>
+      <path d="M0,1014 H1920" stroke="#8A5F36" stroke-width="5" opacity="0.34"/>
+      <path d="M0,1042 H1920" stroke="#E3BB64" stroke-width="4" opacity="0.24"/>
+      <path d="M0,1070 H1920" stroke="#4A2E1C" stroke-width="6" opacity="0.36"/>
+      <g fill="#FCEBB8" opacity="0.34">
+        <circle cx="64" cy="1006" r="7"/><circle cx="184" cy="1006" r="7"/><circle cx="304" cy="1006" r="7"/>
+        <circle cx="424" cy="1006" r="7"/><circle cx="544" cy="1006" r="7"/><circle cx="664" cy="1006" r="7"/>
+        <circle cx="784" cy="1006" r="7"/><circle cx="904" cy="1006" r="7"/><circle cx="1024" cy="1006" r="7"/>
+        <circle cx="1144" cy="1006" r="7"/><circle cx="1264" cy="1006" r="7"/><circle cx="1384" cy="1006" r="7"/>
+        <circle cx="1504" cy="1006" r="7"/><circle cx="1624" cy="1006" r="7"/><circle cx="1744" cy="1006" r="7"/>
+        <circle cx="1864" cy="1006" r="7"/>
+      </g>
+
+      <!-- tourist-light bokeh, warm ivory, at the edges -->
+      <g>
+        <circle class="w09-bokeh" cx="150" cy="860" r="54" fill="url(#w09-bokeh)" opacity="0.62"/>
+        <circle class="w09-bokeh" cx="268" cy="934" r="34" fill="url(#w09-bokeh2)" opacity="0.5"/>
+        <circle class="w09-bokeh" cx="402" cy="812" r="24" fill="url(#w09-bokeh2)" opacity="0.4"/>
+        <circle class="w09-bokeh" cx="64" cy="744" r="40" fill="url(#w09-bokeh)" opacity="0.36"/>
+        <circle class="w09-bokeh" cx="1740" cy="872" r="58" fill="url(#w09-bokeh)" opacity="0.6"/>
+        <circle class="w09-bokeh" cx="1630" cy="936" r="36" fill="url(#w09-bokeh2)" opacity="0.48"/>
+        <circle class="w09-bokeh" cx="1824" cy="786" r="26" fill="url(#w09-bokeh2)" opacity="0.4"/>
+        <circle class="w09-bokeh" cx="1512" cy="820" r="22" fill="url(#w09-bokeh2)" opacity="0.34"/>
+        <circle class="w09-bokeh" cx="1180" cy="900" r="30" fill="url(#w09-bokeh2)" opacity="0.28"/>
+        <circle class="w09-bokeh" cx="820" cy="920" r="26" fill="url(#w09-bokeh2)" opacity="0.24"/>
+      </g>
+
+      <!-- a soft reflected pool on the floor, lower right -->
+      <ellipse cx="1690" cy="980" rx="280" ry="90" fill="url(#w09-bokeh)" opacity="0.34"/>
+      <ellipse cx="260" cy="990" rx="220" ry="70" fill="url(#w09-bokeh2)" opacity="0.26"/>
+    </svg>
+
+    <div class="w-haze"></div>
+  </div>
+</div>
+
+<script>
+(function initWbg09(){
+  var ID = "wbg-09-mirror-room-today";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, { duration: 60.000 }, 0);
+
+  // three drift rates: mirror wall, crystal field, gilt band and bokeh
+  tl.fromTo("#wbg09-bg", { x: 0, y: 0 }, { x: -22, y: 5, duration: 60, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+  tl.fromTo("#wbg09-mg", { x: 0, y: 0 }, { x: -50, y: -7, duration: 44, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+  tl.fromTo("#wbg09-fg", { x: 0, y: 0 }, { x: -96, y: 10, duration: 34, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+
+  // the crystal strands sway and the glints catch in turn
+  tl.to(".w09-strand", { x: 6, duration: 11, ease: "sine.inOut", yoyo: true, repeat: 2, stagger: 0.9 }, 0);
+  tl.to(".w09-glint", { opacity: 0.92, duration: 4.5, ease: "sine.inOut", yoyo: true, repeat: 3, stagger: 0.7 }, 0);
+
+  // the bokeh breathes, warm light drifting through the room
+  tl.to(".w09-bokeh", { opacity: 0.78, duration: 12, ease: "sine.inOut", yoyo: true, repeat: 2, stagger: 1.4 }, 2);
+
+  // the chandelier halo widens
+  tl.to("#wbg09-bg", { opacity: 0.96, duration: 20, ease: "sine.inOut", yoyo: true, repeat: 1 }, 5);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>
