@@ -1,0 +1,23 @@
+{
+  "pdf": "videos/lunik-heist-1959/.tmp/lunik.pdf",
+  "page": 5,
+  "dpi": 150,
+  "width": 1275,
+  "height": 1650,
+  "boxes": [
+    {
+      "phrase": "130 square-headed bolts",
+      "x": 1043,
+      "y": 1505,
+      "w": 53,
+      "h": 37
+    },
+    {
+      "phrase": "130 square-headed bolts",
+      "x": 51,
+      "y": 1543,
+      "w": 328,
+      "h": 37
+    }
+  ]
+}

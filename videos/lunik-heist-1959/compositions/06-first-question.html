@@ -1,0 +1,391 @@
+<template id="s06-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="06-first-question" data-width="1920" data-height="1080" data-start="0" data-duration="11.18">
+  <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="s06-hall" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#FFD23F" stop-opacity="0.20"/>
+        <stop offset="42%" stop-color="#B8C0D8" stop-opacity="0.05"/>
+        <stop offset="100%" stop-color="#050814" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="s06-floor" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#151B3B"/>
+        <stop offset="100%" stop-color="#0A0E24"/>
+      </linearGradient>
+      <linearGradient id="s06-crate-front" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#151B3B"/>
+        <stop offset="100%" stop-color="#0A0E24"/>
+      </linearGradient>
+      <linearGradient id="s06-crate-side" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#0A0E24"/>
+        <stop offset="100%" stop-color="#050814"/>
+      </linearGradient>
+      <linearGradient id="s06-panel" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#151B3B"/>
+        <stop offset="100%" stop-color="#0A0E24"/>
+      </linearGradient>
+      <linearGradient id="s06-plinth" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#B8C0D8" stop-opacity="0.55"/>
+        <stop offset="100%" stop-color="#151B3B" stop-opacity="0.95"/>
+      </linearGradient>
+      <linearGradient id="s06-plate-glass" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#151B3B"/>
+        <stop offset="100%" stop-color="#0A0E24"/>
+      </linearGradient>
+      <linearGradient id="s06-beams" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#B8C0D8" stop-opacity="0.85"/>
+        <stop offset="100%" stop-color="#151B3B" stop-opacity="0.9"/>
+      </linearGradient>
+      <linearGradient id="s06-emberline" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#FF7A1A"/>
+        <stop offset="60%" stop-color="#FFD23F"/>
+        <stop offset="100%" stop-color="#8E5FD9"/>
+      </linearGradient>
+      <radialGradient id="s06-window-glow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#FFD23F" stop-opacity="0.42"/>
+        <stop offset="55%" stop-color="#FF7A1A" stop-opacity="0.16"/>
+        <stop offset="100%" stop-color="#FF7A1A" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="s06-floorpool" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#FFD23F" stop-opacity="0.22"/>
+        <stop offset="100%" stop-color="#FFD23F" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="s06-vignette" cx="50%" cy="46%" r="66%">
+        <stop offset="60%" stop-color="#050814" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#050814" stop-opacity="0.9"/>
+      </radialGradient>
+      <linearGradient id="s06-bead-depth" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#B8C0D8"/>
+        <stop offset="100%" stop-color="#8E5FD9"/>
+      </linearGradient>
+      <linearGradient id="s06-specular" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.06"/>
+        <stop offset="42%" stop-color="#FFFFFF" stop-opacity="0.015"/>
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      </linearGradient>
+      <filter id="s06-softGlow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="12"/>
+      </filter>
+      <filter id="s06-emberBlur" x="-70%" y="-70%" width="240%" height="240%">
+        <feGaussianBlur stdDeviation="8"/>
+      </filter>
+    </defs>
+
+    <!-- room backdrop -->
+    <rect x="0" y="0" width="1920" height="1080" fill="#050814"/>
+    <rect x="0" y="0" width="1920" height="1080" fill="url(#s06-hall)"/>
+    <rect x="0" y="760" width="1920" height="320" fill="url(#s06-floor)"/>
+
+    <!-- hall back wall panel seams -->
+    <g id="s06-wall-seams" stroke="#B8C0D8" stroke-opacity="0.10" stroke-width="4" fill="none">
+      <line x1="0" y1="250" x2="1920" y2="250"/>
+      <line x1="0" y1="520" x2="1920" y2="520"/>
+      <line x1="330" y1="0" x2="330" y2="760"/>
+      <line x1="1580" y1="0" x2="1580" y2="760"/>
+    </g>
+
+    <!-- gold hall wash above -->
+    <ellipse id="s06-hallwash" cx="1120" cy="90" rx="760" ry="230" fill="#FFD23F" opacity="0.10" filter="url(#s06-softGlow)"/>
+
+    <!-- PLATE glass card behind the crate, right of centre -->
+    <g id="s06-plate-card" opacity="0">
+      <rect x="985" y="108" width="760" height="900" rx="24" ry="24"
+            fill="url(#s06-plate-glass)" stroke="rgba(141,164,237,0.20)" stroke-width="1"/>
+      <rect x="1001" y="124" width="728" height="868" rx="16" ry="16"
+            fill="#0A0E24" stroke="#B8C0D8" stroke-opacity="0.10" stroke-width="1"/>
+      <!-- registration ticks -->
+      <g stroke="#B8C0D8" stroke-opacity="0.28" stroke-width="4" stroke-linecap="round">
+        <line x1="1025" y1="108" x2="1025" y2="132"/>
+        <line x1="1705" y1="108" x2="1705" y2="132"/>
+        <line x1="1025" y1="984" x2="1025" y2="1008"/>
+        <line x1="1705" y1="984" x2="1705" y2="1008"/>
+      </g>
+      <foreignObject x="1013" y="136" width="704" height="844">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+          <img src="../plates/processed/pl-exhibition-01.png" style="object-fit:contain;width:100%;height:100%;display:block;opacity:0.94;" alt="">
+        </div>
+      </foreignObject>
+      <rect x="1013" y="136" width="704" height="844" fill="url(#s06-window-glow)" opacity="0.22"/>
+      <rect id="s06-plate-sheen" x="1013" y="136" width="704" height="844" fill="url(#s06-specular)" opacity="0.5"/>
+      <!-- plate corner screws -->
+      <g id="s06-plate-screws" fill="#B8C0D8" opacity="0.45">
+        <circle cx="1025" cy="148" r="4"/>
+        <circle cx="1705" cy="148" r="4"/>
+        <circle cx="1025" cy="968" r="4"/>
+        <circle cx="1705" cy="968" r="4"/>
+      </g>
+    </g>
+
+    <!-- floor light pool under crate -->
+    <ellipse id="s06-floorpool" cx="700" cy="866" rx="470" ry="86" fill="url(#s06-floorpool)" opacity="0"/>
+
+    <!-- EXHIBITION CRATE -->
+    <g id="s06-crate">
+      <!-- side face -->
+      <g id="s06-crate-side-g" opacity="0">
+        <polygon points="1180,700 1360,640 1360,300 1180,360" fill="url(#s06-crate-side)" stroke="#B8C0D8" stroke-opacity="0.24" stroke-width="4"/>
+      </g>
+      <!-- front face -->
+      <g id="s06-crate-front-g" opacity="0">
+        <rect x="330" y="340" width="850" height="420" fill="url(#s06-crate-front)" stroke="#B8C0D8" stroke-opacity="0.42" stroke-width="8"/>
+        <!-- corner bolts -->
+        <g id="s06-bolts" fill="#B8C0D8" opacity="0.5">
+          <circle cx="352" cy="362" r="5"/>
+          <circle cx="1158" cy="362" r="5"/>
+          <circle cx="352" cy="738" r="5"/>
+          <circle cx="1158" cy="738" r="5"/>
+          <circle cx="560" cy="362" r="4"/>
+          <circle cx="950" cy="362" r="4"/>
+          <circle cx="560" cy="738" r="4"/>
+          <circle cx="950" cy="738" r="4"/>
+        </g>
+      </g>
+      <!-- roof beams socket one by one -->
+      <g id="s06-roof" stroke="url(#s06-beams)" fill="none" stroke-linecap="round">
+        <line id="s06-beam-1" x1="330" y1="340" x2="330" y2="286" stroke-width="16"/>
+        <line id="s06-beam-2" x1="1180" y1="340" x2="1180" y2="286" stroke-width="16"/>
+        <polygon id="s06-roof-cap" points="296,286 1214,286 1180,340 330,340" fill="url(#s06-panel)" stroke="#B8C0D8" stroke-opacity="0.34" stroke-width="6"/>
+        <line id="s06-roof-ridge" x1="296" y1="286" x2="1214" y2="286" stroke-width="10" stroke="#FFD23F" stroke-opacity="0.55"/>
+      </g>
+
+      <!-- three glowing gold inspection windows -->
+      <g id="s06-windows">
+        <g id="s06-win-1">
+          <circle cx="500" cy="470" r="112" fill="url(#s06-window-glow)"/>
+          <rect x="424" y="394" width="152" height="152" rx="12" fill="#0A0E24" stroke="#FFD23F" stroke-width="16"/>
+          <rect x="452" y="422" width="96" height="96" rx="6" fill="#FFD23F" opacity="0.16"/>
+        </g>
+        <g id="s06-win-2">
+          <circle cx="755" cy="470" r="112" fill="url(#s06-window-glow)"/>
+          <rect x="679" y="394" width="152" height="152" rx="12" fill="#0A0E24" stroke="#FFD23F" stroke-width="16"/>
+          <rect x="707" y="422" width="96" height="96" rx="6" fill="#FFD23F" opacity="0.16"/>
+        </g>
+        <g id="s06-win-3">
+          <circle cx="1010" cy="470" r="112" fill="url(#s06-window-glow)"/>
+          <rect x="934" y="394" width="152" height="152" rx="12" fill="#0A0E24" stroke="#FFD23F" stroke-width="16"/>
+          <rect x="962" y="422" width="96" height="96" rx="6" fill="#FFD23F" opacity="0.16"/>
+        </g>
+        <!-- window mullion crossbars -->
+        <g stroke="#FFD23F" stroke-width="8" stroke-linecap="round" opacity="0.8">
+          <line x1="500" y1="394" x2="500" y2="546"/>
+          <line x1="755" y1="394" x2="755" y2="546"/>
+          <line x1="1010" y1="394" x2="1010" y2="546"/>
+        </g>
+        <!-- plate behind crate, framed by windows -->
+        <rect x="640" y="560" width="240" height="132" rx="8" fill="#050814" stroke="#B8C0D8" stroke-opacity="0.40" stroke-width="4"/>
+        <g stroke="#B8C0D8" stroke-opacity="0.30" stroke-width="4">
+          <line x1="672" y1="592" x2="848" y2="592"/>
+          <line x1="672" y1="620" x2="848" y2="620"/>
+          <line x1="672" y1="648" x2="806" y2="648"/>
+        </g>
+      </g>
+
+      <!-- plinth -->
+      <g id="s06-plinth-g" opacity="0">
+        <polygon points="600,760 940,760 906,700 634,700" fill="url(#s06-plinth)" stroke="#B8C0D8" stroke-opacity="0.5" stroke-width="4"/>
+        <rect x="634" y="700" width="272" height="60" fill="#151B3B" stroke="#B8C0D8" stroke-opacity="0.3" stroke-width="4"/>
+        <line x1="640" y1="730" x2="900" y2="730" stroke="#FFD23F" stroke-opacity="0.35" stroke-width="4"/>
+      </g>
+
+      <!-- crate base rail -->
+      <line x1="300" y1="760" x2="1206" y2="760" stroke="#B8C0D8" stroke-opacity="0.55" stroke-width="4"/>
+      <g id="s06-crate-legs" opacity="0">
+        <rect x="356" y="760" width="24" height="30" fill="#0A0E24" stroke="#B8C0D8" stroke-opacity="0.3" stroke-width="4"/>
+        <rect x="1130" y="760" width="24" height="30" fill="#0A0E24" stroke="#B8C0D8" stroke-opacity="0.3" stroke-width="4"/>
+      </g>
+      <!-- rope knots along the base rail -->
+      <g id="s06-rope-knots" fill="none" stroke="#FFD23F" stroke-width="5" opacity="0.55">
+        <circle cx="430" cy="760" r="8"/>
+        <circle cx="1076" cy="760" r="8"/>
+      </g>
+    </g>
+
+    <!-- floor ticks -->
+    <g id="s06-floor-ticks" stroke="#B8C0D8" stroke-opacity="0.18" stroke-width="4" stroke-linecap="round">
+      <line x1="180" y1="900" x2="180" y2="930"/>
+      <line x1="340" y1="906" x2="340" y2="936"/>
+      <line x1="500" y1="912" x2="500" y2="942"/>
+    </g>
+
+    <!-- six micro dust motes -->
+    <g id="s06-micro" fill="#FFD23F">
+      <circle cx="300" cy="840" r="2.2" opacity="0"/>
+      <circle cx="520" cy="880" r="1.8" opacity="0" fill="#F4EFE3"/>
+      <circle cx="760" cy="900" r="2.4" opacity="0"/>
+      <circle cx="980" cy="860" r="1.6" opacity="0" fill="#FF7A1A"/>
+      <circle cx="1180" cy="900" r="2.0" opacity="0"/>
+      <circle cx="1340" cy="840" r="1.7" opacity="0" fill="#F4EFE3"/>
+    </g>
+
+    <!-- CROWD BEADS, two depths -->
+    <g id="s06-crowd-near" fill="url(#s06-bead-depth)" opacity="0.85"></g>
+    <g id="s06-crowd-far" fill="#8E5FD9" opacity="0.35"></g>
+
+    <!-- ember question mark drawn around the crate -->
+    <g id="s06-question" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path id="s06-q-stroke"
+            d="M 300 250
+               C 190 250 140 352 188 450
+               C 238 556 300 560 336 640
+               C 366 712 342 772 300 812
+               C 250 862 178 856 158 812"
+            stroke="url(#s06-emberline)" stroke-width="24"/>
+      <circle id="s06-q-dot" cx="158" cy="908" r="24" fill="#FF7A1A" stroke="#FFD23F" stroke-width="8" filter="url(#s06-emberBlur)"/>
+      <path id="s06-q-stroke-b"
+            d="M 1370 300
+               C 1480 300 1530 400 1478 500
+               C 1428 606 1370 610 1334 690
+               C 1306 760 1328 820 1372 858"
+            stroke="url(#s06-emberline)" stroke-width="24" opacity="0.55"/>
+    </g>
+
+    <!-- labels -->
+    <g id="s06-labels">
+      <text id="s06-label" x="700" y="176" text-anchor="middle"
+            font-family="Quicksand, sans-serif" font-weight="700" font-size="76"
+            fill="#F4EFE3" stroke="#050814" stroke-width="14"
+            paint-order="stroke fill" letter-spacing="10" opacity="0">FIRST QUESTION</text>
+    </g>
+
+    <!-- vignette -->
+    <rect x="0" y="0" width="1920" height="1080" fill="url(#s06-vignette)"/>
+  </svg>
+</div>
+
+<style>
+  #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+  #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+    background:radial-gradient(circle at 58% 48%, rgba(255,210,63,0.12), transparent 52%);}
+  #s06-label{font-family:"Quicksand",sans-serif;font-weight:700;letter-spacing:10px;}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script>
+(function(){
+  var tl = gsap.timeline({paused:true});
+  var NS = "http://www.w3.org/2000/svg";
+  var qs = function(id){ return document.getElementById(id); };
+
+  /* deterministic pseudo-random */
+  function lcg(seed){ var s = seed; return function(){ s = (s*1664525 + 1013904223) % 4294967296; return s / 4294967296; }; }
+  var rnd = lcg(19591);
+
+  /* --- crowd beads: two depths, streamed past the crate --- */
+  var nearG = qs("s06-crowd-near");
+  var farG = qs("s06-crowd-far");
+
+  function makeBeads(g, count, yMin, yMax, radMin, radMax, startX){
+    var arr = [];
+    for (var i=0;i<count;i++){
+      var c = document.createElementNS(NS,"circle");
+      var r = radMin + rnd()*(radMax-radMin);
+      var y = yMin + rnd()*(yMax-yMin);
+      c.setAttribute("cx", startX + rnd()*600);
+      c.setAttribute("cy", y);
+      c.setAttribute("r", r);
+      g.appendChild(c);
+      arr.push({el:c, dur: 3.2 + rnd()*2.0, delay: -rnd()*6, travel: 1500 + rnd()*700, wob: 12 + rnd()*26, phase: rnd()*Math.PI*2});
+    }
+    return arr;
+  }
+
+  var near = makeBeads(nearG, 12, 800, 900, 12, 22, -240);
+  var far  = makeBeads(farG, 20, 742, 796, 6, 12, -240);
+
+  function streamBeads(arr, yBase){
+    arr.forEach(function(b){
+      tl.fromTo(b.el, {x: -b.travel}, {
+        x: b.travel,
+        duration: b.dur,
+        ease: "none",
+        repeat: 1,
+        yoyo: false
+      }, (b.phase % 1) * 0.6);
+    });
+  }
+  streamBeads(near, 850);
+  streamBeads(far, 770);
+
+  /* --- reveal order --- */
+  // hall wash breathe
+  tl.fromTo(qs("s06-hallwash"), {opacity:0, scaleX:0.9}, {opacity:0.16, scaleX:1.06, duration:4.2, ease:"sine.inOut", transformOrigin:"50% 50%"}, 0);
+  tl.to(qs("s06-hallwash"), {opacity:0.09, duration:3.4, ease:"sine.inOut"}, 4.2);
+
+  // wall seams settle
+  tl.fromTo(qs("s06-wall-seams"), {opacity:0}, {opacity:1, duration:1.6, ease:"power2.out"}, 0.15);
+
+  // plate glass card slides in behind
+  tl.fromTo(qs("s06-plate-card"),
+    {opacity:0, y:46, scale:0.965, transformOrigin:"1365px 538px"},
+    {opacity:1, y:0, scale:1, duration:2.0, ease:"power3.out"}, 0.35);
+
+  // floor pool
+  tl.to(qs("s06-floorpool"), {opacity:1, duration:1.4, ease:"power2.out"}, 0.9);
+  tl.fromTo(qs("s06-floorpool"), {scaleX:0.82}, {scaleX:1.04, duration:2.4, ease:"sine.inOut", transformOrigin:"700px 866px", repeat:3, yoyo:true}, 0);
+
+  // crate side + front
+  tl.fromTo(qs("s06-crate-side-g"), {opacity:0, x:-30}, {opacity:1, x:0, duration:1.3, ease:"power3.out"}, 1.0);
+  tl.fromTo(qs("s06-crate-front-g"), {opacity:0, scaleY:0.86, transformOrigin:"755px 760px"}, {opacity:1, scaleY:1, duration:1.5, ease:"power3.out"}, 1.25);
+
+  // panels grow: roof posts, cap, ridge, legs, plinth
+  tl.fromTo(qs("s06-beam-1"), {scaleY:0, transformOrigin:"330px 340px"}, {scaleY:1, duration:0.7, ease:"back.out(2.2)"}, 2.05);
+  tl.fromTo(qs("s06-beam-2"), {scaleY:0, transformOrigin:"1180px 340px"}, {scaleY:1, duration:0.7, ease:"back.out(2.2)"}, 2.22);
+  tl.fromTo(qs("s06-roof-cap"), {opacity:0, y:-26}, {opacity:1, y:0, duration:0.85, ease:"power3.out"}, 2.5);
+  tl.fromTo(qs("s06-roof-ridge"), {scaleX:0, transformOrigin:"755px 286px"}, {scaleX:1, duration:1.0, ease:"power2.inOut"}, 2.8);
+  tl.fromTo(qs("s06-crate-legs"), {opacity:0}, {opacity:1, duration:0.6, ease:"power2.out"}, 2.7);
+  tl.fromTo(qs("s06-plinth-g"), {opacity:0, y:24}, {opacity:1, y:0, duration:1.0, ease:"power3.out"}, 3.0);
+
+  // three glowing inspection windows draw up from the sill, then bloom
+  tl.fromTo(qs("s06-win-1"), {opacity:0, scaleY:0, transformOrigin:"500px 546px"}, {opacity:1, scaleY:1, duration:0.9, ease:"power2.out"}, 3.45);
+  tl.fromTo(qs("s06-win-2"), {opacity:0, scaleY:0, transformOrigin:"755px 546px"}, {opacity:1, scaleY:1, duration:0.9, ease:"power2.out"}, 3.72);
+  tl.fromTo(qs("s06-win-3"), {opacity:0, scaleY:0, transformOrigin:"1010px 546px"}, {opacity:1, scaleY:1, duration:0.9, ease:"power2.out"}, 3.99);
+  tl.fromTo(document.querySelector("#s06-win-1 circle"), {opacity:0, scale:0.7, transformOrigin:"500px 470px"}, {opacity:1, scale:1, duration:1.2, ease:"power2.out"}, 3.45);
+  tl.fromTo(document.querySelector("#s06-win-2 circle"), {opacity:0, scale:0.7, transformOrigin:"755px 470px"}, {opacity:1, scale:1, duration:1.2, ease:"power2.out"}, 3.72);
+  tl.fromTo(document.querySelector("#s06-win-3 circle"), {opacity:0, scale:0.7, transformOrigin:"1010px 470px"}, {opacity:1, scale:1, duration:1.2, ease:"power2.out"}, 3.99);
+
+  // window glow breathing loop
+  [["s06-win-1","500px 470px"],["s06-win-2","755px 470px"],["s06-win-3","1010px 470px"]].forEach(function(w,i){
+    tl.fromTo(qs(w[0]), {opacity:0.92}, {opacity:1, duration:0.9 + i*0.1, ease:"sine.inOut", repeat:3, yoyo:true, transformOrigin:w[1]}, 4.8 + i*0.3);
+  });
+
+  // label
+  tl.fromTo(qs("s06-label"), {opacity:0, y:26}, {opacity:1, y:0, duration:1.1, ease:"power3.out"}, 4.55);
+
+  // ember question mark draws itself
+  var qStroke = qs("s06-q-stroke");
+  var qLen = qStroke.getTotalLength();
+  qStroke.style.strokeDasharray = qLen;
+  qStroke.style.strokeDashoffset = qLen;
+  tl.to(qStroke, {strokeDashoffset:0, duration:2.9, ease:"power2.inOut"}, 5.05);
+
+  var qb = qs("s06-q-stroke-b");
+  var qbLen = qb.getTotalLength();
+  qb.style.strokeDasharray = qbLen;
+  qb.style.strokeDashoffset = qbLen;
+  tl.to(qb, {strokeDashoffset:0, duration:2.4, ease:"power2.inOut"}, 5.85);
+
+  tl.fromTo(qs("s06-q-dot"), {opacity:0, scale:0.85, transformOrigin:"158px 908px"}, {opacity:1, scale:1, duration:0.7, ease:"power2.out"}, 7.55);
+
+  // three parallax rates: bg hall wash, mg crate, fg crowd
+  tl.fromTo(qs("s06-hallwash"), {x:-8}, {x:8, duration:11.18, ease:"sine.inOut"}, 0);
+  tl.fromTo(qs("s06-crate"), {x:-14}, {x:14, duration:11.18, ease:"sine.inOut"}, 0);
+  tl.fromTo(qs("s06-crowd-near"), {x:-24}, {x:24, duration:11.18, ease:"sine.inOut"}, 0);
+
+  // late craft (t > 6 s): plate sheen, ember shimmer, crowd drift, motes
+  tl.to(qs("s06-plate-sheen"), {opacity:0.9, duration:1.4, yoyo:true, repeat:2, ease:"sine.inOut"}, 6.2);
+  tl.to(qs("s06-q-stroke-b"), {strokeWidth:30, duration:1.2, yoyo:true, repeat:2, ease:"sine.inOut"}, 6.5);
+  tl.to(qs("s06-crowd-far"), {x:16, duration:2.2, yoyo:true, repeat:1, ease:"sine.inOut"}, 6.0);
+  tl.to("#s06-micro circle", {opacity:0.55, duration:0.8, stagger:0.12, ease:"power1.out"}, 6.0);
+
+  // slow breathing push on whole frame
+  tl.fromTo("#s06-crate", {scale:1, transformOrigin:"755px 560px"}, {scale:1.045, duration:3.2, ease:"sine.inOut"}, 7.6);
+  tl.fromTo(qs("s06-question"), {opacity:0.86, scale:0.995, transformOrigin:"755px 560px"}, {opacity:1, scale:1.02, duration:3.0, ease:"sine.inOut"}, 7.9);
+
+  // hold with a breath-out into the end
+  tl.to(qs("s06-plate-card"), {filter:"brightness(1.06)", duration:1.6, ease:"sine.inOut"}, 9.0);
+
+  tl.to({}, {duration: 11.18}, 0);
+  window.__timelines["06-first-question"] = tl;
+})();
+</script>
+</template>

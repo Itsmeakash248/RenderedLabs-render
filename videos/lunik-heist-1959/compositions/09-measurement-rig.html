@@ -1,0 +1,458 @@
+<template id="s09-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="09-measurement-rig" data-width="1920" data-height="1080" data-start="0" data-duration="16.520">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="s09-venue" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0A0E24"/>
+          <stop offset="0.6" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s09-panel" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s09-hull" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.42" stop-color="#B8C0D8" stop-opacity="0.28"/>
+          <stop offset="0.55" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s09-gold" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.12"/>
+          <stop offset="0.5" stop-color="#FFD23F" stop-opacity="0.9"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0.35"/>
+        </linearGradient>
+        <linearGradient id="s09-glass" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.07"/>
+          <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.015"/>
+          <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="s09-plate-edge" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.55"/>
+          <stop offset="1" stop-color="#B8C0D8" stop-opacity="0.10"/>
+        </linearGradient>
+        <radialGradient id="s09-lamp" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.5"/>
+          <stop offset="0.45" stop-color="#FFD23F" stop-opacity="0.12"/>
+          <stop offset="1" stop-color="#FFD23F" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s09-violet" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.32"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s09-gold-core" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.95"/>
+          <stop offset="1" stop-color="#FFD23F" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="s09-goldGlow" x="-70%" y="-70%" width="240%" height="240%">
+          <feGaussianBlur stdDeviation="8" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="s09-violetGlow" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="10" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="s09-soft" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur stdDeviation="5"/>
+        </filter>
+        <filter id="s09-haze" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="30"/>
+        </filter>
+        <clipPath id="s09-plate-clip">
+          <rect x="1188" y="118" width="650.6" height="842" rx="12"/>
+        </clipPath>
+        <clipPath id="s09-hull-clip">
+          <rect id="s09-hull-reveal" x="336" y="190" width="450" height="0"/>
+        </clipPath>
+        <clipPath id="s09-swatch-clip">
+          <rect x="0" y="0" width="150" height="54" rx="27"/>
+        </clipPath>
+      </defs>
+
+      <g id="s09-world">
+        <!-- ================= BACKGROUND PLANE ================= -->
+        <g id="s09-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s09-venue)"/>
+          <ellipse cx="700" cy="420" rx="760" ry="420" fill="url(#s09-violet)" opacity="0.8"/>
+          <ellipse cx="260" cy="840" rx="520" ry="260" fill="url(#s09-violet)" opacity="0.45"/>
+
+          <g id="s09-venue-panels">
+            <g id="s09-venue" opacity="0.7">
+              <rect x="40" y="220" width="300" height="620" rx="20" fill="#151B3B" opacity="0.55"/>
+              <rect x="70" y="260" width="240" height="90" rx="14" fill="#8E5FD9" opacity="0.16"/>
+              <rect x="70" y="380" width="240" height="60" rx="12" fill="#B8C0D8" opacity="0.10"/>
+              <rect x="70" y="470" width="160" height="60" rx="12" fill="#B8C0D8" opacity="0.08"/>
+              <rect x="70" y="560" width="240" height="16" rx="8" fill="#FFD23F" opacity="0.14"/>
+              <rect x="300" y="160" width="360" height="700" rx="24" fill="#151B3B" opacity="0.42"/>
+              <rect x="338" y="206" width="284" height="120" rx="16" fill="#0A0E24" opacity="0.9"/>
+              <rect x="338" y="356" width="284" height="18" rx="9" fill="#B8C0D8" opacity="0.16"/>
+              <rect x="338" y="398" width="190" height="18" rx="9" fill="#B8C0D8" opacity="0.12"/>
+              <rect x="620" y="250" width="220" height="610" rx="18" fill="#151B3B" opacity="0.34"/>
+              <g stroke="#B8C0D8" stroke-width="6" opacity="0.2">
+                <line x1="40" y1="840" x2="860" y2="840"/>
+                <line x1="40" y1="884" x2="860" y2="884"/>
+                <line x1="40" y1="928" x2="860" y2="928"/>
+              </g>
+            </g>
+          </g>
+
+          <g id="s09-truss" stroke="#B8C0D8" stroke-width="8" opacity="0.22">
+            <path d="M0 120 L900 120"/>
+            <path d="M0 168 L900 168"/>
+            <path d="M120 120 L120 168"/>
+            <path d="M300 120 L300 168"/>
+            <path d="M480 120 L480 168"/>
+            <path d="M660 120 L660 168"/>
+            <path d="M840 120 L840 168"/>
+          </g>
+
+          <g id="s09-work-lamp">
+            <rect x="128" y="86" width="150" height="54" rx="18" fill="#151B3B" stroke="#B8C0D8" stroke-width="10"/>
+            <rect x="150" y="136" width="106" height="18" rx="9" fill="#FFD23F" opacity="0.9"/>
+            <ellipse cx="203" cy="160" rx="18" ry="10" fill="#FFD23F" filter="url(#s09-goldGlow)"/>
+            <polygon id="s09-lamp-cone" points="203,160 -40,940 470,940" fill="url(#s09-lamp)" opacity="0.2"/>
+          </g>
+
+          <g id="s09-venue-dust" fill="#F4EFE3">
+            <circle cx="320" cy="300" r="3" opacity="0.25"/>
+            <circle cx="470" cy="220" r="2.2" opacity="0.2"/>
+            <circle cx="760" cy="340" r="2.6" opacity="0.22"/>
+            <circle cx="900" cy="520" r="2" opacity="0.18"/>
+            <circle cx="240" cy="640" r="2.4" opacity="0.2"/>
+            <circle cx="820" cy="700" r="2.8" opacity="0.2"/>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: RIG + PLATE ================= -->
+        <g id="s09-mg">
+          <!-- clock arc behind rig -->
+          <g id="s09-clock">
+            <circle cx="560" cy="540" r="330" fill="none" stroke="#151B3B" stroke-width="22"/>
+            <circle cx="560" cy="540" r="330" fill="none" stroke="#B8C0D8" stroke-width="4" opacity="0.25"/>
+            <circle id="s09-clock-arc" cx="560" cy="540" r="330" fill="none" stroke="url(#s09-gold)" stroke-width="12"
+                    stroke-dasharray="2073" stroke-dashoffset="2073" stroke-linecap="round" transform="rotate(-90 560 540)"/>
+            <g id="s09-clock-ticks" stroke="#B8C0D8" stroke-width="6" stroke-linecap="round">
+              <line x1="560" y1="222" x2="560" y2="250"/>
+              <line x1="643" y1="233" x2="636" y2="260"/>
+              <line x1="720" y1="266" x2="706" y2="289"/>
+              <line x1="786" y1="320" x2="763" y2="337"/>
+              <line x1="834" y1="391" x2="807" y2="401"/>
+              <line x1="860" y1="474" x2="830" y2="476"/>
+              <line x1="860" y1="560" x2="830" y2="560"/>
+              <line x1="838" y1="643" x2="811" y2="636"/>
+              <line x1="792" y1="718" x2="770" y2="703"/>
+              <line x1="726" y1="776" x2="710" y2="755"/>
+              <line x1="645" y1="810" x2="637" y2="783"/>
+              <line x1="560" y1="822" x2="560" y2="792"/>
+              <line x1="476" y1="810" x2="484" y2="783"/>
+              <line x1="396" y1="776" x2="412" y2="755"/>
+              <line x1="330" y1="718" x2="351" y2="703"/>
+              <line x1="284" y1="643" x2="311" y2="636"/>
+              <line x1="260" y1="560" x2="290" y2="560"/>
+              <line x1="262" y1="474" x2="292" y2="476"/>
+              <line x1="288" y1="391" x2="315" y2="401"/>
+              <line x1="334" y1="320" x2="357" y2="337"/>
+              <line x1="400" y1="266" x2="414" y2="289"/>
+              <line x1="477" y1="233" x2="484" y2="260"/>
+              <line x1="560" y1="222" x2="560" y2="244"/>
+              <line x1="560" y1="836" x2="560" y2="858"/>
+            </g>
+            <g id="s09-needle" transform="rotate(0 560 540)">
+              <line x1="560" y1="540" x2="560" y2="252" stroke="#FFD23F" stroke-width="10" stroke-linecap="round"/>
+              <circle cx="560" cy="540" r="22" fill="#050814" stroke="#FFD23F" stroke-width="8"/>
+              <circle cx="560" cy="540" r="8" fill="#FFD23F"/>
+              <circle cx="560" cy="252" r="13" fill="#FFD23F" filter="url(#s09-goldGlow)"/>
+            </g>
+          </g>
+
+          <!-- rocket hull -->
+          <g id="s09-hull">
+            <g clip-path="url(#s09-hull-clip)">
+              <path d="M420 330 Q420 300 450 290 L520 232 Q560 202 600 232 L670 290 Q700 300 700 330 L700 820 Q700 850 670 850 L450 850 Q420 850 420 820 Z"
+                    fill="url(#s09-hull)"/>
+              <path d="M420 330 Q420 300 450 290 L520 232 Q560 202 600 232 L670 290 Q700 300 700 330 L700 820 Q700 850 670 850 L450 850 Q420 850 420 820 Z"
+                    fill="none" stroke="#B8C0D8" stroke-width="24"/>
+              <path id="s09-hull-rim" d="M420 330 Q420 300 450 290 L520 232 Q560 202 600 232 L670 290 Q700 300 700 330 L700 820"
+                    fill="none" stroke="#FF7A1A" stroke-width="10" stroke-dasharray="1500" stroke-dashoffset="1500"/>
+              <circle cx="560" cy="360" r="44" fill="#8E5FD9" opacity="0.55" stroke="#F4EFE3" stroke-width="8"/>
+              <circle cx="560" cy="360" r="18" fill="#F4EFE3" opacity="0.7"/>
+              <g stroke="#B8C0D8" stroke-width="6" opacity="0.35">
+                <line x1="440" y1="470" x2="680" y2="470"/>
+                <line x1="430" y1="600" x2="690" y2="600"/>
+                <line x1="430" y1="740" x2="690" y2="740"/>
+              </g>
+              <path d="M420 760 L360 820 Q346 836 366 846 L420 862 Z" fill="#151B3B" stroke="#B8C0D8" stroke-width="16"/>
+              <path d="M700 760 L760 820 Q774 836 754 846 L700 862 Z" fill="#151B3B" stroke="#B8C0D8" stroke-width="16"/>
+              <rect x="438" y="850" width="244" height="38" rx="19" fill="#151B3B" stroke="#B8C0D8" stroke-width="14"/>
+            </g>
+          </g>
+
+          <!-- wiring harness -->
+          <g id="s09-wiring" fill="none" stroke-linecap="round">
+            <path class="s09-wire" d="M600 420 L640 452 L640 500 L676 530" stroke="#FFD23F" stroke-width="12" stroke-dasharray="420" stroke-dashoffset="420"/>
+            <path class="s09-wire" d="M640 500 L600 540 L600 590" stroke="#B8C0D8" stroke-width="12" stroke-dasharray="360" stroke-dashoffset="360"/>
+            <path class="s09-wire" d="M600 590 L520 610 L500 660" stroke="#FFD23F" stroke-width="12" stroke-dasharray="400" stroke-dashoffset="400"/>
+            <path class="s09-wire" d="M640 500 L700 480 L740 500" stroke="#B8C0D8" stroke-width="12" stroke-dasharray="320" stroke-dashoffset="320"/>
+            <path class="s09-wire" d="M500 660 L470 700 L470 760" stroke="#B8C0D8" stroke-width="12" stroke-dasharray="320" stroke-dashoffset="320"/>
+            <g id="s09-wire-beads" fill="#FFD23F">
+              <circle cx="676" cy="530" r="13" opacity="0"/>
+              <circle cx="600" cy="590" r="13" opacity="0"/>
+              <circle cx="500" cy="660" r="13" opacity="0"/>
+              <circle cx="740" cy="500" r="13" opacity="0"/>
+              <circle cx="470" cy="760" r="13" opacity="0"/>
+            </g>
+          </g>
+
+          <!-- caliper arms -->
+          <g id="s09-calipers">
+            <g id="s09-cal-left" transform-origin="120 560">
+              <rect x="110" y="548" width="310" height="24" rx="12" fill="#151B3B" stroke="#B8C0D8" stroke-width="12"/>
+              <rect x="392" y="530" width="62" height="60" rx="12" fill="#FFD23F"/>
+              <rect x="404" y="542" width="38" height="36" rx="8" fill="#050814" opacity="0.6"/>
+              <circle cx="423" cy="560" r="10" fill="#FFD23F" filter="url(#s09-goldGlow)"/>
+            </g>
+            <g id="s09-cal-right" transform-origin="1010 620">
+              <rect x="700" y="608" width="310" height="24" rx="12" fill="#151B3B" stroke="#B8C0D8" stroke-width="12"/>
+              <rect x="692" y="590" width="62" height="60" rx="12" fill="#FFD23F"/>
+              <rect x="704" y="602" width="38" height="36" rx="8" fill="#050814" opacity="0.6"/>
+              <circle cx="723" cy="620" r="10" fill="#FFD23F" filter="url(#s09-goldGlow)"/>
+            </g>
+            <g id="s09-cal-bottom" transform-origin="560 1010">
+              <rect x="548" y="862" width="24" height="150" rx="12" fill="#151B3B" stroke="#B8C0D8" stroke-width="12"/>
+              <rect x="530" y="862" width="60" height="56" rx="12" fill="#FFD23F"/>
+              <rect x="542" y="874" width="36" height="32" rx="8" fill="#050814" opacity="0.6"/>
+              <circle cx="560" cy="890" r="10" fill="#FFD23F" filter="url(#s09-goldGlow)"/>
+            </g>
+          </g>
+
+          <!-- four marking swatches, one resolves -->
+          <g id="s09-swatches">
+            <g class="s09-swatch" transform="translate(560 436)">
+              <rect width="150" height="54" rx="27" fill="#151B3B" stroke="#8E5FD9" stroke-width="8"/>
+              <g clip-path="url(#s09-swatch-clip)" stroke="#B8C0D8" stroke-width="6" opacity="0.45">
+                <line x1="-10" y1="8" x2="60" y2="46"/>
+                <line x1="14" y1="2" x2="90" y2="54"/>
+                <line x1="52" y1="-4" x2="130" y2="58"/>
+                <line x1="96" y1="-8" x2="168" y2="46"/>
+              </g>
+              <circle cx="132" cy="27" r="9" fill="#8E5FD9" opacity="0.7"/>
+            </g>
+            <g class="s09-swatch" transform="translate(560 512)">
+              <rect width="150" height="54" rx="27" fill="#151B3B" stroke="#8E5FD9" stroke-width="8"/>
+              <g clip-path="url(#s09-swatch-clip)" stroke="#B8C0D8" stroke-width="6" opacity="0.4">
+                <line x1="-6" y1="40" x2="66" y2="4"/>
+                <line x1="30" y1="52" x2="104" y2="12"/>
+                <line x1="78" y1="58" x2="158" y2="16"/>
+              </g>
+              <circle cx="132" cy="27" r="9" fill="#8E5FD9" opacity="0.7"/>
+            </g>
+            <g class="s09-swatch" transform="translate(560 588)">
+              <rect width="150" height="54" rx="27" fill="#151B3B" stroke="#8E5FD9" stroke-width="8"/>
+              <g clip-path="url(#s09-swatch-clip)" stroke="#B8C0D8" stroke-width="6" opacity="0.5">
+                <line x1="8" y1="-6" x2="8" y2="60"/>
+                <line x1="44" y1="-6" x2="44" y2="60"/>
+                <line x1="80" y1="-6" x2="80" y2="60"/>
+                <line x1="116" y1="-6" x2="116" y2="60"/>
+              </g>
+              <circle cx="132" cy="27" r="9" fill="#8E5FD9" opacity="0.7"/>
+            </g>
+            <g id="s09-swatch-gold" class="s09-swatch" transform="translate(560 664)">
+              <rect width="150" height="54" rx="27" fill="#151B3B" stroke="#FFD23F" stroke-width="8"/>
+              <rect x="8" y="8" width="134" height="38" rx="19" fill="#FFD23F" opacity="0"/>
+              <g id="s09-gold-glyphs" fill="#050814" opacity="0">
+                <rect x="24" y="18" width="30" height="8" rx="4"/>
+                <rect x="24" y="32" width="46" height="8" rx="4"/>
+                <circle cx="96" cy="24" r="7"/>
+                <rect x="110" y="26" width="20" height="10" rx="5"/>
+              </g>
+              <circle cx="132" cy="27" r="9" fill="#FFD23F" opacity="0.8"/>
+            </g>
+          </g>
+
+          <!-- glass plate mount, 78% canvas height -->
+          <g id="s09-plate-g">
+            <rect x="1150" y="80" width="728" height="920" rx="30" fill="none" stroke="#8E5FD9" stroke-width="3" opacity="0.18"/>
+            <rect x="1156" y="86" width="716" height="908" rx="26" fill="#151B3B" stroke="rgba(141,164,237,0.20)" stroke-width="1"/>
+            <rect x="1170" y="100" width="688" height="880" rx="18" fill="#0A0E24"/>
+            <rect x="1170" y="100" width="688" height="880" rx="18" fill="url(#s09-glass)" opacity="0.5"/>
+            <image href="../plates/processed/pl-turn-01.png" x="1188" y="118" width="650.6" height="842"
+                   preserveAspectRatio="xMidYMid meet" clip-path="url(#s09-plate-clip)"/>
+            <rect x="1188" y="118" width="650.6" height="842" rx="12" fill="none" stroke="url(#s09-plate-edge)" stroke-width="4"/>
+            <g clip-path="url(#s09-plate-clip)">
+              <rect id="s09-plate-band" x="1030" y="118" width="140" height="842" fill="#FFFFFF" opacity="0.05" transform="skewX(-12)"/>
+            </g>
+            <rect id="s09-plate-sheen" x="1188" y="118" width="650.6" height="842" rx="12" fill="url(#s09-glass)" opacity="0.5"/>
+            <g fill="#B8C0D8" opacity="0.55">
+              <circle cx="1188" cy="120" r="5"/>
+              <circle cx="1838" cy="120" r="5"/>
+              <circle cx="1188" cy="958" r="5"/>
+              <circle cx="1838" cy="958" r="5"/>
+            </g>
+            <!-- source-pixel overlays: viewBox 0 0 1275 1650 -->
+            <svg x="1188" y="118" width="650.6" height="842" viewBox="0 0 1275 1650" preserveAspectRatio="xMidYMid meet">
+              <g id="s09-dormant" opacity="0.10">
+                <rect x="700" y="286" width="367" height="65" rx="6" fill="none" stroke="#FFD23F" stroke-width="16"/>
+                <g stroke="#FFD23F" stroke-width="8" stroke-linecap="round">
+                  <line x1="714" y1="278" x2="714" y2="296"/>
+                  <line x1="1053" y1="278" x2="1053" y2="296"/>
+                </g>
+              </g>
+              <g id="s09-pre-echo" opacity="0">
+                <rect x="785" y="1209" width="365" height="65" rx="6" fill="none" stroke="#8E5FD9" stroke-width="24" opacity="0.35" filter="url(#s09-violetGlow)"/>
+                <g stroke="#8E5FD9" stroke-width="12" stroke-linecap="round" fill="none">
+                  <path d="M785 1237 L785 1209 L813 1209"/>
+                  <path d="M1122 1209 L1150 1209 L1150 1237"/>
+                  <path d="M785 1246 L785 1274 L813 1274"/>
+                  <path d="M1150 1246 L1150 1274 L1122 1274"/>
+                </g>
+              </g>
+            </svg>
+          </g>
+
+          <!-- badge -->
+          <g id="s09-badge">
+            <rect x="88" y="84" width="392" height="100" rx="50" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="102" y="98" width="364" height="72" rx="36" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.35"/>
+            <g fill="#FFD23F" opacity="0.7">
+              <circle cx="116" cy="134" r="5"/>
+              <circle cx="452" cy="134" r="5"/>
+            </g>
+            <text x="284" y="157" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="52"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="10" paint-order="stroke fill" letter-spacing="2"
+                  textLength="300" lengthAdjust="spacingAndGlyphs">THE TURN</text>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND PLANE ================= -->
+        <g id="s09-fg">
+          <ellipse cx="560" cy="1010" rx="330" ry="48" fill="#8E5FD9" opacity="0.16" filter="url(#s09-haze)"/>
+          <g id="s09-tip-glints" fill="#FFD23F">
+            <circle cx="423" cy="560" r="6" opacity="0"/>
+            <circle cx="723" cy="620" r="6" opacity="0"/>
+            <circle cx="560" cy="890" r="6" opacity="0"/>
+          </g>
+          <g id="s09-fore-dust" fill="#F4EFE3">
+            <circle cx="180" cy="820" r="4" opacity="0.18"/>
+            <circle cx="330" cy="900" r="3" opacity="0.16"/>
+            <circle cx="700" cy="930" r="4" opacity="0.18"/>
+            <circle cx="860" cy="800" r="3" opacity="0.14"/>
+            <circle cx="980" cy="880" r="4" opacity="0.16"/>
+          </g>
+          <g id="s09-pulse-rings" fill="none" stroke="#FFD23F" opacity="0">
+            <circle cx="560" cy="540" r="360" stroke-width="8"/>
+            <circle cx="560" cy="540" r="390" stroke-width="4"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:radial-gradient(circle at 18% 24%, rgba(142,95,217,0.16), transparent 52%);}
+    .scene-persp{position:absolute;inset:0;perspective:1500px;perspective-origin:36% 48%;}
+    #stage{display:block;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      /* ---------- initial states ---------- */
+      gsap.set("#s09-plate-g", { y: 50, opacity: 0, rotationY: 8, transformOrigin: "50% 50%" });
+      gsap.set("#s09-plate-sheen", { opacity: 0 });
+      gsap.set("#s09-plate-band", { x: 0 });
+      gsap.set("#s09-dormant", { opacity: 0 });
+      gsap.set("#s09-pre-echo", { opacity: 0, scale: 0.92, transformOrigin: "50% 50%" });
+      gsap.set("#s09-venue", { opacity: 0, rotationY: -22, transformOrigin: "40% 50%" });
+      gsap.set("#s09-lamp-cone", { scaleY: 0.05, transformOrigin: "50% 0%" });
+      gsap.set("#s09-work-lamp", { opacity: 0 });
+      gsap.set("#s09-venue-panels rect", { scaleY: 0.2, opacity: 0, transformOrigin: "50% 100%" });
+      gsap.set("#s09-hull-reveal", { attr: { height: 0 } });
+      gsap.set("#s09-hull-rim", { strokeDashoffset: 1500 });
+      gsap.set("#s09-cal-left", { scaleX: 0, transformOrigin: "120px 560px" });
+      gsap.set("#s09-cal-right", { scaleX: 0, transformOrigin: "1010px 620px" });
+      gsap.set("#s09-cal-bottom", { scaleY: 0, transformOrigin: "560px 1010px" });
+      gsap.set("#s09-wire-beads circle", { opacity: 0, scale: 0.3, transformOrigin: "50% 50%" });
+      gsap.set("#s09-clock-arc", { strokeDashoffset: 2073 });
+      gsap.set("#s09-clock-ticks line", { scaleY: 0.2, opacity: 0, transformOrigin: "50% 100%" });
+      gsap.set("#s09-needle", { rotation: 0, transformOrigin: "560px 540px" });
+      gsap.set(".s09-swatch", { scaleY: 0, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s09-gold-glyphs", { opacity: 0 });
+      gsap.set("#s09-swatch-gold rect:nth-child(2)", { opacity: 0 });
+      gsap.set("#s09-badge", { scale: 1.45, opacity: 0, rotation: 4, transformOrigin: "50% 50%" });
+      gsap.set("#s09-tip-glints circle", { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" });
+      gsap.set("#s09-pulse-rings", { opacity: 0, scale: 0.7, transformOrigin: "560px 540px" });
+      gsap.set("#s09-venue-dust circle", { opacity: 0 });
+      gsap.set("#s09-fore-dust circle", { opacity: 0 });
+
+      /* ---------- phase 1: ghost venue draws ---------- */
+      tl.to("#s09-work-lamp", { opacity: 1, duration: 0.8, ease: "power2.out" }, 0.0);
+      tl.to("#s09-lamp-cone", { scaleY: 1, duration: 2.0, ease: "power2.out" }, 0.15);
+      tl.to("#s09-venue", { opacity: 0.7, rotationY: -10, duration: 3.0, ease: "power2.out" }, 0.2);
+      tl.to("#s09-venue-panels rect", { scaleY: 1, opacity: 1, duration: 0.8, stagger: 0.09, ease: "power3.out" }, 0.6);
+      tl.to("#s09-venue-dust circle", { opacity: 0.22, duration: 1.2, stagger: 0.1, ease: "power1.out" }, 0.8);
+      tl.to("#s09-plate-g", { y: 0, opacity: 1, rotationY: 0, duration: 1.6, ease: "power3.out" }, 0.7);
+      tl.to("#s09-dormant", { opacity: 0.10, duration: 0.8, ease: "power1.out" }, 1.6);
+      tl.to("#s09-plate-sheen", { opacity: 0.45, duration: 1.0, ease: "power1.out" }, 1.4);
+
+      /* ---------- phase 2: hull + calipers ---------- */
+      tl.to("#s09-hull-reveal", { attr: { height: 706 }, duration: 2.0, ease: "power2.inOut" }, 2.4);
+      tl.to("#s09-hull-rim", { strokeDashoffset: 0, duration: 1.6, ease: "power2.inOut" }, 3.1);
+      tl.to("#s09-cal-left", { scaleX: 1, duration: 0.7, ease: "power3.out" }, 3.9);
+      tl.to("#s09-cal-right", { scaleX: 1, duration: 0.7, ease: "power3.out" }, 4.25);
+      tl.to("#s09-cal-bottom", { scaleY: 1, duration: 0.7, ease: "power3.out" }, 4.6);
+      tl.to("#s09-calipers", { scale: 1.06, duration: 0.35, transformOrigin: "50% 50%", ease: "power2.in" }, 5.2);
+      tl.to("#s09-calipers", { scale: 1, duration: 0.55, ease: "back.out(2)" }, 5.55);
+      tl.to("#s09-tip-glints circle", { opacity: 0.9, scale: 1, duration: 0.5, stagger: 0.14, ease: "back.out(2)" }, 5.35);
+      tl.to("#s09-tip-glints", { opacity: 0.55, duration: 1.2, yoyo: true, repeat: 2, ease: "sine.inOut" }, 6.4);
+
+      /* ---------- phase 3: wiring harness ---------- */
+      tl.to(".s09-wire", { strokeDashoffset: 0, duration: 1.5, stagger: 0.28, ease: "power2.inOut" }, 5.9);
+      tl.to("#s09-wire-beads circle", { opacity: 0.85, scale: 1, duration: 0.45, stagger: 0.12, ease: "back.out(2)" }, 7.1);
+      tl.to("#s09-wire-beads", { opacity: 0.55, duration: 1.3, yoyo: true, repeat: 2, ease: "sine.inOut" }, 8.2);
+
+      /* ---------- phase 4: 24-hour arc fills ---------- */
+      tl.to("#s09-clock-arc", { strokeDashoffset: 0, duration: 8.8, ease: "power1.inOut" }, 6.8);
+      tl.to("#s09-clock-ticks line", { scaleY: 1, opacity: 0.5, duration: 0.4, stagger: 0.055, ease: "power2.out" }, 7.2);
+      tl.to("#s09-needle", { rotation: 310, duration: 9.0, ease: "power1.inOut" }, 7.0);
+      tl.to("#s09-clock", { rotation: 4, duration: 1.55, yoyo: true, repeat: 2, transformOrigin: "560px 540px", ease: "sine.inOut" }, 10.4);
+
+      /* ---------- phase 5: four swatches stamp ---------- */
+      tl.to(".s09-swatch", { scaleY: 1, opacity: 1, duration: 0.42, stagger: 0.38, ease: "power4.in" }, 9.4);
+      tl.to(".s09-swatch", { scaleY: 1.06, duration: 0.16, stagger: 0.38, yoyo: true, repeat: 1, ease: "power2.out" }, 9.82);
+      tl.to("#s09-swatch-gold rect:nth-child(2)", { opacity: 0.95, duration: 0.7, ease: "power2.out" }, 12.1);
+      tl.to("#s09-gold-glyphs", { opacity: 1, duration: 0.6, ease: "power2.out" }, 12.35);
+      tl.to("#s09-swatch-gold", { scale: 1.08, duration: 0.5, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 12.6);
+
+      /* ---------- phase 6: pre-echo + retract ---------- */
+      tl.to("#s09-pre-echo", { opacity: 1, scale: 1, duration: 0.6, ease: "power2.out" }, 12.9);
+      tl.to("#s09-pre-echo", { opacity: 0.35, duration: 0.8, ease: "power1.out" }, 13.5);
+      tl.to("#s09-pre-echo", { opacity: 0.55, duration: 0.77, yoyo: true, repeat: 2, ease: "sine.inOut" }, 14.2);
+      tl.to("#s09-calipers", { scale: 0.94, duration: 0.9, transformOrigin: "50% 50%", ease: "power2.inOut" }, 14.1);
+      tl.to("#s09-mg", { rotationY: 12, duration: 2.0, transformOrigin: "42% 50%", ease: "power2.inOut" }, 13.6);
+      tl.to("#s09-pulse-rings", { opacity: 0.55, scale: 1, duration: 0.7, ease: "power2.out" }, 14.8);
+      tl.to("#s09-pulse-rings", { opacity: 0, scale: 1.12, duration: 1.0, ease: "power2.in" }, 15.5);
+      tl.to(".s09-swatch", { opacity: 0.72, duration: 0.55, stagger: 0.08, yoyo: true, repeat: 1, ease: "sine.inOut" }, 14.4);
+
+      /* ---------- parallax + living holds ---------- */
+      tl.fromTo("#s09-bg", { x: -18, rotationY: -2 }, { x: 18, rotationY: 2, duration: 16.52, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s09-mg", { x: -8 }, { x: 8, duration: 16.52, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s09-fg", { x: 10 }, { x: -10, duration: 16.52, ease: "sine.inOut" }, 0);
+      tl.to("#s09-lamp-cone", { opacity: 0.28, duration: 2.6, yoyo: true, repeat: 3, ease: "sine.inOut" }, 2.2);
+      tl.to("#s09-plate-sheen", { opacity: 0.72, duration: 1.6, yoyo: true, repeat: 3, ease: "sine.inOut" }, 8.4);
+      tl.to("#s09-badge", { y: -6, duration: 1.4, yoyo: true, repeat: 3, ease: "sine.inOut" }, 7.6);
+      tl.to("#s09-fore-dust", { y: -22, duration: 3.2, yoyo: true, repeat: 2, ease: "sine.inOut" }, 3.4);
+      tl.to("#s09-plate-band", { x: 940, duration: 1.5, ease: "power2.inOut" }, 15.0);
+      tl.to("#s09-world", { scale: 1.045, transformOrigin: "38% 50%", duration: 2.4, ease: "power1.inOut" }, 14.1);
+
+      tl.to({}, { duration: 16.520 }, 0);
+      window.__timelines["09-measurement-rig"] = tl;
+    })();
+  </script>
+</div>
+</template>

@@ -1,0 +1,849 @@
+{
+  "contract": "C8b",
+  "version": 3,
+  "slug": "lunik-heist-1959",
+  "stage": "S3",
+  "generated_at": "2026-11-06T20:20:00+00:00",
+  "total_plates": 14,
+  "segment_counts": {
+    "exhibition": 5,
+    "turn": 2,
+    "night": 3,
+    "seal": 4
+  },
+  "triage_coverage": "100%",
+  "plates": [
+    {
+      "asset_id": "pl-exhibition-01",
+      "segment": "exhibition",
+      "processed_path": "plates/processed/pl-exhibition-01.png",
+      "quote_json": "plates/processed/pl-exhibition-01.png.json",
+      "source_url": "https://www.cia.gov/resources/csi/static/Kidnapping-of-the-Lunik.pdf",
+      "source_id": "finer",
+      "publication_date": "1967 (Studies in Intelligence 11:1, Winter 1967); declassified as sanitized 1995-09-18",
+      "credit": "CIA, Studies in Intelligence (1967)",
+      "evidence_rationale": "CIA's own account states intelligence twice gained extended access and the second time borrowed the Lunik overnight, returning it before the Soviets missed it.",
+      "fact_ids": [
+        "LK-001"
+      ],
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "scale_to_fit": {
+        "source_width": 1275,
+        "source_height": 1650,
+        "processed_width": 1275,
+        "processed_height": 1650,
+        "longest_edge_limit": 1920,
+        "method": "lanczos proportional downscale; no upscale",
+        "data_clipping": false,
+        "note": "portrait document page fits under 1920 max edge; mount height-fit at 75-88% canvas, no content cropped"
+      },
+      "warm_grade": {
+        "R": "+1.5%",
+        "B": "-1.5%",
+        "applied": true
+      },
+      "triage": {
+        "recommended_mount": "framed-glass",
+        "legibility": "medium",
+        "contrast_fit": "pass",
+        "motion_treatment": "living_hold_slow_drift",
+        "anti_outdated_audit": "pass",
+        "verdict": "approved"
+      },
+      "quote_boxes": [
+        {
+          "phrase": "twice gained extended access to the Lunik",
+          "x": 239,
+          "y": 1014,
+          "w": 673,
+          "h": 37
+        },
+        {
+          "phrase": "before the Soviets missed it",
+          "x": 700,
+          "y": 1051,
+          "w": 436,
+          "h": 37
+        }
+      ],
+      "boxes_dropped_offscreen": 0
+    },
+    {
+      "asset_id": "pl-exhibition-02",
+      "segment": "exhibition",
+      "processed_path": "plates/processed/pl-exhibition-02.png",
+      "quote_json": "plates/processed/pl-exhibition-02.png.json",
+      "source_url": "https://www.cia.gov/resources/csi/static/Kidnapping-of-the-Lunik.pdf",
+      "source_id": "finer",
+      "publication_date": "1967 (Studies in Intelligence 11:1, Winter 1967); declassified as sanitized 1995-09-18",
+      "credit": "CIA, Studies in Intelligence (1967)",
+      "evidence_rationale": "Finer records the crate as approximately 20 ft long and 11 ft wide with a roof about 14 ft high at the peak.",
+      "fact_ids": [
+        "LK-003"
+      ],
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "scale_to_fit": {
+        "source_width": 1275,
+        "source_height": 1650,
+        "processed_width": 1275,
+        "processed_height": 1650,
+        "longest_edge_limit": 1920,
+        "method": "lanczos proportional downscale; no upscale",
+        "data_clipping": false,
+        "note": "portrait document page fits under 1920 max edge; mount height-fit at 75-88% canvas, no content cropped"
+      },
+      "warm_grade": {
+        "R": "+1.5%",
+        "B": "-1.5%",
+        "applied": true
+      },
+      "triage": {
+        "recommended_mount": "split-screen",
+        "legibility": "medium",
+        "contrast_fit": "pass",
+        "motion_treatment": "living_hold_slow_drift",
+        "anti_outdated_audit": "pass",
+        "verdict": "approved"
+      },
+      "quote_boxes": [
+        {
+          "phrase": "approximately 20 feet long and 11 feet wide",
+          "x": 624,
+          "y": 220,
+          "w": 519,
+          "h": 37
+        },
+        {
+          "phrase": "approximately 20 feet long and 11 feet wide",
+          "x": 51,
+          "y": 257,
+          "w": 144,
+          "h": 37
+        },
+        {
+          "phrase": "roof about 14 feet high at the peak",
+          "x": 311,
+          "y": 257,
+          "w": 542,
+          "h": 37
+        }
+      ],
+      "boxes_dropped_offscreen": 0
+    },
+    {
+      "asset_id": "pl-exhibition-03",
+      "segment": "exhibition",
+      "processed_path": "plates/processed/pl-exhibition-03.png",
+      "quote_json": "plates/processed/pl-exhibition-03.png.json",
+      "source_url": "https://www.technologyreview.com/2021/01/28/1016867/lunik-cia-heist-steal-russian-satellite-space-us-ussr/",
+      "source_id": "mit",
+      "publication_date": "2021-01-28",
+      "credit": "MIT Technology Review, Jeff Maysh",
+      "evidence_rationale": "Investigative retelling dates the exhibition's opening to 21 November 1959 and locates it at the Auditorio Nacional in Mexico City.",
+      "fact_ids": [
+        "LK-034",
+        "LK-035"
+      ],
+      "dimensions": {
+        "width": 1344,
+        "height": 1920
+      },
+      "scale_to_fit": {
+        "source_width": 1400,
+        "source_height": 2000,
+        "processed_width": 1344,
+        "processed_height": 1920,
+        "longest_edge_limit": 1920,
+        "method": "lanczos proportional downscale; no upscale",
+        "data_clipping": false
+      },
+      "warm_grade": {
+        "R": "+1.5%",
+        "B": "-1.5%",
+        "applied": true
+      },
+      "triage": {
+        "recommended_mount": "framed-glass",
+        "legibility": "high",
+        "contrast_fit": "pass",
+        "motion_treatment": "living_hold_slow_drift",
+        "anti_outdated_audit": "pass",
+        "verdict": "approved"
+      },
+      "quote_boxes": [
+        {
+          "phrase": "November 21, 1959, the Soviet exhibition opened",
+          "x": 392,
+          "y": 900,
+          "w": 377,
+          "h": 17
+        }
+      ],
+      "boxes_dropped_offscreen": 1
+    },
+    {
+      "asset_id": "pl-exhibition-04",
+      "segment": "exhibition",
+      "processed_path": "plates/processed/pl-exhibition-04.png",
+      "quote_json": "plates/processed/pl-exhibition-04.png.json",
+      "source_url": "https://www.space.com/how-the-cia-kidnapped-a-soviet-moon-probe-during-the-space-race",
+      "source_id": "space",
+      "publication_date": "2024-07-21",
+      "credit": "Space.com, Leonard David",
+      "evidence_rationale": "Space.com, quoting the CIA reading-room posting, reports the display was not a replica but a fully-operational system comparable to Lunik 2 - the contested article-type position (U2).",
+      "fact_ids": [
+        "LK-046",
+        "LK-050"
+      ],
+      "dimensions": {
+        "width": 1344,
+        "height": 1920
+      },
+      "scale_to_fit": {
+        "source_width": 1400,
+        "source_height": 2000,
+        "processed_width": 1344,
+        "processed_height": 1920,
+        "longest_edge_limit": 1920,
+        "method": "lanczos proportional downscale; no upscale",
+        "data_clipping": false
+      },
+      "warm_grade": {
+        "R": "+1.5%",
+        "B": "-1.5%",
+        "applied": true
+      },
+      "triage": {
+        "recommended_mount": "callout-overlay",
+        "legibility": "high",
+        "contrast_fit": "pass",
+        "motion_treatment": "living_hold_slow_drift",
+        "anti_outdated_audit": "pass",
+        "verdict": "approved"
+      },
+      "quote_boxes": [
+        {
+          "phrase": "fully-operational system comparable to the Lunik 2",
+          "x": 611,
+          "y": 980,
+          "w": 136,
+          "h": 22
+        },
+        {
+          "phrase": "fully-operational system comparable to the Lunik 2",
+          "x": 229,
+          "y": 1006,
+          "w": 272,
+          "h": 22
+        }
+      ],
+      "boxes_dropped_offscreen": 0
+    },
+    {
+      "asset_id": "pl-exhibition-05",
+      "segment": "exhibition",
+      "processed_path": "plates/processed/pl-exhibition-05.png",
+      "quote_json": "plates/processed/pl-exhibition-05.png.json",
+      "source_url": "https://www.technologyreview.com/2021/01/28/1016867/lunik-cia-heist-steal-russian-satellite-space-us-ussr/",
+      "source_id": "mit",
+      "publication_date": "2021-01-28",
+      "credit": "MIT Technology Review, Jeff Maysh",
+      "evidence_rationale": "Maysh gives crate dimensions as 17 feet long and 8 feet wide, contradicting Finer's 20 x 11 ft (LK-051, U4).",
+      "fact_ids": [
+        "LK-051"
+      ],
+      "dimensions": {
+        "width": 1344,
+        "height": 1920
+      },
+      "scale_to_fit": {
+        "source_width": 1400,
+        "source_height": 2000,
+        "processed_width": 1344,
+        "processed_height": 1920,
+        "longest_edge_limit": 1920,
+        "method": "lanczos proportional downscale; no upscale",
+        "data_clipping": false
+      },
+      "warm_grade": {
+        "R": "+1.5%",
+        "B": "-1.5%",
+        "applied": true
+      },
+      "triage": {
+        "recommended_mount": "split-screen",
+        "legibility": "high",
+        "contrast_fit": "pass",
+        "motion_treatment": "living_hold_slow_drift",
+        "anti_outdated_audit": "pass",
+        "verdict": "approved"
+      },
+      "quote_boxes": [
+        {
+          "phrase": "17 feet long and 8 feet wide",
+          "x": 565,
+          "y": 994,
+          "w": 211,
+          "h": 17
+        }
+      ],
+      "boxes_dropped_offscreen": 0
+    },
+    {
+      "asset_id": "pl-turn-01",
+      "segment": "turn",
+      "processed_path": "plates/processed/pl-turn-01.png",
+      "quote_json": "plates/processed/pl-turn-01.png.json",
+      "source_url": "https://www.cia.gov/resources/csi/static/Kidnapping-of-the-Lunik.pdf",
+      "source_id": "finer",
+      "publication_date": "1967 (Studies in Intelligence 11:1, Winter 1967); declassified as sanitized 1995-09-18",
+      "credit": "CIA, Studies in Intelligence (1967)",
+      "evidence_rationale": "Finer records an intercepted shipping manifest listing 'models of astronomic apparatus' whose dimensions matched the Lunik crate.",
+      "fact_ids": [
+        "LK-008"
+      ],
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "scale_to_fit": {
+        "source_width": 1275,
+        "source_height": 1650,
+        "processed_width": 1275,
+        "processed_height": 1650,
+        "longest_edge_limit": 1920,
+        "method": "lanczos proportional downscale; no upscale",
+        "data_clipping": false,
+        "note": "portrait document page fits under 1920 max edge; mount height-fit at 75-88% canvas, no content cropped"
+      },
+      "warm_grade": {
+        "R": "+1.5%",
+        "B": "-1.5%",
+        "applied": true
+      },
+      "triage": {
+        "recommended_mount": "framed-glass",
+        "legibility": "medium",
+        "contrast_fit": "pass",
+        "motion_treatment": "living_hold_slow_drift",
+        "anti_outdated_audit": "pass",
+        "verdict": "approved"
+      },
+      "quote_boxes": [
+        {
+          "phrase": "models of astronomic apparatus",
+          "x": 714,
+          "y": 300,
+          "w": 339,
+          "h": 37
+        },
+        {
+          "phrase": "models of astronomic apparatus",
+          "x": 51,
+          "y": 337,
+          "w": 159,
+          "h": 37
+        },
+        {
+          "phrase": "only way to get inside was through the roof",
+          "x": 799,
+          "y": 1223,
+          "w": 337,
+          "h": 37
+        },
+        {
+          "phrase": "only way to get inside was through the roof",
+          "x": 51,
+          "y": 1260,
+          "w": 328,
+          "h": 37
+        }
+      ],
+      "boxes_dropped_offscreen": 0
+    },
+    {
+      "asset_id": "pl-turn-02",
+      "segment": "turn",
+      "processed_path": "plates/processed/pl-turn-02.png",
+      "quote_json": "plates/processed/pl-turn-02.png.json",
+      "source_url": "https://nsarchive.gwu.edu/document/16267-document-15-lunik-spacecraft-sydney-wesley-finer",
+      "source_id": "nsa",
+      "publication_date": "2018-01-31",
+      "credit": "National Security Archive, GWU",
+      "evidence_rationale": "National Security Archive document card records the Finer article, its CREST provenance, and Brugioni's identification of Mexico.",
+      "fact_ids": [
+        "LK-043",
+        "LK-044"
+      ],
+      "dimensions": {
+        "width": 1344,
+        "height": 1920
+      },
+      "scale_to_fit": {
+        "source_width": 1400,
+        "source_height": 2000,
+        "processed_width": 1344,
+        "processed_height": 1920,
+        "longest_edge_limit": 1920,
+        "method": "lanczos proportional downscale; no upscale",
+        "data_clipping": false
+      },
+      "warm_grade": {
+        "R": "+1.5%",
+        "B": "-1.5%",
+        "applied": true
+      },
+      "triage": {
+        "recommended_mount": "framed-glass",
+        "legibility": "high",
+        "contrast_fit": "pass",
+        "motion_treatment": "living_hold_slow_drift",
+        "anti_outdated_audit": "pass",
+        "verdict": "approved"
+      },
+      "quote_boxes": [
+        {
+          "phrase": "Kidnapping of the Lunik",
+          "x": 604,
+          "y": 49,
+          "w": 269,
+          "h": 35
+        }
+      ],
+      "boxes_dropped_offscreen": 0
+    },
+    {
+      "asset_id": "pl-night-01",
+      "segment": "night",
+      "processed_path": "plates/processed/pl-night-01.png",
+      "quote_json": "plates/processed/pl-night-01.png.json",
+      "source_url": "https://www.cia.gov/resources/csi/static/Kidnapping-of-the-Lunik.pdf",
+      "source_id": "finer",
+      "publication_date": "1967 (Studies in Intelligence 11:1, Winter 1967); declassified as sanitized 1995-09-18",
+      "credit": "CIA, Studies in Intelligence (1967)",
+      "evidence_rationale": "Finer records the crate roof made of 2-inch tongue-and-groove planks nailed with 5-inch spikes, and street lamps coming on during the roof work.",
+      "fact_ids": [
+        "LK-019",
+        "LK-020"
+      ],
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "scale_to_fit": {
+        "source_width": 1275,
+        "source_height": 1650,
+        "processed_width": 1275,
+        "processed_height": 1650,
+        "longest_edge_limit": 1920,
+        "method": "lanczos proportional downscale; no upscale",
+        "data_clipping": false,
+        "note": "portrait document page fits under 1920 max edge; mount height-fit at 75-88% canvas, no content cropped"
+      },
+      "warm_grade": {
+        "R": "+1.5%",
+        "B": "-1.5%",
+        "applied": true
+      },
+      "triage": {
+        "recommended_mount": "framed-glass",
+        "legibility": "medium",
+        "contrast_fit": "pass",
+        "motion_treatment": "living_hold_slow_drift",
+        "anti_outdated_audit": "pass",
+        "verdict": "approved"
+      },
+      "quote_boxes": [
+        {
+          "phrase": "2-inch tongue-and-groove planks",
+          "x": 189,
+          "y": 41,
+          "w": 522,
+          "h": 37
+        },
+        {
+          "phrase": "street lamps suddenly came on",
+          "x": 222,
+          "y": 341,
+          "w": 492,
+          "h": 37
+        }
+      ],
+      "boxes_dropped_offscreen": 0
+    },
+    {
+      "asset_id": "pl-night-02",
+      "segment": "night",
+      "processed_path": "plates/processed/pl-night-02.png",
+      "quote_json": "plates/processed/pl-night-02.png.json",
+      "source_url": "https://www.cia.gov/resources/csi/static/Kidnapping-of-the-Lunik.pdf",
+      "source_id": "finer",
+      "publication_date": "1967 (Studies in Intelligence 11:1, Winter 1967); declassified as sanitized 1995-09-18",
+      "credit": "CIA, Studies in Intelligence (1967)",
+      "evidence_rationale": "Finer records the team arriving at the salvage yard about 7:30 p.m. and being let in by a two-man watch team.",
+      "fact_ids": [
+        "LK-018"
+      ],
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "scale_to_fit": {
+        "source_width": 1275,
+        "source_height": 1650,
+        "processed_width": 1275,
+        "processed_height": 1650,
+        "longest_edge_limit": 1920,
+        "method": "lanczos proportional downscale; no upscale",
+        "data_clipping": false,
+        "note": "portrait document page fits under 1920 max edge; mount height-fit at 75-88% canvas, no content cropped"
+      },
+      "warm_grade": {
+        "R": "+1.5%",
+        "B": "-1.5%",
+        "applied": true
+      },
+      "triage": {
+        "recommended_mount": "hud-bracket",
+        "legibility": "medium",
+        "contrast_fit": "pass",
+        "motion_treatment": "living_hold_slow_drift",
+        "anti_outdated_audit": "pass",
+        "verdict": "approved"
+      },
+      "quote_boxes": [
+        {
+          "phrase": "about 7:30 p.m.",
+          "x": 790,
+          "y": 1362,
+          "w": 241,
+          "h": 37
+        }
+      ],
+      "boxes_dropped_offscreen": 0
+    },
+    {
+      "asset_id": "pl-night-03",
+      "segment": "night",
+      "processed_path": "plates/processed/pl-night-03.png",
+      "quote_json": "plates/processed/pl-night-03.png.json",
+      "source_url": "https://www.technologyreview.com/2021/01/28/1016867/lunik-cia-heist-steal-russian-satellite-space-us-ussr/",
+      "source_id": "mit",
+      "publication_date": "2021-01-28",
+      "credit": "MIT Technology Review, Jeff Maysh",
+      "evidence_rationale": "Maysh records the truck hijack at 5.30 p.m. and the thirteen and a half hours remaining before sunrise - the operation clock.",
+      "fact_ids": [
+        "LK-040"
+      ],
+      "dimensions": {
+        "width": 1344,
+        "height": 1920
+      },
+      "scale_to_fit": {
+        "source_width": 1400,
+        "source_height": 2000,
+        "processed_width": 1344,
+        "processed_height": 1920,
+        "longest_edge_limit": 1920,
+        "method": "lanczos proportional downscale; no upscale",
+        "data_clipping": false
+      },
+      "warm_grade": {
+        "R": "+1.5%",
+        "B": "-1.5%",
+        "applied": true
+      },
+      "triage": {
+        "recommended_mount": "hud-bracket",
+        "legibility": "high",
+        "contrast_fit": "pass",
+        "motion_treatment": "living_hold_slow_drift",
+        "anti_outdated_audit": "pass",
+        "verdict": "approved"
+      },
+      "quote_boxes": [
+        {
+          "phrase": "5.30 p.m.",
+          "x": 574,
+          "y": 927,
+          "w": 75,
+          "h": 17
+        },
+        {
+          "phrase": "thirteen and a half hours",
+          "x": 823,
+          "y": 954,
+          "w": 141,
+          "h": 17
+        },
+        {
+          "phrase": "thirteen and a half hours",
+          "x": 522,
+          "y": 981,
+          "w": 43,
+          "h": 17
+        }
+      ],
+      "boxes_dropped_offscreen": 0
+    },
+    {
+      "asset_id": "pl-seal-01",
+      "segment": "seal",
+      "processed_path": "plates/processed/pl-seal-01.png",
+      "quote_json": "plates/processed/pl-seal-01.png.json",
+      "source_url": "https://www.cia.gov/resources/csi/static/Kidnapping-of-the-Lunik.pdf",
+      "source_id": "finer",
+      "publication_date": "1967 (Studies in Intelligence 11:1, Winter 1967); declassified as sanitized 1995-09-18",
+      "credit": "CIA, Studies in Intelligence (1967)",
+      "evidence_rationale": "Finer records the engine-compartment base cap attached by some 130 square-headed bolts, removed with a metric wrench and rope sling.",
+      "fact_ids": [
+        "LK-023"
+      ],
+      "dimensions": {
+        "width": 1275,
+        "height": 260
+      },
+      "scale_to_fit": {
+        "source_width": 1275,
+        "source_height": 260,
+        "processed_width": 1275,
+        "processed_height": 260,
+        "longest_edge_limit": 1920,
+        "method": "lanczos proportional downscale; no upscale",
+        "data_clipping": false,
+        "detail_crop": {
+          "x": 0,
+          "y": 1380,
+          "w": 1275,
+          "h": 260
+        },
+        "note": "portrait document page fits under 1920 max edge; mount height-fit at 75-88% canvas, no content cropped"
+      },
+      "warm_grade": {
+        "R": "+1.5%",
+        "B": "-1.5%",
+        "applied": true
+      },
+      "triage": {
+        "recommended_mount": "hud-bracket",
+        "legibility": "high",
+        "contrast_fit": "pass",
+        "motion_treatment": "living_hold_slow_drift",
+        "anti_outdated_audit": "pass",
+        "verdict": "approved"
+      },
+      "quote_boxes": [
+        {
+          "phrase": "130 square-headed bolts",
+          "x": 1043,
+          "y": 125,
+          "w": 53,
+          "h": 37
+        },
+        {
+          "phrase": "130 square-headed bolts",
+          "x": 51,
+          "y": 163,
+          "w": 328,
+          "h": 37
+        }
+      ],
+      "boxes_dropped_offscreen": 0
+    },
+    {
+      "asset_id": "pl-seal-02",
+      "segment": "seal",
+      "processed_path": "plates/processed/pl-seal-02.png",
+      "quote_json": "plates/processed/pl-seal-02.png.json",
+      "source_url": "https://www.cia.gov/resources/csi/static/Kidnapping-of-the-Lunik.pdf",
+      "source_id": "finer",
+      "publication_date": "1967 (Studies in Intelligence 11:1, Winter 1967); declassified as sanitized 1995-09-18",
+      "credit": "CIA, Studies in Intelligence (1967)",
+      "evidence_rationale": "Finer records the seal wire encased in plastic bearing a Soviet stamp, and two couplings the Soviets overlooked in the basket.",
+      "fact_ids": [
+        "LK-025",
+        "LK-026"
+      ],
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "scale_to_fit": {
+        "source_width": 1275,
+        "source_height": 1650,
+        "processed_width": 1275,
+        "processed_height": 1650,
+        "longest_edge_limit": 1920,
+        "method": "lanczos proportional downscale; no upscale",
+        "data_clipping": false,
+        "note": "portrait document page fits under 1920 max edge; mount height-fit at 75-88% canvas, no content cropped"
+      },
+      "warm_grade": {
+        "R": "+1.5%",
+        "B": "-1.5%",
+        "applied": true
+      },
+      "triage": {
+        "recommended_mount": "framed-glass",
+        "legibility": "medium",
+        "contrast_fit": "pass",
+        "motion_treatment": "living_hold_slow_drift",
+        "anti_outdated_audit": "pass",
+        "verdict": "approved"
+      },
+      "quote_boxes": [
+        {
+          "phrase": "plastic seal bearing a Soviet stamp",
+          "x": 544,
+          "y": 333,
+          "w": 547,
+          "h": 37
+        },
+        {
+          "phrase": "overlooked two couplings",
+          "x": 274,
+          "y": 701,
+          "w": 397,
+          "h": 37
+        }
+      ],
+      "boxes_dropped_offscreen": 0
+    },
+    {
+      "asset_id": "pl-seal-03",
+      "segment": "seal",
+      "processed_path": "plates/processed/pl-seal-03.png",
+      "quote_json": "plates/processed/pl-seal-03.png.json",
+      "source_url": "https://www.cia.gov/resources/csi/static/Kidnapping-of-the-Lunik.pdf",
+      "source_id": "finer",
+      "publication_date": "1967 (Studies in Intelligence 11:1, Winter 1967); declassified as sanitized 1995-09-18",
+      "credit": "CIA, Studies in Intelligence (1967)",
+      "evidence_rationale": "Finer records the Soviet checker arriving at 7:00 a.m., showing no surprise, and that to this day there was no indication the Soviets discovered the borrowing.",
+      "fact_ids": [
+        "LK-029",
+        "LK-030"
+      ],
+      "dimensions": {
+        "width": 1275,
+        "height": 1650
+      },
+      "scale_to_fit": {
+        "source_width": 1275,
+        "source_height": 1650,
+        "processed_width": 1275,
+        "processed_height": 1650,
+        "longest_edge_limit": 1920,
+        "method": "lanczos proportional downscale; no upscale",
+        "data_clipping": false,
+        "note": "portrait document page fits under 1920 max edge; mount height-fit at 75-88% canvas, no content cropped"
+      },
+      "warm_grade": {
+        "R": "+1.5%",
+        "B": "-1.5%",
+        "applied": true
+      },
+      "triage": {
+        "recommended_mount": "framed-glass",
+        "legibility": "medium",
+        "contrast_fit": "pass",
+        "motion_treatment": "living_hold_slow_drift",
+        "anti_outdated_audit": "pass",
+        "verdict": "approved"
+      },
+      "quote_boxes": [
+        {
+          "phrase": "found the truck with the Lunik",
+          "x": 312,
+          "y": 481,
+          "w": 478,
+          "h": 37
+        },
+        {
+          "phrase": "no indication the Soviets ever discovered",
+          "x": 914,
+          "y": 556,
+          "w": 265,
+          "h": 37
+        },
+        {
+          "phrase": "no indication the Soviets ever discovered",
+          "x": 51,
+          "y": 593,
+          "w": 368,
+          "h": 37
+        }
+      ],
+      "boxes_dropped_offscreen": 0
+    },
+    {
+      "asset_id": "pl-seal-04",
+      "segment": "seal",
+      "processed_path": "plates/processed/pl-seal-04.png",
+      "quote_json": "plates/processed/pl-seal-04.png.json",
+      "source_url": "https://www.technologyreview.com/2021/01/28/1016867/lunik-cia-heist-steal-russian-satellite-space-us-ussr/",
+      "source_id": "mit",
+      "publication_date": "2021-01-28",
+      "credit": "MIT Technology Review, Jeff Maysh",
+      "evidence_rationale": "Maysh records the agency refusing to confirm the mission took place in Mexico and CIA historians preferring the word 'borrowing'.",
+      "fact_ids": [
+        "LK-042"
+      ],
+      "dimensions": {
+        "width": 1344,
+        "height": 1920
+      },
+      "scale_to_fit": {
+        "source_width": 1400,
+        "source_height": 2000,
+        "processed_width": 1344,
+        "processed_height": 1920,
+        "longest_edge_limit": 1920,
+        "method": "lanczos proportional downscale; no upscale",
+        "data_clipping": false
+      },
+      "warm_grade": {
+        "R": "+1.5%",
+        "B": "-1.5%",
+        "applied": true
+      },
+      "triage": {
+        "recommended_mount": "callout-overlay",
+        "legibility": "high",
+        "contrast_fit": "pass",
+        "motion_treatment": "living_hold_slow_drift",
+        "anti_outdated_audit": "pass",
+        "verdict": "approved"
+      },
+      "quote_boxes": [
+        {
+          "phrase": "refused to confirm the mission took place in Mexico",
+          "x": 711,
+          "y": 1008,
+          "w": 237,
+          "h": 17
+        },
+        {
+          "phrase": "refused to confirm the mission took place in Mexico",
+          "x": 363,
+          "y": 1035,
+          "w": 164,
+          "h": 17
+        },
+        {
+          "phrase": "borrowing",
+          "x": 825,
+          "y": 1062,
+          "w": 81,
+          "h": 17
+        }
+      ],
+      "boxes_dropped_offscreen": 0
+    }
+  ]
+}

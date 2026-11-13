@@ -1,0 +1,421 @@
+<template id="s22-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="22-blind-thread" data-width="1920" data-height="1080" data-start="0" data-duration="16.520">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="s22-cavity" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.5" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s22-shell" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#515A83" stop-opacity="0.85"/>
+          <stop offset="0.4" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s22-rod-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.92"/>
+          <stop offset="0.22" stop-color="#B8C0D8"/>
+          <stop offset="0.62" stop-color="#515A83"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </linearGradient>
+        <linearGradient id="s22-baffle-grad" x1="0" y1="0" x2="1" y2="0.2">
+          <stop offset="0" stop-color="#B8C0D8" stop-opacity="0.9"/>
+          <stop offset="0.24" stop-color="#515A83"/>
+          <stop offset="0.66" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s22-thread-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFD23F"/>
+          <stop offset="0.5" stop-color="#FF7A1A"/>
+          <stop offset="1" stop-color="#B8C0D8"/>
+        </linearGradient>
+        <linearGradient id="s22-gold" x1="0" y1="0" x2="0.8" y2="1">
+          <stop offset="0" stop-color="#FF7A1A"/>
+          <stop offset="0.45" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#F4EFE3"/>
+        </linearGradient>
+        <radialGradient id="s22-violet" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.44"/>
+          <stop offset="0.6" stop-color="#8E5FD9" stop-opacity="0.14"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s22-ember" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.6"/>
+          <stop offset="0.55" stop-color="#FF7A1A" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s22-pool" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.4"/>
+          <stop offset="0.5" stop-color="#FF7A1A" stop-opacity="0.16"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="s22-haze" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="22"/>
+        </filter>
+        <filter id="s22-soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="8"/>
+        </filter>
+      </defs>
+
+      <g id="s22-world">
+        <!-- ================= BACKGROUND: compartment cross-section, lamps, hour arc ================= -->
+        <g id="s22-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s22-cavity)"/>
+          <path d="M 30 250 Q 960 40 1890 250 L 1890 148 Q 960 -52 30 148 Z" fill="url(#s22-shell)" stroke="#050814" stroke-width="6"/>
+          <path d="M 30 830 Q 960 1040 1890 830 L 1890 932 Q 960 1132 30 932 Z" fill="url(#s22-shell)" stroke="#050814" stroke-width="6"/>
+          <ellipse cx="40" cy="540" rx="290" ry="390" fill="#151B3B" stroke="#515A83" stroke-width="8"/>
+          <ellipse cx="1880" cy="540" rx="290" ry="390" fill="#151B3B" stroke="#515A83" stroke-width="8"/>
+          <ellipse cx="960" cy="560" rx="330" ry="430" fill="url(#s22-violet)"/>
+          <ellipse cx="960" cy="560" rx="240" ry="330" fill="#050814" opacity="0.62"/>
+
+          <g stroke="#515A83" stroke-width="4" opacity="0.3">
+            <line x1="160" y1="300" x2="160" y2="812"/>
+            <line x1="1760" y1="300" x2="1760" y2="812"/>
+            <line x1="240" y1="270" x2="320" y2="270"/>
+            <line x1="1600" y1="270" x2="1680" y2="270"/>
+          </g>
+
+          <!-- hour arc track + fill -->
+          <circle cx="960" cy="560" r="430" fill="none" stroke="#515A83" stroke-width="10" opacity="0.28"/>
+          <circle id="s22-hour" cx="960" cy="560" r="430" fill="none" stroke="#FFD23F" stroke-width="18"
+                  stroke-linecap="round" stroke-dasharray="2702" stroke-dashoffset="2702"
+                  transform="rotate(-90 960 560)"/>
+          <g id="s22-hour-ticks" stroke="#B8C0D8" stroke-width="5" opacity="0.4">
+            <line x1="960" y1="118" x2="960" y2="88"/>
+            <line x1="1380" y1="560" x2="1410" y2="560"/>
+            <line x1="960" y1="1002" x2="960" y2="1032"/>
+            <line x1="540" y1="560" x2="510" y2="560"/>
+          </g>
+
+          <!-- two ember work lamps -->
+          <g id="s22-lamp-l" transform="translate(180 0)">
+            <line x1="0" y1="0" x2="0" y2="176" stroke="#515A83" stroke-width="8"/>
+            <path d="M -58 176 L 58 176 L 38 232 L -38 232 Z" fill="url(#s22-shell)" stroke="#050814" stroke-width="6"/>
+            <circle cx="0" cy="244" r="18" fill="#FFD23F" stroke="#050814" stroke-width="5"/>
+            <ellipse cx="0" cy="244" rx="72" ry="66" fill="url(#s22-ember)"/>
+            <ellipse cx="0" cy="640" rx="270" ry="210" fill="url(#s22-pool)" opacity="0.7"/>
+          </g>
+          <g id="s22-lamp-r" transform="translate(1740 0)">
+            <line x1="0" y1="0" x2="0" y2="176" stroke="#515A83" stroke-width="8"/>
+            <path d="M -58 176 L 58 176 L 38 232 L -38 232 Z" fill="url(#s22-shell)" stroke="#050814" stroke-width="6"/>
+            <circle cx="0" cy="244" r="18" fill="#FFD23F" stroke="#050814" stroke-width="5"/>
+            <ellipse cx="0" cy="244" rx="72" ry="66" fill="url(#s22-ember)"/>
+            <ellipse cx="0" cy="640" rx="270" ry="210" fill="url(#s22-pool)" opacity="0.7"/>
+          </g>
+
+          <g id="s22-bg-dust" fill="#F4EFE3">
+            <circle cx="260" cy="360" r="4" opacity="0.16"/>
+            <circle cx="620" cy="300" r="3" opacity="0.12"/>
+            <circle cx="1320" cy="320" r="4" opacity="0.14"/>
+            <circle cx="1680" cy="380" r="3" opacity="0.12"/>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: rod, thread spiral, baffle, crew ================= -->
+        <g id="s22-mg">
+          <g id="s22-rod">
+            <rect x="150" y="532" width="1620" height="60" rx="24" fill="url(#s22-rod-grad)" stroke="#050814" stroke-width="8"/>
+            <line x1="190" y1="548" x2="1730" y2="548" stroke="#F4EFE3" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+            <rect x="150" y="532" width="46" height="60" rx="20" fill="#151B3B" stroke="#050814" stroke-width="6"/>
+            <rect x="1724" y="532" width="46" height="60" rx="20" fill="#151B3B" stroke="#050814" stroke-width="6"/>
+            <g fill="#B8C0D8" opacity="0.55">
+              <circle cx="184" cy="562" r="5"/>
+              <circle cx="1736" cy="562" r="5"/>
+            </g>
+          </g>
+
+          <g id="s22-thread">
+            <ellipse cx="260" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="312" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="364" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="416" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="468" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="520" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="572" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="624" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="676" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="728" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="780" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="832" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="884" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="1088" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="1140" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="1192" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="1244" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="1296" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="1348" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="1400" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="1452" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="1504" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="1556" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="1608" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+            <ellipse cx="1660" cy="562" rx="18" ry="48" fill="none" stroke="url(#s22-thread-grad)" stroke-width="12"/>
+          </g>
+
+          <!-- baffle plate slides in and fully occludes the centre -->
+          <g id="s22-baffle">
+            <rect x="986" y="208" width="40" height="704" rx="12" fill="#050814" opacity="0.55"/>
+            <rect x="930" y="200" width="68" height="704" rx="16" fill="url(#s22-baffle-grad)" stroke="#050814" stroke-width="8"/>
+            <rect x="944" y="220" width="12" height="664" rx="6" fill="#F4EFE3" opacity="0.35"/>
+            <rect x="976" y="220" width="8" height="664" rx="4" fill="#0A0E24" opacity="0.6"/>
+            <g fill="#B8C0D8" opacity="0.65">
+              <circle cx="964" cy="256" r="6"/>
+              <circle cx="964" cy="562" r="6"/>
+              <circle cx="964" cy="868" r="6"/>
+            </g>
+            <ellipse cx="964" cy="562" rx="150" ry="240" fill="#050814" opacity="0.3" filter="url(#s22-soft)"/>
+          </g>
+
+          <!-- crew beads, opposite ends -->
+          <g transform="translate(300 430)">
+            <g id="s22-crew-l">
+            <circle cx="0" cy="0" r="20" fill="#0A0E24" stroke="#B8C0D8" stroke-width="5"/>
+            <path d="M -18 -8 A 20 20 0 0 1 8 -19" fill="none" stroke="#FFD23F" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="7" cy="-2" r="4" fill="#F4EFE3"/>
+            </g>
+          </g>
+          <g transform="translate(1620 430)">
+            <g id="s22-crew-r">
+            <circle cx="0" cy="0" r="20" fill="#0A0E24" stroke="#B8C0D8" stroke-width="5"/>
+            <path d="M 18 -8 A 20 20 0 0 0 -8 -19" fill="none" stroke="#FFD23F" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="-7" cy="-2" r="4" fill="#F4EFE3"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND: hands, view cones, exit ================= -->
+        <g id="s22-fg">
+          <g transform="translate(420 560)">
+            <g id="s22-hand-l">
+            <rect x="-26" y="-116" width="52" height="62" rx="16" fill="#151B3B" stroke="#B8C0D8" stroke-width="6"/>
+            <rect x="-58" y="-74" width="116" height="74" rx="30" fill="#0A0E24" stroke="#B8C0D8" stroke-width="6"/>
+            <rect x="-70" y="-64" width="28" height="58" rx="14" fill="#151B3B" stroke="#B8C0D8" stroke-width="5" transform="rotate(-24 -56 -35)"/>
+            <g fill="#151B3B" stroke="#B8C0D8" stroke-width="5">
+              <rect x="-52" y="-14" width="24" height="52" rx="12"/>
+              <rect x="-26" y="-10" width="24" height="50" rx="12"/>
+              <rect x="0" y="-12" width="24" height="52" rx="12"/>
+              <rect x="26" y="-16" width="24" height="48" rx="12"/>
+            </g>
+            <g fill="#FFD23F" opacity="0.6">
+              <circle cx="-40" cy="30" r="4"/>
+              <circle cx="36" cy="24" r="4"/>
+            </g>
+            </g>
+          </g>
+          <g transform="translate(1500 560) scale(-1 1)">
+            <g id="s22-hand-r">
+            <rect x="-26" y="-116" width="52" height="62" rx="16" fill="#151B3B" stroke="#B8C0D8" stroke-width="6"/>
+            <rect x="-58" y="-74" width="116" height="74" rx="30" fill="#0A0E24" stroke="#B8C0D8" stroke-width="6"/>
+            <rect x="-70" y="-64" width="28" height="58" rx="14" fill="#151B3B" stroke="#B8C0D8" stroke-width="5" transform="rotate(-24 -56 -35)"/>
+            <g fill="#151B3B" stroke="#B8C0D8" stroke-width="5">
+              <rect x="-52" y="-14" width="24" height="52" rx="12"/>
+              <rect x="-26" y="-10" width="24" height="50" rx="12"/>
+              <rect x="0" y="-12" width="24" height="52" rx="12"/>
+              <rect x="26" y="-16" width="24" height="48" rx="12"/>
+            </g>
+            <g fill="#FFD23F" opacity="0.6">
+              <circle cx="-40" cy="30" r="4"/>
+              <circle cx="36" cy="24" r="4"/>
+            </g>
+            </g>
+          </g>
+
+          <!-- blind view cones: they strike the baffle and never meet -->
+          <g id="s22-cone-l">
+            <path d="M 330 468 L 906 506 L 906 618 Z" fill="#FFD23F" opacity="0.07"/>
+            <line x1="330" y1="468" x2="906" y2="506" stroke="#FFD23F" stroke-width="12" stroke-linecap="round" opacity="0.45"/>
+            <line x1="330" y1="468" x2="906" y2="618" stroke="#FFD23F" stroke-width="12" stroke-linecap="round" opacity="0.45"/>
+            <circle cx="330" cy="468" r="9" fill="#FFD23F"/>
+          </g>
+          <g id="s22-cone-r">
+            <path d="M 1590 468 L 1014 506 L 1014 618 Z" fill="#FFD23F" opacity="0.07"/>
+            <line x1="1590" y1="468" x2="1014" y2="506" stroke="#FFD23F" stroke-width="12" stroke-linecap="round" opacity="0.45"/>
+            <line x1="1590" y1="468" x2="1014" y2="618" stroke="#FFD23F" stroke-width="12" stroke-linecap="round" opacity="0.45"/>
+            <circle cx="1590" cy="468" r="9" fill="#FFD23F"/>
+          </g>
+
+          <g id="s22-impact-l" opacity="0">
+            <circle cx="912" cy="562" r="26" fill="#FFD23F" opacity="0.35"/>
+            <g stroke="#FFD23F" stroke-width="6" stroke-linecap="round">
+              <line x1="884" y1="528" x2="902" y2="546"/>
+              <line x1="884" y1="596" x2="902" y2="578"/>
+            </g>
+          </g>
+          <g id="s22-impact-r" opacity="0">
+            <circle cx="1008" cy="562" r="26" fill="#FFD23F" opacity="0.35"/>
+            <g stroke="#FFD23F" stroke-width="6" stroke-linecap="round">
+              <line x1="1036" y1="528" x2="1018" y2="546"/>
+              <line x1="1036" y1="596" x2="1018" y2="578"/>
+            </g>
+          </g>
+
+          <g id="s22-dust" fill="#F4EFE3">
+            <circle cx="280" cy="920" r="5" opacity="0.16"/>
+            <circle cx="700" cy="980" r="4" opacity="0.13"/>
+            <circle cx="1240" cy="960" r="5" opacity="0.15"/>
+            <circle cx="1660" cy="900" r="4" opacity="0.12"/>
+          </g>
+
+          <!-- blind-baffle-slide exit -->
+          <g id="s22-exit">
+            <rect x="0" y="0" width="2400" height="1080" fill="#151B3B"/>
+            <rect x="0" y="0" width="16" height="1080" fill="#FFD23F"/>
+            <rect x="40" y="0" width="8" height="1080" fill="#F4EFE3" opacity="0.5"/>
+            <g fill="#0A0E24" opacity="0.7">
+              <circle cx="220" cy="180" r="14"/>
+              <circle cx="220" cy="540" r="14"/>
+              <circle cx="220" cy="900" r="14"/>
+            </g>
+          </g>
+
+          <g id="s22-badge">
+            <rect x="64" y="52" width="284" height="98" rx="49" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="78" y="66" width="256" height="70" rx="35" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.35"/>
+            <g fill="#FFD23F" opacity="0.85">
+              <circle cx="102" cy="101" r="7"/>
+              <circle cx="310" cy="101" r="7"/>
+            </g>
+            <text x="206" y="117" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="44"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="9" paint-order="stroke fill" letter-spacing="3"
+                  textLength="158" lengthAdjust="spacingAndGlyphs">BLIND</text>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:radial-gradient(circle at 50% 56%, rgba(255,122,26,0.1), transparent 64%);}
+    .scene-persp{position:absolute;inset:0;perspective:1600px;perspective-origin:50% 54%;}
+    #s22-world{transform-style:preserve-3d;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      /* ---------- initial states ---------- */
+      gsap.set("#s22-lamp-l", { opacity: 0, y: -34 });
+      gsap.set("#s22-lamp-r", { opacity: 0, y: -34 });
+      gsap.set("#s22-bg-dust circle", { opacity: 0 });
+      gsap.set("#s22-rod", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s22-thread ellipse", { opacity: 0, scaleX: 0.2, transformOrigin: "50% 50%" });
+      gsap.set("#s22-hour", { strokeDashoffset: 2702, opacity: 0.3 });
+      gsap.set("#s22-hour-ticks", { opacity: 0 });
+      gsap.set("#s22-baffle", { y: -940 });
+      gsap.set("#s22-crew-l", { opacity: 0, x: -150 });
+      gsap.set("#s22-crew-r", { opacity: 0, x: 150 });
+      gsap.set("#s22-hand-l", { opacity: 0, y: 34 });
+      gsap.set("#s22-hand-r", { opacity: 0, y: 34 });
+      gsap.set("#s22-cone-l", { opacity: 0, scaleX: 0.3, svgOrigin: "330 468" });
+      gsap.set("#s22-cone-r", { opacity: 0, scaleX: 0.3, svgOrigin: "1590 468" });
+      gsap.set("#s22-impact-l", { opacity: 0 });
+      gsap.set("#s22-impact-r", { opacity: 0 });
+      gsap.set("#s22-dust circle", { opacity: 0 });
+      gsap.set("#s22-exit", { x: 2400 });
+      gsap.set("#s22-badge", { opacity: 0, scale: 1.4, rotation: -4, transformOrigin: "50% 50%" });
+
+      /* ---------- phase 1: rod and thread spiral extrude ---------- */
+      tl.to("#s22-lamp-l", { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 0.1);
+      tl.to("#s22-lamp-r", { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 0.24);
+      tl.to("#s22-bg-dust circle", { opacity: 0.15, duration: 0.7, stagger: 0.09, ease: "power1.out" }, 0.5);
+      tl.to("#s22-rod", { scaleX: 1, duration: 1.55, ease: "power3.out" }, 0.4);
+      tl.to("#s22-thread ellipse", { opacity: 0.95, scaleX: 1, duration: 0.4, stagger: 0.035, ease: "back.out(2)" }, 1.0);
+      tl.to("#s22-hour-ticks", { opacity: 0.4, duration: 0.5, ease: "power1.out" }, 1.1);
+      tl.to("#s22-hour", { opacity: 1, duration: 0.6, ease: "power1.out" }, 1.2);
+
+      /* ---------- phase 2: baffle plate slides in and occludes the centre ---------- */
+      tl.to("#s22-baffle", { y: 0, duration: 1.65, ease: "power3.inOut" }, 2.3);
+      tl.to("#s22-baffle", { y: -6, duration: 0.16, yoyo: true, repeat: 1, ease: "power2.out" }, 4.0);
+      tl.to("#s22-impact-l", { opacity: 0.9, duration: 0.18, ease: "power2.out" }, 3.98);
+      tl.to("#s22-impact-l", { opacity: 0, duration: 0.4, ease: "power2.in" }, 4.2);
+      tl.to("#s22-impact-r", { opacity: 0.9, duration: 0.18, ease: "power2.out" }, 4.02);
+      tl.to("#s22-impact-r", { opacity: 0, duration: 0.4, ease: "power2.in" }, 4.24);
+
+      /* ---------- phase 3: two crew beads enter from opposite ends ---------- */
+      tl.to("#s22-crew-l", { opacity: 1, x: 0, duration: 1.1, ease: "power3.out" }, 4.55);
+      tl.to("#s22-crew-r", { opacity: 1, x: 0, duration: 1.1, ease: "power3.out" }, 4.7);
+      tl.to("#s22-crew-l", { y: -8, duration: 0.7, yoyo: true, repeat: 1, ease: "sine.inOut" }, 5.8);
+      tl.to("#s22-crew-r", { y: 9, duration: 0.75, yoyo: true, repeat: 1, ease: "sine.inOut" }, 5.9);
+
+      tl.to("#s22-hand-l", { opacity: 1, y: 0, duration: 0.6, ease: "back.out(1.6)" }, 5.5);
+      tl.to("#s22-hand-r", { opacity: 1, y: 0, duration: 0.6, ease: "back.out(1.6)" }, 5.65);
+
+      /* hands turn; thread engages one turn at a time */
+      tl.to("#s22-hand-l", { rotation: -7, duration: 0.7, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 6.1);
+      tl.to("#s22-hand-r", { rotation: 7, duration: 0.7, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 6.1);
+      tl.to("#s22-thread", { x: -28, duration: 0.55, ease: "power2.inOut" }, 6.2);
+      tl.to("#s22-thread ellipse", { opacity: 1, duration: 0.2, ease: "power1.out" }, 6.55);
+      tl.to("#s22-thread ellipse", { opacity: 0.9, duration: 0.3, ease: "power1.in" }, 6.8);
+
+      tl.to("#s22-hand-l", { rotation: -8, duration: 0.7, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 8.6);
+      tl.to("#s22-hand-r", { rotation: 8, duration: 0.7, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 8.6);
+      tl.to("#s22-thread", { x: -56, duration: 0.55, ease: "power2.inOut" }, 8.7);
+      tl.to("#s22-thread ellipse", { opacity: 1, duration: 0.2, ease: "power1.out" }, 9.0);
+      tl.to("#s22-thread ellipse", { opacity: 0.92, duration: 0.3, ease: "power1.in" }, 9.25);
+
+      tl.to("#s22-hand-l", { rotation: -9, duration: 0.75, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 11.1);
+      tl.to("#s22-hand-r", { rotation: 9, duration: 0.75, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 11.1);
+      tl.to("#s22-thread", { x: -84, duration: 0.6, ease: "power2.inOut" }, 11.25);
+      tl.to("#s22-thread ellipse", { opacity: 1, duration: 0.22, ease: "power1.out" }, 11.55);
+      tl.to("#s22-thread ellipse", { opacity: 0.95, duration: 0.4, ease: "power1.in" }, 11.85);
+
+      /* ---------- blind view cones: strike the baffle, never meet, bounce twice ---------- */
+      tl.to("#s22-cone-l", { opacity: 1, scaleX: 1, duration: 0.7, ease: "power2.out" }, 6.3);
+      tl.to("#s22-cone-r", { opacity: 1, scaleX: 1, duration: 0.7, ease: "power2.out" }, 6.5);
+      tl.to("#s22-cone-l", { rotation: -3.5, duration: 0.4, yoyo: true, repeat: 1, svgOrigin: "330 468", ease: "power2.inOut" }, 7.0);
+      tl.to("#s22-impact-l", { opacity: 0.85, duration: 0.14, ease: "power2.out" }, 6.95);
+      tl.to("#s22-impact-l", { opacity: 0, duration: 0.35, ease: "power2.in" }, 7.14);
+      tl.to("#s22-cone-r", { rotation: 3.5, duration: 0.4, yoyo: true, repeat: 1, svgOrigin: "1590 468", ease: "power2.inOut" }, 7.2);
+      tl.to("#s22-impact-r", { opacity: 0.85, duration: 0.14, ease: "power2.out" }, 7.15);
+      tl.to("#s22-impact-r", { opacity: 0, duration: 0.35, ease: "power2.in" }, 7.34);
+
+      tl.to("#s22-cone-l", { rotation: -2, duration: 0.4, yoyo: true, repeat: 1, svgOrigin: "330 468", ease: "power2.inOut" }, 9.5);
+      tl.to("#s22-impact-l", { opacity: 0.6, duration: 0.14, ease: "power2.out" }, 9.45);
+      tl.to("#s22-impact-l", { opacity: 0, duration: 0.32, ease: "power2.in" }, 9.62);
+      tl.to("#s22-cone-r", { rotation: 2, duration: 0.4, yoyo: true, repeat: 1, svgOrigin: "1590 468", ease: "power2.inOut" }, 9.7);
+      tl.to("#s22-impact-r", { opacity: 0.6, duration: 0.14, ease: "power2.out" }, 9.65);
+      tl.to("#s22-impact-r", { opacity: 0, duration: 0.32, ease: "power2.in" }, 9.82);
+
+      /* ---------- hour arc fills, then locks near full as the thread catches ---------- */
+      tl.to("#s22-hour", { strokeDashoffset: 211, duration: 8.3, ease: "power2.inOut" }, 6.1);
+      tl.to("#s22-hour", { opacity: 1, duration: 0.2, ease: "power1.out" }, 11.4);
+      tl.to("#s22-hour", { strokeDashoffset: 196, duration: 2.1, ease: "power2.out" }, 12.4);
+      tl.to("#s22-hour", { opacity: 0.85, duration: 0.22, yoyo: true, repeat: 1, ease: "sine.inOut" }, 14.25);
+
+      /* ---------- phase 4: thread catches, crew settle ---------- */
+      tl.to("#s22-crew-l", { x: 12, duration: 0.5, yoyo: true, repeat: 1, ease: "sine.inOut" }, 11.6);
+      tl.to("#s22-crew-r", { x: -12, duration: 0.55, yoyo: true, repeat: 1, ease: "sine.inOut" }, 11.7);
+      tl.to("#s22-rod", { scaleY: 1.02, duration: 0.65, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 11.8);
+      tl.to("#s22-baffle", { scaleX: 1.01, duration: 1.2, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 12.5);
+
+      /* ---------- living holds ---------- */
+      tl.to("#s22-badge", { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(2.4)" }, 0.9);
+      tl.to("#s22-badge", { y: -5, duration: 1.5, yoyo: true, repeat: 3, ease: "sine.inOut" }, 2.6);
+      tl.to("#s22-lamp-l", { rotation: 1.4, duration: 1.9, yoyo: true, repeat: 2, svgOrigin: "180 0", ease: "sine.inOut" }, 2.2);
+      tl.to("#s22-lamp-r", { rotation: -1.4, duration: 2.0, yoyo: true, repeat: 2, svgOrigin: "1740 0", ease: "sine.inOut" }, 2.6);
+      tl.to("#s22-dust circle", { opacity: 0.15, duration: 0.8, stagger: 0.1, ease: "power1.out" }, 2.4);
+      tl.to("#s22-dust circle", { y: -20, duration: 2.5, yoyo: true, repeat: 1, ease: "sine.inOut" }, 3.4);
+      tl.to("#s22-crew-l", { y: -5, duration: 1.0, yoyo: true, repeat: 2, ease: "sine.inOut" }, 12.8);
+      tl.to("#s22-crew-r", { y: 5, duration: 1.1, yoyo: true, repeat: 2, ease: "sine.inOut" }, 12.9);
+
+      /* ---------- camera orbit 24 degrees + parallax ---------- */
+      tl.fromTo("#s22-world", { rotationY: -10, scale: 1.0 }, { rotationY: 14, scale: 1.035, duration: 16.52, transformOrigin: "50% 56%", ease: "sine.inOut" }, 0);
+      tl.fromTo("#s22-bg", { x: 14 }, { x: -14, duration: 16.52, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s22-mg", { x: -10 }, { x: 10, duration: 16.52, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s22-fg", { x: 24 }, { x: -24, duration: 16.52, ease: "sine.inOut" }, 0);
+
+      /* ---------- exit: blind-baffle-slide ---------- */
+      tl.to("#s22-exit", { x: 0, duration: 0.5, ease: "power3.in" }, 16.02);
+
+      tl.to({}, { duration: 16.520 }, 0);
+      window.__timelines["22-blind-thread"] = tl;
+    })();
+  </script>
+</div>
+</template>

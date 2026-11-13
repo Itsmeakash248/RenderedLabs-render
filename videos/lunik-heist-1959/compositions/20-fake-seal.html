@@ -1,0 +1,439 @@
+<template id="s20-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="20-fake-seal" data-width="1920" data-height="1080" data-start="0" data-duration="23.840">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="s20-sky" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.52" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s20-metal" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.92"/>
+          <stop offset="0.2" stop-color="#B8C0D8"/>
+          <stop offset="0.62" stop-color="#515A83"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </linearGradient>
+        <linearGradient id="s20-nut-grad" x1="0.1" y1="0" x2="0.9" y2="1">
+          <stop offset="0" stop-color="#B8C0D8"/>
+          <stop offset="0.26" stop-color="#515A83"/>
+          <stop offset="0.7" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s20-plastic" x1="0" y1="0" x2="0.8" y2="1">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.58"/>
+          <stop offset="0.34" stop-color="#B8C0D8" stop-opacity="0.3"/>
+          <stop offset="0.74" stop-color="#515A83" stop-opacity="0.42"/>
+          <stop offset="1" stop-color="#0A0E24" stop-opacity="0.62"/>
+        </linearGradient>
+        <linearGradient id="s20-gold" x1="0" y1="0" x2="1" y2="0.4">
+          <stop offset="0" stop-color="#FF7A1A"/>
+          <stop offset="0.45" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#F4EFE3"/>
+        </linearGradient>
+        <linearGradient id="s20-card" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#151B3B" stop-opacity="0.92"/>
+          <stop offset="0.58" stop-color="#0A0E24" stop-opacity="0.9"/>
+          <stop offset="1" stop-color="#050814" stop-opacity="0.95"/>
+        </linearGradient>
+        <linearGradient id="s20-glass" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/>
+          <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.03"/>
+          <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="s20-violet" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.48"/>
+          <stop offset="0.62" stop-color="#8E5FD9" stop-opacity="0.14"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s20-ember" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.55"/>
+          <stop offset="0.58" stop-color="#FF7A1A" stop-opacity="0.15"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s20-glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.94"/>
+          <stop offset="0.34" stop-color="#FFD23F" stop-opacity="0.62"/>
+          <stop offset="0.72" stop-color="#FF7A1A" stop-opacity="0.2"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <clipPath id="s20-plate-clip">
+          <rect x="1148" y="108" width="667.6" height="864" rx="10"/>
+        </clipPath>
+        <filter id="s20-goldGlow" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="7" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="s20-haze" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="28"/>
+        </filter>
+        <filter id="s20-soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="10"/>
+        </filter>
+      </defs>
+
+      <g id="s20-world">
+        <!-- ================= BACKGROUND: macro depth ================= -->
+        <g id="s20-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s20-sky)"/>
+          <ellipse id="s20-violet-a" cx="470" cy="520" rx="650" ry="500" fill="url(#s20-violet)"/>
+          <ellipse id="s20-ember-a" cx="760" cy="560" rx="380" ry="300" fill="url(#s20-ember)" opacity="0.55"/>
+          <g stroke="#515A83" stroke-width="6" opacity="0.14">
+            <path d="M -80 860 L 900 160"/>
+            <path d="M -40 980 L 980 240"/>
+            <path d="M 120 1080 L 1080 360"/>
+            <path d="M -60 700 L 760 60"/>
+          </g>
+          <g stroke="#FF7A1A" stroke-width="6" opacity="0.18">
+            <path d="M 120 1000 L 980 300"/>
+            <path d="M 40 760 L 640 250"/>
+          </g>
+          <g id="s20-bg-dust" fill="#F4EFE3">
+            <circle cx="300" cy="300" r="4" opacity="0.18"/>
+            <circle cx="720" cy="180" r="3" opacity="0.14"/>
+            <circle cx="980" cy="720" r="4" opacity="0.16"/>
+            <circle cx="180" cy="860" r="3" opacity="0.12"/>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: rod, nut, wire, seal ================= -->
+        <g id="s20-mg">
+          <g id="s20-rod">
+            <rect x="-80" y="520" width="800" height="52" rx="26" fill="url(#s20-metal)" stroke="#050814" stroke-width="8"/>
+            <line x1="-60" y1="534" x2="640" y2="534" stroke="#F4EFE3" stroke-width="6" stroke-linecap="round" opacity="0.55"/>
+            <rect x="648" y="500" width="28" height="92" rx="12" fill="#515A83" stroke="#050814" stroke-width="6"/>
+            <g stroke="#0A0E24" stroke-width="6" opacity="0.6">
+              <line x1="660" y1="514" x2="660" y2="578"/>
+              <line x1="672" y1="514" x2="672" y2="578"/>
+            </g>
+          </g>
+
+          <g id="s20-nut">
+            <rect x="590" y="430" width="250" height="230" rx="36" fill="url(#s20-nut-grad)" stroke="#050814" stroke-width="10"/>
+            <rect x="606" y="446" width="218" height="198" rx="26" fill="#0A0E24" stroke="#515A83" stroke-width="4"/>
+            <rect x="590" y="430" width="250" height="230" rx="36" fill="none" stroke="#FF7A1A" stroke-width="8" opacity="0.55"/>
+            <g class="s20-socket">
+              <circle cx="661" cy="501" r="44" fill="#050814" stroke="#B8C0D8" stroke-width="10"/>
+              <circle cx="661" cy="501" r="28" fill="none" stroke="#FF7A1A" stroke-width="6" opacity="0.8"/>
+              <rect x="646" y="488" width="30" height="26" rx="4" fill="#0A0E24" stroke="#515A83" stroke-width="3"/>
+            </g>
+            <g class="s20-socket">
+              <circle cx="779" cy="501" r="44" fill="#050814" stroke="#B8C0D8" stroke-width="10"/>
+              <circle cx="779" cy="501" r="28" fill="none" stroke="#FF7A1A" stroke-width="6" opacity="0.8"/>
+              <rect x="764" y="488" width="30" height="26" rx="4" fill="#0A0E24" stroke="#515A83" stroke-width="3"/>
+            </g>
+            <g class="s20-socket">
+              <circle cx="661" cy="601" r="44" fill="#050814" stroke="#B8C0D8" stroke-width="10"/>
+              <circle cx="661" cy="601" r="28" fill="none" stroke="#FF7A1A" stroke-width="6" opacity="0.8"/>
+              <rect x="646" y="588" width="30" height="26" rx="4" fill="#0A0E24" stroke="#515A83" stroke-width="3"/>
+            </g>
+            <g class="s20-socket">
+              <circle cx="779" cy="601" r="44" fill="#050814" stroke="#B8C0D8" stroke-width="10"/>
+              <circle cx="779" cy="601" r="28" fill="none" stroke="#FF7A1A" stroke-width="6" opacity="0.8"/>
+              <rect x="764" y="588" width="30" height="26" rx="4" fill="#0A0E24" stroke="#515A83" stroke-width="3"/>
+            </g>
+            <circle cx="720" cy="551" r="38" fill="url(#s20-gold)" stroke="#050814" stroke-width="6"/>
+            <circle cx="720" cy="551" r="22" fill="#0A0E24" stroke="#B8C0D8" stroke-width="5"/>
+            <g fill="#B8C0D8" opacity="0.7">
+              <circle cx="616" cy="456" r="7"/>
+              <circle cx="814" cy="456" r="7"/>
+              <circle cx="616" cy="634" r="7"/>
+              <circle cx="814" cy="634" r="7"/>
+            </g>
+          </g>
+
+          <!-- keyed wire, cut into two segments at the jaw point -->
+          <path id="s20-wire-main" d="M 862 380 C 826 468 792 512 720 552 C 656 588 690 656 748 648 C 806 640 836 520 902 440"
+                fill="none" stroke="url(#s20-gold)" stroke-width="16" stroke-linecap="round"/>
+          <g id="s20-key-l">
+            <circle cx="826" cy="690" r="28" fill="none" stroke="url(#s20-gold)" stroke-width="16"/>
+            <line x1="854" y1="690" x2="902" y2="690" stroke="url(#s20-gold)" stroke-width="16" stroke-linecap="round"/>
+          </g>
+          <g id="s20-key-r">
+            <line x1="902" y1="690" x2="960" y2="690" stroke="url(#s20-gold)" stroke-width="16" stroke-linecap="round"/>
+            <line x1="930" y1="690" x2="930" y2="716" stroke="url(#s20-gold)" stroke-width="16" stroke-linecap="round"/>
+            <line x1="954" y1="690" x2="954" y2="710" stroke="url(#s20-gold)" stroke-width="16" stroke-linecap="round"/>
+          </g>
+
+          <!-- translucent plastic block: 42 x 30 at 4.4x macro scale -->
+          <ellipse id="s20-seal-glow" cx="930" cy="306" rx="150" ry="104" fill="url(#s20-glow)" opacity="0"/>
+          <g transform="translate(846 240) scale(4.4)">
+            <g id="s20-seal">
+              <rect x="0" y="0" width="42" height="30" rx="4" fill="url(#s20-plastic)" stroke="#B8C0D8" stroke-width="1.4"/>
+              <rect x="2" y="2" width="38" height="9" rx="2" fill="#FFFFFF" opacity="0.2"/>
+              <rect x="2.4" y="2.4" width="37.2" height="25.2" rx="3" fill="none" stroke="#F4EFE3" stroke-width="0.6" opacity="0.3"/>
+              <g id="s20-stamp" transform="translate(21 15)">
+                <rect x="-5" y="-5" width="10" height="10" rx="1.6" fill="url(#s20-gold)" stroke="#050814" stroke-width="1"/>
+                <path d="M 0 -3.6 l 1.05 2.15 2.37 0.34 -1.72 1.67 0.41 2.36 -2.11 -1.11 -2.11 1.11 0.41 -2.36 -1.72 -1.67 2.37 -0.34 z" fill="#050814"/>
+                <circle cx="0" cy="0" r="1.4" fill="none" stroke="#050814" stroke-width="0.7"/>
+              </g>
+              <line x1="4" y1="27" x2="14" y2="27" stroke="#F4EFE3" stroke-width="0.9" opacity="0.42"/>
+              <line x1="28" y1="27" x2="38" y2="27" stroke="#F4EFE3" stroke-width="0.9" opacity="0.42"/>
+            </g>
+          </g>
+
+          <!-- courier case + duplicate packet -->
+          <g transform="translate(150 700)">
+            <g id="s20-case">
+            <ellipse cx="160" cy="246" rx="180" ry="26" fill="#050814" opacity="0.6" filter="url(#s20-haze)"/>
+            <rect x="0" y="40" width="320" height="190" rx="18" fill="#151B3B" stroke="#B8C0D8" stroke-width="8"/>
+            <rect x="14" y="54" width="292" height="162" rx="10" fill="#050814" stroke="#515A83" stroke-width="4"/>
+            <g id="s20-lid">
+              <rect x="0" y="-24" width="320" height="64" rx="12" fill="url(#s20-nut-grad)" stroke="#B8C0D8" stroke-width="7"/>
+              <rect x="24" y="-12" width="272" height="10" rx="5" fill="#F4EFE3" opacity="0.28"/>
+              <rect x="138" y="-8" width="44" height="18" rx="6" fill="#FFD23F" stroke="#050814" stroke-width="4"/>
+            </g>
+            <g id="s20-dup" transform="translate(40 78)">
+              <g transform="scale(2.2)">
+                <rect x="0" y="0" width="42" height="30" rx="4" fill="url(#s20-plastic)" stroke="#B8C0D8" stroke-width="1.6"/>
+                <rect x="2" y="2" width="38" height="8" rx="2" fill="#FFFFFF" opacity="0.2"/>
+                <g transform="translate(21 15)">
+                  <rect x="-5" y="-5" width="10" height="10" rx="1.6" fill="url(#s20-gold)" stroke="#050814" stroke-width="1"/>
+                  <path d="M 0 -3.4 l 1 2.05 2.26 0.33 -1.64 1.6 0.39 2.25 -2.01 -1.06 -2.01 1.06 0.39 -2.25 -1.64 -1.6 2.26 -0.33 z" fill="#050814"/>
+                </g>
+              </g>
+              <circle cx="138" cy="38" r="26" fill="none" stroke="url(#s20-gold)" stroke-width="10"/>
+              <path d="M 164 38 q 24 -8 40 8" fill="none" stroke="url(#s20-gold)" stroke-width="8" stroke-linecap="round"/>
+              <rect x="180" y="52" width="34" height="24" rx="5" fill="#0A0E24" stroke="#515A83" stroke-width="3"/>
+              <g fill="#B8C0D8" opacity="0.7">
+                <circle cx="12" cy="86" r="4"/>
+                <circle cx="214" cy="86" r="4"/>
+              </g>
+            </g>
+            <g stroke="#FFD23F" stroke-width="4" opacity="0.55">
+              <line x1="10" y1="200" x2="34" y2="200"/>
+              <line x1="286" y1="200" x2="310" y2="200"/>
+              <line x1="10" y1="214" x2="34" y2="214"/>
+              <line x1="286" y1="214" x2="310" y2="214"/>
+            </g>
+            </g>
+          </g>
+
+          <path id="s20-match" d="M 352 826 C 500 760 650 560 878 342" fill="none" stroke="#FFD23F" stroke-width="7" stroke-linecap="round" stroke-dasharray="16 12" opacity="0.7"/>
+          <g id="s20-match-ticks" stroke="#FFD23F" stroke-width="6" stroke-linecap="round">
+            <path d="M 330 812 L 362 836"/>
+            <path d="M 356 800 L 386 824"/>
+            <path d="M 866 330 L 890 354"/>
+            <path d="M 878 318 L 902 342"/>
+          </g>
+
+          <!-- cutters -->
+          <g transform="translate(700 760)">
+            <g id="s20-cutters">
+            <g id="s20-blade-a">
+              <path d="M -60 38 L 160 -34 L 194 -76" fill="none" stroke="#B8C0D8" stroke-width="26" stroke-linecap="round"/>
+              <path d="M 158 -38 L 194 -76" fill="none" stroke="#FF7A1A" stroke-width="12" stroke-linecap="round"/>
+            </g>
+            <g id="s20-blade-b">
+              <path d="M -60 -16 L 160 -58 L 194 -76" fill="none" stroke="#515A83" stroke-width="26" stroke-linecap="round"/>
+              <path d="M 156 -62 L 194 -76" fill="none" stroke="#FF7A1A" stroke-width="12" stroke-linecap="round"/>
+            </g>
+            <circle cx="0" cy="0" r="20" fill="#FFD23F" stroke="#050814" stroke-width="6"/>
+            <circle cx="0" cy="0" r="8" fill="#050814"/>
+            <rect x="-78" y="-18" width="34" height="36" rx="10" fill="#151B3B" stroke="#B8C0D8" stroke-width="6"/>
+            </g>
+          </g>
+
+          <g id="s20-snap" opacity="0">
+            <path d="M 858 660 q -26 24 -42 54" fill="none" stroke="#FFD23F" stroke-width="8" stroke-linecap="round"/>
+            <path d="M 922 668 q 24 28 36 58" fill="none" stroke="#FF7A1A" stroke-width="8" stroke-linecap="round"/>
+            <g fill="#FFD23F">
+              <circle cx="872" cy="654" r="7"/>
+              <circle cx="904" cy="658" r="6"/>
+              <circle cx="930" cy="672" r="5"/>
+              <circle cx="846" cy="690" r="5"/>
+              <circle cx="954" cy="706" r="4"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND: plate card, badge, dust ================= -->
+        <g id="s20-fg">
+          <g id="s20-card-g">
+            <rect x="1104" y="52" width="756" height="976" rx="24" fill="url(#s20-card)" stroke="#B8C0D8" stroke-width="3"/>
+            <rect x="1116" y="64" width="732" height="952" rx="18" fill="none" stroke="#F4EFE3" stroke-width="1.6" opacity="0.18"/>
+            <path d="M 1104 120 L 1104 52 L 1172 52" fill="none" stroke="#FFD23F" stroke-width="14" stroke-linecap="round" opacity="0.72"/>
+            <path d="M 1860 52 L 1860 120" fill="none" stroke="#FFD23F" stroke-width="14" stroke-linecap="round" opacity="0.55"/>
+            <path d="M 1104 960 L 1104 1028 L 1172 1028" fill="none" stroke="#FFD23F" stroke-width="14" stroke-linecap="round" opacity="0.55"/>
+            <path d="M 1860 1028 L 1792 1028" fill="none" stroke="#FFD23F" stroke-width="14" stroke-linecap="round" opacity="0.55"/>
+            <g fill="#B8C0D8" opacity="0.55">
+              <circle cx="1132" cy="80" r="5"/>
+              <circle cx="1832" cy="80" r="5"/>
+              <circle cx="1132" cy="1000" r="5"/>
+              <circle cx="1832" cy="1000" r="5"/>
+            </g>
+            <rect x="1138" y="98" width="688" height="884" rx="14" fill="#0A0E24" opacity="0.94"/>
+            <image href="../plates/processed/pl-seal-02.png" x="1148" y="108" width="667.6" height="864" preserveAspectRatio="xMidYMid meet" clip-path="url(#s20-plate-clip)"/>
+            <rect x="1148" y="108" width="667.6" height="864" rx="10" fill="none" stroke="url(#s20-gold)" stroke-width="3" opacity="0.5"/>
+            <rect x="1148" y="108" width="667.6" height="864" rx="10" fill="none" stroke="#F4EFE3" stroke-width="1.4" opacity="0.2"/>
+            <rect id="s20-plate-sheen" x="1148" y="108" width="170" height="864" fill="url(#s20-glass)" opacity="0"/>
+            <rect id="s20-card-sheen" x="1116" y="64" width="180" height="952" fill="url(#s20-glass)" opacity="0"/>
+
+            <!-- source-pixel quote overlay: 1275 x 1650 -->
+            <svg x="1148" y="108" width="667.6" height="864" viewBox="0 0 1275 1650" preserveAspectRatio="xMidYMid meet">
+              <g id="s20-q" opacity="0">
+                <rect x="544" y="333" width="547" height="37" rx="4" fill="none" stroke="#FFD23F" stroke-width="14" filter="url(#s20-goldGlow)"/>
+                <g stroke="#FFD23F" stroke-width="11" stroke-linecap="round">
+                  <line x1="532" y1="321" x2="532" y2="345"/>
+                  <line x1="1103" y1="321" x2="1103" y2="345"/>
+                  <line x1="532" y1="358" x2="532" y2="382"/>
+                  <line x1="1103" y1="358" x2="1103" y2="382"/>
+                </g>
+                <rect id="s20-q-sweep" x="909" y="335" width="182" height="33" rx="4" fill="#FFD23F" opacity="0.4"/>
+                <line id="s20-q-rule" x1="544" y1="382" x2="1091" y2="382" stroke="#FFD23F" stroke-width="8" stroke-linecap="round" opacity="0"/>
+              </g>
+            </svg>
+          </g>
+
+          <g id="s20-badge">
+            <rect x="64" y="52" width="330" height="98" rx="49" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="78" y="66" width="302" height="70" rx="35" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.35"/>
+            <g fill="#FFD23F" opacity="0.85">
+              <circle cx="102" cy="101" r="7"/>
+              <circle cx="356" cy="101" r="7"/>
+            </g>
+            <text x="229" y="117" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="44"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="9" paint-order="stroke fill" letter-spacing="3"
+                  textLength="220" lengthAdjust="spacingAndGlyphs">FAKE SEAL</text>
+          </g>
+
+          <g id="s20-dust" fill="#F4EFE3">
+            <circle cx="240" cy="960" r="5" opacity="0.18"/>
+            <circle cx="520" cy="1000" r="4" opacity="0.14"/>
+            <circle cx="880" cy="980" r="5" opacity="0.16"/>
+            <circle cx="1020" cy="880" r="4" opacity="0.12"/>
+          </g>
+
+          <g id="s20-exit" opacity="0">
+            <rect x="0" y="0" width="1920" height="1080" fill="#FFD23F" opacity="0"/>
+            <circle id="s20-exit-ring" cx="930" cy="306" r="120" fill="none" stroke="#FFD23F" stroke-width="18"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:radial-gradient(circle at 38% 55%, rgba(255,122,26,0.12), transparent 62%);}
+    .scene-persp{position:absolute;inset:0;perspective:1500px;perspective-origin:42% 54%;}
+    #s20-world{transform-style:preserve-3d;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      /* ---------- initial states ---------- */
+      gsap.set("#s20-violet-a", { opacity: 0, scale: 0.84, transformOrigin: "50% 50%" });
+      gsap.set("#s20-ember-a", { opacity: 0 });
+      gsap.set("#s20-bg-dust circle", { opacity: 0 });
+      gsap.set("#s20-rod", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s20-nut", { opacity: 0, scale: 0.62, transformOrigin: "50% 50%" });
+      gsap.set(".s20-socket", { opacity: 0, scale: 0.2, transformOrigin: "50% 50%" });
+      gsap.set("#s20-wire-main", { strokeDasharray: 900, strokeDashoffset: 900 });
+      gsap.set("#s20-key-l", { strokeDasharray: 220, strokeDashoffset: 220 });
+      gsap.set("#s20-key-r", { strokeDasharray: 160, strokeDashoffset: 160 });
+      gsap.set("#s20-seal", { opacity: 0, scale: 0.6, transformOrigin: "50% 50%" });
+      gsap.set("#s20-stamp", { scaleY: 0.35, transformOrigin: "50% 50%" });
+      gsap.set("#s20-seal-glow", { opacity: 0 });
+      gsap.set("#s20-case", { opacity: 0, x: -420 });
+      gsap.set("#s20-lid", { rotation: 0, transformOrigin: "0px 40px" });
+      gsap.set("#s20-dup", { opacity: 0, scale: 0.6, transformOrigin: "50% 50%" });
+      gsap.set("#s20-match", { strokeDasharray: 760, strokeDashoffset: 760, opacity: 0 });
+      gsap.set("#s20-match-ticks", { opacity: 0 });
+      gsap.set("#s20-cutters", { opacity: 0, x: -80 });
+      gsap.set("#s20-blade-a", { rotation: -18, transformOrigin: "0px 38px" });
+      gsap.set("#s20-blade-b", { rotation: 18, transformOrigin: "0px -16px" });
+      gsap.set("#s20-snap", { opacity: 0, scale: 0.4, transformOrigin: "890px 690px" });
+      gsap.set("#s20-card-g", { opacity: 0, y: 34 });
+      gsap.set("#s20-plate-sheen", { opacity: 0 });
+      gsap.set("#s20-card-sheen", { opacity: 0 });
+      gsap.set("#s20-q", { opacity: 0, scale: 0.94, transformOrigin: "50% 50%" });
+      gsap.set("#s20-q-sweep", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s20-q-rule", { opacity: 0 });
+      gsap.set("#s20-badge", { opacity: 0, scale: 1.4, rotation: -4, transformOrigin: "50% 50%" });
+      gsap.set("#s20-dust circle", { opacity: 0 });
+      gsap.set("#s20-exit", { opacity: 0 });
+      gsap.set("#s20-exit-ring", { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" });
+
+      /* ---------- phase 1: macro depth, rod and four-way nut ---------- */
+      tl.to("#s20-violet-a", { opacity: 0.9, scale: 1, duration: 1.2, ease: "power2.out" }, 0.0);
+      tl.to("#s20-ember-a", { opacity: 0.7, duration: 1.3, ease: "power2.out" }, 0.1);
+      tl.to("#s20-bg-dust circle", { opacity: 0.15, duration: 0.7, stagger: 0.09, ease: "power1.out" }, 0.5);
+      tl.to("#s20-rod", { scaleX: 1, duration: 1.6, ease: "power3.out" }, 0.55);
+      tl.to("#s20-nut", { opacity: 1, scale: 1, duration: 0.75, ease: "back.out(1.5)" }, 1.35);
+      tl.to(".s20-socket", { opacity: 1, scale: 1, duration: 0.4, stagger: 0.16, ease: "back.out(2.2)" }, 2.0);
+
+      /* ---------- phase 2: keyed wire and plastic seal ---------- */
+      tl.to("#s20-wire-main", { strokeDashoffset: 0, duration: 1.9, ease: "power2.inOut" }, 3.15);
+      tl.to("#s20-key-l", { strokeDashoffset: 0, duration: 0.7, ease: "power2.out" }, 4.75);
+      tl.to("#s20-key-r", { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 4.95);
+      tl.to("#s20-seal", { opacity: 1, scale: 1, duration: 0.7, ease: "back.out(1.6)" }, 4.9);
+      tl.to("#s20-stamp", { scaleY: 1, duration: 0.4, ease: "back.out(3)" }, 5.5);
+      tl.to("#s20-seal-glow", { opacity: 0.9, duration: 0.45, ease: "power2.out" }, 5.7);
+      tl.to("#s20-seal-glow", { opacity: 0.55, duration: 1.1, yoyo: true, repeat: 2, ease: "sine.inOut" }, 6.3);
+
+      /* ---------- phase 3: cutters close, wire parts ---------- */
+      tl.to("#s20-cutters", { opacity: 1, x: 0, duration: 0.6, ease: "power2.out" }, 8.6);
+      tl.to("#s20-blade-a", { rotation: 0, duration: 0.45, ease: "power2.in" }, 9.35);
+      tl.to("#s20-blade-b", { rotation: 0, duration: 0.45, ease: "power2.in" }, 9.35);
+      tl.to("#s20-key-l", { x: -16, y: -10, rotation: -7, duration: 0.3, transformOrigin: "902px 690px", ease: "power2.out" }, 9.9);
+      tl.to("#s20-key-r", { x: 18, y: 12, rotation: 8, duration: 0.3, transformOrigin: "902px 690px", ease: "power2.out" }, 9.9);
+      tl.to("#s20-snap", { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(3)" }, 9.88);
+      tl.to("#s20-snap", { opacity: 0, scale: 1.5, duration: 0.55, ease: "power2.in" }, 10.25);
+      tl.to("#s20-cutters", { x: 34, duration: 0.6, ease: "power2.inOut" }, 10.35);
+
+      /* ---------- phase 4: courier case and duplicate packet ---------- */
+      tl.to("#s20-case", { opacity: 1, x: 0, duration: 1.1, ease: "power3.out" }, 11.8);
+      tl.to("#s20-lid", { rotation: -110, duration: 1.25, ease: "power2.inOut" }, 13.2);
+      tl.to("#s20-dup", { opacity: 1, scale: 1, duration: 0.75, ease: "back.out(1.6)" }, 14.15);
+      tl.to("#s20-match", { opacity: 0.75, strokeDashoffset: 0, duration: 1.5, ease: "power2.inOut" }, 15.1);
+      tl.to("#s20-match-ticks", { opacity: 1, duration: 0.35, ease: "power1.out" }, 16.35);
+      tl.to("#s20-match-ticks", { opacity: 0.55, duration: 1.0, yoyo: true, repeat: 1, ease: "sine.inOut" }, 16.9);
+
+      /* ---------- plate mount + quote sweep as the duplicate arrives ---------- */
+      tl.to("#s20-card-g", { opacity: 1, y: 0, duration: 0.85, ease: "back.out(1.3)" }, 1.1);
+      tl.to("#s20-plate-sheen", { opacity: 0.75, duration: 0.4, ease: "power1.out" }, 1.55);
+      tl.to("#s20-plate-sheen", { x: 620, duration: 1.5, ease: "power2.inOut" }, 1.7);
+      tl.to("#s20-plate-sheen", { opacity: 0, duration: 0.4, ease: "power1.in" }, 3.2);
+      tl.to("#s20-card-sheen", { opacity: 0.7, duration: 0.45, ease: "power1.out" }, 1.3);
+      tl.to("#s20-card-sheen", { x: 720, duration: 1.4, ease: "power2.inOut" }, 1.6);
+      tl.to("#s20-card-sheen", { opacity: 0, duration: 0.45, ease: "power1.in" }, 3.0);
+      tl.to("#s20-q", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2.2)" }, 13.35);
+      tl.to("#s20-q-sweep", { scaleX: 1, duration: 0.7, ease: "power2.inOut" }, 13.6);
+      tl.to("#s20-q-rule", { opacity: 0.75, duration: 0.4, ease: "power1.out" }, 14.35);
+      tl.to("#s20-q", { scale: 1.03, duration: 0.7, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 15.2);
+
+      /* ---------- living holds ---------- */
+      tl.to("#s20-badge", { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(2.4)" }, 0.8);
+      tl.to("#s20-badge", { y: -5, duration: 1.4, yoyo: true, repeat: 3, ease: "sine.inOut" }, 2.4);
+      tl.to("#s20-dust circle", { opacity: 0.16, duration: 0.8, stagger: 0.1, ease: "power1.out" }, 2.2);
+      tl.to("#s20-dust circle", { y: -22, duration: 2.6, yoyo: true, repeat: 1, ease: "sine.inOut" }, 3.4);
+      tl.to("#s20-case", { y: -4, duration: 1.5, yoyo: true, repeat: 2, ease: "sine.inOut" }, 17.2);
+      tl.to("#s20-dup", { scale: 1.02, duration: 0.9, yoyo: true, repeat: 2, transformOrigin: "50% 50%", ease: "sine.inOut" }, 17.8);
+      tl.to("#s20-card-g", { scale: 1.012, duration: 6.4, transformOrigin: "50% 50%", ease: "sine.inOut" }, 1.8);
+      tl.to("#s20-seal", { scale: 1.014, duration: 2.2, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 7.2);
+      tl.to("#s20-nut", { scale: 1.01, duration: 2.0, yoyo: true, repeat: 2, transformOrigin: "50% 50%", ease: "sine.inOut" }, 9.0);
+
+      /* ---------- camera orbit + parallax ---------- */
+      tl.fromTo("#s20-world", { rotationY: -3, scale: 1.0 }, { rotationY: 3, scale: 1.015, duration: 23.84, transformOrigin: "42% 54%", ease: "sine.inOut" }, 0);
+      tl.fromTo("#s20-bg", { x: -12 }, { x: 12, duration: 23.84, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s20-mg", { x: 9 }, { x: -9, duration: 23.84, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s20-fg", { x: -6 }, { x: 6, duration: 23.84, ease: "sine.inOut" }, 0);
+
+      /* ---------- exit: stamp-press match cut ---------- */
+      tl.to("#s20-exit", { opacity: 1, duration: 0.18, ease: "power1.out" }, 23.05);
+      tl.to("#s20-exit-ring", { opacity: 0.95, scale: 0.6, duration: 0.2, ease: "power2.out" }, 23.1);
+      tl.to("#s20-exit-ring", { opacity: 0, scale: 3.4, duration: 0.32, transformOrigin: "50% 50%", ease: "power3.in" }, 23.3);
+      tl.to("#s20-exit rect", { opacity: 0.5, duration: 0.12, ease: "power2.out" }, 23.48);
+
+      tl.to({}, { duration: 23.840 }, 0);
+      window.__timelines["20-fake-seal"] = tl;
+    })();
+  </script>
+</div>
+</template>

@@ -1,0 +1,510 @@
+<template id="s32-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="32-status-timeline" data-width="1920" data-height="1080" data-start="0" data-duration="17.740">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <!-- Ground and Void Gradients -->
+        <linearGradient id="s32-void-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0A0E24"/>
+          <stop offset="0.52" stop-color="#050814"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s32-rail-grad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#515A83"/>
+          <stop offset="0.3" stop-color="#FFD23F"/>
+          <stop offset="0.7" stop-color="#FF7A1A"/>
+          <stop offset="1" stop-color="#515A83"/>
+        </linearGradient>
+        <linearGradient id="s32-gold-grad" x1="0" y1="0" x2="0.8" y2="1">
+          <stop offset="0" stop-color="#FF7A1A"/>
+          <stop offset="0.46" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#F4EFE3"/>
+        </linearGradient>
+        <linearGradient id="s32-ember-grad" x1="0" y1="0" x2="0.8" y2="1">
+          <stop offset="0" stop-color="#FFD23F"/>
+          <stop offset="0.4" stop-color="#FF7A1A"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </linearGradient>
+        <linearGradient id="s32-metal-grad" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#F4EFE3"/>
+          <stop offset="0.35" stop-color="#B8C0D8"/>
+          <stop offset="0.75" stop-color="#515A83"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </linearGradient>
+        <linearGradient id="s32-arc-grad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#8E5FD9"/>
+          <stop offset="0.35" stop-color="#FFD23F"/>
+          <stop offset="0.75" stop-color="#FF7A1A"/>
+          <stop offset="1" stop-color="#FF3D5A"/>
+        </linearGradient>
+        <radialGradient id="s32-violet-haze" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.45"/>
+          <stop offset="0.6" stop-color="#8E5FD9" stop-opacity="0.14"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s32-gold-glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.5"/>
+          <stop offset="0.6" stop-color="#FF7A1A" stop-opacity="0.15"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s32-lock-glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.7"/>
+          <stop offset="0.45" stop-color="#FF3D5A" stop-opacity="0.3"/>
+          <stop offset="1" stop-color="#050814" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s32-flash-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.9"/>
+          <stop offset="0.4" stop-color="#FFD23F" stop-opacity="0.45"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="s32-haze" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="28"/>
+        </filter>
+        <filter id="s32-soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="10"/>
+        </filter>
+        <filter id="s32-glow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="7" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <g id="s32-world">
+        <!-- ================= BACKGROUND: dark void & aftermath violet haze ================= -->
+        <g id="s32-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s32-void-grad)"/>
+          <!-- Active mid-tone radiant ground pools -->
+          <ellipse cx="960" cy="540" rx="920" ry="340" fill="#151B3B" opacity="0.65" filter="url(#s32-haze)"/>
+          <ellipse cx="960" cy="840" rx="860" ry="220" fill="url(#s32-violet-haze)" opacity="0.6"/>
+          <ellipse cx="1440" cy="520" rx="420" ry="320" fill="url(#s32-gold-glow)" opacity="0.55"/>
+          <ellipse cx="1720" cy="520" rx="360" ry="280" fill="url(#s32-lock-glow)" opacity="0.5"/>
+
+          <!-- High-luminance celestial archival beacon discs (anchors contrast_std) -->
+          <g id="s32-beacon" transform="translate(1500 180)">
+            <ellipse cx="0" cy="0" rx="200" ry="200" fill="url(#s32-gold-glow)" opacity="0.85" filter="url(#s32-haze)"/>
+            <circle cx="0" cy="0" r="68" fill="#F4EFE3"/>
+            <circle cx="0" cy="0" r="92" fill="none" stroke="#FFD23F" stroke-width="16"/>
+            <circle cx="0" cy="0" r="120" fill="none" stroke="#FF7A1A" stroke-width="8" opacity="0.6"/>
+          </g>
+
+          <g id="s32-beacon-left" transform="translate(340 180)">
+            <ellipse cx="0" cy="0" rx="140" ry="140" fill="url(#s32-gold-glow)" opacity="0.7" filter="url(#s32-haze)"/>
+            <circle cx="0" cy="0" r="42" fill="#F4EFE3"/>
+            <circle cx="0" cy="0" r="60" fill="none" stroke="#FFD23F" stroke-width="10"/>
+            <circle cx="0" cy="0" r="80" fill="none" stroke="#FF7A1A" stroke-width="6" opacity="0.5"/>
+          </g>
+
+          <!-- Ground platform across lower frame (anchors mid_ratio and ground contrast) -->
+          <g id="s32-ground-platform">
+            <rect x="0" y="780" width="1920" height="300" fill="#151B3B"/>
+            <line x1="0" y1="780" x2="1920" y2="780" stroke="#515A83" stroke-width="20"/>
+            <line x1="0" y1="792" x2="1920" y2="792" stroke="#FFD23F" stroke-width="8" opacity="0.7"/>
+            <line x1="0" y1="804" x2="1920" y2="804" stroke="#B8C0D8" stroke-width="6" opacity="0.6"/>
+            <ellipse cx="960" cy="880" rx="640" ry="130" fill="url(#s32-ember-grad)" opacity="0.65" filter="url(#s32-haze)"/>
+            <ellipse cx="400" cy="860" rx="360" ry="90" fill="url(#s32-violet-haze)" opacity="0.75"/>
+          </g>
+
+          <!-- Technical calibration grid lines -->
+          <g stroke="#515A83" stroke-width="4" opacity="0.3">
+            <line x1="0" y1="280" x2="1920" y2="280"/>
+            <line x1="0" y1="520" x2="1920" y2="520"/>
+            <line x1="0" y1="760" x2="1920" y2="760"/>
+            <line x1="320" y1="0" x2="320" y2="1080"/>
+            <line x1="700" y1="0" x2="700" y2="1080"/>
+            <line x1="1080" y1="0" x2="1080" y2="1080"/>
+            <line x1="1440" y1="0" x2="1440" y2="1080"/>
+            <line x1="1720" y1="0" x2="1720" y2="1080"/>
+          </g>
+
+          <!-- Perspective ground rail sleepers in background plane -->
+          <g opacity="0.24" fill="#151B3B" stroke="#515A83" stroke-width="4">
+            <path d="M 200 840 L 400 780 L 480 820 L 280 880 Z"/>
+            <path d="M 640 840 L 840 780 L 920 820 L 720 880 Z"/>
+            <path d="M 1080 840 L 1280 780 L 1360 820 L 1160 880 Z"/>
+            <path d="M 1520 840 L 1720 780 L 1800 820 L 1600 880 Z"/>
+          </g>
+
+          <!-- Distant starlight particle beads -->
+          <g fill="#B8C0D8">
+            <circle cx="220" cy="180" r="5" opacity="0.3"/>
+            <circle cx="480" cy="220" r="6" opacity="0.25"/>
+            <circle cx="860" cy="160" r="4" opacity="0.28"/>
+            <circle cx="1280" cy="200" r="5" opacity="0.32"/>
+            <circle cx="1640" cy="170" r="6" opacity="0.35"/>
+            <circle cx="260" cy="940" r="5" opacity="0.22"/>
+            <circle cx="820" cy="980" r="4" opacity="0.26"/>
+            <circle cx="1380" cy="960" r="5" opacity="0.28"/>
+            <circle cx="1780" cy="920" r="6" opacity="0.3"/>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: timeline strip, 65-year arc, nodes, lock ================= -->
+        <g id="s32-mg">
+          <g id="s32-mg-drift">
+            <!-- 65-year elapsed arc beneath rail: curves from Node 1 (1959) to Lock (1720) -->
+            <g id="s32-arc-assembly">
+              <path id="s32-arc-glow" d="M 320 540 Q 1020 780 1720 540" fill="none"
+                    stroke="url(#s32-arc-grad)" stroke-width="28" stroke-linecap="round" opacity="0.25" filter="url(#s32-haze)"/>
+              <path id="s32-arc-sector" d="M 320 540 Q 1020 780 1720 540 L 1720 620 Q 1020 860 320 620 Z"
+                    fill="url(#s32-arc-grad)" opacity="0.32" filter="url(#s32-soft)"/>
+              <path id="s32-arc-bed" d="M 320 540 Q 1020 780 1720 540" fill="none"
+                    stroke="#151B3B" stroke-width="20" stroke-linecap="round"/>
+              <path id="s32-arc-rail" d="M 320 540 Q 1020 780 1720 540" fill="none"
+                    stroke="url(#s32-arc-grad)" stroke-width="12" stroke-linecap="round"
+                    stroke-dasharray="1600" stroke-dashoffset="1600"/>
+
+              <!-- Calibration tick marks along the arc -->
+              <g stroke="#FFD23F" stroke-width="6" stroke-linecap="round" opacity="0.7">
+                <line x1="480" y1="595" x2="480" y2="615"/>
+                <line x1="680" y1="645" x2="680" y2="665"/>
+                <line x1="900" y1="672" x2="900" y2="692"/>
+                <line x1="1140" y1="672" x2="1140" y2="692"/>
+                <line x1="1360" y1="645" x2="1360" y2="665"/>
+                <line x1="1560" y1="595" x2="1560" y2="615"/>
+              </g>
+
+              <!-- Arc end terminal glow bead -->
+              <circle id="s32-arc-terminal" cx="1720" cy="540" r="16" fill="#FF7A1A" stroke="#FFD23F" stroke-width="6" opacity="0"/>
+            </g>
+
+            <!-- Horizontal Timeline Bed and Rail (y = 520) -->
+            <g id="s32-rail-bed">
+              <!-- Structural chassis bed (48px volumetric slab) -->
+              <rect x="180" y="496" width="1600" height="48" rx="24" fill="#050814" stroke="#151B3B" stroke-width="8"/>
+              <rect x="188" y="504" width="1584" height="32" rx="16" fill="#151B3B" stroke="#515A83" stroke-width="4"/>
+              <!-- Top metal specular highlight rail -->
+              <line x1="200" y1="508" x2="1760" y2="508" stroke="#B8C0D8" stroke-width="4" opacity="0.6"/>
+              <!-- Main structural rail path (20px hero stroke) -->
+              <path id="s32-rail-main" d="M 200 520 L 1760 520" fill="none"
+                    stroke="#515A83" stroke-width="20" stroke-linecap="round"/>
+              <!-- Active illuminated core rail path (12px gold/ember) -->
+              <path id="s32-rail-active" d="M 200 520 L 1760 520" fill="none"
+                    stroke="url(#s32-rail-grad)" stroke-width="12" stroke-linecap="round"
+                    stroke-dasharray="1560" stroke-dashoffset="1560"/>
+            </g>
+
+            <!-- Node 1: 1959 (x = 320) -->
+            <g transform="translate(320 520)">
+              <g id="s32-node-1">
+                <line x1="0" y1="0" x2="0" y2="-90" stroke="#515A83" stroke-width="12" stroke-linecap="round"/>
+                <line x1="0" y1="0" x2="0" y2="-90" stroke="#FFD23F" stroke-width="6" stroke-linecap="round"/>
+                <!-- Outer pulse halo -->
+                <circle cx="0" cy="0" r="38" fill="none" stroke="#FFD23F" stroke-width="6" opacity="0.6"/>
+                <!-- Chunky Node Bead (r = 20, hero stroke 8px) -->
+                <circle cx="0" cy="0" r="20" fill="#050814" stroke="#FFD23F" stroke-width="8"/>
+                <circle cx="0" cy="0" r="10" fill="#FF7A1A"/>
+                <circle cx="0" cy="0" r="4" fill="#F4EFE3"/>
+
+                <!-- Date Pill: 1959 -->
+                <g id="s32-pill-1" transform="translate(-105 -152)">
+                  <rect x="0" y="0" width="210" height="76" rx="38" fill="#151B3B" stroke="#FFD23F" stroke-width="6"/>
+                  <rect x="10" y="8" width="190" height="60" rx="30" fill="#515A83" opacity="0.45" stroke="#B8C0D8" stroke-width="2"/>
+                  <circle cx="24" cy="38" r="6" fill="#FFD23F"/>
+                  <circle cx="186" cy="38" r="6" fill="#FFD23F"/>
+                  <!-- Vector Numeral Glyphs: 1 9 5 9 -->
+                  <g stroke="#F4EFE3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                    <!-- '1' -->
+                    <path d="M 54 52 L 54 24 M 46 32 L 54 24"/>
+                    <!-- '9' -->
+                    <path d="M 94 36 C 94 24 76 24 76 36 C 76 46 94 44 94 36 M 94 24 L 94 52 L 78 52"/>
+                    <!-- '5' -->
+                    <path d="M 132 24 L 114 24 L 114 35 L 128 35 C 134 35 134 52 126 52 L 114 52"/>
+                    <!-- '9' -->
+                    <path d="M 166 36 C 166 24 148 24 148 36 C 148 46 166 44 166 36 M 166 24 L 166 52 L 150 52"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+
+            <!-- Node 2: 1995 (x = 700) -->
+            <g transform="translate(700 520)">
+              <g id="s32-node-2">
+                <line x1="0" y1="0" x2="0" y2="-90" stroke="#515A83" stroke-width="12" stroke-linecap="round"/>
+                <line x1="0" y1="0" x2="0" y2="-90" stroke="#FFD23F" stroke-width="6" stroke-linecap="round"/>
+                <circle cx="0" cy="0" r="38" fill="none" stroke="#FFD23F" stroke-width="6" opacity="0.6"/>
+                <circle cx="0" cy="0" r="20" fill="#050814" stroke="#FFD23F" stroke-width="8"/>
+                <circle cx="0" cy="0" r="10" fill="#FF7A1A"/>
+                <circle cx="0" cy="0" r="4" fill="#F4EFE3"/>
+
+                <!-- Date Pill: 1995 -->
+                <g id="s32-pill-2" transform="translate(-105 -152)">
+                  <rect x="0" y="0" width="210" height="76" rx="38" fill="#151B3B" stroke="#FFD23F" stroke-width="6"/>
+                  <rect x="10" y="8" width="190" height="60" rx="30" fill="#515A83" opacity="0.45" stroke="#B8C0D8" stroke-width="2"/>
+                  <circle cx="24" cy="38" r="6" fill="#FFD23F"/>
+                  <circle cx="186" cy="38" r="6" fill="#FFD23F"/>
+                  <!-- Vector Numeral Glyphs: 1 9 9 5 -->
+                  <g stroke="#F4EFE3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                    <!-- '1' -->
+                    <path d="M 54 52 L 54 24 M 46 32 L 54 24"/>
+                    <!-- '9' -->
+                    <path d="M 94 36 C 94 24 76 24 76 36 C 76 46 94 44 94 36 M 94 24 L 94 52 L 78 52"/>
+                    <!-- '9' -->
+                    <path d="M 130 36 C 130 24 112 24 112 36 C 112 46 130 44 130 36 M 130 24 L 130 52 L 114 52"/>
+                    <!-- '5' -->
+                    <path d="M 166 24 L 148 24 L 148 35 L 162 35 C 168 35 168 52 160 52 L 148 52"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+
+            <!-- Node 3: 2019 (x = 1080) -->
+            <g transform="translate(1080 520)">
+              <g id="s32-node-3">
+                <line x1="0" y1="0" x2="0" y2="-90" stroke="#515A83" stroke-width="12" stroke-linecap="round"/>
+                <line x1="0" y1="0" x2="0" y2="-90" stroke="#FFD23F" stroke-width="6" stroke-linecap="round"/>
+                <circle cx="0" cy="0" r="38" fill="none" stroke="#FFD23F" stroke-width="6" opacity="0.6"/>
+                <circle cx="0" cy="0" r="20" fill="#050814" stroke="#FFD23F" stroke-width="8"/>
+                <circle cx="0" cy="0" r="10" fill="#FF7A1A"/>
+                <circle cx="0" cy="0" r="4" fill="#F4EFE3"/>
+
+                <!-- Date Pill: 2019 -->
+                <g id="s32-pill-3" transform="translate(-105 -152)">
+                  <rect x="0" y="0" width="210" height="76" rx="38" fill="#151B3B" stroke="#FFD23F" stroke-width="6"/>
+                  <rect x="10" y="8" width="190" height="60" rx="30" fill="#515A83" opacity="0.45" stroke="#B8C0D8" stroke-width="2"/>
+                  <circle cx="24" cy="38" r="6" fill="#FFD23F"/>
+                  <circle cx="186" cy="38" r="6" fill="#FFD23F"/>
+                  <!-- Vector Numeral Glyphs: 2 0 1 9 -->
+                  <g stroke="#F4EFE3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                    <!-- '2' -->
+                    <path d="M 42 32 C 42 22 60 22 60 32 C 60 42 42 46 42 52 L 62 52"/>
+                    <!-- '0' -->
+                    <path d="M 84 38 C 84 24 102 24 102 38 C 102 52 84 52 84 38 Z"/>
+                    <!-- '1' -->
+                    <path d="M 128 52 L 128 24 M 120 32 L 128 24"/>
+                    <!-- '9' -->
+                    <path d="M 166 36 C 166 24 148 24 148 36 C 148 46 166 44 166 36 M 166 24 L 166 52 L 150 52"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+
+            <!-- Node 4: 2024 (x = 1440) + Film-Reel Icon -->
+            <g transform="translate(1440 520)">
+              <g id="s32-node-4">
+                <line x1="0" y1="0" x2="0" y2="-90" stroke="#515A83" stroke-width="12" stroke-linecap="round"/>
+                <line x1="0" y1="0" x2="0" y2="-90" stroke="#FFD23F" stroke-width="6" stroke-linecap="round"/>
+                <circle cx="0" cy="0" r="38" fill="none" stroke="#FFD23F" stroke-width="6" opacity="0.6"/>
+                <circle cx="0" cy="0" r="20" fill="#050814" stroke="#FFD23F" stroke-width="8"/>
+                <circle cx="0" cy="0" r="10" fill="#FF7A1A"/>
+                <circle cx="0" cy="0" r="4" fill="#F4EFE3"/>
+
+                <!-- Date Pill: 2024 -->
+                <g id="s32-pill-4" transform="translate(-105 -152)">
+                  <rect x="0" y="0" width="210" height="76" rx="38" fill="#151B3B" stroke="#FFD23F" stroke-width="6"/>
+                  <rect x="10" y="8" width="190" height="60" rx="30" fill="#515A83" opacity="0.45" stroke="#B8C0D8" stroke-width="2"/>
+                  <circle cx="24" cy="38" r="6" fill="#FFD23F"/>
+                  <circle cx="186" cy="38" r="6" fill="#FFD23F"/>
+                  <!-- Vector Numeral Glyphs: 2 0 2 4 -->
+                  <g stroke="#F4EFE3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                    <!-- '2' -->
+                    <path d="M 42 32 C 42 22 60 22 60 32 C 60 42 42 46 42 52 L 62 52"/>
+                    <!-- '0' -->
+                    <path d="M 84 38 C 84 24 102 24 102 38 C 102 52 84 52 84 38 Z"/>
+                    <!-- '2' -->
+                    <path d="M 120 32 C 120 22 138 22 138 32 C 138 42 120 46 120 52 L 140 52"/>
+                    <!-- '4' -->
+                    <path d="M 166 52 L 166 24 L 148 40 L 170 40"/>
+                  </g>
+                </g>
+
+                <!-- Film-Reel Icon at 2024 -->
+                <g transform="translate(0 125)">
+                  <g id="s32-film-reel">
+                    <circle cx="0" cy="0" r="44" fill="#151B3B" stroke="#FFD23F" stroke-width="8"/>
+                    <circle cx="0" cy="0" r="32" fill="#050814" stroke="#515A83" stroke-width="4"/>
+                    <!-- Film Reel Core & Cutouts -->
+                    <circle cx="0" cy="0" r="14" fill="#FF7A1A"/>
+                    <circle cx="0" cy="-18" r="7" fill="#050814"/>
+                    <circle cx="18" cy="0" r="7" fill="#050814"/>
+                    <circle cx="0" cy="18" r="7" fill="#050814"/>
+                    <circle cx="-18" cy="0" r="7" fill="#050814"/>
+                    <!-- Film Strip leader ribbon -->
+                    <path d="M 32 32 Q 60 60 90 40 Q 110 20 130 50" fill="none" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/>
+                    <g stroke="#050814" stroke-width="3" stroke-linecap="round">
+                      <line x1="48" y1="42" x2="52" y2="46"/>
+                      <line x1="72" y1="46" x2="76" y2="42"/>
+                      <line x1="98" y1="36" x2="102" y2="40"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+
+            <!-- End Capsule: "Still Classified" Lock Capsule (x = 1720) -->
+            <g transform="translate(1720 520)">
+              <g id="s32-lock-station">
+                <!-- Outer lock radial pulse -->
+                <circle id="s32-lock-bloom" cx="0" cy="10" r="140" fill="url(#s32-lock-glow)" opacity="0"/>
+
+                <!-- Padlock Shackle (16px hero stroke) -->
+                <g id="s32-lock-shackle">
+                  <path d="M -30 -10 L -30 -54 C -30 -86 30 -86 30 -54 L 30 -10"
+                        fill="none" stroke="#B8C0D8" stroke-width="16" stroke-linecap="round"/>
+                  <path d="M -30 -10 L -30 -54 C -30 -86 30 -86 30 -54 L 30 -10"
+                        fill="none" stroke="#FFD23F" stroke-width="6" stroke-linecap="round"/>
+                </g>
+
+                <!-- Padlock Body Slab (chunky volumetric capsule) -->
+                <rect x="-65" y="-12" width="130" height="110" rx="26" fill="#050814" stroke="#FF7A1A" stroke-width="10"/>
+                <rect x="-52" y="0" width="104" height="86" rx="18" fill="#151B3B" stroke="#515A83" stroke-width="4"/>
+
+                <!-- Keyhole mechanism -->
+                <g transform="translate(0 38)">
+                  <circle cx="0" cy="-6" r="12" fill="#FFD23F"/>
+                  <path d="M -6 -4 L 6 -4 L 9 16 L -9 16 Z" fill="#FFD23F"/>
+                  <circle cx="0" cy="-6" r="5" fill="#050814"/>
+                  <rect x="-3" y="-6" width="6" height="18" rx="2" fill="#050814"/>
+                </g>
+
+                <!-- Hardware rivets on lock -->
+                <g fill="#B8C0D8" opacity="0.6">
+                  <circle cx="-40" cy="16" r="4"/>
+                  <circle cx="40" cy="16" r="4"/>
+                  <circle cx="-40" cy="68" r="4"/>
+                  <circle cx="40" cy="68" r="68" r="4"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND: single text badge, exit sweep ================= -->
+        <g id="s32-fg">
+          <!-- Text Badge ceiling: exactly ONE badge, 2 words -->
+          <g id="s32-badge" transform="translate(64 64)">
+            <rect x="0" y="0" width="480" height="98" rx="49" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="14" y="12" width="452" height="74" rx="37" fill="#151B3B" stroke="#515A83" stroke-width="3"/>
+            <!-- Accent indicator beads -->
+            <circle cx="36" cy="49" r="8" fill="#FFD23F"/>
+            <circle cx="444" cy="49" r="8" fill="#FFD23F"/>
+            <!-- The 2 on-screen words -->
+            <text x="240" y="62" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="36"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="8" paint-order="stroke fill" letter-spacing="2">SIXTY-FIVE YEARS</text>
+          </g>
+
+          <!-- Seam transition wipe: swift timeline-date-strip -->
+          <g id="s32-exit-wipe" opacity="0">
+            <rect x="-100" y="0" width="2120" height="1080" fill="#0A0E24" opacity="0.95"/>
+            <line x1="0" y1="520" x2="1920" y2="520" stroke="#FFD23F" stroke-width="32"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      background: transparent;
+    }
+    #root::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 30;
+      background: radial-gradient(circle at 50% 50%, rgba(142, 95, 217, 0.08), transparent 75%);
+    }
+    .scene-persp {
+      position: absolute;
+      inset: 0;
+      perspective: 1800px;
+      perspective-origin: 50% 50%;
+    }
+    #s32-world, #s32-mg, #s32-mg-drift {
+      transform-style: preserve-3d;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      /* ================= INITIAL STATE ================= */
+      gsap.set("#s32-rail-active", { strokeDashoffset: 1560 });
+      gsap.set("#s32-arc-rail", { strokeDashoffset: 1600 });
+      gsap.set("#s32-badge", { scale: 0.7, opacity: 0, transformOrigin: "0% 0%" });
+      gsap.set("#s32-node-1", { scale: 0, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s32-node-2", { scale: 0, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s32-node-3", { scale: 0, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s32-node-4", { scale: 0, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s32-film-reel", { scale: 0, rotation: -90, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s32-lock-station", { scale: 0, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s32-lock-shackle", { y: -36, rotation: -16, transformOrigin: "30px -10px" });
+
+      /* ================= PHASE 1: RAIL DRAW & BADGE (0.0 - 2.5s) ================= */
+      // 0.0s SFX riser cue: timeline rail draws across screen
+      tl.to("#s32-rail-active", { strokeDashoffset: 1100, duration: 1.8, ease: "power2.out" }, 0.0);
+      tl.to("#s32-badge", { scale: 1.0, opacity: 1, duration: 0.8, ease: "back.out(1.4)" }, 0.3);
+
+      // Node 1 (1959) stamps down at 1.4s (VO: "nineteen fifty-nine" at 470.1)
+      tl.to("#s32-node-1", { scale: 1.0, opacity: 1, duration: 0.65, ease: "back.out(1.5)" }, 1.35);
+
+      /* ================= PHASE 2: SEQUENCE OF DATE NODES (2.5 - 10.5s) ================= */
+      // Rail advances toward Node 2
+      tl.to("#s32-rail-active", { strokeDashoffset: 750, duration: 2.2, ease: "power1.inOut" }, 1.8);
+
+      // Node 2 (1995) stamps down at 4.2s (VO: "nineteen ninety-five" at 473.68)
+      tl.to("#s32-node-2", { scale: 1.0, opacity: 1, duration: 0.65, ease: "back.out(1.5)" }, 4.15);
+
+      // Rail advances toward Node 3
+      tl.to("#s32-rail-active", { strokeDashoffset: 400, duration: 2.5, ease: "power1.inOut" }, 4.8);
+
+      // Node 3 (2019) stamps down at 7.8s (VO: "twenty nineteen" at 478.28)
+      tl.to("#s32-node-3", { scale: 1.0, opacity: 1, duration: 0.65, ease: "back.out(1.5)" }, 7.75);
+
+      /* ================= PHASE 3: 2024, FILM REEL & 65-YEAR ARC (10.5 - 14.5s) ================= */
+      // Rail advances to Node 4 and Lock
+      tl.to("#s32-rail-active", { strokeDashoffset: 0, duration: 2.6, ease: "power2.out" }, 8.5);
+
+      // Node 4 (2024) stamps down at 11.1s (VO: "twenty twenty-four" at 480.08)
+      tl.to("#s32-node-4", { scale: 1.0, opacity: 1, duration: 0.65, ease: "back.out(1.5)" }, 11.05);
+
+      // Film reel seats at 2024 (VO: "a feature film was announced" at 481.3)
+      tl.to("#s32-film-reel", { scale: 1.0, rotation: 0, opacity: 1, duration: 0.8, ease: "back.out(1.4)" }, 11.6);
+      tl.to("#s32-film-reel", { rotation: 180, duration: 4.8, ease: "none" }, 12.4);
+
+      // 65-year arc fills beneath strip (11.2 - 14.2s)
+      tl.to("#s32-arc-rail", { strokeDashoffset: 0, duration: 3.0, ease: "power2.inOut" }, 11.2);
+      tl.to("#s32-arc-terminal", { opacity: 1, duration: 0.4, ease: "power2.out" }, 14.0);
+
+      /* ================= PHASE 4: LOCK CAPSULE & CLIMAX (14.5 - 17.740s) ================= */
+      // Lock capsule seats at 14.6s (VO: "Sixty-five years later, it is still not fully declassified")
+      tl.to("#s32-lock-station", { scale: 1.0, opacity: 1, duration: 0.5, ease: "back.out(1.3)" }, 14.5);
+
+      // Padlock shackle snaps shut with 4° recoil oscillation at 15.2s
+      tl.to("#s32-lock-shackle", { y: 0, rotation: 0, duration: 0.28, ease: "power3.in" }, 15.15);
+      tl.to("#s32-lock-station", { rotation: 4, duration: 0.08, yoyo: true, repeat: 3, ease: "sine.inOut" }, 15.43);
+      tl.to("#s32-lock-bloom", { opacity: 0.85, scale: 1.3, duration: 0.35, ease: "power2.out" }, 15.43);
+      tl.to("#s32-lock-bloom", { opacity: 0.35, scale: 1.1, duration: 0.6, ease: "power2.inOut" }, 15.78);
+
+      /* ================= LIVING HOLDS & AMBIENT DRIFT ================= */
+      tl.to("#s32-pill-1", { y: -4, duration: 0.7, yoyo: true, repeat: 2, ease: "sine.inOut" }, 3.0);
+      tl.to("#s32-pill-2", { y: -4, duration: 0.7, yoyo: true, repeat: 2, ease: "sine.inOut" }, 5.5);
+      tl.to("#s32-pill-3", { y: -4, duration: 0.7, yoyo: true, repeat: 2, ease: "sine.inOut" }, 9.0);
+      tl.to("#s32-pill-4", { y: -4, duration: 0.7, yoyo: true, repeat: 2, ease: "sine.inOut" }, 12.0);
+      tl.to("#s32-lock-station", { y: -3, duration: 0.45, yoyo: true, repeat: 2, ease: "sine.inOut" }, 16.0);
+
+      /* ================= CAMERA DOLLY & PARALLAX ================= */
+      tl.fromTo("#s32-world", { x: 80, scale: 1.0 }, { x: -80, scale: 1.04, duration: 17.740, transformOrigin: "50% 50%", ease: "sine.inOut" }, 0.0);
+      tl.fromTo("#s32-bg", { x: 30 }, { x: -30, duration: 17.740, ease: "sine.inOut" }, 0.0);
+      tl.fromTo("#s32-mg-drift", { x: -20 }, { x: 20, duration: 17.740, ease: "sine.inOut" }, 0.0);
+      tl.fromTo("#s32-fg", { x: 12 }, { x: -12, duration: 17.740, ease: "sine.inOut" }, 0.0);
+
+      /* ================= SEAM: SWIFT TIMELINE-DATE-STRIP ================= */
+      tl.to("#s32-exit-wipe", { opacity: 1, duration: 0.28, ease: "power2.in" }, 17.42);
+
+      /* ================= UNIVERSAL TIMELINE SLOT GUARD ================= */
+      tl.to({}, { duration: 17.740 }, 0);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["32-status-timeline"] = tl;
+    })();
+  </script>
+</div>
+</template>

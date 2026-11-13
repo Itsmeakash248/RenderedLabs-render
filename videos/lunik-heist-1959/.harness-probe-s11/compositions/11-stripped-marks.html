@@ -1,0 +1,680 @@
+<template id="s11-template">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<div id="root" data-composition-id="11-stripped-marks" data-width="1920" data-height="1080" data-start="0" data-duration="16.920">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="s11-void" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0A0E24"/>
+          <stop offset="0.55" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s11-floor" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.5" stop-color="#0B0F1E"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s11-hull" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#515A83"/>
+          <stop offset="0.24" stop-color="#515A83" stop-opacity="0.62"/>
+          <stop offset="0.58" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s11-cavity" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#0B0F1E"/>
+          <stop offset="0.5" stop-color="#050814"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s11-tank" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#B8C0D8" stop-opacity="0.65"/>
+          <stop offset="0.3" stop-color="#515A83" stop-opacity="0.72"/>
+          <stop offset="0.72" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s11-gold" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FFD23F"/>
+          <stop offset="0.62" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#FF7A1A"/>
+        </linearGradient>
+        <linearGradient id="s11-tag" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#515A83" stop-opacity="0.78"/>
+          <stop offset="0.5" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s11-glass" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.08"/>
+          <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.015"/>
+          <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="s11-violet" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.33"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s11-ember" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.60"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s11-gold-glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.48"/>
+          <stop offset="0.55" stop-color="#FF7A1A" stop-opacity="0.14"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s11-clock-face" cx="50%" cy="46%" r="62%">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.68" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </radialGradient>
+        <filter id="s11-goldGlow" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="7" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="s11-haze" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="26"/>
+        </filter>
+        <filter id="s11-soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="6"/>
+        </filter>
+        <filter id="s11-shadow" x="-30%" y="-30%" width="160%" height="180%">
+          <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#050814" flood-opacity="0.7"/>
+        </filter>
+        <clipPath id="s11-reveal" clipPathUnits="userSpaceOnUse">
+          <rect id="s11-reveal-rect" x="510" y="454" width="0" height="224" rx="34"/>
+        </clipPath>
+        <clipPath id="s11-clock-clip">
+          <circle cx="960" cy="540" r="778"/>
+        </clipPath>
+      </defs>
+
+      <g id="s11-world">
+        <!-- ================= BACKGROUND PLANE ================= -->
+        <g id="s11-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s11-void)"/>
+          <ellipse id="s11-violet-a" cx="850" cy="420" rx="780" ry="430" fill="url(#s11-violet)"/>
+          <ellipse id="s11-violet-b" cx="1540" cy="820" rx="560" ry="330" fill="url(#s11-violet)" opacity="0.7"/>
+
+          <g id="s11-drafting" fill="none" stroke="#8E5FD9" opacity="0.12">
+            <circle cx="940" cy="552" r="506" stroke-width="6"/>
+            <circle cx="940" cy="552" r="372" stroke-width="4"/>
+            <line x1="380" y1="552" x2="1500" y2="552" stroke-width="4"/>
+            <line x1="940" y1="40" x2="940" y2="720" stroke-width="4"/>
+            <path d="M 520 300 L 1360 300 L 1360 804 L 520 804 Z" stroke-width="4"/>
+          </g>
+
+          <g id="s11-gantry" fill="#151B3B" stroke="#515A83" stroke-width="6" opacity="0.55">
+            <g class="s11-gantry-post">
+              <rect x="96" y="0" width="34" height="742"/>
+              <line x1="96" y1="180" x2="290" y2="290"/>
+              <line x1="290" y1="290" x2="290" y2="742" stroke-width="8"/>
+              <circle cx="290" cy="290" r="10" fill="#FFD23F" stroke="none"/>
+            </g>
+            <g class="s11-gantry-post">
+              <rect x="1746" y="0" width="34" height="742"/>
+              <line x1="1746" y1="206" x2="1580" y2="330"/>
+              <line x1="1580" y1="330" x2="1580" y2="742" stroke-width="8"/>
+              <circle cx="1580" cy="330" r="10" fill="#FF7A1A" stroke="none"/>
+            </g>
+            <g class="s11-gantry-post">
+              <rect x="332" y="0" width="22" height="706"/>
+              <line x1="180" y1="120" x2="1200" y2="120" stroke-width="8" opacity="0.4"/>
+            </g>
+          </g>
+
+          <g id="s11-floor">
+            <path d="M -40 728 L 1960 706 L 1960 1100 L -40 1100 Z" fill="url(#s11-floor)"/>
+            <path d="M -40 728 L 1960 706" fill="none" stroke="#B8C0D8" stroke-width="8" opacity="0.16"/>
+            <g id="s11-floor-lines" stroke="#8E5FD9" stroke-width="4" opacity="0.14">
+              <line x1="960" y1="710" x2="-160" y2="1080"/>
+              <line x1="960" y1="710" x2="380" y2="1080"/>
+              <line x1="960" y1="710" x2="790" y2="1080"/>
+              <line x1="960" y1="710" x2="1160" y2="1080"/>
+              <line x1="960" y1="710" x2="1600" y2="1080"/>
+              <line x1="960" y1="710" x2="2160" y2="1080"/>
+              <line x1="-40" y1="812" x2="1960" y2="800"/>
+              <line x1="-40" y1="906" x2="1960" y2="890"/>
+              <line x1="-40" y1="1010" x2="1960" y2="990"/>
+            </g>
+            <ellipse cx="920" cy="796" rx="600" ry="72" fill="url(#s11-ember)" opacity="0.10" filter="url(#s11-haze)"/>
+          </g>
+
+          <!-- Moscow departure tag, back plane -->
+          <g transform="translate(1584 138)">
+            <g id="s11-tag">
+              <path d="M 60 8 C 16 -64 34 -128 118 -166" fill="none" stroke="#B8C0D8" stroke-width="9" opacity="0.5" stroke-linecap="round"/>
+              <circle cx="118" cy="-166" r="13" fill="none" stroke="#B8C0D8" stroke-width="7" opacity="0.6"/>
+              <path d="M 24 0 L 218 0 Q 246 0 246 30 L 246 336 Q 246 366 218 366 L 24 366 Q 0 366 0 336 L 0 30 Q 0 0 24 0 Z"
+                    fill="url(#s11-tag)" stroke="#B8C0D8" stroke-width="8"/>
+              <rect x="22" y="24" width="202" height="52" rx="14" fill="#0A0E24" opacity="0.55"/>
+              <circle cx="124" cy="50" r="15" fill="#0A0E24" stroke="#B8C0D8" stroke-width="7"/>
+              <rect x="26" y="112" width="194" height="20" rx="10" fill="url(#s11-gold)" opacity="0.86"/>
+              <rect x="26" y="150" width="146" height="12" rx="6" fill="#B8C0D8" opacity="0.34"/>
+              <rect x="26" y="176" width="176" height="12" rx="6" fill="#B8C0D8" opacity="0.24"/>
+              <rect x="26" y="202" width="128" height="12" rx="6" fill="#B8C0D8" opacity="0.22"/>
+              <g id="s11-tag-stamp" fill="none" stroke="#FFD23F" stroke-width="10" opacity="0.8">
+                <circle cx="124" cy="284" r="54"/>
+                <circle cx="124" cy="284" r="34" stroke-width="6" opacity="0.7"/>
+                <path d="M 92 284 L 116 306 L 158 262" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </g>
+          </g>
+
+          <g id="s11-bg-dust" fill="#F4EFE3">
+            <circle cx="440" cy="240" r="4" opacity="0.20"/>
+            <circle cx="1280" cy="196" r="3" opacity="0.16"/>
+            <circle cx="1510" cy="470" r="4" opacity="0.18"/>
+            <circle cx="300" cy="520" r="3" opacity="0.14"/>
+            <circle cx="1120" cy="728" r="4" opacity="0.16"/>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: CUTAWAY ================= -->
+        <g id="s11-mg">
+          <ellipse id="s11-rocket-shadow" cx="900" cy="752" rx="540" ry="38" fill="#050814" opacity="0.72" filter="url(#s11-haze)"/>
+
+          <!-- engine bell ghost, already removed -->
+          <g id="s11-engine-ghost" opacity="0">
+            <path d="M 386 514 L 322 474 Q 278 452 250 466 L 214 498 L 206 556 L 214 614 L 250 646 Q 278 660 322 638 L 386 598 Z"
+                  fill="#151B3B" stroke="#B8C0D8" stroke-width="8" opacity="0.86"/>
+            <ellipse cx="220" cy="556" rx="26" ry="64" fill="url(#s11-ember)" opacity="0.42" filter="url(#s11-soft)"/>
+            <g fill="none" stroke="#B8C0D8" stroke-width="6" opacity="0.42">
+              <path d="M 248 484 L 374 520"/>
+              <path d="M 232 516 L 380 544"/>
+              <path d="M 232 596 L 380 570"/>
+              <path d="M 248 630 L 374 594"/>
+              <path d="M 256 556 L 386 556"/>
+            </g>
+          </g>
+
+          <!-- stripped hull silhouette -->
+          <g id="s11-hull-g">
+            <path id="s11-hull-fill"
+                  d="M 470 410 L 1160 410 Q 1240 410 1290 452 L 1380 550 L 1290 648 Q 1240 690 1160 690 L 470 690 Q 380 690 380 600 L 380 500 Q 380 410 470 410 Z"
+                  fill="url(#s11-hull)" filter="url(#s11-shadow)"/>
+            <path id="s11-hull-line"
+                  d="M 470 410 L 1160 410 Q 1240 410 1290 452 L 1380 550 L 1290 648 Q 1240 690 1160 690 L 470 690 Q 380 690 380 600 L 380 500 Q 380 410 470 410 Z"
+                  fill="none" stroke="#B8C0D8" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M 482 428 L 1146 428" fill="none" stroke="#F4EFE3" stroke-width="10" opacity="0.30" stroke-linecap="round"/>
+            <path d="M 482 676 L 1148 676" fill="none" stroke="#050814" stroke-width="14" opacity="0.6" stroke-linecap="round"/>
+            <g id="s11-hull-seams" stroke="#0A0E24" stroke-width="8" opacity="0.4">
+              <line x1="560" y1="412" x2="560" y2="466"/>
+              <line x1="720" y1="412" x2="720" y2="466"/>
+              <line x1="900" y1="412" x2="900" y2="466"/>
+              <line x1="1060" y1="412" x2="1060" y2="466"/>
+              <line x1="560" y1="660" x2="560" y2="686"/>
+              <line x1="720" y1="660" x2="720" y2="686"/>
+              <line x1="900" y1="660" x2="900" y2="686"/>
+              <line x1="1060" y1="660" x2="1060" y2="686"/>
+              <line x1="1232" y1="438" x2="1292" y2="496"/>
+              <line x1="1232" y1="650" x2="1292" y2="602"/>
+            </g>
+            <g id="s11-rivets" fill="#B8C0D8" opacity="0.45">
+              <circle cx="590" cy="444" r="7"/>
+              <circle cx="670" cy="444" r="7"/>
+              <circle cx="750" cy="444" r="7"/>
+              <circle cx="830" cy="444" r="7"/>
+              <circle cx="910" cy="444" r="7"/>
+              <circle cx="990" cy="444" r="7"/>
+              <circle cx="1070" cy="444" r="7"/>
+              <circle cx="590" cy="676" r="7"/>
+              <circle cx="670" cy="676" r="7"/>
+              <circle cx="750" cy="676" r="7"/>
+              <circle cx="830" cy="676" r="7"/>
+              <circle cx="910" cy="676" r="7"/>
+              <circle cx="990" cy="676" r="7"/>
+              <circle cx="1070" cy="676" r="7"/>
+            </g>
+            <g id="s11-nose-bands" fill="none" stroke="#FF7A1A" stroke-width="7" opacity="0.55">
+              <path d="M 1256 428 L 1320 500"/>
+              <path d="M 1256 672 L 1320 600"/>
+              <path d="M 1318 510 L 1354 546"/>
+              <path d="M 1318 590 L 1354 554"/>
+            </g>
+            <circle id="s11-nose-light" cx="1374" cy="550" r="12" fill="#FFD23F" filter="url(#s11-goldGlow)"/>
+          </g>
+
+          <!-- revealed interior, swept in by the slice plane -->
+          <g clip-path="url(#s11-reveal)">
+            <rect x="510" y="468" width="690" height="190" rx="34"
+                  fill="url(#s11-cavity)" stroke="#B8C0D8" stroke-width="22"/>
+            <ellipse cx="1200" cy="563" rx="30" ry="96" fill="#0B0F1E" stroke="#B8C0D8" stroke-width="12"/>
+            <rect x="534" y="492" width="642" height="142" rx="24" fill="#050814" opacity="0.42"/>
+
+            <g id="s11-ribs" stroke="#515A83" stroke-width="12" opacity="0.52">
+              <line x1="620" y1="482" x2="620" y2="644"/>
+              <line x1="760" y1="482" x2="760" y2="644"/>
+              <line x1="900" y1="482" x2="900" y2="644"/>
+              <line x1="1040" y1="482" x2="1040" y2="644"/>
+              <line x1="1150" y1="482" x2="1150" y2="644"/>
+            </g>
+            <g fill="#B8C0D8" opacity="0.5">
+              <circle cx="620" cy="486" r="6"/>
+              <circle cx="760" cy="486" r="6"/>
+              <circle cx="900" cy="486" r="6"/>
+              <circle cx="1040" cy="486" r="6"/>
+              <circle cx="620" cy="640" r="6"/>
+              <circle cx="760" cy="640" r="6"/>
+              <circle cx="900" cy="640" r="6"/>
+              <circle cx="1040" cy="640" r="6"/>
+            </g>
+
+            <!-- fuel and oxidizer tanks, still seated -->
+            <g id="s11-tanks">
+              <g id="s11-tank-a">
+                <rect x="588" y="500" width="228" height="126" rx="63" fill="url(#s11-tank)" stroke="#B8C0D8" stroke-width="9"/>
+                <path d="M 618 514 Q 702 500 786 514" fill="none" stroke="#F4EFE3" stroke-width="8" opacity="0.28" stroke-linecap="round"/>
+                <g stroke="#0A0E24" stroke-width="8" opacity="0.5">
+                  <line x1="636" y1="504" x2="636" y2="622"/>
+                  <line x1="702" y1="504" x2="702" y2="622"/>
+                  <line x1="768" y1="504" x2="768" y2="622"/>
+                </g>
+                <circle cx="702" cy="563" r="31" fill="#0A0E24" stroke="#FFD23F" stroke-width="8"/>
+                <circle cx="702" cy="563" r="13" fill="#FFD23F"/>
+                <circle cx="702" cy="563" r="53" fill="none" stroke="#FFD23F" stroke-width="4" opacity="0.25"/>
+              </g>
+              <g id="s11-tank-b">
+                <rect x="850" y="500" width="228" height="126" rx="63" fill="url(#s11-tank)" stroke="#B8C0D8" stroke-width="9"/>
+                <path d="M 880 514 Q 964 500 1048 514" fill="none" stroke="#F4EFE3" stroke-width="8" opacity="0.28" stroke-linecap="round"/>
+                <g stroke="#0A0E24" stroke-width="8" opacity="0.5">
+                  <line x1="898" y1="504" x2="898" y2="622"/>
+                  <line x1="964" y1="504" x2="964" y2="622"/>
+                  <line x1="1030" y1="504" x2="1030" y2="622"/>
+                </g>
+                <rect x="942" y="532" width="44" height="14" rx="7" fill="#FFD23F" opacity="0.75"/>
+                <rect x="942" y="556" width="58" height="12" rx="6" fill="#B8C0D8" opacity="0.4"/>
+                <rect x="942" y="580" width="34" height="12" rx="6" fill="#B8C0D8" opacity="0.3"/>
+                <circle cx="1030" cy="563" r="14" fill="none" stroke="#FF7A1A" stroke-width="7"/>
+              </g>
+            </g>
+
+            <g id="s11-pipes" fill="none" stroke="#B8C0D8" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" opacity="0.8">
+              <path d="M 640 626 L 640 642 L 560 642 L 550 628"/>
+              <path d="M 964 626 L 964 642 L 1120 642 L 1138 622"/>
+              <path d="M 530 642 L 1160 642"/>
+              <path d="M 812 626 L 812 642"/>
+              <path d="M 1084 626 L 1084 642"/>
+            </g>
+            <g id="s11-pump" transform="translate(1110 642)">
+              <circle r="22" fill="#151B3B" stroke="#B8C0D8" stroke-width="7"/>
+              <circle r="9" fill="#FFD23F"/>
+            </g>
+
+            <rect id="s11-cut-edge" x="510" y="468" width="690" height="190" rx="34"
+                  fill="none" stroke="#FF7A1A" stroke-width="6" opacity="0.4"/>
+          </g>
+
+          <!-- empty engine bracket ring -->
+          <g id="s11-bracket" transform="translate(408 556)">
+            <rect x="24" y="-56" width="130" height="18" rx="9" fill="#151B3B" stroke="#B8C0D8" stroke-width="5" opacity="0.85"/>
+            <rect x="24" y="38" width="130" height="18" rx="9" fill="#151B3B" stroke="#B8C0D8" stroke-width="5" opacity="0.85"/>
+            <circle r="78" fill="none" stroke="#B8C0D8" stroke-width="26"/>
+            <circle r="50" fill="#050814" stroke="#515A83" stroke-width="10"/>
+            <circle r="18" fill="#0A0E24" stroke="#FF7A1A" stroke-width="7" opacity="0.8"/>
+            <g id="s11-bracket-bolts" fill="#FFD23F">
+              <circle cx="0" cy="-70" r="9"/>
+              <circle cx="49" cy="-49" r="9"/>
+              <circle cx="70" cy="0" r="9"/>
+              <circle cx="49" cy="49" r="9"/>
+              <circle cx="0" cy="70" r="9"/>
+              <circle cx="-49" cy="49" r="9"/>
+              <circle cx="-70" cy="0" r="9"/>
+              <circle cx="-49" cy="-49" r="9"/>
+            </g>
+          </g>
+
+          <!-- gold stamps across the stripped hull -->
+          <g id="s11-marks" fill="url(#s11-gold)">
+            <g class="s11-mark" transform="translate(620 434) rotate(-6)">
+              <rect x="0" y="0" width="56" height="16" rx="8"/>
+              <circle cx="72" cy="8" r="9" fill="#FF7A1A"/>
+            </g>
+            <g class="s11-mark" transform="translate(712 440) rotate(4)">
+              <circle cx="12" cy="8" r="14" fill="none" stroke="#FFD23F" stroke-width="8"/>
+              <rect x="36" y="2" width="42" height="12" rx="6"/>
+            </g>
+            <g class="s11-mark" transform="translate(838 430) rotate(-3)">
+              <rect x="0" y="0" width="46" height="15" rx="7"/>
+              <rect x="0" y="20" width="30" height="13" rx="6" opacity="0.75"/>
+            </g>
+            <g class="s11-mark" transform="translate(958 438) rotate(6)">
+              <circle cx="0" cy="0" r="11"/>
+              <circle cx="26" cy="4" r="11" fill="#FF7A1A"/>
+              <circle cx="52" cy="0" r="11"/>
+            </g>
+            <g class="s11-mark" transform="translate(1078 432) rotate(-5)">
+              <path d="M 0 16 L 18 0 L 36 16 L 54 0" fill="none" stroke="#FFD23F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <g class="s11-mark" transform="translate(560 664) rotate(3)">
+              <rect x="0" y="0" width="62" height="14" rx="7"/>
+            </g>
+            <g class="s11-mark" transform="translate(700 668) rotate(-4)">
+              <circle cx="12" cy="4" r="12" fill="none" stroke="#FFD23F" stroke-width="8"/>
+              <circle cx="38" cy="4" r="10" fill="#FF7A1A"/>
+            </g>
+            <g class="s11-mark" transform="translate(818 666) rotate(2)">
+              <circle cx="0" cy="4" r="10"/>
+              <circle cx="26" cy="4" r="10"/>
+              <circle cx="52" cy="4" r="10"/>
+            </g>
+            <g class="s11-mark" transform="translate(978 666) rotate(-2)">
+              <rect x="0" y="0" width="48" height="14" rx="7"/>
+              <circle cx="62" cy="7" r="9" fill="#FF7A1A"/>
+            </g>
+            <g class="s11-mark" transform="translate(1108 664) rotate(4)">
+              <path d="M 0 14 L 18 0 L 36 14" fill="none" stroke="#FFD23F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </g>
+
+          <!-- slice plane that opens the section -->
+          <g id="s11-slice" opacity="0" transform="translate(510 0)">
+            <rect id="s11-slice-glow" x="-20" y="420" width="52" height="286" fill="url(#s11-ember)" filter="url(#s11-soft)"/>
+            <path d="M 0 430 L 28 412 L 28 700 L 0 686 Z" fill="#FFD23F" opacity="0.5"/>
+            <line x1="0" y1="420" x2="0" y2="698" stroke="#FFD23F" stroke-width="7"/>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND PLANE ================= -->
+        <g id="s11-fg">
+          <g id="s11-mark-glow" opacity="0">
+            <ellipse cx="950" cy="548" rx="238" ry="132" fill="url(#s11-gold-glow)" filter="url(#s11-haze)"/>
+          </g>
+
+          <!-- the marks detach and float to frame centre -->
+          <g id="s11-loose-marks" transform="translate(1280 540)" fill="url(#s11-gold)" filter="url(#s11-goldGlow)">
+            <g class="s11-mark" transform="translate(-40 -44) rotate(-10)">
+              <rect x="0" y="0" width="58" height="16" rx="8"/>
+            </g>
+            <g class="s11-mark" transform="translate(26 -30) rotate(8)">
+              <circle cx="0" cy="0" r="17" fill="none" stroke="#FFD23F" stroke-width="9"/>
+            </g>
+            <g class="s11-mark" transform="translate(-22 2) rotate(4)">
+              <rect x="0" y="0" width="48" height="14" rx="7"/>
+              <circle cx="62" cy="7" r="9" fill="#FF7A1A"/>
+            </g>
+            <g class="s11-mark" transform="translate(30 34) rotate(-6)">
+              <path d="M 0 14 L 17 0 L 34 14" fill="none" stroke="#FFD23F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <g class="s11-mark" transform="translate(-44 38) rotate(6)">
+              <circle cx="0" cy="0" r="13" fill="#FF7A1A"/>
+            </g>
+            <g class="s11-mark" transform="translate(4 -4) rotate(0)">
+              <circle cx="0" cy="0" r="10"/>
+              <circle cx="26" cy="0" r="10"/>
+            </g>
+          </g>
+
+          <!-- balance beam: hardware light, marks heavy -->
+          <ellipse cx="960" cy="1034" rx="142" ry="22" fill="#050814" opacity="0.7" filter="url(#s11-haze)"/>
+          <g id="s11-stand">
+            <rect x="944" y="884" width="32" height="136" rx="12" fill="url(#s11-hull)" stroke="#B8C0D8" stroke-width="8"/>
+            <ellipse cx="960" cy="1022" rx="112" ry="18" fill="#151B3B" stroke="#B8C0D8" stroke-width="8"/>
+            <circle cx="960" cy="880" r="44" fill="#151B3B" stroke="#B8C0D8" stroke-width="10"/>
+            <circle cx="960" cy="880" r="16" fill="#FFD23F"/>
+          </g>
+
+          <g id="s11-beam">
+            <rect x="650" y="862" width="620" height="36" rx="18" fill="url(#s11-hull)" stroke="#B8C0D8" stroke-width="8"/>
+            <path d="M 676 872 L 1244 872" fill="none" stroke="#F4EFE3" stroke-width="6" opacity="0.28" stroke-linecap="round"/>
+            <circle cx="650" cy="880" r="15" fill="#FFD23F" stroke="#050814" stroke-width="5"/>
+            <circle cx="1270" cy="880" r="15" fill="#FFD23F" stroke="#050814" stroke-width="5"/>
+            <line x1="650" y1="880" x2="650" y2="940" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/>
+            <line x1="1270" y1="880" x2="1270" y2="940" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/>
+
+            <g class="s11-pan" transform="translate(650 940)">
+              <path d="M -74 0 L 74 0 L 56 38 Q 0 52 -56 38 Z" fill="url(#s11-hull)" stroke="#B8C0D8" stroke-width="8"/>
+              <g id="s11-hardware" transform="translate(0 6)">
+                <polygon points="0,-34 29,-19 29,17 0,32 -29,17 -29,-19" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                <circle r="12" fill="#050814" stroke="#B8C0D8" stroke-width="5"/>
+                <circle cx="42" cy="6" r="13" fill="#151B3B" stroke="#B8C0D8" stroke-width="5"/>
+              </g>
+            </g>
+
+            <g class="s11-pan" transform="translate(1270 940)">
+              <path d="M -74 0 L 74 0 L 56 38 Q 0 52 -56 38 Z" fill="url(#s11-hull)" stroke="#B8C0D8" stroke-width="8"/>
+              <g id="s11-pan-marks" fill="url(#s11-gold)" filter="url(#s11-goldGlow)">
+                <rect x="-48" y="4" width="34" height="12" rx="6"/>
+                <rect x="-6" y="0" width="28" height="11" rx="5"/>
+                <circle cx="44" cy="8" r="10" fill="none" stroke="#FFD23F" stroke-width="7"/>
+                <circle cx="-34" cy="26" r="9" fill="#FF7A1A"/>
+                <circle cx="2" cy="28" r="9"/>
+                <rect x="28" y="24" width="32" height="11" rx="5"/>
+                <circle cx="60" cy="32" r="8"/>
+              </g>
+            </g>
+          </g>
+
+          <g id="s11-fg-dust" fill="#F4EFE3">
+            <circle cx="300" cy="852" r="4" opacity="0.18"/>
+            <circle cx="470" cy="770" r="3" opacity="0.15"/>
+            <circle cx="1190" cy="840" r="4" opacity="0.18"/>
+            <circle cx="1430" cy="930" r="3" opacity="0.14"/>
+            <circle cx="820" cy="1030" r="4" opacity="0.16"/>
+            <circle cx="1660" cy="980" r="3" opacity="0.14"/>
+          </g>
+
+          <!-- label -->
+          <g id="s11-badge">
+            <rect x="70" y="56" width="330" height="92" rx="46" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="83" y="69" width="304" height="66" rx="33" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.35"/>
+            <g fill="#FFD23F" opacity="0.7">
+              <circle cx="97" cy="102" r="5"/>
+              <circle cx="373" cy="102" r="5"/>
+            </g>
+            <text x="235" y="118" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="46"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="9" paint-order="stroke fill" letter-spacing="2"
+                  textLength="210" lengthAdjust="spacingAndGlyphs">MARKS</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- ================= HEAVY CLOCK-FACE SEAM ================= -->
+      <g id="s11-clock" opacity="0">
+        <g transform="translate(960 540)">
+          <circle r="786" fill="none" stroke="#FF7A1A" stroke-width="18" opacity="0.4" filter="url(#s11-haze)"/>
+          <circle r="760" fill="url(#s11-clock-face)" stroke="#FFD23F" stroke-width="40"/>
+          <circle r="714" fill="none" stroke="#B8C0D8" stroke-width="5" opacity="0.35"/>
+
+          <g id="s11-clock-ticks" fill="#FFD23F">
+            <g transform="rotate(0)"><rect x="-11" y="-670" width="22" height="58" rx="11"/><rect x="-5" y="-650" width="10" height="26" rx="5" opacity="0.4" transform="rotate(15)"/></g>
+            <g transform="rotate(30)"><rect x="-11" y="-670" width="22" height="58" rx="11"/><rect x="-5" y="-650" width="10" height="26" rx="5" opacity="0.4" transform="rotate(15)"/></g>
+            <g transform="rotate(60)"><rect x="-11" y="-670" width="22" height="58" rx="11"/><rect x="-5" y="-650" width="10" height="26" rx="5" opacity="0.4" transform="rotate(15)"/></g>
+            <g transform="rotate(90)"><rect x="-11" y="-670" width="22" height="58" rx="11"/><rect x="-5" y="-650" width="10" height="26" rx="5" opacity="0.4" transform="rotate(15)"/></g>
+            <g transform="rotate(120)"><rect x="-11" y="-670" width="22" height="58" rx="11"/><rect x="-5" y="-650" width="10" height="26" rx="5" opacity="0.4" transform="rotate(15)"/></g>
+            <g transform="rotate(150)"><rect x="-11" y="-670" width="22" height="58" rx="11"/><rect x="-5" y="-650" width="10" height="26" rx="5" opacity="0.4" transform="rotate(15)"/></g>
+            <g transform="rotate(180)"><rect x="-11" y="-670" width="22" height="58" rx="11"/><rect x="-5" y="-650" width="10" height="26" rx="5" opacity="0.4" transform="rotate(15)"/></g>
+            <g transform="rotate(210)"><rect x="-11" y="-670" width="22" height="58" rx="11"/><rect x="-5" y="-650" width="10" height="26" rx="5" opacity="0.4" transform="rotate(15)"/></g>
+            <g transform="rotate(240)"><rect x="-11" y="-670" width="22" height="58" rx="11"/><rect x="-5" y="-650" width="10" height="26" rx="5" opacity="0.4" transform="rotate(15)"/></g>
+            <g transform="rotate(270)"><rect x="-11" y="-670" width="22" height="58" rx="11"/><rect x="-5" y="-650" width="10" height="26" rx="5" opacity="0.4" transform="rotate(15)"/></g>
+            <g transform="rotate(300)"><rect x="-11" y="-670" width="22" height="58" rx="11"/><rect x="-5" y="-650" width="10" height="26" rx="5" opacity="0.4" transform="rotate(15)"/></g>
+            <g transform="rotate(330)"><rect x="-11" y="-670" width="22" height="58" rx="11"/><rect x="-5" y="-650" width="10" height="26" rx="5" opacity="0.4" transform="rotate(15)"/></g>
+          </g>
+
+          <g id="s11-hand-hour">
+            <path d="M -19 46 L -13 -286 L 0 -318 L 13 -286 L 19 46 Z" fill="#F4EFE3" stroke="#050814" stroke-width="8"/>
+          </g>
+          <g id="s11-hand-minute">
+            <path d="M -13 54 L -8 -444 L 0 -478 L 8 -444 L 13 54 Z" fill="#F4EFE3" stroke="#050814" stroke-width="7"/>
+          </g>
+          <g id="s11-hand-second">
+            <line x1="0" y1="86" x2="0" y2="-548" stroke="#FF7A1A" stroke-width="12" stroke-linecap="round"/>
+            <circle cx="0" cy="72" r="18" fill="#FF7A1A" stroke="#050814" stroke-width="5"/>
+          </g>
+
+          <g id="s11-clock-shock" fill="none" stroke="#FFD23F" stroke-width="10" opacity="0">
+            <circle r="760"/>
+            <circle r="900" stroke="#FF7A1A"/>
+          </g>
+          <g id="s11-clock-streaks" stroke="#FFD23F" stroke-width="14" stroke-linecap="round" opacity="0">
+            <line x1="0" y1="-812" x2="0" y2="-884"/>
+            <line x1="574" y1="-574" x2="625" y2="-625"/>
+            <line x1="812" y1="0" x2="884" y2="0"/>
+            <line x1="574" y1="574" x2="625" y2="625"/>
+            <line x1="0" y1="812" x2="0" y2="884"/>
+            <line x1="-574" y1="574" x2="-625" y2="625"/>
+            <line x1="-812" y1="0" x2="-884" y2="0"/>
+            <line x1="-574" y1="-574" x2="-625" y2="-625"/>
+          </g>
+
+          <circle r="50" fill="#FFD23F" stroke="#050814" stroke-width="8"/>
+          <circle r="22" fill="#0A0E24"/>
+        </g>
+      </g>
+      <rect id="s11-flash" x="0" y="0" width="1920" height="1080" fill="#FFD23F" opacity="0"/>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:radial-gradient(circle at 34% 30%, rgba(255,210,63,0.10), transparent 60%);}
+    .scene-persp{position:absolute;inset:0;perspective:1600px;perspective-origin:50% 52%;}
+    #s11-world{transform-style:preserve-3d;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      /* ---------- initial states ---------- */
+      gsap.set("#s11-violet-a", { opacity: 0, scale: 0.72, transformOrigin: "50% 50%" });
+      gsap.set("#s11-violet-b", { opacity: 0, scale: 0.8, transformOrigin: "50% 50%" });
+      gsap.set("#s11-drafting", { opacity: 0, scale: 1.12, transformOrigin: "50% 52%" });
+      gsap.set(".s11-gantry-post", { scaleY: 0, transformOrigin: "50% 100%" });
+      gsap.set("#s11-floor", { opacity: 0, scaleY: 0.86, transformOrigin: "50% 100%" });
+      gsap.set("#s11-floor-lines", { opacity: 0 });
+      gsap.set("#s11-tag", { opacity: 0, x: 54, rotation: 16, transformOrigin: "50% 0%" });
+      gsap.set("#s11-bg-dust circle", { opacity: 0 });
+      gsap.set("#s11-rocket-shadow", { opacity: 0, scaleX: 0.72, transformOrigin: "50% 50%" });
+      gsap.set("#s11-engine-ghost", { opacity: 0, x: 34 });
+      gsap.set("#s11-hull-fill", { opacity: 0, scaleY: 0.86, transformOrigin: "50% 55%" });
+      gsap.set("#s11-hull-line", { strokeDasharray: 2440, strokeDashoffset: 2440 });
+      gsap.set("#s11-hull-g", { rotationY: 0 });
+      gsap.set("#s11-hull-seams", { opacity: 0 });
+      gsap.set("#s11-rivets circle", { scale: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s11-nose-bands", { opacity: 0 });
+      gsap.set("#s11-nose-light", { scale: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s11-ribs line", { scaleY: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s11-tanks", { y: -34, opacity: 0 });
+      gsap.set("#s11-pipes path", { strokeDasharray: 320, strokeDashoffset: 320 });
+      gsap.set("#s11-pump", { scale: 0, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s11-bracket", { scale: 0.22, opacity: 0, rotation: -34, transformOrigin: "50% 50%" });
+      gsap.set("#s11-bracket-bolts circle", { scale: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s11-marks .s11-mark", { scale: 0, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s11-loose-marks", { opacity: 0 });
+      gsap.set("#s11-loose-marks .s11-mark", { scale: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s11-slice", { opacity: 0, x: 0 });
+      gsap.set("#s11-slice-glow", { opacity: 0 });
+      gsap.set("#s11-mark-glow", { opacity: 0 });
+      gsap.set("#s11-stand", { opacity: 0, scaleY: 0.18, transformOrigin: "50% 100%" });
+      gsap.set("#s11-beam", { opacity: 0, scaleX: 0.14, transformOrigin: "960px 880px" });
+      gsap.set(".s11-pan", { opacity: 0, y: 26 });
+      gsap.set("#s11-hardware", { opacity: 0, scale: 0.3, transformOrigin: "50% 50%" });
+      gsap.set("#s11-pan-marks > *", { opacity: 0, scale: 0.2, transformOrigin: "50% 50%" });
+      gsap.set("#s11-fg-dust circle", { opacity: 0 });
+      gsap.set("#s11-badge", { opacity: 0, scale: 1.4, rotation: -4, transformOrigin: "50% 50%" });
+      gsap.set("#s11-clock", { opacity: 0, scale: 0.04, rotation: -6, transformOrigin: "960px 540px" });
+      gsap.set("#s11-hand-hour", { rotation: -104, transformOrigin: "50% 50%" });
+      gsap.set("#s11-hand-minute", { rotation: 32, transformOrigin: "50% 50%" });
+      gsap.set("#s11-hand-second", { rotation: -22, transformOrigin: "50% 50%" });
+      gsap.set("#s11-clock-shock", { scale: 0.64, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s11-clock-streaks", { opacity: 0, scale: 1.14, transformOrigin: "50% 50%" });
+      gsap.set("#s11-flash", { opacity: 0 });
+
+      /* ---------- phase 1: violet industrial void + tag ---------- */
+      tl.to("#s11-violet-a", { opacity: 0.9, scale: 1, duration: 1.6, ease: "power2.out" }, 0.0);
+      tl.to("#s11-violet-b", { opacity: 0.7, scale: 1, duration: 1.5, ease: "power2.out" }, 0.15);
+      tl.to("#s11-drafting", { opacity: 0.12, scale: 1, duration: 1.4, ease: "power2.out" }, 0.2);
+      tl.to(".s11-gantry-post", { scaleY: 1, duration: 1.1, stagger: 0.14, ease: "power3.out" }, 0.05);
+      tl.to("#s11-floor", { opacity: 1, scaleY: 1, duration: 1.2, ease: "power2.out" }, 0.15);
+      tl.to("#s11-floor-lines", { opacity: 0.14, duration: 1.0, ease: "power1.out" }, 0.55);
+      tl.to("#s11-tag", { opacity: 1, x: 0, rotation: 7, duration: 1.1, ease: "back.out(1.4)" }, 0.25);
+      tl.to("#s11-bg-dust circle", { opacity: 0.18, duration: 1.0, stagger: 0.12, ease: "power1.out" }, 0.7);
+
+      /* ---------- phase 2: hull draws, section cut opens ---------- */
+      tl.to("#s11-rocket-shadow", { opacity: 0.72, scaleX: 1, duration: 1.2, ease: "power2.out" }, 0.5);
+      tl.to("#s11-hull-line", { strokeDashoffset: 0, duration: 1.7, ease: "power2.inOut" }, 0.55);
+      tl.to("#s11-hull-fill", { opacity: 1, scaleY: 1, duration: 1.5, ease: "power2.out" }, 1.0);
+      tl.to("#s11-engine-ghost", { opacity: 0.55, x: 0, duration: 0.9, ease: "power2.out" }, 1.15);
+      tl.to("#s11-hull-seams", { opacity: 0.4, duration: 0.6, ease: "power1.out" }, 1.7);
+      tl.to("#s11-rivets circle", { scale: 1, duration: 0.3, stagger: 0.02, ease: "back.out(2)" }, 1.9);
+      tl.to("#s11-nose-bands", { opacity: 0.55, duration: 0.6, ease: "power2.out" }, 2.0);
+      tl.to("#s11-nose-light", { scale: 1, duration: 0.5, ease: "back.out(2.6)" }, 2.95);
+
+      tl.to("#s11-slice", { opacity: 1, duration: 0.3, ease: "power1.out" }, 2.15);
+      tl.to("#s11-slice-glow", { opacity: 0.7, duration: 0.3, ease: "power1.out" }, 2.2);
+      tl.to("#s11-slice", { x: 690, duration: 1.5, ease: "power2.inOut" }, 2.35);
+      tl.to("#s11-reveal-rect", { attr: { width: 690 }, duration: 1.5, ease: "power2.inOut" }, 2.35);
+      tl.to("#s11-slice", { opacity: 0, duration: 0.4, ease: "power1.in" }, 3.75);
+      tl.to("#s11-cut-edge", { opacity: 0.52, duration: 0.5, yoyo: true, repeat: 1, ease: "sine.inOut" }, 3.5);
+      tl.to("#s11-ribs line", { scaleY: 1, duration: 0.55, stagger: 0.07, ease: "power2.out" }, 3.0);
+      tl.to("#s11-bracket", { scale: 1, opacity: 1, rotation: 0, duration: 0.65, ease: "back.out(1.8)" }, 3.55);
+      tl.to("#s11-bracket-bolts circle", { scale: 1, duration: 0.35, stagger: 0.05, ease: "back.out(2.4)" }, 3.95);
+      tl.to("#s11-tanks", { y: 0, opacity: 1, duration: 0.85, stagger: 0.16, ease: "back.out(1.5)" }, 4.05);
+      tl.to("#s11-pipes path", { strokeDashoffset: 0, duration: 0.8, stagger: 0.07, ease: "power2.out" }, 4.5);
+      tl.to("#s11-pump", { scale: 1, opacity: 1, duration: 0.45, ease: "back.out(2.2)" }, 5.15);
+      tl.to("#s11-engine-ghost", { opacity: 0.07, duration: 1.2, ease: "power2.inOut" }, 4.8);
+      tl.to("#s11-bracket", { scale: 1.06, duration: 0.35, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 5.2);
+
+      /* ---------- phase 3: gold marks bloom ---------- */
+      tl.to("#s11-marks .s11-mark", { scale: 1, opacity: 1, duration: 0.45, stagger: 0.1, ease: "back.out(2.4)" }, 5.55);
+      tl.to("#s11-loose-marks", { opacity: 1, duration: 0.3, ease: "power1.out" }, 6.35);
+      tl.to("#s11-loose-marks .s11-mark", { scale: 1, duration: 0.4, stagger: 0.08, ease: "back.out(2.8)" }, 6.4);
+      tl.to("#s11-mark-glow", { opacity: 0.18, duration: 0.8, ease: "power2.out" }, 6.9);
+      tl.to("#s11-mark-glow", { opacity: 0.34, duration: 1.4, yoyo: true, repeat: 2, ease: "sine.inOut" }, 7.7);
+
+      /* ---------- phase 4: balance beam assembles ---------- */
+      tl.to("#s11-stand", { opacity: 1, scaleY: 1, duration: 0.7, ease: "back.out(1.7)" }, 8.25);
+      tl.to("#s11-beam", { opacity: 1, scaleX: 1, duration: 0.65, ease: "power3.out" }, 8.7);
+      tl.to(".s11-pan", { opacity: 1, y: 0, duration: 0.55, stagger: 0.14, ease: "back.out(1.8)" }, 9.15);
+      tl.to("#s11-hardware", { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2.2)" }, 9.55);
+      tl.to("#s11-pan-marks > *", { opacity: 1, scale: 1, duration: 0.4, stagger: 0.07, ease: "back.out(2.6)" }, 9.75);
+      tl.to("#s11-beam", { rotation: 2.2, duration: 0.75, yoyo: true, repeat: 1, transformOrigin: "960px 880px", ease: "sine.inOut" }, 10.15);
+      tl.to("#s11-pan-marks", { scale: 1.06, duration: 0.5, yoyo: true, repeat: 3, transformOrigin: "50% 50%", ease: "sine.inOut" }, 10.45);
+      tl.to("#s11-pump", { rotation: 180, duration: 1.4, transformOrigin: "50% 50%", ease: "power1.inOut" }, 10.7);
+
+      /* ---------- phase 5: marks outweigh hardware, camera pushes ---------- */
+      tl.to("#s11-world", { scale: 1.06, x: -22, y: -6, duration: 2.8, transformOrigin: "52% 55%", ease: "power2.inOut" }, 12.2);
+      tl.to("#s11-loose-marks", { x: -330, y: -18, rotation: 8, scale: 1.14, duration: 2.2, transformOrigin: "50% 50%", ease: "power2.inOut" }, 12.4);
+      tl.to("#s11-mark-glow", { opacity: 0.5, duration: 1.0, ease: "power2.out" }, 12.8);
+      tl.to("#s11-beam", { rotation: 14.6, duration: 1.5, transformOrigin: "960px 880px", ease: "power3.inOut" }, 12.45);
+      tl.to("#s11-beam", { rotation: 13.6, duration: 0.8, transformOrigin: "960px 880px", ease: "power2.out" }, 14.0);
+      tl.to("#s11-badge", { scale: 1.05, duration: 0.35, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 13.15);
+      tl.to("#s11-loose-marks", { y: -26, duration: 1.3, yoyo: true, repeat: 1, ease: "sine.inOut" }, 14.1);
+      tl.to("#s11-mark-glow", { opacity: 0.38, duration: 1.2, yoyo: true, repeat: 1, ease: "sine.inOut" }, 14.2);
+
+      /* ---------- phase 6: heavy clock-face slam ---------- */
+      tl.to("#s11-clock", { opacity: 1, scale: 0.12, rotation: -6, duration: 1.1, ease: "power2.in" }, 14.55);
+      tl.to("#s11-clock", { scale: 1.62, rotation: 0, duration: 0.3, ease: "power4.in" }, 16.02);
+      tl.to("#s11-flash", { opacity: 0.32, duration: 0.12, ease: "power1.out" }, 16.3);
+      tl.to("#s11-flash", { opacity: 0, duration: 0.5, ease: "power2.out" }, 16.42);
+      tl.to("#s11-hand-hour", { rotation: 152, duration: 0.22, ease: "back.out(2.4)" }, 16.33);
+      tl.to("#s11-hand-minute", { rotation: 180, duration: 0.2, ease: "back.out(2.8)" }, 16.34);
+      tl.to("#s11-hand-second", { rotation: 208, duration: 0.26, ease: "back.out(2.2)" }, 16.35);
+      tl.to("#s11-clock-shock", { scale: 1.08, opacity: 0.7, duration: 0.22, ease: "power3.out" }, 16.33);
+      tl.to("#s11-clock-shock", { opacity: 0, scale: 1.32, duration: 0.35, ease: "power2.in" }, 16.55);
+      tl.to("#s11-clock-streaks", { opacity: 0.8, duration: 0.1, ease: "power1.out" }, 16.3);
+      tl.to("#s11-clock-streaks", { opacity: 0, duration: 0.35, ease: "power2.in" }, 16.45);
+      tl.to("#s11-world", { x: -30, duration: 0.06, yoyo: true, repeat: 3, ease: "none" }, 16.34);
+      tl.to("#s11-clock", { rotation: 0.7, duration: 0.5, ease: "sine.inOut" }, 16.42);
+
+      /* ---------- 3D plane parallax + living holds ---------- */
+      tl.fromTo("#s11-bg", { x: -16, rotationY: -1.2 }, { x: 16, rotationY: 1.2, duration: 16.92, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s11-mg", { x: 10, rotationX: 1.6 }, { x: -10, rotationX: -1.6, duration: 16.92, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s11-fg", { x: -8 }, { x: 8, duration: 16.92, ease: "sine.inOut" }, 0);
+      tl.to("#s11-violet-a", { opacity: 0.64, duration: 3.2, yoyo: true, repeat: 3, ease: "sine.inOut" }, 1.4);
+      tl.to("#s11-tag", { rotation: 3.6, duration: 3.4, yoyo: true, repeat: 3, transformOrigin: "50% 0%", ease: "sine.inOut" }, 1.6);
+      tl.to("#s11-tag-stamp", { rotation: 4, duration: 2.6, yoyo: true, repeat: 3, transformOrigin: "50% 50%", ease: "sine.inOut" }, 2.2);
+      tl.to("#s11-marks .s11-mark", { opacity: 0.86, duration: 1.1, stagger: 0.03, yoyo: true, repeat: 3, ease: "sine.inOut" }, 8.0);
+      tl.to("#s11-tank-a > circle:last-of-type", { scale: 1.16, duration: 1.2, yoyo: true, repeat: 2, transformOrigin: "50% 50%", ease: "sine.inOut" }, 6.8);
+      tl.to("#s11-tank-b rect:nth-of-type(2)", { opacity: 0.42, duration: 1.5, yoyo: true, repeat: 2, ease: "sine.inOut" }, 7.2);
+      tl.to("#s11-badge", { y: -5, duration: 1.5, yoyo: true, repeat: 3, ease: "sine.inOut" }, 3.4);
+      tl.to("#s11-fg-dust circle", { opacity: 0.2, duration: 1.2, stagger: 0.1, ease: "power1.out" }, 9.0);
+      tl.to("#s11-fg-dust", { y: -22, duration: 2.2, yoyo: true, repeat: 2, ease: "sine.inOut" }, 9.5);
+      tl.to("#s11-nose-light", { opacity: 0.72, duration: 1.4, yoyo: true, repeat: 4, ease: "sine.inOut" }, 4.1);
+      tl.to("#s11-cut-edge", { opacity: 0.42, duration: 1.6, yoyo: true, repeat: 3, ease: "sine.inOut" }, 6.2);
+
+      tl.to({}, { duration: 16.920 }, 0);
+      window.__timelines["11-stripped-marks"] = tl;
+    })();
+  </script>
+</div>
+</template>

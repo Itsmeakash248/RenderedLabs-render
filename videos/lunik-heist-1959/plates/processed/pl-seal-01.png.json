@@ -1,0 +1,39 @@
+{
+  "plate_id": "pl-seal-01",
+  "source_url": "videos/lunik-heist-1959/.tmp/lunik.pdf",
+  "source_page": 5,
+  "source_dpi": 150,
+  "detail_crop": {
+    "x": 0,
+    "y": 1380,
+    "w": 1275,
+    "h": 260
+  },
+  "width": 1275,
+  "height": 260,
+  "scale_factor": 1.0,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": [
+    {
+      "phrase": "130 square-headed bolts",
+      "x": 1043,
+      "y": 125,
+      "w": 53,
+      "h": 37
+    },
+    {
+      "phrase": "130 square-headed bolts",
+      "x": 51,
+      "y": 163,
+      "w": 328,
+      "h": 37
+    }
+  ],
+  "dropped_boxes": 0,
+  "source_width": 1275,
+  "source_height": 260,
+  "captured_at": null
+}

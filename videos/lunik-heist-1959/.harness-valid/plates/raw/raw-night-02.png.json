@@ -1,0 +1,16 @@
+{
+  "pdf": "videos/lunik-heist-1959/.tmp/lunik.pdf",
+  "page": 4,
+  "dpi": 150,
+  "width": 1275,
+  "height": 1650,
+  "boxes": [
+    {
+      "phrase": "about 7:30 p.m.",
+      "x": 790,
+      "y": 1362,
+      "w": 241,
+      "h": 37
+    }
+  ]
+}

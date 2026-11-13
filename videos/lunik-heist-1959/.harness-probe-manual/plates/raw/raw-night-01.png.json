@@ -1,0 +1,23 @@
+{
+  "pdf": "videos/lunik-heist-1959/.tmp/lunik.pdf",
+  "page": 5,
+  "dpi": 150,
+  "width": 1275,
+  "height": 1650,
+  "boxes": [
+    {
+      "phrase": "2-inch tongue-and-groove planks",
+      "x": 189,
+      "y": 41,
+      "w": 522,
+      "h": 37
+    },
+    {
+      "phrase": "street lamps suddenly came on",
+      "x": 222,
+      "y": 341,
+      "w": 492,
+      "h": 37
+    }
+  ]
+}

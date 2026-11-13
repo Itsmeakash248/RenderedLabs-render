@@ -1,0 +1,72 @@
+{
+  "theme": "Cold War intelligence heist (1959): CIA operatives covertly intercept, crate-pry, disassemble, photograph, and reassemble a Soviet Lunik (Luna 1/2) upper-stage probe overnight in a Mexican salvage yard. The emotional arc moves from shadowy espionage dread and clandestine mechanical tension (130 turnbuckle bolts, delicate Soviet inspection seals, blue-pencil markings) into rising technical awe at the payload reveal, culminating in a breathless dawn sprint to return the sealed crate undetected to the exhibition railhead.",
+  "narration": {
+    "act_1_cold_open": { "start_s": 0.0, "end_s": 46.6, "cue": "Colossal crate arrives at Mexican salvage yard; covert inspection team mounts roof" },
+    "act_2_recon": { "start_s": 46.6, "end_s": 122.2, "cue": "Exhibition surveillance, manifest interception, tracking the transport convoy" },
+    "act_3_heist_turn": { "start_s": 122.2, "end_s": 252.36, "cue": "Convoy intercepted, salvage gates lock; unbolting 130 access fasteners in the dark" },
+    "act_4_payload_operation": { "start_s": 252.36, "end_s": 394.44, "cue": "Payload revealed; duplicating the Soviet stamp seal and logging wire bindings" },
+    "act_5_markings_climax": { "start_s": 394.44, "end_s": 468.9, "cue": "Technical Markings Center breakthrough: real flight hardware verified; reassembly race" },
+    "outro_dawn_resolution": { "start_s": 468.9, "end_s": 521.655, "cue": "Dawn return to railhead untouched; quiet historical legacy of declassified mission" }
+  },
+  "template": "cine",
+  "key": "dm",
+  "prog": "G",
+  "bpm": 120,
+  "bars": 260,
+  "tail": 2.0,
+  "seed": 1959,
+  "intro": 23,
+  "build": 174,
+  "climax": 38,
+  "groove": "syncopated",
+  "motif_style": "arch",
+  "modulate": true,
+  "sfx": {
+    "impact": [
+      [0.0, 0.35],
+      [69.78, 0.35],
+      [175.36, 0.35],
+      [252.84, 0.35],
+      [343.08, 0.35],
+      [394.44, 0.35]
+    ],
+    "sub": [
+      [21.88, 0.34],
+      [234.86, 0.34],
+      [445.28, 0.32]
+    ],
+    "riser": [
+      [46.6, 0.30],
+      [122.2, 0.30],
+      [185.6, 0.28],
+      [281.88, 0.30],
+      [468.9, 0.28]
+    ],
+    "chime": [
+      [91.8, 0.26],
+      [305.72, 0.26],
+      [419.56, 0.24],
+      [486.64, 0.26]
+    ],
+    "click": [
+      [102.98, 0.24],
+      [138.72, 0.24],
+      [206.14, 0.22],
+      [216.12, 0.22],
+      [225.56, 0.22],
+      [263.24, 0.24],
+      [317.42, 0.22],
+      [410.7, 0.22],
+      [436.26, 0.22],
+      [503.04, 0.24]
+    ],
+    "whoosh": [
+      [113.56, 0.28],
+      [375.86, 0.28]
+    ]
+  },
+  "mix": {
+    "lufs": -14.0,
+    "fades": [0.5, 2.2]
+  }
+}

@@ -1,0 +1,625 @@
+<template id="s10-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="10-manifest-line" data-width="1920" data-height="1080" data-start="0" data-duration="19.720">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="s10-wall" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0A0E24"/>
+          <stop offset="0.62" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s10-desk" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.45" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s10-paper" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#515A83" stop-opacity="0.55"/>
+          <stop offset="0.5" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s10-gold" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.12"/>
+          <stop offset="0.48" stop-color="#FFD23F" stop-opacity="0.95"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0.45"/>
+        </linearGradient>
+        <linearGradient id="s10-glass" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.075"/>
+          <stop offset="0.42" stop-color="#FFFFFF" stop-opacity="0.015"/>
+          <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="s10-plate-edge" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.55"/>
+          <stop offset="1" stop-color="#B8C0D8" stop-opacity="0.10"/>
+        </linearGradient>
+        <linearGradient id="s10-slab" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.46" stop-color="#515A83" stop-opacity="0.55"/>
+          <stop offset="1" stop-color="#0B0F1E"/>
+        </linearGradient>
+        <radialGradient id="s10-lamp" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.52"/>
+          <stop offset="0.42" stop-color="#FF7A1A" stop-opacity="0.16"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s10-violet" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.30"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s10-ember" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.55"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="s10-goldGlow" x="-70%" y="-70%" width="240%" height="240%">
+          <feGaussianBlur stdDeviation="8" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="s10-violetGlow" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="12"/>
+        </filter>
+        <filter id="s10-soft" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur stdDeviation="5"/>
+        </filter>
+        <filter id="s10-haze" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="28"/>
+        </filter>
+        <clipPath id="s10-plate-clip">
+          <rect x="1192" y="130" width="634.4" height="821" rx="10"/>
+        </clipPath>
+        <clipPath id="s10-sheet-clip">
+          <rect x="112" y="0" width="620" height="672"/>
+        </clipPath>
+        <clipPath id="s10-door-clip">
+          <rect x="646" y="380" width="490" height="520"/>
+        </clipPath>
+      </defs>
+
+      <g id="s10-world">
+        <!-- ================= BACKGROUND PLANE ================= -->
+        <g id="s10-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s10-wall)"/>
+          <ellipse cx="880" cy="420" rx="760" ry="420" fill="url(#s10-violet)" opacity="0.85"/>
+          <ellipse cx="1560" cy="700" rx="520" ry="320" fill="url(#s10-violet)" opacity="0.55"/>
+
+          <g id="s10-station-wall">
+            <g fill="#151B3B" opacity="0.62">
+              <rect x="-20" y="0" width="360" height="780"/>
+              <rect x="360" y="0" width="320" height="780"/>
+              <rect x="700" y="0" width="300" height="780"/>
+              <rect x="1020" y="0" width="340" height="780"/>
+              <rect x="1380" y="0" width="300" height="780"/>
+              <rect x="1700" y="0" width="260" height="780"/>
+            </g>
+            <g stroke="#0A0E24" stroke-width="10" opacity="0.8">
+              <line x1="360" y1="0" x2="360" y2="790"/>
+              <line x1="700" y1="0" x2="700" y2="790"/>
+              <line x1="1020" y1="0" x2="1020" y2="790"/>
+              <line x1="1380" y1="0" x2="1380" y2="790"/>
+              <line x1="1700" y1="0" x2="1700" y2="790"/>
+              <line x1="0" y1="238" x2="1920" y2="238"/>
+              <line x1="0" y1="520" x2="1920" y2="520"/>
+            </g>
+            <g id="s10-pinned" fill="#0A0E24">
+              <g transform="rotate(-4 812 232)">
+                <rect x="742" y="138" width="140" height="188" rx="8" stroke="#B8C0D8" stroke-width="6"/>
+                <rect x="760" y="160" width="104" height="12" rx="6" fill="#B8C0D8" opacity="0.35"/>
+                <rect x="760" y="186" width="86" height="10" rx="5" fill="#B8C0D8" opacity="0.25"/>
+                <rect x="760" y="212" width="104" height="10" rx="5" fill="#B8C0D8" opacity="0.22"/>
+                <rect x="760" y="258" width="104" height="48" rx="6" fill="#FF7A1A" opacity="0.16"/>
+              </g>
+              <g transform="rotate(3 930 210)">
+                <rect x="850" y="112" width="160" height="206" rx="8" stroke="#B8C0D8" stroke-width="6"/>
+                <rect x="870" y="136" width="120" height="14" rx="7" fill="#B8C0D8" opacity="0.35"/>
+                <rect x="870" y="164" width="92" height="10" rx="5" fill="#B8C0D8" opacity="0.25"/>
+                <rect x="870" y="188" width="120" height="10" rx="5" fill="#B8C0D8" opacity="0.22"/>
+                <circle cx="930" cy="256" r="30" fill="none" stroke="#FFD23F" stroke-width="8" opacity="0.35"/>
+              </g>
+              <g transform="rotate(6 1028 286)">
+                <rect x="980" y="212" width="112" height="148" rx="8" stroke="#B8C0D8" stroke-width="6"/>
+                <rect x="996" y="232" width="80" height="10" rx="5" fill="#B8C0D8" opacity="0.32"/>
+                <rect x="996" y="254" width="60" height="10" rx="5" fill="#B8C0D8" opacity="0.22"/>
+                <rect x="996" y="292" width="80" height="34" rx="6" fill="#8E5FD9" opacity="0.2"/>
+              </g>
+            </g>
+            <g id="s10-wall-pins" fill="#FFD23F" filter="url(#s10-goldGlow)">
+              <circle cx="806" cy="146" r="8"/>
+              <circle cx="926" cy="124" r="8"/>
+              <circle cx="1034" cy="222" r="8"/>
+            </g>
+          </g>
+
+          <g id="s10-desk">
+            <path d="M-30 790 L1950 774 L1950 1100 L-30 1100 Z" fill="url(#s10-desk)"/>
+            <path d="M-30 790 L1950 774" fill="none" stroke="#B8C0D8" stroke-width="10" opacity="0.16"/>
+            <g stroke="#B8C0D8" stroke-width="6" opacity="0.16" stroke-linecap="round">
+              <line x1="-20" y1="892" x2="1940" y2="880"/>
+              <line x1="-20" y1="968" x2="1940" y2="954"/>
+              <line x1="-20" y1="1044" x2="1940" y2="1028"/>
+            </g>
+            <ellipse cx="880" cy="826" rx="600" ry="104" fill="url(#s10-lamp)" opacity="0.30"/>
+            <ellipse cx="880" cy="840" rx="280" ry="54" fill="#FFD23F" opacity="0.08" filter="url(#s10-haze)"/>
+          </g>
+
+          <g id="s10-desk-lamp">
+            <rect x="760" y="0" width="240" height="26" rx="13" fill="#151B3B" stroke="#B8C0D8" stroke-width="8"/>
+            <rect x="792" y="26" width="176" height="52" rx="18" fill="#151B3B" stroke="#B8C0D8" stroke-width="10"/>
+            <rect x="814" y="70" width="132" height="16" rx="8" fill="#FFD23F" opacity="0.92"/>
+            <ellipse cx="880" cy="94" rx="92" ry="30" fill="url(#s10-lamp)" opacity="0.8"/>
+            <polygon id="s10-lamp-cone" points="880,84 430,850 1330,850" fill="url(#s10-lamp)" opacity="0.22"/>
+            <polygon id="s10-lamp-cone-inner" points="880,84 610,850 1150,850" fill="#FFD23F" opacity="0.06"/>
+          </g>
+
+          <g id="s10-wall-dust" fill="#F4EFE3">
+            <circle cx="520" cy="286" r="3" opacity="0.24"/>
+            <circle cx="640" cy="210" r="2.2" opacity="0.18"/>
+            <circle cx="1210" cy="252" r="2.8" opacity="0.2"/>
+            <circle cx="1330" cy="420" r="2.2" opacity="0.16"/>
+            <circle cx="470" cy="520" r="2.4" opacity="0.18"/>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: SHEET, DOORS, PLATE ================= -->
+        <g id="s10-mg">
+          <!-- manifest sheet is drawn first so the console can hide its lower half -->
+          <g transform="translate(140 150)" clip-path="url(#s10-sheet-clip)">
+            <g id="s10-manifest">
+              <rect x="14" y="16" width="520" height="520" rx="10" fill="#050814" opacity="0.62"/>
+              <rect x="0" y="0" width="520" height="520" rx="10" fill="url(#s10-paper)" stroke="#B8C0D8" stroke-width="6"/>
+              <rect x="0" y="0" width="520" height="64" rx="10" fill="#151B3B"/>
+              <line x1="0" y1="64" x2="520" y2="64" stroke="#FFD23F" stroke-width="4" opacity="0.35"/>
+              <g id="s10-sheet-head">
+                <rect x="26" y="18" width="238" height="18" rx="9" fill="#F4EFE3" opacity="0.72"/>
+                <rect x="26" y="44" width="152" height="12" rx="6" fill="#B8C0D8" opacity="0.36"/>
+                <rect x="304" y="44" width="86" height="12" rx="6" fill="#B8C0D8" opacity="0.24"/>
+                <rect x="452" y="16" width="42" height="32" rx="7" fill="none" stroke="#FFD23F" stroke-width="8"/>
+                <circle cx="473" cy="32" r="7" fill="#FFD23F"/>
+              </g>
+
+              <g id="s10-sheet-rules" fill="#B8C0D8" opacity="0.30">
+                <rect x="26" y="94" width="384" height="12" rx="6"/>
+                <rect x="26" y="118" width="438" height="12" rx="6"/>
+                <rect x="26" y="142" width="352" height="12" rx="6"/>
+                <rect x="26" y="166" width="408" height="12" rx="6"/>
+                <rect x="58" y="190" width="376" height="12" rx="6"/>
+                <rect x="26" y="214" width="440" height="12" rx="6"/>
+                <rect x="26" y="238" width="318" height="12" rx="6"/>
+                <rect x="58" y="262" width="420" height="12" rx="6"/>
+                <rect x="26" y="286" width="362" height="12" rx="6"/>
+                <rect x="26" y="310" width="444" height="12" rx="6"/>
+                <rect x="58" y="334" width="330" height="12" rx="6"/>
+                <rect x="26" y="358" width="402" height="12" rx="6"/>
+                <rect x="26" y="382" width="356" height="12" rx="6"/>
+                <rect x="58" y="406" width="300" height="12" rx="6"/>
+              </g>
+
+              <!-- the lit manifest line, three chunky bars -->
+              <g id="s10-lit-line">
+                <rect id="s10-lit-bar-1" x="26" y="194" width="286" height="16" rx="8" fill="#FFD23F"/>
+                <rect id="s10-lit-bar-2" x="322" y="194" width="102" height="16" rx="8" fill="#FFD23F"/>
+                <rect id="s10-lit-bar-3" x="434" y="194" width="52" height="16" rx="8" fill="#FF7A1A"/>
+              </g>
+              <rect id="s10-lit-sweep" x="20" y="186" width="470" height="32" rx="10" fill="#FFD23F" opacity="0.16"/>
+              <g id="s10-lit-ticks" stroke="#FFD23F" stroke-width="8" stroke-linecap="round">
+                <line x1="26" y1="182" x2="26" y2="202"/>
+                <line x1="486" y1="182" x2="486" y2="202"/>
+              </g>
+
+              <!-- crate-dimension match bar -->
+              <g id="s10-match">
+                <rect x="26" y="446" width="352" height="16" rx="8" fill="#B8C0D8" opacity="0.42"/>
+                <rect id="s10-match-crate" x="26" y="474" width="352" height="16" rx="8" fill="url(#s10-gold)"/>
+                <g id="s10-lock" transform="translate(430 468)">
+                  <circle r="22" fill="#050814" stroke="#FFD23F" stroke-width="8"/>
+                  <path d="M-8 2 L-1 10 L10 -5" fill="none" stroke="#FFD23F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <g stroke="#FFD23F" stroke-width="6" stroke-linecap="round" opacity="0.55">
+                  <line x1="378" y1="454" x2="402" y2="454"/>
+                  <line x1="378" y1="482" x2="402" y2="482"/>
+                </g>
+              </g>
+
+              <g id="s10-paper-clip" fill="none" stroke="#F4EFE3" stroke-width="8" stroke-linecap="round">
+                <path d="M232 4 L232 -18 Q232 -34 250 -34 Q268 -34 268 -18 L268 30 Q268 48 250 48 Q232 48 232 30 L232 6"/>
+              </g>
+            </g>
+          </g>
+
+          <!-- teletype console, drawn over the sheet so it extrudes from the slot -->
+          <g id="s10-console">
+            <rect x="86" y="700" width="558" height="242" rx="26" fill="#151B3B" stroke="#B8C0D8" stroke-width="14"/>
+            <rect x="108" y="720" width="514" height="202" rx="16" fill="#0A0E24"/>
+            <rect x="126" y="652" width="478" height="40" rx="20" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="144" y="664" width="442" height="10" rx="5" fill="#FFD23F" opacity="0.32"/>
+            <g id="s10-rollers" fill="#FFD23F">
+              <circle cx="182" cy="674" r="13" stroke="#050814" stroke-width="5"/>
+              <circle cx="366" cy="674" r="13" stroke="#050814" stroke-width="5"/>
+              <circle cx="550" cy="674" r="13" stroke="#050814" stroke-width="5"/>
+            </g>
+            <g id="s10-keys" fill="#B8C0D8" opacity="0.30">
+              <rect x="138" y="858" width="34" height="16" rx="5"/>
+              <rect x="184" y="858" width="34" height="16" rx="5"/>
+              <rect x="230" y="858" width="34" height="16" rx="5"/>
+              <rect x="276" y="858" width="34" height="16" rx="5"/>
+              <rect x="322" y="858" width="34" height="16" rx="5"/>
+              <rect x="368" y="858" width="34" height="16" rx="5"/>
+              <rect x="414" y="858" width="34" height="16" rx="5"/>
+              <rect x="460" y="858" width="34" height="16" rx="5"/>
+              <rect x="506" y="858" width="34" height="16" rx="5"/>
+              <rect x="552" y="858" width="34" height="16" rx="5"/>
+              <rect x="162" y="890" width="34" height="16" rx="5"/>
+              <rect x="208" y="890" width="34" height="16" rx="5"/>
+              <rect x="254" y="890" width="34" height="16" rx="5"/>
+              <rect x="300" y="890" width="34" height="16" rx="5"/>
+              <rect x="346" y="890" width="34" height="16" rx="5"/>
+              <rect x="392" y="890" width="34" height="16" rx="5"/>
+              <rect x="438" y="890" width="34" height="16" rx="5"/>
+              <rect x="484" y="890" width="34" height="16" rx="5"/>
+            </g>
+            <g fill="#FFD23F" opacity="0.7">
+              <circle cx="112" cy="726" r="7"/>
+              <circle cx="618" cy="726" r="7"/>
+              <circle cx="112" cy="916" r="7"/>
+              <circle cx="618" cy="916" r="7"/>
+            </g>
+          </g>
+
+          <!-- access diagram: three solid doors -->
+          <g id="s10-doors">
+            <g id="s10-door-frame">
+              <rect x="640" y="386" width="502" height="24" rx="12" fill="#151B3B" stroke="#B8C0D8" stroke-width="8"/>
+              <rect x="640" y="404" width="24" height="494" rx="12" fill="#151B3B" stroke="#B8C0D8" stroke-width="8"/>
+              <rect x="800" y="404" width="24" height="494" rx="12" fill="#151B3B" stroke="#B8C0D8" stroke-width="8"/>
+              <rect x="960" y="404" width="24" height="494" rx="12" fill="#151B3B" stroke="#B8C0D8" stroke-width="8"/>
+              <rect x="1120" y="404" width="24" height="494" rx="12" fill="#151B3B" stroke="#B8C0D8" stroke-width="8"/>
+              <rect x="640" y="884" width="502" height="22" rx="11" fill="#151B3B" stroke="#B8C0D8" stroke-width="8"/>
+            </g>
+
+            <g clip-path="url(#s10-door-clip)">
+              <g class="s10-door-slab" data-slab="1" transform="translate(662 404)">
+                <rect x="0" y="0" width="136" height="478" rx="6" fill="url(#s10-slab)" stroke="#B8C0D8" stroke-width="18"/>
+                <rect x="18" y="24" width="100" height="144" rx="8" fill="none" stroke="#B8C0D8" stroke-width="6" opacity="0.42"/>
+                <rect x="18" y="186" width="100" height="144" rx="8" fill="none" stroke="#B8C0D8" stroke-width="6" opacity="0.42"/>
+                <rect x="18" y="348" width="100" height="104" rx="8" fill="none" stroke="#B8C0D8" stroke-width="6" opacity="0.30"/>
+                <g class="s10-door-glyph" fill="none" stroke="#FFD23F" stroke-width="6">
+                  <circle cx="68" cy="166" r="30"/>
+                  <line x1="68" y1="166" x2="68" y2="146"/>
+                  <line x1="68" y1="166" x2="84" y2="176"/>
+                </g>
+                <g fill="#FFD23F" opacity="0.85">
+                  <circle cx="14" cy="14" r="8"/>
+                  <circle cx="122" cy="14" r="8"/>
+                  <circle cx="14" cy="464" r="8"/>
+                  <circle cx="122" cy="464" r="8"/>
+                </g>
+                <circle class="s10-door-bolt" cx="68" cy="432" r="12" fill="#FFD23F" opacity="0"/>
+              </g>
+
+              <g class="s10-door-slab" data-slab="2" transform="translate(822 404)">
+                <rect x="0" y="0" width="136" height="478" rx="6" fill="url(#s10-slab)" stroke="#B8C0D8" stroke-width="18"/>
+                <rect x="18" y="24" width="100" height="144" rx="8" fill="none" stroke="#B8C0D8" stroke-width="6" opacity="0.42"/>
+                <rect x="18" y="186" width="100" height="144" rx="8" fill="none" stroke="#B8C0D8" stroke-width="6" opacity="0.42"/>
+                <rect x="18" y="348" width="100" height="104" rx="8" fill="none" stroke="#B8C0D8" stroke-width="6" opacity="0.30"/>
+                <g class="s10-door-glyph" fill="none" stroke="#FF7A1A" stroke-width="6">
+                  <rect x="42" y="150" width="52" height="14" rx="7" fill="#FF7A1A" stroke="none"/>
+                  <circle cx="68" cy="198" r="22"/>
+                  <line x1="68" y1="220" x2="68" y2="238"/>
+                </g>
+                <g fill="#FFD23F" opacity="0.85">
+                  <circle cx="14" cy="14" r="8"/>
+                  <circle cx="122" cy="14" r="8"/>
+                  <circle cx="14" cy="464" r="8"/>
+                  <circle cx="122" cy="464" r="8"/>
+                </g>
+                <circle class="s10-door-bolt" cx="68" cy="432" r="12" fill="#FFD23F" opacity="0"/>
+              </g>
+
+              <g class="s10-door-slab" data-slab="3" transform="translate(982 404)">
+                <rect x="0" y="0" width="136" height="478" rx="6" fill="url(#s10-slab)" stroke="#B8C0D8" stroke-width="18"/>
+                <rect x="18" y="24" width="100" height="144" rx="8" fill="none" stroke="#B8C0D8" stroke-width="6" opacity="0.42"/>
+                <rect x="18" y="186" width="100" height="144" rx="8" fill="none" stroke="#B8C0D8" stroke-width="6" opacity="0.42"/>
+                <rect x="18" y="348" width="100" height="104" rx="8" fill="none" stroke="#B8C0D8" stroke-width="6" opacity="0.30"/>
+                <g class="s10-door-glyph" fill="none" stroke="#B8C0D8" stroke-width="6">
+                  <line x1="34" y1="176" x2="102" y2="176"/>
+                  <line x1="34" y1="212" x2="102" y2="212"/>
+                  <line x1="46" y1="164" x2="46" y2="224"/>
+                  <line x1="68" y1="164" x2="68" y2="224"/>
+                  <line x1="90" y1="164" x2="90" y2="224"/>
+                </g>
+                <g fill="#FFD23F" opacity="0.85">
+                  <circle cx="14" cy="14" r="8"/>
+                  <circle cx="122" cy="14" r="8"/>
+                  <circle cx="14" cy="464" r="8"/>
+                  <circle cx="122" cy="464" r="8"/>
+                </g>
+                <circle class="s10-door-bolt" cx="68" cy="432" r="12" fill="#FFD23F" opacity="0"/>
+              </g>
+            </g>
+
+            <g id="s10-door-dust" fill="#FFD23F">
+              <circle cx="712" cy="888" r="7" opacity="0"/>
+              <circle cx="736" cy="900" r="5" opacity="0"/>
+              <circle cx="760" cy="886" r="6" opacity="0"/>
+              <circle cx="872" cy="888" r="7" opacity="0"/>
+              <circle cx="896" cy="900" r="5" opacity="0"/>
+              <circle cx="920" cy="886" r="6" opacity="0"/>
+              <circle cx="1032" cy="888" r="7" opacity="0"/>
+              <circle cx="1056" cy="900" r="5" opacity="0"/>
+              <circle cx="1080" cy="886" r="6" opacity="0"/>
+            </g>
+          </g>
+
+          <!-- the open truck seam, bottom edge -->
+          <g id="s10-seam" transform="translate(640 1002)">
+            <rect id="s10-seam-glow" x="-16" y="-16" width="1202" height="84" rx="42" fill="url(#s10-ember)" opacity="0" filter="url(#s10-haze)"/>
+            <rect id="s10-seam-pill" x="0" y="0" width="1170" height="56" rx="28" fill="#151B3B" stroke="#FF7A1A" stroke-width="6"/>
+            <rect x="8" y="8" width="1154" height="40" rx="20" fill="#FF7A1A" opacity="0.16"/>
+            <g id="s10-seam-route" fill="none" stroke="#FFD23F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.8">
+              <path d="M34 28 L64 14 L94 28"/>
+              <path d="M214 28 L244 14 L274 28"/>
+              <path d="M394 28 L424 14 L454 28"/>
+              <path d="M574 28 L604 14 L634 28"/>
+              <path d="M754 28 L784 14 L814 28"/>
+              <path d="M934 28 L964 14 L994 28"/>
+              <path d="M1114 28 L1144 14 L1174 28"/>
+            </g>
+            <g id="s10-seam-treads" stroke="#B8C0D8" stroke-width="6" opacity="0.4" stroke-linecap="round">
+              <line x1="120" y1="12" x2="120" y2="44"/>
+              <line x1="300" y1="12" x2="300" y2="44"/>
+              <line x1="480" y1="12" x2="480" y2="44"/>
+              <line x1="660" y1="12" x2="660" y2="44"/>
+              <line x1="840" y1="12" x2="840" y2="44"/>
+              <line x1="1020" y1="12" x2="1020" y2="44"/>
+            </g>
+          </g>
+
+          <!-- glass-mounted manifest page, 76% canvas height -->
+          <g id="s10-plate-g">
+            <rect x="1136" y="66" width="748" height="944" rx="36" fill="#050814" opacity="0.55" filter="url(#s10-haze)"/>
+            <rect x="1150" y="80" width="720" height="920" rx="30" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.12"/>
+            <rect x="1156" y="86" width="708" height="908" rx="26" fill="#151B3B" stroke="rgba(141,164,237,0.20)" stroke-width="1"/>
+            <rect x="1170" y="100" width="680" height="880" rx="18" fill="#0A0E24"/>
+            <rect x="1170" y="100" width="680" height="880" rx="18" fill="url(#s10-glass)" opacity="0.5"/>
+            <svg x="1192" y="130" width="634.4" height="821" viewBox="0 0 1275 1650" preserveAspectRatio="xMidYMid meet" overflow="hidden">
+              <image href="../plates/processed/pl-turn-01.png" x="0" y="0" width="1275" height="1650" preserveAspectRatio="xMidYMid meet"/>
+              <!-- exact source boxes: 714,300,339x37 and 51,337,159x37 -->
+              <rect id="s10-hl-sweep" x="714" y="300" width="339" height="37" fill="#FFD23F" opacity="0.28"/>
+              <g id="s10-quote-primary">
+                <rect x="700" y="286" width="367" height="65" rx="6" fill="none" stroke="#FFD23F" stroke-width="24" opacity="0.22" filter="url(#s10-goldGlow)"/>
+                <rect id="s10-quote-bracket" x="700" y="286" width="367" height="65" rx="6" fill="none" stroke="#FFD23F" stroke-width="12" stroke-dasharray="864" stroke-dashoffset="864"/>
+                <g stroke="#FFD23F" stroke-width="8" stroke-linecap="round">
+                  <line x1="714" y1="272" x2="714" y2="292"/>
+                  <line x1="1053" y1="272" x2="1053" y2="292"/>
+                </g>
+              </g>
+              <g id="s10-quote-second" opacity="0">
+                <rect x="37" y="323" width="187" height="65" rx="6" fill="none" stroke="#FFD23F" stroke-width="8" stroke-dasharray="504" stroke-dashoffset="504"/>
+                <line x1="51" y1="389" x2="210" y2="389" stroke="#FFD23F" stroke-width="6" opacity="0.55"/>
+              </g>
+            </svg>
+            <rect x="1192" y="130" width="634.4" height="821" rx="10" fill="none" stroke="url(#s10-plate-edge)" stroke-width="4"/>
+            <g clip-path="url(#s10-plate-clip)">
+              <rect id="s10-plate-band" x="1000" y="130" width="140" height="821" fill="#FFFFFF" opacity="0.05" transform="skewX(-12)"/>
+            </g>
+            <rect id="s10-plate-sheen" x="1192" y="130" width="634.4" height="821" rx="10" fill="url(#s10-glass)" opacity="0.55"/>
+            <g id="s10-plate-screws" fill="#B8C0D8" opacity="0.6">
+              <circle cx="1192" cy="130" r="6"/>
+              <circle cx="1826" cy="130" r="6"/>
+              <circle cx="1192" cy="951" r="6"/>
+              <circle cx="1826" cy="951" r="6"/>
+            </g>
+            <g id="s10-plate-clamp">
+              <rect x="1270" y="108" width="190" height="18" rx="9" fill="#B8C0D8" opacity="0.35"/>
+              <circle cx="1284" cy="117" r="6" fill="#FFD23F" opacity="0.8"/>
+              <circle cx="1446" cy="117" r="6" fill="#FFD23F" opacity="0.8"/>
+            </g>
+            <g stroke="#FFD23F" stroke-width="8" stroke-linecap="round" opacity="0.55">
+              <path d="M1794 176 L1832 176 L1832 214"/>
+              <path d="M1794 916 L1832 916 L1832 878"/>
+            </g>
+          </g>
+
+          <!-- label -->
+          <g id="s10-badge">
+            <rect x="70" y="56" width="365" height="92" rx="46" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="83" y="69" width="339" height="66" rx="33" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.35"/>
+            <g fill="#FFD23F" opacity="0.7">
+              <circle cx="97" cy="102" r="5"/>
+              <circle cx="408" cy="102" r="5"/>
+            </g>
+            <text x="252" y="118" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="46"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="9" paint-order="stroke fill" letter-spacing="2"
+                  textLength="250" lengthAdjust="spacingAndGlyphs">MANIFEST</text>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND PLANE ================= -->
+        <g id="s10-fg">
+          <rect id="s10-paper-edge" x="650" y="150" width="10" height="520" rx="5" fill="#FFD23F" opacity="0.0"/>
+          <g id="s10-fore-dust" fill="#F4EFE3">
+            <circle cx="180" cy="760" r="4" opacity="0.2"/>
+            <circle cx="340" cy="720" r="3" opacity="0.16"/>
+            <circle cx="980" cy="950" r="4" opacity="0.18"/>
+            <circle cx="1160" cy="840" r="3" opacity="0.14"/>
+            <circle cx="1280" cy="1020" r="4" opacity="0.16"/>
+            <circle cx="560" cy="990" r="3" opacity="0.16"/>
+          </g>
+          <g id="s10-pin-g" transform="translate(1810 972)">
+            <circle id="s10-pin-ring" cx="0" cy="0" r="34" fill="none" stroke="#FFD23F" stroke-width="8" opacity="0"/>
+            <path d="M-20 14 L0 58 L20 14 Z" fill="#FF7A1A" stroke="#050814" stroke-width="6"/>
+            <circle r="27" fill="#FFD23F" stroke="#050814" stroke-width="6"/>
+            <circle r="10" fill="#050814"/>
+          </g>
+          <g id="s10-pin-rings" fill="none" stroke="#FFD23F" stroke-width="8" opacity="0">
+            <circle cx="1810" cy="1030" r="54"/>
+            <circle cx="1810" cy="1030" r="84"/>
+          </g>
+          <g id="s10-seam-chevrons" fill="none" stroke="#FFD23F" stroke-width="10" stroke-linecap="round" opacity="0">
+            <path d="M1680 1016 L1712 1030 L1680 1044"/>
+            <path d="M1736 1016 L1768 1030 L1736 1044"/>
+          </g>
+          <ellipse cx="880" cy="1062" rx="520" ry="24" fill="#8E5FD9" opacity="0.14" filter="url(#s10-haze)"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:radial-gradient(circle at 26% 22%, rgba(255,210,63,0.12), transparent 56%);}
+    .scene-persp{position:absolute;inset:0;perspective:1500px;perspective-origin:42% 46%;}
+    #stage{display:block;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      /* ---------- initial states ---------- */
+      gsap.set("#s10-station-wall", { opacity: 0, scaleY: 0.94, transformOrigin: "50% 100%" });
+      gsap.set("#s10-pinned > g", { y: -26, opacity: 0, transformOrigin: "50% 0%" });
+      gsap.set("#s10-wall-pins", { scale: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s10-desk", { opacity: 0, scaleY: 0.82, transformOrigin: "50% 100%" });
+      gsap.set("#s10-desk-lamp", { y: -30, opacity: 0 });
+      gsap.set("#s10-lamp-cone", { scaleY: 0.06, opacity: 0, transformOrigin: "50% 0%" });
+      gsap.set("#s10-lamp-cone-inner", { scaleY: 0.06, opacity: 0, transformOrigin: "50% 0%" });
+      gsap.set("#s10-console", { y: 60, opacity: 0 });
+      gsap.set("#s10-rollers circle", { scale: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s10-manifest", { y: 560, x: -90 });
+      gsap.set("#s10-sheet-head > *", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s10-sheet-rules rect", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s10-lit-line rect", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s10-lit-sweep", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s10-lit-ticks line", { scaleY: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s10-match-crate", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s10-match > rect:first-child", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s10-lock", { scale: 0, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s10-paper-clip", { scaleY: 0, opacity: 0, transformOrigin: "50% 0%" });
+      gsap.set("#s10-door-frame rect", { scaleY: 0, opacity: 0, transformOrigin: "50% 100%" });
+      gsap.set(".s10-door-slab", { y: -560, opacity: 0 });
+      gsap.set(".s10-door-glyph", { opacity: 0 });
+      gsap.set(".s10-door-bolt", { opacity: 0, scale: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s10-door-dust circle", { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" });
+      gsap.set("#s10-seam-pill", { scaleX: 0.12, transformOrigin: "0% 50%" });
+      gsap.set("#s10-seam-route", { opacity: 0 });
+      gsap.set("#s10-seam-glow", { opacity: 0 });
+      gsap.set("#s10-plate-g", { y: 56, opacity: 0, rotationY: 9, transformOrigin: "50% 50%" });
+      gsap.set("#s10-plate-sheen", { opacity: 0 });
+      gsap.set("#s10-plate-band", { x: 0 });
+      gsap.set("#s10-plate-screws circle", { scale: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s10-quote-primary", { opacity: 0.20 });
+      gsap.set("#s10-quote-bracket", { strokeDashoffset: 864 });
+      gsap.set("#s10-quote-second", { opacity: 0 });
+      gsap.set("#s10-hl-sweep", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s10-badge", { scale: 1.4, opacity: 0, rotation: -5, transformOrigin: "50% 50%" });
+      gsap.set("#s10-paper-edge", { opacity: 0 });
+      gsap.set("#s10-pin-g", { y: -90, opacity: 0 });
+      gsap.set("#s10-fore-dust circle", { opacity: 0 });
+      gsap.set("#s10-wall-dust circle", { opacity: 0 });
+      gsap.set("#s10-seam-chevrons", { opacity: 0 });
+
+      /* ---------- phase 1: room, slot, sheet ---------- */
+      tl.to("#s10-station-wall", { opacity: 1, scaleY: 1, duration: 1.1, ease: "power2.out" }, 0.0);
+      tl.to("#s10-desk", { opacity: 1, scaleY: 1, duration: 1.3, ease: "power2.out" }, 0.1);
+      tl.to("#s10-desk-lamp", { y: 0, opacity: 1, duration: 0.9, ease: "power3.out" }, 0.2);
+      tl.to("#s10-lamp-cone", { scaleY: 1, opacity: 0.22, duration: 1.6, ease: "power2.out" }, 0.35);
+      tl.to("#s10-lamp-cone-inner", { scaleY: 1, opacity: 0.06, duration: 1.6, ease: "power2.out" }, 0.45);
+      tl.to("#s10-pinned > g", { y: 0, opacity: 1, duration: 0.8, stagger: 0.14, ease: "back.out(1.5)" }, 0.4);
+      tl.to("#s10-wall-pins", { scale: 1, duration: 0.4, stagger: 0.12, ease: "back.out(2)" }, 0.8);
+      tl.to("#s10-wall-dust circle", { opacity: 0.2, duration: 1.2, stagger: 0.12, ease: "power1.out" }, 0.6);
+      tl.to("#s10-console", { y: 0, opacity: 1, duration: 1.0, ease: "power3.out" }, 0.3);
+      tl.to("#s10-rollers circle", { scale: 1, duration: 0.45, stagger: 0.1, ease: "back.out(1.8)" }, 0.9);
+      tl.to("#s10-badge", { scale: 1, opacity: 1, rotation: 0, duration: 0.55, ease: "back.out(1.6)" }, 0.55);
+
+      tl.to("#s10-manifest", { y: 0, duration: 2.0, ease: "power2.inOut" }, 0.85);
+      tl.to("#s10-manifest", { x: 0, duration: 1.0, ease: "power2.out" }, 2.55);
+      tl.to("#s10-paper-clip", { scaleY: 1, opacity: 1, duration: 0.45, ease: "back.out(2)" }, 1.85);
+      tl.to("#s10-sheet-head > *", { scaleX: 1, duration: 0.5, stagger: 0.1, ease: "power2.out" }, 1.35);
+      tl.to("#s10-sheet-rules rect", { scaleX: 1, duration: 0.42, stagger: 0.045, ease: "power2.out" }, 1.65);
+
+      /* ---------- phase 2: plate mount + access map ---------- */
+      tl.to("#s10-plate-g", { y: 0, opacity: 1, rotationY: 0, duration: 1.5, ease: "power3.out" }, 2.15);
+      tl.to("#s10-plate-sheen", { opacity: 0.5, duration: 0.9, ease: "power1.out" }, 2.7);
+      tl.to("#s10-plate-screws circle", { scale: 1, duration: 0.4, stagger: 0.08, ease: "back.out(2)" }, 3.1);
+      tl.to("#s10-door-frame rect", { scaleY: 1, opacity: 1, duration: 0.5, stagger: 0.09, ease: "power3.out" }, 2.55);
+      tl.to(".s10-door-glyph", { opacity: 0.85, duration: 0.6, stagger: 0.14, ease: "power2.out" }, 3.1);
+      tl.to("#s10-seam-pill", { scaleX: 1, duration: 2.5, ease: "power2.inOut" }, 16.35);
+
+      /* ---------- phase 3: lit manifest line + matched dimension ---------- */
+      tl.to("#s10-lit-line rect", { scaleX: 1, duration: 0.5, stagger: 0.09, ease: "power2.out" }, 4.95);
+      tl.to("#s10-lit-sweep", { scaleX: 1, duration: 0.9, ease: "power2.inOut" }, 5.25);
+      tl.to("#s10-lit-sweep", { opacity: 0.30, duration: 0.7, yoyo: true, repeat: 3, ease: "sine.inOut" }, 6.4);
+      tl.to("#s10-lit-ticks line", { scaleY: 1, duration: 0.35, stagger: 0.1, ease: "back.out(2)" }, 5.45);
+      tl.to("#s10-quote-primary", { opacity: 1, duration: 0.35, ease: "power2.out" }, 5.25);
+      tl.to("#s10-quote-bracket", { strokeDashoffset: 0, duration: 0.85, ease: "power2.inOut" }, 5.45);
+      tl.to("#s10-hl-sweep", { scaleX: 1, duration: 1.0, ease: "power2.inOut" }, 5.6);
+      tl.to("#s10-quote-second", { opacity: 0.65, duration: 0.4, ease: "power2.out" }, 6.2);
+      tl.to("#s10-quote-second rect", { strokeDashoffset: 0, duration: 0.7, ease: "power2.inOut" }, 6.3);
+
+      tl.to("#s10-match > rect:first-child", { scaleX: 1, duration: 0.7, ease: "power2.out" }, 5.9);
+      tl.to("#s10-match-crate", { scaleX: 1, duration: 0.9, ease: "power3.out" }, 6.25);
+      tl.to("#s10-lock", { scale: 1, opacity: 1, duration: 0.45, ease: "back.out(2.2)" }, 7.05);
+      tl.to("#s10-lock", { rotation: 8, duration: 0.45, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 7.6);
+
+      /* ---------- phase 4: three doors stamp shut ---------- */
+      tl.to(".s10-door-slab[data-slab='1']", { y: 0, opacity: 1, duration: 0.55, ease: "power4.in" }, 9.25);
+      tl.to(".s10-door-slab[data-slab='1']", { scaleY: 0.97, duration: 0.16, ease: "power2.out" }, 9.8);
+      tl.to(".s10-door-slab[data-slab='1']", { scaleY: 1, duration: 0.3, ease: "back.out(2.4)" }, 9.96);
+      tl.to(".s10-door-bolt", { opacity: 1, scale: 1, duration: 0.35, stagger: 0.12, ease: "back.out(2)" }, 9.9);
+      tl.to("#s10-door-dust circle", { opacity: 0.55, scale: 1, duration: 0.38, stagger: 0.05, ease: "power2.out" }, 9.72);
+      tl.to("#s10-door-dust", { y: -26, x: -22, duration: 1.8, ease: "power1.out" }, 9.8);
+      tl.to("#s10-door-dust circle", { opacity: 0.06, duration: 1.2, stagger: 0.04, ease: "power1.out" }, 10.25);
+
+      tl.to(".s10-door-slab[data-slab='2']", { y: 0, opacity: 1, duration: 0.55, ease: "power4.in" }, 11.55);
+      tl.to(".s10-door-slab[data-slab='2']", { scaleY: 0.97, duration: 0.16, ease: "power2.out" }, 12.1);
+      tl.to(".s10-door-slab[data-slab='2']", { scaleY: 1, duration: 0.3, ease: "back.out(2.4)" }, 12.26);
+      tl.to("#s10-lock", { scale: 1.16, duration: 0.2, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "power2.out" }, 12.2);
+
+      tl.to(".s10-door-slab[data-slab='3']", { y: 0, opacity: 1, duration: 0.55, ease: "power4.in" }, 14.95);
+      tl.to(".s10-door-slab[data-slab='3']", { scaleY: 0.97, duration: 0.16, ease: "power2.out" }, 15.5);
+      tl.to(".s10-door-slab[data-slab='3']", { scaleY: 1, duration: 0.3, ease: "back.out(2.4)" }, 15.66);
+      tl.to("#s10-door-dust circle", { opacity: 0.55, scale: 1, duration: 0.38, stagger: 0.05, ease: "power2.out" }, 15.42);
+
+      /* ---------- phase 5: the one open seam ---------- */
+      tl.to("#s10-seam-route", { opacity: 0.8, duration: 0.7, ease: "power2.out" }, 16.55);
+      tl.to("#s10-seam-glow", { opacity: 0.6, duration: 1.2, ease: "power2.out" }, 16.6);
+      tl.to("#s10-seam-glow", { opacity: 0.32, duration: 0.45, yoyo: true, repeat: 2, ease: "sine.inOut" }, 17.5);
+      tl.to("#s10-seam-chevrons", { opacity: 0.9, duration: 0.4, ease: "power2.out" }, 18.15);
+      tl.to("#s10-seam-chevrons", { x: 26, duration: 1.3, ease: "power1.inOut" }, 18.3);
+
+      /* ---------- phase 6: map pin + parallax exit ---------- */
+      tl.to("#s10-pin-g", { y: 0, opacity: 1, duration: 0.45, ease: "back.out(2.6)" }, 18.3);
+      tl.to("#s10-pin-ring", { opacity: 0.8, scale: 1.45, duration: 0.7, transformOrigin: "50% 50%", ease: "power2.out" }, 18.55);
+      tl.to("#s10-pin-rings", { opacity: 0.55, scale: 1.25, duration: 0.6, transformOrigin: "1810px 1030px", ease: "power2.out" }, 18.55);
+      tl.to("#s10-pin-rings", { opacity: 0, scale: 1.7, duration: 0.72, transformOrigin: "1810px 1030px", ease: "power2.in" }, 18.95);
+      tl.to("#s10-pin-g", { scale: 1.18, duration: 0.45, yoyo: true, repeat: 1, transformOrigin: "50% 100%", ease: "sine.inOut" }, 18.8);
+
+      tl.to("#s10-world", { x: -64, scale: 1.03, rotationY: -3, duration: 2.6, transformOrigin: "58% 50%", ease: "power2.inOut" }, 17.12);
+      tl.to("#s10-bg", { x: -26, duration: 2.6, ease: "power2.inOut" }, 17.12);
+      tl.to("#s10-fg", { x: 34, duration: 2.6, ease: "power2.inOut" }, 17.12);
+      tl.to("#s10-plate-g", { rotationY: -4, x: -18, duration: 2.2, transformOrigin: "50% 50%", ease: "power2.inOut" }, 17.2);
+      tl.to("#s10-paper-edge", { opacity: 0.5, duration: 1.2, ease: "power1.out" }, 16.5);
+      tl.to("#s10-fore-dust circle", { opacity: 0.22, duration: 1.1, stagger: 0.1, ease: "power1.out" }, 16.8);
+
+      /* ---------- parallax + living holds ---------- */
+      tl.fromTo("#s10-bg", { x: -14, rotationY: -1.2 }, { x: 14, rotationY: 1.2, duration: 19.72, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s10-mg", { x: 8, rotationX: 2.4 }, { x: -8, rotationX: -1.6, duration: 19.72, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s10-fg", { x: -6 }, { x: 6, duration: 19.72, ease: "sine.inOut" }, 0);
+      tl.to("#s10-bg ellipse:first-of-type", { opacity: 0.64, duration: 2.8, yoyo: true, repeat: 2, ease: "sine.inOut" }, 1.2);
+      tl.to("#s10-plate-sheen", { opacity: 0.74, duration: 1.5, yoyo: true, repeat: 2, ease: "sine.inOut" }, 7.5);
+      tl.to("#s10-plate-band", { x: 940, duration: 1.5, ease: "power2.inOut" }, 7.2);
+      tl.to("#s10-badge", { y: -5, duration: 1.4, yoyo: true, repeat: 2, ease: "sine.inOut" }, 8.2);
+      tl.to("#s10-manifest", { rotationY: 2.2, duration: 3.2, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 5.0);
+      tl.to("#s10-console", { y: -3, duration: 2.4, yoyo: true, repeat: 2, ease: "sine.inOut" }, 12.0);
+      tl.to("#s10-seam-pill", { opacity: 0.92, duration: 0.95, yoyo: true, repeat: 2, ease: "sine.inOut" }, 16.8);
+      tl.to("#s10-fore-dust", { y: -20, duration: 3.4, yoyo: true, repeat: 2, ease: "sine.inOut" }, 4.2);
+      tl.to("#s10-wall-dust", { y: -16, duration: 4.0, yoyo: true, repeat: 2, ease: "sine.inOut" }, 2.0);
+
+      tl.to({}, { duration: 19.720 }, 0);
+      window.__timelines["10-manifest-line"] = tl;
+    })();
+  </script>
+</div>
+</template>

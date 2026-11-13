@@ -1,0 +1,535 @@
+<template id="s21-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="21-mexico-stamp" data-width="1920" data-height="1080" data-start="0" data-duration="11.700">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="s21-sky" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.55" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s21-wall" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.7" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s21-floor-grad" x1="0.15" y1="0" x2="0.85" y2="1">
+          <stop offset="0" stop-color="#515A83" stop-opacity="0.85"/>
+          <stop offset="0.42" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s21-metal" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.92"/>
+          <stop offset="0.24" stop-color="#B8C0D8"/>
+          <stop offset="0.62" stop-color="#515A83"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </linearGradient>
+        <linearGradient id="s21-metal-dark" x1="0" y1="0" x2="0.5" y2="1">
+          <stop offset="0" stop-color="#B8C0D8" stop-opacity="0.8"/>
+          <stop offset="0.35" stop-color="#515A83"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s21-gold" x1="0" y1="0" x2="0.8" y2="1">
+          <stop offset="0" stop-color="#FF7A1A"/>
+          <stop offset="0.45" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#F4EFE3"/>
+        </linearGradient>
+        <linearGradient id="s21-plastic" x1="0" y1="0" x2="0.7" y2="1">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.72"/>
+          <stop offset="0.4" stop-color="#B8C0D8" stop-opacity="0.42"/>
+          <stop offset="0.78" stop-color="#515A83" stop-opacity="0.5"/>
+          <stop offset="1" stop-color="#0A0E24" stop-opacity="0.68"/>
+        </linearGradient>
+        <radialGradient id="s21-violet" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.4"/>
+          <stop offset="0.64" stop-color="#8E5FD9" stop-opacity="0.12"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s21-ember" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.55"/>
+          <stop offset="0.56" stop-color="#FF7A1A" stop-opacity="0.16"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s21-flash" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.96"/>
+          <stop offset="0.3" stop-color="#FFD23F" stop-opacity="0.7"/>
+          <stop offset="0.66" stop-color="#FF7A1A" stop-opacity="0.24"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s21-packet-glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.6"/>
+          <stop offset="0.5" stop-color="#FF7A1A" stop-opacity="0.2"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="s21-haze" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="24"/>
+        </filter>
+        <filter id="s21-soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="9"/>
+        </filter>
+      </defs>
+
+      <g id="s21-world">
+        <!-- ================= BACKGROUND: workshop wall + city night ================= -->
+        <g id="s21-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s21-sky)"/>
+          <rect x="0" y="0" width="1920" height="560" fill="url(#s21-wall)" opacity="0.9"/>
+          <g id="s21-windows" opacity="0.95">
+            <g>
+              <rect x="210" y="86" width="400" height="240" rx="10" fill="#0A0E24" stroke="#515A83" stroke-width="10"/>
+              <rect x="224" y="100" width="372" height="212" fill="#151B3B"/>
+              <path d="M 224 268 L 300 196 L 356 230 L 430 164 L 510 226 L 596 180 L 596 312 L 224 312 Z" fill="#0A0E24"/>
+              <g fill="#FFD23F" opacity="0.8">
+                <rect x="252" y="274" width="6" height="8"/>
+                <rect x="286" y="258" width="6" height="8"/>
+                <rect x="338" y="270" width="6" height="8"/>
+                <rect x="452" y="252" width="6" height="8"/>
+                <rect x="536" y="266" width="6" height="8"/>
+              </g>
+            </g>
+            <g>
+              <rect x="760" y="86" width="400" height="240" rx="10" fill="#0A0E24" stroke="#515A83" stroke-width="10"/>
+              <rect x="774" y="100" width="372" height="212" fill="#151B3B"/>
+              <path d="M 774 268 L 848 186 L 918 228 L 988 152 L 1064 224 L 1146 176 L 1146 312 L 774 312 Z" fill="#0A0E24"/>
+              <g fill="#FFD23F" opacity="0.8">
+                <rect x="812" y="272" width="6" height="8"/>
+                <rect x="880" y="248" width="6" height="8"/>
+                <rect x="938" y="262" width="6" height="8"/>
+                <rect x="1018" y="240" width="6" height="8"/>
+                <rect x="1096" y="258" width="6" height="8"/>
+              </g>
+            </g>
+            <g>
+              <rect x="1310" y="86" width="400" height="240" rx="10" fill="#0A0E24" stroke="#515A83" stroke-width="10"/>
+              <rect x="1324" y="100" width="372" height="212" fill="#151B3B"/>
+              <path d="M 1324 268 L 1396 204 L 1458 236 L 1532 168 L 1606 230 L 1696 184 L 1696 312 L 1324 312 Z" fill="#0A0E24"/>
+              <g fill="#FFD23F" opacity="0.8">
+                <rect x="1360" y="276" width="6" height="8"/>
+                <rect x="1428" y="260" width="6" height="8"/>
+                <rect x="1498" y="274" width="6" height="8"/>
+                <rect x="1590" y="252" width="6" height="8"/>
+                <rect x="1652" y="268" width="6" height="8"/>
+              </g>
+            </g>
+          </g>
+          <ellipse cx="960" cy="600" rx="900" ry="420" fill="url(#s21-violet)"/>
+
+          <!-- hanging workshop bulbs -->
+          <g id="s21-bulbs">
+            <g transform="translate(420 0)">
+              <line x1="0" y1="0" x2="0" y2="176" stroke="#515A83" stroke-width="8"/>
+              <circle cx="0" cy="192" r="20" fill="#FFD23F" stroke="#050814" stroke-width="6"/>
+              <ellipse cx="0" cy="192" rx="66" ry="58" fill="url(#s21-ember)" opacity="0.85"/>
+            </g>
+            <g transform="translate(960 0)">
+              <line x1="0" y1="0" x2="0" y2="140" stroke="#515A83" stroke-width="8"/>
+              <circle cx="0" cy="156" r="18" fill="#FFD23F" stroke="#050814" stroke-width="6"/>
+              <ellipse cx="0" cy="156" rx="60" ry="52" fill="url(#s21-ember)" opacity="0.8"/>
+            </g>
+            <g transform="translate(1520 0)">
+              <line x1="0" y1="0" x2="0" y2="182" stroke="#515A83" stroke-width="8"/>
+              <circle cx="0" cy="198" r="20" fill="#FFD23F" stroke="#050814" stroke-width="6"/>
+              <ellipse cx="0" cy="198" rx="66" ry="58" fill="url(#s21-ember)" opacity="0.85"/>
+            </g>
+          </g>
+
+          <!-- isometric floor -->
+          <g id="s21-floor">
+            <path d="M 960 500 L 1840 830 L 960 1042 L 80 830 Z" fill="url(#s21-floor-grad)" stroke="#515A83" stroke-width="6"/>
+            <g id="s21-grid" stroke="#B8C0D8" stroke-width="4" opacity="0.2">
+              <line x1="520" y1="665" x2="1400" y2="995"/>
+              <line x1="700" y1="600" x2="1580" y2="930"/>
+              <line x1="880" y1="535" x2="1760" y2="865"/>
+              <line x1="520" y1="995" x2="1400" y2="665"/>
+              <line x1="700" y1="1060" x2="1580" y2="730"/>
+              <line x1="880" y1="1125" x2="1760" y2="795"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: three stations ================= -->
+        <g id="s21-mg">
+          <!-- station A: plastic pour -->
+          <g transform="translate(360 700)">
+            <g id="s21-station-a">
+            <path d="M -240 0 L 0 70 L 0 116 L -240 46 Z" fill="#0A0E24" stroke="#050814" stroke-width="5"/>
+            <path d="M 240 0 L 0 70 L 0 116 L 240 46 Z" fill="#151B3B" stroke="#050814" stroke-width="5"/>
+            <path d="M 0 -70 L 240 0 L 0 70 L -240 0 Z" fill="url(#s21-metal-dark)" stroke="#050814" stroke-width="6"/>
+            <path d="M 0 -52 L 202 0 L 0 52 L -202 0 Z" fill="none" stroke="#B8C0D8" stroke-width="3" opacity="0.35"/>
+
+            <g id="s21-hopper">
+              <path d="M -104 -312 L 104 -312 L 58 -196 L -58 -196 Z" fill="url(#s21-metal)" stroke="#050814" stroke-width="7"/>
+              <path d="M -76 -292 L 76 -292 L 42 -214 L -42 -214 Z" fill="#0A0E24" stroke="#515A83" stroke-width="4"/>
+              <rect x="-20" y="-196" width="40" height="26" rx="8" fill="url(#s21-gold)" stroke="#050814" stroke-width="5"/>
+              <line x1="-96" y1="-292" x2="-96" y2="-224" stroke="#F4EFE3" stroke-width="5" opacity="0.4"/>
+            </g>
+
+            <g id="s21-pour">
+              <rect x="-10" y="-176" width="20" height="116" fill="url(#s21-plastic)" stroke="#B8C0D8" stroke-width="3"/>
+              <circle cx="0" cy="-62" r="12" fill="#F4EFE3" opacity="0.55"/>
+            </g>
+
+            <g id="s21-mold">
+              <rect x="-96" y="-74" width="192" height="74" rx="12" fill="#151B3B" stroke="#B8C0D8" stroke-width="6"/>
+              <rect x="-78" y="-58" width="156" height="42" rx="6" fill="url(#s21-plastic)" stroke="#515A83" stroke-width="3"/>
+              <rect id="s21-mold-fill" x="-76" y="-56" width="152" height="38" rx="5" fill="#F4EFE3" opacity="0.28"/>
+              <rect x="-96" y="-84" width="192" height="12" rx="6" fill="#515A83" opacity="0.6"/>
+            </g>
+
+            <g stroke="#FFD23F" stroke-width="4" opacity="0.5">
+              <line x1="-182" y1="-10" x2="-156" y2="0"/>
+              <line x1="156" y1="0" x2="182" y2="-10"/>
+              <line x1="-182" y1="6" x2="-156" y2="16"/>
+              <line x1="156" y1="16" x2="182" y2="6"/>
+            </g>
+            </g>
+          </g>
+
+          <!-- station B: stamp press -->
+          <g transform="translate(960 730)">
+            <g id="s21-station-b">
+            <path d="M -260 0 L 0 76 L 0 124 L -260 48 Z" fill="#0A0E24" stroke="#050814" stroke-width="5"/>
+            <path d="M 260 0 L 0 76 L 0 124 L 260 48 Z" fill="#151B3B" stroke="#050814" stroke-width="5"/>
+            <path d="M 0 -76 L 260 0 L 0 76 L -260 0 Z" fill="url(#s21-metal-dark)" stroke="#050814" stroke-width="6"/>
+            <path d="M 0 -56 L 218 0 L 0 56 L -218 0 Z" fill="none" stroke="#B8C0D8" stroke-width="3" opacity="0.35"/>
+
+            <rect x="-172" y="-286" width="30" height="252" rx="12" fill="url(#s21-metal)" stroke="#050814" stroke-width="6"/>
+            <rect x="142" y="-286" width="30" height="252" rx="12" fill="url(#s21-metal)" stroke="#050814" stroke-width="6"/>
+            <rect x="-206" y="-322" width="412" height="50" rx="14" fill="url(#s21-metal)" stroke="#050814" stroke-width="7"/>
+            <rect x="-150" y="-306" width="300" height="16" rx="8" fill="#F4EFE3" opacity="0.24"/>
+            <g fill="#FFD23F" opacity="0.6">
+              <circle cx="-178" cy="-252" r="6"/>
+              <circle cx="178" cy="-252" r="6"/>
+              <circle cx="-178" cy="-92" r="6"/>
+              <circle cx="178" cy="-92" r="6"/>
+            </g>
+
+            <rect x="-132" y="-66" width="264" height="34" rx="9" fill="#151B3B" stroke="#B8C0D8" stroke-width="6"/>
+            <rect x="-70" y="-96" width="140" height="32" rx="6" fill="#0A0E24" stroke="#515A83" stroke-width="4"/>
+
+            <g id="s21-press-head">
+              <rect x="-108" y="-238" width="216" height="94" rx="12" fill="url(#s21-metal)" stroke="#050814" stroke-width="7"/>
+              <rect x="-86" y="-216" width="172" height="52" rx="8" fill="#151B3B" stroke="#515A83" stroke-width="4"/>
+              <rect x="-96" y="-160" width="192" height="24" rx="8" fill="url(#s21-gold)" stroke="#050814" stroke-width="5"/>
+              <g transform="translate(0 -190)">
+                <rect x="-13" y="-13" width="26" height="26" rx="4" fill="url(#s21-gold)" stroke="#050814" stroke-width="3"/>
+                <path d="M 0 -8 l 2.4 4.9 5.4 0.8 -3.9 3.8 0.9 5.4 -4.8 -2.5 -4.8 2.5 0.9 -5.4 -3.9 -3.8 5.4 -0.8 z" fill="#050814"/>
+              </g>
+            </g>
+
+            <circle id="s21-press-flash" cx="0" cy="-80" r="150" fill="url(#s21-flash)" opacity="0"/>
+            <g id="s21-press-sparks" stroke="#FFD23F" stroke-width="6" stroke-linecap="round" opacity="0">
+              <line x1="-150" y1="-120" x2="-196" y2="-150"/>
+              <line x1="150" y1="-120" x2="196" y2="-150"/>
+              <line x1="-144" y1="-44" x2="-190" y2="-24"/>
+              <line x1="144" y1="-44" x2="190" y2="-24"/>
+            </g>
+            </g>
+          </g>
+
+          <!-- station C: wire spool -->
+          <g transform="translate(1560 700)">
+            <g id="s21-station-c">
+            <path d="M -240 0 L 0 70 L 0 116 L -240 46 Z" fill="#0A0E24" stroke="#050814" stroke-width="5"/>
+            <path d="M 240 0 L 0 70 L 0 116 L 240 46 Z" fill="#151B3B" stroke="#050814" stroke-width="5"/>
+            <path d="M 0 -70 L 240 0 L 0 70 L -240 0 Z" fill="url(#s21-metal-dark)" stroke="#050814" stroke-width="6"/>
+            <path d="M 0 -52 L 202 0 L 0 52 L -202 0 Z" fill="none" stroke="#B8C0D8" stroke-width="3" opacity="0.35"/>
+
+            <rect x="-30" y="-266" width="26" height="178" rx="10" fill="url(#s21-metal)" stroke="#050814" stroke-width="5" transform="translate(-112 0)"/>
+            <rect x="-30" y="-266" width="26" height="178" rx="10" fill="url(#s21-metal)" stroke="#050814" stroke-width="5" transform="translate(116 0)"/>
+            <g id="s21-spool">
+              <circle cx="0" cy="-166" r="116" fill="#151B3B" stroke="#B8C0D8" stroke-width="8"/>
+              <circle cx="0" cy="-166" r="92" fill="#0A0E24" stroke="#515A83" stroke-width="6"/>
+              <circle cx="0" cy="-166" r="72" fill="none" stroke="url(#s21-gold)" stroke-width="14"/>
+              <circle cx="0" cy="-166" r="52" fill="none" stroke="#FFD23F" stroke-width="9" opacity="0.8"/>
+              <circle cx="0" cy="-166" r="30" fill="#151B3B" stroke="#B8C0D8" stroke-width="7"/>
+              <circle cx="0" cy="-166" r="10" fill="#FFD23F"/>
+              <g stroke="#515A83" stroke-width="6" opacity="0.7">
+                <line x1="-92" y1="-166" x2="-38" y2="-166"/>
+                <line x1="92" y1="-166" x2="38" y2="-166"/>
+                <line x1="0" y1="-258" x2="0" y2="-204"/>
+                <line x1="0" y1="-74" x2="0" y2="-128"/>
+              </g>
+            </g>
+            <ellipse cx="0" cy="-166" rx="150" ry="140" fill="url(#s21-ember)" opacity="0.5"/>
+            </g>
+          </g>
+
+          <!-- chain links, station A to hub -->
+          <g id="s21-chain-l" stroke-linecap="round">
+            <g class="s21-link" transform="translate(418 784) rotate(13)">
+              <rect x="-32" y="-19" width="64" height="38" rx="19" fill="#0A0E24" stroke="#B8C0D8" stroke-width="22"/>
+            </g>
+            <g class="s21-link" transform="translate(492 801) rotate(30)">
+              <rect x="-32" y="-19" width="64" height="38" rx="19" fill="#0A0E24" stroke="#B8C0D8" stroke-width="22"/>
+            </g>
+            <g class="s21-link" transform="translate(566 819) rotate(13)">
+              <rect x="-32" y="-19" width="64" height="38" rx="19" fill="#0A0E24" stroke="#B8C0D8" stroke-width="22"/>
+            </g>
+            <g class="s21-link" transform="translate(640 836) rotate(30)">
+              <rect x="-32" y="-19" width="64" height="38" rx="19" fill="#0A0E24" stroke="#B8C0D8" stroke-width="22"/>
+            </g>
+            <g class="s21-link" transform="translate(714 853) rotate(13)">
+              <rect x="-32" y="-19" width="64" height="38" rx="19" fill="#0A0E24" stroke="#B8C0D8" stroke-width="22"/>
+            </g>
+            <g class="s21-link" transform="translate(788 871) rotate(30)">
+              <rect x="-32" y="-19" width="64" height="38" rx="19" fill="#0A0E24" stroke="#B8C0D8" stroke-width="22"/>
+            </g>
+            <g class="s21-link" transform="translate(858 884) rotate(13)">
+              <rect x="-32" y="-19" width="64" height="38" rx="19" fill="#0A0E24" stroke="#B8C0D8" stroke-width="22"/>
+            </g>
+          </g>
+          <g id="s21-chain-r" stroke-linecap="round">
+            <g class="s21-link" transform="translate(1060 884) rotate(-13)">
+              <rect x="-32" y="-19" width="64" height="38" rx="19" fill="#0A0E24" stroke="#B8C0D8" stroke-width="22"/>
+            </g>
+            <g class="s21-link" transform="translate(1132 871) rotate(-30)">
+              <rect x="-32" y="-19" width="64" height="38" rx="19" fill="#0A0E24" stroke="#B8C0D8" stroke-width="22"/>
+            </g>
+            <g class="s21-link" transform="translate(1206 853) rotate(-13)">
+              <rect x="-32" y="-19" width="64" height="38" rx="19" fill="#0A0E24" stroke="#B8C0D8" stroke-width="22"/>
+            </g>
+            <g class="s21-link" transform="translate(1280 836) rotate(-30)">
+              <rect x="-32" y="-19" width="64" height="38" rx="19" fill="#0A0E24" stroke="#B8C0D8" stroke-width="22"/>
+            </g>
+            <g class="s21-link" transform="translate(1354 819) rotate(-13)">
+              <rect x="-32" y="-19" width="64" height="38" rx="19" fill="#0A0E24" stroke="#B8C0D8" stroke-width="22"/>
+            </g>
+            <g class="s21-link" transform="translate(1428 801) rotate(-30)">
+              <rect x="-32" y="-19" width="64" height="38" rx="19" fill="#0A0E24" stroke="#B8C0D8" stroke-width="22"/>
+            </g>
+            <g class="s21-link" transform="translate(1502 784) rotate(-13)">
+              <rect x="-32" y="-19" width="64" height="38" rx="19" fill="#0A0E24" stroke="#B8C0D8" stroke-width="22"/>
+            </g>
+          </g>
+
+          <!-- wire feeding the hub -->
+          <path id="s21-wire-feed" d="M 1480 560 C 1350 700 1220 800 1070 858" fill="none"
+                stroke="url(#s21-gold)" stroke-width="9" stroke-linecap="round" stroke-dasharray="420" stroke-dashoffset="420"/>
+
+          <!-- hub + sealed packet -->
+          <g transform="translate(960 900)">
+            <g id="s21-hub">
+            <ellipse cx="0" cy="28" rx="170" ry="60" fill="#050814" opacity="0.7" filter="url(#s21-haze)"/>
+            <path d="M -150 0 L 0 44 L 150 0 L 0 -44 Z" fill="url(#s21-metal-dark)" stroke="#050814" stroke-width="6"/>
+            <path d="M -150 0 L 0 44 L 0 84 L -150 40 Z" fill="#0A0E24" stroke="#050814" stroke-width="5"/>
+            <path d="M 150 0 L 0 44 L 0 84 L 150 40 Z" fill="#151B3B" stroke="#050814" stroke-width="5"/>
+            <ellipse id="s21-hub-glow" cx="0" cy="-16" rx="150" ry="90" fill="url(#s21-packet-glow)" opacity="0"/>
+            <g transform="translate(0 -86)">
+            <g id="s21-packet">
+              <g transform="translate(0 26)">
+                <g id="s21-packet-plastic">
+                  <rect x="-84" y="-60" width="168" height="120" rx="10" fill="url(#s21-plastic)" stroke="#B8C0D8" stroke-width="5"/>
+                  <rect x="-76" y="-52" width="152" height="30" rx="6" fill="#FFFFFF" opacity="0.18"/>
+                  <rect x="-70" y="-44" width="140" height="88" rx="5" fill="none" stroke="#F4EFE3" stroke-width="2" opacity="0.3"/>
+                </g>
+              </g>
+              <g transform="translate(0 -34)">
+                <g id="s21-packet-stamp">
+                  <rect x="-30" y="-30" width="60" height="60" rx="8" fill="url(#s21-gold)" stroke="#050814" stroke-width="5"/>
+                  <path d="M 0 -14 l 4.4 9 9.9 1.4 -7.2 7 1.7 9.9 -8.8 -4.6 -8.8 4.6 1.7 -9.9 -7.2 -7 9.9 -1.4 z" fill="#050814"/>
+                  <circle cx="0" cy="0" r="6" fill="none" stroke="#050814" stroke-width="2.6"/>
+                </g>
+              </g>
+              <g transform="translate(-36 6)">
+                <g id="s21-packet-wire">
+                  <circle cx="0" cy="0" r="38" fill="none" stroke="url(#s21-gold)" stroke-width="14"/>
+                  <path d="M 38 0 q 40 -22 74 4" fill="none" stroke="url(#s21-gold)" stroke-width="14" stroke-linecap="round"/>
+                </g>
+              </g>
+            </g>
+            </g>
+            <g id="s21-hub-lock" opacity="0">
+              <rect x="-58" y="-24" width="116" height="76" rx="16" fill="#151B3B" stroke="#FFD23F" stroke-width="8"/>
+              <path d="M -24 -24 L -24 -50 A 24 24 0 0 1 24 -50 L 24 -24" fill="none" stroke="#FFD23F" stroke-width="12" stroke-linecap="round"/>
+              <circle cx="0" cy="10" r="10" fill="#FFD23F"/>
+            </g>
+            </g>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND: gate slab, dust, exit ================= -->
+        <g id="s21-fg">
+          <g transform="translate(960 840)">
+            <g id="s21-gate">
+            <rect x="-268" y="0" width="536" height="360" rx="10" fill="#151B3B" stroke="#B8C0D8" stroke-width="8"/>
+            <rect x="-248" y="20" width="496" height="320" rx="6" fill="#0A0E24" stroke="#515A83" stroke-width="4"/>
+            <g fill="#FFD23F" opacity="0.85">
+              <path d="M -248 96 l 44 -44 44 44 -44 44 z"/>
+              <path d="M -116 96 l 44 -44 44 44 -44 44 z"/>
+              <path d="M 16 96 l 44 -44 44 44 -44 44 z"/>
+              <path d="M 148 96 l 44 -44 44 44 -44 44 z"/>
+              <path d="M -182 192 l 44 -44 44 44 -44 44 z"/>
+              <path d="M -50 192 l 44 -44 44 44 -44 44 z"/>
+              <path d="M 82 192 l 44 -44 44 44 -44 44 z"/>
+              <path d="M 214 192 l 44 -44 44 44 -44 44 z"/>
+            </g>
+            <rect x="-268" y="0" width="536" height="18" rx="8" fill="#F4EFE3" opacity="0.5"/>
+            </g>
+          </g>
+
+          <g id="s21-dust" fill="#F4EFE3">
+            <circle cx="250" cy="920" r="5" opacity="0.18"/>
+            <circle cx="560" cy="990" r="4" opacity="0.14"/>
+            <circle cx="1340" cy="1000" r="5" opacity="0.16"/>
+            <circle cx="1700" cy="930" r="4" opacity="0.12"/>
+          </g>
+
+          <!-- thread-spiral-push exit -->
+          <g id="s21-exit" opacity="0" transform="translate(960 720)">
+            <circle cx="0" cy="0" r="90" fill="none" stroke="#FFD23F" stroke-width="14"/>
+            <circle cx="0" cy="0" r="150" fill="none" stroke="#FFD23F" stroke-width="10" opacity="0.7"/>
+            <circle cx="0" cy="0" r="220" fill="none" stroke="#FF7A1A" stroke-width="8" opacity="0.5"/>
+            <path d="M 0 0 m 0 -30 a 30 30 0 1 1 -30 30 a 60 60 0 1 1 60 60 a 96 96 0 1 1 -96 -96 a 132 132 0 1 1 132 132"
+                  fill="none" stroke="#F4EFE3" stroke-width="8" stroke-linecap="round"/>
+          </g>
+
+          <g id="s21-badge">
+            <rect x="64" y="52" width="284" height="98" rx="49" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="78" y="66" width="256" height="70" rx="35" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.35"/>
+            <g fill="#FFD23F" opacity="0.85">
+              <circle cx="102" cy="101" r="7"/>
+              <circle cx="310" cy="101" r="7"/>
+            </g>
+            <text x="206" y="117" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="44"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="9" paint-order="stroke fill" letter-spacing="3"
+                  textLength="158" lengthAdjust="spacingAndGlyphs">STAMP</text>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:radial-gradient(circle at 50% 58%, rgba(255,122,26,0.12), transparent 64%);}
+    .scene-persp{position:absolute;inset:0;perspective:1600px;perspective-origin:50% 56%;}
+    #s21-world{transform-style:preserve-3d;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      /* ---------- initial states ---------- */
+      gsap.set("#s21-floor", { opacity: 0, scale: 0.96, transformOrigin: "50% 68%" });
+      gsap.set("#s21-grid line", { strokeDasharray: 1100, strokeDashoffset: 1100 });
+      gsap.set("#s21-windows", { opacity: 0, y: -18 });
+      gsap.set("#s21-bulbs", { opacity: 0, y: -22 });
+      gsap.set("#s21-station-a", { opacity: 0, y: 34 });
+      gsap.set("#s21-station-b", { opacity: 0, y: 42 });
+      gsap.set("#s21-station-c", { opacity: 0, y: 34 });
+      gsap.set("#s21-hopper", { opacity: 0, y: -26 });
+      gsap.set("#s21-pour", { opacity: 0 });
+      gsap.set("#s21-mold", { opacity: 0, scale: 0.9, transformOrigin: "50% 100%" });
+      gsap.set("#s21-mold-fill", { scaleY: 0, transformOrigin: "50% 100%" });
+      gsap.set("#s21-press-head", { opacity: 0, y: -36 });
+      gsap.set("#s21-press-flash", { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" });
+      gsap.set("#s21-press-sparks", { opacity: 0 });
+      gsap.set("#s21-spool", { opacity: 0, scale: 0.72, rotation: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s21-chain-l .s21-link", { opacity: 0, scale: 0.5, transformOrigin: "50% 50%" });
+      gsap.set("#s21-chain-r .s21-link", { opacity: 0, scale: 0.5, transformOrigin: "50% 50%" });
+      gsap.set("#s21-wire-feed", { opacity: 0, strokeDashoffset: 420 });
+      gsap.set("#s21-hub", { opacity: 0, y: 26 });
+      gsap.set("#s21-packet", { opacity: 0, scale: 0.86, transformOrigin: "50% 50%" });
+      gsap.set("#s21-packet-wire", { opacity: 0, x: -54 });
+      gsap.set("#s21-packet-stamp", { opacity: 0, y: -46 });
+      gsap.set("#s21-packet-plastic", { opacity: 0, y: 42 });
+      gsap.set("#s21-hub-lock", { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" });
+      gsap.set("#s21-gate", { opacity: 1, y: 180 });
+      gsap.set("#s21-dust circle", { opacity: 0 });
+      gsap.set("#s21-exit", { opacity: 0, scale: 0.5, transformOrigin: "50% 50%" });
+      gsap.set("#s21-badge", { opacity: 0, scale: 1.4, rotation: -4, transformOrigin: "50% 50%" });
+
+      /* ---------- phase 1: isometric floor and three station frames ---------- */
+      tl.to("#s21-windows", { opacity: 0.95, y: 0, duration: 1.0, ease: "power2.out" }, 0.0);
+      tl.to("#s21-floor", { opacity: 1, scale: 1, duration: 0.85, ease: "power2.out" }, 0.15);
+      tl.to("#s21-grid line", { strokeDashoffset: 0, duration: 1.5, stagger: 0.07, ease: "power2.inOut" }, 0.35);
+      tl.to("#s21-bulbs", { opacity: 1, y: 0, duration: 0.75, stagger: 0.12, ease: "power2.out" }, 0.45);
+      tl.to("#s21-station-a", { opacity: 1, y: 0, duration: 0.7, ease: "back.out(1.5)" }, 0.55);
+      tl.to("#s21-station-b", { opacity: 1, y: 0, duration: 0.7, ease: "back.out(1.5)" }, 0.78);
+      tl.to("#s21-station-c", { opacity: 1, y: 0, duration: 0.7, ease: "back.out(1.5)" }, 1.0);
+      tl.to("#s21-hopper", { opacity: 1, y: 0, duration: 0.65, ease: "back.out(1.6)" }, 1.15);
+      tl.to("#s21-mold", { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.8)" }, 1.3);
+      tl.to("#s21-press-head", { opacity: 1, y: 0, duration: 0.6, ease: "back.out(1.6)" }, 1.45);
+      tl.to("#s21-spool", { opacity: 1, scale: 1, duration: 0.65, ease: "back.out(1.6)" }, 1.55);
+      tl.to("#s21-hub", { opacity: 1, y: 0, duration: 0.7, ease: "back.out(1.4)" }, 1.7);
+
+      /* ---------- phase 2: plastic pour, press cycles, spool turns ---------- */
+      tl.to("#s21-pour", { opacity: 1, duration: 0.4, ease: "power1.out" }, 2.0);
+      tl.to("#s21-mold-fill", { scaleY: 1, duration: 1.5, ease: "power2.out" }, 2.15);
+      tl.to("#s21-pour", { opacity: 0.55, duration: 0.6, ease: "power1.inOut" }, 3.4);
+
+      tl.to("#s21-press-head", { y: 56, duration: 0.26, ease: "power3.in" }, 2.55);
+      tl.to("#s21-press-head", { y: 0, duration: 0.3, ease: "power2.out" }, 2.85);
+      tl.to("#s21-press-flash", { opacity: 0.9, scale: 1, duration: 0.14, ease: "power2.out" }, 2.8);
+      tl.to("#s21-press-flash", { opacity: 0, scale: 1.5, duration: 0.42, ease: "power2.in" }, 2.96);
+      tl.to("#s21-press-sparks", { opacity: 1, duration: 0.1, ease: "power1.out" }, 2.8);
+      tl.to("#s21-press-sparks", { opacity: 0, duration: 0.3, ease: "power1.in" }, 3.02);
+
+      tl.to("#s21-press-head", { y: 56, duration: 0.26, ease: "power3.in" }, 3.95);
+      tl.to("#s21-press-head", { y: 0, duration: 0.3, ease: "power2.out" }, 4.25);
+      tl.to("#s21-press-flash", { opacity: 0.9, scale: 1, duration: 0.14, ease: "power2.out" }, 4.2);
+      tl.to("#s21-press-flash", { opacity: 0, scale: 1.5, duration: 0.42, ease: "power2.in" }, 4.36);
+      tl.to("#s21-press-sparks", { opacity: 1, duration: 0.1, ease: "power1.out" }, 4.2);
+      tl.to("#s21-press-sparks", { opacity: 0, duration: 0.3, ease: "power1.in" }, 4.42);
+
+      tl.to("#s21-press-head", { y: 56, duration: 0.26, ease: "power3.in" }, 5.35);
+      tl.to("#s21-press-head", { y: 0, duration: 0.3, ease: "power2.out" }, 5.65);
+      tl.to("#s21-press-flash", { opacity: 0.95, scale: 1, duration: 0.14, ease: "power2.out" }, 5.6);
+      tl.to("#s21-press-flash", { opacity: 0, scale: 1.6, duration: 0.46, ease: "power2.in" }, 5.76);
+      tl.to("#s21-press-sparks", { opacity: 1, duration: 0.1, ease: "power1.out" }, 5.6);
+      tl.to("#s21-press-sparks", { opacity: 0, duration: 0.32, ease: "power1.in" }, 5.82);
+
+      tl.to("#s21-spool", { rotation: 540, duration: 9.7, transformOrigin: "50% 50%", ease: "none" }, 1.8);
+
+      /* ---------- phase 3: chain links connect the stations ---------- */
+      tl.to("#s21-chain-l .s21-link", { opacity: 1, scale: 1, duration: 0.34, stagger: 0.09, ease: "back.out(2.2)" }, 5.7);
+      tl.to("#s21-chain-r .s21-link", { opacity: 1, scale: 1, duration: 0.34, stagger: 0.09, ease: "back.out(2.2)" }, 6.3);
+      tl.to("#s21-wire-feed", { opacity: 1, strokeDashoffset: 0, duration: 1.5, ease: "power2.inOut" }, 6.4);
+
+      /* sealed packet assembles at the hub */
+      tl.to("#s21-packet", { opacity: 1, scale: 1, duration: 0.4, ease: "power1.out" }, 7.1);
+      tl.to("#s21-packet-plastic", { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 7.15);
+      tl.to("#s21-packet-wire", { opacity: 1, x: 0, duration: 0.55, ease: "back.out(1.8)" }, 7.35);
+      tl.to("#s21-packet-stamp", { opacity: 1, y: 0, duration: 0.5, ease: "back.out(2.4)" }, 7.55);
+      tl.to("#s21-hub-glow", { opacity: 0.9, duration: 0.4, ease: "power2.out" }, 7.7);
+      tl.to("#s21-hub-glow", { opacity: 0.55, duration: 1.1, yoyo: true, repeat: 2, ease: "sine.inOut" }, 8.25);
+      tl.to("#s21-packet", { y: -8, duration: 1.0, yoyo: true, repeat: 2, ease: "sine.inOut" }, 8.4);
+
+      /* ---------- phase 4: chain locks and the gate slab rises 120 px ---------- */
+      tl.to("#s21-hub-lock", { opacity: 1, scale: 1, duration: 0.42, ease: "back.out(2.6)" }, 8.2);
+      tl.to("#s21-chain-l .s21-link, #s21-chain-r .s21-link", { scale: 1.015, duration: 0.3, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 8.35);
+      tl.to("#s21-gate", { y: 60, duration: 1.15, ease: "power3.out" }, 8.65);
+      tl.to("#s21-hub-lock circle", { scale: 1.25, duration: 0.4, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 9.1);
+
+      /* ---------- living holds ---------- */
+      tl.to("#s21-badge", { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(2.4)" }, 0.9);
+      tl.to("#s21-badge", { y: -5, duration: 1.5, yoyo: true, repeat: 3, ease: "sine.inOut" }, 2.5);
+      tl.to("#s21-bulbs g", { rotation: 1.6, duration: 2.2, yoyo: true, repeat: 1, transformOrigin: "50% 0%", ease: "sine.inOut" }, 2.4);
+      tl.to("#s21-bulbs g", { rotation: -1.4, duration: 2.1, yoyo: true, repeat: 1, transformOrigin: "50% 0%", ease: "sine.inOut" }, 7.0);
+      tl.to("#s21-dust circle", { opacity: 0.16, duration: 0.8, stagger: 0.1, ease: "power1.out" }, 2.6);
+      tl.to("#s21-dust circle", { y: -20, duration: 2.6, yoyo: true, repeat: 1, ease: "sine.inOut" }, 3.6);
+      tl.to("#s21-spool", { scale: 1.015, duration: 1.2, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 9.0);
+      tl.to("#s21-press-head", { y: -4, duration: 0.85, yoyo: true, repeat: 1, ease: "sine.inOut" }, 9.4);
+
+      /* ---------- camera truck + parallax ---------- */
+      tl.fromTo("#s21-world", { rotationY: -3, scale: 1.0 }, { rotationY: 3, scale: 1.025, duration: 11.7, transformOrigin: "50% 58%", ease: "sine.inOut" }, 0);
+      tl.fromTo("#s21-bg", { x: 16 }, { x: -16, duration: 11.7, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s21-mg", { x: -10 }, { x: 10, duration: 11.7, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s21-fg", { x: 26 }, { x: -26, duration: 11.7, ease: "sine.inOut" }, 0);
+
+      /* ---------- exit: thread-spiral-push ---------- */
+      tl.to("#s21-exit", { opacity: 0.95, scale: 0.72, duration: 0.22, ease: "power2.out" }, 10.95);
+      tl.to("#s21-exit", { opacity: 0, scale: 1.85, duration: 0.5, transformOrigin: "50% 50%", ease: "power3.in" }, 11.18);
+      tl.to("#s21-exit", { rotation: 36, duration: 0.58, transformOrigin: "50% 50%", ease: "power2.in" }, 11.1);
+
+      tl.to({}, { duration: 11.700 }, 0);
+      window.__timelines["21-mexico-stamp"] = tl;
+    })();
+  </script>
+</div>
+</template>

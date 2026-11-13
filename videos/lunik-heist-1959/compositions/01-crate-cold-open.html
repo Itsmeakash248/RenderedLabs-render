@@ -1,0 +1,541 @@
+<template id="s01-template">
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
+  <div id="root" data-composition-id="01-crate-cold-open" data-width="1920" data-height="1080" data-start="0" data-duration="9.78">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#050814"/>
+          <stop offset="0.55" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </linearGradient>
+        <radialGradient id="violetHaze" cx="0.5" cy="0.55" r="0.7">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.34"/>
+          <stop offset="0.55" stop-color="#8E5FD9" stop-opacity="0.13"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="lampGlow" cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.85"/>
+          <stop offset="0.28" stop-color="#FF7A1A" stop-opacity="0.52"/>
+          <stop offset="0.62" stop-color="#FF7A1A" stop-opacity="0.17"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="lampCoreGrad" cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stop-color="#F4EFE3"/>
+          <stop offset="0.45" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#FF7A1A"/>
+        </radialGradient>
+        <linearGradient id="topFace" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="leftFace" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="rightFace" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="rimGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#B8C0D8" stop-opacity="0.12"/>
+          <stop offset="0.5" stop-color="#F4EFE3" stop-opacity="0.92"/>
+          <stop offset="1" stop-color="#B8C0D8" stop-opacity="0.16"/>
+        </linearGradient>
+        <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="plateCard" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#151B3B" stop-opacity="0.72"/>
+          <stop offset="1" stop-color="#0A0E24" stop-opacity="0.88"/>
+        </linearGradient>
+        <linearGradient id="metalWarm" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#B8C0D8" stop-opacity="0.30"/>
+          <stop offset="0.55" stop-color="#FF7A1A" stop-opacity="0.10"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="metalCool" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.16"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0.06"/>
+        </linearGradient>
+        <linearGradient id="cardSheenGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.07"/>
+          <stop offset="0.35" stop-color="#FFFFFF" stop-opacity="0.02"/>
+          <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="s01-lampGlow" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="16"/>
+        </filter>
+        <filter id="s01-rimGlow" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur stdDeviation="6" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <!-- ================= BACK LAYER (parallax 0.22) ================= -->
+      <g id="layer-bg">
+        <rect x="0" y="0" width="1920" height="1080" fill="url(#skyGrad)"/>
+        <ellipse id="haze" cx="760" cy="470" rx="820" ry="470" fill="url(#violetHaze)"/>
+
+        <!-- moon dust stars -->
+        <g id="stars" fill="#B8C0D8">
+          <circle cx="182" cy="118" r="3"/>
+          <circle cx="340" cy="206" r="2.4" opacity="0.8"/>
+          <circle cx="512" cy="96" r="2"/>
+          <circle cx="668" cy="164" r="2.8" opacity="0.75"/>
+          <circle cx="880" cy="88" r="2.2"/>
+          <circle cx="1042" cy="188" r="2.6" opacity="0.7"/>
+          <circle cx="1216" cy="120" r="2"/>
+          <circle cx="1388" cy="72" r="2.4" opacity="0.8"/>
+          <circle cx="262" cy="310" r="2"/>
+          <circle cx="742" cy="286" r="2.2" opacity="0.6"/>
+          <circle cx="1148" cy="322" r="2"/>
+        </g>
+
+        <!-- Mexico City roofline -->
+        <g id="roofline">
+          <path d="M0 700 L0 596 L96 596 L96 566 L188 566 L188 620 L268 620 L268 540 L352 540 L352 600 L448 600 L448 512 L520 512 L520 588 L612 588 L612 470 L672 470 L672 556 L764 556 L764 500 L836 500 L836 578 L928 578 L928 520 L1004 520 L1004 604 L1092 604 L1092 486 L1150 486 L1150 560 L1240 560 L1240 528 L1320 528 L1320 606 L1412 606 L1412 500 L1478 500 L1478 574 L1572 574 L1572 534 L1652 534 L1652 610 L1744 610 L1744 488 L1810 488 L1810 568 L1900 568 L1900 610 L1920 610 L1920 700 Z"
+                fill="#0A0E24" stroke="#151B3B" stroke-width="6" stroke-linejoin="round"/>
+          <!-- warm windows -->
+          <g fill="#FF7A1A" opacity="0.5">
+            <rect x="120" y="612" width="16" height="24" rx="4"/>
+            <rect x="296" y="586" width="14" height="20" rx="3"/>
+            <rect x="642" y="512" width="14" height="20" rx="3"/>
+            <rect x="948" y="556" width="16" height="22" rx="4"/>
+            <rect x="1116" y="534" width="14" height="20" rx="3"/>
+            <rect x="1444" y="540" width="14" height="20" rx="3"/>
+            <rect x="1772" y="530" width="16" height="22" rx="4"/>
+          </g>
+          <!-- radio mast -->
+          <g id="mast" stroke="#B8C0D8" stroke-linecap="round" fill="none" opacity="0.72">
+            <path d="M1292 606 L1292 300" stroke-width="8"/>
+            <path d="M1292 396 L1256 448" stroke-width="6"/>
+            <path d="M1292 396 L1328 448" stroke-width="6"/>
+            <path d="M1292 484 L1272 520" stroke-width="6"/>
+            <path d="M1292 484 L1312 520" stroke-width="6"/>
+            <path d="M1272 352 L1312 352" stroke-width="6"/>
+          </g>
+          <circle id="mastBeacon" cx="1292" cy="296" r="9" fill="#FF7A1A"/>
+        </g>
+
+        <!-- bg depth dust -->
+        <g id="dust-bg" fill="#B8C0D8" opacity="0.42">
+          <circle cx="240" cy="430" r="5"/>
+          <circle cx="560" cy="372" r="4"/>
+          <circle cx="820" cy="452" r="6"/>
+          <circle cx="1060" cy="390" r="4"/>
+          <circle cx="1380" cy="440" r="5"/>
+          <circle cx="1610" cy="360" r="4"/>
+        </g>
+      </g>
+
+      <!-- ================= MID LAYER (parallax 0.55) ================= -->
+      <g id="layer-mg">
+        <rect x="0" y="700" width="1180" height="380" fill="url(#groundGrad)"/>
+        <path d="M0 700 L1180 700 L1180 744 L0 744 Z" fill="#151B3B" opacity="0.8"/>
+
+        <!-- ember yard lamp -->
+        <g id="yardLamp">
+          <circle id="lampGlowBig" cx="286" cy="470" r="230" fill="url(#lampGlow)"/>
+          <circle id="lampFlare" cx="286" cy="436" r="64" fill="#FFD23F" opacity="0.16" filter="url(#s01-lampGlow)"/>
+          <path d="M286 700 L286 452" stroke="#151B3B" stroke-width="16" stroke-linecap="round"/>
+          <path d="M286 452 L286 412" stroke="#151B3B" stroke-width="12" stroke-linecap="round"/>
+          <path d="M250 424 A36 36 0 0 1 322 424 Z" fill="#151B3B" stroke="#B8C0D8" stroke-width="6" stroke-linejoin="round"/>
+          <circle id="lampCore" cx="286" cy="436" r="22" fill="url(#lampCoreGrad)"/>
+        </g>
+
+        <!-- isometric crate wrapper -->
+        <g id="crateWrap">
+          <g id="camOrbit">
+            <g id="iso">
+              <!-- shadow under crate -->
+              <ellipse id="crateShadow" cx="640" cy="812" rx="330" ry="78" fill="#050814" opacity="0.7"/>
+
+              <!-- CRATE BODY: isometric box, top origin (640, 300) -->
+              <g id="crate">
+                <!-- right face -->
+                <path id="faceRight" d="M640 470 L940 640 L940 860 L640 690 Z" fill="url(#rightFace)"/>
+                <!-- left face -->
+                <path id="faceLeft" d="M340 640 L640 470 L640 690 L340 860 Z" fill="url(#leftFace)"/>
+                <!-- top face -->
+                <path id="faceTop" d="M640 300 L940 470 L640 640 L340 470 Z" fill="url(#topFace)"/>
+
+                <!-- warm / cool metal sheen over the plank faces -->
+                <path d="M340 640 L640 470 L640 690 L340 860 Z" fill="url(#metalWarm)" opacity="0.55"/>
+                <path d="M640 470 L940 640 L940 860 L640 690 Z" fill="url(#metalCool)" opacity="0.5"/>
+
+                <!-- outer silhouette mass -->
+                <path id="crateSilhouette" d="M640 300 L940 470 L940 860 L640 690 L340 860 L340 470 Z"
+                      fill="none" stroke="#050814" stroke-width="26" stroke-linejoin="round" opacity="0.35"/>
+
+                <!-- moon-dust rims -->
+                <path id="rimTopGlow" d="M340 470 L640 300 L940 470" fill="none" stroke="#FFD23F" stroke-width="10"
+                      stroke-linecap="round" stroke-linejoin="round" opacity="0.22" filter="url(#s01-rimGlow)"/>
+                <path id="rimTopA" d="M340 470 L640 300 L940 470" fill="none" stroke="url(#rimGrad)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="rimTopB" d="M640 640 L940 470 L940 860" fill="none" stroke="#B8C0D8" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+                <path id="rimTopC" d="M640 640 L340 470 L340 860" fill="none" stroke="#B8C0D8" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity="0.42"/>
+                <path id="rimBottom" d="M340 860 L640 690 L940 860" fill="none" stroke="#B8C0D8" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+
+                <!-- plank seams: left face -->
+                <g id="seamsLeft" stroke="#050814" stroke-width="8" stroke-linecap="round" opacity="0.85">
+                  <path d="M400 618 L700 448" opacity="0.0"/>
+                  <path d="M420 588 L720 418"/>
+                  <path d="M440 742 L740 572"/>
+                  <path d="M470 800 L770 630"/>
+                </g>
+                <!-- plank seams: right face -->
+                <g id="seamsRight" stroke="#050814" stroke-width="8" stroke-linecap="round" opacity="0.85">
+                  <path d="M700 448 L1000 618" opacity="0.0"/>
+                  <path d="M720 418 L1020 588"/>
+                  <path d="M740 572 L1040 742"/>
+                  <path d="M770 630 L1070 800"/>
+                </g>
+                <!-- vertical strapping on faces -->
+                <g id="straps" stroke="#151B3B" stroke-width="26" stroke-linecap="round" opacity="0.9">
+                  <path d="M490 555 L490 775"/>
+                  <path d="M790 555 L790 775"/>
+                  <path d="M540 415 L540 470" opacity="0"/>
+                </g>
+                <!-- top face plank cleats -->
+                <g id="topCleats" stroke="#B8C0D8" stroke-width="6" stroke-linecap="round" opacity="0.4">
+                  <path d="M505 470 L640 392"/>
+                  <path d="M640 392 L775 470"/>
+                  <path d="M470 495 L605 573"/>
+                  <path d="M675 573 L810 495"/>
+                </g>
+                <!-- stencil mark: X stack on right face -->
+                <g id="stencil" opacity="0.65">
+                  <path d="M700 605 L760 641" stroke="#FFD23F" stroke-width="10" stroke-linecap="round"/>
+                  <path d="M760 605 L700 641" stroke="#FFD23F" stroke-width="10" stroke-linecap="round"/>
+                  <path d="M700 665 L760 701" stroke="#FFD23F" stroke-width="10" stroke-linecap="round"/>
+                  <path d="M760 665 L700 701" stroke="#FFD23F" stroke-width="10" stroke-linecap="round"/>
+                </g>
+              </g>
+
+              <!-- roof-edge planks (fg) -->
+              <g id="roofPlanks">
+                <path id="roofPlankA" d="M318 852 L640 672 L962 852" fill="none" stroke="#151B3B" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+                <path id="roofPlankB" d="M318 872 L640 692 L962 872" fill="none" stroke="#151B3B" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+
+              <!-- crew beads on roof -->
+              <g id="crew">
+                <g id="crewA">
+                  <ellipse cx="500" cy="652" rx="30" ry="10" fill="#050814" opacity="0.75"/>
+                  <circle cx="500" cy="620" r="16" fill="#B8C0D8" stroke="#F4EFE3" stroke-width="4"/>
+                  <path d="M500 636 L500 668" stroke="#B8C0D8" stroke-width="14" stroke-linecap="round"/>
+                  <path d="M486 684 L500 668 L514 684" fill="none" stroke="#B8C0D8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <g id="crewB">
+                  <ellipse cx="742" cy="600" rx="30" ry="10" fill="#050814" opacity="0.75"/>
+                  <circle cx="742" cy="568" r="16" fill="#B8C0D8" stroke="#F4EFE3" stroke-width="4"/>
+                  <path d="M742 584 L742 616" stroke="#B8C0D8" stroke-width="14" stroke-linecap="round"/>
+                  <path d="M728 632 L742 616 L756 632" fill="none" stroke="#B8C0D8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+              </g>
+
+              <!-- three-axis dimension ruler -->
+              <g id="ruler" opacity="0">
+                <!-- X axis (along top-left edge) -->
+                <g id="axisX">
+                  <path id="axisXLine" d="M340 470 L640 300" fill="none" stroke="#FFD23F" stroke-width="8" stroke-linecap="round"/>
+                  <g id="ticksX" stroke="#FFD23F" stroke-width="6" stroke-linecap="round">
+                    <path d="M340 446 L340 494"/>
+                    <path d="M400 434 L400 482"/>
+                    <path d="M460 422 L460 470"/>
+                    <path d="M520 410 L520 458"/>
+                    <path d="M580 398 L580 446"/>
+                    <path d="M640 386 L640 434"/>
+                  </g>
+                </g>
+                <!-- Y axis (along top-right edge) -->
+                <g id="axisY">
+                  <path id="axisYLine" d="M640 300 L940 470" fill="none" stroke="#FFD23F" stroke-width="8" stroke-linecap="round"/>
+                  <g id="ticksY" stroke="#FFD23F" stroke-width="6" stroke-linecap="round">
+                    <path d="M640 300 L664 300"/>
+                    <path d="M700 335 L724 335"/>
+                    <path d="M760 370 L784 370"/>
+                    <path d="M820 405 L844 405"/>
+                    <path d="M880 440 L904 440"/>
+                    <path d="M940 470 L964 470"/>
+                  </g>
+                </g>
+                <!-- Z axis (vertical right edge) -->
+                <g id="axisZ">
+                  <path id="axisZLine" d="M940 470 L940 860" fill="none" stroke="#FFD23F" stroke-width="8" stroke-linecap="round"/>
+                  <g id="ticksZ" stroke="#FFD23F" stroke-width="6" stroke-linecap="round">
+                    <path d="M916 470 L964 470"/>
+                    <path d="M916 548 L964 548"/>
+                    <path d="M916 626 L964 626"/>
+                    <path d="M916 704 L964 704"/>
+                    <path d="M916 782 L964 782"/>
+                    <path d="M916 860 L964 860"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+
+        <!-- mg dust -->
+        <g id="dust-mg" fill="#F4EFE3" opacity="0.5">
+          <circle cx="420" cy="760" r="6"/>
+          <circle cx="900" cy="790" r="5"/>
+          <circle cx="620" cy="880" r="7"/>
+          <circle cx="1010" cy="720" r="5"/>
+          <circle cx="360" cy="700" r="4"/>
+        </g>
+      </g>
+
+      <!-- ================= FG LAYER (parallax 1.0) ================= -->
+      <g id="layer-fg">
+        <!-- foreground dust motes -->
+        <g id="dust-fg" fill="#F4EFE3" opacity="0.82">
+          <circle cx="180" cy="880" r="9"/>
+          <circle cx="320" cy="960" r="7"/>
+          <circle cx="520" cy="920" r="11"/>
+          <circle cx="760" cy="990" r="8"/>
+          <circle cx="980" cy="900" r="6"/>
+          <circle cx="1120" cy="820" r="10"/>
+        </g>
+
+        <!-- foreground planks silhouette -->
+        <g id="fgPlanks">
+          <path d="M0 1010 L1180 1010 L1180 1080 L0 1080 Z" fill="#050814"/>
+          <path d="M0 992 L1180 992" stroke="#151B3B" stroke-width="10" stroke-linecap="round"/>
+          <path d="M0 1006 L1180 1006" stroke="#050814" stroke-width="14" stroke-linecap="round"/>
+        </g>
+      </g>
+
+      <!-- ================= LABEL ================= -->
+      <g id="labelWrap">
+        <text id="label" x="118" y="196" font-family="'Quicksand', sans-serif" font-weight="700" font-size="112" letter-spacing="8"
+              fill="#F4EFE3" stroke="#050814" stroke-width="14" paint-order="stroke fill" dominant-baseline="middle">20 FEET</text>
+      </g>
+
+      <!-- ================= PLATE PANEL (58% width, right) ================= -->
+      <g id="platePanel">
+        <rect id="plateCardBg" x="806" y="64" width="1066" height="952" rx="34"
+              fill="url(#plateCard)" stroke="rgba(141,164,237,0.20)" stroke-width="1"/>
+        <rect x="826" y="84" width="1026" height="912" rx="24" fill="none" stroke="rgba(141,164,237,0.14)" stroke-width="1"/>
+
+        <!-- plate image: contain fit inside inner frame, aspect 1275x1650 -->
+        <g id="plateFit" clip-path="url(#plateClip)">
+          <image id="plateImg" href="../plates/processed/pl-exhibition-02.png" x="826" y="84" width="1026" height="912" preserveAspectRatio="xMidYMid meet"/>
+        </g>
+        <defs>
+          <clipPath id="plateClip">
+            <rect x="826" y="84" width="1026" height="912" rx="20"/>
+          </clipPath>
+        </defs>
+
+        <!-- bracket sweep over quote region: sidecar box at 624,220 size 519x37 in 1275x1650 image px.
+             The overlay is a nested SVG sharing the image's viewBox + preserveAspectRatio, so the
+             bracket letterboxes identically to the contained plate and never drifts off the quote. -->
+        <svg id="bracketOverlay" x="826" y="84" width="1026" height="912"
+             viewBox="0 0 1275 1650" preserveAspectRatio="xMidYMid meet" overflow="visible">
+          <g id="bracketWrap" opacity="0">
+            <!-- outer glow rect -->
+            <rect id="bracketGlow" x="612" y="208" width="543" height="61" rx="6" fill="none" stroke="#FFD23F" stroke-width="28" opacity="0.18"/>
+            <!-- swept outline rect via dash -->
+            <rect id="bracketSweep" x="612" y="208" width="543" height="61" rx="6" fill="none" stroke="#FFD23F" stroke-width="16"
+                  stroke-linecap="round" stroke-dasharray="0 4000" stroke-dashoffset="0"/>
+            <!-- corner ticks for the bracket sweep (4 corners) -->
+            <g id="bracketTicks" stroke="#FFD23F" stroke-width="20" stroke-linecap="round" fill="none">
+              <path class="btick" d="M612 252 L612 208 L656 208"/>
+              <path class="btick" d="M1111 208 L1155 208 L1155 252"/>
+              <path class="btick" d="M612 225 L612 269 L656 269"/>
+              <path class="btick" d="M1155 225 L1155 269 L1111 269"/>
+            </g>
+          </g>
+        </svg>
+
+        <!-- glass specular over the whole plate card -->
+        <rect id="cardSheen" x="806" y="64" width="1066" height="952" rx="34"
+              fill="url(#cardSheenGrad)" opacity="0.04"/>
+      </g>
+
+      <!-- scanline sheen across plate -->
+      <g id="sheenWrap" clip-path="url(#plateClip)">
+        <rect id="sheen" x="-260" y="84" width="190" height="912" fill="#F4EFE3" opacity="0.10" transform="skewX(-14)"/>
+      </g>
+    </svg>
+
+    <style>
+      #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+      #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+        background:linear-gradient(180deg, rgba(255,210,63,0.10), transparent 32%);}
+      #root svg{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+      #label{font-family:'Quicksand',sans-serif;}
+      #plateImg{opacity:1;}
+      /* CSS 3D isometric 3/4 view on the crate wrapper; offset+scale keep the
+         crate clear of the 58% plate panel on the right */
+      #iso{transform-box:view-box;transform-origin:640px 580px;
+           transform:translate(-230px, 30px) scale(0.88) rotateX(12deg) rotateZ(-18deg);}
+      /* local transform boxes so ticks / seams scale about their own centre */
+      #ticksX path,#ticksY path,#ticksZ path,#seamsLeft path,#seamsRight path,#topCleats path{
+        transform-box:fill-box;transform-origin:center;}
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      (function(){
+        var tl = gsap.timeline({paused:true});
+
+        /* ---------- initial states ---------- */
+        gsap.set("#label",             {opacity:0, y:34});
+        gsap.set("#labelWrap",         {opacity:1});
+        gsap.set("#rimTopA,#rimTopB,#rimTopC,#rimBottom", {strokeDasharray:900, strokeDashoffset:900});
+        gsap.set("#faceTop",           {opacity:0, scaleY:0.55, transformOrigin:"640px 470px"});
+        gsap.set("#faceLeft",          {opacity:0, scaleY:0.55, transformOrigin:"640px 640px"});
+        gsap.set("#faceRight",         {opacity:0, scaleY:0.55, transformOrigin:"640px 640px"});
+        gsap.set("#crateShadow",       {opacity:0, scaleX:0.7});
+        gsap.set("#seamsLeft path, #seamsRight path, #topCleats path", {opacity:0, scaleX:0.4, transformOrigin:"center"});
+        gsap.set("#straps path",       {opacity:0});
+        gsap.set("#stencil",           {opacity:0, y:14});
+        gsap.set("#crewA,#crewB",      {opacity:0, y:52});
+        gsap.set("#roofPlankA,#roofPlankB", {strokeDasharray:760, strokeDashoffset:760, opacity:1});
+        gsap.set("#roofPlanks",        {rotate:-1.5, transformOrigin:"640px 780px"});
+        gsap.set("#ruler",             {opacity:1});
+        gsap.set("#axisXLine,#axisYLine,#axisZLine", {strokeDasharray:640, strokeDashoffset:640});
+        gsap.set("#ticksX path,#ticksY path,#ticksZ path", {opacity:0, scaleY:0.3, transformOrigin:"center"});
+        gsap.set("#plateCardBg",       {opacity:0, x:60});
+        gsap.set("#plateImg",          {opacity:0, scale:1.045, transformOrigin:"1339px 540px"});
+        gsap.set("#sheen",             {x:0, opacity:0});
+        gsap.set("#bracketWrap",       {opacity:0});
+        gsap.set("#bracketSweep",      {strokeDasharray:"0 4000"});
+        gsap.set("#bracketGlow",       {opacity:0});
+        gsap.set("#rimTopGlow",        {opacity:0});
+        gsap.set("#lampFlare",         {opacity:0, scale:0.8, transformOrigin:"286px 436px"});
+        gsap.set("#cardSheen",         {opacity:0});
+
+        /* ---------- bracket geometry ----------
+           The bracket lives inside #bracketOverlay, a nested SVG with viewBox 0 0 1024 1024
+           and xMidYMid meet, exactly mirroring the plate image's contain fit — so the
+           sidecar box (624,220 519x37) lines up with the quote at any panel size. */
+        gsap.set("#bracketTicks .btick", {opacity:0});
+
+        /* ================= BUILD ================= */
+        /* 1. crate shadow + faces bloom upward */
+        tl.to("#crateShadow", {opacity:0.7, scaleX:1, duration:0.55, ease:"power2.out"}, 0.10);
+        tl.to("#faceTop",  {opacity:1, scaleY:1, duration:0.72, ease:"expo.out"}, 0.18);
+        tl.to("#faceLeft", {opacity:1, scaleY:1, duration:0.80, ease:"expo.out"}, 0.30);
+        tl.to("#faceRight",{opacity:1, scaleY:1, duration:0.80, ease:"expo.out"}, 0.38);
+
+        /* 2. moon-dust rims draw left -> right */
+        tl.to("#rimTopA", {strokeDashoffset:0, duration:0.70, ease:"power2.inOut"}, 0.44);
+        tl.to("#rimTopC", {strokeDashoffset:0, duration:0.62, ease:"power2.inOut"}, 0.58);
+        tl.to("#rimTopB", {strokeDashoffset:0, duration:0.62, ease:"power2.inOut"}, 0.66);
+        tl.to("#rimBottom",{strokeDashoffset:0, duration:0.66, ease:"power2.inOut"}, 0.74);
+        tl.to("#rimTopGlow", {opacity:0.22, duration:0.60, ease:"power2.out"}, 0.50);
+        tl.to("#lampFlare",  {opacity:0.16, scale:1, duration:0.90, ease:"expo.out"}, 0.25);
+
+        /* 3. plank seams socket in as chunky ridges */
+        tl.to("#seamsLeft path",  {opacity:0.85, scaleX:1, duration:0.30, stagger:0.09, ease:"back.out(2.4)"}, 0.86);
+        tl.to("#seamsRight path", {opacity:0.85, scaleX:1, duration:0.30, stagger:0.09, ease:"back.out(2.4)"}, 1.02);
+        tl.to("#topCleats path",  {opacity:0.4,  scaleX:1, duration:0.26, stagger:0.07, ease:"back.out(2.0)"}, 1.22);
+        tl.to("#straps path",     {opacity:0.9,  duration:0.34, stagger:0.10, ease:"power2.out"}, 1.30);
+        tl.to("#stencil",         {opacity:0.65, y:0, duration:0.42, ease:"power2.out"}, 1.52);
+
+        /* 4. roof planks + settle with 1.5deg sag */
+        tl.to("#roofPlankA", {strokeDashoffset:0, duration:0.52, ease:"power2.inOut"}, 1.42);
+        tl.to("#roofPlankB", {strokeDashoffset:0, duration:0.52, ease:"power2.inOut"}, 1.54);
+        tl.to("#roofPlanks", {rotate:0, duration:0.70, ease:"elastic.out(1,0.55)"}, 1.86);
+        tl.to("#roofPlanks", {rotate:0.7, duration:1.1, ease:"sine.inOut", yoyo:true, repeat:1}, 2.56);
+
+        /* 5. crew beads rise and plant */
+        tl.to("#crewA", {opacity:1, y:0, duration:0.46, ease:"back.out(2.2)"}, 2.06);
+        tl.to("#crewB", {opacity:1, y:0, duration:0.46, ease:"back.out(2.2)"}, 2.26);
+        tl.to("#crewA", {y:-6, duration:0.9, ease:"sine.inOut", yoyo:true, repeat:3}, 2.60);
+        tl.to("#crewB", {y:-8, duration:1.05, ease:"sine.inOut", yoyo:true, repeat:2}, 2.72);
+
+        /* 6. ruler extends on three axes; ticks overshoot then spring back */
+        tl.to("#axisXLine", {strokeDashoffset:0, duration:0.44, ease:"power3.out"}, 3.10);
+        tl.to("#axisYLine", {strokeDashoffset:0, duration:0.44, ease:"power3.out"}, 3.22);
+        tl.to("#axisZLine", {strokeDashoffset:0, duration:0.50, ease:"power3.out"}, 3.34);
+        tl.to("#ticksX path", {opacity:1, scaleY:1.45, duration:0.16, stagger:0.06, ease:"power2.out"}, 3.46);
+        tl.to("#ticksX path", {scaleY:1, duration:0.30, stagger:0.06, ease:"elastic.out(1,0.4)"}, 3.58);
+        tl.to("#ticksY path", {opacity:1, scaleY:1.45, duration:0.16, stagger:0.06, ease:"power2.out"}, 3.62);
+        tl.to("#ticksY path", {scaleY:1, duration:0.30, stagger:0.06, ease:"elastic.out(1,0.4)"}, 3.74);
+        tl.to("#ticksZ path", {opacity:1, scaleY:1.45, duration:0.16, stagger:0.06, ease:"power2.out"}, 3.80);
+        tl.to("#ticksZ path", {scaleY:1, duration:0.30, stagger:0.06, ease:"elastic.out(1,0.4)"}, 3.92);
+
+        /* 7. ruler snaps into place pulse */
+        tl.to("#ruler", {scale:1.012, duration:0.14, transformOrigin:"640px 580px", ease:"power2.out"}, 4.34);
+        tl.to("#ruler", {scale:1, duration:0.40, ease:"elastic.out(1,0.45)"}, 4.48);
+
+        /* 8. LABEL lands with the ruler snap */
+        tl.to("#label", {opacity:1, y:0, duration:0.52, ease:"expo.out"}, 4.30);
+        tl.to("#label", {y:-7, duration:1.6, ease:"sine.inOut", yoyo:true, repeat:2}, 4.90);
+
+        /* 9. plate panel slides in, scale-to-fit contain, no crop pop */
+        tl.to("#plateCardBg", {opacity:1, x:0, duration:0.78, ease:"expo.out"}, 0.42);
+        tl.to("#plateImg",    {opacity:1, scale:1, duration:1.05, ease:"power2.out"}, 0.70);
+        tl.to("#cardSheen",   {opacity:0.04, duration:0.90, ease:"power1.out"}, 0.95);
+
+        /* 10. sheen sweep across plate */
+        tl.fromTo("#sheen", {x:0, opacity:0}, {x:1500, opacity:0.10, duration:1.10, ease:"power1.inOut"}, 1.95);
+        tl.to("#sheen", {opacity:0, duration:0.30}, 3.02);
+
+        /* 11. bracket sweep over quote region as ruler lands */
+        tl.to("#bracketWrap", {opacity:1, duration:0.20}, 4.30);
+        tl.to("#bracketSweep", {strokeDasharray:"1206 4000", duration:0.66, ease:"power2.inOut"}, 4.40);
+        tl.to("#bracketTicks .btick", {opacity:1, duration:0.18, stagger:0.10, ease:"power2.out"}, 4.62);
+        tl.to("#bracketGlow", {opacity:0.18, duration:0.36, ease:"power2.out"}, 4.90);
+        tl.to("#bracketGlow", {opacity:0.06, duration:0.9, ease:"sine.inOut", yoyo:true, repeat:3}, 5.30);
+
+        /* 12. camera orbit +8deg and push 1.00 -> 1.04 (crate wrapper carries the CSS rotateX/rotateZ) */
+        tl.fromTo("#camOrbit", {rotate:0, scale:1.00}, {rotate:8, scale:1.04, duration:9.78, ease:"none", transformOrigin:"640px 580px"}, 0);
+
+        /* 13. parallax on three layers */
+        tl.fromTo("#layer-bg", {x:0, y:0},  {x:-58, y:10, duration:9.78, ease:"none"}, 0);
+        tl.fromTo("#layer-mg", {x:0, y:0},  {x:-132, y:22, duration:9.78, ease:"none"}, 0);
+        tl.fromTo("#layer-fg", {x:0, y:0},  {x:-236, y:40, duration:9.78, ease:"none"}, 0);
+
+        /* 14. ambient drift: nothing static > 2s */
+        tl.to("#haze",      {opacity:0.72, duration:2.2, ease:"sine.inOut", yoyo:true, repeat:4}, 0.4);
+        tl.to("#lampGlowBig",{scale:1.08, opacity:0.86, duration:1.9, transformOrigin:"286px 470px", ease:"sine.inOut", yoyo:true, repeat:5}, 0.2);
+        tl.to("#lampCore",  {scale:1.12, duration:0.85, transformOrigin:"286px 436px", ease:"sine.inOut", yoyo:true, repeat:11}, 0.0);
+        tl.to("#mastBeacon",{opacity:0.18, duration:0.72, ease:"sine.inOut", yoyo:true, repeat:13}, 0.3);
+        tl.to("#stars",     {opacity:0.55, duration:2.4, ease:"sine.inOut", yoyo:true, repeat:3}, 0.5);
+
+        /* dust: slow seeded drift, fixed constants, parallax-scaled */
+        var dustCfg = [
+          {sel:"#dust-bg circle", dx:38, dy:-26, dur:7.4, rot:5,  start:0.2},
+          {sel:"#dust-mg circle", dx:64, dy:-34, dur:6.2, rot:8,  start:0.9},
+          {sel:"#dust-fg circle", dx:104,dy:-52, dur:5.6, rot:12, start:0.0}
+        ];
+        for (var d=0; d<dustCfg.length; d++){
+          var c = dustCfg[d];
+          var nodes = document.querySelectorAll(c.sel);
+          for (var i=0;i<nodes.length;i++){
+            var dir = (i % 2 === 0) ? 1 : -1;
+            var k = 1 + (i % 3) * 0.18;
+            tl.to(nodes[i], {
+              x: c.dx * dir * k * 0.45,
+              y: c.dy * k,
+              opacity: 0.34 + ((i + d) % 4) * 0.11,
+              duration: c.dur * (0.82 + (i % 5) * 0.06),
+              ease:"sine.inOut", yoyo:true, repeat:2
+            }, c.start + i * 0.21);
+          }
+        }
+
+        /* subtle camera breathe on whole mg group */
+        tl.to("#crateWrap", {y:-8, duration:2.9, ease:"sine.inOut", yoyo:true, repeat:2}, 0.8);
+
+        /* late craft shimmer (t > 6 s) */
+        tl.to("#rimTopGlow",  {opacity:0.34, duration:1.2, ease:"sine.inOut", yoyo:true, repeat:2}, 6.10);
+        tl.to("#bracketTicks",{opacity:0.72, duration:1.1, ease:"sine.inOut", yoyo:true, repeat:2}, 6.40);
+        tl.to("#cardSheen",   {opacity:0.075, duration:1.4, ease:"sine.inOut", yoyo:true, repeat:2}, 6.60);
+        tl.to("#lampFlare",   {opacity:0.24, scale:1.12, duration:1.6, ease:"sine.inOut", yoyo:true, repeat:2, transformOrigin:"286px 436px"}, 6.00);
+        tl.to("#dust-bg circle", {x:"+=22", y:"-=10", duration:2.6, stagger:0.14, ease:"sine.inOut", yoyo:true, repeat:1}, 7.00);
+
+        /* slot guard */
+        tl.to({}, {duration: 9.78}, 0);
+
+        window.__timelines["01-crate-cold-open"] = tl;
+      })();
+    </script>
+  </div>
+</template>

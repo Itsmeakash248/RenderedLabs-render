@@ -1,0 +1,33 @@
+{
+  "plate_id": "pl-exhibition-04",
+  "source_url": "https://www.space.com/how-the-cia-kidnapped-a-soviet-moon-probe-during-the-space-race",
+  "source_page": null,
+  "source_dpi": null,
+  "captured_at": "2026-11-06T19:51:52.130Z",
+  "width": 1344,
+  "height": 1920,
+  "source_width": 1400,
+  "source_height": 2000,
+  "scale_factor": 0.96,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": [
+    {
+      "phrase": "fully-operational system comparable to the Lunik 2",
+      "x": 611,
+      "y": 980,
+      "w": 136,
+      "h": 22
+    },
+    {
+      "phrase": "fully-operational system comparable to the Lunik 2",
+      "x": 229,
+      "y": 1006,
+      "w": 272,
+      "h": 22
+    }
+  ],
+  "dropped_boxes": 0
+}

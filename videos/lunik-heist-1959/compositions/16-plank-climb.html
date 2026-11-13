@@ -1,0 +1,582 @@
+<template id="s16-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="16-plank-climb" data-width="1920" data-height="1080" data-start="0" data-duration="9.300">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="s16-sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0A0E24" stop-opacity="0.12"/>
+          <stop offset="0.4" stop-color="#8E5FD9" stop-opacity="0.26"/>
+          <stop offset="0.78" stop-color="#151B3B" stop-opacity="0.82"/>
+          <stop offset="1" stop-color="#050814" stop-opacity="0.94"/>
+        </linearGradient>
+        <linearGradient id="s16-face" x1="0" y1="0" x2="0.35" y2="1">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="1"/>
+          <stop offset="0.10" stop-color="#B8C0D8" stop-opacity="1"/>
+          <stop offset="0.34" stop-color="#0A0E24" stop-opacity="1"/>
+          <stop offset="1" stop-color="#050814" stop-opacity="1"/>
+        </linearGradient>
+        <linearGradient id="s16-side" x1="0" y1="0" x2="0.6" y2="1">
+          <stop offset="0" stop-color="#515A83" stop-opacity="0.6"/>
+          <stop offset="0.42" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s16-roof" x1="0" y1="0" x2="0.5" y2="1">
+          <stop offset="0" stop-color="#B8C0D8" stop-opacity="0.58"/>
+          <stop offset="0.36" stop-color="#515A83" stop-opacity="0.72"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </linearGradient>
+        <linearGradient id="s16-wood" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#515A83" stop-opacity="0.66"/>
+          <stop offset="0.48" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s16-gold" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FF7A1A"/>
+          <stop offset="0.45" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#FFD23F"/>
+        </linearGradient>
+        <linearGradient id="s16-glass" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/>
+          <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.025"/>
+          <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="s16-metal" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.9"/>
+          <stop offset="0.34" stop-color="#B8C0D8"/>
+          <stop offset="0.78" stop-color="#515A83"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </linearGradient>
+        <radialGradient id="s16-violet" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.4"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s16-ember" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.55"/>
+          <stop offset="0.55" stop-color="#FF7A1A" stop-opacity="0.16"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s16-lampglow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.95"/>
+          <stop offset="0.35" stop-color="#FFD23F" stop-opacity="0.6"/>
+          <stop offset="1" stop-color="#FFD23F" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s16-flare" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/>
+          <stop offset="0.45" stop-color="#F4EFE3" stop-opacity="0.94"/>
+          <stop offset="0.78" stop-color="#FFD23F" stop-opacity="0.6"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="s16-plankpat" width="42" height="86" patternUnits="userSpaceOnUse">
+          <rect width="42" height="86" fill="url(#s16-wood)"/>
+          <line x1="41" y1="0" x2="41" y2="86" stroke="#050814" stroke-width="4" opacity="0.55"/>
+        </pattern>
+        <clipPath id="s16-face-clip">
+          <polygon points="340,470 1000,392 1000,930 340,1000"/>
+        </clipPath>
+        <clipPath id="s16-side-clip">
+          <polygon points="1000,392 1400,470 1400,880 1000,930"/>
+        </clipPath>
+        <clipPath id="s16-inset-clip">
+          <rect x="1492" y="700" width="364" height="286" rx="14"/>
+        </clipPath>
+        <filter id="s16-goldGlow" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="7" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="s16-haze" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="26"/>
+        </filter>
+        <filter id="s16-soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="9"/>
+        </filter>
+        <filter id="s16-shadow" x="-30%" y="-30%" width="160%" height="180%">
+          <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#050814" flood-opacity="0.7"/>
+        </filter>
+      </defs>
+
+      <g id="s16-world">
+        <!-- ================= BACKGROUND: sky, roofline, yard wall ================= -->
+        <g id="s16-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s16-sky)"/>
+          <ellipse id="s16-violet-a" cx="1080" cy="200" rx="820" ry="350" fill="url(#s16-violet)"/>
+          <ellipse id="s16-violet-b" cx="300" cy="360" rx="540" ry="360" fill="url(#s16-violet)" opacity="0.62"/>
+          <g fill="#F4EFE3" opacity="0.5">
+            <circle cx="240" cy="150" r="3"/>
+            <circle cx="900" cy="96" r="2.6"/>
+            <circle cx="1240" cy="132" r="3.4"/>
+            <circle cx="1660" cy="96" r="2.4"/>
+            <circle cx="1820" cy="212" r="3"/>
+          </g>
+
+          <g id="s16-roofline" fill="#151B3B">
+            <rect x="0" y="300" width="200" height="300"/>
+            <rect x="240" y="336" width="170" height="250"/>
+            <rect x="1500" y="322" width="260" height="240"/>
+            <rect x="1760" y="286" width="160" height="300"/>
+            <g fill="#0A0E24">
+              <rect x="96" y="252" width="54" height="52"/>
+              <rect x="286" y="300" width="34" height="40"/>
+              <rect x="1614" y="268" width="46" height="58"/>
+              <rect x="1806" y="238" width="40" height="52"/>
+            </g>
+            <g fill="#FFD23F" opacity="0.42">
+              <rect x="120" y="352" width="22" height="28"/>
+              <rect x="300" y="404" width="18" height="24"/>
+              <rect x="1666" y="378" width="20" height="26"/>
+            </g>
+          </g>
+
+          <rect x="0" y="912" width="1920" height="168" fill="#050814" opacity="0.62"/>
+          <g id="s16-yardwall" opacity="0.9">
+            <g stroke="#0A0E24" stroke-width="6" opacity="0.8">
+              <line x1="0" y1="960" x2="1920" y2="960"/>
+              <line x1="0" y1="1030" x2="1920" y2="1030"/>
+              <line x1="60" y1="912" x2="60" y2="1080"/>
+              <line x1="260" y1="912" x2="260" y2="1080"/>
+              <line x1="1460" y1="912" x2="1460" y2="1080"/>
+              <line x1="1700" y1="912" x2="1700" y2="1080"/>
+            </g>
+          </g>
+          <ellipse cx="960" cy="1010" rx="820" ry="110" fill="#050814" opacity="0.55" filter="url(#s16-haze)"/>
+
+          <!-- distant lamp posts: the row that ignites at the end -->
+          <g id="s16-lamps">
+            <g id="s16-lamp-1">
+              <rect x="1442" y="238" width="12" height="530" fill="#0A0E24" stroke="#515A83" stroke-width="4"/>
+              <path d="M 1448 238 q 0 -26 28 -26 h 22" fill="none" stroke="#515A83" stroke-width="10" stroke-linecap="round"/>
+              <g id="s16-head-1">
+                <path d="M 1486 202 h 40 l 12 22 h -64 z" fill="#151B3B" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+                <circle id="s16-bulb-1" cx="1506" cy="228" r="11" fill="#515A83"/>
+                <ellipse id="s16-halo-1" cx="1506" cy="230" rx="70" ry="52" fill="url(#s16-lampglow)" opacity="0"/>
+                <path id="s16-cone-1" d="M 1478 232 L 1534 232 L 1628 600 L 1384 600 Z" fill="#FFD23F" opacity="0" filter="url(#s16-soft)"/>
+              </g>
+            </g>
+            <g id="s16-lamp-2">
+              <rect x="1638" y="190" width="13" height="580" fill="#0A0E24" stroke="#515A83" stroke-width="4"/>
+              <path d="M 1645 190 q 0 -26 28 -26 h 24" fill="none" stroke="#515A83" stroke-width="10" stroke-linecap="round"/>
+              <g id="s16-head-2">
+                <path d="M 1684 152 h 42 l 12 22 h -66 z" fill="#151B3B" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+                <circle id="s16-bulb-2" cx="1705" cy="178" r="11" fill="#515A83"/>
+                <ellipse id="s16-halo-2" cx="1705" cy="180" rx="74" ry="54" fill="url(#s16-lampglow)" opacity="0"/>
+                <path id="s16-cone-2" d="M 1677 182 L 1733 182 L 1830 580 L 1580 580 Z" fill="#FFD23F" opacity="0" filter="url(#s16-soft)"/>
+              </g>
+            </g>
+            <g id="s16-lamp-3">
+              <rect x="1822" y="252" width="11" height="520" fill="#0A0E24" stroke="#515A83" stroke-width="4"/>
+              <path d="M 1828 252 q 0 -24 24 -24 h 20" fill="none" stroke="#515A83" stroke-width="9" stroke-linecap="round"/>
+              <g id="s16-head-3">
+                <path d="M 1862 220 h 36 l 10 20 h -56 z" fill="#151B3B" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+                <circle id="s16-bulb-3" cx="1880" cy="244" r="10" fill="#515A83"/>
+                <ellipse id="s16-halo-3" cx="1880" cy="246" rx="64" ry="48" fill="url(#s16-lampglow)" opacity="0"/>
+                <path id="s16-cone-3" d="M 1854 248 L 1906 248 L 1920 560 L 1770 560 Z" fill="#FFD23F" opacity="0" filter="url(#s16-soft)"/>
+              </g>
+            </g>
+          </g>
+
+          <g id="s16-dust" fill="#F4EFE3">
+            <circle cx="260" cy="700" r="4" opacity="0.16"/>
+            <circle cx="620" cy="560" r="3" opacity="0.12"/>
+            <circle cx="1180" cy="300" r="4" opacity="0.15"/>
+            <circle cx="1460" cy="620" r="3" opacity="0.13"/>
+            <circle cx="1840" cy="700" r="4" opacity="0.14"/>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: crate face, battens, crew ================= -->
+        <g id="s16-mg">
+          <ellipse cx="880" cy="1000" rx="580" ry="60" fill="#050814" opacity="0.66" filter="url(#s16-haze)"/>
+
+          <g id="s16-crate">
+            <!-- structural outline draws first -->
+            <path id="s16-crate-outline" d="M 340 470 L 1000 392 L 1400 470 L 1400 880 L 1000 930 L 340 1000 Z"
+                  fill="none" stroke="#B8C0D8" stroke-width="26" stroke-linejoin="round" stroke-linecap="round"/>
+
+            <!-- roof plane -->
+            <g id="s16-roof-plane">
+              <polygon points="340,470 1000,392 1400,470 740,330" fill="url(#s16-roof)" stroke="#0A0E24" stroke-width="10" stroke-linejoin="round"/>
+              <g stroke="#0A0E24" stroke-width="7" opacity="0.6">
+                <line x1="340" y1="470" x2="740" y2="330"/>
+                <line x1="470" y1="448" x2="895" y2="319"/>
+                <line x1="600" y1="426" x2="1050" y2="315"/>
+                <line x1="730" y1="404" x2="1205" y2="330"/>
+                <line x1="860" y1="382" x2="1360" y2="400"/>
+                <line x1="1000" y1="392" x2="1400" y2="470"/>
+              </g>
+              <g fill="#F4EFE3" opacity="0.36">
+                <circle cx="486" cy="432" r="5"/>
+                <circle cx="806" cy="372" r="5"/>
+                <circle cx="1140" cy="372" r="5"/>
+                <circle cx="1310" cy="424" r="5"/>
+              </g>
+              <rect id="s16-roof-sheen" x="360" y="330" width="300" height="150" fill="url(#s16-glass)" opacity="0"/>
+            </g>
+
+            <!-- front face volume -->
+            <g id="s16-face">
+              <polygon points="340,470 1000,392 1000,930 340,1000" fill="url(#s16-face)" stroke="#050814" stroke-width="8" stroke-linejoin="round"/>
+              <polygon points="340,470 1000,392 1000,930 340,1000" fill="url(#s16-plankpat)" opacity="0.48"/>
+              <polygon points="340,470 1000,392 1000,450 340,528" fill="#F4EFE3" opacity="0.95"/>
+              <line x1="340" y1="470" x2="1000" y2="392" stroke="#FFFFFF" stroke-width="2"/>
+
+              <!-- vertical plank battens -->
+              <g id="s16-battens" stroke="#0A0E24" stroke-width="20" stroke-linecap="round">
+                <line class="s16-batten" x1="422" y1="460" x2="422" y2="991"/>
+                <line class="s16-batten" x1="505" y1="450" x2="505" y2="982"/>
+                <line class="s16-batten" x1="588" y1="441" x2="588" y2="973"/>
+                <line class="s16-batten" x1="670" y1="431" x2="670" y2="965"/>
+                <line class="s16-batten" x1="752" y1="421" x2="752" y2="956"/>
+                <line class="s16-batten" x1="835" y1="411" x2="835" y2="947"/>
+                <line class="s16-batten" x1="917" y1="402" x2="917" y2="939"/>
+              </g>
+              <g id="s16-batten-spec" stroke="#B8C0D8" stroke-width="4" opacity="0.2">
+                <line x1="428" y1="464" x2="428" y2="988"/>
+                <line x1="593" y1="445" x2="593" y2="970"/>
+                <line x1="757" y1="425" x2="757" y2="953"/>
+                <line x1="922" y1="406" x2="922" y2="936"/>
+              </g>
+
+              <!-- horizontal support rails -->
+              <g id="s16-rails" stroke="#151B3B" stroke-width="16" stroke-linecap="round">
+                <line x1="352" y1="612" x2="992" y2="546"/>
+                <line x1="352" y1="812" x2="992" y2="750"/>
+              </g>
+              <g stroke="#B8C0D8" stroke-width="4" opacity="0.28">
+                <line x1="352" y1="604" x2="992" y2="538"/>
+                <line x1="352" y1="804" x2="992" y2="742"/>
+              </g>
+
+              <!-- prior-pry scars -->
+              <g id="s16-scars">
+                <g class="s16-scar">
+                  <ellipse cx="566" cy="652" rx="64" ry="17" fill="#050814" opacity="0.9"/>
+                  <path d="M 508 652 q 22 -12 48 0 q 22 10 60 -2" fill="none" stroke="#FF7A1A" stroke-width="7" opacity="0.6"/>
+                  <g stroke="#F4EFE3" stroke-width="4" opacity="0.4" stroke-linecap="round">
+                    <line x1="520" y1="641" x2="500" y2="630"/>
+                    <line x1="616" y1="660" x2="638" y2="672"/>
+                  </g>
+                </g>
+                <g class="s16-scar">
+                  <ellipse cx="802" cy="742" rx="56" ry="15" fill="#050814" opacity="0.86"/>
+                  <path d="M 754 744 q 24 -10 46 0 q 24 9 54 -3" fill="none" stroke="#FF7A1A" stroke-width="7" opacity="0.52"/>
+                  <g stroke="#F4EFE3" stroke-width="4" opacity="0.34" stroke-linecap="round">
+                    <line x1="760" y1="733" x2="742" y2="722"/>
+                    <line x1="848" y1="750" x2="866" y2="760"/>
+                  </g>
+                </g>
+                <g class="s16-scar">
+                  <ellipse cx="472" cy="860" rx="44" ry="13" fill="#050814" opacity="0.8"/>
+                  <path d="M 434 862 q 18 -8 34 0 q 18 8 42 -2" fill="none" stroke="#FF7A1A" stroke-width="6" opacity="0.44"/>
+                </g>
+              </g>
+
+              <!-- 5-inch spike heads catching light -->
+              <g id="s16-spike-heads">
+                <g class="s16-spike">
+                  <circle cx="422" cy="534" r="10" fill="#FFD23F" opacity="0.8"/>
+                  <circle cx="566" cy="512" r="9" fill="#FFD23F" opacity="0.66"/>
+                  <circle cx="752" cy="486" r="10" fill="#FFD23F" opacity="0.76"/>
+                  <circle cx="884" cy="472" r="9" fill="#FFD23F" opacity="0.6"/>
+                  <circle cx="505" cy="716" r="9" fill="#FFD23F" opacity="0.58"/>
+                  <circle cx="670" cy="692" r="10" fill="#FFD23F" opacity="0.72"/>
+                  <circle cx="835" cy="668" r="8" fill="#FFD23F" opacity="0.5"/>
+                  <circle cx="588" cy="880" r="9" fill="#FFD23F" opacity="0.56"/>
+                  <circle cx="752" cy="852" r="8" fill="#FFD23F" opacity="0.48"/>
+                </g>
+              </g>
+            </g>
+
+            <!-- right side face, bolted from inside -->
+            <g id="s16-side">
+              <polygon points="1000,392 1400,470 1400,880 1000,930" fill="url(#s16-side)" stroke="#050814" stroke-width="8" stroke-linejoin="round"/>
+              <polygon points="1000,392 1400,470 1400,510 1000,432" fill="#B8C0D8" opacity="0.75"/>
+              <g stroke="#0A0E24" stroke-width="9" opacity="0.7">
+                <line x1="1100" y1="406" x2="1100" y2="922"/>
+                <line x1="1200" y1="422" x2="1200" y2="908"/>
+                <line x1="1300" y1="438" x2="1300" y2="894"/>
+              </g>
+              <g fill="#B8C0D8" opacity="0.5">
+                <circle cx="1050" cy="470" r="7"/>
+                <circle cx="1150" cy="490" r="7"/>
+                <circle cx="1250" cy="510" r="7"/>
+                <circle cx="1350" cy="530" r="7"/>
+                <circle cx="1050" cy="790" r="7"/>
+                <circle cx="1150" cy="800" r="7"/>
+                <circle cx="1250" cy="812" r="7"/>
+                <circle cx="1350" cy="822" r="7"/>
+              </g>
+              <rect id="s16-side-sheen" x="1010" y="400" width="90" height="520" fill="url(#s16-glass)" opacity="0"/>
+            </g>
+          </g>
+
+          <!-- climbing rope + two crew beads -->
+          <g id="s16-rope">
+            <path id="s16-rope-line" d="M 806 356 C 790 520 720 700 664 960" fill="none" stroke="#B8C0D8" stroke-width="12" stroke-linecap="round"/>
+            <g id="s16-rungs" stroke="#515A83" stroke-width="9" stroke-linecap="round">
+              <line class="s16-rung" x1="790" y1="410" x2="836" y2="404"/>
+              <line class="s16-rung" x1="782" y1="470" x2="828" y2="464"/>
+              <line class="s16-rung" x1="773" y1="530" x2="820" y2="525"/>
+              <line class="s16-rung" x1="764" y1="590" x2="812" y2="585"/>
+              <line class="s16-rung" x1="754" y1="650" x2="802" y2="645"/>
+              <line class="s16-rung" x1="744" y1="710" x2="793" y2="705"/>
+              <line class="s16-rung" x1="734" y1="770" x2="783" y2="765"/>
+              <line class="s16-rung" x1="723" y1="830" x2="773" y2="825"/>
+              <line class="s16-rung" x1="712" y1="890" x2="762" y2="885"/>
+              <line class="s16-rung" x1="700" y1="950" x2="750" y2="945"/>
+            </g>
+            <circle cx="806" cy="356" r="12" fill="#515A83" stroke="#0A0E24" stroke-width="5"/>
+
+            <g transform="translate(664 960)">
+              <g id="s16-crew-a">
+                <circle cx="0" cy="0" r="18" fill="#050814" stroke="#B8C0D8" stroke-width="5"/>
+                <path d="M -12 -4 q 12 -12 24 0" fill="none" stroke="#FFD23F" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="-14" cy="10" r="6" fill="#050814" stroke="#B8C0D8" stroke-width="3"/>
+                <circle cx="14" cy="10" r="6" fill="#050814" stroke="#B8C0D8" stroke-width="3"/>
+              </g>
+            </g>
+            <g transform="translate(700 950)">
+              <g id="s16-crew-b">
+                <circle cx="0" cy="0" r="18" fill="#050814" stroke="#B8C0D8" stroke-width="5"/>
+                <path d="M -12 -4 q 12 -12 24 0" fill="none" stroke="#FF7A1A" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="-14" cy="10" r="6" fill="#050814" stroke="#B8C0D8" stroke-width="3"/>
+                <circle cx="14" cy="10" r="6" fill="#050814" stroke="#B8C0D8" stroke-width="3"/>
+              </g>
+            </g>
+          </g>
+
+          <!-- plank cross-section detail plaque: 2-inch thickness / 5-inch spike -->
+          <g id="s16-inset">
+            <rect x="1470" y="678" width="408" height="330" rx="20" fill="url(#s16-glass)" stroke="#B8C0D8" stroke-width="3" opacity="0.98"/>
+            <rect x="1470" y="678" width="408" height="330" rx="20" fill="#0A0E24" opacity="0.55"/>
+            <g clip-path="url(#s16-inset-clip)">
+              <rect x="1470" y="678" width="408" height="330" fill="#0A0E24" opacity="0.5"/>
+              <g id="s16-inset-planks">
+                <rect x="1510" y="768" width="300" height="58" fill="url(#s16-wood)" stroke="#B8C0D8" stroke-width="6"/>
+                <g stroke="#0A0E24" stroke-width="5" opacity="0.7">
+                  <line x1="1510" y1="790" x2="1810" y2="790"/>
+                  <line x1="1510" y1="810" x2="1810" y2="810"/>
+                </g>
+                <g stroke="#FF7A1A" stroke-width="4" opacity="0.4">
+                  <line x1="1510" y1="774" x2="1810" y2="774"/>
+                  <line x1="1510" y1="822" x2="1810" y2="822"/>
+                </g>
+              </g>
+
+              <!-- thickness caliper: 2 tick beads above / below -->
+              <g id="s16-caliper" stroke="#FFD23F" stroke-linecap="round">
+                <line x1="1566" y1="744" x2="1566" y2="850" stroke-width="8" opacity="0.9"/>
+                <line x1="1548" y1="748" x2="1584" y2="748" stroke-width="10"/>
+                <line x1="1548" y1="846" x2="1584" y2="846" stroke-width="10"/>
+                <circle cx="1566" cy="768" r="6" fill="#FFD23F" stroke="none"/>
+                <circle cx="1566" cy="826" r="6" fill="#FFD23F" stroke="none"/>
+              </g>
+
+              <!-- 5-inch spike in section -->
+              <g id="s16-inset-spike">
+                <rect x="1640" y="690" width="34" height="28" rx="5" fill="url(#s16-metal)" stroke="#050814" stroke-width="5"/>
+                <rect x="1653" y="716" width="9" height="196" fill="#B8C0D8" stroke="#050814" stroke-width="4"/>
+                <path d="M 1653 912 L 1662 912 L 1657 940 Z" fill="#F4EFE3" stroke="#050814" stroke-width="4"/>
+                <g stroke="#FFD23F" stroke-width="5" stroke-linecap="round" opacity="0.8">
+                  <line x1="1676" y1="742" x2="1692" y2="742"/>
+                  <line x1="1676" y1="782" x2="1692" y2="782"/>
+                  <line x1="1676" y1="822" x2="1692" y2="822"/>
+                  <line x1="1676" y1="862" x2="1692" y2="862"/>
+                  <line x1="1676" y1="902" x2="1692" y2="902"/>
+                </g>
+                <circle cx="1657" cy="704" r="16" fill="#FFD23F" opacity="0.34" filter="url(#s16-goldGlow)"/>
+              </g>
+
+              <g fill="#B8C0D8" opacity="0.55">
+                <circle cx="1482" cy="690" r="5"/>
+                <circle cx="1866" cy="690" r="5"/>
+                <circle cx="1482" cy="996" r="5"/>
+                <circle cx="1866" cy="996" r="5"/>
+              </g>
+            </g>
+            <rect x="1492" y="700" width="364" height="286" rx="14" fill="none" stroke="#F4EFE3" stroke-width="1.6" opacity="0.18"/>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND: dust, glints, first light ================= -->
+        <g id="s16-fg">
+          <g id="s16-fg-dust" fill="#F4EFE3">
+            <circle cx="420" cy="1010" r="5" opacity="0.2"/>
+            <circle cx="760" cy="1040" r="4" opacity="0.16"/>
+            <circle cx="1180" cy="1010" r="5" opacity="0.18"/>
+            <circle cx="1560" cy="1030" r="4" opacity="0.14"/>
+          </g>
+          <g id="s16-spark" fill="#FFD23F">
+            <circle cx="806" cy="356" r="6" opacity="0"/>
+            <circle cx="566" cy="652" r="5" opacity="0"/>
+            <circle cx="1657" cy="704" r="5" opacity="0"/>
+          </g>
+
+          <!-- lampshade-flare-cut exit -->
+          <g id="s16-exit" opacity="0">
+            <rect x="0" y="0" width="1920" height="1080" fill="url(#s16-flare)"/>
+            <ellipse id="s16-exit-core" cx="1506" cy="230" rx="120" ry="90" fill="url(#s16-flare)"/>
+          </g>
+
+          <g id="s16-badge">
+            <rect x="64" y="52" width="312" height="98" rx="49" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="78" y="66" width="284" height="70" rx="35" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.35"/>
+            <g stroke="#FFD23F" stroke-width="5" stroke-linecap="round">
+              <line x1="102" y1="88" x2="102" y2="114"/>
+              <line x1="96" y1="88" x2="108" y2="88"/>
+              <line x1="96" y1="114" x2="108" y2="114"/>
+            </g>
+            <text x="215" y="117" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="46"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="9" paint-order="stroke fill" letter-spacing="3"
+                  textLength="176" lengthAdjust="spacingAndGlyphs">2-INCH</text>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:radial-gradient(circle at 60% 44%, rgba(255,210,63,0.10), transparent 62%);}
+    .scene-persp{position:absolute;inset:0;perspective:1500px;perspective-origin:50% 52%;}
+    #s16-world{transform-style:preserve-3d;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      /* ---------- initial states ---------- */
+      gsap.set("#s16-violet-a", { opacity: 0, scale: 0.76, transformOrigin: "50% 50%" });
+      gsap.set("#s16-violet-b", { opacity: 0, scale: 0.8, transformOrigin: "50% 50%" });
+      gsap.set("#s16-roofline", { opacity: 0, y: 24 });
+      gsap.set("#s16-yardwall", { opacity: 0 });
+      gsap.set("#s16-dust circle", { opacity: 0 });
+      gsap.set("#s16-lamps", { opacity: 0, y: 18 });
+      gsap.set("#s16-crate-outline", { strokeDasharray: 3200, strokeDashoffset: 3200, opacity: 0 });
+      gsap.set("#s16-roof-plane", { opacity: 0, y: -18 });
+      gsap.set("#s16-face", { opacity: 0 });
+      gsap.set("#s16-side", { opacity: 0, x: 26 });
+      gsap.set(".s16-batten", { scaleY: 0, transformOrigin: "50% 0%" });
+      gsap.set("#s16-rails", { opacity: 0, scaleX: 0.3, transformOrigin: "0% 50%" });
+      gsap.set(".s16-scar", { opacity: 0, scaleX: 0.2, transformOrigin: "0% 50%" });
+      gsap.set(".s16-spike", { opacity: 0 });
+      gsap.set("#s16-inset", { opacity: 0, y: 34, scale: 0.94, transformOrigin: "50% 50%" });
+      gsap.set("#s16-inset-planks", { opacity: 0, y: -16 });
+      gsap.set("#s16-caliper", { opacity: 0, scaleY: 0.2, transformOrigin: "50% 50%" });
+      gsap.set("#s16-inset-spike", { opacity: 0, scaleY: 0.2, transformOrigin: "50% 0%" });
+      gsap.set("#s16-roof-sheen", { opacity: 0 });
+      gsap.set("#s16-side-sheen", { opacity: 0 });
+      gsap.set("#s16-rope", { opacity: 0 });
+      gsap.set("#s16-rope-line", { strokeDasharray: 760, strokeDashoffset: 760 });
+      gsap.set(".s16-rung", { opacity: 0, scaleX: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s16-crew-a", { opacity: 0, x: 0, y: 0 });
+      gsap.set("#s16-crew-b", { opacity: 0, x: 0, y: 0 });
+      gsap.set("#s16-badge", { opacity: 0, scale: 1.4, rotation: -4, transformOrigin: "50% 50%" });
+      gsap.set("#s16-bulb-1", { fill: "#515A83" });
+      gsap.set("#s16-bulb-2", { fill: "#515A83" });
+      gsap.set("#s16-bulb-3", { fill: "#515A83" });
+      gsap.set("#s16-halo-1", { opacity: 0 });
+      gsap.set("#s16-halo-2", { opacity: 0 });
+      gsap.set("#s16-halo-3", { opacity: 0 });
+      gsap.set("#s16-cone-1", { opacity: 0, scaleY: 0.2, transformOrigin: "50% 0%" });
+      gsap.set("#s16-cone-2", { opacity: 0, scaleY: 0.2, transformOrigin: "50% 0%" });
+      gsap.set("#s16-cone-3", { opacity: 0, scaleY: 0.2, transformOrigin: "50% 0%" });
+      gsap.set("#s16-exit", { opacity: 0 });
+      gsap.set("#s16-exit-core", { scale: 0.2, transformOrigin: "50% 50%" });
+      gsap.set("#s16-spark circle", { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" });
+
+      /* ---------- phase 1: sky, roofline, crate outline draws ---------- */
+      tl.to("#s16-violet-a", { opacity: 0.9, scale: 1, duration: 1.2, ease: "power2.out" }, 0.0);
+      tl.to("#s16-violet-b", { opacity: 0.6, scale: 1, duration: 1.3, ease: "power2.out" }, 0.1);
+      tl.to("#s16-roofline", { opacity: 1, y: 0, duration: 0.9, ease: "power2.out" }, 0.12);
+      tl.to("#s16-yardwall", { opacity: 0.9, duration: 0.9, ease: "power1.out" }, 0.2);
+      tl.to("#s16-dust circle", { opacity: 0.15, duration: 0.7, stagger: 0.09, ease: "power1.out" }, 0.5);
+      tl.to("#s16-lamps", { opacity: 1, y: 0, duration: 0.85, ease: "power2.out" }, 0.4);
+
+      tl.to("#s16-crate-outline", { opacity: 1, duration: 0.1, ease: "none" }, 0.15);
+      tl.to("#s16-crate-outline", { strokeDashoffset: 0, duration: 1.25, ease: "power2.inOut" }, 0.2);
+      tl.to("#s16-roof-plane", { opacity: 1, y: 0, duration: 0.75, ease: "power2.out" }, 1.0);
+      tl.to("#s16-roof-sheen", { opacity: 0.8, duration: 0.4, ease: "power1.out" }, 1.15);
+      tl.to("#s16-roof-sheen", { x: 640, duration: 1.1, ease: "power2.inOut" }, 1.3);
+      tl.to("#s16-roof-sheen", { opacity: 0, duration: 0.4, ease: "power1.in" }, 2.25);
+
+      /* ---------- phase 2: face volume blooms, battens socket ---------- */
+      tl.to("#s16-face", { opacity: 1, duration: 0.9, ease: "power2.out" }, 0.95);
+      tl.to("#s16-side", { opacity: 1, x: 0, duration: 0.85, ease: "power2.out" }, 1.1);
+      tl.to("#s16-side-sheen", { opacity: 0.7, duration: 0.4, ease: "power1.out" }, 1.5);
+      tl.to("#s16-side-sheen", { x: 400, duration: 1.0, ease: "power2.inOut" }, 1.65);
+      tl.to("#s16-side-sheen", { opacity: 0, duration: 0.35, ease: "power1.in" }, 2.55);
+      tl.to(".s16-batten", { scaleY: 1, duration: 0.55, stagger: 0.09, ease: "back.out(1.6)" }, 1.25);
+      tl.to("#s16-rails", { opacity: 0.9, scaleX: 1, duration: 0.8, ease: "power2.out" }, 1.75);
+      tl.to(".s16-scar", { opacity: 1, scaleX: 1, duration: 0.65, stagger: 0.18, ease: "power2.out" }, 2.15);
+      tl.to(".s16-spike", { opacity: 1, duration: 0.5, stagger: 0.05, ease: "power1.out" }, 2.6);
+      tl.to("#s16-spark circle", { opacity: 0.8, scale: 1, duration: 0.4, stagger: 0.07, ease: "back.out(2.6)" }, 2.9);
+      tl.to("#s16-spark circle", { opacity: 0, duration: 0.8, stagger: 0.07, ease: "power1.in" }, 3.4);
+
+      /* ---------- cross-section plaque ---------- */
+      tl.to("#s16-inset", { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "back.out(1.5)" }, 2.7);
+      tl.to("#s16-inset-planks", { opacity: 1, y: 0, duration: 0.55, ease: "power2.out" }, 3.1);
+      tl.to("#s16-caliper", { opacity: 1, scaleY: 1, duration: 0.5, ease: "back.out(2.2)" }, 3.4);
+      tl.to("#s16-inset-spike", { opacity: 1, scaleY: 1, duration: 0.7, ease: "power3.out" }, 3.7);
+      tl.to("#s16-caliper line", { opacity: 0.6, duration: 0.5, yoyo: true, repeat: 1, ease: "sine.inOut" }, 4.4);
+
+      /* ---------- phase 3: rope drops, crew climb in stagger ---------- */
+      tl.to("#s16-rope", { opacity: 1, duration: 0.2, ease: "none" }, 3.1);
+      tl.to("#s16-rope-line", { strokeDashoffset: 0, duration: 0.85, ease: "power2.inOut" }, 3.15);
+      tl.to(".s16-rung", { opacity: 1, scaleX: 1, duration: 0.3, stagger: 0.06, ease: "back.out(2.2)" }, 3.55);
+
+      tl.to("#s16-crew-a", { opacity: 1, duration: 0.2, ease: "none" }, 3.95);
+      tl.to("#s16-crew-a", { x: 142, y: -568, duration: 2.4, ease: "power1.inOut" }, 4.0);
+      tl.to("#s16-crew-a", { rotation: -4, duration: 0.9, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 4.2);
+      tl.to("#s16-crew-b", { opacity: 1, duration: 0.2, ease: "none" }, 4.5);
+      tl.to("#s16-crew-b", { x: 80, y: -520, duration: 2.35, ease: "power1.inOut" }, 4.55);
+      tl.to("#s16-crew-b", { rotation: 3, duration: 0.85, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 4.8);
+
+      /* crew reach the roof edge and haul up */
+      tl.to("#s16-crew-a", { x: 114, y: -562, duration: 0.55, ease: "back.out(1.8)" }, 6.35);
+      tl.to("#s16-crew-b", { x: 40, y: -510, duration: 0.55, ease: "back.out(1.8)" }, 6.8);
+      tl.to("#s16-crew-a", { y: -578, duration: 1.1, yoyo: true, repeat: 1, ease: "sine.inOut" }, 7.0);
+      tl.to("#s16-crew-b", { y: -528, duration: 1.0, yoyo: true, repeat: 1, ease: "sine.inOut" }, 7.25);
+
+      /* ---------- phase 4: street lamps ignite left -> right ---------- */
+      tl.to("#s16-bulb-1", { fill: "#F4EFE3", duration: 0.12, ease: "power1.out" }, 7.02);
+      tl.to("#s16-halo-1", { opacity: 0.95, duration: 0.28, ease: "power2.out" }, 7.02);
+      tl.to("#s16-cone-1", { opacity: 0.32, scaleY: 0.55, duration: 0.55, ease: "power2.out" }, 7.04);
+
+      tl.to("#s16-bulb-2", { fill: "#F4EFE3", duration: 0.12, ease: "power1.out" }, 7.16);
+      tl.to("#s16-halo-2", { opacity: 0.95, duration: 0.28, ease: "power2.out" }, 7.16);
+      tl.to("#s16-cone-2", { opacity: 0.34, scaleY: 0.55, duration: 0.55, ease: "power2.out" }, 7.18);
+
+      tl.to("#s16-bulb-3", { fill: "#F4EFE3", duration: 0.12, ease: "power1.out" }, 7.30);
+      tl.to("#s16-halo-3", { opacity: 0.9, duration: 0.28, ease: "power2.out" }, 7.30);
+      tl.to("#s16-cone-3", { opacity: 0.3, scaleY: 0.5, duration: 0.55, ease: "power2.out" }, 7.32);
+
+      tl.to("#s16-halo-1", { opacity: 0.7, duration: 0.42, yoyo: true, repeat: 1, ease: "sine.inOut" }, 8.15);
+      tl.to("#s16-halo-2", { opacity: 0.72, duration: 0.42, yoyo: true, repeat: 1, ease: "sine.inOut" }, 8.25);
+      tl.to("#s16-halo-3", { opacity: 0.68, duration: 0.42, yoyo: true, repeat: 1, ease: "sine.inOut" }, 8.35);
+
+      /* ---------- exit: lampshade-flare-cut ---------- */
+      tl.to("#s16-exit", { opacity: 0.98, duration: 0.2, ease: "power2.in" }, 9.04);
+      tl.to("#s16-exit-core", { scale: 9, duration: 0.26, ease: "power3.in" }, 9.04);
+
+      /* ---------- camera tilt-up + parallax + living holds ---------- */
+      tl.fromTo("#s16-world", { rotationX: -3, y: 26 }, { rotationX: 7, y: -16, duration: 9.3, transformOrigin: "50% 58%", ease: "sine.inOut" }, 0);
+      tl.fromTo("#s16-bg", { x: -12 }, { x: 12, duration: 9.3, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s16-mg", { x: 9 }, { x: -9, duration: 9.3, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s16-fg", { x: -6 }, { x: 6, duration: 9.3, ease: "sine.inOut" }, 0);
+      tl.to("#s16-badge", { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(2.4)" }, 0.75);
+      tl.to("#s16-badge", { y: -5, duration: 1.3, yoyo: true, repeat: 2, ease: "sine.inOut" }, 2.1);
+      tl.to("#s16-violet-a", { opacity: 0.7, duration: 1.8, yoyo: true, repeat: 1, ease: "sine.inOut" }, 2.6);
+      tl.to("#s16-fg-dust circle", { y: -18, duration: 2.4, yoyo: true, repeat: 1, ease: "sine.inOut" }, 1.8);
+      tl.to("#s16-dust circle", { y: 12, duration: 2.8, yoyo: true, repeat: 1, ease: "sine.inOut" }, 2.1);
+      tl.to("#s16-inset", { scale: 1.02, duration: 1.6, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 5.6);
+      tl.to("#s16-rope", { rotation: 1.2, duration: 2.2, yoyo: true, repeat: 1, transformOrigin: "806px 356px", ease: "sine.inOut" }, 4.3);
+
+      tl.to({}, { duration: 9.300 }, 0);
+      window.__timelines["16-plank-climb"] = tl;
+    })();
+  </script>
+</div>
+</template>

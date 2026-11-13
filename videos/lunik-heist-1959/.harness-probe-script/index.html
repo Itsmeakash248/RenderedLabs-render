@@ -1,0 +1,7 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>script probe</title></head>
+<body style="margin:0;background:#000;color:#0f0;font:48px monospace">
+<div id="a">A</div>
+<script>document.getElementById('a').textContent='B';</script>
+<div id="root" data-composition-id="root" data-width="1920" data-height="1080" data-duration="2"></div>
+<script>window.__timelines={root:gsap.timeline({paused:true})};</script>
+</body></html>

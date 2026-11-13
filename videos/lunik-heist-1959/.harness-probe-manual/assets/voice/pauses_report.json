@@ -1,0 +1,16 @@
+{
+  "input": "videos/lunik-heist-1959/assets/voice/narration.mp3",
+  "output": "videos/lunik-heist-1959/assets/voice/narration.mp3",
+  "profile": "documentary",
+  "speech_level_dbfs": -12.5,
+  "silence_thresh_dbfs": -47.5,
+  "duration_before_s": 521.655,
+  "duration_after_s": 521.655,
+  "time_saved_s": 0.0,
+  "total_pauses_detected": 140,
+  "median_pause_s": 0.81,
+  "max_pause_s": 0.88,
+  "pauses_shortened_count": 0,
+  "applied": false,
+  "cuts": []
+}

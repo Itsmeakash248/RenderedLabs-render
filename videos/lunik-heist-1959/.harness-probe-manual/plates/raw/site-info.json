@@ -1,0 +1,692 @@
+{
+  "url": "https://www.technologyreview.com/2021/01/28/1016867/lunik-cia-heist-steal-russian-satellite-space-us-ussr/",
+  "title": "Lunik: Inside the CIA’s audacious plot to steal a Soviet satellite | MIT Technology Review",
+  "description": "In late October 1959, a Mexican spy named Eduardo Diaz Silveti slipped into the US Embassy in Mexico City. Tall and well-spoken with slicked-back hair, Silveti, 30, descended from a family of bullfighters. He had learned spycraft at the Federal Security Directorate, or DFS, Mexico’s secret police. During the Cold War, the capital had become…",
+  "font_families_by_use": [
+    [
+      "NeueHaas, \"input mono\", sans-serif",
+      139
+    ],
+    [
+      "Independent, serif",
+      106
+    ],
+    [
+      "NeueHaasText, sans-serif",
+      37
+    ],
+    [
+      "TRMono, monospace, sans-serif",
+      5
+    ]
+  ],
+  "font_faces": [
+    {
+      "family": "MillerText",
+      "weight": "400",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/MillerText/font-bureau-millertext-roman.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/MillerText/font-bureau-millertext-roman.ttf"
+      ]
+    },
+    {
+      "family": "MillerText",
+      "weight": "400",
+      "style": "italic",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/MillerText/font-bureau-millertext-italic.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/MillerText/font-bureau-millertext-italic.ttf"
+      ]
+    },
+    {
+      "family": "MillerText",
+      "weight": "600",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/MillerText/font-bureau-millertext-bold.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/MillerText/font-bureau-millertext-bold.ttf"
+      ]
+    },
+    {
+      "family": "MillerText",
+      "weight": "600",
+      "style": "italic",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/MillerText/font-bureau-millertext-bolditalic.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/MillerText/font-bureau-millertext-bolditalic.ttf"
+      ]
+    },
+    {
+      "family": "NeueHaas",
+      "weight": "100",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-15ultth.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-15ultth.ttf"
+      ]
+    },
+    {
+      "family": "NeueHaas",
+      "weight": "200",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-25th.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-25th.ttf"
+      ]
+    },
+    {
+      "family": "NeueHaas",
+      "weight": "300",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-35xlt.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-35xlt.ttf"
+      ]
+    },
+    {
+      "family": "NeueHaas",
+      "weight": "400",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-55rg.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-55rg.ttf"
+      ]
+    },
+    {
+      "family": "NeueHaas",
+      "weight": "600",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-65md.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-65md.ttf"
+      ]
+    },
+    {
+      "family": "NeueHaas",
+      "weight": "700",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-75bd.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-75bd.ttf"
+      ]
+    },
+    {
+      "family": "NeueHaas",
+      "weight": "900",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-95blk.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-95blk.ttf"
+      ]
+    },
+    {
+      "family": "NeueHaasText",
+      "weight": "500",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-55Rg.woff2",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-55Rg.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-55Rg.ttf"
+      ]
+    },
+    {
+      "family": "NeueHaasText",
+      "weight": "500",
+      "style": "italic",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-56It.woff2",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-56It.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-56It.ttf"
+      ]
+    },
+    {
+      "family": "NeueHaasText",
+      "weight": "600",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-65Md.woff2",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-65Md.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-65Md.ttf"
+      ]
+    },
+    {
+      "family": "NeueHaasText",
+      "weight": "600",
+      "style": "italic",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-66MdIt.woff2",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-66MdIt.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-66MdIt.ttf"
+      ]
+    },
+    {
+      "family": "NeueHaasText",
+      "weight": "700",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-75Bd.woff2",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-75Bd.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-75Bd.ttf"
+      ]
+    },
+    {
+      "family": "NeueHaasText",
+      "weight": "700",
+      "style": "italic",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-76BdIt.woff2",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-76BdIt.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-76BdIt.ttf"
+      ]
+    },
+    {
+      "family": "Independent",
+      "weight": "400",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/Independent/independent-regular.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/Independent/independent-regular.otf"
+      ]
+    },
+    {
+      "family": "Independent",
+      "weight": "700",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/Independent/independent-bold.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/Independent/independent-bold.otf"
+      ]
+    },
+    {
+      "family": "Independent",
+      "weight": "400",
+      "style": "italic",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/Independent/independent-italic.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/Independent/independent-italic.otf"
+      ]
+    },
+    {
+      "family": "TRMono",
+      "weight": "400",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/TRMono/TRMono-Regular.otf",
+        "https://www.technologyreview.com/cdn/_/fonts/TRMono/TRMono-Regular.otf"
+      ]
+    },
+    {
+      "family": "TRMono",
+      "weight": "700",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "https://www.technologyreview.com/cdn/_/fonts/TRMono/TRMono-Black.woff",
+        "https://www.technologyreview.com/cdn/_/fonts/TRMono/TRMono-Black.otf"
+      ]
+    },
+    {
+      "family": "swiper-icons",
+      "weight": "400",
+      "style": "normal",
+      "range": "",
+      "urls": [
+        "data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAAkQAAACIAAABYt6F0cBjdnQgAAACzAAAAAQAAAAEABEBRGdhc3AAAAWYAAAACAAAAAj//wADZ2x5ZgAAAywAAADMAAAD2MHtryVoZWFkAAABbAAAADAAAAA2E2+eoWhoZWEAAAGcAAAAHwAAACQC9gDzaG10eAAAAigAAAAZAAAArgJkABFsb2NhAAAC0AAAAFoAAABaFQAUGG1heHAAAAG8AAAAHwAAACAAcABAbmFtZQAAA/gAAAE5AAACXvFdBwlwb3N0AAAFNAAAAGIAAACE5s74hXjaY2BkYGAAYpf5Hu/j+W2+MnAzMYDAzaX6QjD6/4//Bxj5GA8AuRwMYGkAPywL13jaY2BkYGA88P8Agx4j+/8fQDYfA1AEBWgDAIB2BOoAeNpjYGRgYNBh4GdgYgABEMnIABJzYNADCQAACWgAsQB42mNgYfzCOIGBlYGB0YcxjYGBwR1Kf2WQZGhhYGBiYGVmgAFGBiQQkOaawtDAoMBQxXjg/wEGPcYDDA4wNUA2CCgwsAAAO4EL6gAAeNpj2M0gyAACqxgGNWBkZ2D4/wMA+xkDdgAAAHjaY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQrMOgyWDLEM1T9/w8UBfEMgLzE////P/5//f/V/xv+r4eaAAeMbAxwIUYmIMHEgKYAYjUcsDAwsLKxc3BycfPw8jEQA/gZBASFhEVExcQlJKWkZWTl5BUUlZRVVNXUNTQZBgMAAMR+E+gAEQFEAAAAKgAqACoANAA+AEgAUgBcAGYAcAB6AIQAjgCYAKIArAC2AMAAygDUAN4A6ADyAPwBBgEQARoBJAEuATgBQgFMAVYBYAFqAXQBfgGIAZIBnAGmAbIBzgHsAAB42u2NMQ6CUAyGW568x9AneYYgm4MJbhKFaExIOAVX8ApewSt4Bic4AfeAid3VOBixDxfPYEza5O+Xfi04YADggiUIULCuEJK8VhO4bSvpdnktHI5QCYtdi2sl8ZnXaHlqUrNKzdKcT8cjlq+rwZSvIVczNiezsfnP/uznmfPFBNODM2K7MTQ45YEAZqGP81AmGGcF3iPqOop0r1SPTaTbVkfUe4HXj97wYE+yNwWYxwWu4v1ugWHgo3S1XdZEVqWM7ET0cfnLGxWfkgR42o2PvWrDMBSFj/IHLaF0zKjRgdiVMwScNRAoWUoH78Y2icB/yIY09An6AH2Bdu/UB+yxopYshQiEvnvu0dURgDt8QeC8PDw7Fpji3fEA4z/PEJ6YOB5hKh4dj3EvXhxPqH/SKUY3rJ7srZ4FZnh1PMAtPhwP6fl2PMJMPDgeQ4rY8YT6Gzao0eAEA409DuggmTnFnOcSCiEiLMgxCiTI6Cq5DZUd3Qmp10vO0LaLTd2cjN4fOumlc7lUYbSQcZFkutRG7g6JKZKy0RmdLY680CDnEJ+UMkpFFe1RN7nxdVpXrC4aTtnaurOnYercZg2YVmLN/d/gczfEimrE/fs/bOuq29Zmn8tloORaXgZgGa78yO9/cnXm2BpaGvq25Dv9S4E9+5SIc9PqupJKhYFSSl47+Qcr1mYNAAAAeNptw0cKwkAAAMDZJA8Q7OUJvkLsPfZ6zFVERPy8qHh2YER+3i/BP83vIBLLySsoKimrqKqpa2hp6+jq6RsYGhmbmJqZSy0sraxtbO3sHRydnEMU4uR6yx7JJXveP7WrDycAAAAAAAH//wACeNpjYGRgYOABYhkgZgJCZgZNBkYGLQZtIJsFLMYAAAw3ALgAeNolizEKgDAQBCchRbC2sFER0YD6qVQiBCv/H9ezGI6Z5XBAw8CBK/m5iQQVauVbXLnOrMZv2oLdKFa8Pjuru2hJzGabmOSLzNMzvutpB3N42mNgZGBg4GKQYzBhYMxJLMlj4GBgAYow/P/PAJJhLM6sSoWKfWCAAwDAjgbRAAB42mNgYGBkAIIbCZo5IPrmUn0hGA0AO8EFTQAA"
+      ]
+    }
+  ],
+  "text_colors": [
+    [
+      "rgb(0, 0, 0)",
+      161
+    ],
+    [
+      "rgb(17, 17, 17)",
+      52
+    ],
+    [
+      "rgb(255, 255, 255)",
+      41
+    ],
+    [
+      "rgb(242, 244, 247)",
+      15
+    ],
+    [
+      "rgb(235, 236, 240)",
+      2
+    ],
+    [
+      "rgba(235, 236, 240, 0.75)",
+      2
+    ],
+    [
+      "rgb(8, 9, 12)",
+      2
+    ],
+    [
+      "rgb(85, 85, 85)",
+      2
+    ],
+    [
+      "oklch(0.9851 0 0)",
+      1
+    ],
+    [
+      "oklch(0.2046 0 0)",
+      1
+    ],
+    [
+      "oklch(0.1448 0 0)",
+      1
+    ],
+    [
+      "oklch(0.0969 0 0)",
+      1
+    ],
+    [
+      "rgb(97, 101, 104)",
+      1
+    ],
+    [
+      "rgb(38, 38, 38)",
+      1
+    ],
+    [
+      "rgb(16, 31, 64)",
+      1
+    ],
+    [
+      "rgb(53, 53, 53)",
+      1
+    ],
+    [
+      "rgb(232, 14, 72)",
+      1
+    ],
+    [
+      "rgb(56, 96, 190)",
+      1
+    ]
+  ],
+  "bg_colors": [
+    [
+      "rgb(255, 255, 255)",
+      21
+    ],
+    [
+      "rgb(0, 0, 0)",
+      15
+    ],
+    [
+      "rgb(39, 69, 92)",
+      8
+    ],
+    [
+      "rgb(233, 233, 233)",
+      4
+    ],
+    [
+      "rgb(205, 220, 242)",
+      3
+    ],
+    [
+      "rgb(220, 221, 222)",
+      2
+    ],
+    [
+      "oklch(0.8883 0.0992 183.62)",
+      2
+    ],
+    [
+      "rgb(160, 245, 233)",
+      2
+    ],
+    [
+      "rgb(16, 31, 64)",
+      1
+    ],
+    [
+      "rgb(48, 48, 48)",
+      1
+    ],
+    [
+      "rgba(0, 0, 0, 0.5)",
+      1
+    ],
+    [
+      "rgb(56, 96, 190)",
+      1
+    ],
+    [
+      "rgb(244, 244, 244)",
+      1
+    ],
+    [
+      "rgba(0, 0, 0, 0.65)",
+      1
+    ]
+  ],
+  "css_vars": {
+    "--color-light-background": "#fff",
+    "--color-dark-background": "#000",
+    "--color-gray-background": "#302c2c",
+    "--color-forest-background": "#1c3b16",
+    "--color-navy-background": "#14263e",
+    "--color-plum-background": "#29143e",
+    "--color-burgundy-background": "#400a26",
+    "--color-black-background": "#08090c",
+    "--color-black-spotlight": "#1c1c1c",
+    "--color-blue-background": "#06132e",
+    "--color-blue-spotlight": "#101f40",
+    "--color-green-background": "#062418",
+    "--color-green-spotlight": "#0e2e21",
+    "--color-purple-background": "#130524",
+    "--color-purple-spotlight": "#230f3d",
+    "--color-teal-500": "#89f0e1",
+    "--color-teal-background": "#0b2026",
+    "--color-teal-spotlight": "#0a2c33",
+    "--background": "oklch(1.0000 0 0)",
+    "--foreground": "oklch(0.1448 0 0)",
+    "--popover": "oklch(1.0000 0 0)",
+    "--popover-foreground": "oklch(0.1448 0 0)",
+    "--primary": "oklch(0.8883 0.0992 183.6199)",
+    "--primary-foreground": "oklch(0.0969 0 0)",
+    "--secondary": "oklch(0.9702 0 0)",
+    "--secondary-foreground": "oklch(0.2046 0 0)",
+    "--muted": "oklch(0.9702 0 0)",
+    "--muted-foreground": "oklch(0.5555 0 0)",
+    "--accent": "oklch(0.9702 0 0)",
+    "--destructive": "oklch(0.5830 0.2387 28.4765)",
+    "--border": "oklch(0.7802 0.0011 17.1835)",
+    "--input": "oklch(0.9219 0 0)",
+    "--ring": "oklch(0.7090 0 0)",
+    "--font-sans-text": "\"NeueHaasText\",\"input mono\",sans-serif",
+    "--radius": "0.5rem",
+    "--radius-sm": "calc(var(--radius) - 4px)",
+    "--radius-md": "calc(var(--radius) - 2px)",
+    "--spacing": "0.25rem",
+    "--swiper-theme-color": "#007aff",
+    "--swiper-navigation-size": "44px"
+  },
+  "headings": [
+    "A: SKIP TO CONTENT  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "BUTTON: Menu  [sans-serif 15.84px 400 ls normal rgb(255, 255, 255)]",
+    "A: MIT Technology Review  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(0, 0, 0)]",
+    "A: MIT Technology Review  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(0, 0, 0)]",
+    "A: Sign in  [NeueHaasText, sans-serif 14px 500 ls normal oklch(0.9851 0 0)]",
+    "A: SUBSCRIBE  [NeueHaas, \"input mono\", sans-serif 16px 600 ls 0.64px oklch(0.2046 0 0)]",
+    "LI: The Big Story  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(255, 255, 255)]",
+    "A: The Big Story  [NeueHaasText, sans-serif 16px 600 ls -0.32px rgb(255, 255, 255)]",
+    "LI: Artificial intelligence  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(255, 255, 255)]",
+    "A: Artificial intelligence  [NeueHaasText, sans-serif 16px 600 ls -0.32px rgb(255, 255, 255)]",
+    "LI: Biotech & health  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(255, 255, 255)]",
+    "A: Biotech & health  [NeueHaasText, sans-serif 16px 600 ls -0.32px rgb(255, 255, 255)]",
+    "LI: Climate & energy  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(255, 255, 255)]",
+    "A: Climate & energy  [NeueHaasText, sans-serif 16px 600 ls -0.32px rgb(255, 255, 255)]",
+    "LI: 10 Breakthrough Technologies  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(255, 255, 255)]",
+    "A: 10 Breakthrough Technologies  [NeueHaasText, sans-serif 16px 600 ls -0.32px rgb(255, 255, 255)]",
+    "LI: AI Hype Index  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(255, 255, 255)]",
+    "A: AI Hype Index  [NeueHaasText, sans-serif 16px 600 ls -0.32px rgb(255, 255, 255)]",
+    "LI: The Impossible issue  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(255, 255, 255)]",
+    "A: The Impossible issue  [NeueHaasText, sans-serif 16px 600 ls -0.32px rgb(255, 255, 255)]",
+    "BUTTON: Menu  [sans-serif 15.84px 400 ls normal rgb(0, 0, 0)]",
+    "A: MIT Technology Review  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(0, 0, 0)]",
+    "A: MIT Technology Review  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(0, 0, 0)]",
+    "A: Sign in  [NeueHaasText, sans-serif 14px 500 ls normal oklch(0.1448 0 0)]",
+    "A: SUBSCRIBE  [NeueHaas, \"input mono\", sans-serif 16px 600 ls 0.64px oklch(0.0969 0 0)]",
+    "LI: The Big Story  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(0, 0, 0)]",
+    "A: The Big Story  [NeueHaasText, sans-serif 16px 600 ls -0.32px rgb(0, 0, 0)]",
+    "LI: Artificial intelligence  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(0, 0, 0)]",
+    "A: Artificial intelligence  [NeueHaasText, sans-serif 16px 600 ls -0.32px rgb(0, 0, 0)]",
+    "LI: Biotech & health  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(0, 0, 0)]",
+    "A: Biotech & health  [NeueHaasText, sans-serif 16px 600 ls -0.32px rgb(0, 0, 0)]",
+    "LI: Climate & energy  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(0, 0, 0)]",
+    "A: Climate & energy  [NeueHaasText, sans-serif 16px 600 ls -0.32px rgb(0, 0, 0)]",
+    "LI: 10 Breakthrough Technologies  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(0, 0, 0)]",
+    "A: 10 Breakthrough Technologies  [NeueHaasText, sans-serif 16px 600 ls -0.32px rgb(0, 0, 0)]",
+    "LI: AI Hype Index  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(0, 0, 0)]",
+    "A: AI Hype Index  [NeueHaasText, sans-serif 16px 600 ls -0.32px rgb(0, 0, 0)]",
+    "LI: The Impossible issue  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(0, 0, 0)]",
+    "A: The Impossible issue  [NeueHaasText, sans-serif 16px 600 ls -0.32px rgb(0, 0, 0)]",
+    "H1: Lunik: Inside the CIA’s audacious plot to steal a Soviet satellite  [NeueHaas, \"input mono\", sans-serif 60px 600 ls normal rgb(255, 255, 255)]",
+    "P: How a team of spies in Mexico got their hands on Russia's space secrets—and tried to change the course of the Cold War.  [NeueHaas, \"input mono\", sans-serif 26px 400 ls normal rgb(255, 255, 255)]",
+    "LI: Jeff Maysh | archive page  [NeueHaas, \"input mono\", sans-serif 20px 400 ls normal rgb(17, 17, 17)]",
+    "A: Jeff Maysh | archive page  [NeueHaas, \"input mono\", sans-serif 20px 700 ls normal rgb(17, 17, 17)]",
+    "P: If they got things wrong, Scott warned that “World War III could begin,” Silveti said.  [Independent, serif 18px 400 ls normal rgb(0, 0, 0)]",
+    "H3: High stakes  [NeueHaas, \"input mono\", sans-serif 32px 700 ls normal rgb(0, 0, 0)]",
+    "P: “I asked myself, What do I do? What do I do?” Silveti recalled when talking to Tercer Milenio.  [Independent, serif 18px 400 ls normal rgb(0, 0, 0)]",
+    "P: He said he confided in the president’s chief of staff, José Gómez Huerta, who knotted his caterpillar eyebrows, and told him:  [Independent, serif 18px 400 ls normal rgb(0, 0, 0)]",
+    "P: “You do it. Be very careful and keep me apprised of what you are doing. Go ahead.”  [Independent, serif 18px 400 ls normal rgb(0, 0, 0)]",
+    "P: “There are too many loose ends here,” Dean conceded, according to Maussan’s account. “We will do the kidnapping with Silveti.”  [Independent, serif 18px 400 ls normal rgb(0, 0, 0)]",
+    "P: Yet they needed to work together to ensure the Soviets wouldn’t notice a missing spacecraft.  [Independent, serif 18px 400 ls normal rgb(0, 0, 0)]",
+    "H3: On display  [NeueHaas, \"input mono\", sans-serif 32px 700 ls normal rgb(0, 0, 0)]",
+    "P: As they plotted the heist, Zambernardi tried to calculate how much time he needed with the Luna.  [Independent, serif 18px 400 ls normal rgb(0, 0, 0)]",
+    "P: To get what the CIA needed, they’d need access to the spacecraft overnight.  [Independent, serif 18px 400 ls normal rgb(0, 0, 0)]",
+    "H3: The heist begins  [NeueHaas, \"input mono\", sans-serif 32px 700 ls normal rgb(0, 0, 0)]",
+    "H2: RELATED STORY  [TRMono, monospace, sans-serif 10px 400 ls 0.4px rgb(38, 38, 38)]",
+    "A: Can SpaceX and Blue Origin best a decades-old Russian rocket engine design?  [NeueHaas, \"input mono\", sans-serif 18px 600 ls -0.18px rgb(0, 0, 0)]",
+    "A: Read next  [NeueHaas, \"input mono\", sans-serif 12px 600 ls 0.48px rgb(255, 255, 255)]",
+    "P: As Friday night turned into Saturday morning, Zambernardi checked the negatives. They were good.  [Independent, serif 18px 400 ls normal rgb(0, 0, 0)]",
+    "P: Now it was time to escape.  [Independent, serif 18px 400 ls normal rgb(0, 0, 0)]",
+    "P: “Approximately five minutes to six, the operation was terminated,” recalled Zambernardi.  [Independent, serif 18px 400 ls normal rgb(0, 0, 0)]",
+    "H3: Documented evidence  [NeueHaas, \"input mono\", sans-serif 32px 700 ls normal rgb(0, 0, 0)]",
+    "P: Silveti said he gave an ironic salute and grinned in response: “Thank you, sir!”  [Independent, serif 18px 400 ls normal rgb(0, 0, 0)]",
+    "H3: by Jeff Maysh  [NeueHaas, \"input mono\", sans-serif 24px 600 ls normal rgb(17, 17, 17)]",
+    "A: Jeff Maysh  [NeueHaas, \"input mono\", sans-serif 24px 600 ls normal rgb(17, 17, 17)]",
+    "H3: Share  [NeueHaas, \"input mono\", sans-serif 16px 600 ls normal rgb(17, 17, 17)]",
+    "LI: Share story on linkedin  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Share story on linkedin  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: Share story on facebook  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Share story on facebook  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: Share story on email  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Share story on email  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "H3: Keep Reading  [TRMono, monospace, sans-serif 20px 900 ls 2px rgb(16, 31, 64)]",
+    "H3: Most Popular  [TRMono, monospace, sans-serif 48px 900 ls 1.008px rgb(255, 255, 255)]",
+    "A: Don’t be fooled—LLMs don’t reason  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(255, 255, 255)]",
+    "H3: Don’t be fooled—LLMs don’t reason  [NeueHaas, \"input mono\", sans-serif 24px 700 ls normal rgb(255, 255, 255)]",
+    "P: Ten years after AlphaGo’s match against Go champion Lee Sedol, today’s AI still isn’t tapping into the machinery that made that win possible.  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(255, 255, 255)]",
+    "LI: Thore Graepelarchive page  [NeueHaas, \"input mono\", sans-serif 16px 600 ls normal rgb(255, 255, 255)]",
+    "A: Thore Graepelarchive page  [NeueHaas, \"input mono\", sans-serif 16px 600 ls normal rgb(255, 255, 255)]",
+    "A: “We were looking at it wrong”: The explosive claim that’s upended the AI world  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(255, 255, 255)]",
+    "H3: “We were looking at it wrong”: The explosive claim that’s upended the AI world  [NeueHaas, \"input mono\", sans-serif 24px 700 ls normal rgb(255, 255, 255)]",
+    "P: An exclusive interview with Nick Cammarata, the researcher whose 26,000-word viral blog post has AI safety folks celebrating.  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(255, 255, 255)]",
+    "LI: Will Douglas Heavenarchive page  [NeueHaas, \"input mono\", sans-serif 16px 600 ls normal rgb(255, 255, 255)]",
+    "A: Will Douglas Heavenarchive page  [NeueHaas, \"input mono\", sans-serif 16px 600 ls normal rgb(255, 255, 255)]",
+    "A: Don’t be fooled by this summer of AI hype  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(255, 255, 255)]",
+    "H3: Don’t be fooled by this summer of AI hype  [NeueHaas, \"input mono\", sans-serif 24px 700 ls normal rgb(255, 255, 255)]",
+    "P: Breathless claims about AGI and new capabilities fall apart pretty quickly under scrutiny.  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(255, 255, 255)]",
+    "LI: Timnit Gebruarchive page  [NeueHaas, \"input mono\", sans-serif 16px 600 ls normal rgb(255, 255, 255)]",
+    "A: Timnit Gebruarchive page  [NeueHaas, \"input mono\", sans-serif 16px 600 ls normal rgb(255, 255, 255)]",
+    "LI: Emily M. Benderarchive page  [NeueHaas, \"input mono\", sans-serif 16px 600 ls normal rgb(255, 255, 255)]",
+    "A: Emily M. Benderarchive page  [NeueHaas, \"input mono\", sans-serif 16px 600 ls normal rgb(255, 255, 255)]",
+    "A: An AI “mind-reading” tool can reconstruct what you’re looking at from a brain scan  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(255, 255, 255)]",
+    "H3: An AI “mind-reading” tool can reconstruct what you’re looking at from a brain scan  [NeueHaas, \"input mono\", sans-serif 24px 700 ls normal rgb(255, 255, 255)]",
+    "P: Scientists hope it could be used to reconstruct a person’s inner thoughts, mental images, or even dreams.  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(255, 255, 255)]",
+    "LI: Jessica Hamzelouarchive page  [NeueHaas, \"input mono\", sans-serif 16px 600 ls normal rgb(255, 255, 255)]",
+    "A: Jessica Hamzelouarchive page  [NeueHaas, \"input mono\", sans-serif 16px 600 ls normal rgb(255, 255, 255)]",
+    "H3: Stay connected  [TRMono, monospace, sans-serif 20px 900 ls 2px rgb(17, 17, 17)]",
+    "H2: Get the latest updates fromMIT Technology Review  [NeueHaas, \"input mono\", sans-serif 32px 700 ls normal rgb(17, 17, 17)]",
+    "P: Discover special offers, top stories, |             upcoming events, and more.  [NeueHaas, \"input mono\", sans-serif 20px 400 ls 0.256px rgb(17, 17, 17)]",
+    "A: Privacy Policy  [NeueHaas, \"input mono\", sans-serif 14px 400 ls 0.496px rgb(17, 17, 17)]",
+    "P: Thank you for submitting your email!  [NeueHaas, \"input mono\", sans-serif 16px 600 ls normal rgb(17, 17, 17)]",
+    "A: Explore more newsletters  [NeueHaas, \"input mono\", sans-serif 18px 600 ls normal rgb(0, 0, 0)]",
+    "P: It looks like something went wrong.  [NeueHaas, \"input mono\", sans-serif 16px 600 ls normal rgb(232, 14, 72)]",
+    "A: customer-service@technologyreview.com  [NeueHaas, \"input mono\", sans-serif 18px 400 ls normal rgb(17, 17, 17)]",
+    "H3: The latest iteration of a legacy  [NeueHaas, \"input mono\", sans-serif 18px 600 ls normal rgb(235, 236, 240)]",
+    "A: READ ABOUT OUR HISTORY  [NeueHaasText, sans-serif 12px 700 ls 0.96px rgb(8, 9, 12)]",
+    "H3: Advertise with MIT Technology Review  [NeueHaas, \"input mono\", sans-serif 18px 600 ls normal rgb(235, 236, 240)]",
+    "A: ADVERTISE WITH US  [NeueHaasText, sans-serif 12px 700 ls 0.96px rgb(8, 9, 12)]",
+    "P: © 2026 MIT Technology Review  [NeueHaasText, sans-serif 14px 400 ls normal rgb(242, 244, 247)]",
+    "LI: AboutAbout usCareersCustom contentAdvertise with usInternational EditionsRepublishingMIT Alumni News  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "H3: About  [NeueHaas, \"input mono\", sans-serif 16px 600 ls normal rgb(17, 17, 17)]",
+    "LI: About us  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: About us  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: Careers  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Careers  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: Custom content  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Custom content  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: Advertise with us  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Advertise with us  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: International Editions  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: International Editions  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: Republishing  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Republishing  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: MIT Alumni News  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: MIT Alumni News  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: HelpHelp & FAQMy subscriptionEditorial guidelinesPrivacy policyTerms of ServiceWrite for usContact us  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "H3: Help  [NeueHaas, \"input mono\", sans-serif 16px 600 ls normal rgb(17, 17, 17)]",
+    "LI: Help & FAQ  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Help & FAQ  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: My subscription  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: My subscription  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: Editorial guidelines  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Editorial guidelines  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: Privacy policy  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Privacy policy  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: Terms of Service  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Terms of Service  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: Write for us  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Write for us  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: Contact us  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Contact us  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: linkedin opens in a new window  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: linkedin opens in a new window  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: instagram opens in a new window  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: instagram opens in a new window  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: reddit opens in a new window  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: reddit opens in a new window  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: facebook opens in a new window  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: facebook opens in a new window  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "LI: rss opens in a new window  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: rss opens in a new window  [NeueHaas, \"input mono\", sans-serif 16px 400 ls normal rgb(17, 17, 17)]"
+  ],
+  "images": [
+    {
+      "src": "https://wp.technologyreview.com/wp-content/uploads/2021/01/Lumber_Yard_red-e1611788537938.jpeg?fit=3840,2560",
+      "alt": "",
+      "w": 1500,
+      "h": 1027
+    },
+    {
+      "src": "https://wp.technologyreview.com/wp-content/uploads/2021/01/Explosion.jpeg?w=2857",
+      "alt": "",
+      "w": 2857,
+      "h": 1999
+    },
+    {
+      "src": "https://wp.technologyreview.com/wp-content/uploads/2021/01/Cast.png?w=2500",
+      "alt": "",
+      "w": 2500,
+      "h": 905
+    },
+    {
+      "src": "https://wp.technologyreview.com/wp-content/uploads/2021/01/Mexican_Tourists.jpeg?w=2857",
+      "alt": "",
+      "w": 2857,
+      "h": 1999
+    },
+    {
+      "src": "https://wp.technologyreview.com/wp-content/uploads/2021/01/Rocket.jpeg?w=2857",
+      "alt": "",
+      "w": 2857,
+      "h": 1999
+    },
+    {
+      "src": "https://cdn.cookielaw.org/logos/static/powered_by_logo.svg",
+      "alt": "Powered by Onetrust",
+      "w": 568,
+      "h": 53
+    },
+    {
+      "src": "https://t.co/1/i/adsct?bci=4&dv=Asia%2FCalcutta%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%261600%261000%262%2624%261600%261000%260%26na%262&eci=3&event=%7B%7D&event_id=5e532de7-d873-4cdb-a391-9c1df1ab585d&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=0536178a-73a2-4790-ab1a-669f701a3251&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.technologyreview.com%2F2021%2F01%2F28%2F1016867%2Flunik-cia-heist-steal-russian-satellite-space-us-ussr%2F&tw_engaged_ms=3&tw_iframe_status=0&tw_pid_src=1&tw_session_count=1&tw_session_id=1793992600708-774758447&tw_session_start=1&twpid=tw.1793992600708.154865195213103088&txn_id=nuwy6&type=javascript&version=2.4.12",
+      "alt": "",
+      "w": 1,
+      "h": 1
+    },
+    {
+      "src": "https://analytics.twitter.com/1/i/adsct?bci=4&dv=Asia%2FCalcutta%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%261600%261000%262%2624%261600%261000%260%26na%262&eci=3&event=%7B%7D&event_id=5e532de7-d873-4cdb-a391-9c1df1ab585d&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=0536178a-73a2-4790-ab1a-669f701a3251&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.technologyreview.com%2F2021%2F01%2F28%2F1016867%2Flunik-cia-heist-steal-russian-satellite-space-us-ussr%2F&tw_engaged_ms=3&tw_iframe_status=0&tw_pid_src=1&tw_session_count=1&tw_session_id=1793992600708-774758447&tw_session_start=1&twpid=tw.1793992600708.154865195213103088&txn_id=nuwy6&type=javascript&version=2.4.12",
+      "alt": "",
+      "w": 1,
+      "h": 1
+    },
+    {
+      "src": "https://bat.bing.com/action/0?ti=16002556&tm=gtm002&Ver=2&mid=3545113e-aad0-4fbd-a62b-470396022e40&bo=1&sid=9960eb20da1611f1b5f2b980d0147539&vid=9961b040da1611f1adff8962b3d9ad7b&vids=1&msclkid=N&pi=0&lg=en-US&sw=1600&sh=1000&sc=24&nwd=1&tl=Lunik%3A%20Inside%20the%20CIA%E2%80%99s%20audacious%20plot%20to%20steal%20a%20Soviet%20satellite%20%7C%20MIT%20Technology%20Review&p=https%3A%2F%2Fwww.technologyreview.com%2F2021%2F01%2F28%2F1016867%2Flunik-cia-heist-steal-russian-satellite-space-us-ussr%2F&r=&lt=2961&evt=pageLoad&sv=2&cdb=AQER&rn=582827",
+      "alt": "",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://t.co/i/adsct?bci=4&cv=98%260&dv=Asia%2FCalcutta%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%261600%261000%262%2624%261600%261000%260%26na%262&eci=2&event_id=783863ef-0a39-44eb-8b95-5bfcce080d68&events=%5B%5B%22auto_long_site_dwell%22%2C%7B%7D%5D%5D&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=0536178a-73a2-4790-ab1a-669f701a3251&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.technologyreview.com%2F2021%2F01%2F28%2F1016867%2Flunik-cia-heist-steal-russian-satellite-space-us-ussr%2F&tw_engaged_ms=10002&tw_iframe_status=0&tw_pid_src=1&tw_session_count=1&tw_session_id=1793992600708-774758447&twpid=tw.1793992600708.154865195213103088&txn_id=nuwy6&type=javascript&version=2.4.12",
+      "alt": "",
+      "w": 1,
+      "h": 1
+    },
+    {
+      "src": "https://analytics.twitter.com/i/adsct?bci=4&cv=98%260&dv=Asia%2FCalcutta%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%261600%261000%262%2624%261600%261000%260%26na%262&eci=2&event_id=783863ef-0a39-44eb-8b95-5bfcce080d68&events=%5B%5B%22auto_long_site_dwell%22%2C%7B%7D%5D%5D&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=0536178a-73a2-4790-ab1a-669f701a3251&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.technologyreview.com%2F2021%2F01%2F28%2F1016867%2Flunik-cia-heist-steal-russian-satellite-space-us-ussr%2F&tw_engaged_ms=10002&tw_iframe_status=0&tw_pid_src=1&tw_session_count=1&tw_session_id=1793992600708-774758447&twpid=tw.1793992600708.154865195213103088&txn_id=nuwy6&type=javascript&version=2.4.12",
+      "alt": "",
+      "w": 1,
+      "h": 1
+    }
+  ],
+  "videos": [],
+  "og_image": "https://wp.technologyreview.com/wp-content/uploads/2021/01/Lumber_Yard_red-e1611788537938.jpeg?resize=1200,600",
+  "favicons": [
+    "https://www.technologyreview.com/static/media/favicon.1cfcdb44759a0f93ddf5feb5405dd4cc.ico"
+  ],
+  "header_svgs": [
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"11\" fill=\"none\" viewBox=\"0 0 12 11\"><line x2=\"12\" y1=\"0.5\" y2=\"0.5\" stroke=\"currentColor\"></line><line x2=\"12\" y1=\"5.5\" y2=\"5.5\" stroke=\"currentColor\"></line><line x2=\"12\" y1=\"10.5\" y2=\"10.5\" stroke=\"currentColor\"></line></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" viewBox=\"0 0 504 47.46\" class=\"navbar__mobileLogoIcon--859cf6420fd12cd58334a411202f8777\"><polygon points=\"87.42 0 87.42 6.51 97.63 6.51 97.63 38.13 104.94 38.13 104.94 6.51 115.14 6.51 115.14 0 87.42 0\"></polygon><path d=\"M114.6 21.49c.64-3.57 2.51-5.87 6.35-5.87 3.31 0 5.6 2.4 5.81 5.87zm-7.25 2.93c0 8.16 5.12 14.5 14.19 14.5 7 0 11.36-4.11 12.37-9h-7.15c-.8 2.13-2.45 3.43-5.33 3.43-4.11 0-6.45-2.61-7-6.83h19.9c0-9.76-4.69-16.48-13.49-16.48-8 0-13.49 6.29-13.49 14.4M135.69 24.48c0 8.16 5.39 14.45 14 14.45 7.31 0 11.84-4.64 12.32-10.45h-7a5.11 5.11 0 0 1-5.49 4.64c-4.43 0-6.51-3.47-6.51-8.64s2.24-8.64 6.61-8.64a5 5 0 0 1 5 4.21h7.09c-1-5.92-5.33-10-12.43-10-8.32 0-13.65 6.29-13.65 14.45M170.7 0h-7.27v38.13h7.25V22.61c0-3.73 2.35-6.29 5.55-6.29 3 0 4.75 2.08 4.75 5v16.8h7.25V20.27c0-6-3.79-10.24-9.44-10.24-3.73 0-6 1.44-7.95 4.32h-.16ZM197.54 10.77h-7.11v27.36h7.25V22.61c0-3.73 2.35-6.29 5.55-6.29 3 0 4.75 2.08 4.75 5v16.8h7.25V20.27c0-6-3.79-10.24-9.44-10.24a8.89 8.89 0 0 0-8.11 4.48h-.16ZM237.81 24.48c0 5.33-2.51 8.91-6.93 8.91s-6.93-3.57-6.93-8.91 2.45-9 6.93-9 6.93 3.63 6.93 9m-21.22 0c0 8.16 5.81 14.45 14.29 14.45s14.29-6.29 14.29-14.45-5.81-14.45-14.29-14.45-14.29 6.32-14.29 14.45\"></path><rect width=\"7.25\" height=\"38.13\" x=\"246.66\"></rect><path d=\"M276.64 24.48c0 5.33-2.51 8.91-6.93 8.91s-6.93-3.57-6.93-8.91 2.45-9 6.93-9 6.93 3.63 6.93 9m-21.22 0c0 8.16 5.81 14.45 14.29 14.45S284 32.64 284 24.48s-5.81-14.45-14.29-14.45-14.28 6.32-14.28 14.45M304.79 23.25c0 4.05-1.87 7.41-6.45 7.41-3.73 0-6.19-2.72-6.19-7.36s2.45-7.47 6.13-7.47c4.37 0 6.51 3.41 6.51 7.41m-19.14 15.69c.75 5.33 5.33 8.53 12.8 8.53 4.05 0 7.57-1 9.87-3.09 2-1.87 3.25-4.48 3.25-8.32V10.77h-7v2.88h-.14a8.82 8.82 0 0 0-7.57-3.63c-6.93 0-11.84 5.23-11.84 13.39s6 13.07 12.05 13.07a8.84 8.84 0 0 0 7.15-3.2h.21v3c0 3.73-2 5.71-6.08 5.71-3.36 0-4.91-1.33-5.49-3h-7.2M315.32 47.09h4.27c5.55 0 7.57-2.19 9.65-8.27l9.55-28.05h-7.36l-3.84 12.32c-.85 2.51-1.6 6-1.6 6h-.11s-.91-3.47-1.76-6l-4.05-12.32h-7.62l7.36 19.46c1.62 4.12 2.12 5.93 2.12 7.42 0 2.24-1.17 3.73-4.05 3.73h-2.56Z\"></path><rect width=\"7.25\" height=\"6.51\" x=\"430.66\" y=\"2.39\"></rect><path d=\"M355.43 6.72h8.91c3.84 0 6 1.71 6 5.17s-2.08 5.23-6.13 5.23h-8.78Zm15.95 31.41h8.53l-9.52-15.71c4.8-1.6 7.54-5.25 7.54-10.58a11.38 11.38 0 0 0-3.41-8.27c-2.24-2.29-5.12-3.57-10-3.57h-16.67v38.13h7.58V23.41h7.1Z\"></path><path d=\"M384.76 21.49c.64-3.57 2.51-5.87 6.35-5.87 3.31 0 5.6 2.4 5.81 5.87zm-7.25 2.93c0 8.16 5.12 14.51 14.18 14.51 7 0 11.36-4.11 12.37-9h-7.15c-.79 2.12-2.48 3.42-5.27 3.42-4.11 0-6.45-2.61-7-6.83h19.84c0-9.76-4.69-16.48-13.49-16.48-8 0-13.49 6.29-13.49 14.4\"></path><polygon points=\"412.53 38.13 419.46 38.13 429.62 10.77 422.36 10.77 416.1 29.33 416 29.33 409.79 10.77 402.43 10.77 412.53 38.13\"></polygon><rect width=\"7.25\" height=\"27.36\" x=\"430.66\" y=\"10.77\"></rect><path d=\"M446.77 21.49c.64-3.57 2.51-5.87 6.35-5.87 3.31 0 5.6 2.4 5.81 5.87zm-7.25 2.93c0 8.16 5.12 14.51 14.19 14.51 7 0 11.36-4.11 12.37-9h-7.15c-.8 2.08-2.45 3.36-5.28 3.36-4.11 0-6.45-2.61-7-6.83h19.84c0-9.76-4.69-16.48-13.49-16.48-8 0-13.49 6.29-13.49 14.4\"></path><polygon points=\"472.7 38.13 479.25 38.13 484.27 20.2 484.38 20.2 489.23 38.13 495.84 38.13 504 10.77 496.96 10.77 492.27 28.24 492.16 28.24 487.31 10.77 481.12 10.77 476.54 28.24 476.43 28.24 471.9 10.77 464.7 10.77 472.7 38.13\"></polygon><rect width=\"7.24\" height=\"38.13\" x=\"43.09\"></rect><polygon points=\"52.15 0 52.15 6.51 62.36 6.51 62.36 38.13 69.67 38.13 69.67 6.51 79.88 6.51 79.88 0 52.15 0\"></polygon><polygon points=\"29.15 0 20.68 27.74 11.89 0 0 0 0 38.13 7.04 38.13 7.04 8 16.78 38.13 24.2 38.13 33.44 8 33.44 38.13 40.64 38.13 40.64 0 29.15 0\"></polygon></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" viewBox=\"0 0 504 47.46\" class=\"navbar__desktopLogoIcon--78f883cd7900252d747ea05f3af5bab9 navbar__desktopLogoIconDefault--eb881cce654958f18f6b23f01565683b\"><polygon points=\"87.42 0 87.42 6.51 97.63 6.51 97.63 38.13 104.94 38.13 104.94 6.51 115.14 6.51 115.14 0 87.42 0\"></polygon><path d=\"M114.6 21.49c.64-3.57 2.51-5.87 6.35-5.87 3.31 0 5.6 2.4 5.81 5.87zm-7.25 2.93c0 8.16 5.12 14.5 14.19 14.5 7 0 11.36-4.11 12.37-9h-7.15c-.8 2.13-2.45 3.43-5.33 3.43-4.11 0-6.45-2.61-7-6.83h19.9c0-9.76-4.69-16.48-13.49-16.48-8 0-13.49 6.29-13.49 14.4M135.69 24.48c0 8.16 5.39 14.45 14 14.45 7.31 0 11.84-4.64 12.32-10.45h-7a5.11 5.11 0 0 1-5.49 4.64c-4.43 0-6.51-3.47-6.51-8.64s2.24-8.64 6.61-8.64a5 5 0 0 1 5 4.21h7.09c-1-5.92-5.33-10-12.43-10-8.32 0-13.65 6.29-13.65 14.45M170.7 0h-7.27v38.13h7.25V22.61c0-3.73 2.35-6.29 5.55-6.29 3 0 4.75 2.08 4.75 5v16.8h7.25V20.27c0-6-3.79-10.24-9.44-10.24-3.73 0-6 1.44-7.95 4.32h-.16ZM197.54 10.77h-7.11v27.36h7.25V22.61c0-3.73 2.35-6.29 5.55-6.29 3 0 4.75 2.08 4.75 5v16.8h7.25V20.27c0-6-3.79-10.24-9.44-10.24a8.89 8.89 0 0 0-8.11 4.48h-.16ZM237.81 24.48c0 5.33-2.51 8.91-6.93 8.91s-6.93-3.57-6.93-8.91 2.45-9 6.93-9 6.93 3.63 6.93 9m-21.22 0c0 8.16 5.81 14.45 14.29 14.45s14.29-6.29 14.29-14.45-5.81-14.45-14.29-14.45-14.29 6.32-14.29 14.45\"></path><rect width=\"7.25\" height=\"38.13\" x=\"246.66\"></rect><path d=\"M276.64 24.48c0 5.33-2.51 8.91-6.93 8.91s-6.93-3.57-6.93-8.91 2.45-9 6.93-9 6.93 3.63 6.93 9m-21.22 0c0 8.16 5.81 14.45 14.29 14.45S284 32.64 284 24.48s-5.81-14.45-14.29-14.45-14.28 6.32-14.28 14.45M304.79 23.25c0 4.05-1.87 7.41-6.45 7.41-3.73 0-6.19-2.72-6.19-7.36s2.45-7.47 6.13-7.47c4.37 0 6.51 3.41 6.51 7.41m-19.14 15.69c.75 5.33 5.33 8.53 12.8 8.53 4.05 0 7.57-1 9.87-3.09 2-1.87 3.25-4.48 3.25-8.32V10.77h-7v2.88h-.14a8.82 8.82 0 0 0-7.57-3.63c-6.93 0-11.84 5.23-11.84 13.39s6 13.07 12.05 13.07a8.84 8.84 0 0 0 7.15-3.2h.21v3c0 3.73-2 5.71-6.08 5.71-3.36 0-4.91-1.33-5.49-3h-7.2M315.32 47.09h4.27c5.55 0 7.57-2.19 9.65-8.27l9.55-28.05h-7.36l-3.84 12.32c-.85 2.51-1.6 6-1.6 6h-.11s-.91-3.47-1.76-6l-4.05-12.32h-7.62l7.36 19.46c1.62 4.12 2.12 5.93 2.12 7.42 0 2.24-1.17 3.73-4.05 3.73h-2.56Z\"></path><rect width=\"7.25\" height=\"6.51\" x=\"430.66\" y=\"2.39\"></rect><path d=\"M355.43 6.72h8.91c3.84 0 6 1.71 6 5.17s-2.08 5.23-6.13 5.23h-8.78Zm15.95 31.41h8.53l-9.52-15.71c4.8-1.6 7.54-5.25 7.54-10.58a11.38 11.38 0 0 0-3.41-8.27c-2.24-2.29-5.12-3.57-10-3.57h-16.67v38.13h7.58V23.41h7.1Z\"></path><path d=\"M384.76 21.49c.64-3.57 2.51-5.87 6.35-5.87 3.31 0 5.6 2.4 5.81 5.87zm-7.25 2.93c0 8.16 5.12 14.51 14.18 14.51 7 0 11.36-4.11 12.37-9h-7.15c-.79 2.12-2.48 3.42-5.27 3.42-4.11 0-6.45-2.61-7-6.83h19.84c0-9.76-4.69-16.48-13.49-16.48-8 0-13.49 6.29-13.49 14.4\"></path><polygon points=\"412.53 38.13 419.46 38.13 429.62 10.77 422.36 10.77 416.1 29.33 416 29.33 409.79 10.77 402.43 10.77 412.53 38.13\"></polygon><rect width=\"7.25\" height=\"27.36\" x=\"430.66\" y=\"10.77\"></rect><path d=\"M446.77 21.49c.64-3.57 2.51-5.87 6.35-5.87 3.31 0 5.6 2.4 5.81 5.87zm-7.25 2.93c0 8.16 5.12 14.51 14.19 14.51 7 0 11.36-4.11 12.37-9h-7.15c-.8 2.08-2.45 3.36-5.28 3.36-4.11 0-6.45-2.61-7-6.83h19.84c0-9.76-4.69-16.48-13.49-16.48-8 0-13.49 6.29-13.49 14.4\"></path><polygon points=\"472.7 38.13 479.25 38.13 484.27 20.2 484.38 20.2 489.23 38.13 495.84 38.13 504 10.77 496.96 10.77 492.27 28.24 492.16 28.24 487.31 10.77 481.12 10.77 476.54 28.24 476.43 28.24 471.9 10.77 464.7 10.77 472.7 38.13\"></polygon><rect width=\"7.24\" height=\"38.13\" x=\"43.09\"></rect><polygon points=\"52.15 0 52.15 6.51 62.36 6.51 62.36 38.13 69.67 38.13 69.67 6.51 79.88 6.51 79.88 0 52.15 0\"></polygon><polygon points=\"29.15 0 20.68 27.74 11.89 0 0 0 0 38.13 7.04 38.13 7.04 8 16.78 38.13 24.2 38.13 33.44 8 33.44 38.13 40.64 38.13 40.64 0 29.15 0\"></polygon></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"11\" fill=\"none\" viewBox=\"0 0 12 11\"><line x2=\"12\" y1=\"0.5\" y2=\"0.5\" stroke=\"currentColor\"></line><line x2=\"12\" y1=\"5.5\" y2=\"5.5\" stroke=\"currentColor\"></line><line x2=\"12\" y1=\"10.5\" y2=\"10.5\" stroke=\"currentColor\"></line></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" viewBox=\"0 0 504 47.46\" class=\"navbar__mobileLogoIcon--859cf6420fd12cd58334a411202f8777\"><polygon points=\"87.42 0 87.42 6.51 97.63 6.51 97.63 38.13 104.94 38.13 104.94 6.51 115.14 6.51 115.14 0 87.42 0\"></polygon><path d=\"M114.6 21.49c.64-3.57 2.51-5.87 6.35-5.87 3.31 0 5.6 2.4 5.81 5.87zm-7.25 2.93c0 8.16 5.12 14.5 14.19 14.5 7 0 11.36-4.11 12.37-9h-7.15c-.8 2.13-2.45 3.43-5.33 3.43-4.11 0-6.45-2.61-7-6.83h19.9c0-9.76-4.69-16.48-13.49-16.48-8 0-13.49 6.29-13.49 14.4M135.69 24.48c0 8.16 5.39 14.45 14 14.45 7.31 0 11.84-4.64 12.32-10.45h-7a5.11 5.11 0 0 1-5.49 4.64c-4.43 0-6.51-3.47-6.51-8.64s2.24-8.64 6.61-8.64a5 5 0 0 1 5 4.21h7.09c-1-5.92-5.33-10-12.43-10-8.32 0-13.65 6.29-13.65 14.45M170.7 0h-7.27v38.13h7.25V22.61c0-3.73 2.35-6.29 5.55-6.29 3 0 4.75 2.08 4.75 5v16.8h7.25V20.27c0-6-3.79-10.24-9.44-10.24-3.73 0-6 1.44-7.95 4.32h-.16ZM197.54 10.77h-7.11v27.36h7.25V22.61c0-3.73 2.35-6.29 5.55-6.29 3 0 4.75 2.08 4.75 5v16.8h7.25V20.27c0-6-3.79-10.24-9.44-10.24a8.89 8.89 0 0 0-8.11 4.48h-.16ZM237.81 24.48c0 5.33-2.51 8.91-6.93 8.91s-6.93-3.57-6.93-8.91 2.45-9 6.93-9 6.93 3.63 6.93 9m-21.22 0c0 8.16 5.81 14.45 14.29 14.45s14.29-6.29 14.29-14.45-5.81-14.45-14.29-14.45-14.29 6.32-14.29 14.45\"></path><rect width=\"7.25\" height=\"38.13\" x=\"246.66\"></rect><path d=\"M276.64 24.48c0 5.33-2.51 8.91-6.93 8.91s-6.93-3.57-6.93-8.91 2.45-9 6.93-9 6.93 3.63 6.93 9m-21.22 0c0 8.16 5.81 14.45 14.29 14.45S284 32.64 284 24.48s-5.81-14.45-14.29-14.45-14.28 6.32-14.28 14.45M304.79 23.25c0 4.05-1.87 7.41-6.45 7.41-3.73 0-6.19-2.72-6.19-7.36s2.45-7.47 6.13-7.47c4.37 0 6.51 3.41 6.51 7.41m-19.14 15.69c.75 5.33 5.33 8.53 12.8 8.53 4.05 0 7.57-1 9.87-3.09 2-1.87 3.25-4.48 3.25-8.32V10.77h-7v2.88h-.14a8.82 8.82 0 0 0-7.57-3.63c-6.93 0-11.84 5.23-11.84 13.39s6 13.07 12.05 13.07a8.84 8.84 0 0 0 7.15-3.2h.21v3c0 3.73-2 5.71-6.08 5.71-3.36 0-4.91-1.33-5.49-3h-7.2M315.32 47.09h4.27c5.55 0 7.57-2.19 9.65-8.27l9.55-28.05h-7.36l-3.84 12.32c-.85 2.51-1.6 6-1.6 6h-.11s-.91-3.47-1.76-6l-4.05-12.32h-7.62l7.36 19.46c1.62 4.12 2.12 5.93 2.12 7.42 0 2.24-1.17 3.73-4.05 3.73h-2.56Z\"></path><rect width=\"7.25\" height=\"6.51\" x=\"430.66\" y=\"2.39\"></rect><path d=\"M355.43 6.72h8.91c3.84 0 6 1.71 6 5.17s-2.08 5.23-6.13 5.23h-8.78Zm15.95 31.41h8.53l-9.52-15.71c4.8-1.6 7.54-5.25 7.54-10.58a11.38 11.38 0 0 0-3.41-8.27c-2.24-2.29-5.12-3.57-10-3.57h-16.67v38.13h7.58V23.41h7.1Z\"></path><path d=\"M384.76 21.49c.64-3.57 2.51-5.87 6.35-5.87 3.31 0 5.6 2.4 5.81 5.87zm-7.25 2.93c0 8.16 5.12 14.51 14.18 14.51 7 0 11.36-4.11 12.37-9h-7.15c-.79 2.12-2.48 3.42-5.27 3.42-4.11 0-6.45-2.61-7-6.83h19.84c0-9.76-4.69-16.48-13.49-16.48-8 0-13.49 6.29-13.49 14.4\"></path><polygon points=\"412.53 38.13 419.46 38.13 429.62 10.77 422.36 10.77 416.1 29.33 416 29.33 409.79 10.77 402.43 10.77 412.53 38.13\"></polygon><rect width=\"7.25\" height=\"27.36\" x=\"430.66\" y=\"10.77\"></rect><path d=\"M446.77 21.49c.64-3.57 2.51-5.87 6.35-5.87 3.31 0 5.6 2.4 5.81 5.87zm-7.25 2.93c0 8.16 5.12 14.51 14.19 14.51 7 0 11.36-4.11 12.37-9h-7.15c-.8 2.08-2.45 3.36-5.28 3.36-4.11 0-6.45-2.61-7-6.83h19.84c0-9.76-4.69-16.48-13.49-16.48-8 0-13.49 6.29-13.49 14.4\"></path><polygon points=\"472.7 38.13 479.25 38.13 484.27 20.2 484.38 20.2 489.23 38.13 495.84 38.13 504 10.77 496.96 10.77 492.27 28.24 492.16 28.24 487.31 10.77 481.12 10.77 476.54 28.24 476.43 28.24 471.9 10.77 464.7 10.77 472.7 38.13\"></polygon><rect width=\"7.24\" height=\"38.13\" x=\"43.09\"></rect><polygon points=\"52.15 0 52.15 6.51 62.36 6.51 62.36 38.13 69.67 38.13 69.67 6.51 79.88 6.51 79.88 0 52.15 0\"></polygon><polygon points=\"29.15 0 20.68 27.74 11.89 0 0 0 0 38.13 7.04 38.13 7.04 8 16.78 38.13 24.2 38.13 33.44 8 33.44 38.13 40.64 38.13 40.64 0 29.15 0\"></polygon></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" viewBox=\"0 0 504 47.46\" class=\"navbar__desktopLogoIcon--78f883cd7900252d747ea05f3af5bab9 navbar__desktopLogoIconHeadroom--2b8ce1fa94f5cd1c1427742ac2e1540a\"><polygon points=\"87.42 0 87.42 6.51 97.63 6.51 97.63 38.13 104.94 38.13 104.94 6.51 115.14 6.51 115.14 0 87.42 0\"></polygon><path d=\"M114.6 21.49c.64-3.57 2.51-5.87 6.35-5.87 3.31 0 5.6 2.4 5.81 5.87zm-7.25 2.93c0 8.16 5.12 14.5 14.19 14.5 7 0 11.36-4.11 12.37-9h-7.15c-.8 2.13-2.45 3.43-5.33 3.43-4.11 0-6.45-2.61-7-6.83h19.9c0-9.76-4.69-16.48-13.49-16.48-8 0-13.49 6.29-13.49 14.4M135.69 24.48c0 8.16 5.39 14.45 14 14.45 7.31 0 11.84-4.64 12.32-10.45h-7a5.11 5.11 0 0 1-5.49 4.64c-4.43 0-6.51-3.47-6.51-8.64s2.24-8.64 6.61-8.64a5 5 0 0 1 5 4.21h7.09c-1-5.92-5.33-10-12.43-10-8.32 0-13.65 6.29-13.65 14.45M170.7 0h-7.27v38.13h7.25V22.61c0-3.73 2.35-6.29 5.55-6.29 3 0 4.75 2.08 4.75 5v16.8h7.25V20.27c0-6-3.79-10.24-9.44-10.24-3.73 0-6 1.44-7.95 4.32h-.16ZM197.54 10.77h-7.11v27.36h7.25V22.61c0-3.73 2.35-6.29 5.55-6.29 3 0 4.75 2.08 4.75 5v16.8h7.25V20.27c0-6-3.79-10.24-9.44-10.24a8.89 8.89 0 0 0-8.11 4.48h-.16ZM237.81 24.48c0 5.33-2.51 8.91-6.93 8.91s-6.93-3.57-6.93-8.91 2.45-9 6.93-9 6.93 3.63 6.93 9m-21.22 0c0 8.16 5.81 14.45 14.29 14.45s14.29-6.29 14.29-14.45-5.81-14.45-14.29-14.45-14.29 6.32-14.29 14.45\"></path><rect width=\"7.25\" height=\"38.13\" x=\"246.66\"></rect><path d=\"M276.64 24.48c0 5.33-2.51 8.91-6.93 8.91s-6.93-3.57-6.93-8.91 2.45-9 6.93-9 6.93 3.63 6.93 9m-21.22 0c0 8.16 5.81 14.45 14.29 14.45S284 32.64 284 24.48s-5.81-14.45-14.29-14.45-14.28 6.32-14.28 14.45M304.79 23.25c0 4.05-1.87 7.41-6.45 7.41-3.73 0-6.19-2.72-6.19-7.36s2.45-7.47 6.13-7.47c4.37 0 6.51 3.41 6.51 7.41m-19.14 15.69c.75 5.33 5.33 8.53 12.8 8.53 4.05 0 7.57-1 9.87-3.09 2-1.87 3.25-4.48 3.25-8.32V10.77h-7v2.88h-.14a8.82 8.82 0 0 0-7.57-3.63c-6.93 0-11.84 5.23-11.84 13.39s6 13.07 12.05 13.07a8.84 8.84 0 0 0 7.15-3.2h.21v3c0 3.73-2 5.71-6.08 5.71-3.36 0-4.91-1.33-5.49-3h-7.2M315.32 47.09h4.27c5.55 0 7.57-2.19 9.65-8.27l9.55-28.05h-7.36l-3.84 12.32c-.85 2.51-1.6 6-1.6 6h-.11s-.91-3.47-1.76-6l-4.05-12.32h-7.62l7.36 19.46c1.62 4.12 2.12 5.93 2.12 7.42 0 2.24-1.17 3.73-4.05 3.73h-2.56Z\"></path><rect width=\"7.25\" height=\"6.51\" x=\"430.66\" y=\"2.39\"></rect><path d=\"M355.43 6.72h8.91c3.84 0 6 1.71 6 5.17s-2.08 5.23-6.13 5.23h-8.78Zm15.95 31.41h8.53l-9.52-15.71c4.8-1.6 7.54-5.25 7.54-10.58a11.38 11.38 0 0 0-3.41-8.27c-2.24-2.29-5.12-3.57-10-3.57h-16.67v38.13h7.58V23.41h7.1Z\"></path><path d=\"M384.76 21.49c.64-3.57 2.51-5.87 6.35-5.87 3.31 0 5.6 2.4 5.81 5.87zm-7.25 2.93c0 8.16 5.12 14.51 14.18 14.51 7 0 11.36-4.11 12.37-9h-7.15c-.79 2.12-2.48 3.42-5.27 3.42-4.11 0-6.45-2.61-7-6.83h19.84c0-9.76-4.69-16.48-13.49-16.48-8 0-13.49 6.29-13.49 14.4\"></path><polygon points=\"412.53 38.13 419.46 38.13 429.62 10.77 422.36 10.77 416.1 29.33 416 29.33 409.79 10.77 402.43 10.77 412.53 38.13\"></polygon><rect width=\"7.25\" height=\"27.36\" x=\"430.66\" y=\"10.77\"></rect><path d=\"M446.77 21.49c.64-3.57 2.51-5.87 6.35-5.87 3.31 0 5.6 2.4 5.81 5.87zm-7.25 2.93c0 8.16 5.12 14.51 14.19 14.51 7 0 11.36-4.11 12.37-9h-7.15c-.8 2.08-2.45 3.36-5.28 3.36-4.11 0-6.45-2.61-7-6.83h19.84c0-9.76-4.69-16.48-13.49-16.48-8 0-13.49 6.29-13.49 14.4\"></path><polygon points=\"472.7 38.13 479.25 38.13 484.27 20.2 484.38 20.2 489.23 38.13 495.84 38.13 504 10.77 496.96 10.77 492.27 28.24 492.16 28.24 487.31 10.77 481.12 10.77 476.54 28.24 476.43 28.24 471.9 10.77 464.7 10.77 472.7 38.13\"></polygon><rect width=\"7.24\" height=\"38.13\" x=\"43.09\"></rect><polygon points=\"52.15 0 52.15 6.51 62.36 6.51 62.36 38.13 69.67 38.13 69.67 6.51 79.88 6.51 79.88 0 52.15 0\"></polygon><polygon points=\"29.15 0 20.68 27.74 11.89 0 0 0 0 38.13 7.04 38.13 7.04 8 16.78 38.13 24.2 38.13 33.44 8 33.44 38.13 40.64 38.13 40.64 0 29.15 0\"></polygon></svg>"
+  ],
+  "network_media": [
+    "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-55rg.woff",
+    "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-55Rg.woff2",
+    "https://www.technologyreview.com/cdn/_/fonts/TRMono/TRMono-Black.woff",
+    "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-65Md.woff2",
+    "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-65md.woff",
+    "https://www.technologyreview.com/cdn/_/fonts/Independent/independent-regular.woff",
+    "https://www.technologyreview.com/cdn/_/fonts/NeueHaas/nhaasgroteskdsstd-75bd.woff",
+    "https://www.technologyreview.com/cdn/_/fonts/Independent/independent-italic.woff",
+    "https://www.technologyreview.com/cdn/_/fonts/TRMono/TRMono-Regular.otf",
+    "https://www.technologyreview.com/cdn/_/fonts/NeueHaasText/NHaasGroteskTXStd-75Bd.woff2",
+    "https://wp.technologyreview.com/wp-content/uploads/2021/01/Lumber_Yard_red-e1611788537938.jpeg?fit=3840,2560",
+    "https://wp.technologyreview.com/wp-content/uploads/2021/01/Mexican_Tourists.jpeg?w=2857",
+    "https://wp.technologyreview.com/wp-content/uploads/2021/01/Explosion.jpeg?w=2857",
+    "https://wp.technologyreview.com/wp-content/uploads/2021/01/Rocket.jpeg?w=2857",
+    "https://cdn.cookielaw.org/logos/static/powered_by_logo.svg",
+    "https://dpm.demdex.net/demconf.jpg?et:ibs%7cdata:dpid=22052&dpuuid=3521055873895497785&redir=",
+    "https://wp.technologyreview.com/wp-content/uploads/2021/01/Cast.png?w=2500",
+    "https://www.technologyreview.com/cdn/_/fonts/MillerText/font-bureau-millertext-roman.woff",
+    "https://vx-piano.technologyreview.com/widget/dist/template/css/img/fail-icon.png",
+    "https://s0.2mdn.net/sadbundle/7118164613034679303/v1_1_AgenticAI_September_MIT_RunofSite_728x90_atlas_1.png",
+    "https://vx-piano.technologyreview.com/ml/cropped_WUOCNSUgpu_1_r5pgaj.png"
+  ],
+  "captured_at": "2026-11-06T19:16:53.645Z",
+  "provenance_note": "Standardized S1E site manifest — per-figure plates still require individual provenance in scout-manifest.json (C8a)."
+}

@@ -1,0 +1,30 @@
+{
+  "pdf": "videos/lunik-heist-1959/.tmp/lunik.pdf",
+  "page": 7,
+  "dpi": 150,
+  "width": 1275,
+  "height": 1650,
+  "boxes": [
+    {
+      "phrase": "found the truck with the Lunik",
+      "x": 312,
+      "y": 481,
+      "w": 478,
+      "h": 37
+    },
+    {
+      "phrase": "no indication the Soviets ever discovered",
+      "x": 914,
+      "y": 556,
+      "w": 265,
+      "h": 37
+    },
+    {
+      "phrase": "no indication the Soviets ever discovered",
+      "x": 51,
+      "y": 593,
+      "w": 368,
+      "h": 37
+    }
+  ]
+}

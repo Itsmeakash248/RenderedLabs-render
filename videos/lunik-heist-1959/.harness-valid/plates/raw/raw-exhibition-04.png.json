@@ -1,0 +1,23 @@
+{
+  "url": "https://www.space.com/how-the-cia-kidnapped-a-soviet-moon-probe-during-the-space-race",
+  "captured_at": "2026-11-06T19:51:52.130Z",
+  "width": 1400,
+  "height": 2000,
+  "method": "scrollIntoView + viewport-relative getClientRects",
+  "boxes": [
+    {
+      "phrase": "fully-operational system comparable to the Lunik 2",
+      "x": 636,
+      "y": 1021,
+      "w": 142,
+      "h": 23
+    },
+    {
+      "phrase": "fully-operational system comparable to the Lunik 2",
+      "x": 239,
+      "y": 1048,
+      "w": 283,
+      "h": 23
+    }
+  ]
+}

@@ -1,0 +1,10467 @@
+[
+ {
+  "word": "The",
+  "start": 0.0,
+  "end": 0.28,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "crate",
+  "start": 0.28,
+  "end": 0.5,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 0.5,
+  "end": 0.7,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "colossal:",
+  "start": 0.7,
+  "end": 1.14,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "twenty",
+  "start": 1.44,
+  "end": 1.72,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "feet",
+  "start": 1.72,
+  "end": 1.9,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "long,",
+  "start": 1.9,
+  "end": 2.26,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "eleven",
+  "start": 2.5,
+  "end": 2.78,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "feet",
+  "start": 2.78,
+  "end": 3.08,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "wide,",
+  "start": 3.08,
+  "end": 3.48,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "fourteen",
+  "start": 3.78,
+  "end": 4.12,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "feet",
+  "start": 4.12,
+  "end": 4.42,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "high.",
+  "start": 4.42,
+  "end": 4.76,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "It",
+  "start": 5.56,
+  "end": 5.78,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "sits",
+  "start": 5.78,
+  "end": 5.96,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 5.96,
+  "end": 6.16,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 6.16,
+  "end": 6.26,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "rented",
+  "start": 6.26,
+  "end": 6.5,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "salvage",
+  "start": 6.5,
+  "end": 6.86,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "yard",
+  "start": 6.86,
+  "end": 7.2,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 7.2,
+  "end": 7.38,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "Mexico",
+  "start": 7.38,
+  "end": 7.64,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "City",
+  "start": 7.64,
+  "end": 8.02,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "with",
+  "start": 8.02,
+  "end": 8.3,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "two",
+  "start": 8.3,
+  "end": 8.52,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "men",
+  "start": 8.52,
+  "end": 8.72,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "on",
+  "start": 8.72,
+  "end": 8.9,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "its",
+  "start": 8.9,
+  "end": 9.06,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "roof.",
+  "start": 9.06,
+  "end": 9.3,
+  "line": 1,
+  "probability": 1.0
+ },
+ {
+  "word": "It",
+  "start": 9.78,
+  "end": 9.9,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 9.9,
+  "end": 10.06,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "seven",
+  "start": 10.06,
+  "end": 10.58,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "thirty",
+  "start": 10.58,
+  "end": 10.66,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 10.66,
+  "end": 10.8,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 10.8,
+  "end": 10.94,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "evening",
+  "start": 10.94,
+  "end": 11.16,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "on",
+  "start": 11.16,
+  "end": 11.38,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 11.38,
+  "end": 11.52,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "hot,",
+  "start": 11.52,
+  "end": 11.78,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "humid",
+  "start": 12.08,
+  "end": 12.22,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "night",
+  "start": 12.22,
+  "end": 12.56,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 12.56,
+  "end": 12.76,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "late",
+  "start": 12.76,
+  "end": 12.94,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "nineteen",
+  "start": 12.94,
+  "end": 13.68,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "fifty-nine.",
+  "start": 13.68,
+  "end": 14.1,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 14.84,
+  "end": 15.04,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "men",
+  "start": 15.04,
+  "end": 15.22,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "are",
+  "start": 15.22,
+  "end": 15.4,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "prying",
+  "start": 15.4,
+  "end": 15.66,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "up",
+  "start": 15.66,
+  "end": 15.86,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "two-inch",
+  "start": 15.86,
+  "end": 16.24,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "tongue-and-groove",
+  "start": 16.24,
+  "end": 16.92,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "planks",
+  "start": 16.92,
+  "end": 17.28,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "fixed",
+  "start": 17.28,
+  "end": 17.56,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "with",
+  "start": 17.56,
+  "end": 17.78,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "five-inch",
+  "start": 17.78,
+  "end": 18.2,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "spikes,",
+  "start": 18.2,
+  "end": 18.54,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 18.84,
+  "end": 19.08,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "every",
+  "start": 19.08,
+  "end": 19.34,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "sound",
+  "start": 19.34,
+  "end": 19.56,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "they",
+  "start": 19.56,
+  "end": 19.74,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "make",
+  "start": 19.74,
+  "end": 19.92,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 19.92,
+  "end": 20.08,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 20.08,
+  "end": 20.22,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "sound",
+  "start": 20.22,
+  "end": 20.42,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "they",
+  "start": 20.42,
+  "end": 20.58,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "cannot",
+  "start": 20.58,
+  "end": 20.82,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "take",
+  "start": 20.82,
+  "end": 21.08,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "back.",
+  "start": 21.08,
+  "end": 21.38,
+  "line": 2,
+  "probability": 1.0
+ },
+ {
+  "word": "Inside",
+  "start": 21.88,
+  "end": 22.22,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 22.22,
+  "end": 22.46,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 22.46,
+  "end": 22.62,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviet",
+  "start": 22.62,
+  "end": 22.92,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "moon",
+  "start": 22.92,
+  "end": 23.16,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "rocket.",
+  "start": 23.16,
+  "end": 23.7,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "Not",
+  "start": 24.48,
+  "end": 24.68,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 24.68,
+  "end": 24.82,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "museum",
+  "start": 24.82,
+  "end": 25.12,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "model.",
+  "start": 25.12,
+  "end": 25.5,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "A",
+  "start": 26.06,
+  "end": 26.54,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "Luna",
+  "start": 26.54,
+  "end": 26.74,
+  "line": 3,
+  "probability": 0.35
+ },
+ {
+  "word": "upper",
+  "start": 26.74,
+  "end": 27.08,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "stage,",
+  "start": 27.08,
+  "end": 27.48,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "freshly",
+  "start": 27.82,
+  "end": 28.04,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "painted,",
+  "start": 28.04,
+  "end": 28.46,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "with",
+  "start": 28.76,
+  "end": 28.94,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "three",
+  "start": 28.94,
+  "end": 29.18,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "inspection",
+  "start": 29.18,
+  "end": 29.62,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "windows",
+  "start": 29.62,
+  "end": 30.06,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "cut",
+  "start": 30.06,
+  "end": 30.32,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "into",
+  "start": 30.32,
+  "end": 30.56,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "its",
+  "start": 30.56,
+  "end": 30.74,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "nose.",
+  "start": 30.74,
+  "end": 31.25,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 32.06,
+  "end": 32.16,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "people",
+  "start": 32.16,
+  "end": 32.42,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "opening",
+  "start": 32.42,
+  "end": 32.76,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "it",
+  "start": 32.76,
+  "end": 32.94,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "are",
+  "start": 32.94,
+  "end": 33.06,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "not",
+  "start": 33.06,
+  "end": 33.26,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviet",
+  "start": 33.26,
+  "end": 33.64,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "engineers.",
+  "start": 33.64,
+  "end": 34.38,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "They",
+  "start": 35.1,
+  "end": 35.34,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "work",
+  "start": 35.34,
+  "end": 35.52,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "for",
+  "start": 35.52,
+  "end": 35.7,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 35.7,
+  "end": 35.82,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "Central",
+  "start": 35.82,
+  "end": 36.08,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "Intelligence",
+  "start": 36.08,
+  "end": 36.62,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "Agency.",
+  "start": 36.62,
+  "end": 37.08,
+  "line": 3,
+  "probability": 1.0
+ },
+ {
+  "word": "Before",
+  "start": 37.64,
+  "end": 37.88,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "you",
+  "start": 37.88,
+  "end": 38.08,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "picture",
+  "start": 38.08,
+  "end": 38.32,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 38.32,
+  "end": 38.54,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "heist",
+  "start": 38.54,
+  "end": 38.76,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "movie,",
+  "start": 38.76,
+  "end": 39.08,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "wipe",
+  "start": 39.38,
+  "end": 39.52,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 39.52,
+  "end": 39.68,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "picture.",
+  "start": 39.68,
+  "end": 40.0,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 40.8,
+  "end": 41.06,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "most",
+  "start": 41.06,
+  "end": 41.24,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "important",
+  "start": 41.24,
+  "end": 41.64,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "thing",
+  "start": 41.64,
+  "end": 41.86,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "about",
+  "start": 41.86,
+  "end": 42.1,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "this",
+  "start": 42.1,
+  "end": 42.32,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "night",
+  "start": 42.32,
+  "end": 42.54,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 42.54,
+  "end": 42.7,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "not",
+  "start": 42.7,
+  "end": 42.9,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "what",
+  "start": 42.9,
+  "end": 43.08,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 43.08,
+  "end": 43.24,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "CIA",
+  "start": 43.24,
+  "end": 43.58,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "stole.",
+  "start": 43.58,
+  "end": 44.24,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "It",
+  "start": 45.0,
+  "end": 45.16,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 45.16,
+  "end": 45.28,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "what",
+  "start": 45.28,
+  "end": 45.44,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "they",
+  "start": 45.44,
+  "end": 45.6,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "gave",
+  "start": 45.6,
+  "end": 45.78,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "back.",
+  "start": 45.78,
+  "end": 46.12,
+  "line": 4,
+  "probability": 1.0
+ },
+ {
+  "word": "This",
+  "start": 46.6,
+  "end": 46.8,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 46.8,
+  "end": 46.94,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 46.94,
+  "end": 47.1,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "story",
+  "start": 47.1,
+  "end": 47.34,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "of",
+  "start": 47.34,
+  "end": 47.54,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 47.54,
+  "end": 47.66,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "Lunik",
+  "start": 47.66,
+  "end": 47.94,
+  "line": 5,
+  "probability": 0.35
+ },
+ {
+  "word": "borrowing,",
+  "start": 47.94,
+  "end": 48.3,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "how",
+  "start": 48.6,
+  "end": 48.78,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 48.78,
+  "end": 48.94,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "four-man",
+  "start": 48.94,
+  "end": 49.26,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "team",
+  "start": 49.26,
+  "end": 49.54,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "opened",
+  "start": 49.54,
+  "end": 49.84,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 49.84,
+  "end": 50.02,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "sealed",
+  "start": 50.02,
+  "end": 50.26,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviet",
+  "start": 50.26,
+  "end": 50.72,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "crate",
+  "start": 50.72,
+  "end": 51.0,
+  "line": 5,
+  "probability": 0.35
+ },
+ {
+  "word": "and",
+  "start": 51.0,
+  "end": 51.18,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "closed",
+  "start": 51.18,
+  "end": 51.46,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "it",
+  "start": 51.46,
+  "end": 51.62,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "again",
+  "start": 51.62,
+  "end": 51.88,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "before",
+  "start": 51.88,
+  "end": 52.2,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "sunrise,",
+  "start": 52.2,
+  "end": 52.66,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 53.02,
+  "end": 53.24,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "why",
+  "start": 53.24,
+  "end": 53.38,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 53.38,
+  "end": 53.52,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "real",
+  "start": 53.52,
+  "end": 53.72,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "intelligence",
+  "start": 53.72,
+  "end": 54.2,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 54.2,
+  "end": 54.42,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "never",
+  "start": 54.42,
+  "end": 54.66,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 54.66,
+  "end": 54.84,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "rocket.",
+  "start": 54.84,
+  "end": 55.08,
+  "line": 5,
+  "probability": 1.0
+ },
+ {
+  "word": "Follow",
+  "start": 55.64,
+  "end": 55.84,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 55.84,
+  "end": 56.04,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "clock",
+  "start": 56.04,
+  "end": 56.32,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 56.32,
+  "end": 56.48,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 56.48,
+  "end": 56.58,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "paper",
+  "start": 56.58,
+  "end": 56.78,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "trail.",
+  "start": 56.78,
+  "end": 57.18,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 57.98,
+  "end": 58.22,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "primary",
+  "start": 58.22,
+  "end": 58.54,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "account",
+  "start": 58.54,
+  "end": 58.96,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 58.96,
+  "end": 59.16,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "written",
+  "start": 59.16,
+  "end": 59.4,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "by",
+  "start": 59.4,
+  "end": 59.64,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "CIA",
+  "start": 59.64,
+  "end": 60.06,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "officer",
+  "start": 60.06,
+  "end": 60.56,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "Sydney",
+  "start": 60.56,
+  "end": 60.96,
+  "line": 6,
+  "probability": 0.35
+ },
+ {
+  "word": "Finer",
+  "start": 60.96,
+  "end": 61.36,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 61.36,
+  "end": 61.56,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "published",
+  "start": 61.56,
+  "end": 61.84,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 61.84,
+  "end": 62.04,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "Studies",
+  "start": 62.04,
+  "end": 62.3,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 62.3,
+  "end": 62.52,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "Intelligence",
+  "start": 62.52,
+  "end": 62.96,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 62.96,
+  "end": 63.24,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "nineteen",
+  "start": 63.24,
+  "end": 63.98,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "sixty-seven.",
+  "start": 63.98,
+  "end": 64.27,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "It",
+  "start": 64.98,
+  "end": 65.2,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 65.2,
+  "end": 65.36,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "released,",
+  "start": 65.36,
+  "end": 65.78,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "sanitized,",
+  "start": 66.06,
+  "end": 66.68,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "on",
+  "start": 66.96,
+  "end": 67.14,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "September",
+  "start": 67.14,
+  "end": 67.5,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "eighteenth,",
+  "start": 67.5,
+  "end": 68.04,
+  "line": 6,
+  "probability": 0.35
+ },
+ {
+  "word": "nineteen",
+  "start": 68.42,
+  "end": 69.12,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "ninety-five.",
+  "start": 69.12,
+  "end": 69.2,
+  "line": 6,
+  "probability": 1.0
+ },
+ {
+  "word": "On",
+  "start": 69.78,
+  "end": 69.92,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 69.92,
+  "end": 70.02,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "fourth",
+  "start": 70.02,
+  "end": 70.32,
+  "line": 7,
+  "probability": 0.35
+ },
+ {
+  "word": "of",
+  "start": 70.32,
+  "end": 70.44,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "October,",
+  "start": 70.44,
+  "end": 70.86,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "nineteen",
+  "start": 71.1,
+  "end": 71.86,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "fifty-nine,",
+  "start": 71.86,
+  "end": 71.94,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 72.36,
+  "end": 72.52,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviet",
+  "start": 72.52,
+  "end": 72.82,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "Union",
+  "start": 72.82,
+  "end": 73.14,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "launched",
+  "start": 73.14,
+  "end": 73.58,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "Luna",
+  "start": 73.58,
+  "end": 73.88,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "Three.",
+  "start": 73.88,
+  "end": 74.2,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "Three",
+  "start": 75.1,
+  "end": 75.36,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "days",
+  "start": 75.36,
+  "end": 75.58,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "later",
+  "start": 75.58,
+  "end": 75.94,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "it",
+  "start": 75.94,
+  "end": 76.08,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "photographed",
+  "start": 76.08,
+  "end": 76.5,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 76.5,
+  "end": 76.78,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "far",
+  "start": 76.78,
+  "end": 76.98,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "side",
+  "start": 76.98,
+  "end": 77.24,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "of",
+  "start": 77.24,
+  "end": 77.38,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 77.38,
+  "end": 77.48,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "Moon.",
+  "start": 77.48,
+  "end": 77.68,
+  "line": 7,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 77.68,
+  "end": 78.26,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "exhibition",
+  "start": 78.26,
+  "end": 78.62,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "opened",
+  "start": 78.62,
+  "end": 79.12,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "on",
+  "start": 79.12,
+  "end": 79.36,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 79.36,
+  "end": 79.42,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "twenty-first",
+  "start": 79.42,
+  "end": 79.96,
+  "line": 8,
+  "probability": 0.35
+ },
+ {
+  "word": "of",
+  "start": 79.96,
+  "end": 80.1,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "November,",
+  "start": 80.1,
+  "end": 80.42,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "nineteen",
+  "start": 80.68,
+  "end": 81.42,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "fifty-nine,",
+  "start": 81.42,
+  "end": 81.5,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "at",
+  "start": 81.94,
+  "end": 82.06,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 82.06,
+  "end": 82.22,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "Auditorio",
+  "start": 82.22,
+  "end": 82.8,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "Nacional",
+  "start": 82.8,
+  "end": 83.24,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 83.24,
+  "end": 83.6,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "Chapultepec",
+  "start": 83.6,
+  "end": 84.12,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "Park.",
+  "start": 84.12,
+  "end": 84.61,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 85.46,
+  "end": 85.54,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviet",
+  "start": 85.54,
+  "end": 85.92,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "report",
+  "start": 85.92,
+  "end": 86.28,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "says",
+  "start": 86.28,
+  "end": 86.54,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "it",
+  "start": 86.54,
+  "end": 86.7,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "drew",
+  "start": 86.7,
+  "end": 86.88,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "up",
+  "start": 86.88,
+  "end": 87.04,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "to",
+  "start": 87.04,
+  "end": 87.22,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "one",
+  "start": 87.22,
+  "end": 87.4,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "million",
+  "start": 87.4,
+  "end": 87.66,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "visitors",
+  "start": 87.66,
+  "end": 88.1,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "over",
+  "start": 88.1,
+  "end": 88.4,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "twenty-five",
+  "start": 88.4,
+  "end": 88.88,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "days,",
+  "start": 88.88,
+  "end": 89.22,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 89.6,
+  "end": 89.8,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "closed",
+  "start": 89.8,
+  "end": 90.08,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "on",
+  "start": 90.08,
+  "end": 90.34,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 90.34,
+  "end": 90.42,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "fifteenth",
+  "start": 90.42,
+  "end": 90.94,
+  "line": 8,
+  "probability": 0.35
+ },
+ {
+  "word": "of",
+  "start": 90.94,
+  "end": 91.0,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "December.",
+  "start": 91.0,
+  "end": 91.36,
+  "line": 8,
+  "probability": 1.0
+ },
+ {
+  "word": "Among",
+  "start": 91.8,
+  "end": 92.02,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 92.02,
+  "end": 92.2,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "displays",
+  "start": 92.2,
+  "end": 92.54,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "stood",
+  "start": 92.54,
+  "end": 92.84,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 92.84,
+  "end": 92.96,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "last-stage",
+  "start": 92.96,
+  "end": 93.5,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "Luna",
+  "start": 93.5,
+  "end": 93.78,
+  "line": 9,
+  "probability": 0.35
+ },
+ {
+  "word": "rocket",
+  "start": 93.78,
+  "end": 94.12,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 94.12,
+  "end": 94.3,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 94.3,
+  "end": 94.48,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "cabin-like",
+  "start": 94.48,
+  "end": 94.88,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "crate,",
+  "start": 94.88,
+  "end": 95.18,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "with",
+  "start": 95.46,
+  "end": 95.64,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "three",
+  "start": 95.64,
+  "end": 95.9,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "inspection",
+  "start": 95.9,
+  "end": 96.34,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "windows",
+  "start": 96.34,
+  "end": 96.72,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 96.72,
+  "end": 96.98,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "its",
+  "start": 96.98,
+  "end": 97.12,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "nose.",
+  "start": 97.12,
+  "end": 97.38,
+  "line": 9,
+  "probability": 1.0
+ },
+ {
+  "word": "Here",
+  "start": 97.96,
+  "end": 98.12,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 98.12,
+  "end": 98.26,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "your",
+  "start": 98.26,
+  "end": 98.4,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "first",
+  "start": 98.4,
+  "end": 98.66,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "question.",
+  "start": 98.66,
+  "end": 99.2,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "If",
+  "start": 100.0,
+  "end": 100.12,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "you",
+  "start": 100.12,
+  "end": 100.26,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "are",
+  "start": 100.26,
+  "end": 100.42,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviet,",
+  "start": 100.42,
+  "end": 100.8,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "why",
+  "start": 101.04,
+  "end": 101.24,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "show",
+  "start": 101.24,
+  "end": 101.46,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 101.46,
+  "end": 101.62,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "West",
+  "start": 101.62,
+  "end": 101.8,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "your",
+  "start": 101.8,
+  "end": 101.96,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "rocket",
+  "start": 101.96,
+  "end": 102.2,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "at",
+  "start": 102.2,
+  "end": 102.36,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "all?",
+  "start": 102.36,
+  "end": 102.6,
+  "line": 10,
+  "probability": 1.0
+ },
+ {
+  "word": "Because",
+  "start": 102.98,
+  "end": 103.3,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "propaganda",
+  "start": 103.3,
+  "end": 103.76,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "needs",
+  "start": 103.76,
+  "end": 104.12,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 104.12,
+  "end": 104.3,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "hero",
+  "start": 104.3,
+  "end": 104.58,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "object.",
+  "start": 104.58,
+  "end": 105.0,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 105.62,
+  "end": 106.14,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviet",
+  "start": 106.14,
+  "end": 106.48,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "report",
+  "start": 106.48,
+  "end": 106.82,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "describes",
+  "start": 106.82,
+  "end": 107.22,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 107.22,
+  "end": 107.46,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "space",
+  "start": 107.46,
+  "end": 107.72,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "displays",
+  "start": 107.72,
+  "end": 108.16,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "as",
+  "start": 108.16,
+  "end": 108.42,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "full-scale",
+  "start": 108.42,
+  "end": 108.88,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "mock-ups.",
+  "start": 108.88,
+  "end": 109.55,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "That",
+  "start": 110.44,
+  "end": 110.54,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "word",
+  "start": 110.54,
+  "end": 110.74,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 110.74,
+  "end": 110.94,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "doing",
+  "start": 110.94,
+  "end": 111.1,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 111.1,
+  "end": 111.26,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "lot",
+  "start": 111.26,
+  "end": 111.4,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "of",
+  "start": 111.4,
+  "end": 111.54,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "work,",
+  "start": 111.54,
+  "end": 111.78,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 112.04,
+  "end": 112.16,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "we",
+  "start": 112.16,
+  "end": 112.28,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "will",
+  "start": 112.28,
+  "end": 112.42,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "come",
+  "start": 112.42,
+  "end": 112.6,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "back",
+  "start": 112.6,
+  "end": 112.8,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "to",
+  "start": 112.8,
+  "end": 112.96,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "it.",
+  "start": 112.96,
+  "end": 113.18,
+  "line": 11,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 113.56,
+  "end": 113.6,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "crate",
+  "start": 113.6,
+  "end": 113.82,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "arrived",
+  "start": 113.82,
+  "end": 114.16,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "late,",
+  "start": 114.16,
+  "end": 114.44,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 114.72,
+  "end": 114.84,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 114.84,
+  "end": 114.96,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "first",
+  "start": 114.96,
+  "end": 115.18,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "truck",
+  "start": 115.18,
+  "end": 115.44,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "sent",
+  "start": 115.44,
+  "end": 115.7,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 115.7,
+  "end": 115.9,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "too",
+  "start": 115.9,
+  "end": 116.12,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "small.",
+  "start": 116.12,
+  "end": 116.58,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "Finer",
+  "start": 117.44,
+  "end": 117.78,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "reports",
+  "start": 117.78,
+  "end": 118.1,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 118.1,
+  "end": 118.3,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "second",
+  "start": 118.3,
+  "end": 118.48,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "had",
+  "start": 118.48,
+  "end": 118.76,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "to",
+  "start": 118.76,
+  "end": 118.88,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "be",
+  "start": 118.88,
+  "end": 118.98,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "dispatched.",
+  "start": 118.98,
+  "end": 119.63,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "It",
+  "start": 120.44,
+  "end": 120.54,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 120.54,
+  "end": 120.68,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "simply",
+  "start": 120.68,
+  "end": 121.0,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 121.0,
+  "end": 121.16,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "wrong",
+  "start": 121.16,
+  "end": 121.38,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "truck.",
+  "start": 121.38,
+  "end": 121.74,
+  "line": 12,
+  "probability": 1.0
+ },
+ {
+  "word": "Now",
+  "start": 122.2,
+  "end": 122.42,
+  "line": 13,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 122.42,
+  "end": 122.62,
+  "line": 13,
+  "probability": 1.0
+ },
+ {
+  "word": "part",
+  "start": 122.62,
+  "end": 122.8,
+  "line": 13,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 122.8,
+  "end": 122.96,
+  "line": 13,
+  "probability": 1.0
+ },
+ {
+  "word": "popular",
+  "start": 122.96,
+  "end": 123.32,
+  "line": 13,
+  "probability": 1.0
+ },
+ {
+  "word": "version",
+  "start": 123.32,
+  "end": 123.66,
+  "line": 13,
+  "probability": 1.0
+ },
+ {
+  "word": "skips.",
+  "start": 123.66,
+  "end": 124.06,
+  "line": 13,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 124.54,
+  "end": 124.7,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "CIA",
+  "start": 124.7,
+  "end": 125.06,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "had",
+  "start": 125.06,
+  "end": 125.46,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "examined",
+  "start": 125.46,
+  "end": 125.86,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "this",
+  "start": 125.86,
+  "end": 126.12,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "hardware",
+  "start": 126.12,
+  "end": 126.48,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "before.",
+  "start": 126.48,
+  "end": 127.04,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "According",
+  "start": 127.86,
+  "end": 128.1,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "to",
+  "start": 128.1,
+  "end": 128.36,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "Finer,",
+  "start": 128.36,
+  "end": 128.7,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 128.92,
+  "end": 129.02,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "team",
+  "start": 129.02,
+  "end": 129.22,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "spent",
+  "start": 129.22,
+  "end": 129.5,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "about",
+  "start": 129.5,
+  "end": 129.72,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "twenty-four",
+  "start": 129.72,
+  "end": 130.16,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "hours",
+  "start": 130.16,
+  "end": 130.48,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "at",
+  "start": 130.48,
+  "end": 130.7,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "an",
+  "start": 130.7,
+  "end": 130.84,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "earlier",
+  "start": 130.84,
+  "end": 131.1,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "venue,",
+  "start": 131.1,
+  "end": 131.44,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "measuring",
+  "start": 131.76,
+  "end": 131.98,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "structures",
+  "start": 131.98,
+  "end": 132.48,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 132.48,
+  "end": 132.86,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "mapping",
+  "start": 132.86,
+  "end": 133.2,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "wiring.",
+  "start": 133.2,
+  "end": 133.52,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "That",
+  "start": 134.2,
+  "end": 134.72,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "pass",
+  "start": 134.72,
+  "end": 135.0,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "produced",
+  "start": 135.0,
+  "end": 135.34,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 135.34,
+  "end": 135.56,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "few",
+  "start": 135.56,
+  "end": 135.76,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "copied",
+  "start": 135.76,
+  "end": 136.12,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "markings,",
+  "start": 136.12,
+  "end": 136.54,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "not",
+  "start": 136.78,
+  "end": 136.96,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "enough",
+  "start": 136.96,
+  "end": 137.2,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "to",
+  "start": 137.2,
+  "end": 137.38,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "identify",
+  "start": 137.38,
+  "end": 137.74,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 137.74,
+  "end": 138.0,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "maker.",
+  "start": 138.0,
+  "end": 138.24,
+  "line": 14,
+  "probability": 1.0
+ },
+ {
+  "word": "Then",
+  "start": 138.72,
+  "end": 138.9,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "an",
+  "start": 138.9,
+  "end": 139.04,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "intercepted",
+  "start": 139.04,
+  "end": 139.46,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "shipping",
+  "start": 139.46,
+  "end": 139.92,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "manifest",
+  "start": 139.92,
+  "end": 140.4,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "changed",
+  "start": 140.4,
+  "end": 140.78,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 140.78,
+  "end": 141.04,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "game.",
+  "start": 141.04,
+  "end": 141.38,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "Finer",
+  "start": 142.21,
+  "end": 142.5,
+  "line": 15,
+  "probability": 0.35
+ },
+ {
+  "word": "reports",
+  "start": 142.5,
+  "end": 142.86,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "an",
+  "start": 142.86,
+  "end": 143.06,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "item",
+  "start": 143.06,
+  "end": 143.32,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "listed",
+  "start": 143.32,
+  "end": 143.58,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "as",
+  "start": 143.58,
+  "end": 143.84,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "models",
+  "start": 143.84,
+  "end": 144.06,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "of",
+  "start": 144.06,
+  "end": 144.3,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "astronomic",
+  "start": 144.3,
+  "end": 144.82,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "apparatus,",
+  "start": 144.82,
+  "end": 145.36,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "with",
+  "start": 145.66,
+  "end": 145.86,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "dimensions",
+  "start": 145.86,
+  "end": 146.22,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "that",
+  "start": 146.22,
+  "end": 146.56,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "matched",
+  "start": 146.56,
+  "end": 146.76,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 146.76,
+  "end": 146.98,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "Lunik",
+  "start": 146.98,
+  "end": 147.2,
+  "line": 15,
+  "probability": 0.35
+ },
+ {
+  "word": "crate.",
+  "start": 147.2,
+  "end": 147.46,
+  "line": 15,
+  "probability": 1.0
+ },
+ {
+  "word": "Pre-opening",
+  "start": 148.0,
+  "end": 148.4,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "access",
+  "start": 148.4,
+  "end": 148.84,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 148.84,
+  "end": 149.08,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "impossible.",
+  "start": 149.08,
+  "end": 149.74,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "During",
+  "start": 150.62,
+  "end": 150.76,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 150.76,
+  "end": 150.96,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "show,",
+  "start": 150.96,
+  "end": 151.22,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 151.46,
+  "end": 151.62,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "CIA",
+  "start": 151.62,
+  "end": 151.96,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "says",
+  "start": 151.96,
+  "end": 152.42,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 152.42,
+  "end": 152.66,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviets",
+  "start": 152.66,
+  "end": 152.98,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "mounted",
+  "start": 152.98,
+  "end": 153.32,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 153.32,
+  "end": 153.54,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "twenty-four-hour",
+  "start": 153.54,
+  "end": 154.06,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "guard.",
+  "start": 154.06,
+  "end": 154.54,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "That",
+  "start": 155.36,
+  "end": 155.54,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "left",
+  "start": 155.54,
+  "end": 155.74,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "one",
+  "start": 155.74,
+  "end": 156.04,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "seam:",
+  "start": 156.04,
+  "end": 156.34,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 156.64,
+  "end": 156.76,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "truck",
+  "start": 156.76,
+  "end": 157.0,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "ride",
+  "start": 157.0,
+  "end": 157.26,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "to",
+  "start": 157.26,
+  "end": 157.44,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 157.44,
+  "end": 157.56,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "rail",
+  "start": 157.56,
+  "end": 157.74,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "yard.",
+  "start": 157.74,
+  "end": 158.04,
+  "line": 16,
+  "probability": 1.0
+ },
+ {
+  "word": "You",
+  "start": 158.44,
+  "end": 158.66,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "are",
+  "start": 158.66,
+  "end": 158.82,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "probably",
+  "start": 158.82,
+  "end": 159.12,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "thinking",
+  "start": 159.12,
+  "end": 159.46,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 159.46,
+  "end": 159.72,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "smarter",
+  "start": 159.72,
+  "end": 160.02,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "move",
+  "start": 160.02,
+  "end": 160.34,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 160.34,
+  "end": 160.54,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "to",
+  "start": 160.54,
+  "end": 160.74,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "steal",
+  "start": 160.74,
+  "end": 160.94,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 160.94,
+  "end": 161.12,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "whole",
+  "start": 161.12,
+  "end": 161.32,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "rocket.",
+  "start": 161.32,
+  "end": 161.66,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "Hold",
+  "start": 162.32,
+  "end": 162.76,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "that",
+  "start": 162.76,
+  "end": 162.98,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "thought.",
+  "start": 162.98,
+  "end": 163.38,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 164.16,
+  "end": 164.3,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "rocket",
+  "start": 164.3,
+  "end": 164.56,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 164.56,
+  "end": 164.78,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "already",
+  "start": 164.78,
+  "end": 165.14,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "stripped.",
+  "start": 165.14,
+  "end": 165.68,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "Finer",
+  "start": 166.5,
+  "end": 166.86,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "reports",
+  "start": 166.86,
+  "end": 167.18,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 167.18,
+  "end": 167.42,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "engine",
+  "start": 167.42,
+  "end": 167.72,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 167.72,
+  "end": 167.92,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "most",
+  "start": 167.92,
+  "end": 168.1,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "electrical",
+  "start": 168.1,
+  "end": 168.52,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "components",
+  "start": 168.52,
+  "end": 169.06,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "had",
+  "start": 169.06,
+  "end": 169.24,
+  "line": 17,
+  "probability": 0.35
+ },
+ {
+  "word": "been",
+  "start": 169.24,
+  "end": 169.36,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "removed",
+  "start": 169.36,
+  "end": 169.7,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "before",
+  "start": 169.7,
+  "end": 170.06,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "it",
+  "start": 170.06,
+  "end": 170.2,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "left",
+  "start": 170.2,
+  "end": 170.36,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "Moscow.",
+  "start": 170.36,
+  "end": 170.7,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 171.56,
+  "end": 171.86,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "value",
+  "start": 171.86,
+  "end": 172.16,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 172.16,
+  "end": 172.38,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "never",
+  "start": 172.38,
+  "end": 172.6,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 172.6,
+  "end": 172.78,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "hardware.",
+  "start": 172.78,
+  "end": 173.14,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "It",
+  "start": 173.92,
+  "end": 174.24,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 174.24,
+  "end": 174.36,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 174.36,
+  "end": 174.54,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "marks.",
+  "start": 174.54,
+  "end": 174.8,
+  "line": 17,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 175.36,
+  "end": 175.46,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "operation",
+  "start": 175.46,
+  "end": 175.9,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "starts",
+  "start": 175.9,
+  "end": 176.32,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "at",
+  "start": 176.32,
+  "end": 176.56,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "five",
+  "start": 176.56,
+  "end": 176.82,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "thirty",
+  "start": 176.82,
+  "end": 177.1,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 177.1,
+  "end": 177.32,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 177.32,
+  "end": 177.44,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "evening.",
+  "start": 177.44,
+  "end": 177.72,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "That",
+  "start": 178.54,
+  "end": 178.82,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "comes",
+  "start": 178.82,
+  "end": 179.04,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "from",
+  "start": 179.04,
+  "end": 179.28,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "Jeff",
+  "start": 179.28,
+  "end": 179.52,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "Maysh's",
+  "start": 179.52,
+  "end": 180.02,
+  "line": 18,
+  "probability": 0.35
+ },
+ {
+  "word": "MIT",
+  "start": 180.02,
+  "end": 180.34,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "Technology",
+  "start": 180.34,
+  "end": 180.88,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "Review",
+  "start": 180.88,
+  "end": 181.36,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "investigation,",
+  "start": 181.36,
+  "end": 181.92,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 182.4,
+  "end": 182.56,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "it",
+  "start": 182.56,
+  "end": 182.66,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "leaves",
+  "start": 182.66,
+  "end": 182.9,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "thirteen",
+  "start": 182.9,
+  "end": 183.46,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 183.46,
+  "end": 183.62,
+  "line": 18,
+  "probability": 0.35
+ },
+ {
+  "word": "a",
+  "start": 183.62,
+  "end": 183.78,
+  "line": 18,
+  "probability": 0.35
+ },
+ {
+  "word": "half",
+  "start": 183.78,
+  "end": 183.94,
+  "line": 18,
+  "probability": 0.35
+ },
+ {
+  "word": "hours",
+  "start": 183.94,
+  "end": 184.2,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "on",
+  "start": 184.2,
+  "end": 184.42,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 184.42,
+  "end": 184.5,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "relentless",
+  "start": 184.5,
+  "end": 184.78,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "clock.",
+  "start": 184.78,
+  "end": 185.14,
+  "line": 18,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 185.6,
+  "end": 185.76,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "Lunik",
+  "start": 185.76,
+  "end": 186.06,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 186.06,
+  "end": 186.22,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "made",
+  "start": 186.22,
+  "end": 186.42,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 186.42,
+  "end": 186.56,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "last",
+  "start": 186.56,
+  "end": 186.8,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "truckload",
+  "start": 186.8,
+  "end": 187.2,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "of",
+  "start": 187.2,
+  "end": 187.34,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 187.34,
+  "end": 187.44,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "day.",
+  "start": 187.44,
+  "end": 187.68,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "Station",
+  "start": 188.38,
+  "end": 188.9,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "cars",
+  "start": 188.9,
+  "end": 189.34,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "run",
+  "start": 189.34,
+  "end": 189.6,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "ahead",
+  "start": 189.6,
+  "end": 189.86,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 189.86,
+  "end": 190.0,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "behind,",
+  "start": 190.0,
+  "end": 190.34,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "testing",
+  "start": 190.7,
+  "end": 190.94,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "for",
+  "start": 190.94,
+  "end": 191.18,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 191.18,
+  "end": 191.34,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviet",
+  "start": 191.34,
+  "end": 191.62,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "escort.",
+  "start": 191.62,
+  "end": 192.18,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "When",
+  "start": 192.99,
+  "end": 193.12,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 193.12,
+  "end": 193.24,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "road",
+  "start": 193.24,
+  "end": 193.42,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 193.42,
+  "end": 193.62,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "clear,",
+  "start": 193.62,
+  "end": 193.9,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 194.18,
+  "end": 194.32,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "truck",
+  "start": 194.32,
+  "end": 194.5,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "stops",
+  "start": 194.5,
+  "end": 194.78,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "at",
+  "start": 194.78,
+  "end": 195.0,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 195.0,
+  "end": 195.12,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "last",
+  "start": 195.12,
+  "end": 195.36,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "turn-off.",
+  "start": 195.36,
+  "end": 195.88,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "A",
+  "start": 196.68,
+  "end": 196.9,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "canvas",
+  "start": 196.9,
+  "end": 197.26,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "goes",
+  "start": 197.26,
+  "end": 197.5,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "over",
+  "start": 197.5,
+  "end": 197.74,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 197.74,
+  "end": 197.9,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "crate,",
+  "start": 197.9,
+  "end": 198.16,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 198.38,
+  "end": 198.52,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 198.52,
+  "end": 198.68,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "substitute",
+  "start": 198.68,
+  "end": 199.08,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "driver",
+  "start": 199.08,
+  "end": 199.5,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "takes",
+  "start": 199.5,
+  "end": 199.78,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 199.78,
+  "end": 199.98,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "wheel.",
+  "start": 199.98,
+  "end": 200.22,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 201.02,
+  "end": 201.28,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "original",
+  "start": 201.28,
+  "end": 201.6,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "driver",
+  "start": 201.6,
+  "end": 201.98,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "spends",
+  "start": 201.98,
+  "end": 202.28,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 202.28,
+  "end": 202.5,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "night",
+  "start": 202.5,
+  "end": 202.66,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 202.66,
+  "end": 202.82,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 202.82,
+  "end": 202.9,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "hotel",
+  "start": 202.9,
+  "end": 203.22,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "room,",
+  "start": 203.22,
+  "end": 203.5,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 203.76,
+  "end": 203.86,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "strangest",
+  "start": 203.86,
+  "end": 204.32,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "hospitality",
+  "start": 204.32,
+  "end": 204.8,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 204.8,
+  "end": 205.14,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 205.14,
+  "end": 205.26,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "Cold",
+  "start": 205.26,
+  "end": 205.42,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "War.",
+  "start": 205.42,
+  "end": 205.72,
+  "line": 19,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 206.14,
+  "end": 206.3,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "truck",
+  "start": 206.3,
+  "end": 206.52,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "backs",
+  "start": 206.52,
+  "end": 206.78,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "into",
+  "start": 206.78,
+  "end": 207.04,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 207.04,
+  "end": 207.24,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "salvage",
+  "start": 207.24,
+  "end": 207.54,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "yard",
+  "start": 207.54,
+  "end": 207.82,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "at",
+  "start": 207.82,
+  "end": 208.0,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "Camarones",
+  "start": 208.0,
+  "end": 208.34,
+  "line": 20,
+  "probability": 0.35
+ },
+ {
+  "word": "and",
+  "start": 208.34,
+  "end": 208.68,
+  "line": 20,
+  "probability": 0.35
+ },
+ {
+  "word": "Norte",
+  "start": 208.68,
+  "end": 209.0,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "Seventy-Three,",
+  "start": 209.0,
+  "end": 209.46,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "according",
+  "start": 210.04,
+  "end": 210.24,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "to",
+  "start": 210.24,
+  "end": 210.52,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "Maysh.",
+  "start": 210.52,
+  "end": 211.04,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 211.62,
+  "end": 211.82,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "yard",
+  "start": 211.82,
+  "end": 212.08,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 212.08,
+  "end": 212.26,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "ringed",
+  "start": 212.26,
+  "end": 212.62,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "by",
+  "start": 212.62,
+  "end": 212.72,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 212.72,
+  "end": 212.84,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "ten-foot",
+  "start": 212.84,
+  "end": 213.2,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "wooden",
+  "start": 213.2,
+  "end": 213.52,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "fence.",
+  "start": 213.52,
+  "end": 213.82,
+  "line": 20,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 214.36,
+  "end": 214.46,
+  "line": 21,
+  "probability": 1.0
+ },
+ {
+  "word": "team",
+  "start": 214.46,
+  "end": 214.68,
+  "line": 21,
+  "probability": 1.0
+ },
+ {
+  "word": "waits",
+  "start": 214.68,
+  "end": 214.9,
+  "line": 21,
+  "probability": 1.0
+ },
+ {
+  "word": "half",
+  "start": 214.9,
+  "end": 215.18,
+  "line": 21,
+  "probability": 1.0
+ },
+ {
+  "word": "an",
+  "start": 215.18,
+  "end": 215.34,
+  "line": 21,
+  "probability": 1.0
+ },
+ {
+  "word": "hour",
+  "start": 215.34,
+  "end": 215.5,
+  "line": 21,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 215.5,
+  "end": 215.76,
+  "line": 21,
+  "probability": 1.0
+ },
+ {
+  "word": "silence.",
+  "start": 215.76,
+  "end": 216.12,
+  "line": 21,
+  "probability": 1.0
+ },
+ {
+  "word": "At",
+  "start": 216.12,
+  "end": 216.8,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "seven",
+  "start": 216.8,
+  "end": 217.16,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "thirty,",
+  "start": 217.16,
+  "end": 217.48,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "Finer",
+  "start": 217.84,
+  "end": 218.02,
+  "line": 22,
+  "probability": 0.35
+ },
+ {
+  "word": "reports",
+  "start": 218.02,
+  "end": 218.38,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 218.38,
+  "end": 218.62,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "team",
+  "start": 218.62,
+  "end": 218.84,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "enters",
+  "start": 218.84,
+  "end": 219.12,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 219.12,
+  "end": 219.28,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "yard.",
+  "start": 219.28,
+  "end": 219.67,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "So",
+  "start": 220.48,
+  "end": 220.7,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "why",
+  "start": 220.7,
+  "end": 220.9,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "go",
+  "start": 220.9,
+  "end": 221.08,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "through",
+  "start": 221.08,
+  "end": 221.28,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 221.28,
+  "end": 221.44,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "roof?",
+  "start": 221.44,
+  "end": 221.83,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "Because",
+  "start": 222.6,
+  "end": 222.86,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 222.86,
+  "end": 223.08,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "sides",
+  "start": 223.08,
+  "end": 223.38,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 223.38,
+  "end": 223.56,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "ends",
+  "start": 223.56,
+  "end": 223.86,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "were",
+  "start": 223.86,
+  "end": 224.04,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "bolted",
+  "start": 224.04,
+  "end": 224.28,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "from",
+  "start": 224.28,
+  "end": 224.54,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 224.54,
+  "end": 224.68,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "inside.",
+  "start": 224.68,
+  "end": 225.12,
+  "line": 22,
+  "probability": 1.0
+ },
+ {
+  "word": "Two",
+  "start": 225.56,
+  "end": 225.74,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "men",
+  "start": 225.74,
+  "end": 225.94,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "climb",
+  "start": 225.94,
+  "end": 226.24,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 226.24,
+  "end": 226.44,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "crate.",
+  "start": 226.44,
+  "end": 226.68,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 227.46,
+  "end": 227.78,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "planks",
+  "start": 227.78,
+  "end": 228.08,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "are",
+  "start": 228.08,
+  "end": 228.24,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "two",
+  "start": 228.24,
+  "end": 228.48,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "inches",
+  "start": 228.48,
+  "end": 228.74,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "thick,",
+  "start": 228.74,
+  "end": 229.14,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "nailed",
+  "start": 229.38,
+  "end": 229.64,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "with",
+  "start": 229.64,
+  "end": 229.84,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "five-inch",
+  "start": 229.84,
+  "end": 230.28,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "spikes,",
+  "start": 230.28,
+  "end": 230.64,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "already",
+  "start": 230.96,
+  "end": 231.26,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "battered",
+  "start": 231.26,
+  "end": 231.6,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "from",
+  "start": 231.6,
+  "end": 231.84,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "earlier",
+  "start": 231.84,
+  "end": 232.14,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "removals.",
+  "start": 232.14,
+  "end": 232.72,
+  "line": 23,
+  "probability": 1.0
+ },
+ {
+  "word": "Then",
+  "start": 233.14,
+  "end": 233.34,
+  "line": 24,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 233.34,
+  "end": 233.52,
+  "line": 24,
+  "probability": 1.0
+ },
+ {
+  "word": "street",
+  "start": 233.52,
+  "end": 233.72,
+  "line": 24,
+  "probability": 1.0
+ },
+ {
+  "word": "lamps",
+  "start": 233.72,
+  "end": 234.04,
+  "line": 24,
+  "probability": 1.0
+ },
+ {
+  "word": "come",
+  "start": 234.04,
+  "end": 234.28,
+  "line": 24,
+  "probability": 1.0
+ },
+ {
+  "word": "on.",
+  "start": 234.28,
+  "end": 234.62,
+  "line": 24,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 234.86,
+  "end": 235.06,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "yard",
+  "start": 235.06,
+  "end": 235.32,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "floods",
+  "start": 235.32,
+  "end": 235.62,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "with",
+  "start": 235.62,
+  "end": 235.86,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 235.86,
+  "end": 235.96,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "menacing",
+  "start": 235.96,
+  "end": 236.24,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "white",
+  "start": 236.24,
+  "end": 236.58,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "light.",
+  "start": 236.58,
+  "end": 236.88,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "Two",
+  "start": 237.62,
+  "end": 237.98,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "men",
+  "start": 237.98,
+  "end": 238.18,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "on",
+  "start": 238.18,
+  "end": 238.36,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 238.36,
+  "end": 238.46,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "borrowed",
+  "start": 238.46,
+  "end": 238.7,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviet",
+  "start": 238.7,
+  "end": 239.1,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "rocket",
+  "start": 239.1,
+  "end": 239.44,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "are",
+  "start": 239.44,
+  "end": 239.72,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "lit",
+  "start": 239.72,
+  "end": 239.84,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "up",
+  "start": 239.84,
+  "end": 240.0,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "like",
+  "start": 240.0,
+  "end": 240.18,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 240.18,
+  "end": 240.32,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "stage.",
+  "start": 240.32,
+  "end": 240.79,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 241.54,
+  "end": 241.76,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "lamps",
+  "start": 241.76,
+  "end": 242.0,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "were",
+  "start": 242.0,
+  "end": 242.22,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "on",
+  "start": 242.22,
+  "end": 242.36,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 242.36,
+  "end": 242.48,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "municipal",
+  "start": 242.48,
+  "end": 242.76,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "schedule.",
+  "start": 242.76,
+  "end": 243.26,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "It",
+  "start": 243.82,
+  "end": 244.3,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 244.3,
+  "end": 244.44,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "not",
+  "start": 244.44,
+  "end": 244.66,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "an",
+  "start": 244.66,
+  "end": 244.82,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "ambush.",
+  "start": 244.82,
+  "end": 245.41,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "It",
+  "start": 246.26,
+  "end": 246.34,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "was,",
+  "start": 246.34,
+  "end": 246.62,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "of",
+  "start": 246.86,
+  "end": 247.02,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "all",
+  "start": 247.02,
+  "end": 247.22,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "things,",
+  "start": 247.22,
+  "end": 247.6,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "punctuality.",
+  "start": 247.94,
+  "end": 248.52,
+  "line": 25,
+  "probability": 1.0
+ },
+ {
+  "word": "Before",
+  "start": 249.04,
+  "end": 249.28,
+  "line": 26,
+  "probability": 1.0
+ },
+ {
+  "word": "we",
+  "start": 249.28,
+  "end": 249.44,
+  "line": 26,
+  "probability": 1.0
+ },
+ {
+  "word": "go",
+  "start": 249.44,
+  "end": 249.6,
+  "line": 26,
+  "probability": 1.0
+ },
+ {
+  "word": "inside,",
+  "start": 249.6,
+  "end": 250.02,
+  "line": 26,
+  "probability": 1.0
+ },
+ {
+  "word": "tell",
+  "start": 250.4,
+  "end": 250.5,
+  "line": 26,
+  "probability": 1.0
+ },
+ {
+  "word": "me",
+  "start": 250.5,
+  "end": 250.64,
+  "line": 26,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 250.64,
+  "end": 250.74,
+  "line": 26,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 250.74,
+  "end": 250.86,
+  "line": 26,
+  "probability": 1.0
+ },
+ {
+  "word": "comments",
+  "start": 250.86,
+  "end": 251.12,
+  "line": 26,
+  "probability": 1.0
+ },
+ {
+  "word": "what",
+  "start": 251.12,
+  "end": 251.34,
+  "line": 26,
+  "probability": 1.0
+ },
+ {
+  "word": "you",
+  "start": 251.34,
+  "end": 251.44,
+  "line": 26,
+  "probability": 1.0
+ },
+ {
+  "word": "would",
+  "start": 251.44,
+  "end": 251.56,
+  "line": 26,
+  "probability": 1.0
+ },
+ {
+  "word": "photograph",
+  "start": 251.56,
+  "end": 251.96,
+  "line": 26,
+  "probability": 1.0
+ },
+ {
+  "word": "first.",
+  "start": 251.96,
+  "end": 252.36,
+  "line": 26,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 252.84,
+  "end": 252.96,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "nose",
+  "start": 252.96,
+  "end": 253.18,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "crew",
+  "start": 253.18,
+  "end": 253.46,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "removes",
+  "start": 253.46,
+  "end": 253.84,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 253.84,
+  "end": 254.02,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "single",
+  "start": 254.02,
+  "end": 254.28,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "inspection",
+  "start": 254.28,
+  "end": 254.66,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "window,",
+  "start": 254.66,
+  "end": 255.16,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "takes",
+  "start": 255.42,
+  "end": 255.62,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "off",
+  "start": 255.62,
+  "end": 255.84,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "their",
+  "start": 255.84,
+  "end": 256.04,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "shoes,",
+  "start": 256.04,
+  "end": 256.32,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 256.7,
+  "end": 256.88,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "squeezes",
+  "start": 256.88,
+  "end": 257.32,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "into",
+  "start": 257.32,
+  "end": 257.54,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 257.54,
+  "end": 257.72,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "payload",
+  "start": 257.72,
+  "end": 257.94,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "area.",
+  "start": 257.94,
+  "end": 258.4,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 259.18,
+  "end": 259.4,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "orb",
+  "start": 259.4,
+  "end": 259.56,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "sits",
+  "start": 259.56,
+  "end": 259.82,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 259.82,
+  "end": 260.02,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 260.02,
+  "end": 260.14,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "central",
+  "start": 260.14,
+  "end": 260.4,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "basket,",
+  "start": 260.4,
+  "end": 260.8,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "its",
+  "start": 261.08,
+  "end": 261.24,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "antenna",
+  "start": 261.24,
+  "end": 261.58,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "reaching",
+  "start": 261.58,
+  "end": 261.88,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "toward",
+  "start": 261.88,
+  "end": 262.2,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 262.2,
+  "end": 262.38,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "cone",
+  "start": 262.38,
+  "end": 262.56,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "tip.",
+  "start": 262.56,
+  "end": 262.82,
+  "line": 27,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 263.24,
+  "end": 263.42,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "tail",
+  "start": 263.42,
+  "end": 263.66,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "crew",
+  "start": 263.66,
+  "end": 263.9,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "faces",
+  "start": 263.9,
+  "end": 264.22,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 264.22,
+  "end": 264.44,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "base",
+  "start": 264.44,
+  "end": 264.62,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "cap",
+  "start": 264.62,
+  "end": 264.92,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "held",
+  "start": 264.92,
+  "end": 265.16,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "down",
+  "start": 265.16,
+  "end": 265.42,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "by",
+  "start": 265.42,
+  "end": 265.62,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "roughly",
+  "start": 265.62,
+  "end": 265.92,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "one",
+  "start": 265.92,
+  "end": 266.7,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "hundred",
+  "start": 266.7,
+  "end": 266.78,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 266.78,
+  "end": 266.86,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "thirty",
+  "start": 266.86,
+  "end": 266.94,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "square-headed",
+  "start": 266.94,
+  "end": 267.28,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "bolts.",
+  "start": 267.28,
+  "end": 267.64,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "That",
+  "start": 268.46,
+  "end": 268.8,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 268.8,
+  "end": 268.92,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 268.92,
+  "end": 269.1,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "staggering",
+  "start": 269.1,
+  "end": 269.4,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "amount",
+  "start": 269.4,
+  "end": 269.7,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "of",
+  "start": 269.7,
+  "end": 269.92,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "turning",
+  "start": 269.92,
+  "end": 270.1,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 270.1,
+  "end": 270.28,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 270.28,
+  "end": 270.4,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "dark.",
+  "start": 270.4,
+  "end": 270.62,
+  "line": 28,
+  "probability": 1.0
+ },
+ {
+  "word": "Behind",
+  "start": 271.0,
+  "end": 271.38,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 271.38,
+  "end": 271.54,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "cap,",
+  "start": 271.54,
+  "end": 271.84,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 272.04,
+  "end": 272.18,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "engine",
+  "start": 272.18,
+  "end": 272.48,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 272.48,
+  "end": 272.66,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "gone,",
+  "start": 272.66,
+  "end": 272.94,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "though",
+  "start": 273.16,
+  "end": 273.32,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "its",
+  "start": 273.32,
+  "end": 273.48,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "mounting",
+  "start": 273.48,
+  "end": 273.8,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "brackets",
+  "start": 273.8,
+  "end": 274.2,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 274.2,
+  "end": 274.44,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 274.44,
+  "end": 274.56,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "fuel",
+  "start": 274.56,
+  "end": 274.78,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 274.78,
+  "end": 274.96,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "oxidizer",
+  "start": 274.96,
+  "end": 275.52,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "tanks",
+  "start": 275.52,
+  "end": 275.84,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "remain.",
+  "start": 275.84,
+  "end": 276.32,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "Why",
+  "start": 277.18,
+  "end": 277.32,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "leave",
+  "start": 277.32,
+  "end": 277.52,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 277.52,
+  "end": 277.66,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "tanks?",
+  "start": 277.66,
+  "end": 278.14,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "Because",
+  "start": 278.94,
+  "end": 279.18,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 279.18,
+  "end": 279.36,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "skeleton",
+  "start": 279.36,
+  "end": 279.7,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "still",
+  "start": 279.7,
+  "end": 280.06,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "tells",
+  "start": 280.06,
+  "end": 280.32,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "you",
+  "start": 280.32,
+  "end": 280.52,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "how",
+  "start": 280.52,
+  "end": 280.66,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 280.66,
+  "end": 280.82,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "animal",
+  "start": 280.82,
+  "end": 281.08,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "stood.",
+  "start": 281.08,
+  "end": 281.38,
+  "line": 29,
+  "probability": 1.0
+ },
+ {
+  "word": "Then",
+  "start": 281.88,
+  "end": 282.06,
+  "line": 30,
+  "probability": 1.0
+ },
+ {
+  "word": "comes",
+  "start": 282.06,
+  "end": 282.3,
+  "line": 30,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 282.3,
+  "end": 282.52,
+  "line": 30,
+  "probability": 1.0
+ },
+ {
+  "word": "object",
+  "start": 282.52,
+  "end": 282.82,
+  "line": 30,
+  "probability": 1.0
+ },
+ {
+  "word": "that",
+  "start": 282.82,
+  "end": 283.06,
+  "line": 30,
+  "probability": 1.0
+ },
+ {
+  "word": "decides",
+  "start": 283.06,
+  "end": 283.4,
+  "line": 30,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 283.4,
+  "end": 283.64,
+  "line": 30,
+  "probability": 1.0
+ },
+ {
+  "word": "night.",
+  "start": 283.64,
+  "end": 283.98,
+  "line": 30,
+  "probability": 1.0
+ },
+ {
+  "word": "What",
+  "start": 284.82,
+  "end": 284.92,
+  "line": 30,
+  "probability": 1.0
+ },
+ {
+  "word": "could",
+  "start": 284.92,
+  "end": 285.06,
+  "line": 30,
+  "probability": 1.0
+ },
+ {
+  "word": "not",
+  "start": 285.06,
+  "end": 285.24,
+  "line": 30,
+  "probability": 1.0
+ },
+ {
+  "word": "be",
+  "start": 285.24,
+  "end": 285.38,
+  "line": 30,
+  "probability": 1.0
+ },
+ {
+  "word": "replaced?",
+  "start": 285.38,
+  "end": 285.8,
+  "line": 30,
+  "probability": 1.0
+ },
+ {
+  "word": "A",
+  "start": 286.24,
+  "end": 286.44,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "four-way",
+  "start": 286.44,
+  "end": 286.82,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "outlet",
+  "start": 286.82,
+  "end": 287.22,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "acts",
+  "start": 287.22,
+  "end": 287.56,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "as",
+  "start": 287.56,
+  "end": 287.7,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 287.7,
+  "end": 287.86,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "nut",
+  "start": 287.86,
+  "end": 287.96,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "on",
+  "start": 287.96,
+  "end": 288.12,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 288.12,
+  "end": 288.22,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "end",
+  "start": 288.22,
+  "end": 288.36,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "of",
+  "start": 288.36,
+  "end": 288.48,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 288.48,
+  "end": 288.58,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "rod.",
+  "start": 288.58,
+  "end": 288.84,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "It",
+  "start": 289.64,
+  "end": 289.86,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 289.86,
+  "end": 290.02,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "keyed",
+  "start": 290.02,
+  "end": 290.34,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "by",
+  "start": 290.34,
+  "end": 290.44,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 290.44,
+  "end": 290.56,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "wire,",
+  "start": 290.56,
+  "end": 290.88,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 291.04,
+  "end": 291.24,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 291.24,
+  "end": 291.36,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "wire's",
+  "start": 291.36,
+  "end": 291.76,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "ends",
+  "start": 291.76,
+  "end": 291.9,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "are",
+  "start": 291.9,
+  "end": 292.12,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "sealed",
+  "start": 292.12,
+  "end": 292.34,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 292.34,
+  "end": 292.56,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "plastic",
+  "start": 292.56,
+  "end": 292.94,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "bearing",
+  "start": 292.94,
+  "end": 293.24,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 293.24,
+  "end": 293.46,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviet",
+  "start": 293.46,
+  "end": 293.74,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "stamp.",
+  "start": 293.74,
+  "end": 294.16,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "To",
+  "start": 295.0,
+  "end": 295.2,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "free",
+  "start": 295.2,
+  "end": 295.42,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 295.42,
+  "end": 295.64,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "orb,",
+  "start": 295.64,
+  "end": 295.86,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 296.08,
+  "end": 296.24,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "team",
+  "start": 296.24,
+  "end": 296.44,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "must",
+  "start": 296.44,
+  "end": 296.68,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "cut",
+  "start": 296.68,
+  "end": 296.9,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "that",
+  "start": 296.9,
+  "end": 297.1,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "wire.",
+  "start": 297.1,
+  "end": 297.44,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "Finer",
+  "start": 298.28,
+  "end": 298.78,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "says",
+  "start": 298.78,
+  "end": 298.96,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 298.96,
+  "end": 299.2,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "Station",
+  "start": 299.2,
+  "end": 299.52,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "promised",
+  "start": 299.52,
+  "end": 299.88,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 299.88,
+  "end": 300.06,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "duplicate",
+  "start": 300.06,
+  "end": 300.36,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "of",
+  "start": 300.36,
+  "end": 300.6,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 300.6,
+  "end": 300.72,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "plastic,",
+  "start": 300.72,
+  "end": 301.14,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 301.44,
+  "end": 301.56,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "stamp,",
+  "start": 301.56,
+  "end": 301.9,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 302.1,
+  "end": 302.26,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 302.26,
+  "end": 302.36,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "wire.",
+  "start": 302.36,
+  "end": 302.62,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "It",
+  "start": 303.52,
+  "end": 303.68,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "arrived",
+  "start": 303.68,
+  "end": 304.0,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "before",
+  "start": 304.0,
+  "end": 304.38,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 304.38,
+  "end": 304.56,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "work",
+  "start": 304.56,
+  "end": 304.72,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "finished.",
+  "start": 304.72,
+  "end": 305.12,
+  "line": 31,
+  "probability": 1.0
+ },
+ {
+  "word": "Someone",
+  "start": 305.72,
+  "end": 305.88,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 305.88,
+  "end": 306.06,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "Mexico",
+  "start": 306.06,
+  "end": 306.32,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "City",
+  "start": 306.32,
+  "end": 306.68,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 306.68,
+  "end": 306.94,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "manufacturing",
+  "start": 306.94,
+  "end": 307.54,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 307.54,
+  "end": 307.82,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "counterfeit",
+  "start": 307.82,
+  "end": 308.14,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviet",
+  "start": 308.14,
+  "end": 308.62,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "seal",
+  "start": 308.62,
+  "end": 308.92,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "for",
+  "start": 308.92,
+  "end": 309.16,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 309.16,
+  "end": 309.32,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "rocket",
+  "start": 309.32,
+  "end": 309.46,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 309.46,
+  "end": 309.68,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "United",
+  "start": 309.68,
+  "end": 309.88,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "States",
+  "start": 309.88,
+  "end": 310.24,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 310.24,
+  "end": 310.48,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "not",
+  "start": 310.48,
+  "end": 310.7,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "supposed",
+  "start": 310.7,
+  "end": 311.0,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "to",
+  "start": 311.0,
+  "end": 311.22,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "touch.",
+  "start": 311.22,
+  "end": 311.5,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "That",
+  "start": 312.28,
+  "end": 312.6,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 312.6,
+  "end": 312.74,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "an",
+  "start": 312.74,
+  "end": 312.86,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "extraordinary",
+  "start": 312.86,
+  "end": 313.36,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "supply",
+  "start": 313.36,
+  "end": 313.8,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "chain.",
+  "start": 313.8,
+  "end": 314.24,
+  "line": 32,
+  "probability": 1.0
+ },
+ {
+  "word": "Now",
+  "start": 314.58,
+  "end": 314.84,
+  "line": 33,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 314.84,
+  "end": 315.04,
+  "line": 33,
+  "probability": 1.0
+ },
+ {
+  "word": "hard",
+  "start": 315.04,
+  "end": 315.28,
+  "line": 33,
+  "probability": 1.0
+ },
+ {
+  "word": "part,",
+  "start": 315.28,
+  "end": 315.56,
+  "line": 33,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 315.8,
+  "end": 315.9,
+  "line": 33,
+  "probability": 1.0
+ },
+ {
+  "word": "it",
+  "start": 315.9,
+  "end": 316.0,
+  "line": 33,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 316.0,
+  "end": 316.12,
+  "line": 33,
+  "probability": 1.0
+ },
+ {
+  "word": "not",
+  "start": 316.12,
+  "end": 316.32,
+  "line": 33,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 316.32,
+  "end": 316.48,
+  "line": 33,
+  "probability": 1.0
+ },
+ {
+  "word": "bolts.",
+  "start": 316.48,
+  "end": 316.74,
+  "line": 33,
+  "probability": 1.0
+ },
+ {
+  "word": "Re-seating",
+  "start": 317.42,
+  "end": 317.8,
+  "line": 34,
+  "probability": 0.35
+ },
+ {
+  "word": "the",
+  "start": 317.8,
+  "end": 317.92,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "orb",
+  "start": 317.92,
+  "end": 318.12,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "takes",
+  "start": 318.12,
+  "end": 318.38,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "almost",
+  "start": 318.38,
+  "end": 318.72,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "an",
+  "start": 318.72,
+  "end": 318.92,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "hour.",
+  "start": 318.92,
+  "end": 319.28,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "One",
+  "start": 320.12,
+  "end": 320.34,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "man",
+  "start": 320.34,
+  "end": 320.58,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 320.58,
+  "end": 320.76,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 320.76,
+  "end": 320.88,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 320.88,
+  "end": 321.0,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "cramped",
+  "start": 321.0,
+  "end": 321.22,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "nose.",
+  "start": 321.22,
+  "end": 321.56,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "Another",
+  "start": 322.34,
+  "end": 322.82,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 322.82,
+  "end": 323.08,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 323.08,
+  "end": 323.22,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 323.22,
+  "end": 323.32,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "engine",
+  "start": 323.32,
+  "end": 323.56,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "compartment,",
+  "start": 323.56,
+  "end": 324.04,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "trying",
+  "start": 324.3,
+  "end": 324.52,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "to",
+  "start": 324.52,
+  "end": 324.7,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "engage",
+  "start": 324.7,
+  "end": 325.02,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 325.02,
+  "end": 325.26,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "threads",
+  "start": 325.26,
+  "end": 325.52,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "on",
+  "start": 325.52,
+  "end": 325.68,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 325.68,
+  "end": 325.78,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "rod",
+  "start": 325.78,
+  "end": 325.96,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "he",
+  "start": 325.96,
+  "end": 326.16,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "cannot",
+  "start": 326.16,
+  "end": 326.36,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "see.",
+  "start": 326.36,
+  "end": 326.82,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "A",
+  "start": 327.65,
+  "end": 327.76,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "baffle",
+  "start": 327.76,
+  "end": 328.16,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "plate",
+  "start": 328.16,
+  "end": 328.38,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "blocks",
+  "start": 328.38,
+  "end": 328.68,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 328.68,
+  "end": 328.9,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "view.",
+  "start": 328.9,
+  "end": 329.22,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "Two",
+  "start": 330.06,
+  "end": 330.22,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "men,",
+  "start": 330.22,
+  "end": 330.48,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "on",
+  "start": 330.76,
+  "end": 330.9,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "opposite",
+  "start": 330.9,
+  "end": 331.2,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "sides",
+  "start": 331.2,
+  "end": 331.62,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "of",
+  "start": 331.62,
+  "end": 331.78,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 331.78,
+  "end": 331.9,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "same",
+  "start": 331.9,
+  "end": 332.14,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "thread,",
+  "start": 332.14,
+  "end": 332.48,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "working",
+  "start": 332.76,
+  "end": 333.06,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "blind.",
+  "start": 333.06,
+  "end": 333.44,
+  "line": 34,
+  "probability": 1.0
+ },
+ {
+  "word": "You",
+  "start": 333.94,
+  "end": 334.06,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "might",
+  "start": 334.06,
+  "end": 334.24,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "assume",
+  "start": 334.24,
+  "end": 334.54,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 334.54,
+  "end": 334.76,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "dangerous",
+  "start": 334.76,
+  "end": 335.1,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "moment",
+  "start": 335.1,
+  "end": 335.38,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 335.38,
+  "end": 335.62,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 335.62,
+  "end": 335.76,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "break-in.",
+  "start": 335.76,
+  "end": 336.18,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "It",
+  "start": 337.04,
+  "end": 337.16,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 337.16,
+  "end": 337.3,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "not.",
+  "start": 337.3,
+  "end": 337.62,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 338.52,
+  "end": 338.68,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "dangerous",
+  "start": 338.68,
+  "end": 339.04,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "moment",
+  "start": 339.04,
+  "end": 339.38,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 339.38,
+  "end": 339.6,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 339.6,
+  "end": 339.74,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "rebuild.",
+  "start": 339.74,
+  "end": 340.28,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 341.04,
+  "end": 341.22,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "nerve",
+  "start": 341.22,
+  "end": 341.44,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "required",
+  "start": 341.44,
+  "end": 341.88,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 341.88,
+  "end": 342.1,
+  "line": 35,
+  "probability": 0.35
+ },
+ {
+  "word": "breathtaking.",
+  "start": 342.1,
+  "end": 342.5,
+  "line": 35,
+  "probability": 1.0
+ },
+ {
+  "word": "Roughly",
+  "start": 343.08,
+  "end": 343.46,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "eight",
+  "start": 343.46,
+  "end": 343.7,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 343.7,
+  "end": 343.84,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 343.84,
+  "end": 343.94,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "half",
+  "start": 343.94,
+  "end": 344.16,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "hours",
+  "start": 344.16,
+  "end": 344.44,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "after",
+  "start": 344.44,
+  "end": 344.76,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "they",
+  "start": 344.76,
+  "end": 344.96,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "enter",
+  "start": 344.96,
+  "end": 345.12,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 345.12,
+  "end": 345.28,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "yard,",
+  "start": 345.28,
+  "end": 345.56,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "at",
+  "start": 345.8,
+  "end": 345.98,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "four",
+  "start": 345.98,
+  "end": 346.24,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 346.24,
+  "end": 346.34,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 346.34,
+  "end": 346.44,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "morning,",
+  "start": 346.44,
+  "end": 346.7,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 346.92,
+  "end": 347.08,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "Station",
+  "start": 347.08,
+  "end": 347.38,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "car",
+  "start": 347.38,
+  "end": 347.68,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "collects",
+  "start": 347.68,
+  "end": 348.0,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 348.0,
+  "end": 348.22,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "team.",
+  "start": 348.22,
+  "end": 348.48,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "At",
+  "start": 348.48,
+  "end": 349.5,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "five,",
+  "start": 349.5,
+  "end": 349.9,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 350.14,
+  "end": 350.28,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "truck",
+  "start": 350.28,
+  "end": 350.5,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "moves",
+  "start": 350.5,
+  "end": 350.8,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "to",
+  "start": 350.8,
+  "end": 351.04,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 351.04,
+  "end": 351.16,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "prearranged",
+  "start": 351.16,
+  "end": 351.64,
+  "line": 36,
+  "probability": 0.35
+ },
+ {
+  "word": "point.",
+  "start": 351.64,
+  "end": 352.04,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 352.94,
+  "end": 353.06,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "original",
+  "start": 353.06,
+  "end": 353.4,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "driver",
+  "start": 353.4,
+  "end": 353.78,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "takes",
+  "start": 353.78,
+  "end": 354.04,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "over",
+  "start": 354.04,
+  "end": 354.34,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 354.34,
+  "end": 354.52,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "drives",
+  "start": 354.52,
+  "end": 354.76,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "it",
+  "start": 354.76,
+  "end": 354.94,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "to",
+  "start": 354.94,
+  "end": 355.06,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 355.06,
+  "end": 355.16,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "rail",
+  "start": 355.16,
+  "end": 355.36,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "yard.",
+  "start": 355.36,
+  "end": 355.66,
+  "line": 36,
+  "probability": 1.0
+ },
+ {
+  "word": "At",
+  "start": 356.06,
+  "end": 356.26,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "seven,",
+  "start": 356.26,
+  "end": 356.62,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 356.86,
+  "end": 357.0,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviet",
+  "start": 357.0,
+  "end": 357.34,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "checker",
+  "start": 357.34,
+  "end": 357.72,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "arrives.",
+  "start": 357.72,
+  "end": 358.3,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 359.1,
+  "end": 359.26,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "man",
+  "start": 359.26,
+  "end": 359.48,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "who",
+  "start": 359.48,
+  "end": 359.66,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "had",
+  "start": 359.66,
+  "end": 359.76,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "been",
+  "start": 359.76,
+  "end": 359.9,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "logging",
+  "start": 359.9,
+  "end": 360.14,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "crates",
+  "start": 360.14,
+  "end": 360.48,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "finds",
+  "start": 360.48,
+  "end": 360.82,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 360.82,
+  "end": 361.0,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "truck",
+  "start": 361.0,
+  "end": 361.22,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "waiting,",
+  "start": 361.22,
+  "end": 361.5,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "shows",
+  "start": 361.76,
+  "end": 362.0,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "no",
+  "start": 362.0,
+  "end": 362.3,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "surprise,",
+  "start": 362.3,
+  "end": 362.7,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "checks",
+  "start": 363.08,
+  "end": 363.32,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 363.32,
+  "end": 363.52,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "crate",
+  "start": 363.52,
+  "end": 363.72,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "in,",
+  "start": 363.72,
+  "end": 363.98,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 364.18,
+  "end": 364.38,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "watches",
+  "start": 364.38,
+  "end": 364.64,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "it",
+  "start": 364.64,
+  "end": 364.88,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "loaded",
+  "start": 364.88,
+  "end": 365.12,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "onto",
+  "start": 365.12,
+  "end": 365.38,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 365.38,
+  "end": 365.6,
+  "line": 37,
+  "probability": 1.0
+ },
+ {
+  "word": "flatcar.",
+  "start": 365.6,
+  "end": 366.02,
+  "line": 37,
+  "probability": 0.35
+ },
+ {
+  "word": "No",
+  "start": 366.5,
+  "end": 366.7,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "alarm.",
+  "start": 366.7,
+  "end": 367.08,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "No",
+  "start": 367.94,
+  "end": 368.26,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "confrontation.",
+  "start": 368.26,
+  "end": 369.09,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "No",
+  "start": 369.8,
+  "end": 370.14,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "evidence,",
+  "start": 370.14,
+  "end": 370.54,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 370.86,
+  "end": 371.0,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 371.0,
+  "end": 371.1,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "American",
+  "start": 371.1,
+  "end": 371.42,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "record,",
+  "start": 371.42,
+  "end": 371.82,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "that",
+  "start": 372.04,
+  "end": 372.24,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "anyone",
+  "start": 372.24,
+  "end": 372.52,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "looked",
+  "start": 372.52,
+  "end": 372.82,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "twice.",
+  "start": 372.82,
+  "end": 373.42,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 374.08,
+  "end": 374.38,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "silence",
+  "start": 374.38,
+  "end": 374.66,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 374.66,
+  "end": 374.94,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "unreal.",
+  "start": 374.94,
+  "end": 375.32,
+  "line": 38,
+  "probability": 1.0
+ },
+ {
+  "word": "So",
+  "start": 375.86,
+  "end": 376.06,
+  "line": 39,
+  "probability": 1.0
+ },
+ {
+  "word": "what",
+  "start": 376.06,
+  "end": 376.22,
+  "line": 39,
+  "probability": 1.0
+ },
+ {
+  "word": "did",
+  "start": 376.22,
+  "end": 376.36,
+  "line": 39,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 376.36,
+  "end": 376.48,
+  "line": 39,
+  "probability": 1.0
+ },
+ {
+  "word": "United",
+  "start": 376.48,
+  "end": 376.7,
+  "line": 39,
+  "probability": 1.0
+ },
+ {
+  "word": "States",
+  "start": 376.7,
+  "end": 377.08,
+  "line": 39,
+  "probability": 1.0
+ },
+ {
+  "word": "actually",
+  "start": 377.08,
+  "end": 377.42,
+  "line": 39,
+  "probability": 1.0
+ },
+ {
+  "word": "get?",
+  "start": 377.42,
+  "end": 377.7,
+  "line": 39,
+  "probability": 1.0
+ },
+ {
+  "word": "Finer",
+  "start": 377.7,
+  "end": 378.52,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "reports",
+  "start": 378.52,
+  "end": 378.82,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 378.82,
+  "end": 379.02,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "Markings",
+  "start": 379.02,
+  "end": 379.28,
+  "line": 40,
+  "probability": 0.35
+ },
+ {
+  "word": "Center",
+  "start": 379.28,
+  "end": 379.62,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "Brief",
+  "start": 379.62,
+  "end": 379.92,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "with",
+  "start": 379.92,
+  "end": 380.16,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "four",
+  "start": 380.16,
+  "end": 380.4,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "findings.",
+  "start": 380.4,
+  "end": 381.05,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "A",
+  "start": 381.9,
+  "end": 381.98,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "probable",
+  "start": 381.98,
+  "end": 382.28,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "identification",
+  "start": 382.28,
+  "end": 382.94,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "of",
+  "start": 382.94,
+  "end": 383.26,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 383.26,
+  "end": 383.36,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "producer.",
+  "start": 383.36,
+  "end": 383.84,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "Confirmation",
+  "start": 384.71,
+  "end": 385.2,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "that",
+  "start": 385.2,
+  "end": 385.46,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "this",
+  "start": 385.46,
+  "end": 385.64,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 385.64,
+  "end": 385.8,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 385.8,
+  "end": 385.96,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "fifth",
+  "start": 385.96,
+  "end": 386.18,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "Lunik",
+  "start": 386.18,
+  "end": 386.54,
+  "line": 40,
+  "probability": 0.35
+ },
+ {
+  "word": "stage",
+  "start": 386.54,
+  "end": 386.8,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "produced.",
+  "start": 386.8,
+  "end": 387.43,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "Identification",
+  "start": 388.25,
+  "end": 388.7,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "of",
+  "start": 388.7,
+  "end": 389.18,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "three",
+  "start": 389.18,
+  "end": 389.44,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "electrical",
+  "start": 389.44,
+  "end": 389.82,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "component",
+  "start": 389.82,
+  "end": 390.36,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "suppliers.",
+  "start": 390.36,
+  "end": 391.16,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "And",
+  "start": 391.86,
+  "end": 392.12,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 392.12,
+  "end": 392.22,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "numbering",
+  "start": 392.22,
+  "end": 392.48,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "system",
+  "start": 392.48,
+  "end": 392.9,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "whose",
+  "start": 392.9,
+  "end": 393.12,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "name",
+  "start": 393.12,
+  "end": 393.4,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 393.4,
+  "end": 393.58,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "redacted.",
+  "start": 393.58,
+  "end": 394.02,
+  "line": 40,
+  "probability": 1.0
+ },
+ {
+  "word": "That",
+  "start": 394.44,
+  "end": 394.72,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 394.72,
+  "end": 394.86,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 394.86,
+  "end": 395.02,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "real",
+  "start": 395.02,
+  "end": 395.26,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "payload.",
+  "start": 395.26,
+  "end": 395.81,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "Not",
+  "start": 396.58,
+  "end": 396.82,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 396.82,
+  "end": 396.98,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "flyable",
+  "start": 396.98,
+  "end": 397.36,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "rocket,",
+  "start": 397.36,
+  "end": 397.7,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "but",
+  "start": 397.92,
+  "end": 398.06,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 398.06,
+  "end": 398.16,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "map",
+  "start": 398.16,
+  "end": 398.36,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "of",
+  "start": 398.36,
+  "end": 398.62,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviet",
+  "start": 398.62,
+  "end": 398.86,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "industry",
+  "start": 398.86,
+  "end": 399.32,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "written",
+  "start": 399.32,
+  "end": 399.58,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 399.58,
+  "end": 399.82,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "paint",
+  "start": 399.82,
+  "end": 400.08,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 400.08,
+  "end": 400.24,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "stamp",
+  "start": 400.24,
+  "end": 400.52,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "marks.",
+  "start": 400.52,
+  "end": 400.86,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "You",
+  "start": 401.68,
+  "end": 401.98,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "could",
+  "start": 401.98,
+  "end": 402.12,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "object",
+  "start": 402.12,
+  "end": 402.42,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "that",
+  "start": 402.42,
+  "end": 402.62,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 402.62,
+  "end": 402.74,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "stripped",
+  "start": 402.74,
+  "end": 402.94,
+  "line": 41,
+  "probability": 0.35
+ },
+ {
+  "word": "display",
+  "start": 402.94,
+  "end": 403.4,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "teaches",
+  "start": 403.4,
+  "end": 403.7,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "nothing.",
+  "start": 403.7,
+  "end": 404.12,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "But",
+  "start": 404.9,
+  "end": 405.14,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 405.14,
+  "end": 405.28,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "markings",
+  "start": 405.28,
+  "end": 405.6,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "were",
+  "start": 405.6,
+  "end": 405.82,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 405.82,
+  "end": 405.96,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "point.",
+  "start": 405.96,
+  "end": 406.22,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "For",
+  "start": 406.22,
+  "end": 407.32,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviet",
+  "start": 407.32,
+  "end": 407.72,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "planners,",
+  "start": 407.72,
+  "end": 408.16,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "that",
+  "start": 408.48,
+  "end": 408.68,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "map",
+  "start": 408.68,
+  "end": 408.92,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 408.92,
+  "end": 409.14,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "potentially",
+  "start": 409.14,
+  "end": 409.6,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "devastating.",
+  "start": 409.6,
+  "end": 410.16,
+  "line": 41,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 410.7,
+  "end": 410.86,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "full",
+  "start": 410.86,
+  "end": 411.08,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "technical",
+  "start": 411.08,
+  "end": 411.42,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "yield",
+  "start": 411.42,
+  "end": 411.8,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "remains",
+  "start": 411.8,
+  "end": 412.28,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "unknown.",
+  "start": 412.28,
+  "end": 412.87,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 413.66,
+  "end": 413.78,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "underlying",
+  "start": 413.78,
+  "end": 414.2,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "report",
+  "start": 414.2,
+  "end": 414.62,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 414.62,
+  "end": 414.82,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "still",
+  "start": 414.82,
+  "end": 415.04,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "classified.",
+  "start": 415.04,
+  "end": 415.82,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "We",
+  "start": 416.56,
+  "end": 416.76,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "know",
+  "start": 416.76,
+  "end": 416.94,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 416.94,
+  "end": 417.12,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "categories,",
+  "start": 417.12,
+  "end": 417.58,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "not",
+  "start": 417.9,
+  "end": 418.08,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 418.08,
+  "end": 418.24,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "engineering",
+  "start": 418.24,
+  "end": 418.62,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "detail.",
+  "start": 418.62,
+  "end": 419.1,
+  "line": 42,
+  "probability": 1.0
+ },
+ {
+  "word": "It",
+  "start": 419.56,
+  "end": 419.7,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 419.7,
+  "end": 419.82,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "unclear",
+  "start": 419.82,
+  "end": 420.2,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "what",
+  "start": 420.2,
+  "end": 420.44,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 420.44,
+  "end": 420.6,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "toured",
+  "start": 420.6,
+  "end": 420.84,
+  "line": 43,
+  "probability": 0.35
+ },
+ {
+  "word": "article",
+  "start": 420.84,
+  "end": 421.08,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "really",
+  "start": 421.08,
+  "end": 421.4,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "was.",
+  "start": 421.4,
+  "end": 421.94,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "Finer",
+  "start": 422.8,
+  "end": 423.14,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "calls",
+  "start": 423.14,
+  "end": 423.38,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "it",
+  "start": 423.38,
+  "end": 423.54,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 423.54,
+  "end": 423.64,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "production",
+  "start": 423.64,
+  "end": 423.94,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "item",
+  "start": 423.94,
+  "end": 424.32,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "stripped",
+  "start": 424.32,
+  "end": 424.54,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "of",
+  "start": 424.54,
+  "end": 424.74,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "its",
+  "start": 424.74,
+  "end": 424.84,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "engine.",
+  "start": 424.84,
+  "end": 425.28,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 426.1,
+  "end": 426.24,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviet",
+  "start": 426.24,
+  "end": 426.56,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "report",
+  "start": 426.56,
+  "end": 426.9,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "calls",
+  "start": 426.9,
+  "end": 427.24,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 427.24,
+  "end": 427.44,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "displays",
+  "start": 427.44,
+  "end": 427.72,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "full-scale",
+  "start": 427.72,
+  "end": 428.3,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "mock-ups.",
+  "start": 428.3,
+  "end": 429.0,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "A",
+  "start": 429.78,
+  "end": 429.9,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "scholarly",
+  "start": 429.9,
+  "end": 430.28,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "account",
+  "start": 430.28,
+  "end": 430.68,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "describes",
+  "start": 430.68,
+  "end": 431.12,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "one",
+  "start": 431.12,
+  "end": 431.48,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "genuine",
+  "start": 431.48,
+  "end": 431.88,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "Lunik",
+  "start": 431.88,
+  "end": 432.22,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 432.22,
+  "end": 432.42,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "three",
+  "start": 432.42,
+  "end": 432.64,
+  "line": 43,
+  "probability": 0.35
+ },
+ {
+  "word": "Sputnik",
+  "start": 432.64,
+  "end": 433.06,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "models.",
+  "start": 433.06,
+  "end": 433.48,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "No",
+  "start": 434.12,
+  "end": 434.64,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "source",
+  "start": 434.64,
+  "end": 434.96,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "reconciles",
+  "start": 434.96,
+  "end": 435.7,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "them.",
+  "start": 435.7,
+  "end": 435.88,
+  "line": 43,
+  "probability": 1.0
+ },
+ {
+  "word": "Even",
+  "start": 436.26,
+  "end": 436.44,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 436.44,
+  "end": 436.62,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "crate",
+  "start": 436.62,
+  "end": 436.86,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 436.86,
+  "end": 437.02,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "an",
+  "start": 437.02,
+  "end": 437.14,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "open",
+  "start": 437.14,
+  "end": 437.38,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "question.",
+  "start": 437.38,
+  "end": 437.95,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "Finer",
+  "start": 438.77,
+  "end": 439.12,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "gives",
+  "start": 439.12,
+  "end": 439.3,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "twenty",
+  "start": 439.3,
+  "end": 439.68,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "feet",
+  "start": 439.68,
+  "end": 439.88,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "by",
+  "start": 439.88,
+  "end": 440.1,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "eleven",
+  "start": 440.1,
+  "end": 440.42,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "by",
+  "start": 440.42,
+  "end": 440.64,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "fourteen.",
+  "start": 440.64,
+  "end": 441.12,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 442.0,
+  "end": 442.16,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "modern",
+  "start": 442.16,
+  "end": 442.52,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "CIA",
+  "start": 442.52,
+  "end": 442.9,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "retelling",
+  "start": 442.9,
+  "end": 443.56,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "gives",
+  "start": 443.56,
+  "end": 443.86,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "seventeen",
+  "start": 443.86,
+  "end": 444.34,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "by",
+  "start": 444.34,
+  "end": 444.56,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "eight.",
+  "start": 444.56,
+  "end": 444.86,
+  "line": 44,
+  "probability": 1.0
+ },
+ {
+  "word": "And",
+  "start": 445.28,
+  "end": 445.42,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "no",
+  "start": 445.42,
+  "end": 445.6,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "one",
+  "start": 445.6,
+  "end": 445.76,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "knows",
+  "start": 445.76,
+  "end": 446.0,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "whether",
+  "start": 446.0,
+  "end": 446.26,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 446.26,
+  "end": 446.5,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviets",
+  "start": 446.5,
+  "end": 446.78,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "ever",
+  "start": 446.78,
+  "end": 447.08,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "suspected.",
+  "start": 447.08,
+  "end": 447.73,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "Finer",
+  "start": 448.52,
+  "end": 448.96,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "says",
+  "start": 448.96,
+  "end": 449.16,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "there",
+  "start": 449.16,
+  "end": 449.36,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 449.36,
+  "end": 449.46,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "never",
+  "start": 449.46,
+  "end": 449.72,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "any",
+  "start": 449.72,
+  "end": 450.0,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "indication",
+  "start": 450.0,
+  "end": 450.46,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "they",
+  "start": 450.46,
+  "end": 450.72,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "discovered",
+  "start": 450.72,
+  "end": 451.1,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 451.1,
+  "end": 451.26,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "borrowing.",
+  "start": 451.26,
+  "end": 451.72,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "That",
+  "start": 452.52,
+  "end": 452.72,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 452.72,
+  "end": 452.86,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "an",
+  "start": 452.86,
+  "end": 453.0,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "absence",
+  "start": 453.0,
+  "end": 453.3,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "of",
+  "start": 453.3,
+  "end": 453.54,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "evidence",
+  "start": 453.54,
+  "end": 453.86,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "from",
+  "start": 453.86,
+  "end": 454.08,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "one",
+  "start": 454.08,
+  "end": 454.3,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "side.",
+  "start": 454.3,
+  "end": 454.77,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 455.58,
+  "end": 455.7,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "CIA,",
+  "start": 455.7,
+  "end": 456.06,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "as",
+  "start": 456.54,
+  "end": 456.74,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "late",
+  "start": 456.74,
+  "end": 456.98,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "as",
+  "start": 456.98,
+  "end": 457.16,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "twenty",
+  "start": 457.16,
+  "end": 457.8,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "twenty-one,",
+  "start": 457.8,
+  "end": 457.88,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "refused",
+  "start": 458.3,
+  "end": 458.56,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "to",
+  "start": 458.56,
+  "end": 458.8,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "confirm",
+  "start": 458.8,
+  "end": 459.1,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 459.1,
+  "end": 459.28,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "operation",
+  "start": 459.28,
+  "end": 459.76,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "took",
+  "start": 459.76,
+  "end": 460.02,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "place",
+  "start": 460.02,
+  "end": 460.3,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 460.3,
+  "end": 460.48,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "Mexico.",
+  "start": 460.48,
+  "end": 460.8,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "A",
+  "start": 460.8,
+  "end": 461.92,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "CIA",
+  "start": 461.92,
+  "end": 462.36,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "historian",
+  "start": 462.36,
+  "end": 462.9,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "told",
+  "start": 462.9,
+  "end": 463.32,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "Maysh",
+  "start": 463.32,
+  "end": 463.6,
+  "line": 45,
+  "probability": 0.35
+ },
+ {
+  "word": "they",
+  "start": 463.6,
+  "end": 463.76,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "prefer",
+  "start": 463.76,
+  "end": 464.04,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 464.04,
+  "end": 464.22,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "word",
+  "start": 464.22,
+  "end": 464.44,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "borrowing.",
+  "start": 464.44,
+  "end": 464.96,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "It",
+  "start": 465.8,
+  "end": 465.86,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "makes",
+  "start": 465.86,
+  "end": 466.06,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "an",
+  "start": 466.06,
+  "end": 466.22,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "international",
+  "start": 466.22,
+  "end": 466.64,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "incident",
+  "start": 466.64,
+  "end": 467.12,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "sound",
+  "start": 467.12,
+  "end": 467.44,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "like",
+  "start": 467.44,
+  "end": 467.64,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 467.64,
+  "end": 467.76,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "library",
+  "start": 467.76,
+  "end": 468.12,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "card.",
+  "start": 468.12,
+  "end": 468.46,
+  "line": 45,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 468.9,
+  "end": 469.0,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "borrowing",
+  "start": 469.0,
+  "end": 469.34,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "happened",
+  "start": 469.34,
+  "end": 469.7,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 469.7,
+  "end": 469.9,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "late",
+  "start": 469.9,
+  "end": 470.1,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "nineteen",
+  "start": 470.1,
+  "end": 470.94,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "fifty-nine.",
+  "start": 470.94,
+  "end": 471.25,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 472.1,
+  "end": 472.2,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "sanitized",
+  "start": 472.2,
+  "end": 472.74,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "account",
+  "start": 472.74,
+  "end": 473.12,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "appeared",
+  "start": 473.12,
+  "end": 473.48,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 473.48,
+  "end": 473.68,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "nineteen",
+  "start": 473.68,
+  "end": 474.36,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "ninety-five.",
+  "start": 474.36,
+  "end": 474.73,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "A",
+  "start": 475.46,
+  "end": 475.64,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "fuller",
+  "start": 475.64,
+  "end": 475.88,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "release",
+  "start": 475.88,
+  "end": 476.24,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "followed",
+  "start": 476.24,
+  "end": 476.6,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 476.6,
+  "end": 476.76,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "Freedom",
+  "start": 476.76,
+  "end": 476.98,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "of",
+  "start": 476.98,
+  "end": 477.18,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "Information",
+  "start": 477.18,
+  "end": 477.62,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "request",
+  "start": 477.62,
+  "end": 478.02,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 478.02,
+  "end": 478.28,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "twenty",
+  "start": 478.28,
+  "end": 478.92,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "nineteen.",
+  "start": 478.92,
+  "end": 479.14,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "In",
+  "start": 479.96,
+  "end": 480.08,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "twenty",
+  "start": 480.08,
+  "end": 480.72,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "twenty-four,",
+  "start": 480.72,
+  "end": 480.8,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 481.18,
+  "end": 481.3,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "feature",
+  "start": 481.3,
+  "end": 481.6,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "film",
+  "start": 481.6,
+  "end": 481.9,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "was",
+  "start": 481.9,
+  "end": 482.08,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "announced.",
+  "start": 482.08,
+  "end": 482.67,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "Sixty-five",
+  "start": 483.5,
+  "end": 484.02,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "years",
+  "start": 484.02,
+  "end": 484.28,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "later,",
+  "start": 484.28,
+  "end": 484.68,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "it",
+  "start": 484.88,
+  "end": 485.02,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 485.02,
+  "end": 485.16,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "still",
+  "start": 485.16,
+  "end": 485.36,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "not",
+  "start": 485.36,
+  "end": 485.62,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "fully",
+  "start": 485.62,
+  "end": 485.92,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "declassified.",
+  "start": 485.92,
+  "end": 486.64,
+  "line": 46,
+  "probability": 1.0
+ },
+ {
+  "word": "Today",
+  "start": 486.64,
+  "end": 487.28,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 487.28,
+  "end": 487.54,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "crate",
+  "start": 487.54,
+  "end": 487.76,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 487.76,
+  "end": 487.94,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "gone,",
+  "start": 487.94,
+  "end": 488.24,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 488.48,
+  "end": 488.62,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "yard",
+  "start": 488.62,
+  "end": 488.82,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 488.82,
+  "end": 489.0,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "gone,",
+  "start": 489.0,
+  "end": 489.28,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 489.48,
+  "end": 489.64,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 489.64,
+  "end": 489.74,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "men",
+  "start": 489.74,
+  "end": 489.92,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "on",
+  "start": 489.92,
+  "end": 490.1,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 490.1,
+  "end": 490.22,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "roof",
+  "start": 490.22,
+  "end": 490.42,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "are",
+  "start": 490.42,
+  "end": 490.62,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "mostly",
+  "start": 490.62,
+  "end": 490.92,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "unnamed.",
+  "start": 490.92,
+  "end": 491.59,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "What",
+  "start": 492.42,
+  "end": 492.54,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "survives",
+  "start": 492.54,
+  "end": 492.88,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 492.88,
+  "end": 493.18,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 493.18,
+  "end": 493.32,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "document",
+  "start": 493.32,
+  "end": 493.64,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "with",
+  "start": 493.64,
+  "end": 493.9,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "blacked-out",
+  "start": 493.9,
+  "end": 494.36,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "lines",
+  "start": 494.36,
+  "end": 494.7,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 494.7,
+  "end": 494.94,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "one",
+  "start": 494.94,
+  "end": 495.12,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "claim.",
+  "start": 495.12,
+  "end": 495.6,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "For",
+  "start": 496.42,
+  "end": 496.56,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 496.56,
+  "end": 496.72,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "single",
+  "start": 496.72,
+  "end": 496.96,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "night,",
+  "start": 496.96,
+  "end": 497.26,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 497.5,
+  "end": 497.62,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "most",
+  "start": 497.62,
+  "end": 497.78,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "advanced",
+  "start": 497.78,
+  "end": 498.18,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "rocket",
+  "start": 498.18,
+  "end": 498.5,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 498.5,
+  "end": 498.7,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 498.7,
+  "end": 498.82,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "Soviet",
+  "start": 498.82,
+  "end": 499.12,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "inventory",
+  "start": 499.12,
+  "end": 499.58,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "sat",
+  "start": 499.58,
+  "end": 499.92,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "under",
+  "start": 499.92,
+  "end": 500.18,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 500.18,
+  "end": 500.32,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "canvas",
+  "start": 500.32,
+  "end": 500.58,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "in",
+  "start": 500.58,
+  "end": 500.84,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "Mexico",
+  "start": 500.84,
+  "end": 501.14,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "City,",
+  "start": 501.14,
+  "end": 501.52,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 501.84,
+  "end": 501.98,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "then",
+  "start": 501.98,
+  "end": 502.14,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "went",
+  "start": 502.14,
+  "end": 502.32,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "home.",
+  "start": 502.32,
+  "end": 502.58,
+  "line": 47,
+  "probability": 1.0
+ },
+ {
+  "word": "If",
+  "start": 503.04,
+  "end": 503.14,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "you",
+  "start": 503.14,
+  "end": 503.26,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "want",
+  "start": 503.26,
+  "end": 503.42,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "another",
+  "start": 503.42,
+  "end": 503.68,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "story",
+  "start": 503.68,
+  "end": 504.0,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "about",
+  "start": 504.0,
+  "end": 504.26,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "infrastructure",
+  "start": 504.26,
+  "end": 504.74,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "people",
+  "start": 504.74,
+  "end": 505.14,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "trust",
+  "start": 505.14,
+  "end": 505.48,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "and",
+  "start": 505.48,
+  "end": 505.68,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "almost",
+  "start": 505.68,
+  "end": 505.94,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "never",
+  "start": 505.94,
+  "end": 506.2,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "inspect,",
+  "start": 506.2,
+  "end": 506.66,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "watch",
+  "start": 507.12,
+  "end": 507.24,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "our",
+  "start": 507.24,
+  "end": 507.4,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "episode",
+  "start": 507.4,
+  "end": 507.76,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "on",
+  "start": 507.76,
+  "end": 507.98,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "how",
+  "start": 507.98,
+  "end": 508.12,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "one",
+  "start": 508.12,
+  "end": 508.32,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "anchor",
+  "start": 508.32,
+  "end": 508.58,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "can",
+  "start": 508.58,
+  "end": 508.82,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "kill",
+  "start": 508.82,
+  "end": 509.0,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 509.0,
+  "end": 509.16,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "internet.",
+  "start": 509.16,
+  "end": 509.36,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "It",
+  "start": 510.12,
+  "end": 510.5,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 510.5,
+  "end": 510.6,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "already",
+  "start": 510.6,
+  "end": 510.92,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "on",
+  "start": 510.92,
+  "end": 511.16,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 511.16,
+  "end": 511.28,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "channel.",
+  "start": 511.28,
+  "end": 511.56,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 512.14,
+  "end": 512.62,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "cable",
+  "start": 512.62,
+  "end": 512.86,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "under",
+  "start": 512.86,
+  "end": 513.1,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "your",
+  "start": 513.1,
+  "end": 513.3,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "feet",
+  "start": 513.3,
+  "end": 513.52,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "does",
+  "start": 513.52,
+  "end": 513.74,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 513.74,
+  "end": 513.92,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "same",
+  "start": 513.92,
+  "end": 514.14,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "job",
+  "start": 514.14,
+  "end": 514.4,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "that",
+  "start": 514.4,
+  "end": 514.62,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "plastic",
+  "start": 514.62,
+  "end": 515.0,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "seal",
+  "start": 515.0,
+  "end": 515.26,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "did,",
+  "start": 515.26,
+  "end": 515.6,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "holding",
+  "start": 515.82,
+  "end": 516.08,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "a",
+  "start": 516.08,
+  "end": 516.26,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "system",
+  "start": 516.26,
+  "end": 516.48,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "together",
+  "start": 516.48,
+  "end": 516.86,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "on",
+  "start": 516.86,
+  "end": 517.08,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "the",
+  "start": 517.08,
+  "end": 517.2,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "assumption",
+  "start": 517.2,
+  "end": 517.46,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "that",
+  "start": 517.46,
+  "end": 517.76,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "nobody",
+  "start": 517.76,
+  "end": 517.98,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "looks",
+  "start": 517.98,
+  "end": 518.32,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "too",
+  "start": 518.32,
+  "end": 518.58,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "closely.",
+  "start": 518.58,
+  "end": 518.98,
+  "line": 48,
+  "probability": 1.0
+ },
+ {
+  "word": "The",
+  "start": 519.44,
+  "end": 519.56,
+  "line": 49,
+  "probability": 1.0
+ },
+ {
+  "word": "difference",
+  "start": 519.56,
+  "end": 519.84,
+  "line": 49,
+  "probability": 1.0
+ },
+ {
+  "word": "is",
+  "start": 519.84,
+  "end": 520.08,
+  "line": 49,
+  "probability": 1.0
+ },
+ {
+  "word": "that",
+  "start": 520.08,
+  "end": 520.24,
+  "line": 49,
+  "probability": 1.0
+ },
+ {
+  "word": "this",
+  "start": 520.24,
+  "end": 520.4,
+  "line": 49,
+  "probability": 1.0
+ },
+ {
+  "word": "time,",
+  "start": 520.4,
+  "end": 520.72,
+  "line": 49,
+  "probability": 1.0
+ },
+ {
+  "word": "we",
+  "start": 520.94,
+  "end": 521.08,
+  "line": 49,
+  "probability": 1.0
+ },
+ {
+  "word": "looked.",
+  "start": 521.08,
+  "end": 521.28,
+  "line": 49,
+  "probability": 1.0
+ }
+]

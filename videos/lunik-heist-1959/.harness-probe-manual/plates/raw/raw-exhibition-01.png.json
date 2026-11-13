@@ -1,0 +1,23 @@
+{
+  "pdf": "videos/lunik-heist-1959/.tmp/lunik.pdf",
+  "page": 1,
+  "dpi": 150,
+  "width": 1275,
+  "height": 1650,
+  "boxes": [
+    {
+      "phrase": "twice gained extended access to the Lunik",
+      "x": 239,
+      "y": 1014,
+      "w": 673,
+      "h": 37
+    },
+    {
+      "phrase": "before the Soviets missed it",
+      "x": 700,
+      "y": 1051,
+      "w": 436,
+      "h": 37
+    }
+  ]
+}

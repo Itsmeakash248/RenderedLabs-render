@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>World 02 — Archive Desk</title>
+</head>
+<body>
+<template id="wbg-02-template">
+  <!-- World-BG w02 · Archive Desk · slot 60.0–120.0 s · hand-authored 2D parallax environment. -->
+  <!-- Environment: Declassified document desk, desk lamp cone top-left, archival dust motes, deep indigo wood grain. -->
+  <style>
+    #root { position: absolute; inset: 0; }
+    [data-composition-id="wbg-02-archive-desk"] {
+      position: absolute; inset: 0; overflow: hidden; background: transparent;
+    }
+    [data-composition-id="wbg-02-archive-desk"] .wbg-stage { position: absolute; inset: 0; overflow: hidden; }
+    [data-composition-id="wbg-02-archive-desk"] .wbg-ground {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 54% 48% at 18% 22%, rgba(255,122,26,0.11) 0%, rgba(255,122,26,0.03) 42%, rgba(10,14,36,0) 74%),
+        radial-gradient(ellipse 48% 42% at 82% 84%, rgba(142,95,217,0.09) 0%, rgba(10,14,36,0) 70%),
+        linear-gradient(180deg, #070A12 0%, #0A0E24 22%, #151B3B 50%, #0A0E24 74%, #050814 100%),
+        linear-gradient(90deg, #050814 0%, #0A0E24 18%, #0A0E24 82%, #050814 100%),
+        linear-gradient(0deg, #050814 0%, rgba(5,8,20,0) 26%);
+    }
+    [data-composition-id="wbg-02-archive-desk"] .wbg-plane { position: absolute; inset: 0; }
+    [data-composition-id="wbg-02-archive-desk"] .wbg-plane svg {
+      position: absolute; inset: 0; width: 100%; height: 100%; display: block;
+    }
+    [data-composition-id="wbg-02-archive-desk"] .p-glow { opacity: 0.90; }
+    [data-composition-id="wbg-02-archive-desk"] .p-far { opacity: 0.74; }
+    [data-composition-id="wbg-02-archive-desk"] .p-mid { opacity: 0.88; }
+    [data-composition-id="wbg-02-archive-desk"] .p-near { opacity: 0.92; }
+    [data-composition-id="wbg-02-archive-desk"] .wbg-scrim {
+      position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 46% 42% at 50% 50%, rgba(5,8,20,0.48) 0%, rgba(5,8,20,0.18) 58%, rgba(5,8,20,0) 100%),
+        radial-gradient(ellipse 92% 88% at 50% 50%, rgba(5,8,20,0) 48%, rgba(5,8,20,0.60) 100%);
+    }
+    [data-composition-id="wbg-02-archive-desk"] .wbg-grain {
+      position: absolute; inset: 0; pointer-events: none; opacity: 0.30;
+      background-image: radial-gradient(rgba(184,192,216,0.06) 0.6px, transparent 0.7px);
+      background-size: 4px 4px;
+    }
+  </style>
+
+  <div id="root" data-composition-id="wbg-02-archive-desk" data-width="1920" data-height="1080" data-duration="60">
+    <div class="wbg-stage">
+      <div class="wbg-ground"></div>
+
+      <!-- Desk lamp light source & deep ambient archive atmosphere -->
+      <div class="wbg-plane p-glow">
+        <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <radialGradient id="w02-lampCone" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#FFD23F" stop-opacity="0.30"/>
+              <stop offset="32%" stop-color="#FF7A1A" stop-opacity="0.16"/>
+              <stop offset="68%" stop-color="#8E5FD9" stop-opacity="0.05"/>
+              <stop offset="100%" stop-color="#0A0E24" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="w02-lampFilament" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#F4EFE3" stop-opacity="0.58"/>
+              <stop offset="40%" stop-color="#FFD23F" stop-opacity="0.22"/>
+              <stop offset="100%" stop-color="#FF7A1A" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="w02-archiveBounce" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#8E5FD9" stop-opacity="0.20"/>
+              <stop offset="50%" stop-color="#151B3B" stop-opacity="0.10"/>
+              <stop offset="100%" stop-color="#0A0E24" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="w02-woodHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#050814" stop-opacity="0.75"/>
+              <stop offset="50%" stop-color="#151B3B" stop-opacity="0.30"/>
+              <stop offset="100%" stop-color="#050814" stop-opacity="0.75"/>
+            </linearGradient>
+            <filter id="w02-blurDesk" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="22"/>
+            </filter>
+          </defs>
+
+          <!-- Deep volumetric shadows around desk perimeter -->
+          <g id="w02-deep-shadows">
+            <ellipse cx="960" cy="1060" rx="720" ry="220" fill="#050814" opacity="0.44" filter="url(#w02-blurDesk)"/>
+            <ellipse cx="120" cy="180" rx="360" ry="240" fill="#0A0E24" opacity="0.36" filter="url(#w02-blurDesk)"/>
+            <ellipse cx="1800" cy="500" rx="340" ry="460" fill="#050814" opacity="0.38" filter="url(#w02-blurDesk)"/>
+            <ellipse cx="800" cy="-60" rx="520" ry="180" fill="#0A0E24" opacity="0.36" filter="url(#w02-blurDesk)"/>
+            <ellipse cx="100" cy="640" rx="260" ry="300" fill="#151B3B" opacity="0.26" filter="url(#w02-blurDesk)"/>
+            <ellipse cx="1840" cy="980" rx="360" ry="200" fill="#0A0E24" opacity="0.36" filter="url(#w02-blurDesk)"/>
+          </g>
+
+          <!-- Top-left reading lamp illumination (edges only) -->
+          <g id="w02-lamp-assembly">
+            <ellipse cx="280" cy="220" rx="360" ry="260" fill="url(#w02-lampCone)" opacity="0.62"/>
+            <ellipse cx="280" cy="220" rx="130" ry="90" fill="url(#w02-lampFilament)" opacity="0.65" filter="url(#w02-blurDesk)"/>
+            <circle cx="285" cy="215" r="18" fill="#FFD23F" opacity="0.24"/>
+            <!-- Lower right ambient table bounce -->
+            <ellipse cx="1660" cy="860" rx="380" ry="260" fill="url(#w02-archiveBounce)" opacity="0.52"/>
+          </g>
+
+          <!-- Shelving cornice crown at top margin (y <= 120) -->
+          <g id="w02-shelf-cornice" opacity="0.45">
+            <rect x="0" y="-10" width="1920" height="70" fill="#050814" opacity="0.85"/>
+            <rect x="0" y="58" width="1920" height="20" fill="url(#w02-woodHeader)" opacity="0.60"/>
+            <line x1="0" y1="78" x2="1920" y2="78" stroke="#151B3B" stroke-width="4" opacity="0.35"/>
+            <rect x="80" y="50" width="160" height="40" fill="#0A0E24" opacity="0.70"/>
+            <rect x="1680" y="50" width="160" height="40" fill="#0A0E24" opacity="0.70"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Far plane: floating archive dust motes in distant lamp beam -->
+      <div class="wbg-plane p-far">
+        <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g id="w02-far-drift">
+            <g id="w02-far-motes">
+              <!-- Edge dust particles x < 480 or x > 1440 -->
+              <circle cx="120" cy="160" r="2.0" fill="#B8C0D8" opacity="0.32"/>
+              <circle cx="240" cy="280" r="2.4" fill="#B8C0D8" opacity="0.34"/>
+              <circle cx="360" cy="190" r="1.8" fill="#B8C0D8" opacity="0.26"/>
+              <circle cx="460" cy="250" r="2.2" fill="#B8C0D8" opacity="0.28"/>
+              <circle cx="1500" cy="180" r="2.0" fill="#B8C0D8" opacity="0.25"/>
+              <circle cx="1640" cy="220" r="2.6" fill="#B8C0D8" opacity="0.30"/>
+              <circle cx="1780" cy="150" r="2.2" fill="#B8C0D8" opacity="0.26"/>
+              <circle cx="90" cy="840" r="2.2" fill="#B8C0D8" opacity="0.24"/>
+              <circle cx="260" cy="920" r="2.6" fill="#B8C0D8" opacity="0.28"/>
+              <circle cx="1540" cy="890" r="2.4" fill="#B8C0D8" opacity="0.26"/>
+              <circle cx="1720" cy="840" r="3.0" fill="#B8C0D8" opacity="0.32"/>
+              <circle cx="1850" cy="940" r="2.2" fill="#B8C0D8" opacity="0.24"/>
+              <circle cx="140" cy="520" r="1.8" fill="#B8C0D8" opacity="0.20"/>
+              <circle cx="1790" cy="580" r="2.2" fill="#B8C0D8" opacity="0.22"/>
+            </g>
+            <!-- Heavy bottom desk base silhouette (y >= 960) -->
+            <rect x="0" y="960" width="380" height="120" fill="#050814" opacity="0.65"/>
+            <rect x="1540" y="960" width="380" height="120" fill="#050814" opacity="0.65"/>
+            <line x1="0" y1="960" x2="380" y2="960" stroke="#151B3B" stroke-width="4" opacity="0.30"/>
+            <line x1="1540" y1="960" x2="1920" y2="960" stroke="#151B3B" stroke-width="4" opacity="0.30"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Mid plane: dossier binder outlines & date stamp alignment marks at margins -->
+      <div class="wbg-plane p-mid">
+        <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g id="w02-mid-drift">
+            <g id="w02-mid-motes">
+              <circle cx="180" cy="240" r="3.0" fill="#B8C0D8" opacity="0.28"/>
+              <circle cx="310" cy="310" r="2.6" fill="#B8C0D8" opacity="0.25"/>
+              <circle cx="440" cy="260" r="3.2" fill="#B8C0D8" opacity="0.28"/>
+              <circle cx="1480" cy="240" r="2.8" fill="#B8C0D8" opacity="0.26"/>
+              <circle cx="1660" cy="300" r="3.4" fill="#B8C0D8" opacity="0.30"/>
+              <circle cx="1810" cy="260" r="2.8" fill="#B8C0D8" opacity="0.24"/>
+              <circle cx="120" cy="780" r="2.6" fill="#B8C0D8" opacity="0.22"/>
+              <circle cx="340" cy="850" r="3.0" fill="#B8C0D8" opacity="0.25"/>
+              <circle cx="1600" cy="830" r="3.2" fill="#B8C0D8" opacity="0.28"/>
+              <circle cx="1770" cy="780" r="3.0" fill="#B8C0D8" opacity="0.26"/>
+            </g>
+            <!-- Archival folder margin rulers at canvas lateral edges -->
+            <rect x="36" y="100" width="28" height="880" fill="#0A0E24" opacity="0.60"/>
+            <rect x="1856" y="100" width="28" height="880" fill="#0A0E24" opacity="0.60"/>
+            <line x1="64" y1="100" x2="64" y2="980" stroke="#151B3B" stroke-width="4" opacity="0.35"/>
+            <line x1="1856" y1="100" x2="1856" y2="980" stroke="#151B3B" stroke-width="4" opacity="0.35"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Near plane: foreground desk blotter edge & glowing warm motes -->
+      <div class="wbg-plane p-near">
+        <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <radialGradient id="w02-goldMote" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#FFD23F" stop-opacity="0.55"/>
+              <stop offset="60%" stop-color="#FF7A1A" stop-opacity="0.25"/>
+              <stop offset="100%" stop-color="#0A0E24" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="w02-nearMoteBlur" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="5"/>
+            </filter>
+          </defs>
+          <g id="w02-near-drift">
+            <g id="w02-near-motes">
+              <!-- Golden dust particles illuminated directly by lamp -->
+              <circle cx="260" cy="260" r="4.0" fill="url(#w02-goldMote)" opacity="0.45" filter="url(#w02-nearMoteBlur)"/>
+              <circle cx="380" cy="360" r="3.5" fill="url(#w02-goldMote)" opacity="0.40"/>
+              <circle cx="420" cy="460" r="3.8" fill="url(#w02-goldMote)" opacity="0.38"/>
+              <circle cx="210" cy="480" r="4.4" fill="url(#w02-goldMote)" opacity="0.42" filter="url(#w02-nearMoteBlur)"/>
+              <circle cx="160" cy="880" r="3.6" fill="#B8C0D8" opacity="0.25"/>
+              <circle cx="320" cy="960" r="3.8" fill="#B8C0D8" opacity="0.26"/>
+              <circle cx="1560" cy="940" r="3.6" fill="#B8C0D8" opacity="0.25"/>
+              <circle cx="1740" cy="990" r="4.0" fill="#B8C0D8" opacity="0.28"/>
+            </g>
+            <!-- Heavy bottom desk blotter edge -->
+            <rect x="0" y="1030" width="1920" height="70" fill="#050814" opacity="0.85"/>
+            <line x1="0" y1="1030" x2="1920" y2="1030" stroke="#151B3B" stroke-width="4" opacity="0.40"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="wbg-scrim"></div>
+      <div class="wbg-grain"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script src="../assets/brand/lib/motion.js"></script>
+  <script src="../assets/brand-lib/motion.js"></script>
+  <script>
+    (function initWbg02() {
+      var ID = 'wbg-02-archive-desk';
+      var SLOT = 60.0;
+      var root = document.querySelector('[data-composition-id="' + ID + '"]');
+      if (!root || !window.gsap) return;
+      var nz = (window.RLMotion && window.RLMotion.noise1) ? window.RLMotion.noise1(72001) : function(t) { return Math.sin(t); };
+      var tl = gsap.timeline({ paused: true });
+      var drift = { p: 0 };
+
+      /* 3 distinct drift rates on 3 depth planes */
+      tl.to('#w02-far-drift', { x: -160, duration: SLOT, ease: 'none' }, 0);
+      tl.to('#w02-mid-drift', { x: -110, duration: SLOT, ease: 'none' }, 0);
+      tl.to('#w02-near-drift', { x: -55, duration: SLOT, ease: 'none' }, 0);
+
+      /* Seeded continuous micro-drift across slot */
+      tl.to(drift, {
+        p: 1, duration: SLOT, ease: 'none',
+        onUpdate: function () {
+          var t = tl.time();
+          gsap.set('#w02-far-motes', { x: nz(t * 0.050) * 8, y: nz(t * 0.040 + 2) * 6 });
+          gsap.set('#w02-mid-motes', { x: nz(t * 0.070 + 4) * 11, y: nz(t * 0.060 + 6) * 8 });
+          gsap.set('#w02-near-motes', { x: nz(t * 0.090 + 8) * 14, y: nz(t * 0.080 + 10) * 10 });
+        }
+      }, 0);
+
+      /* Living hold: desk lamp breathing */
+      tl.to('#w02-lamp-assembly', {
+        scale: 1.03, duration: 14, yoyo: true, repeat: 3, ease: 'sine.inOut',
+        transformOrigin: '18% 22%'
+      }, 0);
+
+      tl.to('#w02-mid-drift', {
+        opacity: 0.82, duration: 7.0, yoyo: true, repeat: 7, ease: 'sine.inOut'
+      }, 0);
+
+      /* Slot guard */
+      tl.to({}, { duration: SLOT }, 0);
+      window.__timelines = window.__timelines || {};
+      window.__timelines[ID] = tl;
+    })();
+  </script>
+</template>
+</body>
+</html>

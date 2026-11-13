@@ -1,0 +1,33 @@
+{
+  "plate_id": "pl-night-01",
+  "source_url": "videos/lunik-heist-1959/.tmp/lunik.pdf",
+  "source_page": 5,
+  "source_dpi": 150,
+  "captured_at": null,
+  "width": 1275,
+  "height": 1650,
+  "source_width": 1275,
+  "source_height": 1650,
+  "scale_factor": 1.0,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": [
+    {
+      "phrase": "2-inch tongue-and-groove planks",
+      "x": 189,
+      "y": 41,
+      "w": 522,
+      "h": 37
+    },
+    {
+      "phrase": "street lamps suddenly came on",
+      "x": 222,
+      "y": 341,
+      "w": 492,
+      "h": 37
+    }
+  ],
+  "dropped_boxes": 0
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>gsap probe</title>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script></head>
+<body style="margin:0;background:#000;color:#0f0;font:44px monospace">
+<div id="root" data-composition-id="root" data-width="1920" data-height="1080" data-duration="2" style="position:relative;width:1920px;height:1080px">
+<div id="a">gsap=?</div>
+<div id="b">timelines=?</div>
+<div id="c">err=?</div>
+</div>
+<script>
+try { document.getElementById('a').textContent = 'gsap=' + (typeof gsap); } catch(e) { document.getElementById('c').textContent = 'err=' + e.message; }
+try { document.getElementById('b').textContent = 'tl-count=' + Object.keys(window.__timelines||{}).length; } catch(e) {}
+</script>
+<script>
+try { var tl = gsap.timeline({paused:true}); tl.to({}, {duration:2}, 0); window.__timelines = window.__timelines || {}; window.__timelines['root']=tl; document.getElementById('c').textContent='timeline-ok'; }
+catch(e) { document.getElementById('c').textContent='timeline-err=' + e.message; }
+</script>
+</body></html>

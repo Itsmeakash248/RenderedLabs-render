@@ -1,0 +1,26 @@
+{
+  "plate_id": "pl-turn-02",
+  "source_url": "https://nsarchive.gwu.edu/document/16267-document-15-lunik-spacecraft-sydney-wesley-finer",
+  "source_page": null,
+  "source_dpi": null,
+  "captured_at": "2026-11-06T19:52:28.748Z",
+  "width": 1344,
+  "height": 1920,
+  "source_width": 1400,
+  "source_height": 2000,
+  "scale_factor": 0.96,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": [
+    {
+      "phrase": "Kidnapping of the Lunik",
+      "x": 604,
+      "y": 49,
+      "w": 269,
+      "h": 35
+    }
+  ],
+  "dropped_boxes": 0
+}

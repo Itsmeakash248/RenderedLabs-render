@@ -1,0 +1,402 @@
+<template id="s23-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="23-rebuild" data-width="1920" data-height="1080" data-start="0" data-duration="9.140">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="s23-sky" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.6" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s23-panel" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.66" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s23-card" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#151B3B" stop-opacity="0.94"/>
+          <stop offset="0.6" stop-color="#0A0E24" stop-opacity="0.94"/>
+          <stop offset="1" stop-color="#050814" stop-opacity="0.96"/>
+        </linearGradient>
+        <linearGradient id="s23-glass" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/>
+          <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.03"/>
+          <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="s23-gold" x1="0" y1="0" x2="0.7" y2="1">
+          <stop offset="0" stop-color="#FF7A1A"/>
+          <stop offset="0.44" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#F4EFE3"/>
+        </linearGradient>
+        <linearGradient id="s23-gauge-grad" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0" stop-color="#FF7A1A"/>
+          <stop offset="0.5" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#F4EFE3"/>
+        </linearGradient>
+        <linearGradient id="s23-plank" x1="0" y1="0" x2="1" y2="0.2">
+          <stop offset="0" stop-color="#B8C0D8" stop-opacity="0.9"/>
+          <stop offset="0.45" stop-color="#515A83"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </linearGradient>
+        <radialGradient id="s23-orb-grad" cx="38%" cy="32%" r="70%">
+          <stop offset="0" stop-color="#F4EFE3"/>
+          <stop offset="0.3" stop-color="#FFD23F"/>
+          <stop offset="0.68" stop-color="#FF7A1A"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </radialGradient>
+        <radialGradient id="s23-bloom-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.5"/>
+          <stop offset="0.44" stop-color="#FFD23F" stop-opacity="0.2"/>
+          <stop offset="0.74" stop-color="#8E5FD9" stop-opacity="0.1"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s23-violet" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.4"/>
+          <stop offset="0.62" stop-color="#8E5FD9" stop-opacity="0.12"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s23-ember" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.4"/>
+          <stop offset="0.55" stop-color="#FF7A1A" stop-opacity="0.12"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <clipPath id="s23-plate-crop">
+          <rect x="530" y="290" width="580" height="750"/>
+        </clipPath>
+        <clipPath id="s23-hb-clip">
+          <rect x="120" y="888" width="1080" height="96"/>
+        </clipPath>
+        <filter id="s23-glow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="6" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="s23-haze" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="22"/>
+        </filter>
+      </defs>
+
+      <g id="s23-world">
+        <!-- ================= BACKGROUND: dark workshop ================= -->
+        <g id="s23-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s23-sky)"/>
+          <ellipse cx="480" cy="500" rx="620" ry="460" fill="url(#s23-violet)" opacity="0.6"/>
+          <ellipse cx="1280" cy="560" rx="620" ry="460" fill="url(#s23-ember)" opacity="0.7"/>
+          <g stroke="#515A83" stroke-width="5" opacity="0.18">
+            <line x1="80" y1="980" x2="560" y2="760"/>
+            <line x1="1400" y1="980" x2="1840" y2="780"/>
+            <line x1="120" y1="200" x2="700" y2="150"/>
+            <line x1="1260" y1="150" x2="1840" y2="210"/>
+          </g>
+          <g id="s23-bg-dust" fill="#F4EFE3">
+            <circle cx="220" cy="180" r="4" opacity="0.12"/>
+            <circle cx="1700" cy="160" r="4" opacity="0.12"/>
+            <circle cx="360" cy="900" r="3" opacity="0.1"/>
+            <circle cx="1760" cy="930" r="3" opacity="0.1"/>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: two isometric panels ================= -->
+        <g id="s23-mg">
+          <!-- break-in panel -->
+          <g id="s23-panel-a">
+            <rect x="40" y="230" width="580" height="550" rx="24" fill="url(#s23-panel)" stroke="#515A83" stroke-width="5"/>
+            <rect x="54" y="244" width="552" height="522" rx="18" fill="none" stroke="#B8C0D8" stroke-width="2" opacity="0.24"/>
+            <path d="M 40 292 L 40 230 L 102 230" fill="none" stroke="#8E5FD9" stroke-width="12" stroke-linecap="round" opacity="0.7"/>
+            <path d="M 620 718 L 620 780 L 558 780" fill="none" stroke="#8E5FD9" stroke-width="12" stroke-linecap="round" opacity="0.55"/>
+
+            <path d="M 330 360 L 560 470 L 330 580 L 100 470 Z" fill="#0A0E24" stroke="#515A83" stroke-width="4" opacity="0.7"/>
+            <path d="M 150 470 L 330 390 L 510 470 L 330 550 Z" fill="none" stroke="#515A83" stroke-width="3" opacity="0.3"/>
+
+            <g id="s23-plank-g">
+              <rect x="150" y="466" width="360" height="42" rx="14" fill="url(#s23-plank)" stroke="#050814" stroke-width="6" transform="rotate(-16 330 487)"/>
+              <g stroke="#0A0E24" stroke-width="4" opacity="0.6" transform="rotate(-16 330 487)">
+                <line x1="230" y1="470" x2="230" y2="504"/>
+                <line x1="300" y1="470" x2="300" y2="504"/>
+                <line x1="370" y1="470" x2="370" y2="504"/>
+                <line x1="440" y1="470" x2="440" y2="504"/>
+              </g>
+            </g>
+            <path id="s23-rope" d="M 160 380 C 260 330 420 330 520 400 C 560 430 540 480 500 500"
+                  fill="none" stroke="#B8C0D8" stroke-width="10" stroke-linecap="round"/>
+            <g transform="translate(430 392)">
+            <g id="s23-crew-a">
+              <circle cx="0" cy="0" r="18" fill="#0A0E24" stroke="#B8C0D8" stroke-width="5"/>
+              <path d="M -15 -7 A 18 18 0 0 1 7 -17" fill="none" stroke="#8E5FD9" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="6" cy="-2" r="4" fill="#F4EFE3"/>
+            </g>
+            </g>
+
+            <rect id="s23-dim-a" x="40" y="230" width="580" height="550" rx="24" fill="#050814" opacity="0"/>
+            <g id="s23-x-a" stroke="#8E5FD9" stroke-width="26" stroke-linecap="round" filter="url(#s23-glow)">
+              <line id="s23-x-a1" x1="110" y1="300" x2="550" y2="710" stroke-dasharray="640" stroke-dashoffset="640"/>
+              <line id="s23-x-a2" x1="550" y1="300" x2="110" y2="710" stroke-dasharray="640" stroke-dashoffset="640"/>
+            </g>
+          </g>
+
+          <!-- rebuild panel -->
+          <g id="s23-panel-b">
+            <rect x="640" y="230" width="580" height="550" rx="24" fill="url(#s23-panel)" stroke="#B8C0D8" stroke-width="5"/>
+            <rect x="654" y="244" width="552" height="522" rx="18" fill="none" stroke="#B8C0D8" stroke-width="2" opacity="0.3"/>
+            <path d="M 640 292 L 640 230 L 702 230" fill="none" stroke="#FFD23F" stroke-width="12" stroke-linecap="round" opacity="0.8"/>
+            <path d="M 1220 718 L 1220 780 L 1158 780" fill="none" stroke="#FFD23F" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
+
+            <ellipse id="s23-bloom" cx="930" cy="512" rx="300" ry="280" fill="url(#s23-bloom-grad)" opacity="0"/>
+            <circle id="s23-hour" cx="930" cy="512" r="126" fill="none" stroke="#FFD23F" stroke-width="10"
+                    stroke-linecap="round" stroke-dasharray="792" stroke-dashoffset="792" transform="rotate(-90 930 512)" opacity="0.7"/>
+            <circle cx="930" cy="512" r="150" fill="none" stroke="#515A83" stroke-width="4" opacity="0.3"/>
+
+            <path d="M 930 400 L 930 340" stroke="url(#s23-gold)" stroke-width="16" stroke-linecap="round"/>
+            <g id="s23-thread" transform="translate(930 404)">
+              <ellipse cx="0" cy="-12" rx="26" ry="9" fill="none" stroke="url(#s23-gold)" stroke-width="10"/>
+              <ellipse cx="0" cy="2" rx="26" ry="9" fill="none" stroke="url(#s23-gold)" stroke-width="10" opacity="0.8"/>
+              <ellipse cx="0" cy="16" rx="26" ry="9" fill="none" stroke="url(#s23-gold)" stroke-width="10" opacity="0.6"/>
+            </g>
+
+            <circle id="s23-orb" cx="930" cy="512" r="72" fill="url(#s23-orb-grad)" stroke="#050814" stroke-width="7"/>
+            <ellipse cx="906" cy="484" rx="26" ry="18" fill="#F4EFE3" opacity="0.5"/>
+            <circle cx="930" cy="512" r="88" fill="none" stroke="#FFD23F" stroke-width="4" opacity="0.5"/>
+
+            <g transform="translate(806 620) rotate(-24)">
+            <g id="s23-hand-a">
+              <rect x="-24" y="-88" width="48" height="54" rx="14" fill="#151B3B" stroke="#B8C0D8" stroke-width="5"/>
+              <rect x="-52" y="-50" width="104" height="66" rx="26" fill="#0A0E24" stroke="#B8C0D8" stroke-width="5"/>
+              <g fill="#151B3B" stroke="#B8C0D8" stroke-width="4">
+                <rect x="-44" y="-6" width="22" height="44" rx="11"/>
+                <rect x="-20" y="-4" width="22" height="42" rx="11"/>
+                <rect x="4" y="-8" width="22" height="44" rx="11"/>
+                <rect x="26" y="-14" width="20" height="40" rx="10"/>
+              </g>
+            </g>
+            </g>
+            <g transform="translate(1054 620) scale(-1 1) rotate(-24)">
+            <g id="s23-hand-b">
+              <rect x="-24" y="-88" width="48" height="54" rx="14" fill="#151B3B" stroke="#B8C0D8" stroke-width="5"/>
+              <rect x="-52" y="-50" width="104" height="66" rx="26" fill="#0A0E24" stroke="#B8C0D8" stroke-width="5"/>
+              <g fill="#151B3B" stroke="#B8C0D8" stroke-width="4">
+                <rect x="-44" y="-6" width="22" height="44" rx="11"/>
+                <rect x="-20" y="-4" width="22" height="42" rx="11"/>
+                <rect x="4" y="-8" width="22" height="44" rx="11"/>
+                <rect x="26" y="-14" width="20" height="40" rx="10"/>
+              </g>
+            </g>
+            </g>
+
+            <g id="s23-spark" opacity="0">
+              <path d="M 930 424 l 10 -22 l 10 22 l 22 10 l -22 10 l -10 22 l -10 -22 l -22 -10 z" fill="#FFD23F"/>
+            </g>
+          </g>
+
+          <!-- tension gauge -->
+          <g id="s23-gauge">
+            <rect x="1250" y="330" width="84" height="430" rx="30" fill="#0A0E24" stroke="#515A83" stroke-width="5"/>
+            <rect x="1268" y="348" width="48" height="394" rx="20" fill="#050814" stroke="#515A83" stroke-width="4"/>
+            <g stroke="#B8C0D8" stroke-width="4" opacity="0.5">
+              <line x1="1268" y1="348" x2="1284" y2="348"/>
+              <line x1="1268" y1="426" x2="1284" y2="426"/>
+              <line x1="1268" y1="505" x2="1284" y2="505"/>
+              <line x1="1268" y1="584" x2="1284" y2="584"/>
+              <line x1="1268" y1="663" x2="1284" y2="663"/>
+              <line x1="1268" y1="742" x2="1284" y2="742"/>
+            </g>
+            <rect id="s23-gauge-fill" x="1285" y="356" width="14" height="378" rx="7" fill="url(#s23-gauge-grad)"/>
+            <line x1="1258" y1="352" x2="1326" y2="352" stroke="#8E5FD9" stroke-width="6" stroke-linecap="round"/>
+            <g transform="translate(0 738)">
+              <g id="s23-gauge-needle">
+              <path d="M 1336 0 l -22 -13 l 0 26 z" fill="#F4EFE3" stroke="#050814" stroke-width="4"/>
+              <line x1="1314" y1="0" x2="1268" y2="0" stroke="#F4EFE3" stroke-width="5" stroke-linecap="round"/>
+              </g>
+            </g>
+            <g id="s23-gauge-flash" opacity="0">
+              <rect x="1250" y="330" width="84" height="430" rx="30" fill="none" stroke="#FFD23F" stroke-width="8"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND: heartbeat, plate callout, darkfall ================= -->
+        <g id="s23-fg">
+          <!-- heartbeat scroll -->
+          <g clip-path="url(#s23-hb-clip)">
+            <g id="s23-hb-scroll" fill="none" stroke="url(#s23-gold)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" filter="url(#s23-glow)">
+              <path d="M 0 48 L 120 48 L 148 48 L 168 12 L 188 84 L 208 48 L 330 48 L 350 32 L 370 64 L 390 48 L 520 48 L 540 16 L 560 80 L 580 48 L 720 48 L 740 36 L 760 60 L 780 48 L 900 48 L 920 6 L 940 90 L 960 48 L 1080 48" transform="translate(120 888)"/>
+              <path d="M 0 48 L 120 48 L 148 48 L 168 12 L 188 84 L 208 48 L 330 48 L 350 32 L 370 64 L 390 48 L 520 48 L 540 16 L 560 80 L 580 48 L 720 48 L 740 36 L 760 60 L 780 48 L 900 48 L 920 6 L 940 90 L 960 48 L 1080 48" transform="translate(1200 888)"/>
+            </g>
+          </g>
+          <line x1="120" y1="936" x2="1200" y2="936" stroke="#515A83" stroke-width="4" opacity="0.25"/>
+
+          <!-- pl-seal-02 detail-C callout at 60% height, no quote box -->
+          <g id="s23-plate-g">
+            <rect x="1356" y="196" width="549" height="696" rx="22" fill="url(#s23-card)" stroke="#B8C0D8" stroke-width="3"/>
+            <rect x="1368" y="208" width="525" height="672" rx="16" fill="none" stroke="#F4EFE3" stroke-width="1.6" opacity="0.18"/>
+            <path d="M 1356 258 L 1356 196 L 1418 196" fill="none" stroke="#FFD23F" stroke-width="12" stroke-linecap="round" opacity="0.72"/>
+            <path d="M 1843 830 L 1905 830 L 1905 768" fill="none" stroke="#FFD23F" stroke-width="12" stroke-linecap="round" opacity="0.55"/>
+            <g fill="#B8C0D8" opacity="0.55">
+              <circle cx="1382" cy="222" r="5"/>
+              <circle cx="1880" cy="222" r="5"/>
+              <circle cx="1382" cy="866" r="5"/>
+              <circle cx="1880" cy="866" r="5"/>
+            </g>
+            <rect x="1380" y="220" width="500.8" height="648" rx="8" fill="#0A0E24"/>
+            <svg x="1380" y="220" width="500.8" height="648" viewBox="530 290 580 750" preserveAspectRatio="xMidYMid meet">
+              <image href="../plates/processed/pl-seal-02.png" x="0" y="0" width="1275" height="1650" preserveAspectRatio="xMidYMid meet" clip-path="url(#s23-plate-crop)"/>
+            </svg>
+            <rect x="1380" y="220" width="500.8" height="648" rx="8" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.45"/>
+            <rect x="1380" y="220" width="500.8" height="648" rx="8" fill="none" stroke="#F4EFE3" stroke-width="1.4" opacity="0.2"/>
+            <rect id="s23-plate-sheen" x="1380" y="220" width="150" height="648" fill="url(#s23-glass)" opacity="0"/>
+          </g>
+
+          <g id="s23-dust" fill="#F4EFE3">
+            <circle cx="200" cy="1000" r="4" opacity="0.12"/>
+            <circle cx="760" cy="1010" r="3" opacity="0.1"/>
+            <circle cx="1180" cy="1000" r="4" opacity="0.12"/>
+          </g>
+
+          <!-- mid-roll darkfall -->
+          <rect id="s23-dark" x="0" y="0" width="1920" height="1080" fill="#050814" opacity="0"/>
+
+          <g id="s23-thread-glint" opacity="0">
+            <circle cx="930" cy="404" r="16" fill="none" stroke="#F4EFE3" stroke-width="6"/>
+            <circle cx="930" cy="404" r="34" fill="none" stroke="#FFD23F" stroke-width="4" opacity="0.6"/>
+          </g>
+
+          <g id="s23-badge">
+            <rect x="64" y="52" width="336" height="98" rx="49" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="78" y="66" width="308" height="70" rx="35" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.35"/>
+            <g fill="#FFD23F" opacity="0.85">
+              <circle cx="102" cy="101" r="7"/>
+              <circle cx="362" cy="101" r="7"/>
+            </g>
+            <text x="232" y="117" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="44"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="9" paint-order="stroke fill" letter-spacing="3"
+                  textLength="236" lengthAdjust="spacingAndGlyphs">REBUILD</text>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:radial-gradient(circle at 50% 60%, rgba(255,122,26,0.08), transparent 66%);}
+    .scene-persp{position:absolute;inset:0;perspective:1500px;perspective-origin:50% 54%;}
+    #s23-world{transform-style:preserve-3d;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      /* ---------- initial states ---------- */
+      gsap.set("#s23-bg-dust circle", { opacity: 0 });
+      gsap.set("#s23-panel-a", { opacity: 0, y: 40, rotationY: -18 });
+      gsap.set("#s23-panel-b", { opacity: 0, y: 40, rotationY: 18 });
+      gsap.set("#s23-plank-g", { opacity: 0, x: -30 });
+      gsap.set("#s23-rope", { opacity: 0, strokeDasharray: 620, strokeDashoffset: 620 });
+      gsap.set("#s23-crew-a", { opacity: 0, x: -24 });
+      gsap.set("#s23-dim-a", { opacity: 0 });
+      gsap.set("#s23-x-a1", { strokeDashoffset: 640 });
+      gsap.set("#s23-x-a2", { strokeDashoffset: 640 });
+      gsap.set("#s23-bloom", { opacity: 0, scale: 0.7, transformOrigin: "50% 50%" });
+      gsap.set("#s23-hour", { strokeDashoffset: 792 });
+      gsap.set("#s23-thread", { opacity: 0, scale: 0.8, transformOrigin: "50% 50%" });
+      gsap.set("#s23-orb", { opacity: 0, scale: 0.6, transformOrigin: "50% 50%" });
+      gsap.set("#s23-hand-a", { opacity: 0, y: 40 });
+      gsap.set("#s23-hand-b", { opacity: 0, y: 40 });
+      gsap.set("#s23-spark", { opacity: 0, scale: 0.4, transformOrigin: "930px 456px" });
+      gsap.set("#s23-gauge", { opacity: 0, x: 26 });
+      gsap.set("#s23-gauge-fill", { scaleY: 0, transformOrigin: "50% 100%" });
+      gsap.set("#s23-gauge-needle", { y: 0 });
+      gsap.set("#s23-gauge-flash", { opacity: 0 });
+      gsap.set("#s23-plate-g", { opacity: 0, y: 30 });
+      gsap.set("#s23-plate-sheen", { opacity: 0 });
+      gsap.set("#s23-hb-scroll", { x: 0 });
+      gsap.set("#s23-dust circle", { opacity: 0 });
+      gsap.set("#s23-dark", { opacity: 0 });
+      gsap.set("#s23-thread-glint", { opacity: 0, scale: 0.5, transformOrigin: "930px 404px" });
+      gsap.set("#s23-badge", { opacity: 0, scale: 1.4, rotation: -4, transformOrigin: "50% 50%" });
+
+      /* ---------- phase 1: two panels draw side by side ---------- */
+      tl.to("#s23-bg-dust circle", { opacity: 0.12, duration: 0.7, stagger: 0.09, ease: "power1.out" }, 0.1);
+      tl.to("#s23-panel-a", { opacity: 1, y: 0, rotationY: -14, duration: 0.85, ease: "power2.out" }, 0.2);
+      tl.to("#s23-panel-b", { opacity: 1, y: 0, rotationY: 14, duration: 0.85, ease: "power2.out" }, 0.45);
+      tl.to("#s23-plank-g", { opacity: 1, x: 0, duration: 0.7, ease: "power2.out" }, 0.8);
+      tl.to("#s23-rope", { opacity: 1, strokeDashoffset: 0, duration: 0.9, ease: "power2.inOut" }, 1.0);
+      tl.to("#s23-crew-a", { opacity: 1, x: 0, duration: 0.6, ease: "power2.out" }, 1.25);
+
+      /* ---------- phase 2: break-in dims and takes a violet X ---------- */
+      tl.to("#s23-dim-a", { opacity: 0.5, duration: 0.9, ease: "power2.inOut" }, 2.3);
+      tl.to("#s23-x-a1", { strokeDashoffset: 0, duration: 0.65, ease: "power2.out" }, 2.7);
+      tl.to("#s23-x-a2", { strokeDashoffset: 0, duration: 0.65, ease: "power2.out" }, 2.85);
+      tl.to("#s23-crew-a", { opacity: 0.35, duration: 0.6, ease: "power1.inOut" }, 2.7);
+      tl.to("#s23-plank-g", { opacity: 0.45, duration: 0.6, ease: "power1.inOut" }, 2.75);
+
+      /* rebuild panel blooms ember */
+      tl.to("#s23-bloom", { opacity: 1, scale: 1, duration: 1.1, ease: "power2.out" }, 2.6);
+      tl.to("#s23-orb", { opacity: 1, scale: 1, duration: 0.7, ease: "back.out(1.7)" }, 2.8);
+      tl.to("#s23-thread", { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.8)" }, 3.15);
+      tl.to("#s23-hand-a", { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 3.35);
+      tl.to("#s23-hand-b", { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 3.5);
+      tl.to("#s23-hour", { strokeDashoffset: 120, duration: 5.4, ease: "power1.inOut" }, 3.3);
+
+      /* ---------- phase 3: heartbeat scrolls, tension gauge climbs ---------- */
+      tl.to("#s23-hb-scroll", { x: -1080, duration: 2.1, repeat: 2, ease: "none" }, 2.6);
+
+      tl.to("#s23-gauge", { opacity: 1, x: 0, duration: 0.6, ease: "power2.out" }, 1.6);
+      tl.to("#s23-gauge-fill", { scaleY: 0.92, duration: 3.5, ease: "power2.inOut" }, 3.6);
+      tl.to("#s23-gauge-needle", { y: -354, duration: 3.5, ease: "power2.inOut" }, 3.6);
+      tl.to("#s23-gauge-fill", { scaleY: 0.9, duration: 0.3, yoyo: true, repeat: 1, transformOrigin: "50% 100%", ease: "sine.inOut" }, 7.2);
+      tl.to("#s23-gauge-needle", { y: -346, duration: 0.3, yoyo: true, repeat: 1, ease: "sine.inOut" }, 7.2);
+      tl.to("#s23-gauge-needle", { y: -350, duration: 0.4, yoyo: true, repeat: 2, ease: "sine.inOut" }, 7.9);
+      tl.to("#s23-gauge-flash", { opacity: 0.8, duration: 0.25, ease: "power1.out" }, 7.1);
+      tl.to("#s23-gauge-flash", { opacity: 0, duration: 0.5, ease: "power1.in" }, 7.4);
+
+      /* ---------- phase 4: hands steady, thread barely engages, frame darkens ---------- */
+      tl.to("#s23-orb", { scale: 1.02, duration: 1.0, yoyo: true, repeat: 2, transformOrigin: "50% 50%", ease: "sine.inOut" }, 4.3);
+      tl.to("#s23-thread", { rotation: 2, duration: 2.4, transformOrigin: "50% 50%", ease: "sine.inOut" }, 4.8);
+      tl.to("#s23-thread", { rotation: 0.6, duration: 1.2, transformOrigin: "50% 50%", ease: "sine.inOut" }, 7.4);
+      tl.to("#s23-hand-a", { rotation: -22, duration: 0.8, yoyo: true, repeat: 1, transformOrigin: "50% 100%", ease: "sine.inOut" }, 5.2);
+      tl.to("#s23-hand-b", { rotation: -22, duration: 0.8, yoyo: true, repeat: 1, transformOrigin: "50% 100%", ease: "sine.inOut" }, 5.4);
+      tl.to("#s23-spark", { opacity: 0.9, scale: 1, duration: 0.24, ease: "back.out(3)" }, 6.0);
+      tl.to("#s23-spark", { opacity: 0, scale: 1.5, duration: 0.5, transformOrigin: "930px 456px", ease: "power2.in" }, 6.32);
+      tl.to("#s23-thread-glint", { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2.6)" }, 7.5);
+      tl.to("#s23-thread-glint", { opacity: 0.45, duration: 0.55, yoyo: true, repeat: 1, ease: "sine.inOut" }, 7.9);
+      tl.to("#s23-hour", { strokeDashoffset: 96, duration: 1.4, ease: "power2.out" }, 7.4);
+
+      tl.to("#s23-dark", { opacity: 0.78, duration: 1.5, ease: "power2.in" }, 7.55);
+      tl.to("#s23-bloom", { opacity: 0.4, duration: 1.4, ease: "power1.in" }, 7.7);
+      tl.to("#s23-badge", { opacity: 0.92, duration: 1.2, ease: "power1.inOut" }, 7.8);
+
+      /* ---------- plate callout mount + living hold ---------- */
+      tl.to("#s23-plate-g", { opacity: 1, y: 0, duration: 0.8, ease: "back.out(1.3)" }, 1.0);
+      tl.to("#s23-plate-sheen", { opacity: 0.75, duration: 0.4, ease: "power1.out" }, 1.45);
+      tl.to("#s23-plate-sheen", { x: 470, duration: 1.3, ease: "power2.inOut" }, 1.6);
+      tl.to("#s23-plate-sheen", { opacity: 0, duration: 0.4, ease: "power1.in" }, 2.9);
+      tl.to("#s23-plate-g", { scale: 1.008, duration: 5.4, transformOrigin: "50% 50%", ease: "sine.inOut" }, 1.9);
+      tl.to("#s23-plate-g", { opacity: 0.55, duration: 1.5, ease: "power2.in" }, 7.6);
+
+      /* ---------- living holds ---------- */
+      tl.to("#s23-badge", { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(2.4)" }, 0.7);
+      tl.to("#s23-badge", { y: -5, duration: 1.4, yoyo: true, repeat: 3, ease: "sine.inOut" }, 2.3);
+      tl.to("#s23-dust circle", { opacity: 0.12, duration: 0.8, stagger: 0.1, ease: "power1.out" }, 2.0);
+      tl.to("#s23-dust circle", { y: -18, duration: 2.4, yoyo: true, repeat: 1, ease: "sine.inOut" }, 3.0);
+      tl.to("#s23-bloom", { scale: 1.03, duration: 1.3, yoyo: true, repeat: 2, transformOrigin: "50% 50%", ease: "sine.inOut" }, 4.4);
+
+      /* ---------- camera push 1.00 -> 1.05 on the gauge + panel drift ---------- */
+      tl.fromTo("#s23-world", { scale: 1.0 }, { scale: 1.05, duration: 9.14, transformOrigin: "67% 66%", ease: "sine.inOut" }, 0);
+      tl.fromTo("#s23-panel-a", { rotationY: -14 }, { rotationY: -12, duration: 9.14, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s23-panel-b", { rotationY: 14 }, { rotationY: 12, duration: 9.14, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s23-bg", { x: 12 }, { x: -12, duration: 9.14, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s23-fg", { x: 18 }, { x: -18, duration: 9.14, ease: "sine.inOut" }, 0);
+
+      /* ---------- heavy:rebuild-hold-darkfall ---------- */
+      tl.to("#s23-dark", { opacity: 0.9, duration: 1.0, ease: "power2.in" }, 8.1);
+      tl.to("#s23-thread-glint", { opacity: 0.7, scale: 1.12, duration: 0.5, yoyo: true, repeat: 1, transformOrigin: "930px 404px", ease: "sine.inOut" }, 8.1);
+
+      tl.to({}, { duration: 9.140 }, 0);
+      window.__timelines["23-rebuild"] = tl;
+    })();
+  </script>
+</div>
+</template>

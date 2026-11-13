@@ -1,0 +1,571 @@
+<template id="s14-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="14-yard-fence" data-width="1920" data-height="1080" data-start="0" data-duration="9.980">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="s14-sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0A0E24" stop-opacity="0.1"/>
+          <stop offset="0.48" stop-color="#8E5FD9" stop-opacity="0.2"/>
+          <stop offset="1" stop-color="#151B3B" stop-opacity="0.9"/>
+        </linearGradient>
+        <linearGradient id="s14-floor-grad" x1="0.1" y1="0" x2="0.8" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.5" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s14-road" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.55" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s14-wood" x1="0" y1="0" x2="0.15" y2="1">
+          <stop offset="0" stop-color="#B8C0D8"/>
+          <stop offset="0.36" stop-color="#515A83"/>
+          <stop offset="0.80" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s14-metal" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#B8C0D8" stop-opacity="0.82"/>
+          <stop offset="0.32" stop-color="#515A83"/>
+          <stop offset="0.76" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s14-crate" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#B8C0D8" stop-opacity="0.48"/>
+          <stop offset="0.36" stop-color="#515A83" stop-opacity="0.66"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </linearGradient>
+        <linearGradient id="s14-gold" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FF7A1A"/>
+          <stop offset="0.48" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#FFD23F"/>
+        </linearGradient>
+        <radialGradient id="s14-violet" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.36"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s14-ember" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.56"/>
+          <stop offset="0.5" stop-color="#FF7A1A" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s14-gold-glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.55"/>
+          <stop offset="1" stop-color="#FFD23F" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s14-gatepool" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.95"/>
+          <stop offset="0.55" stop-color="#FFD23F" stop-opacity="0.85"/>
+          <stop offset="1" stop-color="#FFD23F" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="s14-planks" width="36" height="56" patternUnits="userSpaceOnUse">
+          <rect width="36" height="56" fill="url(#s14-wood)"/>
+          <line x1="35" y1="0" x2="35" y2="56" stroke="#0A0E24" stroke-width="5" opacity="0.6"/>
+        </pattern>
+        <filter id="s14-goldGlow" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="6" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="s14-haze" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="22"/>
+        </filter>
+        <filter id="s14-soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="7"/>
+        </filter>
+        <filter id="s14-shadow" x="-30%" y="-30%" width="160%" height="180%">
+          <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#050814" flood-opacity="0.7"/>
+        </filter>
+      </defs>
+
+      <g id="s14-world">
+        <!-- ================= BACKGROUND ================= -->
+        <g id="s14-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s14-sky)"/>
+          <ellipse id="s14-violet-a" cx="1460" cy="220" rx="760" ry="340" fill="url(#s14-violet)"/>
+          <ellipse id="s14-violet-b" cx="360" cy="420" rx="560" ry="360" fill="url(#s14-violet)" opacity="0.65"/>
+          <ellipse cx="960" cy="850" rx="880" ry="150" fill="#050814" opacity="0.5" filter="url(#s14-haze)"/>
+
+          <g id="s14-roofline" fill="#151B3B">
+            <rect x="-40" y="216" width="220" height="130"/>
+            <rect x="200" y="254" width="150" height="92"/>
+            <rect x="392" y="198" width="180" height="148"/>
+            <rect x="1110" y="206" width="190" height="140"/>
+            <rect x="1330" y="242" width="150" height="104"/>
+            <rect x="1510" y="188" width="210" height="158"/>
+            <rect x="1760" y="232" width="200" height="114"/>
+            <rect x="470" y="176" width="12" height="60" fill="#515A83" opacity="0.5"/>
+            <circle cx="476" cy="172" r="7" fill="#FF7A1A" opacity="0.8"/>
+            <rect x="1604" y="154" width="10" height="64" fill="#515A83" opacity="0.4"/>
+          </g>
+          <g fill="#FFD23F" opacity="0.4">
+            <rect x="236" y="282" width="14" height="18"/>
+            <rect x="430" y="232" width="16" height="20"/>
+            <rect x="1150" y="240" width="16" height="20"/>
+            <rect x="1190" y="240" width="16" height="20"/>
+            <rect x="1554" y="226" width="18" height="22"/>
+            <rect x="1594" y="226" width="18" height="22"/>
+            <rect x="1812" y="268" width="16" height="20"/>
+          </g>
+
+          <!-- alley mouth, bottom-right -->
+          <path id="s14-alley" d="M 1000 815 L 1240 800 L 1920 908 L 1920 1080 L 840 1080 Z" fill="url(#s14-road)"/>
+          <path id="s14-alley-line" d="M 1090 850 Q 1500 930 1890 992" fill="none" stroke="#FFD23F"
+                stroke-width="10" stroke-dasharray="54 44" stroke-linecap="round" opacity="0.5"
+                pathLength="100" stroke-dashoffset="100"/>
+          <g stroke="#B8C0D8" stroke-width="4" opacity="0.18">
+            <line x1="900" y1="1006" x2="1900" y2="1050"/>
+            <line x1="1000" y1="1044" x2="1880" y2="1074"/>
+          </g>
+
+          <!-- street lamps -->
+          <g id="s14-lamp-street" transform="translate(1728 470)">
+            <rect x="-8" y="0" width="16" height="352" rx="8" fill="#151B3B" stroke="#515A83" stroke-width="5"/>
+            <path d="M -8 0 L -36 -16 L -36 -38 L 36 -38 L 36 -16 L 8 0 Z" fill="#151B3B" stroke="#515A83" stroke-width="5"/>
+            <ellipse cx="0" cy="-26" rx="24" ry="11" fill="#FF7A1A" filter="url(#s14-goldGlow)"/>
+            <path d="M -20 -14 L -88 200 L 88 200 L 20 -14 Z" fill="#FF7A1A" opacity="0.1"/>
+          </g>
+          <g id="s14-lamp-street-b" transform="translate(1240 520)">
+            <rect x="-7" y="0" width="14" height="290" rx="7" fill="#151B3B" stroke="#515A83" stroke-width="5"/>
+            <ellipse cx="0" cy="-16" rx="18" ry="9" fill="#FFD23F" filter="url(#s14-goldGlow)"/>
+            <path d="M -14 -8 L -58 160 L 58 160 L 14 -8 Z" fill="#FFD23F" opacity="0.08"/>
+          </g>
+
+          <g id="s14-bg-dust" fill="#F4EFE3">
+            <circle cx="260" cy="300" r="4" opacity="0.16"/>
+            <circle cx="640" cy="210" r="3" opacity="0.13"/>
+            <circle cx="1040" cy="260" r="4" opacity="0.15"/>
+            <circle cx="1680" cy="340" r="3" opacity="0.13"/>
+            <circle cx="1820" cy="220" r="4" opacity="0.15"/>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: YARD + FENCE + TRUCK ================= -->
+        <g id="s14-mg">
+          <!-- yard floor -->
+          <g id="s14-floor">
+            <polygon points="610,330 1330,286 1500,780 742,842" fill="url(#s14-floor-grad)"
+                     stroke="#515A83" stroke-width="6" stroke-linejoin="round"/>
+            <polygon points="650,360 1300,320 1440,742 782,798" fill="none"
+                     stroke="#B8C0D8" stroke-width="3" opacity="0.1"/>
+            <g stroke="#B8C0D8" stroke-width="3" opacity="0.1">
+              <line x1="700" y1="380" x2="800" y2="800"/>
+              <line x1="860" y1="368" x2="960" y2="788"/>
+              <line x1="1020" y1="356" x2="1120" y2="776"/>
+              <line x1="1180" y1="344" x2="1280" y2="764"/>
+              <line x1="1340" y1="332" x2="1420" y2="740"/>
+            </g>
+            <ellipse cx="880" cy="640" rx="360" ry="150" fill="url(#s14-ember)" opacity="0.28" filter="url(#s14-haze)"/>
+            <!-- salvage debris inside the yard -->
+            <g id="s14-wreck" opacity="0.8">
+              <ellipse cx="820" cy="722" rx="120" ry="30" fill="#050814" opacity="0.6" filter="url(#s14-haze)"/>
+              <path d="M 730 700 L 740 668 L 790 652 L 860 660 L 884 690 L 880 714 Z"
+                    fill="#151B3B" stroke="#515A83" stroke-width="7"/>
+              <circle cx="766" cy="712" r="17" fill="#0A0E24" stroke="#B8C0D8" stroke-width="5"/>
+              <circle cx="848" cy="708" r="17" fill="#0A0E24" stroke="#B8C0D8" stroke-width="5"/>
+              <path d="M 792 664 L 838 668" stroke="#FF7A1A" stroke-width="6" opacity="0.55"/>
+            </g>
+            <g id="s14-tires" fill="none" stroke="#515A83">
+              <ellipse cx="1410" cy="690" rx="54" ry="20" stroke-width="12"/>
+              <ellipse cx="1410" cy="702" rx="54" ry="20" stroke-width="12"/>
+              <ellipse cx="1410" cy="714" rx="54" ry="20" stroke-width="12"/>
+            </g>
+          </g>
+
+          <!-- glowing perimeter ring: hero 22 px -->
+          <path id="s14-ring" d="M 610 330 L 1330 286 L 1500 780 L 1240 800 M 1000 815 L 742 842 L 610 330"
+                fill="none" stroke="#FF7A1A" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"
+                opacity="0.55" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+
+          <!-- far fence panels -->
+          <g id="s14-panels-far">
+            <g class="s14-panel">
+              <polygon points="610,330 790,319 790,263 610,274" fill="url(#s14-planks)" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+              <line x1="610" y1="274" x2="790" y2="263" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/>
+            </g>
+            <g class="s14-panel">
+              <polygon points="790,319 970,308 970,252 790,263" fill="url(#s14-planks)" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+              <line x1="790" y1="263" x2="970" y2="252" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/>
+            </g>
+            <g class="s14-panel">
+              <polygon points="970,308 1150,297 1150,241 970,252" fill="url(#s14-planks)" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+              <line x1="970" y1="252" x2="1150" y2="241" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/>
+            </g>
+            <g class="s14-panel">
+              <polygon points="1150,297 1330,286 1330,230 1150,241" fill="url(#s14-planks)" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+              <line x1="1150" y1="241" x2="1330" y2="230" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/>
+            </g>
+            <g class="s14-panel">
+              <polygon points="1330,286 1387,451 1387,395 1330,230" fill="url(#s14-planks)" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+              <line x1="1330" y1="230" x2="1387" y2="395" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/>
+            </g>
+            <g class="s14-panel">
+              <polygon points="1387,451 1443,615 1443,559 1387,395" fill="url(#s14-planks)" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+              <line x1="1387" y1="395" x2="1443" y2="559" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/>
+            </g>
+            <g class="s14-panel">
+              <polygon points="1443,615 1500,780 1500,724 1443,559" fill="url(#s14-planks)" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+              <line x1="1443" y1="559" x2="1500" y2="724" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/>
+            </g>
+            <g class="s14-panel">
+              <polygon points="742,842 698,671 698,615 742,786" fill="url(#s14-planks)" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+              <line x1="742" y1="786" x2="698" y2="615" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/>
+            </g>
+            <g class="s14-panel">
+              <polygon points="698,671 654,500 654,444 698,615" fill="url(#s14-planks)" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+              <line x1="698" y1="615" x2="654" y2="444" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/>
+            </g>
+            <g class="s14-panel">
+              <polygon points="654,500 610,330 610,274 654,444" fill="url(#s14-planks)" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+              <line x1="654" y1="444" x2="610" y2="274" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/>
+            </g>
+          </g>
+
+          <!-- far posts -->
+          <g id="s14-posts-far">
+            <g class="s14-post" transform="translate(610 330)"><rect x="-16" y="-70" width="32" height="80" rx="9" fill="url(#s14-metal)" stroke="#B8C0D8" stroke-width="7"/><circle cx="0" cy="-64" r="5" fill="#FFD23F" opacity="0.8"/></g>
+            <g class="s14-post" transform="translate(790 319)"><rect x="-15" y="-70" width="30" height="78" rx="9" fill="url(#s14-metal)" stroke="#B8C0D8" stroke-width="7"/><circle cx="0" cy="-64" r="5" fill="#FFD23F" opacity="0.7"/></g>
+            <g class="s14-post" transform="translate(970 308)"><rect x="-15" y="-70" width="30" height="78" rx="9" fill="url(#s14-metal)" stroke="#B8C0D8" stroke-width="7"/><circle cx="0" cy="-64" r="5" fill="#FFD23F" opacity="0.7"/></g>
+            <g class="s14-post" transform="translate(1150 297)"><rect x="-15" y="-70" width="30" height="78" rx="9" fill="url(#s14-metal)" stroke="#B8C0D8" stroke-width="7"/><circle cx="0" cy="-64" r="5" fill="#FFD23F" opacity="0.7"/></g>
+            <g class="s14-post" transform="translate(1330 286)"><rect x="-16" y="-70" width="32" height="80" rx="9" fill="url(#s14-metal)" stroke="#B8C0D8" stroke-width="7"/><circle cx="0" cy="-64" r="5" fill="#FF7A1A" filter="url(#s14-soft)"/></g>
+            <g class="s14-post" transform="translate(1387 451)"><rect x="-15" y="-70" width="30" height="78" rx="9" fill="url(#s14-metal)" stroke="#B8C0D8" stroke-width="7"/><circle cx="0" cy="-64" r="5" fill="#FFD23F" opacity="0.7"/></g>
+            <g class="s14-post" transform="translate(1443 615)"><rect x="-15" y="-70" width="30" height="78" rx="9" fill="url(#s14-metal)" stroke="#B8C0D8" stroke-width="7"/><circle cx="0" cy="-64" r="5" fill="#FFD23F" opacity="0.7"/></g>
+            <g class="s14-post" transform="translate(1500 780)"><rect x="-16" y="-70" width="32" height="80" rx="9" fill="url(#s14-metal)" stroke="#B8C0D8" stroke-width="7"/><circle cx="0" cy="-64" r="5" fill="#FF7A1A" filter="url(#s14-soft)"/></g>
+            <g class="s14-post" transform="translate(742 842)"><rect x="-16" y="-70" width="32" height="80" rx="9" fill="url(#s14-metal)" stroke="#B8C0D8" stroke-width="7"/><circle cx="0" cy="-64" r="5" fill="#FFD23F" opacity="0.8"/></g>
+            <g class="s14-post" transform="translate(698 671)"><rect x="-15" y="-70" width="30" height="78" rx="9" fill="url(#s14-metal)" stroke="#B8C0D8" stroke-width="7"/><circle cx="0" cy="-64" r="5" fill="#FFD23F" opacity="0.7"/></g>
+            <g class="s14-post" transform="translate(654 500)"><rect x="-15" y="-70" width="30" height="78" rx="9" fill="url(#s14-metal)" stroke="#B8C0D8" stroke-width="7"/><circle cx="0" cy="-64" r="5" fill="#FFD23F" opacity="0.7"/></g>
+          </g>
+
+          <!-- top cap rail -->
+          <path id="s14-rail" d="M 610 274 L 790 263 L 970 252 L 1150 241 L 1330 230 L 1387 395 L 1443 559 L 1500 724 M 742 786 L 698 615 L 654 444 L 610 274"
+                fill="none" stroke="#B8C0D8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"
+                opacity="0.75" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+
+          <!-- ember yard lamp -->
+          <g id="s14-yard-lamp" transform="translate(1618 700)">
+            <rect x="-9" y="-372" width="18" height="380" rx="9" fill="#151B3B" stroke="#515A83" stroke-width="5"/>
+            <path d="M -9 -372 L -44 -392 L -44 -420 L 44 -420 L 44 -392 L 9 -372 Z" fill="#151B3B" stroke="#515A83" stroke-width="5"/>
+            <ellipse cx="0" cy="-404" rx="30" ry="13" fill="#FF7A1A" filter="url(#s14-goldGlow)"/>
+            <path d="M -24 -390 L -170 60 L 150 60 L 24 -390 Z" fill="#FF7A1A" opacity="0.22"/>
+            <ellipse cx="-80" cy="20" rx="200" ry="64" fill="url(#s14-ember)" opacity="0.5" filter="url(#s14-haze)"/>
+          </g>
+
+          <!-- warm gate pool -->
+          <ellipse cx="1050" cy="720" rx="300" ry="130" fill="url(#s14-gatepool)"/>
+          <ellipse cx="1040" cy="700" rx="70" ry="30" fill="#FFFFFF" opacity="0.85"/>
+          <ellipse cx="1020" cy="690" rx="180" ry="72" fill="#F4EFE3" opacity="1"/>
+
+          <!-- truck backs through the gate -->
+          <g id="s14-truck">
+            <ellipse cx="0" cy="14" rx="240" ry="90" fill="#050814" opacity="0.95" filter="url(#s14-haze)"/>
+            <g fill="#050814" stroke="#515A83" stroke-width="4">
+              <rect x="-162" y="-96" width="74" height="22" rx="9"/>
+              <rect x="-162" y="74" width="74" height="22" rx="9"/>
+              <rect x="84" y="-96" width="74" height="22" rx="9"/>
+              <rect x="84" y="74" width="74" height="22" rx="9"/>
+            </g>
+            <rect x="-212" y="-74" width="270" height="148" rx="18" fill="#151B3B" stroke="#B8C0D8" stroke-width="7" filter="url(#s14-shadow)"/>
+            <rect x="-198" y="-60" width="240" height="120" rx="10" fill="url(#s14-crate)" stroke="#B8C0D8" stroke-width="6"/>
+            <g stroke="#0A0E24" stroke-width="6" opacity="0.6">
+              <line x1="-158" y1="-58" x2="-158" y2="58"/>
+              <line x1="-118" y1="-58" x2="-118" y2="58"/>
+              <line x1="-78" y1="-58" x2="-78" y2="58"/>
+              <line x1="-38" y1="-58" x2="-38" y2="58"/>
+              <line x1="2" y1="-58" x2="2" y2="58"/>
+            </g>
+            <rect x="-188" y="-6" width="220" height="12" rx="6" fill="#B8C0D8" opacity="0.42"/>
+            <rect x="-176" y="-10" width="10" height="20" rx="5" fill="#515A83"/>
+            <rect x="12" y="-10" width="10" height="20" rx="5" fill="#515A83"/>
+            <path d="M 58 -74 L 168 -74 Q 198 -74 198 -44 L 198 44 Q 198 74 168 74 L 58 74 Z" fill="#515A83" stroke="#B8C0D8" stroke-width="7" stroke-linejoin="round"/>
+            <path d="M 104 -52 L 168 -52 Q 180 -52 180 -38 L 180 38 Q 180 52 168 52 L 104 52 Z" fill="#8E5FD9" opacity="0.5"/>
+            <line x1="58" y1="-74" x2="58" y2="74" stroke="#050814" stroke-width="9"/>
+            <line x1="-198" y1="-60" x2="-198" y2="60" stroke="#050814" stroke-width="6"/>
+            <rect x="-207" y="-46" width="12" height="32" rx="5" fill="#FFD23F" filter="url(#s14-goldGlow)"/>
+            <rect x="-207" y="14" width="12" height="32" rx="5" fill="#FFD23F" filter="url(#s14-goldGlow)"/>
+            <rect x="-234" y="-48" width="24" height="96" rx="9" fill="#151B3B" stroke="#FF7A1A" stroke-width="5"/>
+            <circle id="s14-reverse-l" cx="-222" cy="-34" r="8" fill="#F4EFE3" filter="url(#s14-soft)"/>
+            <circle id="s14-reverse-r" cx="-222" cy="34" r="8" fill="#F4EFE3" filter="url(#s14-soft)"/>
+            <circle cx="198" cy="-34" r="9" fill="#FFD23F" filter="url(#s14-goldGlow)"/>
+            <circle cx="198" cy="34" r="9" fill="#FF7A1A"/>
+          </g>
+
+          <!-- near fence: bottom edge, drawn over the truck -->
+          <g id="s14-panels-near">
+            <g class="s14-panel">
+              <polygon points="1500,780 1380,787 1380,731 1500,724" fill="url(#s14-planks)" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+              <line x1="1500" y1="724" x2="1380" y2="731" stroke="#B8C0D8" stroke-width="6" stroke-linecap="round"/>
+            </g>
+            <g class="s14-panel">
+              <polygon points="1380,787 1240,800 1240,744 1380,731" fill="url(#s14-planks)" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+              <line x1="1380" y1="731" x2="1240" y2="744" stroke="#B8C0D8" stroke-width="6" stroke-linecap="round"/>
+            </g>
+            <g class="s14-panel">
+              <polygon points="1000,815 880,826 880,770 1000,759" fill="url(#s14-planks)" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+              <line x1="1000" y1="759" x2="880" y2="770" stroke="#B8C0D8" stroke-width="6" stroke-linecap="round"/>
+            </g>
+            <g class="s14-panel">
+              <polygon points="880,826 742,842 742,786 880,770" fill="url(#s14-planks)" stroke="#515A83" stroke-width="5" stroke-linejoin="round"/>
+              <line x1="880" y1="770" x2="742" y2="786" stroke="#B8C0D8" stroke-width="6" stroke-linecap="round"/>
+            </g>
+          </g>
+          <g id="s14-posts-near">
+            <g class="s14-post" transform="translate(1500 780)"><rect x="-16" y="-70" width="32" height="80" rx="9" fill="url(#s14-metal)" stroke="#B8C0D8" stroke-width="7"/><circle cx="0" cy="-64" r="5" fill="#FF7A1A" filter="url(#s14-soft)"/></g>
+            <g class="s14-post" transform="translate(1380 787)"><rect x="-15" y="-70" width="30" height="78" rx="9" fill="url(#s14-metal)" stroke="#B8C0D8" stroke-width="7"/><circle cx="0" cy="-64" r="5" fill="#FFD23F" opacity="0.7"/></g>
+            <g class="s14-post s14-gatepost" transform="translate(1240 800)"><rect x="-18" y="-86" width="36" height="96" rx="10" fill="url(#s14-metal)" stroke="#FFD23F" stroke-width="6"/><circle cx="0" cy="-78" r="7" fill="#FFD23F" filter="url(#s14-goldGlow)"/></g>
+            <g class="s14-post s14-gatepost" transform="translate(1000 815)"><rect x="-18" y="-86" width="36" height="96" rx="10" fill="url(#s14-metal)" stroke="#FFD23F" stroke-width="6"/><circle cx="0" cy="-78" r="7" fill="#FFD23F" filter="url(#s14-goldGlow)"/></g>
+            <g class="s14-post" transform="translate(880 826)"><rect x="-15" y="-70" width="30" height="78" rx="9" fill="url(#s14-metal)" stroke="#B8C0D8" stroke-width="7"/><circle cx="0" cy="-64" r="5" fill="#FFD23F" opacity="0.7"/></g>
+            <g class="s14-post" transform="translate(742 842)"><rect x="-16" y="-70" width="32" height="80" rx="9" fill="url(#s14-metal)" stroke="#B8C0D8" stroke-width="7"/><circle cx="0" cy="-64" r="5" fill="#FFD23F" opacity="0.8"/></g>
+            <path d="M 1240 744 L 1380 731 L 1500 724" fill="none" stroke="#B8C0D8" stroke-width="12" stroke-linecap="round" opacity="0.75"/>
+            <path d="M 1000 759 L 880 770 L 742 786" fill="none" stroke="#B8C0D8" stroke-width="12" stroke-linecap="round" opacity="0.75"/>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND ================= -->
+        <g id="s14-fg">
+          <!-- dashed reverse path -->
+          <path id="s14-backpath" d="M 1860 902 Q 1500 866 1120 806 Q 1080 742 1108 600"
+                fill="none" stroke="#FFD23F" stroke-width="10" stroke-linecap="round" stroke-dasharray="16 18"
+                opacity="0.65" pathLength="100" stroke-dashoffset="100"/>
+
+          <!-- clearance gauge at the gate -->
+          <g id="s14-gauge" opacity="0">
+            <rect x="972" y="752" width="296" height="10" rx="5" fill="#050814" stroke="#B8C0D8" stroke-width="3" opacity="0.7"/>
+            <rect id="s14-gauge-bar" x="1000" y="774" width="240" height="10" rx="5" fill="#FF7A1A" opacity="0.9"/>
+            <g stroke="#FFD23F" stroke-width="8" stroke-linecap="round">
+              <line x1="976" y1="762" x2="976" y2="792"/>
+              <line x1="1264" y1="747" x2="1264" y2="777"/>
+              <line x1="992" y1="768" x2="1004" y2="768"/>
+              <line x1="1236" y1="753" x2="1248" y2="753"/>
+            </g>
+            <rect x="1094" y="716" width="52" height="20" rx="10" fill="#050814" stroke="#FFD23F" stroke-width="4"/>
+            <circle id="s14-gauge-dot" cx="1120" cy="726" r="5" fill="#FFD23F"/>
+          </g>
+          <ellipse id="s14-gauge-flash" cx="1120" cy="806" rx="170" ry="26" fill="#FF7A1A" opacity="0" filter="url(#s14-haze)"/>
+
+          <!-- gate leaves -->
+          <g transform="translate(1000 815)">
+          <g id="s14-gate-left">
+            <rect x="0" y="-14" width="126" height="28" rx="9" fill="#151B3B" stroke="#B8C0D8" stroke-width="7"/>
+            <rect x="10" y="-24" width="106" height="10" rx="5" fill="#515A83" stroke="#B8C0D8" stroke-width="3"/>
+            <rect x="10" y="14" width="106" height="10" rx="5" fill="#515A83" stroke="#B8C0D8" stroke-width="3"/>
+            <path d="M 14 0 L 110 -22 M 14 0 L 110 22" stroke="#B8C0D8" stroke-width="6" opacity="0.6"/>
+            <circle cx="0" cy="0" r="10" fill="#FFD23F" filter="url(#s14-goldGlow)"/>
+            <rect x="108" y="-9" width="18" height="18" rx="6" fill="#FFD23F" opacity="0.9"/>
+          </g>
+          </g>
+          <g transform="translate(1240 800)">
+          <g id="s14-gate-right">
+            <rect x="-126" y="-14" width="126" height="28" rx="9" fill="#151B3B" stroke="#B8C0D8" stroke-width="7"/>
+            <rect x="-116" y="-24" width="106" height="10" rx="5" fill="#515A83" stroke="#B8C0D8" stroke-width="3"/>
+            <rect x="-116" y="14" width="106" height="10" rx="5" fill="#515A83" stroke="#B8C0D8" stroke-width="3"/>
+            <path d="M -14 0 L -110 -22 M -14 0 L -110 22" stroke="#B8C0D8" stroke-width="6" opacity="0.6"/>
+            <circle cx="0" cy="0" r="10" fill="#FFD23F" filter="url(#s14-goldGlow)"/>
+            <rect x="-126" y="-9" width="18" height="18" rx="6" fill="#FFD23F" opacity="0.9"/>
+          </g>
+          </g>
+          <circle id="s14-latch" cx="1120" cy="808" r="12" fill="#FFD23F" opacity="0" filter="url(#s14-goldGlow)"/>
+
+          <!-- half-hour pause ring: 30 ticks, hand sweeps 180 degrees -->
+          <g id="s14-pause" transform="translate(1300 470)">
+            <circle r="86" fill="#050814" opacity="0.62" stroke="#515A83" stroke-width="4"/>
+            <circle r="66" fill="none" stroke="#B8C0D8" stroke-width="10" opacity="0.42"
+                    stroke-dasharray="6 7.83"/>
+            <circle id="s14-pause-arc" r="66" fill="none" stroke="#FFD23F" stroke-width="12" stroke-linecap="round"
+                    pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-90)" filter="url(#s14-goldGlow)"/>
+            <circle r="8" fill="#FFD23F"/>
+            <g id="s14-pause-hand">
+              <line x1="0" y1="10" x2="0" y2="-56" stroke="#F4EFE3" stroke-width="7" stroke-linecap="round"/>
+              <circle cx="0" cy="0" r="10" fill="#151B3B" stroke="#FFD23F" stroke-width="5"/>
+            </g>
+            <circle r="92" fill="none" stroke="#FF7A1A" stroke-width="3" opacity="0.35"/>
+          </g>
+
+          <!-- foreground dust -->
+          <g id="s14-fg-dust" fill="#F4EFE3">
+            <circle cx="300" cy="900" r="4" opacity="0.16"/>
+            <circle cx="620" cy="1010" r="3" opacity="0.13"/>
+            <circle cx="1180" cy="980" r="4" opacity="0.15"/>
+            <circle cx="1520" cy="920" r="3" opacity="0.13"/>
+            <circle cx="1800" cy="1000" r="4" opacity="0.15"/>
+          </g>
+
+          <g id="s14-exit-plank" opacity="0">
+            <g transform="translate(1180 800) rotate(-14)">
+              <rect x="-1400" y="-300" width="2600" height="300" rx="16" fill="url(#s14-wood)" stroke="#515A83" stroke-width="10"/>
+              <rect x="-1400" y="10" width="2600" height="330" rx="16" fill="url(#s14-wood)" stroke="#515A83" stroke-width="10"/>
+              <g stroke="#0A0E24" stroke-width="7" opacity="0.7">
+                <line x1="-1380" y1="-244" x2="1170" y2="-214"/>
+                <line x1="-1380" y1="-160" x2="1170" y2="-190"/>
+                <line x1="-1380" y1="-74" x2="1170" y2="-104"/>
+                <line x1="-1380" y1="76" x2="1170" y2="46"/>
+                <line x1="-1380" y1="186" x2="1170" y2="156"/>
+                <line x1="-1380" y1="286" x2="1170" y2="256"/>
+              </g>
+              <g fill="none" stroke="#050814" stroke-width="6" opacity="0.7">
+                <ellipse cx="-820" cy="-180" rx="40" ry="14"/>
+                <ellipse cx="180" cy="-120" rx="30" ry="11"/>
+                <ellipse cx="-420" cy="120" rx="36" ry="13"/>
+              </g>
+              <g fill="#FFD23F" opacity="0.7">
+                <circle cx="-1240" cy="-120" r="6"/>
+                <circle cx="-560" cy="-120" r="6"/>
+                <circle cx="120" cy="-120" r="6"/>
+                <circle cx="-900" cy="160" r="6"/>
+                <circle cx="-220" cy="160" r="6"/>
+                <circle cx="440" cy="160" r="6"/>
+              </g>
+            </g>
+          </g>
+
+          <g id="s14-badge">
+            <rect x="64" y="52" width="430" height="98" rx="49" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="78" y="66" width="402" height="70" rx="35" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.35"/>
+            <g fill="#FFD23F" opacity="0.7">
+              <circle cx="94" cy="101" r="5"/>
+              <circle cx="464" cy="101" r="5"/>
+            </g>
+            <text x="279" y="117" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="46"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="9" paint-order="stroke fill" letter-spacing="1"
+                  textLength="330" lengthAdjust="spacingAndGlyphs">10-FT FENCE</text>
+          </g>
+
+          <rect id="s14-flash" x="0" y="0" width="1920" height="1080" fill="#FF7A1A" opacity="0"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:radial-gradient(circle at 56% 58%, rgba(255,122,26,0.12), transparent 60%);}
+    .scene-persp{position:absolute;inset:0;perspective:1500px;perspective-origin:52% 56%;}
+    #s14-world{transform-style:preserve-3d;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      /* ---------- initial states ---------- */
+      gsap.set("#s14-violet-a", { opacity: 0, scale: 0.74, transformOrigin: "50% 50%" });
+      gsap.set("#s14-violet-b", { opacity: 0, scale: 0.8, transformOrigin: "50% 50%" });
+      gsap.set("#s14-roofline", { scaleY: 0.2, opacity: 0, transformOrigin: "50% 100%" });
+      gsap.set("#s14-bg-dust circle", { opacity: 0 });
+      gsap.set("#s14-alley", { opacity: 0 });
+      gsap.set("#s14-alley-line", { opacity: 0, strokeDashoffset: 100 });
+      gsap.set("#s14-lamp-street", { opacity: 0, scaleY: 0.2, transformOrigin: "50% 100%" });
+      gsap.set("#s14-lamp-street-b", { opacity: 0, scaleY: 0.2, transformOrigin: "50% 100%" });
+      gsap.set("#s14-floor", { opacity: 0, scale: 0.96, transformOrigin: "50% 50%" });
+      gsap.set("#s14-wreck", { opacity: 0, y: 18 });
+      gsap.set("#s14-tires", { opacity: 0, y: 18 });
+      gsap.set("#s14-yard-lamp", { opacity: 0, scaleY: 0.3, transformOrigin: "50% 100%" });
+      gsap.set("#s14-ring", { opacity: 0, strokeDashoffset: 100 });
+      gsap.set(".s14-panel", { scaleY: 0, opacity: 0, transformOrigin: "50% 100%" });
+      gsap.set(".s14-post", { scaleY: 0, opacity: 0, transformOrigin: "50% 100%" });
+      gsap.set("#s14-rail", { opacity: 0, strokeDashoffset: 100 });
+      gsap.set("#s14-truck", { x: 1730, y: 905, rotation: -8, opacity: 0, scale: 0.94, transformOrigin: "50% 50%" });
+      gsap.set("#s14-reverse-l, #s14-reverse-r", { opacity: 0 });
+      gsap.set("#s14-backpath", { opacity: 0, strokeDashoffset: 100 });
+      gsap.set("#s14-gauge", { opacity: 0, y: 12 });
+      gsap.set("#s14-gauge-flash", { opacity: 0 });
+      gsap.set("#s14-gate-left", { rotation: 66, svgOrigin: "0 0" });
+      gsap.set("#s14-gate-right", { rotation: -66, svgOrigin: "0 0" });
+      gsap.set("#s14-latch", { opacity: 0 });
+      gsap.set("#s14-pause", { opacity: 0, scale: 0.72, transformOrigin: "50% 50%" });
+      gsap.set("#s14-pause-arc", { strokeDashoffset: 100 });
+      gsap.set("#s14-pause-hand", { rotation: 0, svgOrigin: "0 0" });
+      gsap.set("#s14-fg-dust circle", { opacity: 0 });
+      gsap.set("#s14-exit-plank", { opacity: 0, x: 1700 });
+      gsap.set("#s14-badge", { opacity: 0, scale: 1.5, rotation: -5, transformOrigin: "50% 50%" });
+      gsap.set("#s14-flash", { opacity: 0 });
+
+      /* ---------- phase 1: alley draws in from frame-right ---------- */
+      tl.to("#s14-violet-a", { opacity: 0.9, scale: 1, duration: 1.5, ease: "power2.out" }, 0.0);
+      tl.to("#s14-violet-b", { opacity: 0.6, scale: 1, duration: 1.6, ease: "power2.out" }, 0.15);
+      tl.to("#s14-roofline", { scaleY: 1, opacity: 1, duration: 1.1, ease: "power2.out" }, 0.15);
+      tl.to("#s14-bg-dust circle", { opacity: 0.15, duration: 0.8, stagger: 0.09, ease: "power1.out" }, 0.55);
+      tl.to("#s14-alley", { opacity: 1, duration: 0.85, ease: "power2.out" }, 0.35);
+      tl.to("#s14-alley-line", { opacity: 0.5, duration: 0.2, ease: "power1.out" }, 0.65);
+      tl.to("#s14-alley-line", { strokeDashoffset: 0, duration: 1.3, ease: "power2.inOut" }, 0.8);
+      tl.to("#s14-lamp-street", { opacity: 1, scaleY: 1, duration: 0.85, ease: "back.out(1.5)" }, 0.8);
+      tl.to("#s14-lamp-street-b", { opacity: 1, scaleY: 1, duration: 0.8, ease: "back.out(1.5)" }, 1.0);
+      tl.to("#s14-badge", { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(2.4)" }, 1.1);
+
+      /* ---------- phase 2: fence posts extrude and panels bloom ---------- */
+      tl.to("#s14-floor", { opacity: 1, scale: 1, duration: 1.0, ease: "power2.out" }, 1.15);
+      tl.to("#s14-wreck", { opacity: 0.8, y: 0, duration: 0.7, ease: "power2.out" }, 2.55);
+      tl.to("#s14-tires", { opacity: 0.8, y: 0, duration: 0.7, ease: "power2.out" }, 2.7);
+      tl.to("#s14-yard-lamp", { opacity: 1, scaleY: 1, duration: 1.0, ease: "back.out(1.3)" }, 1.75);
+      tl.to("#s14-ring", { opacity: 0.55, duration: 0.2, ease: "power1.out" }, 1.45);
+      tl.to("#s14-ring", { strokeDashoffset: 0, duration: 1.8, ease: "power2.inOut" }, 1.5);
+      tl.to(".s14-post", { scaleY: 1, opacity: 1, duration: 0.62, stagger: 0.075, ease: "back.out(1.8)" }, 1.7);
+      tl.to(".s14-panel", { scaleY: 1, opacity: 1, duration: 0.7, stagger: 0.09, ease: "power2.out" }, 2.0);
+      tl.to("#s14-rail", { opacity: 0.75, duration: 0.2, ease: "power1.out" }, 2.25);
+      tl.to("#s14-rail", { strokeDashoffset: 0, duration: 1.3, ease: "power2.inOut" }, 2.35);
+
+      /* ---------- phase 3: dashed path + truck reverses along the bezier ---------- */
+      tl.to("#s14-backpath", { opacity: 0.65, duration: 0.25, ease: "power1.out" }, 2.95);
+      tl.to("#s14-backpath", { strokeDashoffset: 0, duration: 1.0, ease: "power2.inOut" }, 3.0);
+      tl.to("#s14-truck", { opacity: 1, scale: 1, duration: 0.35, ease: "power1.out" }, 3.15);
+      tl.to("#s14-truck", { keyframes: [
+        { x: 1500, y: 882, rotation: 2, duration: 1.1, ease: "power1.inOut" },
+        { x: 1280, y: 845, rotation: 26, duration: 1.0, ease: "none" },
+        { x: 1150, y: 780, rotation: 55, duration: 0.85, ease: "none" },
+        { x: 1108, y: 575, rotation: 82, duration: 0.6, ease: "power2.out" }
+      ] }, 3.5);
+      tl.to("#s14-truck", { x: 1104, y: 567, duration: 1.6, ease: "sine.inOut" }, 7.05);
+      tl.to("#s14-reverse-l, #s14-reverse-r", { opacity: 0.9, duration: 0.28, yoyo: true, repeat: 5, ease: "sine.inOut" }, 4.2);
+
+      /* ---------- phase 4: clearance gauge flashes at the gate ---------- */
+      tl.to("#s14-gauge", { opacity: 1, y: 0, duration: 0.4, ease: "back.out(2)" }, 5.85);
+      tl.to("#s14-gauge-bar", { attr: { width: 214, x: 1013 }, duration: 0.45, ease: "power2.inOut" }, 6.25);
+      tl.to("#s14-gauge-bar", { fill: "#FFD23F", duration: 0.18, ease: "power1.out" }, 6.4);
+      tl.to("#s14-gauge-flash", { opacity: 0.7, duration: 0.14, ease: "power1.out" }, 6.32);
+      tl.to("#s14-gauge-flash", { opacity: 0, duration: 0.4, ease: "power2.out" }, 6.46);
+      tl.to("#s14-gauge-flash", { opacity: 0.5, duration: 0.12, ease: "power1.out" }, 6.86);
+      tl.to("#s14-gauge-flash", { opacity: 0, duration: 0.38, ease: "power2.out" }, 6.98);
+      tl.to("#s14-flash", { opacity: 0.12, duration: 0.1, ease: "power1.out" }, 6.32);
+      tl.to("#s14-flash", { opacity: 0, duration: 0.4, ease: "power2.out" }, 6.42);
+      tl.to("#s14-gauge-dot", { scale: 1.8, duration: 0.2, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 6.2);
+
+      /* ---------- phase 5: gates swing shut; half hour fills ---------- */
+      tl.to("#s14-gate-left", { rotation: 0, duration: 1.25, ease: "power3.out" }, 7.15);
+      tl.to("#s14-gate-right", { rotation: 0, duration: 1.25, ease: "power3.out" }, 7.18);
+      tl.to("#s14-gate-left", { rotation: -2.6, duration: 0.2, ease: "power1.in" }, 8.4);
+      tl.to("#s14-gate-left", { rotation: 0, duration: 0.3, ease: "power2.out" }, 8.6);
+      tl.to("#s14-gate-right", { rotation: 2.6, duration: 0.2, ease: "power1.in" }, 8.43);
+      tl.to("#s14-gate-right", { rotation: 0, duration: 0.3, ease: "power2.out" }, 8.63);
+      tl.to("#s14-latch", { opacity: 1, duration: 0.2, ease: "back.out(3)" }, 8.55);
+      tl.to("#s14-latch", { opacity: 0.62, duration: 0.5, yoyo: true, repeat: 1, ease: "sine.inOut" }, 8.82);
+
+      tl.to("#s14-pause", { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.8)" }, 7.3);
+      tl.to("#s14-pause-arc", { strokeDashoffset: 50, duration: 1.7, ease: "power1.inOut" }, 7.55);
+      tl.to("#s14-pause-hand", { rotation: 180, duration: 1.7, ease: "power1.inOut" }, 7.55);
+
+      /* ---------- phase 6: camera settles; plank lifts left ---------- */
+      tl.to("#s14-world", { rotation: -1.6, scale: 1.045, duration: 9.98, transformOrigin: "50% 52%", ease: "sine.inOut" }, 0);
+      tl.to("#s14-exit-plank", { opacity: 1, duration: 0.2, ease: "power1.out" }, 8.76);
+      tl.to("#s14-exit-plank", { x: -460, duration: 1.2, ease: "power2.in" }, 8.78);
+      tl.to("#s14-world", { x: -64, duration: 1.08, ease: "power2.in" }, 8.9);
+      tl.to("#s14-fg-dust", { x: -160, duration: 1.05, ease: "power2.in" }, 8.93);
+
+      /* ---------- 3D plane parallax + living holds ---------- */
+      tl.fromTo("#s14-bg", { x: -12, rotationY: -1.1 }, { x: 12, rotationY: 1.1, duration: 9.98, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s14-mg", { x: 8, rotationX: 1.0 }, { x: -8, rotationX: -1.0, duration: 9.98, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s14-fg", { x: -6 }, { x: 6, duration: 9.98, ease: "sine.inOut" }, 0);
+      tl.to("#s14-badge", { y: -5, duration: 1.2, yoyo: true, repeat: 3, ease: "sine.inOut" }, 2.0);
+      tl.to("#s14-ring", { opacity: 0.36, duration: 1.3, yoyo: true, repeat: 2, ease: "sine.inOut" }, 3.5);
+      tl.to("#s14-yard-lamp ellipse", { opacity: 0.4, duration: 0.9, yoyo: true, repeat: 2, ease: "sine.inOut" }, 2.2);
+      tl.to("#s14-fg-dust", { y: -16, duration: 2.2, yoyo: true, repeat: 1, ease: "sine.inOut" }, 3.0);
+      tl.to("#s14-pause", { scale: 1.015, duration: 0.9, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 8.0);
+      tl.to("#s14-latch", { scale: 1.35, duration: 0.8, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 8.3);
+      tl.to("#s14-pause-arc", { opacity: 0.72, duration: 0.9, yoyo: true, repeat: 1, ease: "sine.inOut" }, 7.6);
+
+      tl.to({}, { duration: 9.980 }, 0);
+      window.__timelines["14-yard-fence"] = tl;
+    })();
+  </script>
+</div>
+</template>

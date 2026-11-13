@@ -1,0 +1,26 @@
+{
+  "plate_id": "pl-night-02",
+  "source_url": "videos/lunik-heist-1959/.tmp/lunik.pdf",
+  "source_page": 4,
+  "source_dpi": 150,
+  "captured_at": null,
+  "width": 1275,
+  "height": 1650,
+  "source_width": 1275,
+  "source_height": 1650,
+  "scale_factor": 1.0,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": [
+    {
+      "phrase": "about 7:30 p.m.",
+      "x": 790,
+      "y": 1362,
+      "w": 241,
+      "h": 37
+    }
+  ],
+  "dropped_boxes": 0
+}

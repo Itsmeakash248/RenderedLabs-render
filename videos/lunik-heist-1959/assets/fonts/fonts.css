@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Google Fonts - Offline WOFF2 Bundle
+   Families: Nunito, Quicksand, Outfit
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Nunito (Weights: 400 Regular, 700 Bold, 800 ExtraBold)
+   -------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./Nunito-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./Nunito-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('./Nunito-ExtraBold.woff2') format('woff2');
+}
+
+/* --------------------------------------------------------------------------
+   Quicksand (Weights: 500 Medium, 600 SemiBold, 700 Bold)
+   -------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./Quicksand-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./Quicksand-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./Quicksand-Bold.woff2') format('woff2');
+}
+
+/* --------------------------------------------------------------------------
+   Outfit (Weights: 400 Regular, 600 SemiBold, 700 Bold)
+   -------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./Outfit-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./Outfit-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./Outfit-Bold.woff2') format('woff2');
+}

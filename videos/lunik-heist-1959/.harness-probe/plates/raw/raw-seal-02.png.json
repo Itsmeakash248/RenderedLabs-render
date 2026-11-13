@@ -1,0 +1,23 @@
+{
+  "pdf": "videos/lunik-heist-1959/.tmp/lunik.pdf",
+  "page": 6,
+  "dpi": 150,
+  "width": 1275,
+  "height": 1650,
+  "boxes": [
+    {
+      "phrase": "plastic seal bearing a Soviet stamp",
+      "x": 544,
+      "y": 333,
+      "w": 547,
+      "h": 37
+    },
+    {
+      "phrase": "overlooked two couplings",
+      "x": 274,
+      "y": 701,
+      "w": 397,
+      "h": 37
+    }
+  ]
+}

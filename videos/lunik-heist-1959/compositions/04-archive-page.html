@@ -1,0 +1,352 @@
+<template id="s04-template">
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
+  <div id="root" data-composition-id="04-archive-page" data-width="1920" data-height="1080" data-start="0" data-duration="23.18">
+    <svg id="stage" width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <radialGradient id="lampGlow" cx="0.28" cy="0.16" r="0.62">
+          <stop offset="0%" stop-color="#FF7A1A" stop-opacity="0.42"/>
+          <stop offset="34%" stop-color="#FF7A1A" stop-opacity="0.17"/>
+          <stop offset="68%" stop-color="#8E5FD9" stop-opacity="0.07"/>
+          <stop offset="100%" stop-color="#0A0E24" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="coneGlow" cx="0.5" cy="0" r="1">
+          <stop offset="0%" stop-color="#FFD23F" stop-opacity="0.20"/>
+          <stop offset="55%" stop-color="#FF7A1A" stop-opacity="0.07"/>
+          <stop offset="100%" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="deskGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#151B3B"/>
+          <stop offset="46%" stop-color="#0A0E24"/>
+          <stop offset="100%" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="hazeGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#8E5FD9" stop-opacity="0.30"/>
+          <stop offset="70%" stop-color="#151B3B" stop-opacity="0.10"/>
+          <stop offset="100%" stop-color="#0A0E24" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="glassGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#F4EFE3" stop-opacity="0.10"/>
+          <stop offset="42%" stop-color="#B8C0D8" stop-opacity="0.03"/>
+          <stop offset="100%" stop-color="#8E5FD9" stop-opacity="0.08"/>
+        </linearGradient>
+        <linearGradient id="pageEdgeGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#F4EFE3" stop-opacity="0.22"/>
+          <stop offset="100%" stop-color="#B8C0D8" stop-opacity="0.04"/>
+        </linearGradient>
+        <linearGradient id="threadGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#FFD23F"/>
+          <stop offset="55%" stop-color="#FF7A1A"/>
+          <stop offset="100%" stop-color="#FFD23F"/>
+        </linearGradient>
+        <linearGradient id="pageGlassGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.06"/>
+          <stop offset="34%" stop-color="#FFFFFF" stop-opacity="0.015"/>
+          <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="threadHotGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#FFD23F" stop-opacity="0.30"/>
+          <stop offset="48%" stop-color="#FF7A1A" stop-opacity="0.42"/>
+          <stop offset="100%" stop-color="#8E5FD9" stop-opacity="0.28"/>
+        </linearGradient>
+        <linearGradient id="pillGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#151B3B"/>
+          <stop offset="100%" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="barInk" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#050814"/>
+          <stop offset="100%" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="sunArcGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#FF7A1A" stop-opacity="0"/>
+          <stop offset="30%" stop-color="#FF7A1A" stop-opacity="0.55"/>
+          <stop offset="68%" stop-color="#FFD23F" stop-opacity="0.70"/>
+          <stop offset="100%" stop-color="#FFD23F" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="crateGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#8E5FD9" stop-opacity="0.34"/>
+          <stop offset="100%" stop-color="#151B3B" stop-opacity="0.10"/>
+        </linearGradient>
+        <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur stdDeviation="7"/>
+        </filter>
+        <filter id="threadBlur" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="3.4"/>
+        </filter>
+      </defs>
+
+      <!-- BG: desk -->
+      <g id="bg-desk">
+        <rect x="0" y="0" width="1920" height="1080" fill="url(#deskGrad)"/>
+        <ellipse cx="520" cy="150" rx="980" ry="640" fill="url(#lampGlow)"/>
+        <path d="M470,-60 L1010,-60 L1400,1080 L180,1080 Z" fill="url(#coneGlow)" opacity="0.9"/>
+        <!-- desk surface plane -->
+        <path d="M0,760 L1920,700 L1920,1080 L0,1080 Z" fill="#0A0E24" opacity="0.85"/>
+        <path d="M0,762 L1920,702" stroke="#B8C0D8" stroke-opacity="0.10" stroke-width="2"/>
+      </g>
+
+      <!-- BG: shelved file boxes in violet haze -->
+      <g id="bg-shelves" opacity="0.85">
+        <rect x="1290" y="0" width="630" height="1080" fill="url(#hazeGrad)" opacity="0.5"/>
+        <g stroke="#8E5FD9" stroke-opacity="0.30" stroke-width="2" fill="none">
+          <path d="M1330,120 H1900"/>
+          <path d="M1330,330 H1900"/>
+          <path d="M1330,540 H1900"/>
+        </g>
+        <g>
+          <rect x="1352" y="46" width="86" height="72" rx="5" fill="#151B3B" stroke="#8E5FD9" stroke-opacity="0.42" stroke-width="1.5"/>
+          <rect x="1456" y="34" width="104" height="84" rx="5" fill="#0A0E24" stroke="#8E5FD9" stroke-opacity="0.36" stroke-width="1.5"/>
+          <rect x="1578" y="52" width="78" height="66" rx="5" fill="#151B3B" stroke="#8E5FD9" stroke-opacity="0.30" stroke-width="1.5"/>
+          <rect x="1674" y="30" width="118" height="88" rx="5" fill="#0A0E24" stroke="#8E5FD9" stroke-opacity="0.40" stroke-width="1.5"/>
+          <rect x="1810" y="50" width="74" height="68" rx="5" fill="#151B3B" stroke="#8E5FD9" stroke-opacity="0.28" stroke-width="1.5"/>
+        </g>
+        <g>
+          <rect x="1340" y="244" width="112" height="84" rx="5" fill="#0A0E24" stroke="#8E5FD9" stroke-opacity="0.34" stroke-width="1.5"/>
+          <rect x="1470" y="256" width="92" height="72" rx="5" fill="#151B3B" stroke="#8E5FD9" stroke-opacity="0.40" stroke-width="1.5"/>
+          <rect x="1580" y="238" width="126" height="90" rx="5" fill="#0A0E24" stroke="#8E5FD9" stroke-opacity="0.30" stroke-width="1.5"/>
+          <rect x="1724" y="260" width="88" height="68" rx="5" fill="#151B3B" stroke="#8E5FD9" stroke-opacity="0.36" stroke-width="1.5"/>
+          <rect x="1830" y="246" width="70" height="82" rx="5" fill="#0A0E24" stroke="#8E5FD9" stroke-opacity="0.26" stroke-width="1.5"/>
+        </g>
+        <g>
+          <rect x="1356" y="462" width="98" height="76" rx="5" fill="#151B3B" stroke="#8E5FD9" stroke-opacity="0.32" stroke-width="1.5"/>
+          <rect x="1472" y="474" width="118" height="64" rx="5" fill="#0A0E24" stroke="#8E5FD9" stroke-opacity="0.38" stroke-width="1.5"/>
+          <rect x="1608" y="452" width="84" height="86" rx="5" fill="#151B3B" stroke="#8E5FD9" stroke-opacity="0.28" stroke-width="1.5"/>
+          <rect x="1710" y="468" width="106" height="70" rx="5" fill="#0A0E24" stroke="#8E5FD9" stroke-opacity="0.34" stroke-width="1.5"/>
+        </g>
+      </g>
+
+      <!-- MG: glass-mounted page -->
+      <g id="mg-page">
+        <g id="pageTilt">
+          <!-- glass card -->
+          <rect id="glassCard" x="300" y="100" width="1180" height="910" rx="24" fill="#151B3B" stroke="rgba(141,164,237,0.20)" stroke-width="1"/>
+          <rect x="304" y="104" width="1172" height="902" rx="21" fill="url(#glassGrad)"/>
+          <!-- sheet shadow -->
+          <rect x="352" y="140" width="1076" height="846" rx="6" fill="#050814" opacity="0.55"/>
+
+          <!-- the declassified page plate, Framed Hero -->
+          <g id="plateGroup">
+            <rect x="366" y="124" width="1048" height="862" rx="4" fill="#0A0E24" stroke="url(#pageEdgeGrad)" stroke-width="2"/>
+            <image id="plate" x="376" y="134" width="1028" height="842" preserveAspectRatio="xMidYMid meet"
+                   xlink:href="../plates/processed/pl-exhibition-01.png"
+                   href="../plates/processed/pl-exhibition-01.png"
+                   style="object-fit:contain"/>
+            <rect id="pageSpecular" x="376" y="134" width="1028" height="842" rx="4" fill="url(#pageGlassGrad)"/>
+          </g>
+
+          <!-- highlighter sweep layer, nested SVG sharing image viewBox -->
+          <svg id="markLayer" x="376" y="134" width="1028" height="842" viewBox="0 0 1275 1650" preserveAspectRatio="xMidYMid meet">
+            <rect id="hiloOne" x="239" y="1014" width="673" height="37" fill="#FFD23F" opacity="0.34" rx="4"/>
+            <rect id="hiloTwo" x="700" y="1051" width="436" height="37" fill="#FFD23F" opacity="0.17" rx="4"/>
+          </svg>
+
+          <!-- redaction bars -->
+          <g id="redactions">
+            <rect class="redaction" x="404" y="598" width="0" height="26" rx="2" fill="url(#barInk)"/>
+            <rect class="redaction" x="404" y="638" width="0" height="26" rx="2" fill="url(#barInk)"/>
+            <rect class="redaction" x="404" y="678" width="0" height="26" rx="2" fill="url(#barInk)"/>
+            <rect class="redaction" x="404" y="748" width="0" height="26" rx="2" fill="url(#barInk)"/>
+            <rect class="redaction" x="404" y="788" width="0" height="26" rx="2" fill="url(#barInk)"/>
+            <rect class="redaction" x="404" y="828" width="0" height="26" rx="2" fill="url(#barInk)"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- FG: paper-trail thread, beads, date pills -->
+      <g id="fg-thread">
+        <g id="threadGroup">
+          <!-- thread glow -->
+          <path id="threadGlow" d="M92,690 C240,700 300,560 470,556 C640,552 700,432 890,430 C1030,428 1080,540 1230,548 C1390,556 1450,700 1612,706 L1770,706"
+                fill="none" stroke="url(#threadHotGrad)" stroke-width="14" stroke-linecap="round" filter="url(#threadBlur)"/>
+          <!-- thread main -->
+          <path id="threadPath" d="M92,690 C240,700 300,560 470,556 C640,552 700,432 890,430 C1030,428 1080,540 1230,548 C1390,556 1450,700 1612,706 L1770,706"
+                fill="none" stroke="url(#threadGrad)" stroke-width="10" stroke-linecap="round"/>
+
+          <!-- seeded anchor at frame-left -->
+          <circle cx="92" cy="690" r="9" fill="#FFD23F"/>
+          <circle cx="92" cy="690" r="18" fill="none" stroke="#FFD23F" stroke-opacity="0.45" stroke-width="2"/>
+
+          <!-- four team beads -->
+          <g class="bead" id="bead1">
+            <circle cx="470" cy="556" r="14" fill="#FF7A1A"/>
+            <circle cx="470" cy="556" r="22" fill="none" stroke="#FF7A1A" stroke-opacity="0.35" stroke-width="2"/>
+          </g>
+          <g class="bead" id="bead2">
+            <circle cx="890" cy="430" r="14" fill="#FFD23F"/>
+            <circle cx="890" cy="430" r="22" fill="none" stroke="#FFD23F" stroke-opacity="0.35" stroke-width="2"/>
+          </g>
+          <g class="bead" id="bead3">
+            <circle cx="1230" cy="548" r="14" fill="#8E5FD9"/>
+            <circle cx="1230" cy="548" r="22" fill="none" stroke="#8E5FD9" stroke-opacity="0.40" stroke-width="2"/>
+          </g>
+          <g class="bead" id="bead4">
+            <circle cx="1612" cy="706" r="14" fill="#F4EFE3"/>
+            <circle cx="1612" cy="706" r="22" fill="none" stroke="#F4EFE3" stroke-opacity="0.30" stroke-width="2"/>
+          </g>
+
+          <!-- crate outline the thread loops into -->
+          <g id="crate">
+            <rect x="1690" y="612" width="196" height="188" rx="8" fill="url(#crateGrad)" stroke="#8E5FD9" stroke-opacity="0.62" stroke-width="3"/>
+            <path d="M1690,700 H1886" stroke="#8E5FD9" stroke-opacity="0.45" stroke-width="2"/>
+            <path d="M1788,612 V800" stroke="#8E5FD9" stroke-opacity="0.32" stroke-width="2"/>
+            <rect x="1730" y="648" width="116" height="26" rx="3" fill="#050814" opacity="0.7"/>
+          </g>
+        </g>
+
+        <!-- date pills -->
+        <g id="pill1967">
+          <rect x="452" y="486" width="150" height="62" rx="31" fill="url(#pillGrad)" stroke="#FFD23F" stroke-opacity="0.75" stroke-width="2.5"/>
+          <text x="527" y="528" text-anchor="middle" font-family="Quicksand, sans-serif" font-weight="700" font-size="34"
+                fill="#F4EFE3" stroke="#050814" stroke-width="6" paint-order="stroke fill" letter-spacing="1">1967</text>
+        </g>
+        <g id="pill1995">
+          <rect x="1170" y="492" width="150" height="62" rx="31" fill="url(#pillGrad)" stroke="#FFD23F" stroke-opacity="0.75" stroke-width="2.5"/>
+          <text x="1245" y="534" text-anchor="middle" font-family="Quicksand, sans-serif" font-weight="700" font-size="32"
+                fill="#F4EFE3" stroke="#050814" stroke-width="6" paint-order="stroke fill" letter-spacing="1.5">1995</text>
+        </g>
+
+        <!-- sunrise arc across bottom -->
+        <path id="sunArc" d="M180,1042 Q960,880 1740,1042" fill="none" stroke="url(#sunArcGrad)" stroke-width="4" stroke-linecap="round"/>
+        <ellipse id="sunCore" cx="960" cy="962" rx="220" ry="60" fill="#FF7A1A" opacity="0.11" filter="url(#softGlow)"/>
+
+        <!-- dust motes -->
+        <g id="dust">
+          <circle class="mote" cx="240" cy="300" r="2.5" fill="#F4EFE3" opacity="0.35"/>
+          <circle class="mote" cx="420" cy="180" r="2" fill="#FFD23F" opacity="0.30"/>
+          <circle class="mote" cx="640" cy="268" r="3" fill="#F4EFE3" opacity="0.22"/>
+          <circle class="mote" cx="860" cy="140" r="2" fill="#B8C0D8" opacity="0.34"/>
+          <circle class="mote" cx="1090" cy="232" r="2.5" fill="#F4EFE3" opacity="0.26"/>
+          <circle class="mote" cx="1290" cy="160" r="2" fill="#FFD23F" opacity="0.30"/>
+          <circle class="mote" cx="1500" cy="330" r="3" fill="#F4EFE3" opacity="0.20"/>
+          <circle class="mote" cx="1720" cy="210" r="2.5" fill="#B8C0D8" opacity="0.28"/>
+          <circle class="mote" cx="330" cy="880" r="2" fill="#FF7A1A" opacity="0.30"/>
+          <circle class="mote" cx="760" cy="930" r="2.5" fill="#F4EFE3" opacity="0.22"/>
+          <circle class="mote" cx="1180" cy="900" r="2" fill="#FFD23F" opacity="0.26"/>
+          <circle class="mote" cx="1560" cy="860" r="3" fill="#F4EFE3" opacity="0.18"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:linear-gradient(135deg, rgba(244,239,227,0.06), transparent 40%);}
+    #plate{filter:saturate(0.86) contrast(1.04) brightness(0.96);}
+    #markLayer{overflow:hidden;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({paused:true});
+
+      /* ---- establish · push in 1.00 -> 1.045 ---- */
+      gsap.set("#stage", {transformOrigin:"50% 52%"});
+      gsap.set("#pageTilt", {transformOrigin:"50% 50%", rotate:0});
+      gsap.set("#glassCard", {transformOrigin:"50% 50%"});
+      gsap.set("#fg-thread", {transformOrigin:"50% 60%"});
+      gsap.set("#bg-shelves", {transformOrigin:"80% 40%"});
+      gsap.set("#bg-desk", {transformOrigin:"40% 20%"});
+      gsap.set("#plateGroup", {transformOrigin:"50% 50%"});
+      gsap.set("#hiloOne", {scaleX:0, transformOrigin:"0% 50%"});
+      gsap.set("#hiloTwo", {scaleX:0, transformOrigin:"0% 50%"});
+      gsap.set(".redaction", {scaleX:0, transformOrigin:"0% 50%"});
+      gsap.set("#pill1967", {opacity:0, scale:0.55, y:26});
+      gsap.set("#pill1995", {opacity:0, scale:0.55, y:26});
+      gsap.set(".bead", {opacity:0, scale:0.4});
+      gsap.set("#crate", {opacity:0, scale:0.94});
+      gsap.set("#sunArc", {opacity:0});
+      gsap.set("#sunCore", {opacity:0});
+      gsap.set("#threadGlow", {opacity:0.15});
+
+      /* thread draw length */
+      var thread = document.getElementById("threadPath");
+      var threadLen = thread.getTotalLength();
+      gsap.set("#threadPath", {strokeDasharray:threadLen, strokeDashoffset:threadLen});
+      var glow = document.getElementById("threadGlow");
+      var glowLen = glow.getTotalLength();
+      gsap.set("#threadGlow", {strokeDasharray:glowLen, strokeDashoffset:glowLen, opacity:0.34});
+
+      var arc = document.getElementById("sunArc");
+      var arcLen = arc.getTotalLength();
+      gsap.set("#sunArc", {strokeDasharray:arcLen, strokeDashoffset:arcLen});
+
+      /* ---- camera: push + 14deg perspective tilt unwinding to square ---- */
+      tl.fromTo("#stage", {scale:1.0}, {scale:1.045, duration:23.18, ease:"none"}, 0);
+      tl.fromTo("#pageTilt", {rotate:-2.5, y:0}, {rotate:0, duration:9.5, ease:"power2.inOut"}, 0);
+      tl.fromTo("#pageTilt", {rotationX:14, rotationY:-9, transformPerspective:2200},
+        {rotationX:14, rotationY:-9, duration:23.18, ease:"none"}, 0);
+
+      /* coupled drift: mg 0.6, bg 0.25, fg 1.0 */
+      tl.fromTo("#mg-page", {x:-16, y:6}, {x:10, y:-4, duration:23.18, ease:"sine.inOut"}, 0);
+      tl.fromTo("#fg-thread", {x:-26, y:10}, {x:26, y:-10, duration:23.18, ease:"sine.inOut"}, 0);
+      tl.fromTo("#bg-shelves", {x:-7, y:3}, {x:7, y:-3, duration:23.18, ease:"sine.inOut"}, 0);
+      tl.fromTo("#bg-desk", {x:-3, y:1}, {x:3, y:-1, duration:23.18, ease:"sine.inOut"}, 0);
+
+      /* ---- 0.5s desk & page presence ---- */
+      tl.fromTo("#glassCard", {opacity:0, scale:0.985}, {opacity:1, scale:1, duration:1.4, ease:"power2.out"}, 0.45);
+      tl.fromTo("#plateGroup", {opacity:0}, {opacity:1, duration:1.2, ease:"power1.out"}, 0.7);
+
+      /* ---- 2.1s thread seeds and draws across ---- */
+      tl.to("#threadGlow", {strokeDashoffset:0, duration:5.2, ease:"power1.inOut"}, 2.1);
+      tl.to("#threadPath", {strokeDashoffset:0, duration:5.2, ease:"power1.inOut"}, 2.1);
+
+      /* ---- beads bloom as the thread passes ---- */
+      tl.to("#bead1", {opacity:1, scale:1, duration:0.62, ease:"back.out(2.4)"}, 3.15);
+      tl.to("#bead2", {opacity:1, scale:1, duration:0.62, ease:"back.out(2.4)"}, 4.05);
+      tl.to("#bead3", {opacity:1, scale:1, duration:0.62, ease:"back.out(2.4)"}, 5.0);
+      tl.to("#bead4", {opacity:1, scale:1, duration:0.62, ease:"back.out(2.4)"}, 5.95);
+
+      /* ---- gold highlighter sweep, timed with thread arrival at the page ---- */
+      tl.to("#hiloOne", {scaleX:1, duration:0.92, ease:"power2.inOut"}, 6.35);
+      tl.to("#hiloTwo", {scaleX:1, duration:0.86, ease:"power2.inOut"}, 6.75);
+
+      /* ---- date pills socket on with spring overshoot ---- */
+      tl.to("#pill1967", {opacity:1, scale:1, y:0, duration:1.05, ease:"elastic.out(1,0.45)"}, 7.4);
+      tl.to("#pill1995", {opacity:1, scale:1, y:0, duration:1.15, ease:"elastic.out(1,0.42)"}, 9.2);
+
+      /* ---- redaction bars ink across two paragraphs ---- */
+      tl.to(".redaction", {
+        scaleX:1, duration:0.55, ease:"power3.inOut", stagger:{each:0.13, from:"start"}
+      }, 10.6);
+
+      /* ---- thread loops into the crate outline ---- */
+      tl.to("#crate", {opacity:1, scale:1, duration:1.1, ease:"back.out(1.5)"}, 13.1);
+
+      /* ---- thin sunrise arc crosses the bottom ---- */
+      tl.to("#sunArc", {opacity:1, duration:0.4, ease:"none"}, 15.2);
+      tl.to("#sunArc", {strokeDashoffset:0, duration:4.4, ease:"sine.inOut"}, 15.2);
+      tl.to("#sunCore", {opacity:0.11, duration:2.2, ease:"sine.out"}, 16.4);
+      tl.to("#sunCore", {opacity:0.06, duration:3.2, ease:"sine.inOut"}, 19.0);
+
+      /* ---- page settles square to camera ---- */
+      tl.to("#pageTilt", {rotationX:14, rotationY:0, rotate:0, duration:3.4, ease:"power2.inOut"}, 19.2);
+      tl.to("#mg-page", {x:0, y:0, duration:3.2, ease:"power2.inOut"}, 19.4);
+
+      /* ---- ambient dust, nothing static > 2s ---- */
+      var motes = gsap.utils.toArray(".mote");
+      motes.forEach(function (m, i) {
+        var ph = i * 0.37;
+        tl.to(m, {
+          y: "-=26", x: "+=" + (i % 2 === 0 ? 12 : -12),
+          duration: 3.2 + (i % 4) * 0.4, ease: "sine.inOut", yoyo: true, repeat: 6
+        }, ph);
+        tl.to(m, {opacity: 0.06, duration: 1.8 + (i % 3) * 0.3, ease:"sine.inOut", yoyo:true, repeat:11}, ph + 0.6);
+      });
+
+      /* ---- lamp breath ---- */
+      tl.to("#bg-desk ellipse:first-of-type", {opacity:0.82, duration:4.6, ease:"sine.inOut", yoyo:true, repeat:4}, 0.2);
+
+      /* ---- late craft shimmer (t > 18 s) ---- */
+      tl.to("#threadPath", {strokeWidth:12, duration:1.6, yoyo:true, repeat:2, ease:"sine.inOut"}, 18.4);
+      tl.to("#dust", {y:-14, duration:3.0, yoyo:true, repeat:1, ease:"sine.inOut"}, 18.6);
+      tl.to("#pill1967 rect, #pill1995 rect", {strokeOpacity:1, duration:1.4, yoyo:true, repeat:2, stagger:0.2, ease:"sine.inOut"}, 18.8);
+
+      /* ---- tail settle ---- */
+      tl.to("#fg-thread", {opacity:0.96, duration:2.4, ease:"sine.inOut"}, 20.6);
+
+      tl.to({}, {duration: 23.18}, 0);
+      window.__timelines["04-archive-page"] = tl;
+    })();
+  </script>
+</template>

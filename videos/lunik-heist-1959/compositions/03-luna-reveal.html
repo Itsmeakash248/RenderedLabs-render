@@ -1,0 +1,412 @@
+<template id="s03-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="03-luna-reveal" data-width="1920" data-height="1080" data-start="0" data-duration="24.72">
+<svg id="stage" width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="s03-bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#050814"/>
+      <stop offset="0.55" stop-color="#0A0E24"/>
+      <stop offset="1" stop-color="#151B3B"/>
+    </linearGradient>
+    <radialGradient id="s03-emberBloom" cx="0.5" cy="0.62" r="0.62">
+      <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.42"/>
+      <stop offset="0.45" stop-color="#FF7A1A" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="s03-violetDepth" cx="0.5" cy="0.5" r="0.62">
+      <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.30"/>
+      <stop offset="0.6" stop-color="#8E5FD9" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="s03-hullGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0A0E24"/>
+      <stop offset="0.22" stop-color="#151B3B"/>
+      <stop offset="0.5" stop-color="#B8C0D8"/>
+      <stop offset="0.62" stop-color="#F4EFE3"/>
+      <stop offset="0.88" stop-color="#B8C0D8"/>
+      <stop offset="1" stop-color="#151B3B"/>
+    </linearGradient>
+    <linearGradient id="s03-noseGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#151B3B"/>
+      <stop offset="0.34" stop-color="#B8C0D8"/>
+      <stop offset="0.5" stop-color="#F4EFE3"/>
+      <stop offset="0.76" stop-color="#B8C0D8"/>
+      <stop offset="1" stop-color="#0A0E24"/>
+    </linearGradient>
+    <linearGradient id="s03-plankGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151B3B"/>
+      <stop offset="0.5" stop-color="#0A0E24"/>
+      <stop offset="1" stop-color="#050814"/>
+    </linearGradient>
+    <linearGradient id="s03-plankLit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B8C0D8" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#151B3B"/>
+      <stop offset="1" stop-color="#050814"/>
+    </linearGradient>
+    <radialGradient id="s03-windowGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFD23F" stop-opacity="1"/>
+      <stop offset="0.5" stop-color="#FF7A1A" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="s03-wipeGrad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.96"/>
+      <stop offset="0.55" stop-color="#B8C0D8" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="s03-voidGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#050814"/>
+      <stop offset="1" stop-color="#0A0E24"/>
+    </linearGradient>
+    <linearGradient id="s03-interiorGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.96"/>
+      <stop offset="0.38" stop-color="#F4EFE3" stop-opacity="0.90"/>
+      <stop offset="0.70" stop-color="#FFD23F" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FFD23F" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="s03-emberCore" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFD23F" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#FFD23F" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#FFD23F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="s03-sheenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.07"/>
+      <stop offset="0.4" stop-color="#FFFFFF" stop-opacity="0.02"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="s03-goldGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="s03-shaftBlur" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <g id="s03-bg" opacity="1">
+    <rect x="-200" y="-200" width="2320" height="1480" fill="url(#s03-bgGrad)"/>
+    <ellipse id="s03-violet-depth" cx="960" cy="520" rx="880" ry="720" fill="url(#s03-violetDepth)"/>
+    <ellipse id="s03-ember-bloom" cx="960" cy="700" rx="820" ry="560" fill="url(#s03-emberBloom)"/>
+    <g id="s03-stars">
+      <circle cx="212" cy="164" r="2.4" fill="#B8C0D8" opacity="0.55"/>
+      <circle cx="412" cy="308" r="1.8" fill="#F4EFE3" opacity="0.42"/>
+      <circle cx="668" cy="128" r="2.2" fill="#B8C0D8" opacity="0.5"/>
+      <circle cx="884" cy="242" r="1.6" fill="#F4EFE3" opacity="0.38"/>
+      <circle cx="1130" cy="142" r="2.6" fill="#B8C0D8" opacity="0.52"/>
+      <circle cx="1372" cy="262" r="1.9" fill="#F4EFE3" opacity="0.4"/>
+      <circle cx="1612" cy="172" r="2.3" fill="#B8C0D8" opacity="0.5"/>
+      <circle cx="1782" cy="342" r="1.7" fill="#F4EFE3" opacity="0.36"/>
+      <circle cx="322" cy="892" r="2.1" fill="#B8C0D8" opacity="0.44"/>
+      <circle cx="610" cy="964" r="1.6" fill="#F4EFE3" opacity="0.34"/>
+      <circle cx="1420" cy="928" r="2.2" fill="#B8C0D8" opacity="0.42"/>
+      <circle cx="1712" cy="1002" r="1.8" fill="#F4EFE3" opacity="0.35"/>
+      <circle cx="198" cy="560" r="1.5" fill="#B8C0D8" opacity="0.3"/>
+      <circle cx="1738" cy="620" r="2.0" fill="#F4EFE3" opacity="0.32"/>
+    </g>
+    <ellipse id="s03-floor-sheen" cx="960" cy="884" rx="640" ry="70" fill="#FF7A1A" opacity="0.16"/>
+    <ellipse id="s03-ember-pool" cx="960" cy="880" rx="620" ry="80" fill="#FF7A1A" opacity="0.30"/>
+    <ellipse id="s03-ember-core" cx="960" cy="880" rx="420" ry="52" fill="url(#s03-emberCore)"/>
+  </g>
+
+  <g id="s03-mg" opacity="1">
+    <!-- warm interior wash inside the crate mouth -->
+    <path id="s03-crate-interior" d="M830 210 L1090 210 L1090 902 L830 902 Z" fill="url(#s03-interiorGrad)"/>
+    <g id="s03-interior-seams" stroke="#050814" stroke-width="8" opacity="0.29" stroke-linecap="round">
+      <path d="M890 210 L890 902"/>
+      <path d="M1030 210 L1030 902"/>
+      <path d="M830 350 L1090 350"/>
+      <path d="M830 550 L1090 550"/>
+      <path d="M830 750 L1090 750"/>
+    </g>
+    <g id="s03-rocket-wrap">
+      <g id="s03-engine-void">
+        <path d="M760 828 L1160 828 L1112 884 Q960 906 808 884 Z" fill="url(#s03-voidGrad)" stroke="#050814" stroke-width="4"/>
+        <path d="M842 832 L1078 832 L1042 872 Q960 886 878 872 Z" fill="#050814" opacity="0.92"/>
+        <path d="M842 832 L1078 832 L1042 872 Q960 886 878 872 Z" fill="none" stroke="#8E5FD9" stroke-width="4" stroke-opacity="0.34"/>
+      </g>
+
+      <g id="s03-hull">
+        <path d="M806 800 L1114 800 L1114 470 Q1114 452 1096 452 L824 452 Q806 452 806 470 Z" fill="url(#s03-hullGrad)" stroke="#050814" stroke-width="24" stroke-linejoin="round"/>
+        <path d="M818 470 L1102 470" stroke="#050814" stroke-width="6" opacity="0.5" stroke-linecap="round"/>
+        <path d="M818 748 L1102 748" stroke="#050814" stroke-width="6" opacity="0.5" stroke-linecap="round"/>
+        <path d="M830 506 Q830 520 830 536" stroke="#F4EFE3" stroke-width="7" opacity="0.55" stroke-linecap="round"/>
+        <path d="M830 590 Q830 610 830 632" stroke="#F4EFE3" stroke-width="7" opacity="0.4" stroke-linecap="round"/>
+        <path d="M1090 512 Q1090 530 1090 552" stroke="#F4EFE3" stroke-width="7" opacity="0.35" stroke-linecap="round"/>
+      </g>
+
+      <g id="s03-nose">
+        <path d="M824 452 L1096 452 Q1086 372 960 312 Q834 372 824 452 Z" fill="url(#s03-noseGrad)" stroke="#050814" stroke-width="24" stroke-linejoin="round"/>
+        <path d="M960 312 L960 452" stroke="#050814" stroke-width="5" opacity="0.45"/>
+        <path d="M938 330 Q944 388 940 448" stroke="#F4EFE3" stroke-width="6" opacity="0.45" stroke-linecap="round"/>
+      </g>
+
+      <g id="s03-windows">
+        <circle id="s03-win-1" cx="892" cy="562" r="44" fill="url(#s03-windowGlow)"/>
+        <circle id="s03-win-1-core" cx="892" cy="562" r="30" fill="#FFD23F" stroke="#050814" stroke-width="10"/>
+        <circle cx="882" cy="551" r="8" fill="#F4EFE3" opacity="0.7"/>
+
+        <circle id="s03-win-2" cx="960" cy="632" r="44" fill="url(#s03-windowGlow)"/>
+        <circle id="s03-win-2-core" cx="960" cy="632" r="30" fill="#FFD23F" stroke="#050814" stroke-width="10"/>
+        <circle cx="950" cy="621" r="8" fill="#F4EFE3" opacity="0.7"/>
+
+        <circle id="s03-win-3" cx="1028" cy="562" r="44" fill="url(#s03-windowGlow)"/>
+        <circle id="s03-win-3-core" cx="1028" cy="562" r="30" fill="#FFD23F" stroke="#050814" stroke-width="10"/>
+        <circle cx="1018" cy="551" r="8" fill="#F4EFE3" opacity="0.7"/>
+      </g>
+
+      <g id="s03-fins">
+        <path d="M806 700 L742 800 L806 800 Z" fill="#151B3B" stroke="#050814" stroke-width="20" stroke-linejoin="round"/>
+        <path d="M1114 700 L1178 800 L1114 800 Z" fill="#151B3B" stroke="#050814" stroke-width="20" stroke-linejoin="round"/>
+      </g>
+    </g>
+
+    <g id="s03-crate">
+      <g id="s03-panel-l">
+        <path d="M652 128 L830 210 L830 902 L652 986 Z" fill="url(#s03-plankGrad)" stroke="#050814" stroke-width="22" stroke-linejoin="round"/>
+        <path d="M652 128 L830 210 L830 902 L652 986 Z" fill="url(#s03-sheenGrad)"/>
+        <path d="M676 250 L676 862" stroke="#B8C0D8" stroke-width="10" opacity="0.28"/>
+        <path d="M770 216 L770 896" stroke="#B8C0D8" stroke-width="10" opacity="0.22"/>
+        <g stroke="#B8C0D8" stroke-width="12" opacity="0.45" stroke-linecap="round">
+          <path d="M656 300 L826 300"/>
+          <path d="M656 350 L826 350"/>
+          <path d="M656 400 L826 400"/>
+          <path d="M656 500 L826 500"/>
+          <path d="M656 550 L826 550"/>
+          <path d="M656 600 L826 600"/>
+          <path d="M656 700 L826 700"/>
+          <path d="M656 750 L826 750"/>
+          <path d="M656 800 L826 800"/>
+        </g>
+      </g>
+      <g id="s03-panel-r">
+        <path d="M1268 128 L1090 210 L1090 902 L1268 986 Z" fill="url(#s03-plankGrad)" stroke="#050814" stroke-width="22" stroke-linejoin="round"/>
+        <path d="M1244 250 L1244 862" stroke="#B8C0D8" stroke-width="10" opacity="0.28"/>
+        <path d="M1150 216 L1150 896" stroke="#B8C0D8" stroke-width="10" opacity="0.22"/>
+        <g stroke="#B8C0D8" stroke-width="12" opacity="0.45" stroke-linecap="round">
+          <path d="M1094 300 L1264 300"/>
+          <path d="M1094 350 L1264 350"/>
+          <path d="M1094 400 L1264 400"/>
+          <path d="M1094 500 L1264 500"/>
+          <path d="M1094 550 L1264 550"/>
+          <path d="M1094 600 L1264 600"/>
+          <path d="M1094 700 L1264 700"/>
+          <path d="M1094 750 L1264 750"/>
+          <path d="M1094 800 L1264 800"/>
+        </g>
+      </g>
+      <g id="s03-panel-t">
+        <path d="M652 128 L830 210 L1090 210 L1268 128 L1268 74 L652 74 Z" fill="url(#s03-plankLit)" stroke="#050814" stroke-width="22" stroke-linejoin="round"/>
+        <g stroke="#B8C0D8" stroke-width="10" opacity="0.40" stroke-linecap="round">
+          <path d="M652 96 L1268 96"/>
+          <path d="M652 116 L1268 116"/>
+          <path d="M678 140 L1242 140"/>
+          <path d="M730 164 L1190 164"/>
+        </g>
+      </g>
+      <g id="s03-panel-b">
+        <path d="M652 986 L830 902 L1090 902 L1268 986 L1268 1040 L652 1040 Z" fill="#0A0E24" stroke="#050814" stroke-width="22" stroke-linejoin="round"/>
+      </g>
+    </g>
+
+    <g id="s03-return-arrow" opacity="0">
+      <path d="M1180 300 Q1180 132 960 132 Q740 132 740 300 Q740 452 960 452 Q1112 452 1112 356"
+            fill="none" stroke="#FFD23F" stroke-width="56" stroke-linecap="round" stroke-linejoin="round" opacity="0.25" filter="url(#s03-goldGlow)"/>
+      <path d="M1060 330 L1112 356 L1068 400" fill="none" stroke="#FFD23F" stroke-width="56" stroke-linecap="round" stroke-linejoin="round" opacity="0.25" filter="url(#s03-goldGlow)"/>
+      <path id="s03-return-path" d="M1180 300 Q1180 132 960 132 Q740 132 740 300 Q740 452 960 452 Q1112 452 1112 356"
+            fill="none" stroke="#FFD23F" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1060 330 L1112 356 L1068 400" fill="none" stroke="#FFD23F" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- three volumetric gold shafts from the crate mouth -->
+    <g id="s03-shafts" filter="url(#s03-shaftBlur)">
+      <path d="M834 212 L912 212 L640 -40 L470 -40 Z" fill="#FFD23F" opacity="0.14"/>
+      <path d="M930 212 L1014 212 L1210 -40 L1010 -40 Z" fill="#FFD23F" opacity="0.18"/>
+      <path d="M1030 212 L1088 212 L1560 -40 L1340 -40 Z" fill="#FFD23F" opacity="0.12"/>
+    </g>
+
+    <!-- micro motes drifting out of the crate mouth -->
+    <g id="s03-motes" fill="#FFD23F">
+      <circle cx="846" cy="238" r="2.2" opacity="0"/>
+      <circle cx="902" cy="228" r="1.7" opacity="0" fill="#F4EFE3"/>
+      <circle cx="948" cy="246" r="2.4" opacity="0"/>
+      <circle cx="1004" cy="232" r="1.6" opacity="0" fill="#FF7A1A"/>
+      <circle cx="1062" cy="244" r="2.1" opacity="0"/>
+      <circle cx="872" cy="272" r="1.8" opacity="0" fill="#FF7A1A"/>
+      <circle cx="986" cy="278" r="2.0" opacity="0" fill="#F4EFE3"/>
+      <circle cx="1038" cy="268" r="1.5" opacity="0"/>
+    </g>
+  </g>
+
+  <g id="s03-fg" opacity="1">
+    <g id="s03-splinter-1">
+      <path d="M84 0 L150 0 L196 268 L130 306 Z" fill="#151B3B" stroke="#050814" stroke-width="8"/>
+      <path d="M106 40 L138 232" stroke="#B8C0D8" stroke-width="4" opacity="0.35"/>
+    </g>
+    <g id="s03-splinter-2">
+      <path d="M1836 0 L1770 0 L1724 236 L1790 286 Z" fill="#151B3B" stroke="#050814" stroke-width="8"/>
+      <path d="M1814 36 L1782 200" stroke="#B8C0D8" stroke-width="4" opacity="0.35"/>
+    </g>
+    <g id="s03-splinter-3">
+      <path d="M0 878 L72 912 L60 1080 L0 1080 Z" fill="#0A0E24" stroke="#050814" stroke-width="8"/>
+    </g>
+    <g id="s03-splinter-4">
+      <path d="M1920 906 L1848 936 L1862 1080 L1920 1080 Z" fill="#0A0E24" stroke="#050814" stroke-width="8"/>
+    </g>
+
+    <g id="s03-dust">
+      <circle id="s03-dust-1" cx="360" cy="820" r="3.2" fill="#FFD23F" opacity="0"/>
+      <circle id="s03-dust-2" cx="520" cy="700" r="2.4" fill="#F4EFE3" opacity="0"/>
+      <circle id="s03-dust-3" cx="668" cy="880" r="2.8" fill="#FF7A1A" opacity="0"/>
+      <circle id="s03-dust-4" cx="1268" cy="760" r="2.6" fill="#F4EFE3" opacity="0"/>
+      <circle id="s03-dust-5" cx="1402" cy="880" r="3.4" fill="#FFD23F" opacity="0"/>
+      <circle id="s03-dust-6" cx="1548" cy="720" r="2.2" fill="#B8C0D8" opacity="0"/>
+      <circle id="s03-dust-7" cx="820" cy="960" r="2.6" fill="#FF7A1A" opacity="0"/>
+      <circle id="s03-dust-8" cx="1104" cy="940" r="3.0" fill="#F4EFE3" opacity="0"/>
+    </g>
+
+    <path id="s03-floor" d="M0 902 L1920 902" stroke="#050814" stroke-width="4" opacity="0.6"/>
+  </g>
+
+  <g id="s03-wipe" opacity="0">
+    <rect id="s03-wipe-band" x="-900" y="-120" width="420" height="1320" fill="url(#s03-wipeGrad)" transform="rotate(8 0 540)"/>
+    <path id="s03-wipe-brush" d="M-900 300 Q-500 210 -120 360 Q260 510 640 340 Q1010 180 1380 330" fill="none" stroke="#F4EFE3" stroke-width="26" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <g id="s03-label" opacity="0">
+    <text x="960" y="150" text-anchor="middle" font-family="Quicksand, sans-serif" font-weight="700" font-size="92"
+          fill="#F4EFE3" stroke="#050814" stroke-width="14" paint-order="stroke fill" letter-spacing="6">LUNA STAGE</text>
+  </g>
+</svg>
+
+<style>
+  #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+  #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+    background:radial-gradient(circle at 50% 62%, rgba(255,122,26,0.16), transparent 60%);}
+  #stage{perspective:1400px;transform-style:preserve-3d;}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script>
+(function () {
+  var tl = gsap.timeline({paused: true});
+
+  var DURATION = 24.72;
+  gsap.set("#s03-rocket-wrap", {transformOrigin: "50% 62%"});
+
+  /* ---- Phase A: dolly through the crate mouth (0 -> 5.2) ---- */
+  tl.fromTo("#stage", {scale: 1.35, transformOrigin: "50% 58%"}, {scale: 1.00, duration: 5.2, ease: "power2.out"}, 0);
+
+  /* ---- Phase B: panels peel outward along joints (1.2 -> 6.4) ---- */
+  tl.to("#s03-panel-l", {rotationY: -26, x: -150, y: -30, scaleX: 0.55, transformOrigin: "100% 50%", duration: 3.4, ease: "power3.inOut"}, 1.4);
+  tl.to("#s03-panel-r", {rotationY: 26, x: 150, y: -30, scaleX: 0.55, transformOrigin: "0% 50%", duration: 3.4, ease: "power3.inOut"}, 1.6);
+  tl.to("#s03-panel-t", {rotationX: 26, y: -180, scaleY: 0.6, transformOrigin: "50% 100%", duration: 3.0, ease: "power3.inOut"}, 2.0);
+  tl.to("#s03-panel-b", {rotationX: -22, y: 150, scaleY: 0.6, transformOrigin: "50% 0%", duration: 3.0, ease: "power3.inOut"}, 2.2);
+
+  /* depth wander for the peeled panels — parallax 1.0 (near) */
+  tl.to("#s03-panel-l", {y: "-=26", duration: 2.6, ease: "sine.inOut"}, 5.0);
+  tl.to("#s03-panel-r", {y: "-=20", duration: 2.4, ease: "sine.inOut"}, 5.2);
+
+  /* ---- Phase C: Luna stage extrudes from the base upward (3.2 -> 9.0) ---- */
+  tl.fromTo("#s03-rocket-wrap", {y: 340, opacity: 0.35, scaleY: 0.62, transformOrigin: "50% 100%"},
+                                {y: 0, opacity: 1, scaleY: 1, duration: 4.6, ease: "power3.out"}, 3.2);
+
+  /* hull then nose, staggered to read as extrusion */
+  tl.fromTo("#s03-hull", {y: 120, opacity: 0}, {y: 0, opacity: 1, duration: 3.2, ease: "power2.out"}, 3.2);
+  tl.fromTo("#s03-nose", {y: 160, opacity: 0, scaleY: 0.4, transformOrigin: "50% 100%"},
+                          {y: 0, opacity: 1, scaleY: 1, duration: 2.8, ease: "power2.out"}, 4.4);
+  tl.fromTo("#s03-fins", {y: 80, opacity: 0}, {y: 0, opacity: 1, duration: 2.2, ease: "power2.out"}, 4.0);
+
+  /* windows ignite — gold radial glow bloom, no pop-in */
+  tl.fromTo("#s03-win-1", {opacity: 0, scale: 0.4, transformOrigin: "50% 50%"}, {opacity: 1, scale: 1, duration: 1.5, ease: "power2.out"}, 5.6);
+  tl.fromTo("#s03-win-2", {opacity: 0, scale: 0.4, transformOrigin: "50% 50%"}, {opacity: 1, scale: 1, duration: 1.5, ease: "power2.out"}, 6.1);
+  tl.fromTo("#s03-win-3", {opacity: 0, scale: 0.4, transformOrigin: "50% 50%"}, {opacity: 1, scale: 1, duration: 1.5, ease: "power2.out"}, 6.6);
+  tl.fromTo("#s03-win-1-core", {opacity: 0, scale: 0.5, transformOrigin: "50% 50%"}, {opacity: 1, scale: 1, duration: 1.1, ease: "back.out(1.4)"}, 5.8);
+  tl.fromTo("#s03-win-2-core", {opacity: 0, scale: 0.5, transformOrigin: "50% 50%"}, {opacity: 1, scale: 1, duration: 1.1, ease: "back.out(1.4)"}, 6.3);
+  tl.fromTo("#s03-win-3-core", {opacity: 0, scale: 0.5, transformOrigin: "50% 50%"}, {opacity: 1, scale: 1, duration: 1.1, ease: "back.out(1.4)"}, 6.8);
+
+  /* gold window pulse — keeps nothing static */
+  tl.to("#s03-win-1", {opacity: 0.72, duration: 1.6, yoyo: true, repeat: 3, ease: "sine.inOut"}, 7.8);
+  tl.to("#s03-win-2", {opacity: 0.76, duration: 1.5, yoyo: true, repeat: 3, ease: "sine.inOut"}, 8.1);
+  tl.to("#s03-win-3", {opacity: 0.70, duration: 1.7, yoyo: true, repeat: 3, ease: "sine.inOut"}, 8.4);
+
+  /* engine void stays deliberately empty — a slow breathing shadow only */
+  tl.fromTo("#s03-engine-void", {opacity: 0}, {opacity: 1, duration: 2.4, ease: "power2.out"}, 4.0);
+  tl.to("#s03-engine-void", {opacity: 0.62, duration: 3.2, yoyo: true, repeat: 2, ease: "sine.inOut"}, 7.0);
+
+  /* ---- Phase D: slow camera drift / parallax (parallax 1.0 mg, 0.5 bg, 0.2 stars) ---- */
+  tl.to("#s03-mg", {y: -34, duration: 9.0, ease: "sine.inOut"}, 8.8);
+  tl.to("#s03-bg", {y: -17, duration: 9.0, ease: "sine.inOut"}, 8.8);
+  tl.to("#s03-stars", {y: -7, duration: 9.0, ease: "sine.inOut"}, 8.8);
+  tl.to("#s03-fg", {y: 10, duration: 9.0, ease: "sine.inOut"}, 8.8);
+
+  /* rocket slow rotation drift — feels handheld but never slides */
+  tl.to("#s03-rocket-wrap", {rotation: -1.6, duration: 6.4, yoyo: true, repeat: 1, ease: "sine.inOut"}, 8.6);
+
+  /* ---- dust motes — three parallax rates ---- */
+  tl.fromTo("#s03-dust-1", {opacity: 0, y: 0, x: 0}, {opacity: 0.7, y: -120, x: 22, duration: 8.0, ease: "sine.out"}, 4.5);
+  tl.fromTo("#s03-dust-2", {opacity: 0, y: 0, x: 0}, {opacity: 0.5, y: -90, x: -18, duration: 7.4, ease: "sine.out"}, 5.2);
+  tl.fromTo("#s03-dust-3", {opacity: 0, y: 0, x: 0}, {opacity: 0.65, y: -150, x: 14, duration: 8.4, ease: "sine.out"}, 6.0);
+  tl.fromTo("#s03-dust-4", {opacity: 0, y: 0, x: 0}, {opacity: 0.55, y: -110, x: -24, duration: 7.8, ease: "sine.out"}, 5.8);
+  tl.fromTo("#s03-dust-5", {opacity: 0, y: 0, x: 0}, {opacity: 0.7, y: -130, x: 16, duration: 8.2, ease: "sine.out"}, 6.4);
+  tl.fromTo("#s03-dust-6", {opacity: 0, y: 0, x: 0}, {opacity: 0.45, y: -80, x: -12, duration: 7.0, ease: "sine.out"}, 7.0);
+  tl.fromTo("#s03-dust-7", {opacity: 0, y: 0, x: 0}, {opacity: 0.6, y: -100, x: 20, duration: 7.6, ease: "sine.out"}, 7.6);
+  tl.fromTo("#s03-dust-8", {opacity: 0, y: 0, x: 0}, {opacity: 0.55, y: -140, x: -16, duration: 8.6, ease: "sine.out"}, 8.2);
+
+  /* splintered fg planks drift very slow (parallax 1.0 nearest) */
+  tl.to("#s03-splinter-1", {y: 16, rotation: 1.2, duration: 7.0, yoyo: true, repeat: 1, ease: "sine.inOut"}, 6.0);
+  tl.to("#s03-splinter-2", {y: 18, rotation: -1.0, duration: 7.4, yoyo: true, repeat: 1, ease: "sine.inOut"}, 6.4);
+  tl.to("#s03-splinter-3", {y: -12, duration: 7.8, yoyo: true, repeat: 1, ease: "sine.inOut"}, 5.6);
+  tl.to("#s03-splinter-4", {y: -14, duration: 8.0, yoyo: true, repeat: 1, ease: "sine.inOut"}, 6.2);
+
+  /* motes lift out of the crate mouth */
+  tl.to("#s03-motes circle", {opacity: 0.62, duration: 1.6, stagger: 0.16, ease: "power1.out"}, 8.0);
+  tl.to("#s03-motes", {y: -52, x: 16, duration: 10.0, ease: "sine.inOut"}, 8.4);
+
+  /* ---- label LUNA STAGE — fades in, no pop ---- */
+  tl.fromTo("#s03-label", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 1.4, ease: "power2.out"}, 9.2);
+  tl.to("#s03-label", {opacity: 0.82, duration: 2.0, yoyo: true, repeat: 2, ease: "sine.inOut"}, 11.0);
+
+  /* ---- Phase E: final quarter — starlight wipe (0.35 s velocity-matched sweep) ---- */
+  tl.set("#s03-wipe", {opacity: 1}, 18.0);
+  tl.fromTo("#s03-wipe-band", {x: -900}, {x: 2400, duration: 0.35, ease: "power2.inOut"}, 18.10);
+  tl.fromTo("#s03-wipe-brush", {x: -900}, {x: 2400, duration: 0.35, ease: "power2.inOut"}, 18.10);
+
+  /* wipe removes the rocket — hard cut behind the light band */
+  tl.set("#s03-rocket-wrap", {opacity: 0}, 18.22);
+  tl.set("#s03-label", {opacity: 0}, 18.20);
+
+  /* crate re-forms sealed on the far side of the wipe */
+  tl.set("#s03-panel-l", {rotationY: 0, x: 0, y: 0, scaleX: 1, opacity: 0}, 18.26);
+  tl.set("#s03-panel-r", {rotationY: 0, x: 0, y: 0, scaleX: 1, opacity: 0}, 18.26);
+  tl.set("#s03-panel-t", {rotationX: 0, y: 0, scaleY: 1, opacity: 0}, 18.26);
+  tl.set("#s03-panel-b", {rotationX: 0, y: 0, scaleY: 1, opacity: 0}, 18.26);
+
+  tl.to("#s03-panel-l", {opacity: 1, duration: 0.5, ease: "power2.out"}, 18.30);
+  tl.to("#s03-panel-r", {opacity: 1, duration: 0.5, ease: "power2.out"}, 18.34);
+  tl.to("#s03-panel-t", {opacity: 1, duration: 0.5, ease: "power2.out"}, 18.40);
+  tl.to("#s03-panel-b", {opacity: 1, duration: 0.5, ease: "power2.out"}, 18.46);
+
+  /* sealed crate breathes slightly */
+  tl.to("#s03-crate", {scale: 1.02, duration: 2.4, yoyo: true, repeat: 1, ease: "sine.inOut"}, 19.2);
+
+  /* curved return arrow closes on itself */
+  tl.fromTo("#s03-return-arrow", {opacity: 0}, {opacity: 1, duration: 0.8, ease: "power2.out"}, 19.3);
+  tl.set("#s03-return-path", {strokeDasharray: 1400, strokeDashoffset: 1400}, 19.4);
+  tl.to("#s03-return-path", {strokeDashoffset: 0, duration: 1.6, ease: "power2.inOut"}, 19.5);
+
+  /* wipe band drifts off and settles */
+  tl.to("#s03-wipe", {opacity: 0, duration: 0.6, ease: "power1.out"}, 19.0);
+
+  /* final settle — nothing static > 2s */
+  tl.to("#s03-ember-bloom", {opacity: 1.0, duration: 3.0, yoyo: true, repeat: 1, ease: "sine.inOut"}, 20.0);
+  tl.to("#s03-violet-depth", {opacity: 1.0, duration: 3.4, yoyo: true, repeat: 1, ease: "sine.inOut"}, 20.4);
+  tl.to("#s03-stars", {opacity: 0.72, duration: 2.6, yoyo: true, repeat: 1, ease: "sine.inOut"}, 20.2);
+  tl.to("#s03-ember-pool", {opacity: 0.34, duration: 2.2, yoyo: true, repeat: 1, ease: "sine.inOut"}, 20.6);
+  tl.fromTo("#s03-ember-core", {opacity: 0.85}, {opacity: 1, duration: 2.2, yoyo: true, repeat: 1, ease: "sine.inOut"}, 20.6);
+  tl.to("#s03-shafts", {x: 18, opacity: 0.72, duration: 3.0, yoyo: true, repeat: 1, ease: "sine.inOut"}, 20.8);
+  tl.to("#s03-return-arrow", {opacity: 0.78, duration: 1.2, yoyo: true, repeat: 2, ease: "sine.inOut"}, 21.4);
+
+  tl.to({}, {duration: DURATION}, 0);
+
+  window.__timelines["03-luna-reveal"] = tl;
+})();
+</script>
+</div>
+</template>

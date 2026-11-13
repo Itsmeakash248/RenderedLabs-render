@@ -1,0 +1,569 @@
+<template id="s24-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="24-four-am" data-width="1920" data-height="1080" data-start="0" data-duration="12.980">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="s24-sky-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.52" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s24-city-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s24-gold-grad" x1="0" y1="0" x2="0.8" y2="1">
+          <stop offset="0" stop-color="#FF7A1A"/>
+          <stop offset="0.46" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#F4EFE3"/>
+        </linearGradient>
+        <linearGradient id="s24-metal-grad" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.92"/>
+          <stop offset="0.26" stop-color="#B8C0D8"/>
+          <stop offset="0.66" stop-color="#515A83"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </linearGradient>
+        <linearGradient id="s24-glass-grad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/>
+          <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.03"/>
+          <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="s24-violet-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.4"/>
+          <stop offset="0.62" stop-color="#8E5FD9" stop-opacity="0.12"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s24-ember-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.6"/>
+          <stop offset="0.55" stop-color="#FF7A1A" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s24-glow-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.7"/>
+          <stop offset="0.45" stop-color="#FF7A1A" stop-opacity="0.24"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s24-flash-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.95"/>
+          <stop offset="0.4" stop-color="#FFD23F" stop-opacity="0.55"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s24-moon-halo-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.45"/>
+          <stop offset="0.55" stop-color="#FF7A1A" stop-opacity="0.2"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="s24-haze" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="24"/>
+        </filter>
+        <filter id="s24-soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="8"/>
+        </filter>
+        <filter id="s24-glow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="6" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <g id="s24-world">
+        <!-- ================= BACKGROUND: pre-dawn skyline ================= -->
+        <g id="s24-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s24-sky-grad)"/>
+          <ellipse cx="940" cy="650" rx="940" ry="330" fill="url(#s24-violet-grad)"/>
+          <ellipse cx="1480" cy="720" rx="620" ry="280" fill="url(#s24-ember-grad)" opacity="0.35"/>
+          <g id="s24-stars" fill="#F4EFE3">
+            <circle cx="180" cy="120" r="3" opacity="0.5"/>
+            <circle cx="340" cy="210" r="2" opacity="0.35"/>
+            <circle cx="620" cy="90" r="3" opacity="0.45"/>
+            <circle cx="880" cy="170" r="2" opacity="0.3"/>
+            <circle cx="1120" cy="110" r="3" opacity="0.5"/>
+            <circle cx="1320" cy="230" r="2" opacity="0.35"/>
+            <circle cx="1580" cy="120" r="3" opacity="0.45"/>
+            <circle cx="1780" cy="200" r="2" opacity="0.3"/>
+            <circle cx="740" cy="280" r="2" opacity="0.28"/>
+            <circle cx="1680" cy="320" r="2" opacity="0.25"/>
+          </g>
+
+          <!-- Pre-dawn moon: bright light source -->
+          <g id="s24-moon" transform="translate(1150 200)">
+            <circle id="s24-moon-halo" cx="0" cy="0" r="210" fill="url(#s24-moon-halo-grad)" filter="url(#s24-haze)"/>
+            <circle id="s24-moon-disc" cx="0" cy="0" r="120" fill="#F4EFE3" fill-opacity="0.92"/>
+            <g id="s24-moon-craters">
+              <g transform="translate(-38 -32)">
+                <circle class="s24-moon-crater" cx="0" cy="0" r="20" fill="#B8C0D8" opacity="0.8"/>
+              </g>
+              <g transform="translate(42 -22)">
+                <circle class="s24-moon-crater" cx="0" cy="0" r="16" fill="#B8C0D8" opacity="0.75"/>
+              </g>
+              <g transform="translate(-15 45)">
+                <circle class="s24-moon-crater" cx="0" cy="0" r="18" fill="#B8C0D8" opacity="0.75"/>
+              </g>
+            </g>
+            <circle id="s24-moon-rim" cx="0" cy="0" r="120" fill="none" stroke="#FFD23F" stroke-width="20" stroke-dasharray="754" stroke-dashoffset="754"/>
+          </g>
+
+          <g id="s24-city">
+            <path d="M 0 792 L 0 620 L 84 620 L 84 588 L 154 588 L 154 650 L 232 650 L 232 558 L 302 558 L 302 642 L 380 642 L 380 600 L 452 600 L 452 682 L 532 682 L 532 548 L 602 548 L 602 620 L 682 620 L 682 578 L 762 578 L 762 660 L 852 660 L 852 518 L 932 518 L 932 610 L 1012 610 L 1012 568 L 1092 568 L 1092 642 L 1182 642 L 1182 538 L 1262 538 L 1262 620 L 1352 620 L 1352 578 L 1442 578 L 1442 660 L 1532 660 L 1532 558 L 1612 558 L 1612 632 L 1702 632 L 1702 588 L 1792 588 L 1792 652 L 1882 652 L 1882 608 L 1920 608 L 1920 792 Z"
+                  fill="url(#s24-city-grad)" stroke="#151B3B" stroke-width="6"/>
+            <g fill="#FFD23F" opacity="0.42">
+              <rect x="62" y="640" width="8" height="10"/><rect x="108" y="612" width="8" height="10"/>
+              <rect x="252" y="586" width="8" height="10"/><rect x="278" y="616" width="8" height="10"/>
+              <rect x="402" y="624" width="8" height="10"/><rect x="426" y="652" width="8" height="10"/>
+              <rect x="552" y="576" width="8" height="10"/><rect x="578" y="604" width="8" height="10"/>
+              <rect x="702" y="606" width="8" height="10"/><rect x="728" y="632" width="8" height="10"/>
+              <rect x="872" y="548" width="8" height="10"/><rect x="898" y="578" width="8" height="10"/>
+              <rect x="1032" y="596" width="8" height="10"/><rect x="1058" y="622" width="8" height="10"/>
+              <rect x="1202" y="566" width="8" height="10"/><rect x="1228" y="594" width="8" height="10"/>
+              <rect x="1552" y="586" width="8" height="10"/><rect x="1578" y="612" width="8" height="10"/>
+              <rect x="1722" y="616" width="8" height="10"/><rect x="1748" y="642" width="8" height="10"/>
+            </g>
+            <g fill="#FF7A1A" opacity="0.5">
+              <rect x="330" y="690" width="8" height="10"/>
+              <rect x="960" y="646" width="8" height="10"/>
+              <rect x="1420" y="688" width="8" height="10"/>
+            </g>
+          </g>
+
+          <g id="s24-mast" stroke="#515A83" stroke-width="8" opacity="0.6">
+            <line x1="1500" y1="300" x2="1500" y2="620"/>
+            <line x1="1444" y1="366" x2="1556" y2="366"/>
+            <line x1="1462" y1="420" x2="1538" y2="420"/>
+            <line x1="1478" y1="474" x2="1522" y2="474"/>
+            <circle cx="1500" cy="292" r="10" fill="#FF7A1A" stroke="none"/>
+          </g>
+
+          <rect x="0" y="792" width="1920" height="288" fill="#0A0E24"/>
+          <path d="M 0 792 L 1920 792" stroke="#515A83" stroke-width="6" opacity="0.4"/>
+          <g stroke="#515A83" stroke-width="5" opacity="0.25">
+            <line x1="120" y1="860" x2="420" y2="860"/>
+            <line x1="560" y1="920" x2="900" y2="920"/>
+            <line x1="1080" y1="880" x2="1460" y2="880"/>
+            <line x1="1580" y1="960" x2="1860" y2="960"/>
+          </g>
+          <ellipse cx="480" cy="880" rx="520" ry="120" fill="url(#s24-ember-grad)" opacity="0.55" filter="url(#s24-haze)"/>
+          <ellipse cx="1500" cy="900" rx="460" ry="130" fill="url(#s24-violet-grad)" opacity="0.65" filter="url(#s24-haze)"/>
+
+          <!-- Yard rail siding / flatcar bogie mass -->
+          <g id="s24-rail-siding">
+            <ellipse id="s24-siding-pool" cx="1400" cy="990" rx="220" ry="50" fill="url(#s24-ember-grad)" opacity="0.5" filter="url(#s24-haze)"/>
+            <ellipse id="s24-siding-glow" cx="1380" cy="838" rx="130" ry="90" fill="url(#s24-ember-grad)" opacity="0.65" filter="url(#s24-haze)"/>
+
+            <!-- Ground rails and sleepers -->
+            <line id="s24-siding-rail-a" x1="1240" y1="980" x2="1880" y2="980" stroke="#515A83" stroke-width="16" stroke-linecap="round"/>
+            <g id="s24-siding-ties" stroke="#515A83" stroke-width="16" opacity="0.55" stroke-linecap="round">
+              <line x1="1290" y1="966" x2="1290" y2="994"/>
+              <line x1="1390" y1="966" x2="1390" y2="994"/>
+              <line x1="1490" y1="966" x2="1490" y2="994"/>
+              <line x1="1590" y1="966" x2="1590" y2="994"/>
+              <line x1="1690" y1="966" x2="1690" y2="994"/>
+              <line x1="1790" y1="966" x2="1790" y2="994"/>
+            </g>
+
+            <!-- Flatcar bogie wheels -->
+            <g id="s24-siding-bogie">
+              <path d="M 1340 948 L 1500 948" stroke="#050814" stroke-width="20" stroke-linecap="round"/>
+              <path d="M 1620 948 L 1780 948" stroke="#050814" stroke-width="20" stroke-linecap="round"/>
+              <circle cx="1380" cy="956" r="26" fill="#0A0E24" stroke="#515A83" stroke-width="16"/>
+              <circle cx="1380" cy="956" r="10" fill="#151B3B"/>
+              <circle cx="1460" cy="956" r="26" fill="#0A0E24" stroke="#515A83" stroke-width="16"/>
+              <circle cx="1460" cy="956" r="10" fill="#151B3B"/>
+              <circle cx="1660" cy="956" r="26" fill="#0A0E24" stroke="#515A83" stroke-width="16"/>
+              <circle cx="1660" cy="956" r="10" fill="#151B3B"/>
+              <circle cx="1740" cy="956" r="26" fill="#0A0E24" stroke="#515A83" stroke-width="16"/>
+              <circle cx="1740" cy="956" r="10" fill="#151B3B"/>
+            </g>
+
+            <!-- Solid slab and top rim -->
+            <g id="s24-siding-body">
+              <rect id="s24-siding-slab" x="1270" y="868" width="570" height="74" rx="10" fill="#151B3B" stroke="#050814" stroke-width="16"/>
+              <path id="s24-siding-rim" d="M 1260 864 L 1850 864" stroke="#515A83" stroke-width="24" stroke-linecap="round"/>
+              <g stroke="#515A83" stroke-width="16" opacity="0.6">
+                <line x1="1370" y1="876" x2="1370" y2="930"/>
+                <line x1="1470" y1="876" x2="1470" y2="930"/>
+                <line x1="1570" y1="876" x2="1570" y2="930"/>
+                <line x1="1670" y1="876" x2="1670" y2="930"/>
+                <line x1="1770" y1="876" x2="1770" y2="930"/>
+              </g>
+              <circle cx="1300" cy="902" r="12" fill="#515A83" stroke="#050814" stroke-width="5"/>
+              <circle cx="1820" cy="902" r="12" fill="#515A83" stroke="#050814" stroke-width="5"/>
+            </g>
+
+            <!-- Ember yard lamp and chunky bead -->
+            <g id="s24-siding-lamp">
+              <line x1="1350" y1="864" x2="1350" y2="824" stroke="#515A83" stroke-width="18" stroke-linecap="round"/>
+              <path d="M 1350 826 L 1380 826" stroke="#515A83" stroke-width="16" stroke-linecap="round"/>
+              <path d="M 1364 824 L 1396 824 L 1390 812 L 1370 812 Z" fill="#050814" stroke="#515A83" stroke-width="6" stroke-linejoin="round"/>
+              <circle id="s24-siding-bead" cx="1380" cy="838" r="16" fill="#FF7A1A" stroke="#FFD23F" stroke-width="6"/>
+              <circle id="s24-siding-bead-core" cx="1380" cy="838" r="8" fill="#F4EFE3"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: route thread, Station car, truck ================= -->
+        <g id="s24-mg">
+          <path id="s24-route-glow" d="M 1080 760 L 1450 590 L 1780 780" fill="none"
+                stroke="#8E5FD9" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" opacity="0.18"/>
+          <path id="s24-route" d="M 1080 760 L 1450 590 L 1780 780" fill="none"
+                stroke="url(#s24-gold-grad)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"
+                stroke-dasharray="800" stroke-dashoffset="800"/>
+
+          <g transform="translate(1080 760)">
+            <g id="s24-node-yard">
+              <circle cx="0" cy="0" r="30" fill="none" stroke="#FFD23F" stroke-width="8"/>
+              <circle cx="0" cy="0" r="16" fill="url(#s24-gold-grad)"/>
+              <circle cx="0" cy="0" r="54" fill="none" stroke="#FF7A1A" stroke-width="4" opacity="0.5"/>
+            </g>
+          </g>
+          <g transform="translate(1450 590)">
+            <g id="s24-node-point">
+              <circle cx="0" cy="0" r="34" fill="none" stroke="#8E5FD9" stroke-width="8"/>
+              <rect x="-16" y="-16" width="32" height="32" rx="6" fill="#FFD23F" transform="rotate(45)"/>
+              <circle cx="0" cy="0" r="62" fill="none" stroke="#8E5FD9" stroke-width="4" opacity="0.5"/>
+            </g>
+          </g>
+          <g transform="translate(1780 780)">
+            <g id="s24-node-rail">
+              <circle cx="0" cy="0" r="36" fill="none" stroke="#FFD23F" stroke-width="9"/>
+              <circle cx="0" cy="0" r="18" fill="url(#s24-gold-grad)"/>
+              <g stroke="#F4EFE3" stroke-width="5" stroke-linecap="round">
+                <line x1="-50" y1="0" x2="-28" y2="0"/>
+                <line x1="28" y1="0" x2="50" y2="0"/>
+                <line x1="0" y1="-50" x2="0" y2="-28"/>
+                <line x1="0" y1="28" x2="0" y2="50"/>
+              </g>
+            </g>
+          </g>
+
+          <!-- Station car collecting the team -->
+          <g transform="translate(980 760)">
+            <g id="s24-car">
+              <ellipse cx="0" cy="66" rx="150" ry="20" fill="#050814" opacity="0.65" filter="url(#s24-haze)"/>
+              <rect x="-128" y="-52" width="256" height="104" rx="34" fill="url(#s24-metal-grad)" stroke="#050814" stroke-width="10"/>
+              <rect x="-112" y="-40" width="224" height="54" rx="20" fill="#0A0E24" stroke="#515A83" stroke-width="5"/>
+              <rect x="-100" y="-34" width="66" height="42" rx="12" fill="#151B3B" opacity="0.9"/>
+              <rect x="-24" y="-34" width="66" height="42" rx="12" fill="#151B3B" opacity="0.9"/>
+              <rect x="52" y="-34" width="58" height="42" rx="12" fill="#151B3B" opacity="0.9"/>
+              <rect x="-118" y="24" width="236" height="12" rx="6" fill="#FFD23F" opacity="0.55"/>
+              <circle cx="126" cy="4" r="10" fill="#FFD23F"/>
+              <circle cx="-126" cy="4" r="9" fill="#FF7A1A"/>
+              <ellipse cx="-126" cy="4" rx="34" ry="28" fill="url(#s24-ember-grad)"/>
+              <g transform="translate(-72 52)"><g id="s24-car-wheel-a">
+                <circle cx="0" cy="0" r="24" fill="#0A0E24" stroke="#B8C0D8" stroke-width="6"/>
+                <g stroke="#515A83" stroke-width="5"><line x1="-14" y1="0" x2="14" y2="0"/><line x1="0" y1="-14" x2="0" y2="14"/></g>
+                <circle cx="0" cy="0" r="7" fill="#FFD23F"/>
+              </g></g>
+              <g transform="translate(72 52)"><g id="s24-car-wheel-b">
+                <circle cx="0" cy="0" r="24" fill="#0A0E24" stroke="#B8C0D8" stroke-width="6"/>
+                <g stroke="#515A83" stroke-width="5"><line x1="-14" y1="0" x2="14" y2="0"/><line x1="0" y1="-14" x2="0" y2="14"/></g>
+                <circle cx="0" cy="0" r="7" fill="#FFD23F"/>
+              </g></g>
+              <g transform="translate(-66 -8)"><g class="s24-team">
+                <circle cx="0" cy="0" r="15" fill="#0A0E24" stroke="#8E5FD9" stroke-width="5"/>
+                <circle cx="4" cy="-2" r="4" fill="#F4EFE3"/>
+              </g></g>
+              <g transform="translate(0 -8)"><g class="s24-team">
+                <circle cx="0" cy="0" r="15" fill="#0A0E24" stroke="#FFD23F" stroke-width="5"/>
+                <circle cx="4" cy="-2" r="4" fill="#F4EFE3"/>
+              </g></g>
+              <g transform="translate(66 -8)"><g class="s24-team">
+                <circle cx="0" cy="0" r="15" fill="#0A0E24" stroke="#8E5FD9" stroke-width="5"/>
+                <circle cx="4" cy="-2" r="4" fill="#F4EFE3"/>
+              </g></g>
+            </g>
+          </g>
+
+          <!-- payload truck -->
+          <g transform="translate(1250 770)">
+            <g id="s24-truck">
+              <ellipse cx="20" cy="82" rx="180" ry="24" fill="#050814" opacity="0.65" filter="url(#s24-haze)"/>
+              <rect x="-170" y="-56" width="300" height="112" rx="18" fill="url(#s24-metal-grad)" stroke="#050814" stroke-width="10"/>
+              <rect x="130" y="-72" width="104" height="128" rx="18" fill="#151B3B" stroke="#B8C0D8" stroke-width="10"/>
+              <rect x="146" y="-54" width="72" height="50" rx="10" fill="#0A0E24" stroke="#515A83" stroke-width="4"/>
+              <rect x="-156" y="-42" width="264" height="82" rx="10" fill="#0A0E24" stroke="#515A83" stroke-width="4"/>
+              <g stroke="#515A83" stroke-width="5" opacity="0.7">
+                <line x1="-120" y1="-34" x2="-120" y2="32"/>
+                <line x1="-60" y1="-34" x2="-60" y2="32"/>
+                <line x1="0" y1="-34" x2="0" y2="32"/>
+                <line x1="60" y1="-34" x2="60" y2="32"/>
+              </g>
+              <circle cx="192" cy="40" r="10" fill="#FFD23F"/>
+              <circle cx="-172" cy="10" r="11" fill="#FF7A1A"/>
+              <ellipse cx="-172" cy="10" rx="40" ry="32" fill="url(#s24-ember-grad)"/>
+              <g transform="translate(-100 70)"><g id="s24-truck-wheel-a">
+                <circle cx="0" cy="0" r="28" fill="#0A0E24" stroke="#B8C0D8" stroke-width="6"/>
+                <g stroke="#515A83" stroke-width="5"><line x1="-16" y1="0" x2="16" y2="0"/><line x1="0" y1="-16" x2="0" y2="16"/></g>
+                <circle cx="0" cy="0" r="8" fill="#FFD23F"/>
+              </g></g>
+              <g transform="translate(90 70)"><g id="s24-truck-wheel-b">
+                <circle cx="0" cy="0" r="28" fill="#0A0E24" stroke="#B8C0D8" stroke-width="6"/>
+                <g stroke="#515A83" stroke-width="5"><line x1="-16" y1="0" x2="16" y2="0"/><line x1="0" y1="-16" x2="0" y2="16"/></g>
+                <circle cx="0" cy="0" r="8" fill="#FFD23F"/>
+              </g></g>
+            </g>
+          </g>
+
+          <!-- original driver bead, arcs into the cab -->
+          <g transform="translate(980 730)">
+            <g id="s24-driver">
+              <circle cx="0" cy="0" r="16" fill="#0A0E24" stroke="#FFD23F" stroke-width="5"/>
+              <path d="M -11 -3 A 12 12 0 0 1 8 -9" fill="none" stroke="#F4EFE3" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="4" cy="-1" r="4" fill="#F4EFE3"/>
+              <circle cx="0" cy="0" r="27" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.4"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND: clock, pills, badge, sweep ================= -->
+        <g id="s24-fg">
+          <g transform="translate(430 470)">
+            <ellipse cx="0" cy="0" rx="356" ry="356" fill="url(#s24-violet-grad)" opacity="0.55"/>
+            <g id="s24-clock-face">
+              <circle cx="0" cy="0" r="300" fill="#0A0E24" opacity="0.55"/>
+              <circle cx="0" cy="0" r="300" fill="none" stroke="url(#s24-gold-grad)" stroke-width="26"
+                      stroke-dasharray="1885" stroke-dashoffset="1885" id="s24-clock-ring"/>
+              <path id="s24-clock-progress" d="M 0 -300 A 300 300 0 0 1 259.8 150" fill="none" stroke="#FF7A1A" stroke-width="26" stroke-linecap="round" stroke-dasharray="628" stroke-dashoffset="628" opacity="0.9"/>
+              <path id="s24-clock-progress-2" d="M 259.8 150 A 300 300 0 0 1 150 259.8" fill="none" stroke="#FF7A1A" stroke-width="26" stroke-linecap="round" stroke-dasharray="157" stroke-dashoffset="157" opacity="0.9"/>
+              <g id="s24-clock-marker">
+                <rect x="-300" y="-300" width="600" height="600" fill="none"/>
+                <circle cx="0" cy="-300" r="22" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.5"/>
+                <circle cx="0" cy="-300" r="14" fill="#FFD23F" stroke="#050814" stroke-width="5"/>
+              </g>
+              <circle cx="0" cy="0" r="250" fill="none" stroke="#515A83" stroke-width="6" opacity="0.35"/>
+              <g id="s24-ticks">
+                <g transform="rotate(0)"><line x1="0" y1="-294" x2="0" y2="-252" stroke="#FFD23F" stroke-width="16" stroke-linecap="round"/></g>
+                <g transform="rotate(30)"><line x1="0" y1="-288" x2="0" y2="-262" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/></g>
+                <g transform="rotate(60)"><line x1="0" y1="-288" x2="0" y2="-262" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/></g>
+                <g transform="rotate(90)"><line x1="0" y1="-294" x2="0" y2="-252" stroke="#FFD23F" stroke-width="16" stroke-linecap="round"/></g>
+                <g transform="rotate(120)"><line x1="0" y1="-288" x2="0" y2="-262" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/></g>
+                <g transform="rotate(150)"><line x1="0" y1="-288" x2="0" y2="-262" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/></g>
+                <g transform="rotate(180)"><line x1="0" y1="-294" x2="0" y2="-252" stroke="#FFD23F" stroke-width="16" stroke-linecap="round"/></g>
+                <g transform="rotate(210)"><line x1="0" y1="-288" x2="0" y2="-262" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/></g>
+                <g transform="rotate(240)"><line x1="0" y1="-288" x2="0" y2="-262" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/></g>
+                <g transform="rotate(270)"><line x1="0" y1="-294" x2="0" y2="-252" stroke="#FFD23F" stroke-width="16" stroke-linecap="round"/></g>
+                <g transform="rotate(300)"><line x1="0" y1="-288" x2="0" y2="-262" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/></g>
+                <g transform="rotate(330)"><line x1="0" y1="-288" x2="0" y2="-262" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round"/></g>
+              </g>
+            <g id="s24-hour">
+              <line x1="0" y1="0" x2="0" y2="-152" stroke="#FFD23F" stroke-width="24" stroke-linecap="butt"/>
+              <circle cx="0" cy="-160" r="12" fill="#FFD23F"/>
+            </g>
+            <g id="s24-minute">
+              <line x1="0" y1="0" x2="0" y2="-226" stroke="#F4EFE3" stroke-width="14" stroke-linecap="butt"/>
+              <circle cx="0" cy="-234" r="7" fill="#F4EFE3"/>
+            </g>
+            <circle cx="0" cy="0" r="32" fill="url(#s24-gold-grad)" stroke="#050814" stroke-width="6"/>
+            <circle cx="0" cy="0" r="12" fill="#0A0E24"/>
+            </g>
+          </g>
+
+          <!-- timestamp pill A: 4:00 -->
+          <g transform="translate(190 852)">
+            <g id="s24-pill-a">
+              <rect x="0" y="0" width="260" height="76" rx="38" fill="#050814" stroke="#FFD23F" stroke-width="5"/>
+              <rect x="12" y="10" width="236" height="56" rx="28" fill="none" stroke="#FFD23F" stroke-width="2" opacity="0.28"/>
+              <path d="M 12 -24 L -20 8 L 20 8 M 12 -24 L 12 24" fill="none" stroke="#FFD23F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" transform="translate(58 38)"/>
+              <circle cx="100" cy="30" r="4" fill="#FFD23F"/>
+              <circle cx="100" cy="46" r="4" fill="#FFD23F"/>
+              <circle cx="140" cy="38" r="15" fill="none" stroke="#F4EFE3" stroke-width="7"/>
+              <circle cx="188" cy="38" r="15" fill="none" stroke="#F4EFE3" stroke-width="7"/>
+            </g>
+          </g>
+          <!-- timestamp pill B: 5:00 -->
+          <g transform="translate(500 852)">
+            <g id="s24-pill-b">
+              <rect x="0" y="0" width="260" height="76" rx="38" fill="#050814" stroke="#FFD23F" stroke-width="5"/>
+              <rect x="12" y="10" width="236" height="56" rx="28" fill="none" stroke="#FFD23F" stroke-width="2" opacity="0.28"/>
+              <path d="M 16 -24 L -16 -24 L -16 -2 L 16 -2 L 16 24 L -16 24" fill="none" stroke="#FFD23F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" transform="translate(58 38)"/>
+              <circle cx="100" cy="30" r="4" fill="#FFD23F"/>
+              <circle cx="100" cy="46" r="4" fill="#FFD23F"/>
+              <circle cx="140" cy="38" r="15" fill="none" stroke="#F4EFE3" stroke-width="7"/>
+              <circle cx="188" cy="38" r="15" fill="none" stroke="#F4EFE3" stroke-width="7"/>
+            </g>
+          </g>
+
+          <g id="s24-badge">
+            <rect x="64" y="52" width="320" height="98" rx="49" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="78" y="66" width="292" height="70" rx="35" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.35"/>
+            <g fill="#FFD23F" opacity="0.85">
+              <circle cx="102" cy="101" r="7"/>
+              <circle cx="346" cy="101" r="7"/>
+            </g>
+            <text x="224" y="117" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="42"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="9" paint-order="stroke fill" letter-spacing="2"
+                  textLength="192" lengthAdjust="spacingAndGlyphs">4:00 AM</text>
+          </g>
+
+          <!-- exit: clock-hand sweep -->
+          <g transform="translate(430 470)">
+            <g id="s24-sweep">
+              <path d="M 0 0 L 0 -310 A 310 310 0 0 1 268 155 Z" fill="url(#s24-flash-grad)" opacity="0.85"/>
+              <circle cx="0" cy="0" r="340" fill="none" stroke="#FFD23F" stroke-width="18" opacity="0.7"/>
+            </g>
+            <g id="s24-wipe-hand">
+              <rect x="-22" y="-1500" width="44" height="1500" fill="#FFD23F" opacity="0.8"/>
+            </g>
+          </g>
+          <rect id="s24-flash" x="0" y="0" width="1920" height="1080" fill="#FFD23F" opacity="0"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:radial-gradient(circle at 42% 54%, rgba(255,122,26,0.1), transparent 64%);}
+    .scene-persp{position:absolute;inset:0;perspective:1600px;perspective-origin:50% 54%;}
+    #s24-world{transform-style:preserve-3d;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      gsap.set("#s24-stars circle", { opacity: 0 });
+      gsap.set("#s24-moon-halo", { scale: 0.2, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s24-moon-disc", { scale: 0.2, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s24-moon-rim", { strokeDasharray: 754, strokeDashoffset: 754, transformOrigin: "50% 50%" });
+      gsap.set(".s24-moon-crater", { scale: 0, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s24-city", { opacity: 0, y: 30 });
+      gsap.set("#s24-mast", { opacity: 0 });
+      gsap.set("#s24-clock-ring", { strokeDashoffset: 1885 });
+      gsap.set("#s24-clock-progress", { strokeDashoffset: 628 });
+      gsap.set("#s24-clock-progress-2", { strokeDashoffset: 157 });
+      gsap.set("#s24-clock-marker", { rotation: 0, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s24-ticks g", { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" });
+      gsap.set("#s24-hour", { rotation: 45, transformOrigin: "50% 100%" });
+      gsap.set("#s24-minute", { rotation: 180, transformOrigin: "50% 100%" });
+      gsap.set("#s24-route", { strokeDashoffset: 800, opacity: 0 });
+      gsap.set("#s24-route-glow", { opacity: 0 });
+      gsap.set("#s24-node-yard", { opacity: 0, scale: 0.3, transformOrigin: "50% 50%" });
+      gsap.set("#s24-node-point", { opacity: 0, scale: 0.3, transformOrigin: "50% 50%" });
+      gsap.set("#s24-node-rail", { opacity: 0, scale: 0.3, transformOrigin: "50% 50%" });
+      gsap.set("#s24-car", { x: -420, opacity: 0 });
+      gsap.set(".s24-team", { opacity: 0 });
+      gsap.set("#s24-truck", { opacity: 0, x: 0, y: 0 });
+      gsap.set("#s24-driver", { opacity: 0 });
+      gsap.set("#s24-pill-a", { opacity: 0, scale: 0.5, transformOrigin: "50% 50%" });
+      gsap.set("#s24-pill-b", { opacity: 0, scale: 0.5, transformOrigin: "50% 50%" });
+      gsap.set("#s24-badge", { opacity: 0, scale: 1.4, rotation: -4, transformOrigin: "50% 50%" });
+      gsap.set("#s24-sweep", { opacity: 0, scale: 0.4, rotation: 100, transformOrigin: "50% 50%" });
+      gsap.set("#s24-wipe-hand", { opacity: 0, rotation: 100, transformOrigin: "50% 100%" });
+      gsap.set("#s24-rail-siding", { opacity: 0 });
+      gsap.set("#s24-siding-rail-a", { strokeDasharray: 660, strokeDashoffset: 660 });
+      gsap.set("#s24-siding-rim", { strokeDasharray: 610, strokeDashoffset: 610 });
+      gsap.set("#s24-siding-slab", { scaleY: 0, opacity: 0, transformOrigin: "50% 100%" });
+      gsap.set("#s24-siding-bogie", { scale: 0.4, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s24-siding-lamp", { scale: 0, opacity: 0, transformOrigin: "50% 100%" });
+      gsap.set("#s24-siding-glow", { scale: 0, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s24-siding-pool", { scale: 0, opacity: 0, transformOrigin: "50% 50%" });
+
+      /* ---------- phase 1: pre-dawn skyline and clock ring ---------- */
+      tl.to("#s24-stars circle", { opacity: 0.45, duration: 0.8, stagger: 0.06, ease: "power1.out" }, 0.1);
+      tl.to("#s24-moon-halo", { scale: 1, opacity: 1, duration: 1.1, ease: "power2.out" }, 0.2);
+      tl.to("#s24-moon-disc", { scale: 1, opacity: 1, duration: 1.0, ease: "back.out(1.8)" }, 0.35);
+      tl.to("#s24-city", { opacity: 1, y: 0, duration: 1.0, ease: "power2.out" }, 0.35);
+      tl.to("#s24-moon-rim", { strokeDashoffset: 0, duration: 1.2, ease: "power2.inOut" }, 0.5);
+      tl.to("#s24-mast", { opacity: 0.6, duration: 0.7, ease: "power1.out" }, 0.8);
+      tl.to(".s24-moon-crater", { scale: 1, opacity: 0.8, duration: 0.45, stagger: 0.08, ease: "back.out(2)" }, 0.95);
+      tl.to("#s24-clock-ring", { strokeDashoffset: 0, duration: 1.35, ease: "power2.inOut" }, 0.45);
+      tl.to("#s24-ticks g", { opacity: 1, scale: 1, duration: 0.34, stagger: 0.055, ease: "back.out(2)" }, 1.15);
+      tl.to("#s24-badge", { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(2.4)" }, 0.9);
+      tl.to("#s24-badge", { y: -5, duration: 1.5, yoyo: true, repeat: 2, ease: "sine.inOut" }, 2.6);
+
+      /* ---------- rail siding construction ---------- */
+      tl.to("#s24-rail-siding", { opacity: 1, duration: 0.1 }, 0.5);
+      tl.to("#s24-siding-rail-a", { strokeDashoffset: 0, duration: 0.9, ease: "power2.out" }, 0.5);
+      tl.to("#s24-siding-rim", { strokeDashoffset: 0, duration: 0.9, ease: "power2.out" }, 0.7);
+      tl.to("#s24-siding-bogie", { scale: 1, opacity: 1, duration: 0.7, ease: "back.out(2)" }, 0.75);
+      tl.to("#s24-siding-slab", { scaleY: 1, opacity: 1, duration: 0.8, ease: "back.out(1.8)" }, 0.9);
+      tl.to("#s24-siding-lamp", { scale: 1, opacity: 1, duration: 0.6, ease: "back.out(2.2)" }, 1.3);
+      tl.to("#s24-siding-glow", { scale: 1, opacity: 0.65, duration: 0.5, ease: "power2.out" }, 1.6);
+      tl.to("#s24-siding-pool", { scale: 1, opacity: 0.5, duration: 0.6, ease: "power2.out" }, 1.65);
+
+      /* ---------- phase 2: clock sweeps from night to 4:00 ---------- */
+      tl.to("#s24-clock-progress", { strokeDashoffset: 0, duration: 2.3, ease: "power3.out" }, 2.0);
+      tl.to("#s24-clock-marker", { rotation: 120, opacity: 1, duration: 2.3, ease: "power3.out" }, 2.0);
+      tl.to("#s24-hour", { rotation: 120, duration: 2.6, ease: "power3.out" }, 2.0);
+      tl.to("#s24-minute", { rotation: 720, duration: 2.8, ease: "power3.out" }, 2.0);
+      tl.to("#s24-pill-a", { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2.2)" }, 4.25);
+
+      /* ---------- phase 3: Station car collects the team ---------- */
+      tl.to("#s24-car", { x: 0, opacity: 1, duration: 1.5, ease: "power3.out" }, 3.6);
+      tl.to("#s24-car-wheel-a", { rotation: 540, duration: 1.5, ease: "power2.out" }, 3.6);
+      tl.to("#s24-car-wheel-b", { rotation: 540, duration: 1.5, ease: "power2.out" }, 3.6);
+      tl.to(".s24-team", { opacity: 1, duration: 0.3, stagger: 0.1, ease: "power1.out" }, 5.0);
+      tl.to(".s24-team", { x: 34, duration: 0.45, stagger: 0.06, ease: "power2.inOut" }, 5.45);
+      tl.to(".s24-team", { x: 0, duration: 0.4, stagger: 0.06, ease: "power2.inOut" }, 5.95);
+      tl.to("#s24-car", { x: -430, duration: 1.1, ease: "power2.in" }, 6.6);
+      tl.to("#s24-car-wheel-a", { rotation: 960, duration: 1.1, ease: "none" }, 6.6);
+      tl.to("#s24-car-wheel-b", { rotation: 960, duration: 1.1, ease: "none" }, 6.6);
+
+      /* ---------- phase 4: route thread and the 5:00 handoff ---------- */
+      tl.to("#s24-route-glow", { opacity: 0.18, duration: 0.5, ease: "power1.out" }, 6.6);
+      tl.to("#s24-route", { opacity: 1, strokeDashoffset: 0, duration: 2.1, ease: "power2.inOut" }, 6.6);
+      tl.to("#s24-node-yard", { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2.4)" }, 6.7);
+      tl.to("#s24-node-point", { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2.4)" }, 7.9);
+      tl.to("#s24-node-rail", { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2.4)" }, 8.55);
+
+      tl.to("#s24-clock-progress-2", { strokeDashoffset: 0, duration: 0.45, ease: "power2.out" }, 8.75);
+      tl.to("#s24-clock-marker", { rotation: 150, duration: 0.45, ease: "back.out(2.4)" }, 8.75);
+      tl.to("#s24-hour", { rotation: 150, duration: 0.45, ease: "back.out(2.4)" }, 8.75);
+      tl.to("#s24-pill-b", { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2.2)" }, 8.85);
+
+      tl.to("#s24-truck", { opacity: 1, duration: 0.3, ease: "power1.out" }, 7.6);
+      tl.to("#s24-truck", { x: 300, y: -170, duration: 1.3, ease: "power2.inOut" }, 7.8);
+      tl.to("#s24-truck-wheel-a", { rotation: 360, duration: 1.3, ease: "power2.inOut" }, 7.8);
+      tl.to("#s24-truck-wheel-b", { rotation: 360, duration: 1.3, ease: "power2.inOut" }, 7.8);
+
+      tl.to("#s24-driver", { opacity: 1, duration: 0.25, ease: "power1.out" }, 9.15);
+      tl.to("#s24-driver", { x: 340, y: -200, duration: 0.5, ease: "power2.out" }, 9.2);
+      tl.to("#s24-driver", { x: 740, y: -150, duration: 0.5, ease: "power2.in" }, 9.7);
+      tl.to("#s24-driver", { opacity: 0, duration: 0.25, ease: "power1.in" }, 10.2);
+
+      tl.to("#s24-world", { x: -28, duration: 1.4, ease: "power2.inOut" }, 10.35);
+      tl.to("#s24-truck", { x: 630, y: 20, duration: 1.4, ease: "power2.inOut" }, 10.35);
+      tl.to("#s24-truck-wheel-a", { rotation: 1080, duration: 1.4, ease: "none" }, 10.35);
+      tl.to("#s24-truck-wheel-b", { rotation: 1080, duration: 1.4, ease: "none" }, 10.35);
+      tl.to("#s24-node-rail", { scale: 1.16, duration: 0.35, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 11.8);
+
+      /* ---------- living holds ---------- */
+      tl.to("#s24-moon", { scale: 1.035, y: -4, duration: 1.8, yoyo: true, repeat: 5, transformOrigin: "50% 50%", ease: "sine.inOut" }, 1.8);
+      tl.to("#s24-moon-halo", { scale: 1.12, opacity: 0.85, duration: 1.8, yoyo: true, repeat: 5, transformOrigin: "50% 50%", ease: "sine.inOut" }, 1.8);
+      tl.to("#s24-clock-face", { rotation: -16, duration: 12.98, transformOrigin: "50% 50%", ease: "sine.inOut" }, 0);
+      tl.to("#s24-hour", { rotation: 150.8, duration: 1.4, yoyo: true, repeat: 1, ease: "sine.inOut" }, 9.4);
+      tl.to("#s24-pill-a", { y: -4, duration: 1.3, yoyo: true, repeat: 2, ease: "sine.inOut" }, 5.0);
+      tl.to("#s24-pill-b", { y: -4, duration: 1.1, yoyo: true, repeat: 2, ease: "sine.inOut" }, 9.4);
+      tl.to("#s24-truck", { scale: 1.012, duration: 0.9, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 11.0);
+      tl.to("#s24-node-point", { scale: 1.08, duration: 0.8, yoyo: true, repeat: 2, transformOrigin: "50% 50%", ease: "sine.inOut" }, 9.0);
+      tl.to("#s24-siding-glow", { scale: 1.15, opacity: 0.85, duration: 1.5, yoyo: true, repeat: 5, ease: "sine.inOut" }, 2.2);
+      tl.to("#s24-siding-glow", { scale: 1.0, opacity: 0.65, duration: 1.4, ease: "sine.inOut" }, 11.2);
+      tl.to("#s24-siding-pool", { scale: 1.1, opacity: 0.65, duration: 1.5, yoyo: true, repeat: 5, ease: "sine.inOut" }, 2.3);
+      tl.to("#s24-siding-pool", { scale: 1.0, opacity: 0.5, duration: 1.3, ease: "sine.inOut" }, 11.3);
+      tl.to("#s24-siding-bead", { scale: 1.2, transformOrigin: "50% 50%", duration: 1.3, yoyo: true, repeat: 6, ease: "sine.inOut" }, 2.4);
+      tl.to("#s24-siding-bead", { scale: 1.0, duration: 1.1, ease: "sine.inOut" }, 11.5);
+      tl.to("#s24-siding-slab", { y: -3, duration: 1.6, yoyo: true, repeat: 5, ease: "sine.inOut" }, 2.5);
+      tl.to("#s24-siding-slab", { y: 0, duration: 0.5, ease: "sine.inOut" }, 12.1);
+
+      /* ---------- camera and parallax ---------- */
+      tl.fromTo("#s24-world", { rotationY: -3, scale: 1.0 }, { rotationY: 3, scale: 1.025, duration: 12.98, transformOrigin: "50% 56%", ease: "sine.inOut" }, 0);
+      tl.fromTo("#s24-bg", { x: 14 }, { x: -14, duration: 12.98, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s24-mg", { x: -10 }, { x: 10, duration: 12.98, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s24-fg", { x: 20 }, { x: -20, duration: 12.98, ease: "sine.inOut" }, 0);
+
+      /* ---------- exit: clock-4am-sweep ---------- */
+      tl.to("#s24-wipe-hand", { opacity: 0.8, rotation: 118, duration: 0.1, transformOrigin: "50% 100%", ease: "power1.out" }, 12.3);
+      tl.to("#s24-wipe-hand", { rotation: 214, duration: 0.5, transformOrigin: "50% 100%", ease: "power2.in" }, 12.4);
+      tl.to("#s24-sweep", { opacity: 0.9, scale: 0.7, rotation: 130, duration: 0.2, transformOrigin: "50% 50%", ease: "power2.out" }, 12.34);
+      tl.to("#s24-sweep", { opacity: 0, scale: 4.2, rotation: 210, duration: 0.4, transformOrigin: "50% 50%", ease: "power3.in" }, 12.54);
+      tl.to("#s24-flash", { opacity: 0.32, duration: 0.12, ease: "power1.out" }, 12.72);
+      tl.to("#s24-flash", { opacity: 0, duration: 0.12, ease: "power1.in" }, 12.84);
+
+      tl.to({}, { duration: 12.980 }, 0);
+      window.__timelines["24-four-am"] = tl;
+    })();
+  </script>
+</div>
+</template>

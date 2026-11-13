@@ -1,0 +1,37 @@
+{
+  "pdf": "videos/lunik-heist-1959/.tmp/lunik.pdf",
+  "page": 3,
+  "dpi": 150,
+  "width": 1275,
+  "height": 1650,
+  "boxes": [
+    {
+      "phrase": "models of astronomic apparatus",
+      "x": 714,
+      "y": 300,
+      "w": 339,
+      "h": 37
+    },
+    {
+      "phrase": "models of astronomic apparatus",
+      "x": 51,
+      "y": 337,
+      "w": 159,
+      "h": 37
+    },
+    {
+      "phrase": "only way to get inside was through the roof",
+      "x": 799,
+      "y": 1223,
+      "w": 337,
+      "h": 37
+    },
+    {
+      "phrase": "only way to get inside was through the roof",
+      "x": 51,
+      "y": 1260,
+      "w": 328,
+      "h": 37
+    }
+  ]
+}

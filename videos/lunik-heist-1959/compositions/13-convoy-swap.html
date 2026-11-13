@@ -1,0 +1,637 @@
+<template id="s13-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="13-convoy-swap" data-width="1920" data-height="1080" data-start="0" data-duration="20.540">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="s13-sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0A0E24" stop-opacity="0.08"/>
+          <stop offset="0.46" stop-color="#8E5FD9" stop-opacity="0.24"/>
+          <stop offset="1" stop-color="#151B3B" stop-opacity="0.88"/>
+        </linearGradient>
+        <linearGradient id="s13-road" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#151B3B" stop-opacity="0.98"/>
+          <stop offset="0.58" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s13-facade-l" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#050814"/>
+          <stop offset="0.7" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#515A83" stop-opacity="0.66"/>
+        </linearGradient>
+        <linearGradient id="s13-facade-r" x1="1" y1="0" x2="0" y2="0">
+          <stop offset="0" stop-color="#050814"/>
+          <stop offset="0.7" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#515A83" stop-opacity="0.66"/>
+        </linearGradient>
+        <linearGradient id="s13-metal" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#B8C0D8" stop-opacity="0.82"/>
+          <stop offset="0.3" stop-color="#515A83"/>
+          <stop offset="0.74" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s13-crate" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#B8C0D8" stop-opacity="0.92"/>
+          <stop offset="0.34" stop-color="#515A83" stop-opacity="0.82"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </linearGradient>
+        <linearGradient id="s13-canvas" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#F4EFE3"/>
+          <stop offset="0.55" stop-color="#B8C0D8"/>
+          <stop offset="1" stop-color="#515A83"/>
+        </linearGradient>
+        <linearGradient id="s13-gold" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FF7A1A"/>
+          <stop offset="0.48" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#FFD23F"/>
+        </linearGradient>
+        <linearGradient id="s13-glass" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.12"/>
+          <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.02"/>
+          <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="s13-violet" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.34"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s13-ember" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.52"/>
+          <stop offset="0.5" stop-color="#FF7A1A" stop-opacity="0.16"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s13-gold-glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.56"/>
+          <stop offset="1" stop-color="#FFD23F" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s13-cold" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.62"/>
+          <stop offset="0.55" stop-color="#B8C0D8" stop-opacity="0.22"/>
+          <stop offset="1" stop-color="#B8C0D8" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="s13-goldGlow" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="6" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="s13-haze" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="24"/>
+        </filter>
+        <filter id="s13-soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="8"/>
+        </filter>
+        <filter id="s13-shadow" x="-30%" y="-30%" width="160%" height="180%">
+          <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#050814" flood-opacity="0.7"/>
+        </filter>
+      </defs>
+
+      <g id="s13-world">
+        <!-- ================= BACKGROUND PLANE ================= -->
+        <g id="s13-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="#0A0E24"/>
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s13-sky)"/>
+          <ellipse id="s13-violet-a" cx="800" cy="220" rx="880" ry="360" fill="url(#s13-violet)"/>
+          <ellipse id="s13-violet-b" cx="1560" cy="480" rx="500" ry="300" fill="url(#s13-violet)" opacity="0.7"/>
+
+          <g id="s13-bg-scroll">
+            <!-- left canyon facades -->
+            <g class="s13-facade-l" fill="url(#s13-facade-l)" stroke="#515A83" stroke-width="4">
+              <rect x="-140" y="120" width="360" height="640"/>
+              <rect x="190" y="248" width="220" height="512"/>
+              <rect x="386" y="180" width="160" height="580"/>
+              <rect x="-180" y="560" width="420" height="230"/>
+            </g>
+            <g class="s13-win-l" fill="#FFD23F" opacity="0.5">
+              <rect x="-96" y="178" width="24" height="30"/>
+              <rect x="-40" y="178" width="24" height="30"/>
+              <rect x="18" y="178" width="24" height="30"/>
+              <rect x="76" y="178" width="24" height="30"/>
+              <rect x="-96" y="252" width="24" height="30"/>
+              <rect x="-40" y="252" width="24" height="30"/>
+              <rect x="18" y="252" width="24" height="30"/>
+              <rect x="76" y="252" width="24" height="30"/>
+              <rect x="-96" y="326" width="24" height="30"/>
+              <rect x="18" y="326" width="24" height="30"/>
+              <rect x="76" y="326" width="24" height="30"/>
+              <rect x="230" y="310" width="22" height="28"/>
+              <rect x="286" y="310" width="22" height="28"/>
+              <rect x="342" y="310" width="22" height="28"/>
+              <rect x="230" y="384" width="22" height="28"/>
+              <rect x="342" y="384" width="22" height="28"/>
+              <rect x="424" y="238" width="20" height="26"/>
+              <rect x="472" y="238" width="20" height="26"/>
+              <rect x="424" y="306" width="20" height="26"/>
+              <rect x="472" y="306" width="20" height="26"/>
+            </g>
+            <!-- right canyon facades -->
+            <g class="s13-facade-r" fill="url(#s13-facade-r)" stroke="#515A83" stroke-width="4">
+              <rect x="1680" y="150" width="360" height="610"/>
+              <rect x="1480" y="268" width="220" height="492"/>
+              <rect x="1340" y="200" width="160" height="560"/>
+              <rect x="1640" y="560" width="360" height="230"/>
+            </g>
+            <g class="s13-win-r" fill="#FFD23F" opacity="0.5">
+              <rect x="1730" y="208" width="24" height="30"/>
+              <rect x="1786" y="208" width="24" height="30"/>
+              <rect x="1844" y="208" width="24" height="30"/>
+              <rect x="1730" y="282" width="24" height="30"/>
+              <rect x="1786" y="282" width="24" height="30"/>
+              <rect x="1844" y="282" width="24" height="30"/>
+              <rect x="1730" y="356" width="24" height="30"/>
+              <rect x="1844" y="356" width="24" height="30"/>
+              <rect x="1514" y="330" width="22" height="28"/>
+              <rect x="1570" y="330" width="22" height="28"/>
+              <rect x="1626" y="330" width="22" height="28"/>
+              <rect x="1514" y="404" width="22" height="28"/>
+              <rect x="1626" y="404" width="22" height="28"/>
+              <rect x="1372" y="258" width="20" height="26"/>
+              <rect x="1420" y="258" width="20" height="26"/>
+              <rect x="1372" y="326" width="20" height="26"/>
+              <rect x="1420" y="326" width="20" height="26"/>
+            </g>
+
+            <!-- sodium lamps -->
+            <g class="s13-lamp" transform="translate(300 420)">
+              <rect x="-7" y="0" width="14" height="350" rx="7" fill="#151B3B" stroke="#515A83" stroke-width="5"/>
+              <path d="M -7 0 L -34 -14 L -34 -34 L 34 -34 L 34 -14 L 7 0 Z" fill="#151B3B" stroke="#515A83" stroke-width="5"/>
+              <ellipse cx="0" cy="-22" rx="22" ry="10" fill="#FF7A1A" filter="url(#s13-goldGlow)"/>
+              <path d="M -18 -12 L -62 140 L 62 140 L 18 -12 Z" fill="#FF7A1A" opacity="0.10"/>
+            </g>
+            <g class="s13-lamp" transform="translate(1180 430)">
+              <rect x="-7" y="0" width="14" height="338" rx="7" fill="#151B3B" stroke="#515A83" stroke-width="5"/>
+              <path d="M -7 0 L -34 -14 L -34 -34 L 34 -34 L 34 -14 L 7 0 Z" fill="#151B3B" stroke="#515A83" stroke-width="5"/>
+              <ellipse cx="0" cy="-22" rx="22" ry="10" fill="#FFD23F" filter="url(#s13-goldGlow)"/>
+              <path d="M -18 -12 L -62 140 L 62 140 L 18 -12 Z" fill="#FFD23F" opacity="0.09"/>
+            </g>
+
+            <!-- road surface and scrolling dashes -->
+            <path d="M -80 772 L 2000 772 L 2000 1100 L -80 1100 Z" fill="url(#s13-road)"/>
+            <g id="s13-dashes" fill="#FFD23F" opacity="0.55">
+              <rect x="-120" y="936" width="96" height="12" rx="6"/>
+              <rect x="80" y="936" width="96" height="12" rx="6"/>
+              <rect x="280" y="936" width="96" height="12" rx="6"/>
+              <rect x="480" y="936" width="96" height="12" rx="6"/>
+              <rect x="680" y="936" width="96" height="12" rx="6"/>
+              <rect x="880" y="936" width="96" height="12" rx="6"/>
+              <rect x="1080" y="936" width="96" height="12" rx="6"/>
+              <rect x="1280" y="936" width="96" height="12" rx="6"/>
+              <rect x="1480" y="936" width="96" height="12" rx="6"/>
+              <rect x="1680" y="936" width="96" height="12" rx="6"/>
+              <rect x="1880" y="936" width="96" height="12" rx="6"/>
+            </g>
+            <g stroke="#B8C0D8" stroke-width="5" opacity="0.16">
+              <line x1="-40" y1="1014" x2="1960" y2="1014"/>
+              <line x1="-40" y1="1074" x2="1960" y2="1074"/>
+            </g>
+            <g fill="#F4EFE3">
+              <circle cx="420" cy="312" r="4" opacity="0.16"/>
+              <circle cx="960" cy="250" r="3" opacity="0.12"/>
+              <circle cx="1420" cy="360" r="4" opacity="0.15"/>
+              <circle cx="1720" cy="290" r="3" opacity="0.14"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: CONVOY + HOTEL ================= -->
+        <g id="s13-mg">
+          <ellipse cx="820" cy="952" rx="540" ry="42" fill="#050814" opacity="0.72" filter="url(#s13-haze)"/>
+
+          <!-- road-level sidewalk in front of the hotel -->
+          <path d="M 1260 762 L 1920 762 L 1920 852 L 1260 852 Z" fill="#151B3B" stroke="#515A83" stroke-width="5"/>
+          <g stroke="#B8C0D8" stroke-width="4" opacity="0.32">
+            <line x1="1320" y1="762" x2="1290" y2="852"/>
+            <line x1="1430" y1="762" x2="1408" y2="852"/>
+            <line x1="1540" y1="762" x2="1526" y2="852"/>
+            <line x1="1650" y1="762" x2="1644" y2="852"/>
+            <line x1="1760" y1="762" x2="1762" y2="852"/>
+            <line x1="1870" y1="762" x2="1880" y2="852"/>
+          </g>
+
+          <!-- hotel facade -->
+          <g id="s13-hotel">
+            <path d="M 1452 300 L 1836 300 L 1836 762 L 1452 762 Z" fill="#151B3B" stroke="#515A83" stroke-width="6"/>
+            <rect x="1466" y="316" width="354" height="42" rx="8" fill="#0A0E24" opacity="0.6"/>
+            <rect x="1466" y="316" width="354" height="9" rx="4" fill="#B8C0D8" opacity="0.28"/>
+            <g fill="#0A0E24" stroke="#515A83" stroke-width="4">
+              <rect x="1494" y="410" width="86" height="102" rx="4"/>
+              <rect x="1606" y="410" width="86" height="102" rx="4"/>
+              <rect x="1718" y="410" width="86" height="102" rx="4"/>
+            </g>
+            <g fill="#FFD23F" opacity="0.88">
+              <rect x="1502" y="418" width="70" height="86" rx="3"/>
+              <rect x="1614" y="418" width="70" height="86" rx="3"/>
+              <rect x="1726" y="418" width="70" height="86" rx="3"/>
+            </g>
+
+            <!-- doorway and cold window -->
+            <path d="M 1576 600 L 1672 600 L 1672 762 L 1576 762 Z" fill="#0A0E24" stroke="#B8C0D8" stroke-width="7"/>
+            <path d="M 1590 614 L 1658 614 L 1658 762 L 1590 762 Z" fill="#050814"/>
+            <g id="s13-door-frame" fill="none" stroke="#FFD23F" stroke-width="5" opacity="0.7">
+              <path d="M 1576 612 L 1576 600 L 1592 600"/>
+              <path d="M 1656 600 L 1672 600 L 1672 612"/>
+            </g>
+            <g id="s13-window-cold">
+              <rect x="1700" y="520" width="104" height="64" rx="4" fill="#050814" stroke="#B8C0D8" stroke-width="6"/>
+              <rect id="s13-window-glow" x="1708" y="528" width="88" height="48" rx="2" fill="#F4EFE3" opacity="0"/>
+              <rect id="s13-window-spec" x="1712" y="532" width="24" height="40" rx="2" fill="#FFFFFF" opacity="0"/>
+              <path id="s13-window-cone" d="M 1708 576 L 1804 576 L 1862 762 L 1650 762 Z" fill="url(#s13-cold)" opacity="0"/>
+            </g>
+            <rect x="1700" y="520" width="104" height="64" rx="4" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.24"/>
+            <g fill="#B8C0D8" opacity="0.4">
+              <circle cx="1530" cy="650" r="5"/>
+              <circle cx="1530" cy="700" r="5"/>
+              <circle cx="1720" cy="650" r="5"/>
+              <circle cx="1720" cy="700" r="5"/>
+            </g>
+          </g>
+
+          <g id="s13-convoy">
+            <!-- crate truck -->
+            <g transform="translate(760 780)">
+            <g id="s13-truck">
+              <ellipse cx="20" cy="148" rx="340" ry="34" fill="#050814" opacity="0.85" filter="url(#s13-haze)"/>
+              <ellipse cx="20" cy="138" rx="240" ry="18" fill="#050814" opacity="0.9"/>
+              <path d="M -250 24 L -250 -122 Q -250 -146 -224 -146 L -150 -146 L -100 -88 L 224 -88 Q 252 -88 252 -60 L 252 24 Z"
+                    fill="url(#s13-metal)" stroke="#B8C0D8" stroke-width="10" stroke-linejoin="round" filter="url(#s13-shadow)"/>
+              <rect x="-228" y="-258" width="330" height="170" rx="12" fill="url(#s13-crate)" stroke="#B8C0D8" stroke-width="10"/>
+              <g stroke="#0A0E24" stroke-width="9" opacity="0.6">
+                <line x1="-184" y1="-256" x2="-184" y2="-90"/>
+                <line x1="-126" y1="-256" x2="-126" y2="-90"/>
+                <line x1="-68" y1="-256" x2="-68" y2="-90"/>
+                <line x1="-10" y1="-256" x2="-10" y2="-90"/>
+                <line x1="48" y1="-256" x2="48" y2="-90"/>
+              </g>
+              <rect x="-218" y="-250" width="310" height="18" rx="9" fill="#B8C0D8" opacity="0.3"/>
+              <rect x="-218" y="-98" width="310" height="14" rx="7" fill="#050814" opacity="0.5"/>
+              <path d="M -96 -174 L 90 -174" stroke="#FFD23F" stroke-width="6" opacity="0.5"/>
+              <g id="s13-cab-window" fill="#8E5FD9" opacity="0.45">
+                <path d="M -234 -124 L -166 -124 L -128 -88 L -234 -88 Z"/>
+              </g>
+              <g class="s13-axle" transform="translate(-164 28)">
+                <g class="s13-wheel" fill="#151B3B" stroke="#B8C0D8" stroke-width="8">
+                  <circle cx="0" cy="0" r="36"/>
+                </g>
+                <g class="s13-wheel-hub" fill="#515A83">
+                  <circle cx="0" cy="0" r="12"/>
+                </g>
+              </g>
+              <g class="s13-axle" transform="translate(64 28)">
+                <g class="s13-wheel" fill="#151B3B" stroke="#B8C0D8" stroke-width="8">
+                  <circle cx="0" cy="0" r="36"/>
+                </g>
+                <g class="s13-wheel-hub" fill="#515A83">
+                  <circle cx="0" cy="0" r="12"/>
+                </g>
+              </g>
+              <g class="s13-axle" transform="translate(170 28)">
+                <g class="s13-wheel" fill="#151B3B" stroke="#B8C0D8" stroke-width="8">
+                  <circle cx="0" cy="0" r="36"/>
+                </g>
+                <g class="s13-wheel-hub" fill="#515A83">
+                  <circle cx="0" cy="0" r="12"/>
+                </g>
+              </g>
+              <circle cx="238" cy="-44" r="11" fill="#FF7A1A" filter="url(#s13-soft)"/>
+              <path d="M -252 -80 L -346 -104 L -346 -58 L -252 -72 Z" fill="#FFD23F" opacity="0.24"/>
+              <rect x="-142" y="-146" width="44" height="58" rx="8" fill="#151B3B" stroke="#B8C0D8" stroke-width="4" opacity="0.8"/>
+            </g>
+            </g>
+
+            <!-- station car ahead -->
+            <g transform="translate(1120 820)">
+            <g id="s13-station-a">
+              <g transform="translate(0 0)">
+                <ellipse cx="0" cy="58" rx="140" ry="16" fill="#050814" opacity="0.55" filter="url(#s13-haze)"/>
+                <rect x="-130" y="-48" width="260" height="70" rx="34" fill="url(#s13-metal)" stroke="#B8C0D8" stroke-width="8"/>
+                <path d="M -92 -46 L -58 -88 L 30 -88 L 58 -46 Z" fill="#515A83" stroke="#B8C0D8" stroke-width="7" stroke-linejoin="round"/>
+                <rect x="-54" y="-78" width="66" height="24" rx="9" fill="#8E5FD9" opacity="0.5"/>
+                <circle cx="-76" cy="22" r="20" fill="#151B3B" stroke="#B8C0D8" stroke-width="6"/>
+                <circle cx="80" cy="22" r="20" fill="#151B3B" stroke="#B8C0D8" stroke-width="6"/>
+                <circle cx="-76" cy="22" r="6" fill="#515A83"/>
+                <circle cx="80" cy="22" r="6" fill="#515A83"/>
+                <circle cx="126" cy="-12" r="13" fill="#FFD23F" filter="url(#s13-goldGlow)"/>
+                <circle cx="-120" cy="-12" r="9" fill="#FF7A1A"/>
+                <path d="M 132 -22 L 214 -38 L 214 -4 L 132 -8 Z" fill="#FFD23F" opacity="0.2"/>
+                <rect x="-26" y="-66" width="20" height="8" rx="4" fill="#FF7A1A"/>
+              </g>
+            </g>
+            </g>
+
+            <!-- station car behind -->
+            <g transform="translate(420 820)">
+            <g id="s13-station-b">
+              <g transform="translate(0 0)">
+                <ellipse cx="0" cy="58" rx="140" ry="16" fill="#050814" opacity="0.55" filter="url(#s13-haze)"/>
+                <rect x="-130" y="-48" width="260" height="70" rx="34" fill="url(#s13-metal)" stroke="#B8C0D8" stroke-width="8"/>
+                <path d="M -92 -46 L -58 -88 L 30 -88 L 58 -46 Z" fill="#515A83" stroke="#B8C0D8" stroke-width="7" stroke-linejoin="round"/>
+                <rect x="-54" y="-78" width="66" height="24" rx="9" fill="#8E5FD9" opacity="0.5"/>
+                <circle cx="-76" cy="22" r="20" fill="#151B3B" stroke="#B8C0D8" stroke-width="6"/>
+                <circle cx="80" cy="22" r="20" fill="#151B3B" stroke="#B8C0D8" stroke-width="6"/>
+                <circle cx="-76" cy="22" r="6" fill="#515A83"/>
+                <circle cx="80" cy="22" r="6" fill="#515A83"/>
+                <circle cx="126" cy="-12" r="13" fill="#FFD23F" filter="url(#s13-goldGlow)"/>
+                <circle cx="-120" cy="-12" r="9" fill="#FF7A1A"/>
+                <path d="M 132 -22 L 214 -38 L 214 -4 L 132 -8 Z" fill="#FFD23F" opacity="0.2"/>
+                <rect x="-26" y="-66" width="20" height="8" rx="4" fill="#FF7A1A"/>
+              </g>
+            </g>
+            </g>
+
+            <!-- canvas roll and unfurled cover over the crate -->
+            <g transform="translate(822 780)">
+            <g id="s13-canvas-g" opacity="0">
+              <ellipse cx="-60" cy="-96" rx="176" ry="14" fill="#B8C0D8" opacity="0.22"/>
+              <g transform="translate(-60 -246)">
+                <g id="s13-canvas-roll">
+                  <rect x="-184" y="-16" width="368" height="34" rx="17" fill="url(#s13-canvas)" stroke="#F4EFE3" stroke-width="5" opacity="0.9"/>
+                  <circle cx="-184" cy="1" r="17" fill="#B8C0D8" stroke="#F4EFE3" stroke-width="4"/>
+                  <circle cx="184" cy="1" r="17" fill="#B8C0D8" stroke="#F4EFE3" stroke-width="4"/>
+                </g>
+              </g>
+              <g id="s13-canvas-cloth">
+                <path d="M -228 -246 L 108 -246 L 108 -94 Q 74 -76 18 -92 Q -42 -108 -110 -92 Q -174 -78 -228 -96 Z"
+                      fill="url(#s13-canvas)" stroke="#F4EFE3" stroke-width="7" stroke-linejoin="round"/>
+                <path d="M -216 -238 L 96 -238" fill="none" stroke="#F4EFE3" stroke-width="4" stroke-linecap="round"/>
+                <path d="M -210 -224 Q -142 -190 -52 -210 Q 20 -224 96 -214"
+                      fill="none" stroke="#515A83" stroke-width="5" opacity="0.35"/>
+                <path d="M -204 -156 Q -120 -126 -34 -146 Q 38 -162 96 -150"
+                      fill="none" stroke="#515A83" stroke-width="5" opacity="0.35"/>
+                <path id="s13-canvas-hem" d="M -228 -96 Q -174 -78 -110 -92 Q -42 -108 18 -92 Q 74 -76 108 -94"
+                      fill="none" stroke="#FFD23F" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+                <g stroke="#515A83" stroke-width="6" opacity="0.7">
+                  <line x1="-196" y1="-238" x2="-196" y2="-104"/>
+                  <line x1="76" y1="-238" x2="76" y2="-102"/>
+                </g>
+                <g fill="#0A0E24" stroke="#B8C0D8" stroke-width="4">
+                  <circle cx="-196" cy="-100" r="7"/>
+                  <circle cx="76" cy="-98" r="7"/>
+                </g>
+                <g fill="#FFD23F" opacity="0.8">
+                  <rect x="-174" y="-178" width="52" height="12" rx="6"/>
+                  <rect x="-102" y="-166" width="30" height="11" rx="5"/>
+                  <rect x="-10" y="-152" width="44" height="11" rx="5"/>
+                </g>
+              </g>
+            </g>
+            </g>
+          </g>
+
+          <!-- driver beads and swap arcs -->
+          <g id="s13-swap">
+            <path id="s13-arc-out" d="M 700 832 Q 830 640 1000 786" fill="none" stroke="#FFD23F" stroke-width="7"
+                  stroke-dasharray="12 14" opacity="0"/>
+            <path id="s13-arc-in" d="M 380 786 Q 520 630 700 832" fill="none" stroke="#B8C0D8" stroke-width="7"
+                  stroke-dasharray="12 14" opacity="0"/>
+            <g id="s13-driver-original">
+              <path d="M -24 16 Q 0 -10 24 16 Z" fill="#151B3B" stroke="#B8C0D8" stroke-width="5"/>
+              <circle r="18" fill="#FF7A1A" stroke="#050814" stroke-width="6"/>
+              <circle cx="-6" cy="-5" r="5" fill="#F4EFE3" opacity="0.8"/>
+            </g>
+            <g id="s13-driver-substitute" opacity="0">
+              <path d="M -24 16 Q 0 -10 24 16 Z" fill="#151B3B" stroke="#B8C0D8" stroke-width="5"/>
+              <circle r="18" fill="#B8C0D8" stroke="#050814" stroke-width="6"/>
+              <circle cx="-6" cy="-5" r="5" fill="#FFD23F" opacity="0.9"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND PLANE ================= -->
+        <g id="s13-fg">
+          <!-- radio pulse rings ahead -->
+          <g id="s13-rings-ahead" fill="none" stroke="#FFD23F" opacity="0">
+            <circle cx="1170" cy="736" r="90" stroke-width="12"/>
+            <circle cx="1170" cy="736" r="90" stroke-width="6" stroke="#FF7A1A"/>
+            <circle cx="1170" cy="736" r="90" stroke-width="4" stroke="#B8C0D8"/>
+          </g>
+          <g id="s13-rings-behind" fill="none" stroke="#8E5FD9" opacity="0">
+            <circle cx="352" cy="736" r="90" stroke-width="12"/>
+            <circle cx="352" cy="736" r="90" stroke-width="6" stroke="#B8C0D8"/>
+            <circle cx="352" cy="736" r="90" stroke-width="4" stroke="#FFD23F"/>
+          </g>
+
+          <!-- headlight cones -->
+          <g id="s13-headlights" fill="#FFD23F" opacity="0.18">
+            <path d="M 1060 742 L 1320 706 L 1360 800 L 1060 786 Z"/>
+            <path d="M 360 742 L 120 706 L 80 800 L 360 786 Z"/>
+          </g>
+
+          <g id="s13-fg-dust" fill="#F4EFE3">
+            <circle cx="240" cy="900" r="4" opacity="0.16"/>
+            <circle cx="540" cy="980" r="3" opacity="0.13"/>
+            <circle cx="1020" cy="1010" r="4" opacity="0.15"/>
+            <circle cx="1400" cy="940" r="3" opacity="0.13"/>
+            <circle cx="1780" cy="990" r="4" opacity="0.16"/>
+          </g>
+
+          <!-- narrow gate masses for the bumper-squeeze exit -->
+          <g id="s13-gate-left" opacity="0">
+            <path d="M -40 60 L 240 170 L 268 1080 L -40 1080 Z" fill="#050814" stroke="#515A83" stroke-width="6"/>
+            <rect x="220" y="250" width="34" height="830" rx="14" fill="#151B3B" stroke="#FF7A1A" stroke-width="6"/>
+            <circle cx="237" cy="300" r="12" fill="#FF7A1A" filter="url(#s13-soft)"/>
+            <g stroke="#B8C0D8" stroke-width="4" opacity="0.3">
+              <line x1="60" y1="400" x2="230" y2="470"/>
+              <line x1="30" y1="620" x2="230" y2="690"/>
+              <line x1="10" y1="840" x2="238" y2="900"/>
+            </g>
+          </g>
+          <g id="s13-gate-right" opacity="0">
+            <path d="M 1960 60 L 1680 170 L 1652 1080 L 1960 1080 Z" fill="#050814" stroke="#515A83" stroke-width="6"/>
+            <rect x="1666" y="250" width="34" height="830" rx="14" fill="#151B3B" stroke="#FFD23F" stroke-width="6"/>
+            <circle cx="1683" cy="300" r="12" fill="#FFD23F" filter="url(#s13-goldGlow)"/>
+            <g stroke="#B8C0D8" stroke-width="4" opacity="0.3">
+              <line x1="1860" y1="400" x2="1690" y2="470"/>
+              <line x1="1890" y1="620" x2="1690" y2="690"/>
+              <line x1="1910" y1="840" x2="1682" y2="900"/>
+            </g>
+          </g>
+
+          <g id="s13-speed" stroke="#F4EFE3" stroke-width="8" stroke-linecap="round" opacity="0">
+            <line x1="760" y1="300" x2="980" y2="300"/>
+            <line x1="700" y1="352" x2="900" y2="352"/>
+            <line x1="820" y1="404" x2="1040" y2="404"/>
+            <line x1="740" y1="980" x2="960" y2="980"/>
+            <line x1="680" y1="1030" x2="900" y2="1030"/>
+          </g>
+
+          <g id="s13-badge">
+            <rect x="64" y="52" width="382" height="98" rx="49" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="78" y="66" width="354" height="70" rx="35" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.35"/>
+            <g fill="#FFD23F" opacity="0.7">
+              <circle cx="94" cy="101" r="5"/>
+              <circle cx="416" cy="101" r="5"/>
+            </g>
+            <text x="255" y="117" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="48"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="9" paint-order="stroke fill" letter-spacing="2"
+                  textLength="284" lengthAdjust="spacingAndGlyphs">LAST LOAD</text>
+          </g>
+
+          <rect id="s13-flash" x="0" y="0" width="1920" height="1080" fill="#F4EFE3" opacity="0"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:radial-gradient(circle at 48% 40%, rgba(142,95,217,0.14), transparent 62%);}
+    .scene-persp{position:absolute;inset:0;perspective:1500px;perspective-origin:50% 52%;}
+    #s13-world{transform-style:preserve-3d;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      /* ---------- initial states ---------- */
+      gsap.set("#s13-violet-a", { opacity: 0, scale: 0.72, transformOrigin: "50% 50%" });
+      gsap.set("#s13-violet-b", { opacity: 0, scale: 0.8, transformOrigin: "50% 50%" });
+      gsap.set(".s13-facade-l, .s13-facade-r", { scaleY: 0.18, opacity: 0, transformOrigin: "50% 100%" });
+      gsap.set(".s13-win-l, .s13-win-r", { opacity: 0 });
+      gsap.set(".s13-lamp", { opacity: 0, scaleY: 0.2, transformOrigin: "50% 100%" });
+      gsap.set("#s13-dashes", { opacity: 0 });
+      gsap.set("#s13-bg-scroll", { x: 0 });
+      gsap.set("#s13-truck", { x: -170, y: 46, opacity: 0, scale: 0.84, transformOrigin: "50% 100%" });
+      gsap.set("#s13-station-a", { x: 260, y: 30, opacity: 0, scale: 0.7, transformOrigin: "50% 100%" });
+      gsap.set("#s13-station-b", { x: -300, y: 30, opacity: 0, scale: 0.7, transformOrigin: "50% 100%" });
+      gsap.set("#s13-hotel", { opacity: 0, x: 50 });
+      gsap.set("#s13-window-glow", { opacity: 0, scaleY: 0.05, transformOrigin: "50% 100%" });
+      gsap.set("#s13-window-spec", { opacity: 0 });
+      gsap.set("#s13-window-cone", { opacity: 0 });
+      gsap.set("#s13-canvas-g", { opacity: 0 });
+      gsap.set("#s13-canvas-roll", { scaleY: 1, y: -18, transformOrigin: "50% 100%" });
+      gsap.set("#s13-canvas-cloth", { scaleY: 0.04, opacity: 0, transformOrigin: "50% 0%" });
+      gsap.set("#s13-canvas-hem", { opacity: 0 });
+      gsap.set("#s13-arc-out", { opacity: 0 });
+      gsap.set("#s13-arc-in", { opacity: 0 });
+      gsap.set("#s13-driver-original", { x: 700, y: 832, opacity: 0 });
+      gsap.set("#s13-driver-substitute", { x: 380, y: 786, opacity: 0 });
+      gsap.set("#s13-rings-ahead", { opacity: 0, scale: 0.2, transformOrigin: "1170px 736px" });
+      gsap.set("#s13-rings-behind", { opacity: 0, scale: 0.2, transformOrigin: "352px 736px" });
+      gsap.set("#s13-headlights", { opacity: 0 });
+      gsap.set("#s13-fg-dust circle", { opacity: 0 });
+      gsap.set("#s13-gate-left", { x: -420, opacity: 0 });
+      gsap.set("#s13-gate-right", { x: 420, opacity: 0 });
+      gsap.set("#s13-speed", { opacity: 0 });
+      gsap.set("#s13-badge", { opacity: 0, scale: 1.5, rotation: -5, transformOrigin: "50% 50%" });
+      gsap.set("#s13-flash", { opacity: 0 });
+
+      /* ---------- phase 1: street canyon draws ---------- */
+      tl.to("#s13-violet-a", { opacity: 0.9, scale: 1, duration: 1.6, ease: "power2.out" }, 0.0);
+      tl.to("#s13-violet-b", { opacity: 0.7, scale: 1, duration: 1.5, ease: "power2.out" }, 0.2);
+      tl.to(".s13-facade-l", { scaleY: 1, opacity: 1, duration: 1.15, stagger: 0.1, ease: "power2.out" }, 0.1);
+      tl.to(".s13-facade-r", { scaleY: 1, opacity: 1, duration: 1.15, stagger: 0.1, ease: "power2.out" }, 0.22);
+      tl.to(".s13-win-l", { opacity: 0.5, duration: 0.9, stagger: 0.015, ease: "power1.out" }, 0.7);
+      tl.to(".s13-win-r", { opacity: 0.5, duration: 0.9, stagger: 0.015, ease: "power1.out" }, 0.8);
+      tl.to(".s13-lamp", { opacity: 1, scaleY: 1, duration: 0.85, stagger: 0.16, ease: "back.out(1.4)" }, 0.5);
+      tl.to("#s13-dashes", { opacity: 0.55, duration: 0.9, stagger: 0.03, ease: "power1.out" }, 0.9);
+      tl.to("#s13-hotel", { opacity: 1, x: 0, duration: 0.9, ease: "power2.out" }, 1.2);
+      tl.to("#s13-badge", { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(2.4)" }, 0.85);
+
+      /* ---------- phase 2: vehicles extrude and take station ---------- */
+      tl.to("#s13-station-a", { x: 0, y: 0, opacity: 1, scale: 1, duration: 0.8, ease: "back.out(1.8)" }, 2.2);
+      tl.to("#s13-station-b", { x: 0, y: 0, opacity: 1, scale: 1, duration: 0.8, ease: "back.out(1.8)" }, 2.4);
+      tl.to("#s13-truck", { x: 0, y: 0, opacity: 1, scale: 1, duration: 0.95, ease: "back.out(1.5)" }, 2.55);
+      tl.to("#s13-headlights", { opacity: 0.18, duration: 0.6, ease: "power1.out" }, 3.2);
+      tl.to(".s13-wheel", { rotation: 900, duration: 5.5, transformOrigin: "50% 50%", ease: "none" }, 3.3);
+      tl.to(".s13-wheel-hub", { rotation: 900, duration: 5.5, transformOrigin: "50% 50%", ease: "none" }, 3.3);
+
+      /* ---------- phase 3: street scroll + radio pulses ahead/behind ---------- */
+      tl.to("#s13-bg-scroll", { x: -460, duration: 5.6, ease: "power1.inOut" }, 3.35);
+      tl.to("#s13-truck", { x: 46, duration: 5.6, ease: "power1.inOut" }, 3.35);
+      tl.to("#s13-station-a", { x: 46, duration: 5.6, ease: "power1.inOut" }, 3.35);
+      tl.to("#s13-station-b", { x: 46, duration: 5.6, ease: "power1.inOut" }, 3.35);
+
+      tl.to("#s13-rings-ahead", { opacity: 0.85, scale: 0.35, duration: 0.2, ease: "power1.out" }, 3.9);
+      tl.to("#s13-rings-ahead", { scale: 1.55, opacity: 0, duration: 1.15, ease: "power2.out" }, 4.08);
+      tl.to("#s13-rings-ahead", { opacity: 0.85, scale: 0.35, duration: 0.2, ease: "power1.out" }, 5.12);
+      tl.to("#s13-rings-ahead", { scale: 1.55, opacity: 0, duration: 1.15, ease: "power2.out" }, 5.3);
+      tl.to("#s13-rings-ahead", { opacity: 0.85, scale: 0.35, duration: 0.2, ease: "power1.out" }, 6.34);
+      tl.to("#s13-rings-ahead", { scale: 1.55, opacity: 0, duration: 1.15, ease: "power2.out" }, 6.52);
+
+      tl.to("#s13-rings-behind", { opacity: 0.85, scale: 0.35, duration: 0.2, ease: "power1.out" }, 4.4);
+      tl.to("#s13-rings-behind", { scale: 1.55, opacity: 0, duration: 1.15, ease: "power2.out" }, 4.58);
+      tl.to("#s13-rings-behind", { opacity: 0.85, scale: 0.35, duration: 0.2, ease: "power1.out" }, 5.62);
+      tl.to("#s13-rings-behind", { scale: 1.55, opacity: 0, duration: 1.15, ease: "power2.out" }, 5.8);
+      tl.to("#s13-rings-behind", { opacity: 0.85, scale: 0.35, duration: 0.2, ease: "power1.out" }, 6.84);
+      tl.to("#s13-rings-behind", { scale: 1.55, opacity: 0, duration: 1.15, ease: "power2.out" }, 7.02);
+
+      /* ---------- phase 4: road clear, stop at last turn-off ---------- */
+      tl.to("#s13-rings-ahead", { opacity: 0, duration: 0.4, ease: "power1.in" }, 8.1);
+      tl.to("#s13-rings-behind", { opacity: 0, duration: 0.4, ease: "power1.in" }, 8.25);
+      tl.to("#s13-bg-scroll", { x: -620, duration: 1.3, ease: "power3.out" }, 8.85);
+      tl.to("#s13-truck", { x: 62, duration: 1.3, ease: "power3.out" }, 8.85);
+      tl.to("#s13-station-a", { x: 62, duration: 1.3, ease: "power3.out" }, 8.85);
+      tl.to("#s13-station-b", { x: 62, duration: 1.3, ease: "power3.out" }, 8.85);
+      tl.to(".s13-wheel", { rotation: 1150, duration: 1.15, transformOrigin: "50% 50%", ease: "power2.out" }, 8.85);
+      tl.to(".s13-wheel-hub", { rotation: 1150, duration: 1.15, transformOrigin: "50% 50%", ease: "power2.out" }, 8.85);
+
+      /* ---------- phase 5: canvas unfurls over the crate ---------- */
+      tl.to("#s13-canvas-g", { opacity: 1, duration: 0.3, ease: "power1.out" }, 10.15);
+      tl.to("#s13-canvas-roll", { y: 0, duration: 0.35, ease: "back.out(2)" }, 10.1);
+      tl.to("#s13-canvas-roll", { y: 10, duration: 0.4, ease: "power1.in" }, 10.55);
+      tl.to("#s13-canvas-cloth", { opacity: 1, scaleY: 1, duration: 1.55, ease: "power2.inOut" }, 10.55);
+      tl.to("#s13-canvas-hem", { opacity: 0.8, duration: 0.5, ease: "power1.out" }, 12.0);
+      tl.to("#s13-canvas-cloth", { scaleY: 1.02, duration: 0.9, yoyo: true, repeat: 2, transformOrigin: "50% 0%", ease: "sine.inOut" }, 12.3);
+      tl.to("#s13-canvas-roll", { y: 16, duration: 1.2, ease: "sine.inOut" }, 12.3);
+
+      /* ---------- phase 6: driver beads swap on bezier arcs ---------- */
+      tl.to("#s13-arc-out", { opacity: 0.8, duration: 0.3, ease: "power1.out" }, 12.7);
+      tl.to("#s13-arc-in", { opacity: 0.7, duration: 0.3, ease: "power1.out" }, 12.8);
+      tl.to("#s13-driver-original", { opacity: 1, duration: 0.2, ease: "power1.out" }, 12.75);
+      tl.to("#s13-driver-substitute", { opacity: 1, duration: 0.2, ease: "power1.out" }, 12.85);
+      tl.to("#s13-driver-original", { keyframes: [
+        { x: 760, y: 780, duration: 0.3, ease: "power1.out" },
+        { x: 880, y: 726, duration: 0.3, ease: "none" },
+        { x: 1000, y: 786, duration: 0.34, ease: "power1.in" }
+      ] }, 12.9);
+      tl.to("#s13-driver-substitute", { keyframes: [
+        { x: 460, y: 736, duration: 0.3, ease: "power1.out" },
+        { x: 580, y: 690, duration: 0.3, ease: "none" },
+        { x: 700, y: 832, duration: 0.34, ease: "power1.in" }
+      ] }, 12.95);
+      tl.to("#s13-arc-out", { opacity: 0, duration: 0.5, ease: "power1.in" }, 13.7);
+      tl.to("#s13-arc-in", { opacity: 0, duration: 0.5, ease: "power1.in" }, 13.8);
+      tl.to("#s13-cab-window", { fill: "#FFD23F", opacity: 0.55, duration: 0.4, ease: "power1.out" }, 13.55);
+      tl.to("#s13-driver-substitute", { opacity: 0, duration: 0.25, ease: "power1.in" }, 13.55);
+
+      /* ---------- phase 7: original driver walks to the hotel ---------- */
+      tl.to("#s13-driver-original", { x: 1624, y: 738, duration: 2.85, ease: "power1.inOut" }, 13.95);
+      tl.to("#s13-driver-original", { opacity: 0, duration: 0.35, ease: "power1.in" }, 17.15);
+      tl.to("#s13-window-glow", { opacity: 1, scaleY: 1, duration: 0.32, ease: "back.out(2.8)" }, 16.59);
+      tl.to("#s13-window-spec", { opacity: 0.7, duration: 0.24, ease: "power1.out" }, 16.66);
+      tl.to("#s13-window-cone", { opacity: 1, duration: 0.55, ease: "power2.out" }, 16.69);
+      tl.to("#s13-flash", { opacity: 0.2, duration: 0.1, ease: "power1.out" }, 16.62);
+      tl.to("#s13-flash", { opacity: 0, duration: 0.42, ease: "power2.out" }, 16.73);
+      tl.to("#s13-window-glow", { opacity: 0.82, duration: 1.0, yoyo: true, repeat: 1, ease: "sine.inOut" }, 16.8);
+
+      /* ---------- phase 8: camera push to the hotel, gate-bumper squeeze ---------- */
+      tl.to("#s13-world", { scale: 1.05, x: -34, y: -10, duration: 3.1, transformOrigin: "58% 54%", ease: "power2.inOut" }, 15.4);
+      tl.to("#s13-mg", { x: -22, duration: 3.0, ease: "power2.inOut" }, 15.5);
+      tl.to("#s13-gate-left", { opacity: 1, x: 0, duration: 0.5, ease: "power2.in" }, 19.15);
+      tl.to("#s13-gate-right", { opacity: 1, x: 0, duration: 0.5, ease: "power2.in" }, 19.2);
+      tl.to("#s13-gate-left", { x: 590, duration: 0.84, ease: "power2.in" }, 19.7);
+      tl.to("#s13-gate-right", { x: -590, duration: 0.84, ease: "power2.in" }, 19.7);
+      tl.to("#s13-world", { scale: 1.16, x: -58, duration: 1.14, transformOrigin: "50% 52%", ease: "power2.in" }, 19.4);
+      tl.to("#s13-speed", { opacity: 0.5, duration: 0.22, ease: "power1.out" }, 19.45);
+      tl.to("#s13-speed", { x: -380, duration: 1.05, ease: "power2.in" }, 19.49);
+      tl.to("#s13-speed", { opacity: 0, duration: 0.3, ease: "power1.in" }, 20.2);
+      tl.to("#s13-hotel", { scale: 1.12, duration: 1.1, transformOrigin: "62% 60%", ease: "power2.in" }, 19.4);
+
+      /* ---------- 3D plane parallax + living holds ---------- */
+      tl.fromTo("#s13-bg", { x: -14, rotationY: -1.2 }, { x: 14, rotationY: 1.2, duration: 20.54, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s13-mg", { x: 8, rotationX: 1.1 }, { x: -8, rotationX: -1.1, duration: 20.54, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s13-fg", { x: -6 }, { x: 6, duration: 20.54, ease: "sine.inOut" }, 0);
+      tl.to("#s13-violet-a", { opacity: 0.64, duration: 3.4, yoyo: true, repeat: 2, ease: "sine.inOut" }, 3.0);
+      tl.to("#s13-badge", { y: -5, duration: 1.6, yoyo: true, repeat: 3, ease: "sine.inOut" }, 2.0);
+      tl.to("#s13-fg-dust circle", { opacity: 0.16, duration: 0.9, stagger: 0.12, ease: "power1.out" }, 2.5);
+      tl.to("#s13-fg-dust", { y: -20, duration: 3.0, yoyo: true, repeat: 1, ease: "sine.inOut" }, 4.0);
+      tl.to("#s13-headlights", { opacity: 0.13, duration: 1.6, yoyo: true, repeat: 3, ease: "sine.inOut" }, 4.4);
+      tl.to("#s13-window-cone", { opacity: 0.72, duration: 1.5, yoyo: true, repeat: 1, ease: "sine.inOut" }, 17.5);
+      tl.to("#s13-canvas-cloth", { rotation: 0.4, duration: 2.2, yoyo: true, repeat: 2, transformOrigin: "50% 0%", ease: "sine.inOut" }, 13.1);
+
+      tl.to({}, { duration: 20.540 }, 0);
+      window.__timelines["13-convoy-swap"] = tl;
+    })();
+  </script>
+</div>
+</template>

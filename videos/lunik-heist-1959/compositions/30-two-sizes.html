@@ -1,0 +1,407 @@
+<template id="s30-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="30-two-sizes" data-width="1920" data-height="1080" data-start="0" data-duration="9.020">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="s30-void-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0A0E24"/>
+          <stop offset="0.52" stop-color="#050814"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s30-top-grad" x1="0" y1="0" x2="0.7" y2="1">
+          <stop offset="0" stop-color="#515A83"/>
+          <stop offset="0.55" stop-color="#B8C0D8"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s30-right-grad" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#515A83"/>
+          <stop offset="0.6" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s30-left-grad" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s30-gold-grad" x1="0" y1="0" x2="0.8" y2="1">
+          <stop offset="0" stop-color="#FF7A1A"/>
+          <stop offset="0.46" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#F4EFE3"/>
+        </linearGradient>
+        <linearGradient id="s30-metal-grad" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#F4EFE3"/>
+          <stop offset="0.35" stop-color="#B8C0D8"/>
+          <stop offset="0.75" stop-color="#515A83"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </linearGradient>
+        <linearGradient id="s30-tape-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFD23F"/>
+          <stop offset="0.5" stop-color="#F4EFE3"/>
+          <stop offset="1" stop-color="#FF7A1A"/>
+        </linearGradient>
+        <radialGradient id="s30-violet-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.5"/>
+          <stop offset="0.6" stop-color="#8E5FD9" stop-opacity="0.14"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s30-ember-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.32"/>
+          <stop offset="0.6" stop-color="#FF7A1A" stop-opacity="0.1"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s30-flash-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.85"/>
+          <stop offset="0.4" stop-color="#FFD23F" stop-opacity="0.4"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="s30-haze" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="26"/>
+        </filter>
+        <filter id="s30-soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="9"/>
+        </filter>
+        <filter id="s30-glow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="7" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <g id="s30-world">
+        <!-- ================= BACKGROUND: abstract dark yard ================= -->
+        <g id="s30-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s30-void-grad)"/>
+          <ellipse cx="960" cy="470" rx="900" ry="300" fill="#151B3B" opacity="0.55" filter="url(#s30-haze)"/>
+          <ellipse cx="960" cy="820" rx="840" ry="210" fill="url(#s30-violet-grad)" opacity="0.55"/>
+          <ellipse cx="960" cy="700" rx="300" ry="240" fill="url(#s30-ember-grad)"/>
+          <g stroke="#515A83" stroke-width="4" opacity="0.2">
+            <line x1="0" y1="560" x2="1920" y2="560"/>
+            <line x1="160" y1="1080" x2="720" y2="620"/>
+            <line x1="520" y1="1080" x2="840" y2="620"/>
+            <line x1="960" y1="1080" x2="960" y2="620"/>
+            <line x1="1400" y1="1080" x2="1080" y2="620"/>
+            <line x1="1760" y1="1080" x2="1200" y2="620"/>
+            <line x1="300" y1="700" x2="1620" y2="700"/>
+            <line x1="400" y1="790" x2="1520" y2="790"/>
+            <line x1="500" y1="880" x2="1420" y2="880"/>
+          </g>
+          <g opacity="0.22" fill="#151B3B" stroke="#515A83" stroke-width="4">
+            <path d="M 250 640 L 360 576 L 440 622 L 330 686 Z"/>
+            <path d="M 330 686 L 330 750 L 440 686 L 440 622"/>
+            <path d="M 1510 610 L 1620 546 L 1700 592 L 1590 656 Z"/>
+            <path d="M 1590 656 L 1590 720 L 1700 656 L 1700 592"/>
+          </g>
+          <g fill="#B8C0D8">
+            <circle cx="220" cy="180" r="5" opacity="0.26"/>
+            <circle cx="1700" cy="210" r="4" opacity="0.24"/>
+            <circle cx="330" cy="920" r="4" opacity="0.2"/>
+            <circle cx="1620" cy="940" r="5" opacity="0.2"/>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: two solid crate volumes ================= -->
+        <g id="s30-mg" transform="translate(0 0)">
+          <g id="s30-mg-drift">
+            <ellipse cx="975" cy="700" rx="110" ry="230" fill="url(#s30-violet-grad)"/>
+            <ellipse cx="620" cy="820" rx="300" ry="70" fill="#050814" opacity="0.7" filter="url(#s30-haze)"/>
+            <ellipse cx="1180" cy="820" rx="260" ry="60" fill="#050814" opacity="0.7" filter="url(#s30-haze)"/>
+
+            <!-- ===== crate A: 20 x 11 x 14 ===== -->
+            <g id="s30-crate-a">
+              <path class="s30-a-base" d="M 620 800 L 862.5 660 L 729.1 583 L 486.6 723 Z"
+                    fill="none" stroke="#FF7A1A" stroke-width="24" stroke-linejoin="round" stroke-dasharray="1200" stroke-dashoffset="1200"/>
+              <g class="s30-a-vert" stroke="#FF7A1A" stroke-width="24" stroke-linecap="round">
+                <line x1="620" y1="800" x2="620" y2="604"/>
+                <line x1="862.5" y1="660" x2="862.5" y2="464"/>
+                <line x1="729.1" y1="583" x2="729.1" y2="387"/>
+                <line x1="486.6" y1="723" x2="486.6" y2="527"/>
+              </g>
+              <polygon class="s30-a-face-left" points="620,800 486.6,723 486.6,527 620,604" fill="url(#s30-left-grad)" opacity="0"/>
+              <polygon class="s30-a-face-right" points="620,800 862.5,660 862.5,464 620,604" fill="url(#s30-right-grad)" opacity="0"/>
+              <polygon class="s30-a-face-top" points="620,604 862.5,464 729.1,387 486.6,527" fill="url(#s30-top-grad)" opacity="0"/>
+              <polygon class="s30-a-rim-top" points="620,604 862.5,464 729.1,387 486.6,527"
+                       fill="none" stroke="#FF7A1A" stroke-width="24" stroke-linejoin="round" stroke-dasharray="1200" stroke-dashoffset="1200"/>
+              <path class="s30-a-rim-base" d="M 620 800 L 862.5 660 L 729.1 583 L 486.6 723 Z"
+                    fill="none" stroke="#FF7A1A" stroke-width="24" stroke-linejoin="round" stroke-dasharray="1200" stroke-dashoffset="1200"/>
+              <g class="s30-a-slats" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round" opacity="0.55">
+                <line x1="620" y1="740" x2="862.5" y2="600"/>
+                <line x1="620" y1="680" x2="862.5" y2="540"/>
+                <line x1="486.6" y1="663" x2="620" y2="740"/>
+                <line x1="486.6" y1="603" x2="620" y2="680"/>
+              </g>
+              <g class="s30-beads" fill="#FFD23F">
+                <circle cx="620" cy="604" r="12"/>
+                <circle cx="862.5" cy="464" r="12"/>
+                <circle cx="729.1" cy="387" r="12"/>
+                <circle cx="486.6" cy="527" r="12"/>
+              </g>
+              <path class="s30-inner-top" d="M 620 624 L 842 484 L 729 407 L 507 547 Z" fill="none" stroke="#FFD23F" stroke-width="6" opacity="0.55"/>
+            </g>
+
+            <!-- ===== crate B: 17 x 8 ===== -->
+            <g id="s30-crate-b">
+              <path class="s30-b-base" d="M 1180 800 L 1386.1 681 L 1289.1 625 L 1083 744 Z"
+                    fill="none" stroke="#FF7A1A" stroke-width="24" stroke-linejoin="round" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+              <g class="s30-b-vert" stroke="#FF7A1A" stroke-width="24" stroke-linecap="round">
+                <line x1="1180" y1="800" x2="1180" y2="688"/>
+                <line x1="1386.1" y1="681" x2="1386.1" y2="569"/>
+                <line x1="1289.1" y1="625" x2="1289.1" y2="513"/>
+                <line x1="1083" y1="744" x2="1083" y2="632"/>
+              </g>
+              <polygon class="s30-b-face-left" points="1180,800 1083,744 1083,632 1180,688" fill="url(#s30-left-grad)" opacity="0"/>
+              <polygon class="s30-b-face-right" points="1180,800 1386.1,681 1386.1,569 1180,688" fill="url(#s30-right-grad)" opacity="0"/>
+              <polygon class="s30-b-face-top" points="1180,688 1386.1,569 1289.1,513 1083,632" fill="url(#s30-top-grad)" opacity="0"/>
+              <polygon class="s30-b-rim-top" points="1180,688 1386.1,569 1289.1,513 1083,632"
+                       fill="none" stroke="#FF7A1A" stroke-width="24" stroke-linejoin="round" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+              <path class="s30-b-rim-base" d="M 1180 800 L 1386.1 681 L 1289.1 625 L 1083 744 Z"
+                    fill="none" stroke="#FF7A1A" stroke-width="24" stroke-linejoin="round" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+              <g class="s30-b-slats" stroke="#B8C0D8" stroke-width="8" stroke-linecap="round" opacity="0.55">
+                <line x1="1180" y1="740" x2="1386.1" y2="621"/>
+                <line x1="1083" y1="694" x2="1180" y2="750"/>
+              </g>
+              <g class="s30-beads" fill="#FFD23F">
+                <circle cx="1180" cy="688" r="12"/>
+                <circle cx="1386.1" cy="569" r="12"/>
+                <circle cx="1289.1" cy="513" r="12"/>
+                <circle cx="1083" cy="632" r="12"/>
+              </g>
+              <path class="s30-inner-top" d="M 1180 706 L 1367 598 L 1289 531 L 1101 639 Z" fill="none" stroke="#FFD23F" stroke-width="6" opacity="0.55"/>
+            </g>
+
+            <!-- ===== rulers on crate A ===== -->
+            <g transform="translate(642 838) rotate(-30)">
+              <g class="s30-ruler" id="s30-a-len-ruler" stroke="#FFD23F" stroke-width="6" stroke-linecap="round">
+                <line x1="0" y1="0" x2="280" y2="0" stroke-width="12"/>
+                <line x1="0" y1="-11" x2="0" y2="11" stroke-width="10"/>
+                <line x1="280" y1="-11" x2="280" y2="11" stroke-width="10"/>
+                <line x1="28" y1="-7" x2="28" y2="7"/>
+                <line x1="56" y1="-7" x2="56" y2="7"/>
+                <line x1="84" y1="-7" x2="84" y2="7"/>
+                <line x1="112" y1="-7" x2="112" y2="7"/>
+                <line x1="140" y1="-7" x2="140" y2="7"/>
+                <line x1="168" y1="-7" x2="168" y2="7"/>
+                <line x1="196" y1="-7" x2="196" y2="7"/>
+                <line x1="224" y1="-7" x2="224" y2="7"/>
+                <line x1="252" y1="-7" x2="252" y2="7"/>
+              </g>
+              <g class="s30-num" id="s30-a-len-num" transform="translate(109 18)" stroke="#FFD23F" stroke-width="6" stroke-linecap="round" fill="none">
+                <path d="M 0 0 L 26 0 L 26 22 L 0 22 L 0 44 L 26 44"/>
+                <path d="M 36 0 L 62 0 L 62 44 L 36 44 Z"/>
+              </g>
+            </g>
+            <g transform="translate(467 758) rotate(30)">
+              <g class="s30-ruler" id="s30-a-wid-ruler" stroke="#FFD23F" stroke-width="6" stroke-linecap="round">
+                <line x1="0" y1="0" x2="154" y2="0" stroke-width="12"/>
+                <line x1="0" y1="-11" x2="0" y2="11" stroke-width="10"/>
+                <line x1="154" y1="-11" x2="154" y2="11" stroke-width="10"/>
+                <line x1="28" y1="-7" x2="28" y2="7"/>
+                <line x1="56" y1="-7" x2="56" y2="7"/>
+                <line x1="84" y1="-7" x2="84" y2="7"/>
+                <line x1="112" y1="-7" x2="112" y2="7"/>
+                <line x1="140" y1="-7" x2="140" y2="7"/>
+              </g>
+              <g class="s30-num" id="s30-a-wid-num" transform="translate(33 18)" stroke="#FFD23F" stroke-width="6" stroke-linecap="round" fill="none">
+                <path d="M 26 0 L 26 44"/>
+                <path d="M 62 0 L 62 44"/>
+              </g>
+            </g>
+            <g transform="translate(440 800) rotate(-90)">
+              <g class="s30-ruler" id="s30-a-hgt-ruler" stroke="#FFD23F" stroke-width="6" stroke-linecap="round">
+                <line x1="0" y1="0" x2="196" y2="0" stroke-width="12"/>
+                <line x1="0" y1="-11" x2="0" y2="11" stroke-width="10"/>
+                <line x1="196" y1="-11" x2="196" y2="11" stroke-width="10"/>
+                <line x1="28" y1="-7" x2="28" y2="7"/>
+                <line x1="56" y1="-7" x2="56" y2="7"/>
+                <line x1="84" y1="-7" x2="84" y2="7"/>
+                <line x1="112" y1="-7" x2="112" y2="7"/>
+                <line x1="140" y1="-7" x2="140" y2="7"/>
+                <line x1="168" y1="-7" x2="168" y2="7"/>
+              </g>
+              <g class="s30-num" id="s30-a-hgt-num" transform="translate(54 -64)" stroke="#FFD23F" stroke-width="6" stroke-linecap="round" fill="none">
+                <path d="M 26 0 L 26 44"/>
+                <path d="M 36 0 L 36 22 L 62 22 M 62 0 L 62 44"/>
+              </g>
+            </g>
+
+            <!-- ===== rulers on crate B ===== -->
+            <g transform="translate(1202 838) rotate(-30)">
+              <g class="s30-ruler" id="s30-b-len-ruler" stroke="#FFD23F" stroke-width="6" stroke-linecap="round">
+                <line x1="0" y1="0" x2="238" y2="0" stroke-width="12"/>
+                <line x1="0" y1="-11" x2="0" y2="11" stroke-width="10"/>
+                <line x1="238" y1="-11" x2="238" y2="11" stroke-width="10"/>
+                <line x1="28" y1="-7" x2="28" y2="7"/>
+                <line x1="56" y1="-7" x2="56" y2="7"/>
+                <line x1="84" y1="-7" x2="84" y2="7"/>
+                <line x1="112" y1="-7" x2="112" y2="7"/>
+                <line x1="140" y1="-7" x2="140" y2="7"/>
+                <line x1="168" y1="-7" x2="168" y2="7"/>
+                <line x1="196" y1="-7" x2="196" y2="7"/>
+                <line x1="224" y1="-7" x2="224" y2="7"/>
+              </g>
+              <g class="s30-num" id="s30-b-len-num" transform="translate(75 18)" stroke="#FFD23F" stroke-width="6" stroke-linecap="round" fill="none">
+                <path d="M 26 0 L 26 44"/>
+                <path d="M 36 0 L 62 0 L 62 44"/>
+              </g>
+            </g>
+            <g transform="translate(1040 800) rotate(-90)">
+              <g class="s30-ruler" id="s30-b-hgt-ruler" stroke="#FFD23F" stroke-width="6" stroke-linecap="round">
+                <line x1="0" y1="0" x2="112" y2="0" stroke-width="12"/>
+                <line x1="0" y1="-11" x2="0" y2="11" stroke-width="10"/>
+                <line x1="112" y1="-11" x2="112" y2="11" stroke-width="10"/>
+                <line x1="28" y1="-7" x2="28" y2="7"/>
+                <line x1="56" y1="-7" x2="56" y2="7"/>
+                <line x1="84" y1="-7" x2="84" y2="7"/>
+              </g>
+              <g class="s30-num" id="s30-b-hgt-num" transform="translate(43 -64)" stroke="#FFD23F" stroke-width="6" stroke-linecap="round" fill="none">
+                <path d="M 0 0 L 26 0 L 26 44 L 0 44 Z M 0 22 L 26 22"/>
+              </g>
+            </g>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND: tape, badge, snap wipe ================= -->
+        <g id="s30-fg">
+          <g id="s30-tape" transform="translate(890 806)">
+            <g id="s30-tape-jitter">
+            <g id="s30-tape-stretch">
+              <rect x="0" y="-5" width="170" height="10" rx="4" fill="url(#s30-tape-grad)" stroke="#050814" stroke-width="4"/>
+              <g stroke="#050814" stroke-width="4" opacity="0.65">
+                <line x1="17" y1="-5" x2="17" y2="0"/>
+                <line x1="34" y1="-5" x2="34" y2="0"/>
+                <line x1="51" y1="-5" x2="51" y2="0"/>
+                <line x1="68" y1="-5" x2="68" y2="0"/>
+                <line x1="85" y1="-5" x2="85" y2="0"/>
+                <line x1="102" y1="-5" x2="102" y2="0"/>
+                <line x1="119" y1="-5" x2="119" y2="0"/>
+                <line x1="136" y1="-5" x2="136" y2="0"/>
+                <line x1="153" y1="-5" x2="153" y2="0"/>
+              </g>
+              <rect x="-14" y="-18" width="14" height="36" rx="4" fill="url(#s30-metal-grad)" stroke="#050814" stroke-width="4"/>
+              <rect x="170" y="-18" width="14" height="36" rx="4" fill="url(#s30-metal-grad)" stroke="#050814" stroke-width="4"/>
+            </g>
+            </g>
+          </g>
+          <g id="s30-tape-flash" transform="translate(975 806)">
+            <ellipse cx="0" cy="0" rx="120" ry="42" fill="url(#s30-flash-grad)" opacity="0"/>
+          </g>
+
+          <g id="s30-badge" transform="translate(960 132)">
+            <g id="s30-badge-inner">
+              <rect x="-210" y="-54" width="420" height="108" rx="54" fill="#050814" opacity="0.92" stroke="#FFD23F" stroke-width="8"/>
+              <rect x="-194" y="-38" width="388" height="76" rx="38" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.4"/>
+              <g class="s30-beads" fill="#FFD23F">
+                <circle cx="-172" cy="0" r="8"/>
+                <circle cx="172" cy="0" r="8"/>
+              </g>
+              <text x="0" y="17" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="48"
+                    fill="#F4EFE3" stroke="#050814" stroke-width="10" paint-order="stroke fill" letter-spacing="2"
+                    textLength="300" lengthAdjust="spacingAndGlyphs">TWO SIZES</text>
+            </g>
+          </g>
+
+          <g id="s30-snap-wipe">
+            <rect x="0" y="360" width="1400" height="26" fill="url(#s30-gold-grad)"/>
+            <rect x="0" y="700" width="1400" height="26" fill="url(#s30-gold-grad)"/>
+          </g>
+          <rect id="s30-flash" x="0" y="0" width="1920" height="1080" fill="#FFD23F" opacity="0"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:radial-gradient(circle at 50% 54%, rgba(142,95,217,0.12), transparent 70%);}
+    .scene-persp{position:absolute;inset:0;perspective:1900px;perspective-origin:50% 52%;}
+    #s30-world,#s30-mg,#s30-mg-drift,#s30-crate-a,#s30-crate-b{transform-style:preserve-3d;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      gsap.set("#s30-crate-a", { rotationX: 4, rotationY: -3, transformOrigin: "50% 50%" });
+      gsap.set("#s30-crate-b", { rotationX: 4, rotationY: 3, transformOrigin: "50% 50%" });
+      gsap.set(".s30-a-base", { strokeDashoffset: 1200 });
+      gsap.set(".s30-a-vert", { scaleY: 0, transformOrigin: "50% 100%" });
+      gsap.set(".s30-a-face-left, .s30-a-face-right, .s30-a-face-top", { opacity: 0 });
+      gsap.set(".s30-a-rim-top, .s30-a-rim-base", { strokeDashoffset: 1200 });
+      gsap.set(".s30-a-slats line", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set(".s30-b-base", { strokeDashoffset: 1000 });
+      gsap.set(".s30-b-vert", { scaleY: 0, transformOrigin: "50% 100%" });
+      gsap.set(".s30-b-face-left, .s30-b-face-right, .s30-b-face-top", { opacity: 0 });
+      gsap.set(".s30-b-rim-top, .s30-b-rim-base", { strokeDashoffset: 1000 });
+      gsap.set(".s30-b-slats line", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set(".s30-beads", { scale: 0, transformOrigin: "50% 50%" });
+      gsap.set(".s30-inner-top", { opacity: 0 });
+      gsap.set(".s30-ruler", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set(".s30-num", { scale: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s30-tape-stretch", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s30-tape-flash", { opacity: 0 });
+      gsap.set("#s30-badge-inner", { opacity: 0, scale: 1.4, rotation: -4, transformOrigin: "50% 50%" });
+      gsap.set("#s30-snap-wipe rect", { x: -1400 });
+      gsap.set("#s30-flash", { opacity: 0 });
+
+      /* ---------- phase 1: crate A builds from its base rails ---------- */
+      tl.to(".s30-a-base", { strokeDashoffset: 0, duration: 0.8, ease: "power2.inOut" }, 0.2);
+      tl.to(".s30-a-vert", { scaleY: 1, duration: 0.6, stagger: 0.08, ease: "power3.out" }, 0.8);
+      tl.to(".s30-a-face-left, .s30-a-face-right, .s30-a-face-top", { opacity: 1, duration: 0.9, stagger: 0.1, ease: "power2.out" }, 1.0);
+      tl.to(".s30-a-rim-top", { strokeDashoffset: 0, duration: 0.8, ease: "power2.inOut" }, 1.5);
+      tl.to(".s30-a-rim-base", { strokeDashoffset: 0, duration: 0.8, ease: "power2.inOut" }, 1.6);
+      tl.to(".s30-a-slats line", { scaleX: 1, duration: 0.5, stagger: 0.08, ease: "power2.out" }, 2.0);
+      tl.to(".s30-beads", { scale: 1, duration: 0.5, stagger: 0.08, ease: "back.out(2.4)" }, 2.5);
+      tl.to(".s30-inner-top", { opacity: 1, duration: 0.6, stagger: 0.2, ease: "power2.out" }, 2.6);
+
+      /* ---------- phase 2: crate B builds shorter and narrower ---------- */
+      tl.to(".s30-b-base", { strokeDashoffset: 0, duration: 0.7, ease: "power2.inOut" }, 2.2);
+      tl.to(".s30-b-vert", { scaleY: 1, duration: 0.5, stagger: 0.07, ease: "power3.out" }, 2.7);
+      tl.to(".s30-b-face-left, .s30-b-face-right, .s30-b-face-top", { opacity: 1, duration: 0.8, stagger: 0.1, ease: "power2.out" }, 2.9);
+      tl.to(".s30-b-rim-top", { strokeDashoffset: 0, duration: 0.7, ease: "power2.inOut" }, 3.4);
+      tl.to(".s30-b-rim-base", { strokeDashoffset: 0, duration: 0.7, ease: "power2.inOut" }, 3.5);
+      tl.to(".s30-b-slats line", { scaleX: 1, duration: 0.5, stagger: 0.1, ease: "power2.out" }, 3.9);
+
+      /* ---------- phase 3: rulers extend with overshoot and numbers snap ---------- */
+      tl.to("#s30-a-len-ruler", { scaleX: 1, duration: 0.6, ease: "back.out(2.2)" }, 3.8);
+      tl.to("#s30-a-wid-ruler", { scaleX: 1, duration: 0.6, ease: "back.out(2.2)" }, 4.1);
+      tl.to("#s30-a-hgt-ruler", { scaleX: 1, duration: 0.6, ease: "back.out(2.2)" }, 4.4);
+      tl.to("#s30-a-len-num", { scale: 1, duration: 0.4, ease: "back.out(3)" }, 4.5);
+      tl.to("#s30-a-wid-num", { scale: 1, duration: 0.4, ease: "back.out(3)" }, 4.8);
+      tl.to("#s30-a-hgt-num", { scale: 1, duration: 0.4, ease: "back.out(3)" }, 5.1);
+      tl.to("#s30-b-len-ruler", { scaleX: 1, duration: 0.6, ease: "back.out(2.2)" }, 4.8);
+      tl.to("#s30-b-hgt-ruler", { scaleX: 1, duration: 0.6, ease: "back.out(2.2)" }, 5.1);
+      tl.to("#s30-b-len-num", { scale: 1, duration: 0.4, ease: "back.out(3)" }, 5.5);
+      tl.to("#s30-b-hgt-num", { scale: 1, duration: 0.4, ease: "back.out(3)" }, 5.8);
+      tl.to("#s30-badge-inner", { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(2.6)" }, 1.2);
+
+      /* ---------- phase 4: measuring tape stretches and snaps ---------- */
+      tl.to("#s30-tape-stretch", { scaleX: 1, duration: 0.5, ease: "power2.out" }, 5.8);
+      tl.to("#s30-tape-stretch", { scaleX: 1.12, duration: 0.6, ease: "power2.out" }, 6.4);
+      tl.to("#s30-tape-stretch", { scaleX: 0.95, duration: 0.5, ease: "elastic.out(1,0.25)" }, 7.0);
+      tl.to("#s30-tape-stretch", { scaleX: 1.0, duration: 0.35, ease: "sine.inOut" }, 7.5);
+      tl.to("#s30-tape-flash", { opacity: 0.9, duration: 0.15, ease: "power2.out" }, 7.0);
+      tl.to("#s30-tape-flash", { opacity: 0, duration: 0.5, ease: "power2.in" }, 7.15);
+      tl.to("#s30-tape-jitter", { x: 4, duration: 0.12, yoyo: true, repeat: 3, ease: "sine.inOut" }, 7.1);
+
+      /* ---------- living holds ---------- */
+      tl.to("#s30-crate-a", { y: -4, duration: 0.6, yoyo: true, repeat: 2, ease: "sine.inOut" }, 7.1);
+      tl.to("#s30-crate-b", { y: 4, duration: 0.6, yoyo: true, repeat: 2, ease: "sine.inOut" }, 7.2);
+      tl.to("#s30-badge-inner", { y: -5, duration: 0.6, yoyo: true, repeat: 2, ease: "sine.inOut" }, 6.8);
+
+      /* ---------- camera pan and parallax planes ---------- */
+      tl.fromTo("#s30-world", { x: 22, scale: 1.0 }, { x: -22, scale: 1.04, duration: 9.02, transformOrigin: "50% 52%", ease: "sine.inOut" }, 0);
+      tl.fromTo("#s30-bg", { x: 14 }, { x: -14, duration: 9.02, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s30-mg-drift", { x: -10 }, { x: 10, duration: 9.02, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s30-fg", { x: 18 }, { x: -18, duration: 9.02, ease: "sine.inOut" }, 0);
+
+      /* ---------- exit: swift dimension-ruler snap ---------- */
+      tl.to("#s30-snap-wipe rect", { x: 1400, duration: 0.45, stagger: 0.08, ease: "power2.in" }, 8.25);
+      tl.to("#s30-flash", { opacity: 0.3, duration: 0.1, ease: "power1.out" }, 8.6);
+      tl.to("#s30-flash", { opacity: 0, duration: 0.14, ease: "power1.in" }, 8.72);
+
+      tl.to({}, { duration: 9.020 }, 0);
+      window.__timelines["30-two-sizes"] = tl;
+    })();
+  </script>
+</div>
+</template>

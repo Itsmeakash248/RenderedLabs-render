@@ -1,0 +1,587 @@
+<template id="s19-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="19-hundred-thirty-bolts" data-width="1920" data-height="1080" data-start="0" data-duration="18.640">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="s19-baywall" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#0A0E24"/>
+          <stop offset="0.5" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s19-cap" x1="0.15" y1="0" x2="0.85" y2="1">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.92"/>
+          <stop offset="0.24" stop-color="#B8C0D8"/>
+          <stop offset="0.58" stop-color="#515A83"/>
+          <stop offset="0.86" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s19-cap-rim" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#F4EFE3"/>
+          <stop offset="0.4" stop-color="#B8C0D8"/>
+          <stop offset="0.72" stop-color="#515A83"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </linearGradient>
+        <linearGradient id="s19-tank" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#0A0E24"/>
+          <stop offset="0.28" stop-color="#515A83"/>
+          <stop offset="0.52" stop-color="#B8C0D8"/>
+          <stop offset="0.78" stop-color="#515A83"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s19-gold" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FF7A1A"/>
+          <stop offset="0.44" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#FFD23F"/>
+        </linearGradient>
+        <linearGradient id="s19-card" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#151B3B" stop-opacity="0.9"/>
+          <stop offset="0.6" stop-color="#0A0E24" stop-opacity="0.86"/>
+          <stop offset="1" stop-color="#050814" stop-opacity="0.92"/>
+        </linearGradient>
+        <linearGradient id="s19-glass" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/>
+          <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.025"/>
+          <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="s19-ember" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.62"/>
+          <stop offset="0.5" stop-color="#FF7A1A" stop-opacity="0.2"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s19-violet" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.46"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s19-glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.85"/>
+          <stop offset="0.42" stop-color="#FF7A1A" stop-opacity="0.3"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s19-baylight" cx="50%" cy="42%" r="58%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.5"/>
+          <stop offset="0.55" stop-color="#151B3B" stop-opacity="0.4"/>
+          <stop offset="1" stop-color="#050814" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="s19-wire" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FFD23F"/>
+          <stop offset="0.5" stop-color="#F4EFE3"/>
+          <stop offset="1" stop-color="#FFD23F"/>
+        </linearGradient>
+        <pattern id="s19-rivets" width="120" height="120" patternUnits="userSpaceOnUse">
+          <circle cx="16" cy="16" r="4" fill="#B8C0D8" opacity="0.22"/>
+          <circle cx="76" cy="76" r="4" fill="#B8C0D8" opacity="0.16"/>
+        </pattern>
+        <clipPath id="s19-plate-clip">
+          <rect x="440" y="61" width="1390" height="283.4" rx="8"/>
+        </clipPath>
+        <clipPath id="s19-bay-clip">
+          <circle cx="880" cy="760" r="400"/>
+        </clipPath>
+        <clipPath id="s19-counter-clip">
+          <rect x="1382" y="588" width="296" height="128" rx="26"/>
+        </clipPath>
+        <filter id="s19-goldGlow" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="7" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="s19-haze" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="30"/>
+        </filter>
+        <filter id="s19-soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="10"/>
+        </filter>
+        <filter id="s19-shadow" x="-30%" y="-30%" width="160%" height="180%">
+          <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#050814" flood-opacity="0.72"/>
+        </filter>
+      </defs>
+
+      <g id="s19-world">
+        <!-- ================= BACKGROUND: engine bay wall ================= -->
+        <g id="s19-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s19-baywall)"/>
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s19-rivets)"/>
+          <ellipse id="s19-violet-a" cx="1240" cy="380" rx="720" ry="420" fill="url(#s19-violet)"/>
+          <ellipse id="s19-violet-b" cx="420" cy="700" rx="540" ry="400" fill="url(#s19-violet)" opacity="0.7"/>
+          <g id="s19-worklamp">
+            <rect x="1762" y="120" width="12" height="300" fill="#0A0E24" stroke="#515A83" stroke-width="4"/>
+            <path d="M 1768 120 q 0 -22 -26 -22 h -30" fill="none" stroke="#515A83" stroke-width="10" stroke-linecap="round"/>
+            <path d="M 1700 96 h 46 l 14 24 h -74 z" fill="#151B3B" stroke="#B8C0D8" stroke-width="5" stroke-linejoin="round"/>
+            <circle cx="1673" cy="230" r="150" fill="url(#s19-ember)" opacity="0.9"/>
+            <path d="M 1660 124 L 1730 124 L 1790 470 L 1560 470 Z" fill="#FF7A1A" opacity="0.14" filter="url(#s19-soft)"/>
+          </g>
+          <g stroke="#515A83" stroke-width="10" opacity="0.35">
+            <path d="M 60 200 q 300 40 300 320"/>
+            <path d="M 1860 700 q -300 -20 -300 -280"/>
+          </g>
+          <g id="s19-bg-dust" fill="#F4EFE3">
+            <circle cx="260" cy="320" r="4" opacity="0.18"/>
+            <circle cx="540" cy="240" r="3" opacity="0.14"/>
+            <circle cx="1440" cy="980" r="4" opacity="0.16"/>
+            <circle cx="1720" cy="820" r="3" opacity="0.12"/>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: engine bay + base cap ================= -->
+        <g id="s19-mg">
+          <!-- empty engine bay, revealed when the cap slings aside -->
+          <g id="s19-bay">
+            <circle cx="880" cy="760" r="400" fill="#050814" opacity="0.96"/>
+            <circle cx="880" cy="760" r="400" fill="url(#s19-baylight)"/>
+            <g clip-path="url(#s19-bay-clip)">
+              <circle cx="880" cy="760" r="400" fill="none" stroke="#515A83" stroke-width="18" opacity="0.7"/>
+              <circle cx="880" cy="760" r="352" fill="none" stroke="#515A83" stroke-width="8" opacity="0.4"/>
+              <g stroke="#515A83" stroke-width="12" opacity="0.55">
+                <line x1="880" y1="360" x2="880" y2="470"/>
+                <line x1="880" y1="1050" x2="880" y2="940"/>
+                <line x1="480" y1="760" x2="590" y2="760"/>
+                <line x1="1280" y1="760" x2="1170" y2="760"/>
+              </g>
+
+              <!-- empty mount ring: no engine bell -->
+              <g id="s19-mount">
+                <circle cx="880" cy="770" r="176" fill="#0A0E24" stroke="#515A83" stroke-width="16"/>
+                <circle cx="880" cy="770" r="136" fill="#050814" stroke="#0A0E24" stroke-width="8"/>
+                <g fill="#B8C0D8" opacity="0.55">
+                  <circle cx="880" cy="614" r="9"/>
+                  <circle cx="955" cy="634" r="9"/>
+                  <circle cx="1020" cy="688" r="9"/>
+                  <circle cx="1020" cy="770" r="9"/>
+                  <circle cx="1020" cy="852" r="9"/>
+                  <circle cx="955" cy="906" r="9"/>
+                  <circle cx="880" cy="926" r="9"/>
+                  <circle cx="805" cy="906" r="9"/>
+                  <circle cx="740" cy="852" r="9"/>
+                  <circle cx="740" cy="770" r="9"/>
+                  <circle cx="740" cy="688" r="9"/>
+                  <circle cx="805" cy="634" r="9"/>
+                </g>
+                <circle cx="880" cy="770" r="176" fill="none" stroke="#FFD23F" stroke-width="4" opacity="0.22"/>
+              </g>
+
+              <!-- mounting brackets that stayed -->
+              <g id="s19-brackets" stroke="#B8C0D8" stroke-width="16" stroke-linecap="round" fill="none">
+                <path class="s19-bracket" d="M 620 560 L 700 560 L 700 620"/>
+                <path class="s19-bracket" d="M 1140 560 L 1060 560 L 1060 620"/>
+                <path class="s19-bracket" d="M 620 940 L 700 940 L 700 880"/>
+                <path class="s19-bracket" d="M 1140 940 L 1060 940 L 1060 880"/>
+              </g>
+              <g fill="#515A83" opacity="0.7">
+                <circle cx="626" cy="566" r="10"/>
+                <circle cx="1134" cy="566" r="10"/>
+                <circle cx="626" cy="934" r="10"/>
+                <circle cx="1134" cy="934" r="10"/>
+              </g>
+
+              <!-- fuel and oxidizer tanks -->
+              <g id="s19-tanks">
+                <g id="s19-tank-a">
+                  <rect x="686" y="700" width="118" height="240" rx="20" fill="url(#s19-tank)" stroke="#050814" stroke-width="8"/>
+                  <ellipse cx="745" cy="704" rx="59" ry="18" fill="#B8C0D8" stroke="#050814" stroke-width="6"/>
+                  <ellipse cx="745" cy="940" rx="59" ry="18" fill="#151B3B" stroke="#050814" stroke-width="6"/>
+                  <g stroke="#0A0E24" stroke-width="6" opacity="0.6">
+                    <line x1="690" y1="760" x2="800" y2="760"/>
+                    <line x1="690" y1="880" x2="800" y2="880"/>
+                  </g>
+                  <rect x="728" y="960" width="34" height="26" fill="#515A83" stroke="#050814" stroke-width="5"/>
+                </g>
+                <g id="s19-tank-b">
+                  <rect x="956" y="700" width="118" height="240" rx="20" fill="url(#s19-tank)" stroke="#050814" stroke-width="8"/>
+                  <ellipse cx="1015" cy="704" rx="59" ry="18" fill="#B8C0D8" stroke="#050814" stroke-width="6"/>
+                  <ellipse cx="1015" cy="940" rx="59" ry="18" fill="#151B3B" stroke="#050814" stroke-width="6"/>
+                  <g stroke="#0A0E24" stroke-width="6" opacity="0.6">
+                    <line x1="960" y1="760" x2="1070" y2="760"/>
+                    <line x1="960" y1="880" x2="1070" y2="880"/>
+                  </g>
+                  <rect x="998" y="960" width="34" height="26" fill="#515A83" stroke="#050814" stroke-width="5"/>
+                </g>
+              </g>
+              <ellipse cx="880" cy="960" rx="330" ry="50" fill="#050814" opacity="0.6" filter="url(#s19-haze)"/>
+            </g>
+          </g>
+
+          <!-- base cap, hero -->
+          <g id="s19-cap">
+            <ellipse cx="880" cy="1020" rx="310" ry="44" fill="#050814" opacity="0.58" filter="url(#s19-haze)"/>
+            <circle id="s19-cap-outline" cx="880" cy="750" r="276" fill="url(#s19-cap)" stroke="#B8C0D8" stroke-width="26"/>
+            <circle cx="880" cy="750" r="276" fill="none" stroke="#F4EFE3" stroke-width="5" opacity="0.32"/>
+            <circle cx="880" cy="750" r="248" fill="none" stroke="#0A0E24" stroke-width="7" opacity="0.6"/>
+            <circle cx="880" cy="750" r="196" fill="none" stroke="#515A83" stroke-width="8" opacity="0.55"/>
+            <circle cx="880" cy="750" r="200" fill="none" stroke="#B8C0D8" stroke-width="3" opacity="0.4"/>
+            <g id="s19-ribs" stroke="#0A0E24" stroke-width="12" stroke-linecap="round" opacity="0.62">
+              <line x1="880" y1="510" x2="880" y2="610"/>
+              <line x1="990" y1="545" x2="942" y2="631"/>
+              <line x1="1050" y1="640" x2="952" y2="690"/>
+              <line x1="1050" y1="760" x2="952" y2="760"/>
+              <line x1="1050" y1="880" x2="952" y2="830"/>
+              <line x1="990" y1="975" x2="942" y2="889"/>
+              <line x1="880" y1="1010" x2="880" y2="910"/>
+              <line x1="770" y1="975" x2="818" y2="889"/>
+              <line x1="710" y1="880" x2="808" y2="830"/>
+              <line x1="710" y1="760" x2="808" y2="760"/>
+              <line x1="710" y1="640" x2="808" y2="690"/>
+              <line x1="770" y1="545" x2="818" y2="631"/>
+            </g>
+            <circle cx="880" cy="750" r="96" fill="#151B3B" stroke="#B8C0D8" stroke-width="10"/>
+            <circle cx="880" cy="750" r="62" fill="#0A0E24" stroke="#515A83" stroke-width="6"/>
+            <g id="s19-hub" fill="#B8C0D8">
+              <circle cx="880" cy="700" r="9"/>
+              <circle cx="923" cy="725" r="9"/>
+              <circle cx="923" cy="775" r="9"/>
+              <circle cx="880" cy="800" r="9"/>
+              <circle cx="837" cy="775" r="9"/>
+              <circle cx="837" cy="725" r="9"/>
+            </g>
+            <circle cx="880" cy="750" r="20" fill="#FFD23F" opacity="0.25" filter="url(#s19-goldGlow)"/>
+
+            <!-- 130 square-headed bolts: 130 dash segments on the ring -->
+            <circle id="s19-bolt-ring" cx="880" cy="750" r="300" fill="none" stroke="#B8C0D8" stroke-width="26" stroke-dasharray="10 4.4997"/>
+            <circle cx="880" cy="750" r="300" fill="none" stroke="#050814" stroke-width="4" opacity="0.5"/>
+            <circle cx="880" cy="750" r="286" fill="none" stroke="#0A0E24" stroke-width="6" opacity="0.6"/>
+
+            <!-- thirteen hero bolt heads that turn and seat -->
+            <g class="s19-hero-bolt" transform="rotate(0 880 750)">
+              <rect class="s19-bolt-head" x="867" y="437" width="26" height="26" rx="4" fill="#FFD23F" stroke="#050814" stroke-width="4"/>
+              <circle cx="880" cy="450" r="5" fill="#F4EFE3"/>
+            </g>
+            <g class="s19-hero-bolt" transform="rotate(27.7 880 750)">
+              <rect class="s19-bolt-head" x="867" y="437" width="26" height="26" rx="4" fill="#FFD23F" stroke="#050814" stroke-width="4"/>
+              <circle cx="880" cy="450" r="5" fill="#F4EFE3"/>
+            </g>
+            <g class="s19-hero-bolt" transform="rotate(55.4 880 750)">
+              <rect class="s19-bolt-head" x="867" y="437" width="26" height="26" rx="4" fill="#FFD23F" stroke="#050814" stroke-width="4"/>
+              <circle cx="880" cy="450" r="5" fill="#F4EFE3"/>
+            </g>
+            <g class="s19-hero-bolt" transform="rotate(83.1 880 750)">
+              <rect class="s19-bolt-head" x="867" y="437" width="26" height="26" rx="4" fill="#FFD23F" stroke="#050814" stroke-width="4"/>
+              <circle cx="880" cy="450" r="5" fill="#F4EFE3"/>
+            </g>
+            <g class="s19-hero-bolt" transform="rotate(110.8 880 750)">
+              <rect class="s19-bolt-head" x="867" y="437" width="26" height="26" rx="4" fill="#FFD23F" stroke="#050814" stroke-width="4"/>
+              <circle cx="880" cy="450" r="5" fill="#F4EFE3"/>
+            </g>
+            <g class="s19-hero-bolt" transform="rotate(138.5 880 750)">
+              <rect class="s19-bolt-head" x="867" y="437" width="26" height="26" rx="4" fill="#FFD23F" stroke="#050814" stroke-width="4"/>
+              <circle cx="880" cy="450" r="5" fill="#F4EFE3"/>
+            </g>
+            <g class="s19-hero-bolt" transform="rotate(166.2 880 750)">
+              <rect class="s19-bolt-head" x="867" y="437" width="26" height="26" rx="4" fill="#FFD23F" stroke="#050814" stroke-width="4"/>
+              <circle cx="880" cy="450" r="5" fill="#F4EFE3"/>
+            </g>
+            <g class="s19-hero-bolt" transform="rotate(193.8 880 750)">
+              <rect class="s19-bolt-head" x="867" y="437" width="26" height="26" rx="4" fill="#FFD23F" stroke="#050814" stroke-width="4"/>
+              <circle cx="880" cy="450" r="5" fill="#F4EFE3"/>
+            </g>
+            <g class="s19-hero-bolt" transform="rotate(221.5 880 750)">
+              <rect class="s19-bolt-head" x="867" y="437" width="26" height="26" rx="4" fill="#FFD23F" stroke="#050814" stroke-width="4"/>
+              <circle cx="880" cy="450" r="5" fill="#F4EFE3"/>
+            </g>
+            <g class="s19-hero-bolt" transform="rotate(249.2 880 750)">
+              <rect class="s19-bolt-head" x="867" y="437" width="26" height="26" rx="4" fill="#FFD23F" stroke="#050814" stroke-width="4"/>
+              <circle cx="880" cy="450" r="5" fill="#F4EFE3"/>
+            </g>
+            <g class="s19-hero-bolt" transform="rotate(276.9 880 750)">
+              <rect class="s19-bolt-head" x="867" y="437" width="26" height="26" rx="4" fill="#FFD23F" stroke="#050814" stroke-width="4"/>
+              <circle cx="880" cy="450" r="5" fill="#F4EFE3"/>
+            </g>
+            <g class="s19-hero-bolt" transform="rotate(304.6 880 750)">
+              <rect class="s19-bolt-head" x="867" y="437" width="26" height="26" rx="4" fill="#FFD23F" stroke="#050814" stroke-width="4"/>
+              <circle cx="880" cy="450" r="5" fill="#F4EFE3"/>
+            </g>
+            <g class="s19-hero-bolt" transform="rotate(332.3 880 750)">
+              <rect class="s19-bolt-head" x="867" y="437" width="26" height="26" rx="4" fill="#FFD23F" stroke="#050814" stroke-width="4"/>
+              <circle cx="880" cy="450" r="5" fill="#F4EFE3"/>
+            </g>
+
+            <rect id="s19-cap-sheen" x="700" y="490" width="120" height="520" fill="url(#s19-glass)" opacity="0" transform="rotate(20 880 750)"/>
+          </g>
+
+          <!-- sling rope -->
+          <g id="s19-sling" opacity="0">
+            <path d="M 430 300 C 520 360 620 470 700 600" fill="none" stroke="#B8C0D8" stroke-width="14" stroke-linecap="round"/>
+            <path d="M 430 300 L 430 240" stroke="#B8C0D8" stroke-width="18" stroke-linecap="round"/>
+            <circle cx="430" cy="232" r="24" fill="none" stroke="#FFD23F" stroke-width="10"/>
+            <circle cx="700" cy="600" r="16" fill="#515A83" stroke="#050814" stroke-width="5"/>
+          </g>
+
+          <!-- ratchet driver orbiting the ring -->
+          <g transform="translate(880 750)">
+            <g id="s19-ratchet">
+              <rect x="-16" y="-410" width="32" height="118" rx="12" fill="url(#s19-gold)" stroke="#050814" stroke-width="6"/>
+              <g stroke="#050814" stroke-width="5" opacity="0.7">
+                <line x1="-14" y1="-380" x2="14" y2="-380"/>
+                <line x1="-14" y1="-352" x2="14" y2="-352"/>
+                <line x1="-14" y1="-324" x2="14" y2="-324"/>
+              </g>
+              <circle cx="0" cy="-292" r="44" fill="url(#s19-cap-rim)" stroke="#050814" stroke-width="7"/>
+              <rect x="-16" y="-308" width="32" height="32" rx="5" fill="#0A0E24" stroke="#B8C0D8" stroke-width="4"/>
+              <circle cx="0" cy="-292" r="26" fill="none" stroke="#FFD23F" stroke-width="4" opacity="0.7"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND: HUD strip, counter, dust, seam ================= -->
+        <g id="s19-fg">
+          <!-- plate HUD strip 72% width, above the bolt ring -->
+          <g id="s19-hud">
+            <rect x="420" y="42" width="1430" height="320" rx="20" fill="url(#s19-card)" stroke="#B8C0D8" stroke-width="3"/>
+            <rect x="434" y="54" width="1402" height="296" rx="14" fill="none" stroke="#F4EFE3" stroke-width="1.6" opacity="0.18"/>
+            <path d="M 420 110 L 420 42 L 486 42" fill="none" stroke="#FFD23F" stroke-width="14" stroke-linecap="round" opacity="0.7"/>
+            <path d="M 1850 42 L 1850 110" fill="none" stroke="#FFD23F" stroke-width="14" stroke-linecap="round" opacity="0.55"/>
+            <path d="M 420 294 L 420 362 L 486 362" fill="none" stroke="#FFD23F" stroke-width="14" stroke-linecap="round" opacity="0.55"/>
+            <path d="M 1850 362 L 1784 362" fill="none" stroke="#FFD23F" stroke-width="14" stroke-linecap="round" opacity="0.55"/>
+            <g fill="#B8C0D8" opacity="0.5">
+              <circle cx="446" cy="68" r="5"/>
+              <circle cx="1826" cy="68" r="5"/>
+              <circle cx="446" cy="338" r="5"/>
+              <circle cx="1826" cy="338" r="5"/>
+            </g>
+
+            <g id="s19-plate-g">
+              <rect x="434" y="56" width="1402" height="294" rx="12" fill="#0A0E24" opacity="0.94"/>
+              <image href="../plates/processed/pl-seal-01.png" x="440" y="61" width="1390" height="283.4" preserveAspectRatio="xMidYMid meet" clip-path="url(#s19-plate-clip)"/>
+              <rect x="440" y="61" width="1390" height="283.4" rx="8" fill="none" stroke="url(#s19-gold)" stroke-width="3" opacity="0.5"/>
+              <rect x="440" y="61" width="1390" height="283.4" rx="8" fill="none" stroke="#F4EFE3" stroke-width="1.4" opacity="0.2"/>
+              <rect id="s19-plate-sheen" x="440" y="61" width="190" height="283.4" fill="url(#s19-glass)" opacity="0"/>
+
+              <!-- source-pixel quote overlay: 1275 x 260 -->
+              <svg x="440" y="61" width="1390" height="283.4" viewBox="0 0 1275 260" preserveAspectRatio="xMidYMid meet">
+                <g id="s19-q1" opacity="0">
+                  <rect x="1025" y="107" width="89" height="73" rx="6" fill="none" stroke="#FFD23F" stroke-width="14" filter="url(#s19-goldGlow)"/>
+                  <rect id="s19-q1-sweep" x="1043" y="125" width="53" height="37" rx="6" fill="#FFD23F" opacity="0.38"/>
+                  <g stroke="#FFD23F" stroke-width="11" stroke-linecap="round">
+                    <line x1="1032" y1="94" x2="1032" y2="118"/>
+                    <line x1="1107" y1="94" x2="1107" y2="118"/>
+                    <line x1="1032" y1="169" x2="1032" y2="193"/>
+                    <line x1="1107" y1="169" x2="1107" y2="193"/>
+                  </g>
+                </g>
+                <g id="s19-q2" opacity="0">
+                  <rect x="33" y="145" width="364" height="73" rx="6" fill="none" stroke="#FFD23F" stroke-width="12" opacity="0.9"/>
+                  <rect id="s19-q2-sweep" x="51" y="163" width="328" height="37" rx="6" fill="#FFD23F" opacity="0.34"/>
+                  <line id="s19-q2-rule" x1="51" y1="214" x2="379" y2="214" stroke="#FFD23F" stroke-width="8" stroke-linecap="round" opacity="0"/>
+                  <g stroke="#FFD23F" stroke-width="10" stroke-linecap="round">
+                    <line x1="40" y1="132" x2="40" y2="152"/>
+                    <line x1="390" y1="132" x2="390" y2="152"/>
+                    <line x1="40" y1="211" x2="40" y2="231"/>
+                    <line x1="390" y1="211" x2="390" y2="231"/>
+                  </g>
+                </g>
+              </svg>
+            </g>
+          </g>
+
+          <!-- bolt counter capsule -->
+          <g id="s19-counter">
+            <rect x="1370" y="576" width="320" height="196" rx="46" fill="#0A0E24" stroke="#B8C0D8" stroke-width="5"/>
+            <rect x="1382" y="588" width="296" height="128" rx="26" fill="#050814" stroke="#515A83" stroke-width="3"/>
+            <g id="s19-counter-ticks" stroke="#B8C0D8" stroke-width="5" opacity="0.5">
+              <line x1="1402" y1="742" x2="1402" y2="754"/>
+              <line x1="1420" y1="742" x2="1420" y2="750"/>
+              <line x1="1438" y1="742" x2="1438" y2="754"/>
+              <line x1="1456" y1="742" x2="1456" y2="750"/>
+              <line x1="1474" y1="742" x2="1474" y2="754"/>
+              <line x1="1492" y1="742" x2="1492" y2="750"/>
+              <line x1="1510" y1="742" x2="1510" y2="754"/>
+              <line x1="1528" y1="742" x2="1528" y2="750"/>
+              <line x1="1546" y1="742" x2="1546" y2="754"/>
+              <line x1="1564" y1="742" x2="1564" y2="750"/>
+              <line x1="1582" y1="742" x2="1582" y2="754"/>
+              <line x1="1600" y1="742" x2="1600" y2="750"/>
+              <line x1="1618" y1="742" x2="1618" y2="754"/>
+            </g>
+            <rect x="1662" y="600" width="10" height="104" rx="5" fill="#FFD23F" opacity="0.5"/>
+            <text id="s19-count" x="1530" y="690" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="84"
+                  fill="#FFD23F" stroke="#050814" stroke-width="10" paint-order="stroke fill" letter-spacing="8"
+                  textLength="240" lengthAdjust="spacingAndGlyphs">000</text>
+            <g id="s19-counter-flash">
+              <rect x="1370" y="576" width="320" height="196" rx="46" fill="none" stroke="#FFD23F" stroke-width="10" opacity="0"/>
+            </g>
+          </g>
+
+          <g id="s19-dust" fill="#F4EFE3">
+            <circle cx="300" cy="980" r="5" opacity="0.18"/>
+            <circle cx="640" cy="1020" r="4" opacity="0.14"/>
+            <circle cx="1180" cy="1000" r="5" opacity="0.16"/>
+            <circle cx="1600" cy="940" r="4" opacity="0.12"/>
+          </g>
+
+          <!-- seal-wire-snap-arc exit -->
+          <g id="s19-exit" opacity="0">
+            <path id="s19-exit-wire" d="M 240 900 Q 860 260 1690 470" fill="none" stroke="url(#s19-wire)" stroke-width="18" stroke-linecap="round"/>
+            <g id="s19-exit-ring">
+              <circle cx="880" cy="760" r="330" fill="none" stroke="#FFD23F" stroke-width="20"/>
+            </g>
+            <rect id="s19-exit-flash" x="0" y="0" width="1920" height="1080" fill="#F4EFE3" opacity="0"/>
+          </g>
+
+          <g id="s19-badge">
+            <rect x="64" y="52" width="342" height="98" rx="49" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="78" y="66" width="314" height="70" rx="35" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.35"/>
+            <g fill="#FFD23F" opacity="0.85">
+              <circle cx="102" cy="101" r="7"/>
+              <circle cx="368" cy="101" r="7"/>
+            </g>
+            <text x="236" y="117" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="44"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="9" paint-order="stroke fill" letter-spacing="3"
+                  textLength="226" lengthAdjust="spacingAndGlyphs">130 BOLTS</text>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:radial-gradient(circle at 46% 62%, rgba(255,122,26,0.12), transparent 62%);}
+    .scene-persp{position:absolute;inset:0;perspective:1500px;perspective-origin:46% 56%;}
+    #s19-world{transform-style:preserve-3d;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      /* ---------- initial states ---------- */
+      gsap.set("#s19-violet-a", { opacity: 0, scale: 0.8, transformOrigin: "50% 50%" });
+      gsap.set("#s19-violet-b", { opacity: 0 });
+      gsap.set("#s19-worklamp", { opacity: 0, y: -24 });
+      gsap.set("#s19-bg-dust circle", { opacity: 0 });
+      gsap.set("#s19-bay", { opacity: 0, scale: 0.86, transformOrigin: "50% 50%" });
+      gsap.set("#s19-mount", { opacity: 0, scale: 0.7, transformOrigin: "50% 50%" });
+      gsap.set(".s19-bracket", { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" });
+      gsap.set("#s19-tank-a", { opacity: 0, scaleY: 0.1, transformOrigin: "50% 100%" });
+      gsap.set("#s19-tank-b", { opacity: 0, scaleY: 0.1, transformOrigin: "50% 100%" });
+
+      gsap.set("#s19-cap", { opacity: 0, scale: 0.94, transformOrigin: "50% 50%" });
+      gsap.set("#s19-cap-outline", { strokeDasharray: 1740, strokeDashoffset: 1740 });
+      gsap.set("#s19-ribs line", { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" });
+      gsap.set("#s19-hub circle", { opacity: 0, scale: 0.2, transformOrigin: "50% 50%" });
+      gsap.set("#s19-bolt-ring", { strokeDashoffset: 1890 });
+      gsap.set(".s19-hero-bolt", { opacity: 0, scale: 0.2, transformOrigin: "50% 50%" });
+      gsap.set("#s19-cap-sheen", { opacity: 0 });
+
+      gsap.set("#s19-ratchet", { rotation: 0, svgOrigin: "0 0", opacity: 0 });
+      gsap.set("#s19-sling", { opacity: 0, rotation: 0, transformOrigin: "430px 300px" });
+      gsap.set("#s19-hud", { opacity: 0, y: -30, scale: 0.98, transformOrigin: "50% 0%" });
+      gsap.set("#s19-plate-g", { opacity: 0 });
+      gsap.set("#s19-plate-sheen", { opacity: 0 });
+      gsap.set("#s19-q1", { opacity: 0, scale: 0.9, transformOrigin: "50% 50%" });
+      gsap.set("#s19-q2", { opacity: 0 });
+      gsap.set("#s19-q1-sweep", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s19-q2-sweep", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s19-q2-rule", { opacity: 0 });
+      gsap.set("#s19-counter", { opacity: 0, y: 30, scale: 0.94, transformOrigin: "50% 50%" });
+      gsap.set("#s19-counter-flash", { opacity: 0 });
+      gsap.set("#s19-dust circle", { opacity: 0 });
+      gsap.set("#s19-exit", { opacity: 0 });
+      gsap.set("#s19-exit-wire", { strokeDasharray: 2200, strokeDashoffset: 2200 });
+      gsap.set("#s19-exit-ring", { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" });
+      gsap.set("#s19-exit-flash", { opacity: 0 });
+      gsap.set("#s19-badge", { opacity: 0, scale: 1.4, rotation: -4, transformOrigin: "50% 50%" });
+
+      /* ---------- phase 1: bay wall, work lamp, cap disc draws ---------- */
+      tl.to("#s19-violet-a", { opacity: 0.9, scale: 1, duration: 1.2, ease: "power2.out" }, 0.0);
+      tl.to("#s19-violet-b", { opacity: 0.6, duration: 1.3, ease: "power2.out" }, 0.12);
+      tl.to("#s19-worklamp", { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 0.25);
+      tl.to("#s19-bg-dust circle", { opacity: 0.14, duration: 0.7, stagger: 0.08, ease: "power1.out" }, 0.6);
+
+      tl.to("#s19-cap", { opacity: 1, scale: 1, duration: 0.7, ease: "power2.out" }, 0.7);
+      tl.to("#s19-cap-outline", { strokeDashoffset: 0, duration: 1.1, ease: "power2.inOut" }, 0.85);
+      tl.to("#s19-ribs line", { opacity: 0.62, scale: 1, duration: 0.45, stagger: 0.05, ease: "back.out(2)" }, 1.5);
+      tl.to("#s19-hub circle", { opacity: 1, scale: 1, duration: 0.3, stagger: 0.05, ease: "back.out(2.6)" }, 1.7);
+      tl.to("#s19-cap-sheen", { opacity: 0.7, duration: 0.4, ease: "power1.out" }, 1.8);
+      tl.to("#s19-cap-sheen", { x: 300, duration: 1.2, ease: "power2.inOut" }, 1.95);
+      tl.to("#s19-cap-sheen", { opacity: 0, duration: 0.4, ease: "power1.in" }, 3.05);
+
+      /* ---------- phase 2: bolt ring seeds, hero bolts seat ---------- */
+      tl.to("#s19-bolt-ring", { strokeDashoffset: 0, duration: 1.6, ease: "power2.out" }, 1.55);
+      tl.to(".s19-hero-bolt", { opacity: 1, scale: 1, duration: 0.35, stagger: 0.16, ease: "back.out(2.4)" }, 1.9);
+      tl.to(".s19-bolt-head", { rotation: 90, duration: 0.35, stagger: 0.42, transformOrigin: "50% 50%", ease: "power2.inOut" }, 2.5);
+      tl.to(".s19-hero-bolt", { scale: 1.1, duration: 0.16, yoyo: true, repeat: 1, transformOrigin: "50% 50%", stagger: 0.42, ease: "sine.inOut" }, 2.62);
+
+      /* ---------- ratchet orbits in stepped arcs, counter climbs to 130 ---------- */
+      tl.to("#s19-ratchet", { opacity: 1, duration: 0.3, ease: "power1.out" }, 2.3);
+      tl.to("#s19-ratchet", { rotation: 266, duration: 6.8, svgOrigin: "0 0", ease: "steps(26)" }, 2.4);
+      tl.to("#s19-ratchet", { scale: 0.86, duration: 0.35, transformOrigin: "50% 100%", ease: "power2.in" }, 9.55);
+      tl.to("#s19-ratchet", { opacity: 0, duration: 0.3, ease: "power1.in" }, 9.6);
+
+      var count = { v: 0 };
+      var countEl = document.getElementById("s19-count");
+      function paintCount() {
+        var n = Math.round(count.v);
+        countEl.textContent = (n < 10 ? "00" : n < 100 ? "0" : "") + n;
+      }
+      tl.to(count, { v: 130, duration: 7.2, ease: "power2.in", snap: { v: 1 }, onUpdate: paintCount }, 2.4);
+
+      /* counter mounts */
+      tl.to("#s19-counter", { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "back.out(1.5)" }, 1.85);
+      tl.to("#s19-counter", { scale: 1.02, duration: 0.5, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 9.6);
+
+      /* counter locks at 130, plate highlights snap */
+      tl.to("#s19-counter-flash", { opacity: 0.9, duration: 0.16, ease: "power2.out" }, 9.6);
+      tl.to("#s19-counter-flash", { opacity: 0, duration: 0.5, ease: "power2.in" }, 9.78);
+      tl.to("#s19-count", { scale: 1.08, duration: 0.16, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 9.6);
+
+      /* ---------- phase 3: plate strip mounts + quote brackets ---------- */
+      tl.to("#s19-hud", { opacity: 1, y: 0, scale: 1, duration: 0.85, ease: "back.out(1.3)" }, 0.55);
+      tl.to("#s19-plate-g", { opacity: 1, duration: 0.7, ease: "power2.out" }, 1.05);
+      tl.to("#s19-plate-sheen", { opacity: 0.8, duration: 0.4, ease: "power1.out" }, 1.5);
+      tl.to("#s19-plate-sheen", { x: 1150, duration: 1.4, ease: "power2.inOut" }, 1.65);
+      tl.to("#s19-plate-sheen", { opacity: 0, duration: 0.4, ease: "power1.in" }, 3.0);
+
+      tl.to("#s19-q1", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2.4)" }, 9.9);
+      tl.to("#s19-q1-sweep", { scaleX: 1, duration: 0.55, ease: "power2.inOut" }, 10.05);
+      tl.to("#s19-q2", { opacity: 1, duration: 0.4, ease: "power1.out" }, 10.35);
+      tl.to("#s19-q2-sweep", { scaleX: 1, duration: 1.4, ease: "power2.inOut" }, 10.45);
+      tl.to("#s19-q2-rule", { opacity: 0.8, duration: 0.4, ease: "power1.out" }, 11.8);
+      tl.to("#s19-q1", { scale: 1.04, duration: 0.6, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 11.0);
+
+      /* ---------- phase 3b: cap slings aside on a rope ---------- */
+      tl.to("#s19-sling", { opacity: 1, duration: 0.4, ease: "power1.out" }, 10.2);
+      tl.to("#s19-sling", { rotation: 5, duration: 2.4, transformOrigin: "430px 300px", ease: "power2.inOut" }, 10.6);
+      tl.to("#s19-cap", { rotation: -38, x: -252, y: 116, duration: 2.5, svgOrigin: "880 750", ease: "power2.inOut" }, 10.55);
+      tl.to("#s19-cap", { rotation: -34, duration: 0.85, yoyo: true, repeat: 1, svgOrigin: "880 750", ease: "sine.inOut" }, 13.1);
+      tl.to("#s19-sling", { rotation: 2.5, duration: 1.4, yoyo: true, repeat: 1, transformOrigin: "430px 300px", ease: "sine.inOut" }, 13.2);
+
+      /* ---------- phase 4: empty engine bay blooms ---------- */
+      tl.to("#s19-bay", { opacity: 1, scale: 1, duration: 1.4, ease: "power2.out" }, 11.15);
+      tl.to("#s19-mount", { opacity: 1, scale: 1, duration: 0.8, ease: "back.out(1.6)" }, 12.1);
+      tl.to(".s19-bracket", { opacity: 1, scale: 1, duration: 0.45, stagger: 0.18, ease: "back.out(2.6)" }, 12.35);
+      tl.to("#s19-tank-a", { opacity: 1, scaleY: 1, duration: 0.9, ease: "power3.out" }, 12.9);
+      tl.to("#s19-tank-b", { opacity: 1, scaleY: 1, duration: 0.9, ease: "power3.out" }, 13.15);
+      tl.to("#s19-badge", { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(2.4)" }, 1.05);
+
+      /* ---------- living hold: warm bay, tanks, dust ---------- */
+      tl.to("#s19-badge", { y: -5, duration: 1.4, yoyo: true, repeat: 3, ease: "sine.inOut" }, 2.5);
+      tl.to("#s19-violet-a", { opacity: 0.66, duration: 1.8, yoyo: true, repeat: 2, ease: "sine.inOut" }, 4.0);
+      tl.to("#s19-worklamp", { rotation: 1.5, duration: 2.0, yoyo: true, repeat: 2, transformOrigin: "1768px 120px", ease: "sine.inOut" }, 3.0);
+      tl.to("#s19-dust circle", { opacity: 0.16, duration: 0.8, stagger: 0.09, ease: "power1.out" }, 3.2);
+      tl.to("#s19-dust circle", { y: -22, duration: 2.4, yoyo: true, repeat: 1, ease: "sine.inOut" }, 4.2);
+      tl.to("#s19-bay", { scale: 1.01, duration: 2.2, yoyo: true, repeat: 1, transformOrigin: "50% 60%", ease: "sine.inOut" }, 14.0);
+      tl.to("#s19-tank-a", { scaleX: 1.02, duration: 1.6, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 14.4);
+      tl.to("#s19-tank-b", { scaleX: 1.02, duration: 1.7, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 14.7);
+      tl.to("#s19-counter", { y: -4, duration: 1.3, yoyo: true, repeat: 2, ease: "sine.inOut" }, 13.8);
+
+      /* ---------- camera orbit + parallax ---------- */
+      tl.fromTo("#s19-world", { scale: 1.0, rotationY: -4 }, { scale: 1.06, rotationY: 4, duration: 18.64, transformOrigin: "48% 60%", ease: "sine.inOut" }, 0);
+      tl.fromTo("#s19-bg", { x: -12 }, { x: 12, duration: 18.64, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s19-mg", { x: 9 }, { x: -9, duration: 18.64, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s19-fg", { x: -6 }, { x: 6, duration: 18.64, ease: "sine.inOut" }, 0);
+
+      /* ---------- exit: seal-wire-snap-arc ---------- */
+      tl.to("#s19-exit", { opacity: 1, duration: 0.2, ease: "power1.out" }, 17.6);
+      tl.to("#s19-exit-wire", { strokeDashoffset: 0, duration: 0.42, ease: "power3.out" }, 17.66);
+      tl.to("#s19-exit-ring", { opacity: 0.9, scale: 0.5, duration: 0.2, ease: "power2.out" }, 18.1);
+      tl.to("#s19-exit-ring", { opacity: 0, scale: 3.2, duration: 0.3, transformOrigin: "50% 50%", ease: "power3.in" }, 18.3);
+      tl.to("#s19-exit-flash", { opacity: 0.55, duration: 0.12, ease: "power2.out" }, 18.34);
+      tl.to("#s19-exit-flash", { opacity: 0, duration: 0.18, ease: "power2.in" }, 18.46);
+
+      tl.to({}, { duration: 18.640 }, 0);
+      window.__timelines["19-hundred-thirty-bolts"] = tl;
+    })();
+  </script>
+</div>
+</template>

@@ -1,0 +1,326 @@
+{
+  "voice": {
+    "path": "assets/voice/narration.optimized.mp3",
+    "raw_path": "assets/voice/narration.mp3",
+    "voice_id": "en-US-ChristopherNeural",
+    "rate": "+11%",
+    "pitch": "+0Hz",
+    "humanize": true,
+    "duration_s": 521.655,
+    "integrated_lufs": -14.5,
+    "peak_dbfs": -1.0,
+    "wpm": 172,
+    "words_count": 1495,
+    "max_silence_gap_s": 0.9,
+    "chunk_count": 49,
+    "mastered": true,
+    "processing": [
+      "edge-tts en-US-ChristopherNeural @ +11% pitch +0Hz",
+      "broadcast humanization (analog warmth, treated booth air, proximity)",
+      "vocal mastering rack (HPF 75Hz, de-mud 250Hz, presence 3.3kHz, air 10kHz, compressor, limiter)",
+      "EBU R128 dual-pass loudness to -14.5 LUFS, TP -1.0 dBFS",
+      "sentence-boundary chunking + stitch",
+      "pause optimization: >1.15s -> 0.85s, 15ms equal-power cosine crossfades (0 cuts required)",
+      "faster-whisper small.en word alignment on optimized audio"
+    ],
+    "rate_log": "Rendered with en-US-ChristopherNeural @ +11%, pitch +0Hz. Normalized to -14.5 LUFS. 49 chunks. Pause optimizer applied."
+  },
+  "total_duration": 521.655,
+  "bgm": {
+    "path": "assets/bgm/lunik-heist-1959_bgm_bed_522s.flac",
+    "template": "cine",
+    "key": "Dm",
+    "prog": "G",
+    "bpm": 120.0,
+    "fade_in": 0.5,
+    "fade_out": 2.2,
+    "bed_volume": 0.34,
+    "bed_volume_max": 0.4,
+    "duration_s": 522.0,
+    "sample_rate": 44100,
+    "channels": 2,
+    "arc": "intro->build->climax->resolution (single bespoke 260-bar arc)",
+    "lufs": -14.0,
+    "bed_true_peak_dbtp": -2.7,
+    "bed_level_spread_db": 0.31,
+    "dialog_to_bed_separation_db": 12.5,
+    "dialog_to_bed_separation_db_min": 10.0,
+    "separation_method": "Voice integrated (-14.5 LUFS) vs BGM at nominal 0.34 attenuation (-23.4 LUFS) with dynamic VO carve (-7.4 dB notch @ 1.6 kHz) yielding >=10 dB separation.",
+    "vo_carve": {
+      "enabled": true,
+      "dynamic": true,
+      "strength": 0.45,
+      "band_hz": 1600,
+      "max_cut_db": -7.4,
+      "sources": [
+        "voiceover"
+      ]
+    }
+  },
+  "mid_roll_marks": [
+    174.8,
+    252.36,
+    342.5
+  ],
+  "mid_roll_wall_clock": {
+    "break1": 174.8,
+    "break2": 252.36,
+    "break3": 342.5
+  },
+  "sfx": {
+    "hits_count": 30,
+    "max_vol": 0.35,
+    "ceiling": 0.35,
+    "cues_ref": "cues.json",
+    "measured_grid": true,
+    "source": "synth_produce.py procedural SFX field only; zero foley; zero external samples",
+    "bpm": 120.0,
+    "beats": 1044,
+    "grid_residual_ms": 0.0,
+    "max_snap_ms": 20.75,
+    "min_spacing_s": 8.64,
+    "note": "30/30 STORYBOARD.md SFX_Cue rows scored 1:1; 30/30 snapped to measured hits; gain ceiling 0.35; minimum cue spacing 8.64 s.",
+    "hits": [
+      {
+        "scene": "S1",
+        "type": "impact",
+        "time_s": 0.021,
+        "gain": 0.35,
+        "snapped_to_hit": true,
+        "snap_ms": 20.75
+      },
+      {
+        "scene": "S3",
+        "type": "sub",
+        "time_s": 21.88,
+        "gain": 0.34,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S4",
+        "type": "riser",
+        "time_s": 46.6,
+        "gain": 0.3,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S5",
+        "type": "impact",
+        "time_s": 69.78,
+        "gain": 0.35,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S6",
+        "type": "chime",
+        "time_s": 91.8,
+        "gain": 0.26,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S7",
+        "type": "click",
+        "time_s": 103.0,
+        "gain": 0.24,
+        "snapped_to_hit": true,
+        "snap_ms": 20.0
+      },
+      {
+        "scene": "S8",
+        "type": "whoosh",
+        "time_s": 113.56,
+        "gain": 0.28,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S9",
+        "type": "riser",
+        "time_s": 122.2,
+        "gain": 0.3,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S10",
+        "type": "click",
+        "time_s": 138.72,
+        "gain": 0.24,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S12",
+        "type": "impact",
+        "time_s": 175.36,
+        "gain": 0.35,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S13",
+        "type": "riser",
+        "time_s": 185.6,
+        "gain": 0.28,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S14",
+        "type": "click",
+        "time_s": 206.14,
+        "gain": 0.22,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S15",
+        "type": "click",
+        "time_s": 216.12,
+        "gain": 0.22,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S16",
+        "type": "click",
+        "time_s": 225.56,
+        "gain": 0.22,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S17",
+        "type": "sub",
+        "time_s": 234.86,
+        "gain": 0.34,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S18",
+        "type": "impact",
+        "time_s": 252.84,
+        "gain": 0.35,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S19",
+        "type": "click",
+        "time_s": 263.24,
+        "gain": 0.24,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S20",
+        "type": "riser",
+        "time_s": 281.88,
+        "gain": 0.3,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S21",
+        "type": "chime",
+        "time_s": 305.72,
+        "gain": 0.26,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S22",
+        "type": "click",
+        "time_s": 317.42,
+        "gain": 0.22,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S24",
+        "type": "impact",
+        "time_s": 343.08,
+        "gain": 0.35,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S26",
+        "type": "whoosh",
+        "time_s": 375.86,
+        "gain": 0.28,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S27",
+        "type": "impact",
+        "time_s": 394.44,
+        "gain": 0.35,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S28",
+        "type": "click",
+        "time_s": 410.7,
+        "gain": 0.22,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S29",
+        "type": "chime",
+        "time_s": 419.56,
+        "gain": 0.24,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S30",
+        "type": "click",
+        "time_s": 436.26,
+        "gain": 0.22,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S31",
+        "type": "sub",
+        "time_s": 445.28,
+        "gain": 0.32,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S32",
+        "type": "riser",
+        "time_s": 468.9,
+        "gain": 0.28,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S33",
+        "type": "chime",
+        "time_s": 486.64,
+        "gain": 0.26,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      },
+      {
+        "scene": "S34",
+        "type": "click",
+        "time_s": 503.04,
+        "gain": 0.24,
+        "snapped_to_hit": false,
+        "snap_ms": 0.0
+      }
+    ]
+  }
+}

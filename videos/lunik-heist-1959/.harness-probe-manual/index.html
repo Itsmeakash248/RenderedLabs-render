@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>S14 manual seek probe</title>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <style>
+    html, body { margin: 0; padding: 0; width: 100%; height: 100%; background: #070A12; overflow: hidden; }
+    #root { position: relative; width: 1920px; height: 1080px; }
+    [data-composition-id="root"] > div[data-composition-src] { position: absolute; inset: 0; }
+  </style>
+</head>
+<body>
+  <div id="root" data-composition-id="root" data-width="1920" data-height="1080" data-duration="9.980">
+    <div class="scene-slot" data-composition-id="14-yard-fence" data-composition-src="compositions/14-yard-fence.html" data-start="0" data-duration="9.980" data-width="1920" data-height="1080"></div>
+  </div>
+  <div id="dbg" style="position:absolute;left:20px;bottom:20px;z-index:9999;font:16px monospace;color:#0f0;background:#000;padding:6px">dbg</div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    window.__timelines["root"] = gsap.timeline({ paused: true });
+    window.__timelines["root"].to({}, { duration: 9.980 }, 0);
+    function forceSeek() {
+      var tl = window.__timelines && window.__timelines["14-yard-fence"];
+      var keys = Object.keys(window.__timelines || {}).join(",");
+      var dbg = document.getElementById("dbg");
+      if (tl && typeof tl.seek === "function") {
+        tl.pause();
+        tl.seek(7.984);
+        if (dbg) dbg.textContent = "keys=" + keys + " seek=ok t=" + tl.time().toFixed(2);
+      } else {
+        if (dbg) dbg.textContent = "keys=" + keys + " missing";
+      }
+    }
+    function loop() { forceSeek(); requestAnimationFrame(loop); }
+    requestAnimationFrame(loop);
+  </script>
+</body>
+</html>

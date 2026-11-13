@@ -1,0 +1,33 @@
+{
+  "plate_id": "pl-seal-02",
+  "source_url": "videos/lunik-heist-1959/.tmp/lunik.pdf",
+  "source_page": 6,
+  "source_dpi": 150,
+  "captured_at": null,
+  "width": 1275,
+  "height": 1650,
+  "source_width": 1275,
+  "source_height": 1650,
+  "scale_factor": 1.0,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": [
+    {
+      "phrase": "plastic seal bearing a Soviet stamp",
+      "x": 544,
+      "y": 333,
+      "w": 547,
+      "h": 37
+    },
+    {
+      "phrase": "overlooked two couplings",
+      "x": 274,
+      "y": 701,
+      "w": 397,
+      "h": 37
+    }
+  ],
+  "dropped_boxes": 0
+}

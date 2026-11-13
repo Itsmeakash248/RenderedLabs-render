@@ -1,0 +1,80 @@
+{
+  "$schema": "https://hyperframes.heygen.com/schema/hyperframes.json",
+  "registry": "https://raw.githubusercontent.com/heygen-com/hyperframes/main/registry",
+  "paths": {
+    "blocks": "compositions",
+    "components": "compositions/components",
+    "assets": "assets"
+  },
+  "media": {
+    "autoProxy": true
+  },
+  "authoringSkill": "general-video",
+  "registryItems": [
+    {
+      "name": "logo-wall",
+      "type": "hyperframes:component",
+      "target": "compositions/components/logo-wall.html"
+    },
+    {
+      "name": "ai-chat-reveal",
+      "type": "hyperframes:block",
+      "target": "compositions/ai-chat-reveal.html"
+    },
+    {
+      "name": "shimmer-sweep",
+      "type": "hyperframes:component",
+      "target": "compositions/components/shimmer-sweep.html"
+    },
+    {
+      "name": "data-chart",
+      "type": "hyperframes:block",
+      "target": "compositions/data-chart.html"
+    },
+    {
+      "name": "bar-chart-race",
+      "type": "hyperframes:block",
+      "target": "compositions/bar-chart-race.html"
+    },
+    {
+      "name": "carousel-path-1",
+      "type": "hyperframes:block",
+      "target": "compositions/carousel-path-1.html"
+    },
+    {
+      "name": "transitions-3d",
+      "type": "hyperframes:block",
+      "target": "compositions/transitions-3d.html"
+    },
+    {
+      "name": "headline-slam",
+      "type": "hyperframes:component",
+      "target": "compositions/components/headline-slam.html"
+    },
+    {
+      "name": "count-up",
+      "type": "hyperframes:component",
+      "target": "compositions/components/count-up.html"
+    },
+    {
+      "name": "code-typing",
+      "type": "hyperframes:block",
+      "target": "compositions/code-typing.html"
+    },
+    {
+      "name": "grain-overlay",
+      "type": "hyperframes:component",
+      "target": "compositions/components/grain-overlay.html"
+    },
+    {
+      "name": "ticker-takeover",
+      "type": "hyperframes:component",
+      "target": "compositions/components/ticker-takeover.html"
+    },
+    {
+      "name": "gallery-tunnel",
+      "type": "hyperframes:block",
+      "target": "compositions/gallery-tunnel.html"
+    }
+  ]
+}

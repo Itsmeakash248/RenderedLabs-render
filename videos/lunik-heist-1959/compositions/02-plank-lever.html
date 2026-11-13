@@ -1,0 +1,382 @@
+<template id="s02-template">
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
+  <div id="root" data-composition-id="02-plank-lever" data-width="1920" data-height="1080" data-start="0" data-duration="12.1">
+    <div class="scene-wrap" id="scene-wrap">
+      <svg id="stage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#0A0E24"/>
+            <stop offset="55%" stop-color="#050814"/>
+            <stop offset="100%" stop-color="#151B3B"/>
+          </linearGradient>
+          <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#151B3B"/>
+            <stop offset="70%" stop-color="#0A0E24"/>
+            <stop offset="100%" stop-color="#050814"/>
+          </linearGradient>
+          <linearGradient id="plankGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#B8C0D8"/>
+            <stop offset="38%" stop-color="#F4EFE3"/>
+            <stop offset="78%" stop-color="#B8C0D8"/>
+            <stop offset="100%" stop-color="#8E5FD9"/>
+          </linearGradient>
+          <linearGradient id="joistGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#151B3B"/>
+            <stop offset="50%" stop-color="#151B3B"/>
+            <stop offset="100%" stop-color="#0A0E24"/>
+          </linearGradient>
+          <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#050814"/>
+            <stop offset="30%" stop-color="#B8C0D8"/>
+            <stop offset="58%" stop-color="#F4EFE3"/>
+            <stop offset="100%" stop-color="#8E5FD9"/>
+          </linearGradient>
+          <linearGradient id="spikeGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#F4EFE3"/>
+            <stop offset="45%" stop-color="#B8C0D8"/>
+            <stop offset="100%" stop-color="#8E5FD9"/>
+          </linearGradient>
+          <radialGradient id="emberGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#FF7A1A" stop-opacity="0.85"/>
+            <stop offset="45%" stop-color="#FF7A1A" stop-opacity="0.28"/>
+            <stop offset="100%" stop-color="#FF7A1A" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#FFD23F" stop-opacity="0.62"/>
+            <stop offset="40%" stop-color="#FF7A1A" stop-opacity="0.20"/>
+            <stop offset="100%" stop-color="#FF7A1A" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="goldGlint" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#FFD23F" stop-opacity="0.95"/>
+            <stop offset="100%" stop-color="#FFD23F" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="violetHaze" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#8E5FD9" stop-opacity="0.30"/>
+            <stop offset="100%" stop-color="#8E5FD9" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="hazeBlur" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="26"/>
+          </filter>
+          <filter id="softBlur" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="7"/>
+          </filter>
+        </defs>
+
+        <!-- ============ BG LAYER ============ -->
+        <g id="bg-layer">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#skyGrad)"/>
+
+          <!-- distant haze blooms -->
+          <ellipse class="bg-bloom" cx="1480" cy="240" rx="520" ry="360" fill="url(#violetHaze)"/>
+          <ellipse class="bg-bloom-2" cx="360" cy="180" rx="440" ry="300" fill="url(#violetHaze)" opacity="0.55"/>
+
+          <!-- yard wall -->
+          <g id="yard-wall">
+            <path d="M0 640 L1920 600 L1920 1080 L0 1080 Z" fill="url(#wallGrad)"/>
+            <!-- wall courses -->
+            <g stroke="#151B3B" stroke-width="8" opacity="0.75" stroke-linecap="round">
+              <path d="M0 700 L1920 668"/>
+              <path d="M0 760 L1920 730"/>
+              <path d="M0 822 L1920 794"/>
+              <path d="M0 886 L1920 860"/>
+              <path d="M0 952 L1920 928"/>
+            </g>
+            <!-- vertical joints -->
+            <g stroke="#0A0E24" stroke-width="8" opacity="0.6" stroke-linecap="round">
+              <path d="M210 640 L210 700"/>
+              <path d="M520 634 L520 700"/>
+              <path d="M860 626 L860 700"/>
+              <path d="M1210 618 L1210 700"/>
+              <path d="M1610 608 L1610 700"/>
+              <path d="M380 700 L380 766"/>
+              <path d="M720 694 L720 760"/>
+              <path d="M1080 686 L1080 754"/>
+              <path d="M1450 676 L1450 746"/>
+              <path d="M1740 668 L1740 740"/>
+            </g>
+            <!-- yard lamp -->
+            <g id="yard-lamp">
+              <rect x="1712" y="300" width="12" height="220" fill="#0A0E24"/>
+              <path d="M1660 300 L1776 300 L1740 252 L1696 252 Z" fill="#151B3B" stroke="#8E5FD9" stroke-width="8"/>
+              <circle cx="1718" cy="268" r="14" fill="#FFD23F"/>
+            </g>
+            <!-- lamp haze -->
+            <ellipse class="lamp-haze" cx="1700" cy="470" rx="300" ry="260" fill="url(#lampGlow)"/>
+            <ellipse class="lamp-haze-inner" cx="1700" cy="420" rx="150" ry="130" fill="url(#lampGlow)" opacity="0.7"/>
+          </g>
+
+          <!-- heat haze bands -->
+          <g id="heat-haze" filter="url(#hazeBlur)" opacity="0.5">
+            <ellipse class="haze-band" cx="900" cy="430" rx="500" ry="46" fill="#8E5FD9" opacity="0.16"/>
+            <ellipse class="haze-band" cx="1240" cy="500" rx="420" ry="34" fill="#FF7A1A" opacity="0.13"/>
+            <ellipse class="haze-band" cx="700" cy="560" rx="380" ry="30" fill="#B8C0D8" opacity="0.10"/>
+          </g>
+        </g>
+
+        <!-- ============ PLATE CARD (SVG mount, source-pixel overlay) ============ -->
+        <g id="plate-card">
+          <rect x="1146" y="90" width="700" height="900" rx="24" fill="#151B3B" stroke="rgba(141,164,237,0.20)" stroke-width="1"/>
+          <svg x="1156" y="100" width="680" height="880" viewBox="0 0 1275 1650" preserveAspectRatio="xMidYMid meet" overflow="hidden">
+            <image href="../plates/processed/pl-night-01.png" x="0" y="0" width="1275" height="1650" preserveAspectRatio="xMidYMid meet"/>
+            <rect id="hl-sweep" x="189" y="41" width="0" height="37" fill="#FFD23F" opacity="0.42"/>
+            <rect id="hl-glow" x="189" y="41" width="522" height="37" fill="none" stroke="#FFD23F" stroke-width="28" opacity="0.18" stroke-dasharray="0 9999"/>
+            <rect x="189" y="41" width="522" height="37" fill="none" stroke="#FFD23F" stroke-width="16" opacity="0.35" stroke-dasharray="0 9999" id="hl-outline"/>
+          </svg>
+          <rect x="1146" y="90" width="700" height="900" rx="24" fill="none" stroke="#8E5FD9" stroke-width="8" opacity="0.0"/>
+        </g>
+
+        <!-- ============ MG LAYER ============ -->
+        <g id="mg-layer">
+          <!-- joist / tongue-and-groove cutaway -->
+          <g id="joist-group">
+            <path id="joist-body" d="M120 700 L700 676 L760 900 L150 936 Z" fill="url(#joistGrad)" stroke="#151B3B" stroke-width="8" stroke-linejoin="round" opacity="0.95"/>
+
+            <!-- tongue-and-groove plank, rotating as it lifts -->
+            <g id="plank-group">
+              <path id="plank-body" d="M150 730 L700 702 L736 840 L178 872 Z" fill="url(#plankGrad)" stroke="#F4EFE3" stroke-width="16" stroke-linejoin="round"/>
+              <!-- groove cut lines -->
+              <g stroke="#0A0E24" stroke-width="10" stroke-linecap="round" opacity="0.55">
+                <path d="M300 722 L328 862"/>
+                <path d="M470 713 L496 852"/>
+                <path d="M620 706 L642 845"/>
+              </g>
+              <!-- tongue ridge -->
+              <path d="M236 726 L268 868" stroke="#FF7A1A" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+              <!-- gold glints on plank -->
+              <ellipse class="plank-glint" cx="640" cy="716" rx="54" ry="20" fill="url(#goldGlint)" opacity="0.85"/>
+              <ellipse class="plank-glint-2" cx="216" cy="860" rx="42" ry="16" fill="url(#goldGlint)" opacity="0.6"/>
+            </g>
+
+            <!-- spike beads in a row, r=12 -->
+            <g id="spikes-group">
+              <g class="spike-bead" id="spike-1" data-sx="300" data-sy="880">
+                <circle r="12" fill="url(#spikeGrad)" stroke="#F4EFE3" stroke-width="8"/>
+              </g>
+              <g class="spike-bead" id="spike-2" data-sx="410" data-sy="872">
+                <circle r="12" fill="url(#spikeGrad)" stroke="#F4EFE3" stroke-width="8"/>
+              </g>
+              <g class="spike-bead" id="spike-3" data-sx="520" data-sy="864">
+                <circle r="12" fill="url(#spikeGrad)" stroke="#F4EFE3" stroke-width="8"/>
+              </g>
+              <g class="spike-bead" id="spike-4" data-sx="630" data-sy="856">
+                <circle r="12" fill="url(#spikeGrad)" stroke="#F4EFE3" stroke-width="8"/>
+              </g>
+              <g class="spike-bead" id="spike-5" data-sx="740" data-sy="848">
+                <circle r="12" fill="url(#spikeGrad)" stroke="#F4EFE3" stroke-width="8"/>
+              </g>
+            </g>
+
+            <!-- two crew silhouettes -->
+            <g id="crew-a">
+              <path d="M880 900 L880 790 Q880 748 918 748 Q956 748 956 790 L956 900 Z" fill="#050814" stroke="#8E5FD9" stroke-width="8"/>
+              <circle cx="918" cy="708" r="40" fill="#050814" stroke="#8E5FD9" stroke-width="8"/>
+              <path d="M948 790 L1010 800" stroke="#050814" stroke-width="26" stroke-linecap="round"/>
+            </g>
+            <g id="crew-b">
+              <path d="M200 984 L200 874 Q200 834 236 834 Q272 834 272 874 L272 984 Z" fill="#050814" stroke="#8E5FD9" stroke-width="8"/>
+              <circle cx="236" cy="796" r="36" fill="#050814" stroke="#8E5FD9" stroke-width="8"/>
+              <path d="M266 872 L326 854" stroke="#050814" stroke-width="26" stroke-linecap="round"/>
+            </g>
+          </g>
+
+          <!-- sound ripple ring -->
+          <circle id="ripple-ring" cx="430" cy="760" r="260" fill="none" stroke="#FFD23F" stroke-width="8" opacity="0.9"/>
+        </g>
+
+        <!-- ============ FG LAYER ============ -->
+        <g id="fg-layer">
+          <!-- ember glow under crowbar -->
+          <ellipse class="ember" cx="520" cy="700" rx="330" ry="240" fill="url(#emberGlow)" opacity="0.8"/>
+
+          <!-- crowbar: thick path, draws on -->
+          <path id="crowbar" d="M980 300 q-70 10 -110 70 q-50 74 -140 128 q-96 58 -180 96 q-46 22 -74 62"
+                fill="none" stroke="url(#barGrad)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- crowbar chisel tip -->
+          <path id="crowbar-tip" d="M476 656 l-30 26 l34 14 z" fill="#F4EFE3" stroke="#8E5FD9" stroke-width="8"/>
+          <!-- soft-blurred crowbar glint -->
+          <ellipse id="bar-glint" cx="472" cy="668" rx="46" ry="20" fill="url(#goldGlint)" opacity="0.55" filter="url(#softBlur)"/>
+
+          <!-- splinters -->
+          <g id="splinters">
+            <path class="splinter" d="M560 686 l58 -24 l-6 18 z" fill="#FFD23F" opacity="0.95"/>
+            <path class="splinter" d="M602 724 l64 -10 l-14 16 z" fill="#FF7A1A" opacity="0.9"/>
+            <path class="splinter" d="M528 744 l50 12 l-18 12 z" fill="#F4EFE3" opacity="0.9"/>
+            <path class="splinter" d="M646 668 l46 -30 l-2 18 z" fill="#FFD23F" opacity="0.8"/>
+          </g>
+
+          <!-- gold spark flecks -->
+          <circle class="spark" cx="600" cy="690" r="6" fill="#FFD23F"/>
+          <circle class="spark" cx="660" cy="720" r="5" fill="#FFD23F"/>
+          <circle class="spark" cx="548" cy="760" r="5" fill="#FFD23F"/>
+        </g>
+
+        <!-- ============ TEXT ============ -->
+        <text id="time-label" x="150" y="200" font-family="Quicksand, sans-serif" font-weight="700" font-size="86" fill="#F4EFE3" stroke="#050814" stroke-width="14" stroke-linejoin="round" paint-order="stroke fill">7:30 P.M.</text>
+      </svg>
+
+      <!-- plate is an SVG mount inside #plate-card; no DOM img -->
+    </div>
+  </div>
+
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      background: transparent;
+      font-family: "Quicksand", sans-serif;
+    }
+    .scene-wrap {
+      position: absolute;
+      inset: 0;
+      width: 1920px;
+      height: 1080px;
+      transform-origin: 50% 62%;
+      transform-style: preserve-3d;
+      perspective: 1600px;
+    }
+    #stage {
+      position: absolute;
+      inset: 0;
+      display: block;
+    }
+    #root::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 30;
+      background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.015) 32%, rgba(255,255,255,0) 58%);
+    }
+    #time-label {
+      letter-spacing: 2px;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      // ---- fixed seeded constants (no randomness) ----
+      var SPIKES = [
+        { id: "#spike-1", x: 300, y: 880, delay: 3.10, dx: -16, dy: -74 },
+        { id: "#spike-2", x: 410, y: 872, delay: 3.26, dx: -6,  dy: -96 },
+        { id: "#spike-3", x: 520, y: 864, delay: 3.42, dx: 4,   dy: -118 },
+        { id: "#spike-4", x: 630, y: 856, delay: 3.58, dx: 14,  dy: -92 },
+        { id: "#spike-5", x: 740, y: 848, delay: 3.74, dx: 22,  dy: -70 }
+      ];
+
+      // ---- wrapper: cabinet-style tilt + continuous drift ----
+      gsap.set("#scene-wrap", { transformPerspective: 1600, rotateX: 0, rotateZ: 0, scale: 1.035 });
+      tl.to("#scene-wrap", {
+        rotateX: 18,
+        duration: 6.4,
+        ease: "sine.inOut"
+      }, 0);
+      tl.to("#scene-wrap", {
+        rotateZ: -1.6,
+        scale: 1.02,
+        duration: 5.2,
+        ease: "sine.inOut"
+      }, 0.4);
+      tl.to("#scene-wrap", {
+        x: -14,
+        y: 10,
+        duration: 11.6,
+        ease: "sine.inOut"
+      }, 0.5);
+
+      // ---- bg blooms breathe ----
+      tl.fromTo(".bg-bloom", { opacity: 0.45, scale: 0.94 }, { opacity: 0.9, scale: 1.06, duration: 9.5, ease: "sine.inOut", transformOrigin: "50% 50%" }, 0);
+      tl.fromTo(".bg-bloom-2", { opacity: 0.25 }, { opacity: 0.62, duration: 8.4, ease: "sine.inOut" }, 1.1);
+      tl.fromTo(".lamp-haze", { opacity: 0.55, scale: 0.92 }, { opacity: 0.95, scale: 1.1, duration: 7.6, ease: "sine.inOut", transformOrigin: "50% 50%" }, 0.3);
+      tl.fromTo(".lamp-haze-inner", { opacity: 0.4 }, { opacity: 0.85, duration: 4.8, ease: "sine.inOut" }, 1.6);
+
+      // ---- heat haze bands drift ----
+      tl.fromTo(".haze-band", { x: -30, y: 0, opacity: 0.08 }, { x: 34, y: -12, opacity: 0.22, duration: 5.4, ease: "sine.inOut", stagger: 0.5, yoyo: false }, 0.2);
+      tl.to(".haze-band", { x: -18, y: 8, duration: 4.2, ease: "sine.inOut", stagger: 0.4 }, 6.2);
+
+      // ---- plate card enters (flattened SVG mount: scale+opacity, no 3D) ----
+      gsap.set("#plate-card", { opacity: 0, scale: 0.93, transformOrigin: "50% 50%" });
+      tl.to("#plate-card", { opacity: 1, scale: 1, duration: 1.5, ease: "power3.out" }, 0.25);
+      tl.to("#plate-card", { y: -10, duration: 6.5, ease: "sine.inOut" }, 2.2);
+
+      // ---- crowbar path draw ----
+      var bar = document.getElementById("crowbar");
+      var barLen = bar.getTotalLength();
+      gsap.set("#crowbar", { strokeDasharray: barLen, strokeDashoffset: barLen });
+      gsap.set("#crowbar-tip", { opacity: 0, scale: 0.6, transformOrigin: "50% 50%" });
+      gsap.set("#bar-glint", { opacity: 0, scale: 0.5, transformOrigin: "50% 50%" });
+      tl.to("#crowbar", { strokeDashoffset: 0, duration: 2.3, ease: "power2.inOut" }, 0.7);
+      tl.to("#crowbar-tip", { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(2.4)" }, 2.55);
+      tl.to("#bar-glint", { opacity: 0.55, scale: 1, duration: 0.8, ease: "power2.out" }, 2.55);
+
+      // ---- plank rotates -22 deg as it lifts ----
+      gsap.set("#plank-group", { rotate: 0, transformOrigin: "18% 78%", y: 0 });
+      tl.to("#plank-group", { rotate: -22, y: -34, duration: 3.2, ease: "power2.inOut" }, 2.1);
+      tl.to("#plank-group", { rotate: -19.5, y: -28, duration: 4.4, ease: "sine.inOut" }, 5.5);
+
+      // ---- spikes extrude with spring overshoot ----
+      SPIKES.forEach(function (s) {
+        var el = s.id;
+        gsap.set(el, { x: 0, y: 0, scale: 1, opacity: 0 });
+        tl.to(el, { opacity: 1, duration: 0.35, ease: "power1.out" }, s.delay - 0.15);
+        tl.to(el, {
+          x: s.dx,
+          y: s.dy,
+          scale: 1.18,
+          duration: 1.05,
+          ease: "elastic.out(1, 0.45)"
+        }, s.delay);
+        tl.to(el, { scale: 1, duration: 0.75, ease: "power2.out" }, s.delay + 1.0);
+      });
+
+      // ---- ripple ring: draw-on via dashoffset ----
+      var ring = document.getElementById("ripple-ring");
+      var ringLen = 2 * Math.PI * 260;
+      gsap.set("#ripple-ring", { strokeDasharray: ringLen, strokeDashoffset: ringLen, opacity: 0.9 });
+      tl.to("#ripple-ring", { strokeDashoffset: 0, duration: 2.0, ease: "power2.out" }, 3.0);
+      tl.to("#ripple-ring", { scale: 1.28, opacity: 0.12, duration: 5.4, ease: "power1.out", transformOrigin: "50% 50%" }, 4.4);
+
+      // ---- ember glow pulse ----
+      tl.fromTo(".ember", { opacity: 0.35, scale: 0.9 }, { opacity: 0.85, scale: 1.12, duration: 5.0, ease: "sine.inOut", transformOrigin: "50% 50%" }, 1.3);
+      tl.to(".ember", { opacity: 0.55, scale: 1.0, duration: 4.6, ease: "sine.inOut" }, 6.4);
+
+      // ---- splinters burst (staggered transform, not pop) ----
+      gsap.set(".splinter", { scale: 0.4, opacity: 0, transformOrigin: "0% 50%" });
+      tl.to(".splinter", { scale: 1, opacity: 0.95, duration: 0.6, ease: "back.out(2)", stagger: 0.12 }, 3.9);
+      tl.to(".splinter", { x: "-=26", y: "-=18", rotate: -14, duration: 4.6, ease: "sine.out", stagger: 0.1 }, 4.4);
+      tl.to(".spark", { scale: 1.9, opacity: 0.15, duration: 2.2, ease: "power1.out", stagger: 0.18 }, 4.4);
+
+      // ---- glints ----
+      tl.fromTo(".plank-glint", { opacity: 0.25, scale: 0.7 }, { opacity: 0.95, scale: 1.25, duration: 3.0, ease: "sine.inOut", transformOrigin: "50% 50%" }, 2.6);
+      tl.fromTo(".plank-glint-2", { opacity: 0.2 }, { opacity: 0.75, duration: 4.2, ease: "sine.inOut" }, 4.0);
+
+      // ---- crew subtle sway ----
+      tl.to("#crew-a", { rotate: 1.5, y: -6, duration: 4.2, ease: "sine.inOut", transformOrigin: "50% 100%" }, 1.2);
+      tl.to("#crew-b", { rotate: -1.8, y: -4, duration: 4.6, ease: "sine.inOut", transformOrigin: "50% 100%" }, 2.4);
+
+      // ---- gold highlighter sweep over quote region ----
+      var hl = document.getElementById("hl-sweep");
+      gsap.set(hl, { attr: { width: 0 } });
+      tl.to(hl, { attr: { width: 522 }, duration: 1.1, ease: "power3.inOut" }, 5.2);
+      tl.to("#hl-outline", { attr: { "stroke-dasharray": "522 0" }, duration: 1.1, ease: "power3.inOut" }, 5.2);
+      tl.to("#hl-glow", { attr: { "stroke-dasharray": "522 0" }, duration: 1.1, ease: "power3.inOut" }, 5.2);
+      tl.to("#hl-glow", { attr: { opacity: 0.28 }, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 7.2);
+
+      // ---- time label reveal ----
+      gsap.set("#time-label", { opacity: 0, y: 24 });
+      tl.to("#time-label", { opacity: 1, y: 0, duration: 1.0, ease: "power2.out" }, 0.9);
+
+      // ---- closing drift ----
+      tl.to("#scene-wrap", { scale: 1.055, duration: 2.2, ease: "sine.inOut" }, 9.9);
+
+      tl.to({}, { duration: 12.1 }, 0);
+
+      window.__timelines["02-plank-lever"] = tl;
+    })();
+  </script>
+</template>

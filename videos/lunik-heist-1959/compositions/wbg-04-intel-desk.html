@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>World 04 — Intel Desk</title>
+</head>
+<body>
+<template id="wbg-04-template">
+  <!-- World-BG w04 · Intel Desk · slot 180.0–240.0 s · hand-authored 2D parallax environment. -->
+  <!-- Environment: Station map table, manifest sheets, redaction glints, coordinate reticles at margins. -->
+  <style>
+    #root { position: absolute; inset: 0; }
+    [data-composition-id="wbg-04-intel-desk"] {
+      position: absolute; inset: 0; overflow: hidden; background: transparent;
+    }
+    [data-composition-id="wbg-04-intel-desk"] .wbg-stage { position: absolute; inset: 0; overflow: hidden; }
+    [data-composition-id="wbg-04-intel-desk"] .wbg-ground {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 52% 46% at 20% 22%, rgba(255,122,26,0.10) 0%, rgba(255,122,26,0.028) 42%, rgba(10,14,36,0) 72%),
+        radial-gradient(ellipse 50% 44% at 80% 80%, rgba(142,95,217,0.11) 0%, rgba(10,14,36,0) 70%),
+        linear-gradient(180deg, #070A12 0%, #0A0E24 22%, #151B3B 50%, #0A0E24 74%, #050814 100%),
+        linear-gradient(90deg, #050814 0%, #0A0E24 16%, #0A0E24 84%, #050814 100%),
+        linear-gradient(0deg, #050814 0%, rgba(5,8,20,0) 26%);
+    }
+    [data-composition-id="wbg-04-intel-desk"] .wbg-plane { position: absolute; inset: 0; }
+    [data-composition-id="wbg-04-intel-desk"] .wbg-plane svg {
+      position: absolute; inset: 0; width: 100%; height: 100%; display: block;
+    }
+    [data-composition-id="wbg-04-intel-desk"] .p-glow { opacity: 0.90; }
+    [data-composition-id="wbg-04-intel-desk"] .p-far { opacity: 0.72; }
+    [data-composition-id="wbg-04-intel-desk"] .p-mid { opacity: 0.86; }
+    [data-composition-id="wbg-04-intel-desk"] .p-near { opacity: 0.92; }
+    [data-composition-id="wbg-04-intel-desk"] .wbg-scrim {
+      position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 46% 42% at 50% 50%, rgba(5,8,20,0.48) 0%, rgba(5,8,20,0.18) 58%, rgba(5,8,20,0) 100%),
+        radial-gradient(ellipse 92% 88% at 50% 50%, rgba(5,8,20,0) 48%, rgba(5,8,20,0.60) 100%);
+    }
+    [data-composition-id="wbg-04-intel-desk"] .wbg-grain {
+      position: absolute; inset: 0; pointer-events: none; opacity: 0.28;
+      background-image: radial-gradient(rgba(184,192,216,0.06) 0.6px, transparent 0.7px);
+      background-size: 4px 4px;
+    }
+  </style>
+
+  <div id="root" data-composition-id="wbg-04-intel-desk" data-width="1920" data-height="1080" data-duration="60">
+    <div class="wbg-stage">
+      <div class="wbg-ground"></div>
+
+      <!-- Station situation map table light source & deep ambient field -->
+      <div class="wbg-plane p-glow">
+        <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <radialGradient id="w04-mapLampBloom" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#FFD23F" stop-opacity="0.28"/>
+              <stop offset="30%" stop-color="#FF7A1A" stop-opacity="0.15"/>
+              <stop offset="68%" stop-color="#8E5FD9" stop-opacity="0.05"/>
+              <stop offset="100%" stop-color="#0A0E24" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="w04-coreGlint" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#F4EFE3" stop-opacity="0.55"/>
+              <stop offset="38%" stop-color="#FFD23F" stop-opacity="0.20"/>
+              <stop offset="100%" stop-color="#FF7A1A" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="w04-stationGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#8E5FD9" stop-opacity="0.22"/>
+              <stop offset="50%" stop-color="#151B3B" stop-opacity="0.10"/>
+              <stop offset="100%" stop-color="#0A0E24" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="w04-tableEdge" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#050814" stop-opacity="0.80"/>
+              <stop offset="50%" stop-color="#151B3B" stop-opacity="0.30"/>
+              <stop offset="100%" stop-color="#050814" stop-opacity="0.80"/>
+            </linearGradient>
+            <filter id="w04-blurIntel" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="22"/>
+            </filter>
+          </defs>
+
+          <!-- Perimeter deep shadows anchoring the frame -->
+          <g id="w04-deep-shadows">
+            <ellipse cx="960" cy="1060" rx="700" ry="220" fill="#050814" opacity="0.42" filter="url(#w04-blurIntel)"/>
+            <ellipse cx="140" cy="160" rx="360" ry="240" fill="#0A0E24" opacity="0.36" filter="url(#w04-blurIntel)"/>
+            <ellipse cx="1820" cy="500" rx="320" ry="460" fill="#050814" opacity="0.36" filter="url(#w04-blurIntel)"/>
+            <ellipse cx="780" cy="-60" rx="540" ry="180" fill="#0A0E24" opacity="0.36" filter="url(#w04-blurIntel)"/>
+            <ellipse cx="80" cy="620" rx="280" ry="320" fill="#151B3B" opacity="0.28" filter="url(#w04-blurIntel)"/>
+            <ellipse cx="1860" cy="980" rx="380" ry="200" fill="#0A0E24" opacity="0.36" filter="url(#w04-blurIntel)"/>
+          </g>
+
+          <!-- Drafting lamp over station map at upper-left margin -->
+          <g id="w04-lamp-glow">
+            <ellipse cx="300" cy="220" rx="360" ry="260" fill="url(#w04-mapLampBloom)" opacity="0.60"/>
+            <ellipse cx="300" cy="220" rx="130" ry="90" fill="url(#w04-coreGlint)" opacity="0.65" filter="url(#w04-blurIntel)"/>
+            <circle cx="305" cy="215" r="16" fill="#FFD23F" opacity="0.22"/>
+            <!-- Lower right situation plot wash -->
+            <ellipse cx="1640" cy="860" rx="390" ry="270" fill="url(#w04-stationGlow)" opacity="0.55"/>
+          </g>
+
+          <!-- Upper map cabinet header cornice (y <= 120) -->
+          <g id="w04-cabinet-header" opacity="0.45">
+            <rect x="0" y="-10" width="1920" height="70" fill="#050814" opacity="0.85"/>
+            <rect x="0" y="58" width="1920" height="22" fill="url(#w04-tableEdge)" opacity="0.60"/>
+            <line x1="0" y1="80" x2="1920" y2="80" stroke="#151B3B" stroke-width="4" opacity="0.35"/>
+            <rect x="80" y="50" width="160" height="42" fill="#0A0E24" opacity="0.70"/>
+            <rect x="1680" y="50" width="160" height="42" fill="#0A0E24" opacity="0.70"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Far plane: plotting grid particles & drafting dust motes (edges) -->
+      <div class="wbg-plane p-far">
+        <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g id="w04-far-drift">
+            <g id="w04-far-grid-points">
+              <!-- Grid intersection ticks along perimeter -->
+              <circle cx="100" cy="150" r="2.2" fill="#B8C0D8" opacity="0.30"/>
+              <circle cx="220" cy="260" r="2.6" fill="#B8C0D8" opacity="0.32"/>
+              <circle cx="360" cy="180" r="2.0" fill="#B8C0D8" opacity="0.25"/>
+              <circle cx="460" cy="240" r="2.4" fill="#B8C0D8" opacity="0.28"/>
+              <circle cx="1510" cy="160" r="2.2" fill="#B8C0D8" opacity="0.26"/>
+              <circle cx="1640" cy="210" r="2.8" fill="#B8C0D8" opacity="0.32"/>
+              <circle cx="1780" cy="140" r="2.2" fill="#B8C0D8" opacity="0.25"/>
+              <circle cx="90" cy="820" r="2.4" fill="#B8C0D8" opacity="0.24"/>
+              <circle cx="240" cy="920" r="2.8" fill="#B8C0D8" opacity="0.28"/>
+              <circle cx="1550" cy="890" r="2.6" fill="#B8C0D8" opacity="0.28"/>
+              <circle cx="1720" cy="840" r="3.0" fill="#B8C0D8" opacity="0.32"/>
+              <circle cx="1850" cy="940" r="2.4" fill="#B8C0D8" opacity="0.25"/>
+              <circle cx="130" cy="500" r="2.0" fill="#B8C0D8" opacity="0.20"/>
+              <circle cx="1800" cy="560" r="2.4" fill="#B8C0D8" opacity="0.22"/>
+            </g>
+            <!-- Station desk perimeter file drawers at bottom edges -->
+            <rect x="0" y="950" width="370" height="130" fill="#050814" opacity="0.65"/>
+            <rect x="1550" y="950" width="370" height="130" fill="#050814" opacity="0.65"/>
+            <line x1="0" y1="950" x2="370" y2="950" stroke="#151B3B" stroke-width="4" opacity="0.30"/>
+            <line x1="1550" y1="950" x2="1920" y2="950" stroke="#151B3B" stroke-width="4" opacity="0.30"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Mid plane: drafting coordinate circles & map table margin rulers -->
+      <div class="wbg-plane p-mid">
+        <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g id="w04-mid-drift">
+            <g id="w04-mid-reticles">
+              <circle cx="150" cy="230" r="3.0" fill="#B8C0D8" opacity="0.28"/>
+              <circle cx="280" cy="300" r="2.8" fill="#B8C0D8" opacity="0.25"/>
+              <circle cx="430" cy="240" r="3.2" fill="#B8C0D8" opacity="0.28"/>
+              <circle cx="1480" cy="250" r="3.0" fill="#B8C0D8" opacity="0.26"/>
+              <circle cx="1670" cy="290" r="3.4" fill="#B8C0D8" opacity="0.30"/>
+              <circle cx="1810" cy="250" r="2.8" fill="#B8C0D8" opacity="0.25"/>
+              <circle cx="110" cy="760" r="2.6" fill="#B8C0D8" opacity="0.22"/>
+              <circle cx="330" cy="830" r="3.0" fill="#B8C0D8" opacity="0.26"/>
+              <circle cx="1610" cy="820" r="3.2" fill="#B8C0D8" opacity="0.28"/>
+              <circle cx="1780" cy="770" r="3.0" fill="#B8C0D8" opacity="0.26"/>
+            </g>
+            <!-- Drafting compass guide rings in upper corners -->
+            <g transform="translate(240 180)" opacity="0.16">
+              <circle r="70" fill="none" stroke="#B8C0D8" stroke-width="4"/>
+              <circle r="40" fill="none" stroke="#FF7A1A" stroke-width="4"/>
+            </g>
+            <g transform="translate(1680 180)" opacity="0.16">
+              <circle r="70" fill="none" stroke="#B8C0D8" stroke-width="4"/>
+              <circle r="40" fill="none" stroke="#8E5FD9" stroke-width="4"/>
+            </g>
+            <!-- Situation table lateral guide rails -->
+            <rect x="40" y="90" width="28" height="900" fill="#0A0E24" opacity="0.65"/>
+            <rect x="1852" y="90" width="28" height="900" fill="#0A0E24" opacity="0.65"/>
+            <line x1="68" y1="90" x2="68" y2="990" stroke="#151B3B" stroke-width="4" opacity="0.35"/>
+            <line x1="1852" y1="90" x2="1852" y2="990" stroke="#151B3B" stroke-width="4" opacity="0.35"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Near plane: foreground drafting table edge & illuminated glints -->
+      <div class="wbg-plane p-near">
+        <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <radialGradient id="w04-glintFleck" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#FFD23F" stop-opacity="0.55"/>
+              <stop offset="60%" stop-color="#FF7A1A" stop-opacity="0.25"/>
+              <stop offset="100%" stop-color="#0A0E24" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="w04-nearGlintBlur" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="5"/>
+            </filter>
+          </defs>
+          <g id="w04-near-drift">
+            <g id="w04-near-glints">
+              <!-- Golden drafting table glints under lamp beam -->
+              <circle cx="280" cy="270" r="4.2" fill="url(#w04-glintFleck)" opacity="0.45" filter="url(#w04-nearGlintBlur)"/>
+              <circle cx="390" cy="370" r="3.6" fill="url(#w04-glintFleck)" opacity="0.40"/>
+              <circle cx="430" cy="470" r="3.8" fill="url(#w04-glintFleck)" opacity="0.38"/>
+              <circle cx="230" cy="490" r="4.5" fill="url(#w04-glintFleck)" opacity="0.42" filter="url(#w04-nearGlintBlur)"/>
+              <circle cx="160" cy="870" r="3.6" fill="#B8C0D8" opacity="0.25"/>
+              <circle cx="330" cy="970" r="4.0" fill="#B8C0D8" opacity="0.28"/>
+              <circle cx="1540" cy="950" r="3.8" fill="#B8C0D8" opacity="0.25"/>
+              <circle cx="1740" cy="1000" r="4.2" fill="#B8C0D8" opacity="0.30"/>
+            </g>
+            <!-- Heavy bottom table lip edge -->
+            <rect x="0" y="1026" width="1920" height="74" fill="#050814" opacity="0.85"/>
+            <line x1="0" y1="1026" x2="1920" y2="1026" stroke="#151B3B" stroke-width="4" opacity="0.40"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="wbg-scrim"></div>
+      <div class="wbg-grain"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script src="../assets/brand/lib/motion.js"></script>
+  <script src="../assets/brand-lib/motion.js"></script>
+  <script>
+    (function initWbg04() {
+      var ID = 'wbg-04-intel-desk';
+      var SLOT = 60.0;
+      var root = document.querySelector('[data-composition-id="' + ID + '"]');
+      if (!root || !window.gsap) return;
+      var nz = (window.RLMotion && window.RLMotion.noise1) ? window.RLMotion.noise1(74001) : function(t) { return Math.sin(t); };
+      var tl = gsap.timeline({ paused: true });
+      var drift = { p: 0 };
+
+      /* 3 distinct drift rates on 3 depth planes */
+      tl.to('#w04-far-drift', { x: -165, duration: SLOT, ease: 'none' }, 0);
+      tl.to('#w04-mid-drift', { x: -112, duration: SLOT, ease: 'none' }, 0);
+      tl.to('#w04-near-drift', { x: -58, duration: SLOT, ease: 'none' }, 0);
+
+      /* Seeded continuous micro-drift across slot */
+      tl.to(drift, {
+        p: 1, duration: SLOT, ease: 'none',
+        onUpdate: function () {
+          var t = tl.time();
+          gsap.set('#w04-far-grid-points', { x: nz(t * 0.052) * 8, y: nz(t * 0.042 + 2) * 6 });
+          gsap.set('#w04-mid-reticles', { x: nz(t * 0.072 + 4) * 11, y: nz(t * 0.062 + 6) * 8 });
+          gsap.set('#w04-near-glints', { x: nz(t * 0.092 + 8) * 14, y: nz(t * 0.082 + 10) * 10 });
+        }
+      }, 0);
+
+      /* Living hold: situation desk lamp breathing */
+      tl.to('#w04-lamp-glow', {
+        scale: 1.03, duration: 15, yoyo: true, repeat: 3, ease: 'sine.inOut',
+        transformOrigin: '20% 22%'
+      }, 0);
+
+      tl.to('#w04-mid-drift', {
+        opacity: 0.80, duration: 7.2, yoyo: true, repeat: 7, ease: 'sine.inOut'
+      }, 0);
+
+      /* Slot guard */
+      tl.to({}, { duration: SLOT }, 0);
+      window.__timelines = window.__timelines || {};
+      window.__timelines[ID] = tl;
+    })();
+  </script>
+</template>
+</body>
+</html>

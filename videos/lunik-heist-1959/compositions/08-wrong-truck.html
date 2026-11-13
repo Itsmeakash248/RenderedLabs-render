@@ -1,0 +1,515 @@
+<template id="s08-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="08-wrong-truck" data-width="1920" data-height="1080" data-start="0" data-duration="8.640">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="s08-sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0A0E24"/>
+          <stop offset="0.55" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s08-panel" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.6" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s08-gold" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.15"/>
+          <stop offset="0.45" stop-color="#FFD23F" stop-opacity="0.95"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0.35"/>
+        </linearGradient>
+        <linearGradient id="s08-glass" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.07"/>
+          <stop offset="0.4" stop-color="#FFFFFF" stop-opacity="0.015"/>
+          <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="s08-plate-edge" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.55"/>
+          <stop offset="1" stop-color="#B8C0D8" stop-opacity="0.10"/>
+        </linearGradient>
+        <radialGradient id="s08-violet" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.30"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s08-lamp" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.55"/>
+          <stop offset="0.45" stop-color="#FF7A1A" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s08-ember" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.55"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="s08-goldGlow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="9" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="s08-violetGlow" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur stdDeviation="14"/>
+        </filter>
+        <filter id="s08-soft" x="-30%" y="-30%" width="160%" height="160%">
+          <feGaussianBlur stdDeviation="4"/>
+        </filter>
+        <filter id="s08-haze" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur stdDeviation="26"/>
+        </filter>
+        <clipPath id="s08-plate-clip">
+          <rect x="282" y="90" width="630" height="900" rx="12"/>
+        </clipPath>
+        <clipPath id="s08-wall-clip">
+          <rect id="s08-wall-reveal" x="0" y="250" width="1920" height="520"/>
+        </clipPath>
+        <clipPath id="s08-sheet-clip">
+          <rect x="0" y="0" width="470" height="150"/>
+        </clipPath>
+      </defs>
+
+      <g id="s08-world">
+        <!-- ================= BACKGROUND PLANE ================= -->
+        <g id="s08-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s08-sky)"/>
+          <ellipse cx="980" cy="420" rx="820" ry="360" fill="url(#s08-violet)" opacity="0.9"/>
+          <ellipse cx="1560" cy="760" rx="560" ry="260" fill="url(#s08-violet)" opacity="0.55"/>
+          <g id="s08-stars" fill="#F4EFE3">
+            <circle cx="210" cy="150" r="3" opacity="0.4"/>
+            <circle cx="480" cy="96" r="2.4" opacity="0.3"/>
+            <circle cx="760" cy="180" r="2.8" opacity="0.35"/>
+            <circle cx="1040" cy="120" r="2.2" opacity="0.3"/>
+            <circle cx="1290" cy="210" r="3.2" opacity="0.4"/>
+            <circle cx="1710" cy="160" r="2.6" opacity="0.32"/>
+            <circle cx="1860" cy="320" r="2.2" opacity="0.28"/>
+          </g>
+          <g id="s08-hall" clip-path="url(#s08-wall-clip)">
+            <rect x="-40" y="300" width="2000" height="470" fill="url(#s08-panel)"/>
+            <path d="M-40 300 L1960 300 L1960 340 L-40 340 Z" fill="#151B3B"/>
+            <g id="s08-banner-ribs" fill="#B8C0D8" opacity="0.22">
+              <rect x="60" y="360" width="240" height="16" rx="8"/>
+              <rect x="60" y="394" width="170" height="12" rx="6"/>
+              <rect x="60" y="422" width="208" height="12" rx="6"/>
+              <rect x="1620" y="360" width="240" height="16" rx="8"/>
+              <rect x="1690" y="394" width="170" height="12" rx="6"/>
+            </g>
+            <g id="s08-hall-columns" fill="#0A0E24" opacity="0.85">
+              <rect x="360" y="340" width="44" height="430"/>
+              <rect x="860" y="340" width="44" height="430"/>
+              <rect x="1360" y="340" width="44" height="430"/>
+            </g>
+            <g id="s08-gate" fill="none" stroke="#B8C0D8" stroke-width="12" opacity="0.45">
+              <path d="M1700 770 L1700 430 Q1700 390 1740 390 L1880 390 Q1920 390 1920 430 L1920 770"/>
+              <line x1="1740" y1="430" x2="1740" y2="770"/>
+              <line x1="1790" y1="430" x2="1790" y2="770"/>
+              <line x1="1840" y1="430" x2="1840" y2="770"/>
+              <line x1="1890" y1="430" x2="1890" y2="770"/>
+            </g>
+            <g id="s08-gate-lamp" filter="url(#s08-goldGlow)">
+              <rect x="1772" y="352" width="76" height="20" rx="10" fill="#FFD23F" opacity="0.9"/>
+              <ellipse cx="1810" cy="390" rx="120" ry="70" fill="url(#s08-lamp)" opacity="0.45"/>
+            </g>
+          </g>
+          <g id="s08-road">
+            <rect x="0" y="700" width="1920" height="380" fill="#050814"/>
+            <rect x="0" y="700" width="1920" height="10" fill="#B8C0D8" opacity="0.18"/>
+            <g id="s08-lane-dashes" fill="#FFD23F" opacity="0.35">
+              <rect x="80" y="772" width="90" height="10" rx="5"/>
+              <rect x="260" y="772" width="90" height="10" rx="5"/>
+              <rect x="440" y="772" width="90" height="10" rx="5"/>
+              <rect x="620" y="772" width="90" height="10" rx="5"/>
+              <rect x="800" y="772" width="90" height="10" rx="5"/>
+              <rect x="980" y="772" width="90" height="10" rx="5"/>
+              <rect x="1160" y="772" width="90" height="10" rx="5"/>
+              <rect x="1340" y="772" width="90" height="10" rx="5"/>
+              <rect x="1520" y="772" width="90" height="10" rx="5"/>
+              <rect x="1700" y="772" width="90" height="10" rx="5"/>
+            </g>
+            <g id="s08-lane-dashes-b" fill="#B8C0D8" opacity="0.22">
+              <rect x="170" y="1000" width="70" height="8" rx="4"/>
+              <rect x="360" y="1000" width="70" height="8" rx="4"/>
+              <rect x="550" y="1000" width="70" height="8" rx="4"/>
+              <rect x="740" y="1000" width="70" height="8" rx="4"/>
+              <rect x="930" y="1000" width="70" height="8" rx="4"/>
+              <rect x="1120" y="1000" width="70" height="8" rx="4"/>
+              <rect x="1310" y="1000" width="70" height="8" rx="4"/>
+              <rect x="1500" y="1000" width="70" height="8" rx="4"/>
+              <rect x="1690" y="1000" width="70" height="8" rx="4"/>
+            </g>
+            <ellipse cx="1450" cy="742" rx="390" ry="70" fill="url(#s08-lamp)" opacity="0.10"/>
+          </g>
+          <g id="s08-dusk-dust" fill="#FFD23F">
+            <circle cx="1180" cy="360" r="3" opacity="0.25"/>
+            <circle cx="1290" cy="520" r="2.2" opacity="0.2"/>
+            <circle cx="1640" cy="420" r="2.6" opacity="0.22"/>
+            <circle cx="1810" cy="620" r="2" opacity="0.18"/>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: PLATE + TRUCKS ================= -->
+        <g id="s08-mg">
+          <!-- glass plate mount, 58% viewport width, height-fit -->
+          <g id="s08-plate-g">
+            <rect x="34" y="50" width="1126" height="980" rx="34" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.12"/>
+            <rect x="40" y="56" width="1114" height="968" rx="28" fill="#151B3B" stroke="rgba(141,164,237,0.20)" stroke-width="1"/>
+            <rect x="54" y="70" width="1086" height="940" rx="20" fill="#0A0E24"/>
+            <rect x="54" y="70" width="1086" height="940" rx="20" fill="url(#s08-glass)" opacity="0.6"/>
+            <image href="../plates/processed/pl-exhibition-05.png" x="282" y="90" width="630" height="900"
+                   preserveAspectRatio="xMidYMid meet" clip-path="url(#s08-plate-clip)"/>
+            <rect x="282" y="90" width="630" height="34" fill="#0A0E24"/>
+            <rect x="282" y="90" width="630" height="900" rx="12" fill="none" stroke="url(#s08-plate-edge)" stroke-width="4"/>
+            <g clip-path="url(#s08-plate-clip)">
+              <rect id="s08-plate-sheen-band" x="120" y="90" width="150" height="900" fill="#FFFFFF" opacity="0.05" transform="skewX(-12)"/>
+            </g>
+            <rect id="s08-plate-sheen" x="282" y="90" width="630" height="900" rx="12" fill="url(#s08-glass)" opacity="0.55"/>
+            <g id="s08-plate-screws" fill="#B8C0D8" opacity="0.55">
+              <circle cx="72" cy="88" r="5"/>
+              <circle cx="1122" cy="88" r="5"/>
+              <circle cx="72" cy="992" r="5"/>
+              <circle cx="1122" cy="992" r="5"/>
+            </g>
+            <!-- dimension gauge, no text -->
+            <g id="s08-gauge" opacity="0.85">
+              <rect x="120" y="150" width="58" height="780" rx="29" fill="none" stroke="#FFD23F" stroke-width="4" opacity="0.35"/>
+              <line x1="149" y1="150" x2="149" y2="930" stroke="#B8C0D8" stroke-width="6" opacity="0.35"/>
+              <g id="s08-gauge-ticks" stroke="#B8C0D8" stroke-width="6" opacity="0.5" stroke-linecap="round">
+                <line x1="122" y1="150" x2="176" y2="150"/>
+                <line x1="134" y1="228" x2="176" y2="228"/>
+                <line x1="134" y1="306" x2="176" y2="306"/>
+                <line x1="134" y1="384" x2="176" y2="384"/>
+                <line x1="122" y1="462" x2="176" y2="462"/>
+                <line x1="134" y1="540" x2="176" y2="540"/>
+                <line x1="134" y1="618" x2="176" y2="618"/>
+                <line x1="134" y1="696" x2="176" y2="696"/>
+                <line x1="122" y1="774" x2="176" y2="774"/>
+                <line x1="134" y1="852" x2="176" y2="852"/>
+                <line x1="122" y1="930" x2="176" y2="930"/>
+              </g>
+              <circle cx="149" cy="462" r="14" fill="#FFD23F"/>
+              <circle cx="149" cy="462" r="24" fill="none" stroke="#FFD23F" stroke-width="4" opacity="0.4"/>
+            </g>
+            <!-- quote overlay: source pixel space 1344x1920 -->
+            <svg x="282" y="90" width="630" height="900" viewBox="0 0 1344 1920" preserveAspectRatio="xMidYMid meet">
+              <g id="s08-quote" opacity="0">
+                <rect x="551" y="980" width="239" height="45" rx="6" fill="none" stroke="#FFD23F" stroke-width="26" opacity="0.30" filter="url(#s08-goldGlow)"/>
+                <g stroke="#FFD23F" stroke-width="14" stroke-linecap="round" fill="none">
+                  <path d="M551 1012 L551 980 L583 980"/>
+                  <path d="M758 980 L790 980 L790 1012"/>
+                  <path d="M551 993 L551 1025 L583 1025"/>
+                  <path d="M790 993 L790 1025 L758 1025"/>
+                </g>
+                <g stroke="#FFD23F" stroke-width="8" stroke-linecap="round">
+                  <line x1="565" y1="972" x2="565" y2="988"/>
+                  <line x1="776" y1="972" x2="776" y2="988"/>
+                </g>
+              </g>
+            </svg>
+          </g>
+
+          <!-- wrong truck, chassis too short -->
+          <g id="s08-truck-a">
+            <rect x="1188" y="560" width="330" height="36" rx="18" fill="#151B3B" stroke="#B8C0D8" stroke-width="20"/>
+            <path d="M1188 560 L1188 640 Q1188 660 1208 660 L1272 660 Q1292 660 1292 640 L1292 560 Z" fill="#151B3B" stroke="#B8C0D8" stroke-width="18"/>
+            <rect x="1208" y="584" width="62" height="34" rx="8" fill="#8E5FD9" opacity="0.55"/>
+            <circle cx="1200" cy="612" r="9" fill="#FFD23F" opacity="0.9"/>
+            <g id="s08-a-wheels">
+              <g class="s08-spokes-a" transform="translate(1230 690)">
+                <circle r="46" fill="#050814" stroke="#B8C0D8" stroke-width="16"/>
+                <circle r="17" fill="#FFD23F"/>
+                <g stroke="#B8C0D8" stroke-width="7" stroke-linecap="round">
+                  <line x1="-28" y1="0" x2="28" y2="0"/>
+                  <line x1="-14" y1="-24" x2="14" y2="24"/>
+                  <line x1="-14" y1="24" x2="14" y2="-24"/>
+                </g>
+              </g>
+              <g class="s08-spokes-a" transform="translate(1470 690)">
+                <circle r="46" fill="#050814" stroke="#B8C0D8" stroke-width="16"/>
+                <circle r="17" fill="#FFD23F"/>
+                <g stroke="#B8C0D8" stroke-width="7" stroke-linecap="round">
+                  <line x1="-28" y1="0" x2="28" y2="0"/>
+                  <line x1="-14" y1="-24" x2="14" y2="24"/>
+                  <line x1="-14" y1="24" x2="14" y2="-24"/>
+                </g>
+              </g>
+            </g>
+            <rect x="1310" y="596" width="14" height="58" fill="#B8C0D8" opacity="0.4"/>
+            <circle cx="1512" cy="574" r="9" fill="#FF7A1A" filter="url(#s08-soft)"/>
+          </g>
+
+          <!-- second, correct truck -->
+          <g id="s08-truck-b">
+            <rect x="1158" y="790" width="500" height="40" rx="20" fill="#151B3B" stroke="#B8C0D8" stroke-width="22"/>
+            <path d="M1158 790 L1158 880 Q1158 900 1178 900 L1242 900 Q1262 900 1262 880 L1262 790 Z" fill="#151B3B" stroke="#B8C0D8" stroke-width="18"/>
+            <rect x="1178" y="816" width="62" height="34" rx="8" fill="#8E5FD9" opacity="0.5"/>
+            <circle cx="1170" cy="846" r="9" fill="#FFD23F"/>
+            <g id="s08-b-wheels">
+              <g class="s08-spokes-b" transform="translate(1230 920)">
+                <circle r="46" fill="#050814" stroke="#B8C0D8" stroke-width="16"/>
+                <circle r="17" fill="#FFD23F"/>
+                <g stroke="#B8C0D8" stroke-width="7" stroke-linecap="round">
+                  <line x1="-28" y1="0" x2="28" y2="0"/>
+                  <line x1="-14" y1="-24" x2="14" y2="24"/>
+                  <line x1="-14" y1="24" x2="14" y2="-24"/>
+                </g>
+              </g>
+              <g class="s08-spokes-b" transform="translate(1590 920)">
+                <circle r="46" fill="#050814" stroke="#B8C0D8" stroke-width="16"/>
+                <circle r="17" fill="#FFD23F"/>
+                <g stroke="#B8C0D8" stroke-width="7" stroke-linecap="round">
+                  <line x1="-28" y1="0" x2="28" y2="0"/>
+                  <line x1="-14" y1="-24" x2="14" y2="24"/>
+                  <line x1="-14" y1="24" x2="14" y2="-24"/>
+                </g>
+              </g>
+            </g>
+            <rect x="1560" y="826" width="14" height="58" fill="#B8C0D8" opacity="0.4"/>
+            <circle cx="1642" cy="804" r="9" fill="#FF7A1A" filter="url(#s08-soft)"/>
+          </g>
+
+          <!-- crate, overhanging the short deck (base transform = deck-top seat) -->
+          <g transform="translate(1118 410)">
+          <g id="s08-crate">
+            <rect x="0" y="0" width="470" height="150" rx="10" fill="#151B3B" stroke="#FF7A1A" stroke-width="16" clip-path="url(#s08-sheet-clip)"/>
+            <g clip-path="url(#s08-sheet-clip)">
+              <g stroke="#B8C0D8" stroke-width="6" opacity="0.45">
+                <line x1="78" y1="6" x2="78" y2="144"/>
+                <line x1="156" y1="6" x2="156" y2="144"/>
+                <line x1="234" y1="6" x2="234" y2="144"/>
+                <line x1="312" y1="6" x2="312" y2="144"/>
+                <line x1="390" y1="6" x2="390" y2="144"/>
+              </g>
+              <g stroke="#FFD23F" stroke-width="8" opacity="0.5">
+                <line x1="12" y1="18" x2="458" y2="132"/>
+                <line x1="458" y1="18" x2="12" y2="132"/>
+              </g>
+            </g>
+            <g fill="#FFD23F">
+              <circle cx="18" cy="18" r="9"/>
+              <circle cx="452" cy="18" r="9"/>
+              <circle cx="18" cy="132" r="9"/>
+              <circle cx="452" cy="132" r="9"/>
+            </g>
+            <rect id="s08-crate-outline" x="0" y="0" width="470" height="150" rx="10" fill="none" stroke="#FF7A1A" stroke-width="10" stroke-dasharray="1240" stroke-dashoffset="1240"/>
+            <g id="s08-crate-ember" fill="none" stroke="#FF7A1A" stroke-width="18" opacity="0">
+              <path d="M-18 18 L-18 132"/>
+              <path d="M488 18 L488 132"/>
+            </g>
+          </g>
+          </g>
+
+          <!-- crane hook + chain (centred on the crate at x=1353) -->
+          <g transform="translate(-104 0)">
+          <g id="s08-hook">
+            <g id="s08-chain" stroke="#FFD23F" stroke-width="8" opacity="0.85">
+              <rect x="1457" y="192" width="12" height="28" rx="6" fill="none"/>
+              <rect x="1457" y="224" width="12" height="28" rx="6" fill="none"/>
+              <rect x="1457" y="256" width="12" height="28" rx="6" fill="none"/>
+              <rect x="1457" y="288" width="12" height="28" rx="6" fill="none"/>
+              <rect x="1457" y="320" width="12" height="28" rx="6" fill="none"/>
+              <rect x="1457" y="352" width="12" height="28" rx="6" fill="none"/>
+              <rect x="1457" y="384" width="12" height="28" rx="6" fill="none"/>
+            </g>
+            <g id="s08-pulley">
+              <circle cx="1463" cy="168" r="32" fill="#151B3B" stroke="#B8C0D8" stroke-width="12"/>
+              <circle cx="1463" cy="168" r="10" fill="#FFD23F"/>
+              <path d="M1463 200 L1463 214 Q1463 238 1489 238 Q1509 238 1509 220" fill="none" stroke="#FFD23F" stroke-width="14" stroke-linecap="round"/>
+            </g>
+          </g>
+          </g>
+
+          <!-- dimension pills, graphic only -->
+          <g id="s08-pills">
+            <g id="s08-pill-crate">
+              <rect x="1118" y="744" width="470" height="26" rx="13" fill="#050814" stroke="#FFD23F" stroke-width="5"/>
+              <g stroke="#FFD23F" stroke-width="6" stroke-linecap="round">
+                <line x1="1118" y1="734" x2="1118" y2="780"/>
+                <line x1="1588" y1="734" x2="1588" y2="780"/>
+              </g>
+            </g>
+            <g id="s08-pill-deck">
+              <rect x="1188" y="706" width="330" height="22" rx="11" fill="#050814" stroke="#FF7A1A" stroke-width="5"/>
+              <g stroke="#FF7A1A" stroke-width="6" stroke-linecap="round">
+                <line x1="1188" y1="696" x2="1188" y2="738"/>
+                <line x1="1518" y1="696" x2="1518" y2="738"/>
+              </g>
+            </g>
+            <g id="s08-pill-correct">
+              <rect x="1158" y="1002" width="500" height="26" rx="13" fill="#050814" stroke="#FFD23F" stroke-width="5"/>
+              <g stroke="#FFD23F" stroke-width="6" stroke-linecap="round">
+                <line x1="1158" y1="992" x2="1158" y2="1038"/>
+                <line x1="1658" y1="992" x2="1658" y2="1038"/>
+              </g>
+            </g>
+          </g>
+
+          <!-- badge -->
+          <g id="s08-badge">
+            <rect x="1370" y="88" width="500" height="102" rx="51" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="1384" y="102" width="472" height="74" rx="37" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.35"/>
+            <g fill="#FFD23F" opacity="0.7">
+              <circle cx="1398" cy="139" r="5"/>
+              <circle cx="1842" cy="139" r="5"/>
+            </g>
+            <text x="1620" y="162" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="52"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="10" paint-order="stroke fill" letter-spacing="2"
+                  textLength="410" lengthAdjust="spacingAndGlyphs">WRONG TRUCK</text>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND PLANE ================= -->
+        <g id="s08-fg">
+          <g id="s08-road-dust" fill="#B8C0D8">
+            <ellipse cx="1240" cy="750" rx="70" ry="14" opacity="0.12"/>
+            <ellipse cx="1460" cy="742" rx="90" ry="16" opacity="0.10"/>
+            <ellipse cx="1290" cy="980" rx="80" ry="16" opacity="0.10"/>
+            <circle cx="1170" cy="730" r="5" opacity="0.18"/>
+            <circle cx="1320" cy="724" r="4" opacity="0.16"/>
+            <circle cx="1550" cy="736" r="5" opacity="0.18"/>
+            <circle cx="1680" cy="962" r="4" opacity="0.16"/>
+          </g>
+          <g id="s08-speed-lines" stroke="#FFD23F" stroke-width="6" stroke-linecap="round" opacity="0">
+            <line x1="1180" y1="520" x2="1060" y2="520"/>
+            <line x1="1180" y1="640" x2="1080" y2="640"/>
+            <line x1="1180" y1="860" x2="1040" y2="860"/>
+            <line x1="1180" y1="940" x2="1090" y2="940"/>
+          </g>
+          <ellipse cx="1460" cy="1046" rx="420" ry="26" fill="#8E5FD9" opacity="0.14" filter="url(#s08-haze)"/>
+          <g id="s08-wipe" opacity="0">
+            <circle cx="1463" cy="720" r="90" fill="none" stroke="#FFD23F" stroke-width="26"/>
+            <g id="s08-wipe-spokes" stroke="#FFD23F" stroke-width="18" stroke-linecap="round">
+              <line x1="1463" y1="600" x2="1463" y2="840"/>
+              <line x1="1343" y1="720" x2="1583" y2="720"/>
+              <line x1="1378" y1="635" x2="1548" y2="805"/>
+              <line x1="1378" y1="805" x2="1548" y2="635"/>
+            </g>
+          </g>
+          <g id="s08-dust-puff" fill="#FFD23F">
+            <circle cx="1180" cy="720" r="7" opacity="0"/>
+            <circle cx="1240" cy="700" r="5" opacity="0"/>
+            <circle cx="1320" cy="712" r="6" opacity="0"/>
+            <circle cx="1160" cy="960" r="5" opacity="0"/>
+            <circle cx="1240" cy="946" r="7" opacity="0"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:radial-gradient(circle at 22% 30%, rgba(255,210,63,0.10), transparent 55%);}
+    .scene-persp{position:absolute;inset:0;perspective:1600px;perspective-origin:44% 46%;}
+    #stage{display:block;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      /* ---------- initial states ---------- */
+      gsap.set("#s08-plate-g", { y: 56, opacity: 0, rotationY: 9, transformOrigin: "50% 50%" });
+      gsap.set("#s08-plate-screws circle", { scale: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s08-plate-sheen", { opacity: 0 });
+      gsap.set("#s08-plate-sheen-band", { x: 0 });
+      gsap.set("#s08-gauge", { scaleY: 0.1, transformOrigin: "50% 0%" });
+      gsap.set("#s08-gauge-ticks line", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s08-quote", { opacity: 0 });
+      gsap.set("#s08-hall", { opacity: 0 });
+      gsap.set("#s08-wall-reveal", { attr: { height: 0 } });
+      gsap.set("#s08-road", { scaleX: 0.2, transformOrigin: "0% 50%" });
+      gsap.set("#s08-lane-dashes rect", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s08-lane-dashes-b rect", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s08-truck-a", { x: -240, opacity: 0 });
+      gsap.set("#s08-a-wheels", { scale: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s08-truck-b", { x: 720, opacity: 0 });
+      gsap.set("#s08-b-wheels", { scale: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s08-crate", { x: 0, y: -190, opacity: 0, rotation: -9, transformOrigin: "235px -240px" });
+      gsap.set("#s08-chain", { scaleY: 0.05, transformOrigin: "50% 0%" });
+      gsap.set("#s08-hook", { y: -90, opacity: 0 });
+      gsap.set("#s08-pill-crate", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s08-pill-deck", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s08-pill-correct", { scaleX: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s08-badge", { scale: 1.5, opacity: 0, rotation: -4, transformOrigin: "50% 50%" });
+      gsap.set("#s08-crate-outline", { strokeDashoffset: 1240 });
+      gsap.set("#s08-crate-ember", { opacity: 0 });
+      gsap.set("#s08-speed-lines", { opacity: 0, x: 0 });
+      gsap.set("#s08-wipe", { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" });
+      gsap.set("#s08-wipe-spokes", { rotation: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s08-dust-puff circle", { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" });
+      gsap.set("#s08-stars circle", { opacity: 0 });
+      gsap.set("#s08-dusk-dust circle", { opacity: 0 });
+
+      /* ---------- phase 1: road, hall, plate mount ---------- */
+      tl.to("#s08-hall", { opacity: 1, duration: 0.8, ease: "power1.out" }, 0.0);
+      tl.to("#s08-wall-reveal", { attr: { height: 520 }, duration: 1.4, ease: "power3.out" }, 0.1);
+      tl.to("#s08-road", { scaleX: 1, duration: 1.2, ease: "power2.inOut" }, 0.25);
+      tl.to("#s08-lane-dashes rect", { scaleX: 1, duration: 0.5, stagger: 0.06, ease: "power2.out" }, 0.55);
+      tl.to("#s08-lane-dashes-b rect", { scaleX: 1, duration: 0.4, stagger: 0.05, ease: "power2.out" }, 0.8);
+      tl.to("#s08-stars circle", { opacity: 0.4, duration: 1.1, stagger: 0.08, ease: "power1.out" }, 0.3);
+      tl.to("#s08-dusk-dust circle", { opacity: 0.22, duration: 1.0, stagger: 0.1, ease: "power1.out" }, 0.7);
+      tl.to("#s08-plate-g", { y: 0, opacity: 1, rotationY: 0, duration: 1.5, ease: "power3.out" }, 0.55);
+      tl.to("#s08-gauge", { scaleY: 1, duration: 1.4, ease: "power3.out" }, 1.1);
+      tl.to("#s08-gauge-ticks line", { scaleX: 1, duration: 0.35, stagger: 0.05, ease: "power2.out" }, 1.3);
+      tl.to("#s08-plate-screws circle", { scale: 1, duration: 0.4, stagger: 0.08, ease: "back.out(2)" }, 1.7);
+      tl.to("#s08-plate-sheen", { opacity: 0.5, duration: 0.9, ease: "power1.out" }, 1.2);
+
+      /* ---------- phase 2: wrong truck draws wheel-first ---------- */
+      tl.to("#s08-truck-a", { x: 0, opacity: 1, duration: 1.0, ease: "power3.out" }, 0.95);
+      tl.to("#s08-a-wheels", { scale: 1, duration: 0.6, stagger: 0.14, ease: "back.out(1.8)" }, 1.1);
+      tl.to(".s08-spokes-a", { rotation: -210, duration: 1.3, ease: "power2.out" }, 1.2);
+      tl.to("#s08-hook", { y: 0, opacity: 1, duration: 0.7, ease: "power2.out" }, 1.5);
+      tl.to("#s08-chain", { scaleY: 1, duration: 0.8, ease: "power2.inOut" }, 1.7);
+      tl.to("#s08-crate", { y: 0, opacity: 1, rotation: 0, duration: 1.1, ease: "power2.inOut" }, 1.95);
+      tl.to("#s08-crate", { rotation: 6, duration: 0.55, yoyo: true, repeat: 5, ease: "sine.inOut" }, 3.05);
+      tl.to("#s08-crate-outline", { strokeDashoffset: 0, duration: 1.1, ease: "power2.inOut" }, 2.8);
+      tl.to("#s08-crate-ember", { opacity: 0.75, duration: 0.6, ease: "power2.out" }, 3.2);
+      tl.to("#s08-crate-ember", { opacity: 0.28, duration: 0.8, yoyo: true, repeat: 2, ease: "sine.inOut" }, 3.9);
+      tl.to("#s08-pill-deck", { scaleX: 1, duration: 0.5, ease: "power3.out" }, 3.0);
+      tl.to("#s08-pill-crate", { scaleX: 1, duration: 0.8, ease: "power3.out" }, 3.15);
+
+      /* ---------- phase 3: correct truck arrives ---------- */
+      tl.to("#s08-truck-b", { x: 0, opacity: 1, duration: 1.5, ease: "power3.out" }, 3.55);
+      tl.to("#s08-b-wheels", { scale: 1, duration: 0.55, stagger: 0.12, ease: "back.out(1.8)" }, 3.75);
+      tl.to(".s08-spokes-b", { rotation: -260, duration: 1.5, ease: "power2.out" }, 3.85);
+      tl.to("#s08-badge", { scale: 1, opacity: 1, rotation: 0, duration: 0.4, ease: "power4.in" }, 4.15);
+      tl.to("#s08-quote", { opacity: 1, duration: 0.35, ease: "power2.out" }, 4.35);
+      tl.to("#s08-plate-sheen-band", { x: 900, duration: 1.2, ease: "power2.inOut" }, 4.4);
+      tl.to("#s08-quote", { scale: 1.03, duration: 0.7, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 5.4);
+      tl.to("#s08-pill-correct", { scaleX: 1, duration: 0.8, ease: "power3.out" }, 5.2);
+
+      /* ---------- phase 4: hook transfer, pair exits ---------- */
+      tl.to("#s08-crate", { x: 55, y: 230, rotation: 0, duration: 1.35, ease: "power2.inOut" }, 5.35);
+      tl.to("#s08-chain", { scaleY: 1.95, duration: 1.35, ease: "power2.inOut" }, 5.35);
+      tl.to("#s08-hook", { x: 55, y: 0, duration: 1.35, ease: "power2.inOut" }, 5.35);
+      tl.to("#s08-crate", { y: 220, duration: 0.18, ease: "power2.in" }, 6.7);
+      tl.to("#s08-crate", { y: 230, duration: 0.22, ease: "back.out(2.4)" }, 6.88);
+      tl.to("#s08-chain", { scaleY: 0.55, duration: 0.65, ease: "power2.inOut" }, 7.0);
+      tl.to("#s08-speed-lines", { opacity: 0.7, x: -26, duration: 0.35, ease: "power2.out" }, 7.05);
+      tl.to("#s08-truck-a", { x: 840, duration: 1.35, ease: "power2.in" }, 7.05);
+      tl.to("#s08-truck-b", { x: 820, duration: 1.35, ease: "power2.in" }, 7.15);
+      tl.to("#s08-crate", { x: 875, duration: 1.35, ease: "power2.in" }, 7.15);
+      tl.to(".s08-spokes-a", { rotation: 240, duration: 1.2, ease: "none" }, 7.1);
+      tl.to(".s08-spokes-b", { rotation: 220, duration: 1.2, ease: "none" }, 7.2);
+      tl.to("#s08-dust-puff circle", { opacity: 0.6, scale: 1, duration: 0.45, stagger: 0.06, ease: "power2.out" }, 7.0);
+      tl.to("#s08-dust-puff", { y: -30, x: -50, duration: 1.44, ease: "power1.out" }, 7.2);
+      tl.to("#s08-wipe", { opacity: 0.8, scale: 1.2, duration: 0.35, ease: "power3.out" }, 7.10);
+      tl.to("#s08-wipe", { scale: 6.5, opacity: 0, duration: 1.19, ease: "power2.in" }, 7.45);
+      tl.to("#s08-wipe-spokes", { rotation: 180, duration: 1.29, ease: "power2.in" }, 7.35);
+      tl.to("#s08-plate-g", { x: -70, opacity: 0.5, duration: 1.0, ease: "power2.in" }, 7.35);
+
+      /* ---------- 3D + parallax + living holds ---------- */
+      tl.fromTo("#s08-bg", { x: -20, rotationX: 1.4 }, { x: 20, rotationX: 0, duration: 8.64, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s08-mg", { x: -10, rotationY: 3 }, { x: 10, rotationY: -3, duration: 8.64, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s08-fg", { x: 12 }, { x: -12, duration: 8.64, ease: "sine.inOut" }, 0);
+      tl.to("#s08-bg ellipse:first-of-type", { opacity: 0.7, duration: 2.4, yoyo: true, repeat: 2, ease: "sine.inOut" }, 1.0);
+      tl.to("#s08-plate-sheen", { opacity: 0.78, duration: 0.85, yoyo: true, repeat: 2, ease: "sine.inOut" }, 6.0);
+      tl.to("#s08-badge", { y: -5, duration: 0.9, yoyo: true, repeat: 2, ease: "sine.inOut" }, 5.8);
+      tl.to("#s08-gauge circle", { scale: 1.18, duration: 0.78, yoyo: true, repeat: 2, transformOrigin: "50% 50%", ease: "sine.inOut" }, 6.3);
+      tl.to("#s08-road-dust ellipse", { x: 24, duration: 1.7, yoyo: true, repeat: 1, ease: "sine.inOut" }, 5.0);
+      tl.to("#s08-world", { scale: 1.04, transformOrigin: "56% 52%", duration: 2.0, ease: "power1.inOut" }, 6.6);
+
+      tl.to({}, { duration: 8.640 }, 0);
+      window.__timelines["08-wrong-truck"] = tl;
+    })();
+  </script>
+</div>
+</template>

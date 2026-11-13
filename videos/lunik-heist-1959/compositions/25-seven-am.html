@@ -1,0 +1,485 @@
+<template id="s25-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="25-seven-am" data-width="1920" data-height="1080" data-start="0" data-duration="19.800">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="s25-sky-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0A0E24"/>
+          <stop offset="0.42" stop-color="#151B3B"/>
+          <stop offset="0.72" stop-color="#8E5FD9"/>
+          <stop offset="1" stop-color="#FF7A1A"/>
+        </linearGradient>
+        <linearGradient id="s25-ground-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.5" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s25-gold-grad" x1="0" y1="0" x2="0.8" y2="1">
+          <stop offset="0" stop-color="#FF7A1A"/>
+          <stop offset="0.46" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#F4EFE3"/>
+        </linearGradient>
+        <linearGradient id="s25-metal-grad" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.92"/>
+          <stop offset="0.26" stop-color="#B8C0D8"/>
+          <stop offset="0.66" stop-color="#515A83"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </linearGradient>
+        <linearGradient id="s25-card-grad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#151B3B" stop-opacity="0.96"/>
+          <stop offset="1" stop-color="#0A0E24" stop-opacity="0.94"/>
+        </linearGradient>
+        <linearGradient id="s25-glass-grad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.12"/>
+          <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.03"/>
+          <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="s25-dawn-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.34"/>
+          <stop offset="0.5" stop-color="#FF7A1A" stop-opacity="0.14"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s25-violet-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.36"/>
+          <stop offset="0.62" stop-color="#8E5FD9" stop-opacity="0.1"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s25-ember-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.6"/>
+          <stop offset="0.55" stop-color="#FF7A1A" stop-opacity="0.16"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s25-glow-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.7"/>
+          <stop offset="0.45" stop-color="#FF7A1A" stop-opacity="0.22"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <clipPath id="s25-plate-crop">
+          <rect x="0" y="0" width="1275" height="1650" rx="20"/>
+        </clipPath>
+        <filter id="s25-haze" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="22"/>
+        </filter>
+        <filter id="s25-soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="7"/>
+        </filter>
+        <filter id="s25-glow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="5" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <g id="s25-world">
+        <!-- ================= BACKGROUND: dawn yard ================= -->
+        <g id="s25-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s25-sky-grad)"/>
+          <ellipse cx="880" cy="560" rx="860" ry="300" fill="url(#s25-dawn-grad)"/>
+          <ellipse cx="300" cy="760" rx="520" ry="260" fill="url(#s25-violet-grad)" opacity="0.5"/>
+          <g id="s25-stars" fill="#F4EFE3">
+            <circle cx="160" cy="96" r="3" opacity="0.4"/>
+            <circle cx="420" cy="150" r="2" opacity="0.28"/>
+            <circle cx="700" cy="80" r="3" opacity="0.36"/>
+            <circle cx="1020" cy="130" r="2" opacity="0.24"/>
+            <circle cx="1300" cy="70" r="3" opacity="0.3"/>
+            <circle cx="1600" cy="140" r="2" opacity="0.22"/>
+            <circle cx="1840" cy="90" r="3" opacity="0.26"/>
+          </g>
+
+          <g id="s25-warehouses">
+            <path d="M 0 560 L 0 470 L 96 470 L 96 432 L 176 432 L 176 496 L 268 496 L 268 452 L 348 452 L 348 510 L 442 510 L 442 440 L 520 440 L 520 520 L 610 520 L 610 468 L 700 468 L 700 540 L 800 540 L 800 486 L 890 486 L 890 556 L 990 556 L 990 500 L 1080 500 L 1080 560 Z"
+                fill="#151B3B" stroke="#515A83" stroke-width="6"/>
+            <path d="M 1080 560 L 1080 512 L 1180 512 L 1180 470 L 1270 470 L 1270 530 L 1380 530 L 1380 480 L 1480 480 L 1480 544 L 1600 544 L 1600 492 L 1710 492 L 1710 552 L 1830 552 L 1830 508 L 1920 508 L 1920 560 Z"
+                fill="#0A0E24" stroke="#515A83" stroke-width="6" opacity="0.9"/>
+            <g fill="#FFD23F" opacity="0.4">
+              <rect x="40" y="500" width="8" height="10"/><rect x="120" y="464" width="8" height="10"/>
+              <rect x="204" y="520" width="8" height="10"/><rect x="292" y="486" width="8" height="10"/>
+              <rect x="380" y="540" width="8" height="10"/><rect x="470" y="480" width="8" height="10"/>
+              <rect x="560" y="544" width="8" height="10"/><rect x="650" y="504" width="8" height="10"/>
+              <rect x="760" y="562" width="8" height="10"/><rect x="850" y="518" width="8" height="10"/>
+              <rect x="1130" y="536" width="8" height="10"/><rect x="1220" y="500" width="8" height="10"/>
+              <rect x="1330" y="550" width="8" height="10"/><rect x="1430" y="512" width="8" height="10"/>
+              <rect x="1540" y="558" width="8" height="10"/><rect x="1660" y="522" width="8" height="10"/>
+              <rect x="1770" y="562" width="8" height="10"/>
+            </g>
+            <g fill="#FF7A1A" opacity="0.55">
+              <rect x="244" y="530" width="8" height="10"/>
+              <rect x="624" y="550" width="8" height="10"/>
+              <rect x="1400" y="560" width="8" height="10"/>
+            </g>
+          </g>
+
+          <rect x="0" y="560" width="1920" height="520" fill="url(#s25-ground-grad)"/>
+          <path d="M 0 560 L 1920 560" stroke="#B8C0D8" stroke-width="5" opacity="0.28"/>
+          <ellipse cx="820" cy="600" rx="620" ry="90" fill="url(#s25-ember-grad)" opacity="0.3" filter="url(#s25-haze)"/>
+
+          <g id="s25-horizon-glow" opacity="0.85">
+            <rect x="0" y="556" width="1920" height="10" fill="url(#s25-gold-grad)" opacity="0.5"/>
+            <circle cx="900" cy="560" r="8" fill="#FFD23F"/>
+            <circle cx="900" cy="560" r="26" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.5"/>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: rails, flatcar, crate, checker ================= -->
+        <g id="s25-mg">
+          <g id="s25-tracks">
+            <g stroke="#B8C0D8" stroke-width="8" fill="none" stroke-linecap="round">
+              <path id="s25-rail-a1" d="M 900 460 L 40 1080" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+              <path id="s25-rail-a2" d="M 900 460 L 520 1080" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+              <path id="s25-rail-b1" d="M 900 460 L 620 1080" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+              <path id="s25-rail-b2" d="M 900 460 L 860 1080" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+              <path id="s25-rail-c1" d="M 900 460 L 1100 1080" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+              <path id="s25-rail-c2" d="M 900 460 L 1340 1080" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+            </g>
+            <g id="s25-rail-hi" stroke="#FFD23F" stroke-width="3" fill="none" opacity="0.35">
+              <path d="M 900 460 L 40 1080"/><path d="M 900 460 L 520 1080"/>
+              <path d="M 900 460 L 620 1080"/><path d="M 900 460 L 860 1080"/>
+              <path d="M 900 460 L 1100 1080"/><path d="M 900 460 L 1340 1080"/>
+            </g>
+            <g class="s25-sleepers" stroke="#515A83" stroke-width="9" stroke-linecap="round">
+              <line x1="96" y1="1040" x2="544" y2="1040"/>
+              <line x1="220" y1="950" x2="600" y2="950"/>
+              <line x1="317" y1="880" x2="643" y2="880"/>
+              <line x1="394" y1="825" x2="676" y2="825"/>
+              <line x1="453" y1="782" x2="703" y2="782"/>
+              <line x1="500" y1="748" x2="724" y2="748"/>
+              <line x1="539" y1="720" x2="741" y2="720"/>
+              <line x1="638" y1="1040" x2="863" y2="1040"/>
+              <line x1="679" y1="950" x2="868" y2="950"/>
+              <line x1="710" y1="880" x2="889" y2="880"/>
+              <line x1="735" y1="825" x2="906" y2="825"/>
+              <line x1="755" y1="782" x2="919" y2="782"/>
+              <line x1="770" y1="748" x2="929" y2="748"/>
+              <line x1="783" y1="720" x2="938" y2="720"/>
+              <line x1="1088" y1="1040" x2="1312" y2="1040"/>
+              <line x1="1058" y1="950" x2="1248" y2="950"/>
+              <line x1="1036" y1="880" x2="1207" y2="880"/>
+              <line x1="1018" y1="825" x2="1172" y2="825"/>
+              <line x1="1004" y1="782" x2="1148" y2="782"/>
+              <line x1="993" y1="748" x2="1130" y2="748"/>
+              <line x1="984" y1="720" x2="1115" y2="720"/>
+            </g>
+          </g>
+
+          <g id="s25-signal" transform="translate(1030 610)">
+            <line x1="0" y1="90" x2="0" y2="-120" stroke="#515A83" stroke-width="10"/>
+            <rect x="-26" y="-168" width="52" height="56" rx="12" fill="#0A0E24" stroke="#B8C0D8" stroke-width="6"/>
+            <circle cx="0" cy="-140" r="10" fill="#FF7A1A" opacity="0.7"/>
+            <ellipse cx="0" cy="-140" rx="34" ry="30" fill="url(#s25-ember-grad)"/>
+          </g>
+
+          <!-- flatcar with turning wheels -->
+          <g transform="translate(585 760)">
+            <g id="s25-flatcar">
+              <ellipse cx="0" cy="78" rx="210" ry="26" fill="#050814" opacity="0.6" filter="url(#s25-haze)"/>
+              <g transform="translate(-95 48)"><g id="s25-fw-a">
+                <circle cx="0" cy="0" r="30" fill="#0A0E24" stroke="#B8C0D8" stroke-width="10"/>
+                <g stroke="#515A83" stroke-width="6"><line x1="-18" y1="0" x2="18" y2="0"/><line x1="0" y1="-18" x2="0" y2="18"/></g>
+                <circle cx="0" cy="0" r="8" fill="#FFD23F"/>
+              </g></g>
+              <g transform="translate(95 48)"><g id="s25-fw-b">
+                <circle cx="0" cy="0" r="30" fill="#0A0E24" stroke="#B8C0D8" stroke-width="10"/>
+                <g stroke="#515A83" stroke-width="6"><line x1="-18" y1="0" x2="18" y2="0"/><line x1="0" y1="-18" x2="0" y2="18"/></g>
+                <circle cx="0" cy="0" r="8" fill="#FFD23F"/>
+              </g></g>
+              <rect x="-150" y="-40" width="300" height="34" rx="8" fill="#151B3B" stroke="#B8C0D8" stroke-width="18"/>
+              <polygon points="-176,-20 176,-20 152,-52 -152,-52" fill="url(#s25-metal-grad)" stroke="#050814" stroke-width="18"/>
+              <rect x="-150" y="-8" width="300" height="12" rx="6" fill="#FFD23F" opacity="0.5"/>
+              <g stroke="#515A83" stroke-width="5" opacity="0.8">
+                <line x1="-120" y1="-18" x2="-120" y2="44"/>
+                <line x1="-60" y1="-18" x2="-60" y2="44"/>
+                <line x1="0" y1="-18" x2="0" y2="44"/>
+                <line x1="60" y1="-18" x2="60" y2="44"/>
+                <line x1="120" y1="-18" x2="120" y2="44"/>
+              </g>
+              <rect x="-172" y="-26" width="20" height="16" rx="4" fill="#FF7A1A"/>
+              <rect x="152" y="-26" width="20" height="16" rx="4" fill="#FFD23F"/>
+            </g>
+          </g>
+
+          <!-- crate lifts and seats on the deck -->
+          <g transform="translate(575 700)">
+            <g id="s25-crate">
+              <ellipse cx="0" cy="86" rx="96" ry="18" fill="#050814" opacity="0.55" filter="url(#s25-haze)"/>
+              <polygon points="-64,-68 -40,-88 82,-88 58,-68" fill="#515A83" stroke="#050814" stroke-width="10"/>
+              <rect x="-64" y="-68" width="122" height="102" rx="8" fill="#151B3B" stroke="#B8C0D8" stroke-width="14"/>
+              <rect x="-64" y="-26" width="122" height="18" fill="#FF7A1A" opacity="0.8"/>
+              <g stroke="#F4EFE3" stroke-width="6" opacity="0.5">
+                <line x1="-42" y1="-56" x2="-42" y2="20"/>
+                <line x1="-6" y1="-56" x2="-6" y2="20"/>
+                <line x1="30" y1="-56" x2="30" y2="20"/>
+              </g>
+              <g fill="#FFD23F">
+                <circle cx="-50" cy="-56" r="5"/><circle cx="46" cy="-56" r="5"/>
+                <circle cx="-50" cy="22" r="5"/><circle cx="46" cy="22" r="5"/>
+              </g>
+              <path d="M -18 -50 L 6 -50 L 6 -30 L -18 -30 Z" fill="none" stroke="#FFD23F" stroke-width="5"/>
+            </g>
+          </g>
+
+          <!-- checker bead walks up and ticks the clipboard -->
+          <g transform="translate(240 850)">
+            <g id="s25-checker">
+              <ellipse cx="0" cy="30" rx="30" ry="9" fill="#050814" opacity="0.5"/>
+              <g id="s25-checker-legs" stroke="#B8C0D8" stroke-width="7" stroke-linecap="round">
+                <line x1="-7" y1="12" x2="-13" y2="30"/>
+                <line x1="7" y1="12" x2="13" y2="30"/>
+              </g>
+              <circle cx="0" cy="0" r="18" fill="#0A0E24" stroke="#FFD23F" stroke-width="6"/>
+              <path d="M -12 -4 A 13 13 0 0 1 9 -10" fill="none" stroke="#F4EFE3" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="5" cy="-2" r="4" fill="#F4EFE3"/>
+              <circle cx="0" cy="0" r="29" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.35"/>
+              <g transform="translate(30 -6)">
+                <g id="s25-clipboard">
+                  <rect x="-22" y="-28" width="44" height="56" rx="6" fill="#0A0E24" stroke="#FFD23F" stroke-width="14"/>
+                  <rect x="-12" y="-34" width="24" height="10" rx="4" fill="#FFD23F"/>
+                  <g stroke="#F4EFE3" stroke-width="4" opacity="0.6">
+                    <line x1="-10" y1="-8" x2="12" y2="-8"/>
+                    <line x1="-10" y1="2" x2="12" y2="2"/>
+                    <line x1="-10" y1="12" x2="6" y2="12"/>
+                  </g>
+                  <path id="s25-tick" d="M -10 12 L -2 19 L 14 1" fill="none" stroke="#FFD23F" stroke-width="7"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="60" stroke-dashoffset="60"/>
+                </g>
+              </g>
+            </g>
+          </g>
+
+          <!-- calm profile inset, low contrast -->
+          <g transform="translate(920 520)">
+            <g id="s25-profile">
+              <circle cx="0" cy="0" r="100" fill="#151B3B" opacity="0.55" stroke="#B8C0D8" stroke-width="6"/>
+              <circle cx="0" cy="0" r="112" fill="none" stroke="#8E5FD9" stroke-width="4" opacity="0.4"/>
+              <path d="M -44 52 L -44 4 C -44 -30 -22 -52 6 -52 C 30 -52 46 -34 46 -12 C 46 2 40 10 34 16 L 42 26 L 30 30 L 32 46 L 16 50 L 14 58 L -10 58 L -12 52 Z"
+                    fill="#0A0E24" stroke="#B8C0D8" stroke-width="5" opacity="0.5"/>
+              <path d="M 8 -18 L 20 -18" stroke="#F4EFE3" stroke-width="4" opacity="0.4" stroke-linecap="round"/>
+              <path d="M 34 16 L 26 20" stroke="#F4EFE3" stroke-width="3" opacity="0.3" stroke-linecap="round"/>
+              <g stroke="#FFD23F" stroke-width="4" opacity="0.4" fill="none">
+                <path d="M -124 0 A 124 124 0 0 1 -88 -88"/>
+                <path d="M 124 0 A 124 124 0 0 1 88 88"/>
+              </g>
+            </g>
+          </g>
+
+          <!-- silence meter flatlines -->
+          <g transform="translate(90 900)">
+            <g id="s25-meter">
+              <rect x="0" y="0" width="440" height="92" rx="46" fill="#050814" stroke="#B8C0D8" stroke-width="5"/>
+              <rect x="14" y="12" width="412" height="68" rx="34" fill="none" stroke="#515A83" stroke-width="2" opacity="0.4"/>
+              <g stroke="#515A83" stroke-width="3" opacity="0.4">
+                <line x1="56" y1="24" x2="56" y2="36"/>
+                <line x1="140" y1="24" x2="140" y2="36"/>
+                <line x1="224" y1="24" x2="224" y2="36"/>
+                <line x1="308" y1="24" x2="308" y2="36"/>
+                <line x1="392" y1="24" x2="392" y2="36"/>
+              </g>
+              <path id="s25-meter-jag" d="M 40 46 L 62 46 L 70 34 L 78 58 L 86 38 L 94 52 L 102 46 L 130 46 L 138 30 L 146 62 L 154 40 L 162 54 L 170 46 L 198 46 L 206 36 L 214 56 L 222 42 L 230 50 L 238 46 L 268 46 L 276 32 L 284 60 L 292 40 L 300 52 L 308 46 L 336 46 L 344 38 L 352 54 L 360 44 L 368 50 L 376 46 L 404 46"
+                    fill="none" stroke="#B8C0D8" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+              <line id="s25-meter-flat" x1="40" y1="46" x2="404" y2="46" stroke="#FFD23F" stroke-width="10"
+                    stroke-linecap="round" stroke-dasharray="364" stroke-dashoffset="364"/>
+              <circle id="s25-meter-dot" cx="404" cy="46" r="9" fill="#FFD23F"/>
+            </g>
+          </g>
+
+          <!-- three deliberately dim alarm tiles -->
+          <g id="s25-alarms">
+            <g transform="translate(120 790)">
+              <g class="s25-alarm">
+                <rect x="-42" y="-42" width="84" height="84" rx="18" fill="#0A0E24" stroke="#515A83" stroke-width="5"/>
+                <path d="M -18 12 C -18 -2 -10 -12 0 -12 C 10 -12 18 -2 18 12 L 22 18 L -22 18 Z" fill="none" stroke="#B8C0D8" stroke-width="6" stroke-linejoin="round" opacity="0.55"/>
+                <circle cx="0" cy="23" r="5" fill="#B8C0D8" opacity="0.55"/>
+              </g>
+            </g>
+            <g transform="translate(220 790)">
+              <g class="s25-alarm">
+                <rect x="-42" y="-42" width="84" height="84" rx="18" fill="#0A0E24" stroke="#515A83" stroke-width="5"/>
+                <rect x="-16" y="-10" width="32" height="28" rx="8" fill="none" stroke="#B8C0D8" stroke-width="6" opacity="0.55"/>
+                <path d="M -26 -16 A 30 30 0 0 1 26 -16" fill="none" stroke="#B8C0D8" stroke-width="5" opacity="0.45"/>
+                <path d="M -20 20 L 20 20" stroke="#B8C0D8" stroke-width="5" stroke-linecap="round" opacity="0.5"/>
+              </g>
+            </g>
+            <g transform="translate(320 790)">
+              <g class="s25-alarm">
+                <rect x="-42" y="-42" width="84" height="84" rx="18" fill="#0A0E24" stroke="#515A83" stroke-width="5"/>
+                <path d="M -16 12 C -16 -6 -8 -16 0 -16 C 8 -16 16 -6 16 12 Z" fill="#FF7A1A" opacity="0.5"/>
+                <rect x="-22" y="14" width="44" height="8" rx="4" fill="#B8C0D8" opacity="0.45"/>
+                <path d="M -30 6 L -22 6 M 22 6 L 30 6" stroke="#FF7A1A" stroke-width="4" opacity="0.4"/>
+              </g>
+            </g>
+            <g stroke="#B8C0D8" stroke-width="3" opacity="0.25">
+              <line x1="150" y1="790" x2="190" y2="790"/>
+              <line x1="250" y1="790" x2="290" y2="790"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND: plate, badge ================= -->
+        <g id="s25-fg">
+          <g id="s25-plate">
+            <rect x="1116" y="64" width="756" height="952" rx="24" fill="url(#s25-card-grad)" stroke="#B8C0D8" stroke-width="4"/>
+            <rect x="1130" y="78" width="728" height="924" rx="18" fill="none" stroke="#F4EFE3" stroke-width="1.6" opacity="0.16"/>
+            <rect x="1130" y="78" width="728" height="924" rx="18" fill="url(#s25-glass-grad)" opacity="0.5"/>
+            <g fill="none" stroke="#FFD23F" stroke-width="12" stroke-linecap="round" opacity="0.7">
+              <path d="M 1116 130 L 1116 64 L 1182 64"/>
+              <path d="M 1872 946 L 1872 1016 L 1806 1016"/>
+            </g>
+            <g fill="#B8C0D8" opacity="0.5">
+              <circle cx="1144" cy="92" r="5"/><circle cx="1844" cy="92" r="5"/>
+              <circle cx="1144" cy="988" r="5"/><circle cx="1844" cy="988" r="5"/>
+            </g>
+            <svg x="1160" y="108" width="667.6" height="864" viewBox="0 0 1275 1650" preserveAspectRatio="xMidYMid meet">
+              <image href="../plates/processed/pl-seal-03.png" x="0" y="0" width="1275" height="1650" preserveAspectRatio="xMidYMid meet" clip-path="url(#s25-plate-crop)"/>
+              <rect x="0" y="0" width="1275" height="1650" rx="20" fill="none" stroke="#FFD23F" stroke-width="6" opacity="0.35"/>
+              <g id="s25-q-gold" fill="none" stroke="#FFD23F" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M 312 517 L 312 481 L 432 481" stroke-width="18" opacity="0.22"/>
+                <path d="M 790 499 L 790 518 L 670 518" stroke-width="18" opacity="0.22"/>
+                <path id="s25-q-gold-a" d="M 312 517 L 312 481 L 432 481" stroke-width="10" stroke-dasharray="400" stroke-dashoffset="400"/>
+                <path id="s25-q-gold-b" d="M 790 499 L 790 518 L 670 518" stroke-width="10" stroke-dasharray="400" stroke-dashoffset="400"/>
+              </g>
+              <g transform="translate(914 593)">
+                <g id="s25-q-violet-a">
+                  <rect x="0" y="0" width="265" height="10" rx="5" fill="#8E5FD9"/>
+                  <rect x="0" y="0" width="265" height="10" rx="5" fill="#8E5FD9" opacity="0.35" transform="scale(1 2.4)"/>
+                </g>
+              </g>
+              <g transform="translate(51 630)">
+                <g id="s25-q-violet-b">
+                  <rect x="0" y="0" width="368" height="10" rx="5" fill="#8E5FD9"/>
+                  <rect x="0" y="0" width="368" height="10" rx="5" fill="#8E5FD9" opacity="0.35" transform="scale(1 2.4)"/>
+                </g>
+              </g>
+            </svg>
+            <rect x="1160" y="108" width="667.6" height="864" rx="10" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.4"/>
+            <rect x="1160" y="108" width="667.6" height="864" rx="10" fill="none" stroke="#F4EFE3" stroke-width="1.4" opacity="0.2"/>
+          </g>
+
+          <g id="s25-badge">
+            <rect x="64" y="52" width="320" height="98" rx="49" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="78" y="66" width="292" height="70" rx="35" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.35"/>
+            <g fill="#FFD23F" opacity="0.85">
+              <circle cx="102" cy="101" r="7"/>
+              <circle cx="346" cy="101" r="7"/>
+            </g>
+            <text x="224" y="117" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="42"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="9" paint-order="stroke fill" letter-spacing="2"
+                  textLength="192" lengthAdjust="spacingAndGlyphs">7:00 AM</text>
+          </g>
+
+          <rect id="s25-seam-streak" x="0" y="596" width="1920" height="8" fill="url(#s25-gold-grad)" opacity="0"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:radial-gradient(circle at 40% 56%, rgba(255,122,26,0.1), transparent 66%);}
+    .scene-persp{position:absolute;inset:0;perspective:1700px;perspective-origin:50% 56%;}
+    #s25-world{transform-style:preserve-3d;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      gsap.set("#s25-stars circle", { opacity: 0 });
+      gsap.set("#s25-warehouses", { opacity: 0, y: 26 });
+      gsap.set("#s25-horizon-glow", { opacity: 0, scaleX: 0.4, transformOrigin: "50% 50%" });
+      gsap.set("#s25-rail-a1, #s25-rail-a2, #s25-rail-b1, #s25-rail-b2, #s25-rail-c1, #s25-rail-c2", { strokeDashoffset: 1000 });
+      gsap.set(".s25-sleepers line", { opacity: 0, scaleX: 0.2, transformOrigin: "50% 50%" });
+      gsap.set("#s25-signal", { opacity: 0, scale: 0.4, transformOrigin: "50% 100%" });
+      gsap.set("#s25-flatcar", { x: -640, opacity: 0 });
+      gsap.set("#s25-crate", { x: 190, y: 210, rotation: -5, opacity: 0, transformOrigin: "50% 100%" });
+      gsap.set("#s25-checker", { x: 0, y: 0, opacity: 0 });
+      gsap.set("#s25-clipboard", { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" });
+      gsap.set("#s25-tick", { strokeDashoffset: 60 });
+      gsap.set("#s25-profile", { opacity: 0, scale: 0.88, transformOrigin: "50% 50%" });
+      gsap.set("#s25-meter", { opacity: 0, x: -40 });
+      gsap.set("#s25-meter-jag", { opacity: 0.7, scaleY: 1, transformOrigin: "50% 50%" });
+      gsap.set("#s25-meter-flat", { strokeDashoffset: 364, opacity: 0 });
+      gsap.set("#s25-meter-dot", { opacity: 0 });
+      gsap.set(".s25-alarm", { opacity: 0, scale: 0.5, transformOrigin: "50% 50%" });
+      gsap.set("#s25-plate", { opacity: 0, scale: 0.94, y: 18, transformOrigin: "50% 50%" });
+      gsap.set("#s25-badge", { opacity: 0, scale: 1.4, rotation: -4, transformOrigin: "50% 50%" });
+      gsap.set("#s25-rail-hi", { opacity: 0 });
+      gsap.set("#s25-q-gold-a, #s25-q-gold-b", { strokeDashoffset: 400 });
+      gsap.set("#s25-q-gold", { opacity: 0 });
+      gsap.set("#s25-q-violet-a, #s25-q-violet-b", { scaleX: 0, transformOrigin: "0% 50%" });
+
+      /* ---------- phase 1: dawn yard draws in deep perspective ---------- */
+      tl.to("#s25-stars circle", { opacity: 0.35, duration: 0.9, stagger: 0.07, ease: "power1.out" }, 0.1);
+      tl.to("#s25-warehouses", { opacity: 1, y: 0, duration: 1.2, ease: "power2.out" }, 0.35);
+      tl.to("#s25-horizon-glow", { opacity: 0.85, scaleX: 1, duration: 1.6, ease: "power2.out" }, 0.5);
+      tl.to(".s25-sleepers line", { opacity: 0.75, scaleX: 1, duration: 0.45, stagger: { each: 0.05, from: "end" }, ease: "power2.out" }, 0.9);
+      tl.to("#s25-rail-a1, #s25-rail-a2, #s25-rail-b1, #s25-rail-b2, #s25-rail-c1, #s25-rail-c2",
+            { strokeDashoffset: 0, duration: 2.0, stagger: 0.08, ease: "power2.inOut" }, 0.8);
+      tl.to("#s25-rail-hi", { opacity: 0.35, duration: 1.2, ease: "power1.out" }, 1.3);
+      tl.to("#s25-signal", { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(2)" }, 2.3);
+      tl.to("#s25-plate", { opacity: 1, scale: 1, y: 0, duration: 1.1, ease: "power3.out" }, 0.9);
+      tl.to("#s25-badge", { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(2.4)" }, 1.2);
+      tl.to("#s25-badge", { y: -5, duration: 1.4, yoyo: true, repeat: 2, ease: "sine.inOut" }, 2.6);
+
+      /* ---------- phase 2: flatcar rolls in, wheels turn ---------- */
+      tl.to("#s25-world", { x: -26, duration: 2.5, ease: "power2.out" }, 2.6);
+      tl.to("#s25-world", { x: 0, duration: 3.0, ease: "sine.inOut" }, 5.1);
+      tl.to("#s25-flatcar", { x: 0, opacity: 1, duration: 2.5, ease: "power3.out" }, 2.6);
+      tl.to("#s25-fw-a", { rotation: 900, duration: 2.5, ease: "power2.out" }, 2.6);
+      tl.to("#s25-fw-b", { rotation: 900, duration: 2.5, ease: "power2.out" }, 2.6);
+
+      /* ---------- phase 3: crate lifts and seats ---------- */
+      tl.to("#s25-crate", { opacity: 1, duration: 0.35, ease: "power1.out" }, 5.5);
+      tl.to("#s25-crate", { x: 0, y: 0, rotation: 0, duration: 1.5, ease: "power3.out" }, 5.6);
+      tl.to("#s25-crate", { y: -10, duration: 0.24, yoyo: true, repeat: 1, ease: "sine.inOut" }, 7.15);
+
+      /* ---------- phase 4: checker walks up, ticks the clipboard ---------- */
+      tl.to("#s25-checker", { opacity: 1, duration: 0.3, ease: "power1.out" }, 7.5);
+      tl.to("#s25-checker", { x: 540, duration: 2.1, ease: "power2.inOut" }, 7.7);
+      tl.to("#s25-checker", { y: -7, duration: 0.3, yoyo: true, repeat: 6, ease: "sine.inOut" }, 7.7);
+      tl.to("#s25-checker-legs", { rotation: 12, duration: 0.3, yoyo: true, repeat: 6, transformOrigin: "50% 0%", ease: "sine.inOut" }, 7.7);
+      tl.to("#s25-clipboard", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 9.6);
+      tl.to("#s25-clipboard", { rotation: -6, duration: 0.35, transformOrigin: "50% 100%", ease: "power2.out" }, 10.2);
+      tl.to("#s25-tick", { strokeDashoffset: 0, duration: 0.45, ease: "power2.out" }, 10.7);
+      tl.to("#s25-q-gold-a, #s25-q-gold-b", { strokeDashoffset: 0, duration: 0.65, stagger: 0.12, ease: "power2.out" }, 11.0);
+      tl.to("#s25-q-gold", { opacity: 0.9, duration: 0.4, ease: "power1.out" }, 11.0);
+
+      /* ---------- phase 5: no alarm, silence flatlines ---------- */
+      tl.to(".s25-alarm", { opacity: 0.85, scale: 1, duration: 0.5, stagger: 0.16, ease: "back.out(2)" }, 12.0);
+      tl.to("#s25-meter", { opacity: 1, x: 0, duration: 0.6, ease: "power2.out" }, 12.3);
+      tl.to("#s25-meter-flat", { opacity: 1, strokeDashoffset: 0, duration: 0.9, ease: "power2.inOut" }, 12.8);
+      tl.to("#s25-meter-jag", { scaleY: 0.08, opacity: 0.35, duration: 1.1, ease: "sine.inOut" }, 13.0);
+      tl.to("#s25-meter-dot", { opacity: 1, duration: 0.3, ease: "power1.out" }, 13.7);
+      tl.to("#s25-profile", { opacity: 1, scale: 1, duration: 1.0, ease: "power2.out" }, 13.4);
+      tl.to("#s25-checker", { y: -3, duration: 1.1, yoyo: true, repeat: 2, ease: "sine.inOut" }, 13.8);
+
+      /* ---------- phase 6: violet under-strokes held, no sweep ---------- */
+      tl.to("#s25-q-violet-a", { scaleX: 1, duration: 0.55, ease: "power2.out" }, 15.0);
+      tl.to("#s25-q-violet-b", { scaleX: 1, duration: 0.65, ease: "power2.out" }, 15.5);
+
+      /* ---------- living holds ---------- */
+      tl.to("#s25-flatcar", { y: -3, duration: 1.8, yoyo: true, repeat: 1, ease: "sine.inOut" }, 16.2);
+      tl.to("#s25-fw-a", { rotation: 972, duration: 1.8, yoyo: true, repeat: 1, ease: "sine.inOut" }, 16.2);
+      tl.to("#s25-fw-b", { rotation: 972, duration: 1.8, yoyo: true, repeat: 1, ease: "sine.inOut" }, 16.2);
+      tl.to("#s25-profile", { scale: 1.015, duration: 1.6, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 16.4);
+      tl.to(".s25-alarm", { opacity: 0.62, duration: 1.2, yoyo: true, repeat: 1, stagger: 0.1, ease: "sine.inOut" }, 16.6);
+      tl.to("#s25-meter-dot", { scale: 1.25, duration: 1.1, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 16.8);
+
+      /* ---------- camera and three parallax planes ---------- */
+      tl.fromTo("#s25-world", { rotationY: -2.5, rotationX: 1.2, scale: 1.0 }, { rotationY: 2.5, rotationX: 0.4, scale: 1.02, duration: 19.8, transformOrigin: "50% 56%", ease: "sine.inOut" }, 0);
+      tl.fromTo("#s25-bg", { x: 12 }, { x: -12, duration: 19.8, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s25-mg", { x: -8 }, { x: 8, duration: 19.8, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s25-fg", { x: 16 }, { x: -16, duration: 19.8, ease: "sine.inOut" }, 0);
+
+      /* ---------- exit: swift flatcar-rail parallax ---------- */
+      tl.fromTo("#s25-tracks", { x: 0 }, { x: -34, duration: 1.9, ease: "power2.in" }, 17.9);
+      tl.fromTo("#s25-seam-streak", { opacity: 0, x: -220 }, { opacity: 0.22, x: 120, duration: 1.4, ease: "power2.in" }, 18.0);
+      tl.to("#s25-seam-streak", { opacity: 0, duration: 0.4, ease: "power1.in" }, 19.4);
+      tl.to("#s25-flatcar", { x: -16, duration: 1.9, ease: "power1.in" }, 17.9);
+
+      tl.to({}, { duration: 19.800 }, 0);
+      window.__timelines["25-seven-am"] = tl;
+    })();
+  </script>
+</div>
+</template>

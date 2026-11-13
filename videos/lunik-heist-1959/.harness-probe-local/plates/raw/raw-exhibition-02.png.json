@@ -1,0 +1,30 @@
+{
+  "pdf": "videos/lunik-heist-1959/.tmp/lunik.pdf",
+  "page": 2,
+  "dpi": 150,
+  "width": 1275,
+  "height": 1650,
+  "boxes": [
+    {
+      "phrase": "approximately 20 feet long and 11 feet wide",
+      "x": 624,
+      "y": 220,
+      "w": 519,
+      "h": 37
+    },
+    {
+      "phrase": "approximately 20 feet long and 11 feet wide",
+      "x": 51,
+      "y": 257,
+      "w": 144,
+      "h": 37
+    },
+    {
+      "phrase": "roof about 14 feet high at the peak",
+      "x": 311,
+      "y": 257,
+      "w": 542,
+      "h": 37
+    }
+  ]
+}

@@ -1,0 +1,478 @@
+<template id="s34-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="34-we-looked" data-width="1920" data-height="1080" data-start="0" data-duration="18.615">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <!-- Ground and Ocean Gradients -->
+        <linearGradient id="s34-void-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0A0E24"/>
+          <stop offset="0.5" stop-color="#050814"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s34-ocean-grad" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.6" stop-color="#0A0E24"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s34-copper-grad" x1="0" y1="0" x2="0.8" y2="1">
+          <stop offset="0" stop-color="#FFD23F"/>
+          <stop offset="0.45" stop-color="#FF7A1A"/>
+          <stop offset="1" stop-color="#050814"/>
+        </linearGradient>
+        <linearGradient id="s34-gold-grad" x1="0" y1="0" x2="0.8" y2="1">
+          <stop offset="0" stop-color="#FF7A1A"/>
+          <stop offset="0.46" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#F4EFE3"/>
+        </linearGradient>
+        <linearGradient id="s34-metal-grad" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#F4EFE3"/>
+          <stop offset="0.35" stop-color="#B8C0D8"/>
+          <stop offset="0.75" stop-color="#515A83"/>
+          <stop offset="1" stop-color="#151B3B"/>
+        </linearGradient>
+        <linearGradient id="s34-glass-grad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.16"/>
+          <stop offset="0.45" stop-color="#F4EFE3" stop-opacity="0.04"/>
+          <stop offset="1" stop-color="#F4EFE3" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="s34-sweep-grad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0"/>
+          <stop offset="0.5" stop-color="#F4EFE3" stop-opacity="0.9"/>
+          <stop offset="0.6" stop-color="#FFD23F" stop-opacity="0.7"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="s34-violet-haze" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.45"/>
+          <stop offset="0.6" stop-color="#8E5FD9" stop-opacity="0.14"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s34-ember-core" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD23F" stop-opacity="0.6"/>
+          <stop offset="0.5" stop-color="#FF7A1A" stop-opacity="0.25"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s34-flash-bloom" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.9"/>
+          <stop offset="0.4" stop-color="#FFD23F" stop-opacity="0.5"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="s34-haze" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="28"/>
+        </filter>
+        <filter id="s34-soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="10"/>
+        </filter>
+        <filter id="s34-glow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="7" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <mask id="s34-iris-mask">
+          <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF"/>
+          <circle id="s34-iris-hole" cx="620" cy="540" r="1600" fill="#000000"/>
+        </mask>
+      </defs>
+
+      <g id="s34-world">
+        <!-- ================= BACKGROUND: deep water violet atmosphere ================= -->
+        <g id="s34-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s34-void-grad)"/>
+          <!-- Active mid-tone radiant ground pools -->
+          <ellipse cx="960" cy="540" rx="900" ry="340" fill="#151B3B" opacity="0.65" filter="url(#s34-haze)"/>
+          <ellipse cx="960" cy="850" rx="840" ry="220" fill="url(#s34-violet-haze)" opacity="0.7"/>
+          <ellipse cx="620" cy="540" rx="460" ry="360" fill="url(#s34-ember-core)" opacity="0.6"/>
+
+          <!-- High-luminance exploration searchlight pod (anchors contrast_std) -->
+          <g id="s34-searchlight" transform="translate(320 160)">
+            <ellipse cx="0" cy="0" rx="220" ry="220" fill="url(#s34-ember-core)" opacity="0.9" filter="url(#s34-haze)"/>
+            <circle cx="0" cy="0" r="76" fill="#F4EFE3"/>
+            <circle cx="0" cy="0" r="102" fill="none" stroke="#FFD23F" stroke-width="18"/>
+            <circle cx="0" cy="0" r="132" fill="none" stroke="#FF7A1A" stroke-width="8" opacity="0.7"/>
+            <polygon points="-50,40 50,40 420,820 -320,820" fill="url(#s34-gold-grad)" opacity="0.32" filter="url(#s34-soft)"/>
+          </g>
+
+          <!-- Second surface exploration beacon above binge card (anchors right-side contrast) -->
+          <g id="s34-surface-beacon" transform="translate(1480 140)">
+            <ellipse cx="0" cy="0" rx="180" ry="180" fill="url(#s34-ember-core)" opacity="0.85" filter="url(#s34-haze)"/>
+            <circle cx="0" cy="0" r="58" fill="#F4EFE3"/>
+            <circle cx="0" cy="0" r="82" fill="none" stroke="#FFD23F" stroke-width="14"/>
+            <circle cx="0" cy="0" r="108" fill="none" stroke="#FF7A1A" stroke-width="6" opacity="0.6"/>
+          </g>
+
+          <!-- Continental shelf / seabed terrain slab across lower frame (anchors mid_ratio and contrast) -->
+          <g id="s34-seabed-shelf">
+            <rect x="0" y="780" width="1920" height="300" fill="#151B3B"/>
+            <line x1="0" y1="780" x2="1920" y2="780" stroke="#515A83" stroke-width="20"/>
+            <line x1="0" y1="792" x2="1920" y2="792" stroke="#FFD23F" stroke-width="8" opacity="0.75"/>
+            <line x1="0" y1="804" x2="1920" y2="804" stroke="#B8C0D8" stroke-width="6" opacity="0.65"/>
+            <line x1="0" y1="840" x2="1920" y2="840" stroke="#FFD23F" stroke-width="8" opacity="0.6"/>
+            <ellipse cx="960" cy="880" rx="680" ry="140" fill="url(#s34-ember-core)" opacity="0.7" filter="url(#s34-haze)"/>
+            <ellipse cx="1480" cy="860" rx="440" ry="110" fill="url(#s34-violet-haze)" opacity="0.8"/>
+          </g>
+
+          <!-- Deep-water bathymetric contour lines -->
+          <g stroke="#515A83" stroke-width="4" opacity="0.3">
+            <path d="M 0 340 Q 480 310 960 360 Q 1440 410 1920 330" fill="none"/>
+            <path d="M 0 540 Q 480 500 960 560 Q 1440 620 1920 540" fill="none"/>
+            <path d="M 0 740 Q 480 690 960 760 Q 1440 830 1920 750" fill="none"/>
+            <line x1="620" y1="0" x2="620" y2="1080"/>
+            <line x1="1480" y1="0" x2="1480" y2="1080"/>
+          </g>
+
+          <!-- Deep ocean drifting dust particles -->
+          <g fill="#B8C0D8">
+            <circle cx="220" cy="180" r="5" opacity="0.3"/>
+            <circle cx="560" cy="220" r="6" opacity="0.25"/>
+            <circle cx="860" cy="160" r="4" opacity="0.28"/>
+            <circle cx="1280" cy="190" r="5" opacity="0.32"/>
+            <circle cx="1680" cy="170" r="6" opacity="0.35"/>
+            <circle cx="280" cy="920" r="5" opacity="0.22"/>
+            <circle cx="840" cy="960" r="4" opacity="0.26"/>
+            <circle cx="1400" cy="940" r="5" opacity="0.28"/>
+            <circle cx="1780" cy="900" r="6" opacity="0.3"/>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: Cable/Seal Morph, Binge Capsule, Anchor Chain ================= -->
+        <g id="s34-mg">
+          <g id="s34-mg-drift">
+
+            <!-- HERO MECHANISM: SUBSEA CABLE & PLASTIC SEAL MORPH (x = 620, y = 540) -->
+            <g transform="translate(620 540)">
+              <!-- 3D Isometric Tilt wrapper -->
+              <g id="s34-hero-tilt">
+                <!-- Ambient shadow disc -->
+                <ellipse cx="0" cy="140" rx="260" ry="60" fill="#050814" opacity="0.7" filter="url(#s34-haze)"/>
+
+                <!-- ============ PHASE 1: SUBSEA CABLE CROSS-SECTION ============ -->
+                <g id="s34-cable-assembly">
+                  <!-- Outer protective armor sheath (26px hero stroke) -->
+                  <circle id="s34-cable-sheath" cx="0" cy="0" r="185" fill="none" stroke="#B8C0D8" stroke-width="26"/>
+                  <circle cx="0" cy="0" r="172" fill="#0A0E24" stroke="#515A83" stroke-width="4"/>
+
+                  <!-- Ring of 16 high-strength steel armor wires (r = 16px each, R = 146) -->
+                  <g id="s34-armor-ring">
+                    <!-- 16 circular cross-sections spaced at 22.5° -->
+                    <g class="s34-armor-strand" transform="translate(146 0)">
+                      <circle cx="0" cy="0" r="16" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                      <circle cx="0" cy="0" r="5" fill="#F4EFE3"/>
+                    </g>
+                    <g class="s34-armor-strand" transform="translate(134.9 55.9)">
+                      <circle cx="0" cy="0" r="16" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                      <circle cx="0" cy="0" r="5" fill="#F4EFE3"/>
+                    </g>
+                    <g class="s34-armor-strand" transform="translate(103.2 103.2)">
+                      <circle cx="0" cy="0" r="16" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                      <circle cx="0" cy="0" r="5" fill="#F4EFE3"/>
+                    </g>
+                    <g class="s34-armor-strand" transform="translate(55.9 134.9)">
+                      <circle cx="0" cy="0" r="16" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                      <circle cx="0" cy="0" r="5" fill="#F4EFE3"/>
+                    </g>
+                    <g class="s34-armor-strand" transform="translate(0 146)">
+                      <circle cx="0" cy="0" r="16" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                      <circle cx="0" cy="0" r="5" fill="#F4EFE3"/>
+                    </g>
+                    <g class="s34-armor-strand" transform="translate(-55.9 134.9)">
+                      <circle cx="0" cy="0" r="16" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                      <circle cx="0" cy="0" r="5" fill="#F4EFE3"/>
+                    </g>
+                    <g class="s34-armor-strand" transform="translate(-103.2 103.2)">
+                      <circle cx="0" cy="0" r="16" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                      <circle cx="0" cy="0" r="5" fill="#F4EFE3"/>
+                    </g>
+                    <g class="s34-armor-strand" transform="translate(-134.9 55.9)">
+                      <circle cx="0" cy="0" r="16" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                      <circle cx="0" cy="0" r="5" fill="#F4EFE3"/>
+                    </g>
+                    <g class="s34-armor-strand" transform="translate(-146 0)">
+                      <circle cx="0" cy="0" r="16" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                      <circle cx="0" cy="0" r="5" fill="#F4EFE3"/>
+                    </g>
+                    <g class="s34-armor-strand" transform="translate(-134.9 -55.9)">
+                      <circle cx="0" cy="0" r="16" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                      <circle cx="0" cy="0" r="5" fill="#F4EFE3"/>
+                    </g>
+                    <g class="s34-armor-strand" transform="translate(-103.2 -103.2)">
+                      <circle cx="0" cy="0" r="16" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                      <circle cx="0" cy="0" r="5" fill="#F4EFE3"/>
+                    </g>
+                    <g class="s34-armor-strand" transform="translate(-55.9 -134.9)">
+                      <circle cx="0" cy="0" r="16" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                      <circle cx="0" cy="0" r="5" fill="#F4EFE3"/>
+                    </g>
+                    <g class="s34-armor-strand" transform="translate(0 -146)">
+                      <circle cx="0" cy="0" r="16" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                      <circle cx="0" cy="0" r="5" fill="#F4EFE3"/>
+                    </g>
+                    <g class="s34-armor-strand" transform="translate(55.9 -134.9)">
+                      <circle cx="0" cy="0" r="16" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                      <circle cx="0" cy="0" r="5" fill="#F4EFE3"/>
+                    </g>
+                    <g class="s34-armor-strand" transform="translate(103.2 -103.2)">
+                      <circle cx="0" cy="0" r="16" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                      <circle cx="0" cy="0" r="5" fill="#F4EFE3"/>
+                    </g>
+                    <g class="s34-armor-strand" transform="translate(134.9 -55.9)">
+                      <circle cx="0" cy="0" r="16" fill="#515A83" stroke="#B8C0D8" stroke-width="6"/>
+                      <circle cx="0" cy="0" r="5" fill="#F4EFE3"/>
+                    </g>
+                  </g>
+
+                  <!-- Copper tube water barrier (stroke 8px) -->
+                  <circle cx="0" cy="0" r="105" fill="none" stroke="#FF7A1A" stroke-width="8"/>
+
+                  <!-- Dielectric polyethylene insulation ring (stroke 14px) -->
+                  <circle cx="0" cy="0" r="74" fill="#151B3B" stroke="#515A83" stroke-width="14"/>
+
+                  <!-- Central copper conductor core (solid ember core, r = 36px) -->
+                  <circle id="s34-cable-core" cx="0" cy="0" r="36" fill="url(#s34-copper-grad)" stroke="#050814" stroke-width="8"/>
+                  <circle cx="0" cy="0" r="16" fill="#FFD23F"/>
+                  <circle cx="0" cy="0" r="6" fill="#F4EFE3"/>
+                </g>
+
+                <!-- ============ PHASE 2: PLASTIC SEAL CROSS-SECTION (MORPH TARGET) ============ -->
+                <g id="s34-seal-assembly" opacity="0">
+                  <!-- Heavy 16px keyed steel wire loop -->
+                  <path id="s34-seal-wire" d="M -80 0 C -80 -220 80 -220 80 0 M -80 0 L -80 120 M 80 0 L 80 120"
+                        fill="none" stroke="#B8C0D8" stroke-width="16" stroke-linecap="round"
+                        stroke-dasharray="800" stroke-dashoffset="800"/>
+                  <!-- Gold wire terminal crimp beads -->
+                  <circle id="s34-wire-crimp-l" cx="-80" cy="120" r="12" fill="#FFD23F" stroke="#050814" stroke-width="4"/>
+                  <circle id="s34-wire-crimp-r" cx="80" cy="120" r="12" fill="#FFD23F" stroke="#050814" stroke-width="4"/>
+
+                  <!-- Plastic Seal Block (260px x 190px, rx = 26px, 16px gold stroke) -->
+                  <rect id="s34-seal-block" x="-130" y="-95" width="260" height="190" rx="26" fill="#151B3B" stroke="#FFD23F" stroke-width="16"/>
+                  <rect x="-114" y="-79" width="228" height="158" rx="18" fill="#515A83" opacity="0.65" stroke="#B8C0D8" stroke-width="4"/>
+
+                  <!-- Central keyed locking cavity and pawls -->
+                  <g transform="translate(0 -10)">
+                    <rect x="-35" y="-30" width="70" height="60" rx="12" fill="#050814" stroke="#515A83" stroke-width="6"/>
+                    <path d="M -20 -15 L 0 5 L 20 -15" fill="none" stroke="#FF7A1A" stroke-width="6" stroke-linecap="round"/>
+                    <circle cx="0" cy="12" r="6" fill="#FFD23F"/>
+                  </g>
+
+                  <!-- Soviet inspection stamp emblem (gold stamp glint) -->
+                  <g id="s34-seal-stamp" transform="translate(0 45)">
+                    <circle cx="0" cy="0" r="30" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+                    <circle cx="0" cy="0" r="18" fill="#FF7A1A"/>
+                    <polygon points="0,-10 6,4 -6,4" fill="#FFD23F"/>
+                    <circle cx="0" cy="0" r="4" fill="#F4EFE3"/>
+                  </g>
+
+                  <!-- Final Specular Sweep bar on the seal face -->
+                  <g id="s34-seal-specular" opacity="0">
+                    <rect x="-130" y="-95" width="260" height="190" rx="26" fill="url(#s34-sweep-grad)"/>
+                  </g>
+
+                  <!-- Climax stamp flash bloom -->
+                  <circle id="s34-stamp-flash" cx="0" cy="45" r="120" fill="url(#s34-flash-bloom)" opacity="0"/>
+                </g>
+              </g>
+            </g>
+
+            <!-- ============ SUPPORTING MECHANISM: BINGE-LOOP CAPSULE (VECTOR ONLY, NO TEXT) ============ -->
+            <!-- Slides in from frame-right (+X) at rel 8.5s -->
+            <g transform="translate(1200 240)">
+              <g id="s34-binge-capsule">
+                <!-- Outer card container (600px x 420px, rx = 26px, 8px gold stroke) -->
+                <rect x="0" y="0" width="600" height="420" rx="26" fill="#050814" stroke="#FFD23F" stroke-width="8"/>
+                <rect x="12" y="12" width="576" height="396" rx="20" fill="#151B3B" stroke="#515A83" stroke-width="4"/>
+
+                <!-- Inside Vector Thumbnail: Subsea Cable Sabotage Episode Visual -->
+                <g transform="translate(12 12)">
+                  <!-- Ocean depth background -->
+                  <rect x="0" y="0" width="576" height="396" rx="20" fill="url(#s34-ocean-grad)"/>
+
+                  <!-- Deep ocean sunbeams / violet water column -->
+                  <polygon points="120,0 260,0 340,396 60,396" fill="#8E5FD9" opacity="0.14"/>
+                  <polygon points="320,0 440,0 520,396 280,396" fill="#8E5FD9" opacity="0.18"/>
+
+                  <!-- Seabed terrain trench -->
+                  <ellipse cx="280" cy="280" rx="260" ry="120" fill="url(#s34-ember-core)" opacity="0.45"/>
+                  <path d="M 0 320 Q 160 270 320 330 Q 460 370 576 300 L 576 396 L 0 396 Z" fill="#151B3B" stroke="#515A83" stroke-width="6"/>
+
+                  <!-- Subsea cable lying on seabed (18px hero stroke) -->
+                  <path d="M 0 330 C 180 300 360 360 576 310" fill="none" stroke="#FF7A1A" stroke-width="18" stroke-linecap="round"/>
+                  <path d="M 0 330 C 180 300 360 360 576 310" fill="none" stroke="#FFD23F" stroke-width="8" stroke-linecap="round"/>
+
+                  <!-- Massive ship anchor fluke hooking under the cable -->
+                  <g id="s34-binge-anchor">
+                    <!-- Anchor shank -->
+                    <line x1="390" y1="60" x2="280" y2="310" stroke="#B8C0D8" stroke-width="20" stroke-linecap="round"/>
+                    <line x1="390" y1="60" x2="280" y2="310" stroke="#F4EFE3" stroke-width="6" stroke-linecap="round"/>
+
+                    <!-- Anchor crown & curved flukes -->
+                    <path d="M 210 270 Q 280 360 350 270" fill="none" stroke="#B8C0D8" stroke-width="22" stroke-linecap="round"/>
+                    <polygon points="210,250 230,285 190,285" fill="#F4EFE3" stroke="#050814" stroke-width="4"/>
+                    <polygon points="350,250 370,285 330,285" fill="#F4EFE3" stroke="#050814" stroke-width="4"/>
+
+                    <!-- Snag tension glint & warning spark -->
+                    <circle cx="280" cy="325" r="18" fill="#FF3D5A" opacity="0.8" filter="url(#s34-soft)"/>
+                    <polygon points="280,305 285,320 300,325 285,330 280,345 275,330 260,325 275,320" fill="#FFD23F"/>
+                  </g>
+
+                  <!-- Specular glass card sheen -->
+                  <rect x="0" y="0" width="576" height="396" rx="20" fill="url(#s34-glass-grad)" opacity="0.75"/>
+                </g>
+
+                <!-- Play icon / binge badge accent (vector only, no text) -->
+                <g transform="translate(520 60)">
+                  <circle cx="0" cy="0" r="28" fill="#050814" stroke="#FFD23F" stroke-width="5"/>
+                  <polygon points="-8,-14 16,0 -8,14" fill="#FFD23F"/>
+                </g>
+              </g>
+            </g>
+
+            <!-- ============ SUPPORTING MECHANISM: ANCHOR CHAIN ICON LINKS ============ -->
+            <!-- Interlocking 12px chain links connecting binge capsule to seabed -->
+            <g id="s34-chain-assembly" transform="translate(1380 720)">
+              <g stroke="#B8C0D8" stroke-width="12" fill="none">
+                <rect class="s34-chain-link" x="-18" y="-120" width="36" height="66" rx="18"/>
+                <rect class="s34-chain-link" x="-18" y="-60" width="36" height="66" rx="18"/>
+                <rect class="s34-chain-link" x="-18" y="0" width="36" height="66" rx="18"/>
+                <rect class="s34-chain-link" x="-18" y="60" width="36" height="66" rx="18"/>
+                <rect class="s34-chain-link" x="-18" y="120" width="36" height="66" rx="18"/>
+              </g>
+              <circle cx="0" cy="180" r="14" fill="#FF7A1A" stroke="#FFD23F" stroke-width="6"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND: single text badge & final iris ================= -->
+        <g id="s34-fg">
+          <!-- Text Badge ceiling: exactly ONE badge, 2 words -->
+          <g id="s34-badge" transform="translate(64 64)">
+            <rect x="0" y="0" width="380" height="98" rx="49" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="14" y="12" width="352" height="74" rx="37" fill="#151B3B" stroke="#515A83" stroke-width="3"/>
+            <circle cx="36" cy="49" r="8" fill="#FFD23F"/>
+            <circle cx="344" cy="49" r="8" fill="#FFD23F"/>
+            <!-- The 2 on-screen words -->
+            <text x="190" y="62" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="38"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="8" paint-order="stroke fill" letter-spacing="2">WE LOOKED</text>
+          </g>
+
+          <!-- SEAM: swift:iris-to-black-final (Circular Iris closes to core-black #050814) -->
+          <!-- Curtaining rect using the iris mask -->
+          <rect id="s34-iris-curtain" x="0" y="0" width="1920" height="1080" fill="#050814" mask="url(#s34-iris-mask)"/>
+          <!-- Radiant glowing iris aperture ring -->
+          <circle id="s34-iris-rim" cx="620" cy="540" r="1600" fill="none" stroke="#FFD23F" stroke-width="12" opacity="0"/>
+          <!-- Solid core-black pin for final millisecond -->
+          <rect id="s34-iris-solid" x="0" y="0" width="1920" height="1080" fill="#050814" opacity="0"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      background: transparent;
+    }
+    #root::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 30;
+      background: radial-gradient(circle at 50% 50%, rgba(142, 95, 217, 0.08), transparent 75%);
+    }
+    .scene-persp {
+      position: absolute;
+      inset: 0;
+      perspective: 1800px;
+      perspective-origin: 50% 50%;
+    }
+    #s34-world, #s34-mg, #s34-mg-drift, #s34-hero-tilt {
+      transform-style: preserve-3d;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      /* ================= INITIAL STATE ================= */
+      gsap.set("#s34-badge", { scale: 0.7, opacity: 0, transformOrigin: "0% 0%" });
+      gsap.set("#s34-hero-tilt", { rotationX: 20 });
+      gsap.set("#s34-cable-assembly", { scale: 0, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s34-binge-capsule", { x: 800, opacity: 0 });
+      gsap.set("#s34-chain-assembly", { scaleY: 0, opacity: 0, transformOrigin: "50% 0%" });
+      gsap.set("#s34-iris-hole, #s34-iris-rim", { attr: { r: 1600 } });
+
+      /* ================= PHASE 1: CABLE CROSS-SECTION DRAWS (0.0 - 4.5s) ================= */
+      // 0.0s SFX click hit: Cable cross-section draws with spring overshoot
+      tl.to("#s34-cable-assembly", { scale: 1.0, opacity: 1, duration: 1.2, ease: "back.out(1.4)" }, 0.0);
+      tl.to("#s34-badge", { scale: 1.0, opacity: 1, duration: 0.8, ease: "back.out(1.4)" }, 0.4);
+
+      // Armor wire ring slow rotation
+      tl.to("#s34-armor-ring", { rotation: 45, duration: 4.5, ease: "sine.inOut" }, 0.0);
+
+      /* ================= PHASE 2: GEOMETRY MORPH INTO PLASTIC SEAL (4.5 - 8.5s) ================= */
+      // Cable layers compress & morph into rectangular plastic seal
+      tl.to("#s34-cable-sheath", { scale: 0.85, opacity: 0.2, duration: 2.0, ease: "power2.inOut" }, 4.5);
+      tl.to(".s34-armor-strand", { scale: 0.6, opacity: 0.3, duration: 1.8, ease: "power2.inOut" }, 4.6);
+      tl.to("#s34-cable-core", { scale: 0.7, opacity: 0.3, duration: 1.8, ease: "power2.inOut" }, 4.8);
+
+      // Plastic seal assembly blooms into place (matched geometry interpolation)
+      tl.to("#s34-seal-assembly", { opacity: 1, duration: 1.5, ease: "power2.out" }, 5.2);
+      tl.to("#s34-cable-assembly", { opacity: 0, duration: 0.8, ease: "power2.in" }, 6.2);
+
+      // Keyed steel wire draws through block
+      tl.to("#s34-seal-wire", { strokeDashoffset: 0, duration: 1.6, ease: "power2.inOut" }, 6.0);
+
+      // Soviet stamp emblem stamps onto seal face with flash glint
+      tl.to("#s34-seal-stamp", { scale: 1.0, opacity: 1, duration: 0.6, ease: "back.out(1.5)" }, 7.5);
+      tl.to("#s34-stamp-flash", { opacity: 0.8, scale: 1.4, duration: 0.3, ease: "power2.out" }, 7.8);
+      tl.to("#s34-stamp-flash", { opacity: 0, scale: 1.8, duration: 0.4, ease: "power2.in" }, 8.1);
+
+      /* ================= PHASE 3: BINGE CAPSULE & ANCHOR CHAIN (8.5 - 15.5s) ================= */
+      // Binge capsule slides in from frame-right (+X) at rel 8.5s (VO: "watch our episode" at 507.12)
+      tl.to("#s34-binge-capsule", { x: 0, opacity: 1, duration: 1.4, ease: "back.out(1.2)" }, 8.5);
+
+      // Anchor chain links drop down and pull taut (VO: "how one anchor can kill the internet")
+      tl.to("#s34-chain-assembly", { scaleY: 1.0, opacity: 1, duration: 1.2, ease: "power2.out" }, 10.2);
+      tl.to(".s34-chain-link", { y: -4, duration: 0.5, yoyo: true, repeat: 2, ease: "sine.inOut" }, 11.4);
+
+      /* ================= PHASE 4: CLIMAX & IRIS TO CORE-BLACK (15.5 - 18.615s) ================= */
+      // At "The difference is that this time, we looked" (VO at 519.44 rel 16.40s):
+      // Specular line sweeps the seal block face
+      tl.to("#s34-seal-specular", { opacity: 1, duration: 0.3, ease: "power2.out" }, 16.0);
+      tl.to("#s34-seal-specular", { opacity: 0, duration: 0.4, ease: "power2.in" }, 16.5);
+
+      // Final seal click: scale punch + gold flash bloom
+      tl.to("#s34-seal-assembly", { scale: 1.15, duration: 0.15, yoyo: true, repeat: 1, ease: "power3.out" }, 16.35);
+      tl.to("#s34-stamp-flash", { opacity: 0.9, scale: 1.6, duration: 0.25, ease: "power2.out" }, 16.38);
+      tl.to("#s34-stamp-flash", { opacity: 0, scale: 2.0, duration: 0.45, ease: "power2.in" }, 16.63);
+
+      // Seam swift:iris-to-black-final:
+      // Circular iris closes from r=1600 down to 0, living until 18.615s
+      tl.to("#s34-iris-rim", { opacity: 0.8, duration: 0.2, ease: "power2.out" }, 16.8);
+      tl.to("#s34-iris-hole, #s34-iris-rim", { attr: { r: 0 }, duration: 1.78, ease: "sine.inOut" }, 16.82);
+      tl.to("#s34-iris-rim", { opacity: 0, duration: 0.05, ease: "power2.in" }, 18.55);
+      tl.to("#s34-iris-solid", { opacity: 1, duration: 0.015 }, 18.59);
+
+      /* ================= LIVING HOLDS & DRIFT ================= */
+      tl.to("#s34-seal-assembly", { y: -5, duration: 0.8, yoyo: true, repeat: 3, ease: "sine.inOut" }, 9.0);
+      tl.to("#s34-binge-capsule", { y: -4, duration: 0.9, yoyo: true, repeat: 3, ease: "sine.inOut" }, 10.5);
+      tl.to("#s34-badge", { y: -4, duration: 0.7, yoyo: true, repeat: 3, ease: "sine.inOut" }, 12.0);
+
+      // Coupled X/Y drift across scene
+      tl.fromTo("#s34-world", { x: 30, y: 15 }, { x: -30, y: -15, duration: 18.615, ease: "sine.inOut" }, 0.0);
+      tl.fromTo("#s34-bg", { x: 16 }, { x: -16, duration: 18.615, ease: "sine.inOut" }, 0.0);
+      tl.fromTo("#s34-mg-drift", { x: -12 }, { x: 12, duration: 18.615, ease: "sine.inOut" }, 0.0);
+      tl.fromTo("#s34-fg", { x: 8 }, { x: -8, duration: 18.615, ease: "sine.inOut" }, 0.0);
+
+      /* ================= UNIVERSAL TIMELINE SLOT GUARD ================= */
+      tl.to({}, { duration: 18.615 }, 0);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["34-we-looked"] = tl;
+    })();
+  </script>
+</div>
+</template>

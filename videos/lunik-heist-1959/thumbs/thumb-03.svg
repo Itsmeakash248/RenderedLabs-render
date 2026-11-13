@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="RenderedLabs packaged artwork, asymmetric scale composition">
+  <!-- Archetype 3: Asymmetric Scale HUD. Colossal nose cone lower-right, diagonal beam, reticle, type top-left. -->
+  <defs>
+    <linearGradient id="g-ground" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="#151B3B"/>
+      <stop offset="46%" stop-color="#0A0E24"/>
+      <stop offset="100%" stop-color="#050814"/>
+    </linearGradient>
+    <radialGradient id="g-nebula" cx="0.68" cy="0.56" r="0.66">
+      <stop offset="0%" stop-color="#FF7A1A" stop-opacity="0.34"/>
+      <stop offset="36%" stop-color="#8E5FD9" stop-opacity="0.22"/>
+      <stop offset="72%" stop-color="#151B3B" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#050814" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g-aura" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFD23F" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#FF7A1A" stop-opacity="0.5"/>
+      <stop offset="64%" stop-color="#8E5FD9" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#8E5FD9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="g-cone" x1="0" y1="0" x2="0.85" y2="1">
+      <stop offset="0%" stop-color="#B8C0D8"/>
+      <stop offset="22%" stop-color="#151B3B"/>
+      <stop offset="72%" stop-color="#0A0E24"/>
+      <stop offset="100%" stop-color="#050814"/>
+    </linearGradient>
+    <linearGradient id="g-beam" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD23F" stop-opacity="0.66"/>
+      <stop offset="45%" stop-color="#FF7A1A" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#8E5FD9" stop-opacity="0.10"/>
+    </linearGradient>
+    <linearGradient id="g-scrim-l" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#050814" stop-opacity="0.92"/>
+      <stop offset="36%" stop-color="#050814" stop-opacity="0.74"/>
+      <stop offset="72%" stop-color="#050814" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#050814" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="g-dead" cx="1" cy="1" r="0.7">
+      <stop offset="0%" stop-color="#050814" stop-opacity="0.99"/>
+      <stop offset="58%" stop-color="#050814" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#050814" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="f-soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="26" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="f-rim" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="g1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="26" result="g2"/>
+      <feMerge><feMergeNode in="g2"/><feMergeNode in="g1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="f-laser" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="14" result="b1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="40" result="b2"/>
+      <feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="f-text" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#g-ground)"/>
+  <rect width="1920" height="1080" fill="url(#g-nebula)"/>
+
+  <!-- Star field -->
+  <g fill="#F4EFE3" opacity="0.55">
+    <circle cx="160" cy="120" r="3"/><circle cx="380" cy="80" r="2"/><circle cx="620" cy="160" r="2.5"/>
+    <circle cx="840" cy="70" r="2"/><circle cx="1320" cy="90" r="3"/><circle cx="1560" cy="150" r="2"/>
+    <circle cx="1790" cy="80" r="2.5"/><circle cx="1840" cy="300" r="2"/><circle cx="130" cy="820" r="2"/>
+    <circle cx="1760" cy="540" r="2"/><circle cx="300" cy="1010" r="2.5"/><circle cx="1460" cy="1020" r="2"/>
+  </g>
+
+  <!-- Diagonal torch beam crossing the frame -->
+  <g filter="url(#f-laser)">
+    <polygon points="120,-40 360,-40 1310,760 1120,830" fill="url(#g-beam)" opacity="0.7"/>
+    <line x1="250" y1="40" x2="1140" y2="690" stroke="#FFD23F" stroke-width="22" stroke-linecap="round"/>
+    <line x1="250" y1="40" x2="1140" y2="690" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+  </g>
+
+  <!-- HUD reticle -->
+  <g transform="translate(1110,600)">
+    <circle cx="0" cy="0" r="392" fill="none" stroke="#8E5FD9" stroke-width="10" stroke-dasharray="38 24" opacity="0.75"/>
+    <circle cx="0" cy="0" r="320" fill="none" stroke="#FFD23F" stroke-width="9" opacity="0.7"/>
+    <g stroke="#FFD23F" stroke-width="10" stroke-linecap="round">
+      <line x1="-420" y1="0" x2="-352" y2="0"/><line x1="352" y1="0" x2="420" y2="0"/>
+      <line x1="0" y1="-420" x2="0" y2="-352"/><line x1="0" y1="352" x2="0" y2="420"/>
+    </g>
+    <g fill="none" stroke="#F4EFE3" stroke-width="12" stroke-linecap="round" opacity="0.8">
+      <path d="M -390,-300 L -390,-390 L -300,-390"/>
+      <path d="M 390,-300 L 390,-390 L 300,-390"/>
+      <path d="M -390,300 L -390,390 L -300,390"/>
+    </g>
+  </g>
+
+  <!-- HERO: colossal nose cone -->
+  <g transform="translate(1110,600)">
+    <ellipse cx="40" cy="120" rx="470" ry="380" fill="url(#g-aura)" opacity="0.42"/>
+
+    <!-- Base ellipse -->
+    <ellipse cx="80" cy="120" rx="172" ry="94" fill="#0A0E24" stroke="#050814" stroke-width="30" transform="rotate(28 80 120)"/>
+    <ellipse cx="80" cy="120" rx="120" ry="58" fill="#151B3B" stroke="#8E5FD9" stroke-width="10" transform="rotate(28 80 120)"/>
+
+    <!-- Cone body -->
+    <path d="M -210,-300 C -140,-304 -30,-196 30,-66 L 214,112 A 172 94 0 0 1 -46,222 L -168,42 C -204,-36 -222,-212 -210,-300 Z"
+          fill="url(#g-cone)" stroke="#050814" stroke-width="30" stroke-linejoin="round"/>
+
+    <!-- Three inspection windows -->
+    <g>
+      <ellipse cx="-82" cy="-138" rx="40" ry="28" fill="#FFD23F" stroke="#050814" stroke-width="14" transform="rotate(-32 -82 -138)"/>
+      <ellipse cx="-82" cy="-138" rx="16" ry="10" fill="#FFFFFF" transform="rotate(-32 -82 -138)"/>
+      <ellipse cx="-8" cy="-56" rx="36" ry="25" fill="#FF7A1A" stroke="#050814" stroke-width="14" transform="rotate(-32 -8 -56)"/>
+      <ellipse cx="-8" cy="-56" rx="13" ry="8" fill="#FFD23F" transform="rotate(-32 -8 -56)"/>
+      <ellipse cx="-124" cy="-28" rx="30" ry="21" fill="#FFD23F" stroke="#050814" stroke-width="14" transform="rotate(-32 -124 -28)"/>
+      <ellipse cx="-124" cy="-28" rx="11" ry="7" fill="#FFFFFF" transform="rotate(-32 -124 -28)"/>
+    </g>
+
+    <!-- Panel seam -->
+    <path d="M -146,-96 C -60,-40 20,66 108,168" fill="none" stroke="#050814" stroke-width="16" stroke-linecap="round"/>
+    <path d="M -146,-96 C -60,-40 20,66 108,168" fill="none" stroke="#B8C0D8" stroke-width="7" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Dual-tone rim light -->
+    <g filter="url(#f-rim)">
+      <path d="M -210,-300 C -140,-304 -30,-196 30,-66" fill="none" stroke="#FF7A1A" stroke-width="18" stroke-linecap="round"/>
+      <path d="M -210,-300 C -140,-304 -30,-196 30,-66" fill="none" stroke="#FFD23F" stroke-width="7" stroke-linecap="round"/>
+      <path d="M -168,42 L -46,222" fill="none" stroke="#8E5FD9" stroke-width="16" stroke-linecap="round"/>
+      <path d="M -168,42 L -46,222" fill="none" stroke="#F4EFE3" stroke-width="6" stroke-linecap="round"/>
+    </g>
+
+    <!-- Apex probe -->
+    <line x1="-210" y1="-300" x2="-300" y2="-392" stroke="#050814" stroke-width="20" stroke-linecap="round"/>
+    <line x1="-210" y1="-300" x2="-300" y2="-392" stroke="#F4EFE3" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="-308" cy="-400" r="14" fill="#FFD23F" stroke="#050814" stroke-width="8"/>
+  </g>
+
+  <!-- Tiny human scale reference, lower-left -->
+  <g transform="translate(742,846)">
+    <ellipse cx="0" cy="52" rx="34" ry="8" fill="#050814" opacity="0.85"/>
+    <circle cx="0" cy="-42" r="15" fill="#151B3B" stroke="#F4EFE3" stroke-width="7"/>
+    <path d="M 0,-26 L 0,18 M 0,-12 L -22,6 M 0,-12 L 22,6 M 0,18 L -16,50 M 0,18 L 16,50"
+          fill="none" stroke="#F4EFE3" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Left scrim for type contrast -->
+  <rect x="0" y="0" width="760" height="1080" fill="url(#g-scrim-l)"/>
+
+  <!-- 4-point glints -->
+  <g filter="url(#f-rim)">
+    <g transform="translate(1660,250)"><polygon points="0,-30 3,-6 28,0 3,6 0,30 -3,6 -28,0 -3,-6" fill="#F4EFE3"/></g>
+    <g transform="translate(520,220)"><polygon points="0,-18 2,-4 18,0 2,4 0,18 -2,4 -18,0 -2,-4" fill="#FFD23F"/></g>
+  </g>
+
+  <!-- OVERLAY TYPE: ROOF PRIED OPEN -->
+  <g filter="url(#f-text)">
+    <text x="118" y="302" font-family="Archivo Black" font-size="148" letter-spacing="-4"
+          fill="#F4EFE3" stroke="#050814" stroke-width="27" stroke-linejoin="round" paint-order="stroke fill">ROOF</text>
+    <text x="118" y="444" font-family="Archivo Black" font-size="148" letter-spacing="-4"
+          fill="#FFD23F" stroke="#050814" stroke-width="27" stroke-linejoin="round" paint-order="stroke fill">PRIED</text>
+    <text x="118" y="586" font-family="Archivo Black" font-size="148" letter-spacing="-4"
+          fill="#F4EFE3" stroke="#050814" stroke-width="27" stroke-linejoin="round" paint-order="stroke fill">OPEN</text>
+  </g>
+
+  <!-- METRIC BADGE, mid-left -->
+  <g transform="translate(118,700)" filter="url(#f-text)">
+    <rect x="0" y="0" width="500" height="84" rx="42" fill="#151B3B" stroke="#FFD23F" stroke-width="9"/>
+    <circle cx="46" cy="42" r="14" fill="#FF7A1A" filter="url(#f-rim)"/>
+    <circle cx="46" cy="42" r="6" fill="#FFFFFF"/>
+    <text x="82" y="54" font-family="Quicksand" font-weight="700" font-size="32" letter-spacing="1.5" fill="#F4EFE3">5-INCH SPIKES</text>
+  </g>
+
+  <!-- Dead-zone shield, bottom-right -->
+  <rect x="1350" y="790" width="570" height="290" fill="url(#g-dead)"/>
+</svg>

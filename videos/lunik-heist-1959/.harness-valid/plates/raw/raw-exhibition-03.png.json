@@ -1,0 +1,23 @@
+{
+  "url": "https://www.technologyreview.com/2021/01/28/1016867/lunik-cia-heist-steal-russian-satellite-space-us-ussr/",
+  "captured_at": "2026-11-06T19:51:42.300Z",
+  "width": 1400,
+  "height": 2000,
+  "method": "scrollIntoView + viewport-relative getClientRects",
+  "boxes": [
+    {
+      "phrase": "November 21, 1959, the Soviet exhibition opened",
+      "x": 408,
+      "y": 938,
+      "w": 393,
+      "h": 18
+    },
+    {
+      "phrase": "Auditorio Nacional in Mexico City",
+      "x": 428,
+      "y": -1974,
+      "w": 278,
+      "h": 18
+    }
+  ]
+}

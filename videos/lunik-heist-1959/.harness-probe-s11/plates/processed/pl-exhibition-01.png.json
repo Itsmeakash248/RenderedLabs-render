@@ -1,0 +1,33 @@
+{
+  "plate_id": "pl-exhibition-01",
+  "source_url": "videos/lunik-heist-1959/.tmp/lunik.pdf",
+  "source_page": 1,
+  "source_dpi": 150,
+  "captured_at": null,
+  "width": 1275,
+  "height": 1650,
+  "source_width": 1275,
+  "source_height": 1650,
+  "scale_factor": 1.0,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": [
+    {
+      "phrase": "twice gained extended access to the Lunik",
+      "x": 239,
+      "y": 1014,
+      "w": 673,
+      "h": 37
+    },
+    {
+      "phrase": "before the Soviets missed it",
+      "x": 700,
+      "y": 1051,
+      "w": 436,
+      "h": 37
+    }
+  ],
+  "dropped_boxes": 0
+}

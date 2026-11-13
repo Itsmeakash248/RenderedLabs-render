@@ -1,0 +1,427 @@
+<template id="s26-template">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<div id="root" data-composition-id="26-four-findings" data-width="1920" data-height="1080" data-start="0" data-duration="18.580">
+  <div class="scene-persp">
+    <svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="s26-void-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#0A0E24"/>
+          <stop offset="0.55" stop-color="#050814"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s26-folder-grad" x1="0" y1="0" x2="0.7" y2="1">
+          <stop offset="0" stop-color="#515A83"/>
+          <stop offset="0.42" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s26-front-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#515A83"/>
+          <stop offset="0.35" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s26-card-grad" x1="0" y1="0" x2="0.8" y2="1">
+          <stop offset="0" stop-color="#151B3B"/>
+          <stop offset="0.6" stop-color="#151B3B"/>
+          <stop offset="1" stop-color="#0A0E24"/>
+        </linearGradient>
+        <linearGradient id="s26-gold-grad" x1="0" y1="0" x2="0.8" y2="1">
+          <stop offset="0" stop-color="#FF7A1A"/>
+          <stop offset="0.46" stop-color="#FFD23F"/>
+          <stop offset="1" stop-color="#F4EFE3"/>
+        </linearGradient>
+        <linearGradient id="s26-violet-grad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#8E5FD9"/>
+          <stop offset="1" stop-color="#515A83"/>
+        </linearGradient>
+        <linearGradient id="s26-paper-edge-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#B8C0D8" stop-opacity="0.8"/>
+          <stop offset="1" stop-color="#515A83" stop-opacity="0.5"/>
+        </linearGradient>
+        <radialGradient id="s26-ember-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FF7A1A" stop-opacity="0.5"/>
+          <stop offset="0.55" stop-color="#FF7A1A" stop-opacity="0.14"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s26-violet-bloom-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#8E5FD9" stop-opacity="0.42"/>
+          <stop offset="0.6" stop-color="#8E5FD9" stop-opacity="0.12"/>
+          <stop offset="1" stop-color="#8E5FD9" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s26-flash-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#F4EFE3" stop-opacity="0.9"/>
+          <stop offset="0.4" stop-color="#FFD23F" stop-opacity="0.5"/>
+          <stop offset="1" stop-color="#FF7A1A" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="s26-haze" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="24"/>
+        </filter>
+        <filter id="s26-soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="8"/>
+        </filter>
+        <filter id="s26-glow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="6" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <g id="s26-world">
+        <!-- ================= BACKGROUND: desk void ================= -->
+        <g id="s26-bg">
+          <rect x="0" y="0" width="1920" height="1080" fill="url(#s26-void-grad)"/>
+          <ellipse cx="960" cy="560" rx="760" ry="440" fill="url(#s26-violet-bloom-grad)"/>
+          <ellipse cx="960" cy="760" rx="720" ry="260" fill="url(#s26-ember-grad)" opacity="0.35"/>
+          <g stroke="#515A83" stroke-width="3" opacity="0.14">
+            <line x1="0" y1="220" x2="1920" y2="220"/>
+            <line x1="0" y1="420" x2="1920" y2="420"/>
+            <line x1="0" y1="620" x2="1920" y2="620"/>
+            <line x1="0" y1="820" x2="1920" y2="820"/>
+            <line x1="300" y1="0" x2="300" y2="1080"/>
+            <line x1="700" y1="0" x2="700" y2="1080"/>
+            <line x1="1100" y1="0" x2="1100" y2="1080"/>
+            <line x1="1500" y1="0" x2="1500" y2="1080"/>
+          </g>
+          <g fill="#F4EFE3">
+            <circle cx="160" cy="140" r="3" opacity="0.25"/>
+            <circle cx="420" cy="920" r="3" opacity="0.18"/>
+            <circle cx="1700" cy="180" r="3" opacity="0.22"/>
+            <circle cx="1560" cy="940" r="3" opacity="0.16"/>
+            <circle cx="880" cy="120" r="2" opacity="0.2"/>
+          </g>
+        </g>
+
+        <!-- ================= MIDGROUND: folder and four findings ================= -->
+        <g id="s26-mg" transform="translate(960 560)">
+          <g id="s26-folder-3d">
+            <ellipse cx="0" cy="330" rx="780" ry="120" fill="#050814" opacity="0.65" filter="url(#s26-haze)"/>
+
+            <g id="s26-folder-back">
+              <rect x="-720" y="-360" width="320" height="74" rx="18" fill="url(#s26-folder-grad)" stroke="#FFD23F" stroke-width="10"/>
+              <g stroke="#FFD23F" stroke-width="7" stroke-linecap="round" opacity="0.75">
+                <line x1="-676" y1="-338" x2="-560" y2="-338"/>
+                <line x1="-676" y1="-320" x2="-600" y2="-320"/>
+              </g>
+              <rect x="-720" y="-310" width="1440" height="620" rx="26" fill="url(#s26-folder-grad)" stroke="#FFD23F" stroke-width="22"/>
+              <rect x="-690" y="-280" width="1380" height="560" rx="18" fill="#0A0E24" opacity="0.72" stroke="#8E5FD9" stroke-width="6"/>
+              <g fill="none" stroke="#FFD23F" stroke-width="10" stroke-linecap="round" opacity="0.6">
+                <path d="M -690 -200 L -690 -280 L -610 -280"/>
+                <path d="M 690 -200 L 690 -280 L 610 -280"/>
+                <path d="M -690 200 L -690 280 L -610 280"/>
+                <path d="M 690 200 L 690 280 L 610 280"/>
+              </g>
+              <g fill="#B8C0D8" opacity="0.45">
+                <circle cx="-660" cy="-250" r="5"/><circle cx="660" cy="-250" r="5"/>
+                <circle cx="-660" cy="250" r="5"/><circle cx="660" cy="250" r="5"/>
+              </g>
+            </g>
+
+            <g id="s26-bloom">
+              <ellipse cx="0" cy="0" rx="470" ry="320" fill="url(#s26-ember-grad)" opacity="0.7"/>
+              <ellipse cx="0" cy="0" rx="280" ry="190" fill="url(#s26-flash-grad)" opacity="0.18" filter="url(#s26-soft)"/>
+            </g>
+
+            <!-- card A: producer identification -->
+            <g transform="translate(-360 -130)">
+              <g id="s26-card-a">
+                <rect x="-226" y="-126" width="500" height="300" rx="18" fill="#050814" opacity="0.55"/>
+                <rect x="-238" y="-138" width="500" height="300" rx="18" fill="#515A83" opacity="0.55"/>
+                <rect x="-250" y="-150" width="500" height="300" rx="18" fill="url(#s26-paper-edge-grad)" opacity="0.7"/>
+                <rect x="-250" y="-150" width="500" height="300" rx="18" fill="url(#s26-card-grad)" stroke="#B8C0D8" stroke-width="14"/>
+                <rect x="-250" y="-150" width="500" height="58" rx="18" fill="url(#s26-gold-grad)" opacity="0.2"/>
+                <path d="M -250 -92 L 250 -92" stroke="#FFD23F" stroke-width="5" opacity="0.5"/>
+                <g transform="translate(-212 -121)">
+                  <rect x="-14" y="-14" width="28" height="28" rx="7" fill="none" stroke="#FFD23F" stroke-width="6"/>
+                  <path d="M -6 0 L 0 7 L 10 -8" fill="none" stroke="#FFD23F" stroke-width="6" stroke-linecap="round"/>
+                </g>
+                <g transform="translate(-20 30)">
+                  <g stroke="#B8C0D8" stroke-width="7" fill="#151B3B" stroke-linejoin="round">
+                    <rect x="-120" y="-24" width="66" height="72" rx="5"/>
+                    <rect x="-42" y="-52" width="72" height="100" rx="5"/>
+                    <rect x="42" y="-8" width="66" height="56" rx="5"/>
+                  </g>
+                  <g fill="#FFD23F" opacity="0.65">
+                    <rect x="-106" y="-6" width="12" height="14"/><rect x="-80" y="-6" width="12" height="14"/>
+                    <rect x="-106" y="22" width="12" height="14"/><rect x="-80" y="22" width="12" height="14"/>
+                    <rect x="-26" y="-32" width="12" height="14"/><rect x="0" y="-32" width="12" height="14"/>
+                    <rect x="-26" y="-4" width="12" height="14"/><rect x="0" y="-4" width="12" height="14"/>
+                    <rect x="58" y="10" width="12" height="14"/><rect x="82" y="10" width="12" height="14"/>
+                  </g>
+                  <line x1="-42" y1="-52" x2="-42" y2="-96" stroke="#B8C0D8" stroke-width="8"/>
+                  <line x1="30" y1="-52" x2="30" y2="-82" stroke="#B8C0D8" stroke-width="8"/>
+                  <circle cx="-42" cy="-100" r="8" fill="#FF7A1A"/>
+                </g>
+                <g transform="translate(150 92)">
+                  <g id="s26-seal-stamp">
+                    <circle cx="0" cy="0" r="58" fill="none" stroke="#FFD23F" stroke-width="6" opacity="0.35"/>
+                    <circle cx="0" cy="0" r="46" fill="url(#s26-gold-grad)" stroke="#050814" stroke-width="5"/>
+                    <circle cx="0" cy="0" r="34" fill="none" stroke="#050814" stroke-width="4" opacity="0.55"/>
+                    <path d="M -16 2 L -4 14 L 20 -12" fill="none" stroke="#050814" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <g id="s26-seal-ring" fill="none" stroke="#FFD23F" stroke-width="8" opacity="0">
+                    <circle cx="0" cy="0" r="70"/>
+                  </g>
+                </g>
+                <rect x="-218" y="104" width="220" height="18" rx="9" fill="#515A83" opacity="0.6"/>
+              </g>
+            </g>
+
+            <!-- card B: fifth stage -->
+            <g transform="translate(360 -130)">
+              <g id="s26-card-b">
+                <rect x="-226" y="-126" width="500" height="300" rx="18" fill="#050814" opacity="0.55"/>
+                <rect x="-238" y="-138" width="500" height="300" rx="18" fill="#515A83" opacity="0.55"/>
+                <rect x="-250" y="-150" width="500" height="300" rx="18" fill="url(#s26-paper-edge-grad)" opacity="0.7"/>
+                <rect x="-250" y="-150" width="500" height="300" rx="18" fill="url(#s26-card-grad)" stroke="#B8C0D8" stroke-width="14"/>
+                <rect x="-250" y="-150" width="500" height="58" rx="18" fill="url(#s26-violet-grad)" opacity="0.28"/>
+                <path d="M -250 -92 L 250 -92" stroke="#8E5FD9" stroke-width="5" opacity="0.6"/>
+                <g transform="translate(-212 -121)">
+                  <circle cx="0" cy="0" r="14" fill="none" stroke="#8E5FD9" stroke-width="6"/>
+                  <circle cx="0" cy="0" r="5" fill="#8E5FD9"/>
+                </g>
+                <circle cx="40" cy="26" r="112" fill="none" stroke="#8E5FD9" stroke-width="5" opacity="0.3"/>
+                <circle cx="40" cy="26" r="88" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.25"/>
+                <g id="s26-five" transform="translate(40 26)">
+                  <path d="M 54 -76 L -32 -76 L -32 -4 L 14 -4 C 50 -4 68 16 68 38 C 68 66 40 84 4 84 C -22 84 -44 72 -54 56"
+                        fill="none" stroke="#050814" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+                  <path d="M 54 -76 L -32 -76 L -32 -4 L 14 -4 C 50 -4 68 16 68 38 C 68 66 40 84 4 84 C -22 84 -44 72 -54 56"
+                        fill="none" stroke="url(#s26-gold-grad)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <g id="s26-five-ring" fill="none" stroke="#FFD23F" stroke-width="8" opacity="0" transform="translate(40 26)">
+                  <circle cx="0" cy="0" r="128"/>
+                </g>
+                <g transform="translate(-196 108)" stroke="#FFD23F" stroke-width="6" opacity="0.6">
+                  <circle cx="0" cy="0" r="8"/><circle cx="34" cy="0" r="8"/><circle cx="68" cy="0" r="8"/>
+                </g>
+              </g>
+            </g>
+
+            <!-- card C: three suppliers -->
+            <g transform="translate(-360 190)">
+              <g id="s26-card-c">
+                <rect x="-226" y="-126" width="500" height="300" rx="18" fill="#050814" opacity="0.55"/>
+                <rect x="-238" y="-138" width="500" height="300" rx="18" fill="#515A83" opacity="0.55"/>
+                <rect x="-250" y="-150" width="500" height="300" rx="18" fill="url(#s26-paper-edge-grad)" opacity="0.7"/>
+                <rect x="-250" y="-150" width="500" height="300" rx="18" fill="url(#s26-card-grad)" stroke="#B8C0D8" stroke-width="14"/>
+                <rect x="-250" y="-150" width="500" height="58" rx="18" fill="url(#s26-gold-grad)" opacity="0.16"/>
+                <path d="M -250 -92 L 250 -92" stroke="#FFD23F" stroke-width="5" opacity="0.4"/>
+                <g transform="translate(-212 -121)">
+                  <circle cx="-12" cy="0" r="7" fill="#8E5FD9"/>
+                  <circle cx="8" cy="0" r="7" fill="#8E5FD9"/>
+                  <circle cx="28" cy="0" r="7" fill="#8E5FD9"/>
+                </g>
+                <g id="s26-suppliers" transform="translate(0 24)">
+                  <line x1="-130" y1="28" x2="130" y2="28" stroke="#8E5FD9" stroke-width="10" opacity="0.55"/>
+                  <line x1="-130" y1="28" x2="0" y2="-34" stroke="#8E5FD9" stroke-width="10" opacity="0.55"/>
+                  <line x1="0" y1="-34" x2="130" y2="28" stroke="#8E5FD9" stroke-width="10" opacity="0.55"/>
+                  <g id="s26-supplier-1" transform="translate(-130 28)">
+                    <circle cx="0" cy="0" r="30" fill="none" stroke="#FFD23F" stroke-width="4" opacity="0.4"/>
+                    <circle cx="0" cy="0" r="20" fill="#151B3B" stroke="#FFD23F" stroke-width="7"/>
+                    <path d="M -7 4 L 0 -8 L 7 4 Z" fill="#FFD23F"/>
+                  </g>
+                  <g id="s26-supplier-2" transform="translate(0 -34)">
+                    <circle cx="0" cy="0" r="30" fill="none" stroke="#FFD23F" stroke-width="4" opacity="0.4"/>
+                    <circle cx="0" cy="0" r="20" fill="#151B3B" stroke="#FFD23F" stroke-width="7"/>
+                    <circle cx="0" cy="0" r="7" fill="#FFD23F"/>
+                  </g>
+                  <g id="s26-supplier-3" transform="translate(130 28)">
+                    <circle cx="0" cy="0" r="30" fill="none" stroke="#FFD23F" stroke-width="4" opacity="0.4"/>
+                    <circle cx="0" cy="0" r="20" fill="#151B3B" stroke="#FFD23F" stroke-width="7"/>
+                    <rect x="-7" y="-7" width="14" height="14" rx="3" fill="#FFD23F"/>
+                  </g>
+                </g>
+                <g stroke="#515A83" stroke-width="4" opacity="0.5">
+                  <line x1="-200" y1="108" x2="-60" y2="108"/>
+                  <line x1="60" y1="108" x2="200" y2="108"/>
+                </g>
+              </g>
+            </g>
+
+            <!-- card D: numbering, fourth name redacted -->
+            <g transform="translate(360 190)">
+              <g id="s26-card-d">
+                <rect x="-226" y="-126" width="500" height="300" rx="18" fill="#050814" opacity="0.55"/>
+                <rect x="-238" y="-138" width="500" height="300" rx="18" fill="#515A83" opacity="0.55"/>
+                <rect x="-250" y="-150" width="500" height="300" rx="18" fill="url(#s26-paper-edge-grad)" opacity="0.7"/>
+                <rect x="-250" y="-150" width="500" height="300" rx="18" fill="url(#s26-card-grad)" stroke="#B8C0D8" stroke-width="14"/>
+                <rect x="-250" y="-150" width="500" height="58" rx="18" fill="url(#s26-violet-grad)" opacity="0.22"/>
+                <path d="M -250 -92 L 250 -92" stroke="#8E5FD9" stroke-width="5" opacity="0.5"/>
+                <g transform="translate(-212 -121)">
+                  <rect x="-16" y="-7" width="32" height="14" rx="4" fill="#8E5FD9"/>
+                </g>
+                <g transform="translate(-24 4)">
+                  <g fill="#515A83">
+                    <rect x="-176" y="-82" width="230" height="24" rx="12"/>
+                    <rect x="-176" y="-42" width="286" height="24" rx="12"/>
+                    <rect x="-176" y="-2" width="196" height="24" rx="12"/>
+                    <rect x="-176" y="38" width="300" height="24" rx="12"/>
+                  </g>
+                  <g fill="#B8C0D8" opacity="0.4">
+                    <rect x="-176" y="-82" width="120" height="8" rx="4"/>
+                    <rect x="-176" y="-42" width="150" height="8" rx="4"/>
+                    <rect x="-176" y="-2" width="96" height="8" rx="4"/>
+                  </g>
+                  <g id="s26-redact" transform="translate(-176 34)">
+                    <rect x="0" y="0" width="300" height="34" rx="8" fill="#050814" stroke="#FFD23F" stroke-width="4"/>
+                    <g stroke="#FFD23F" stroke-width="4" opacity="0.7">
+                      <line x1="18" y1="17" x2="34" y2="17"/>
+                      <line x1="266" y1="17" x2="282" y2="17"/>
+                    </g>
+                    <rect x="132" y="8" width="36" height="18" rx="4" fill="none" stroke="#FF7A1A" stroke-width="4"/>
+                  </g>
+                  <g id="s26-redact-sheen" opacity="0">
+                    <rect x="-176" y="34" width="300" height="34" rx="8" fill="url(#s26-gold-grad)"/>
+                  </g>
+                </g>
+                <g transform="translate(0 116)">
+                  <circle cx="-26" cy="0" r="7" fill="#FFD23F"/>
+                  <circle cx="0" cy="0" r="7" fill="#8E5FD9"/>
+                  <circle cx="26" cy="0" r="7" fill="#515A83"/>
+                </g>
+              </g>
+            </g>
+
+            <!-- folder front closes halfway -->
+            <g transform="translate(0 310)">
+              <g id="s26-folder-front">
+                <rect x="-720" y="-310" width="1440" height="310" rx="26" fill="url(#s26-front-grad)" stroke="#FFD23F" stroke-width="22"/>
+                <rect x="-690" y="-280" width="1380" height="280" rx="18" fill="none" stroke="#8E5FD9" stroke-width="6" opacity="0.6"/>
+                <g stroke="#FFD23F" stroke-width="8" opacity="0.55">
+                  <line x1="-620" y1="-196" x2="-420" y2="-196"/>
+                  <line x1="-620" y1="-170" x2="-480" y2="-170"/>
+                </g>
+                <g fill="#B8C0D8" opacity="0.4">
+                  <circle cx="-660" cy="-30" r="5"/><circle cx="660" cy="-30" r="5"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+
+        <!-- ================= FOREGROUND: badge, exit bloom ================= -->
+        <g id="s26-fg">
+          <g id="s26-badge">
+            <rect x="64" y="52" width="430" height="98" rx="49" fill="#050814" stroke="#FFD23F" stroke-width="6"/>
+            <rect x="78" y="66" width="402" height="70" rx="35" fill="none" stroke="#FFD23F" stroke-width="3" opacity="0.35"/>
+            <g fill="#FFD23F" opacity="0.85">
+              <circle cx="102" cy="101" r="7"/>
+              <circle cx="456" cy="101" r="7"/>
+            </g>
+            <text x="279" y="117" text-anchor="middle" font-family="'Archivo Black', Archivo, sans-serif" font-size="40"
+                  fill="#F4EFE3" stroke="#050814" stroke-width="9" paint-order="stroke fill" letter-spacing="2"
+                  textLength="330" lengthAdjust="spacingAndGlyphs">FOUR FINDINGS</text>
+          </g>
+
+          <g transform="translate(960 560)">
+            <g id="s26-exit-bloom" opacity="0">
+              <circle cx="0" cy="0" r="320" fill="url(#s26-flash-grad)"/>
+              <circle cx="0" cy="0" r="240" fill="none" stroke="#FFD23F" stroke-width="14" opacity="0.6"/>
+            </g>
+          </g>
+          <rect id="s26-flash" x="0" y="0" width="1920" height="1080" fill="#FFD23F" opacity="0"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <style>
+    #root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+    #root::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:30;
+      background:radial-gradient(circle at 50% 54%, rgba(142,95,217,0.12), transparent 68%);}
+    .scene-persp{position:absolute;inset:0;perspective:1800px;perspective-origin:50% 54%;}
+    #s26-world{transform-style:preserve-3d;}
+    #s26-folder-3d{transform-style:preserve-3d;}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script>
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+
+      gsap.set("#s26-folder-3d", { rotationX: 26, transformOrigin: "50% 62%" });
+      gsap.set("#s26-folder-back", { opacity: 0, scaleY: 0.72, transformOrigin: "50% 100%" });
+      gsap.set("#s26-folder-front", { scaleY: 0.08, transformOrigin: "50% 100%" });
+      gsap.set("#s26-bloom", { opacity: 0, scale: 0.55, transformOrigin: "50% 50%" });
+      gsap.set("#s26-card-a", { x: 360, y: 130, rotation: -18, scale: 0.9, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s26-card-b", { x: -360, y: 130, rotation: -18, scale: 0.9, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s26-card-c", { x: 360, y: -190, rotation: -18, scale: 0.9, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s26-card-d", { x: -360, y: -190, rotation: -18, scale: 0.9, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s26-seal-stamp", { scale: 1.9, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s26-seal-ring", { scale: 0.5, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s26-five", { scale: 0.6, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s26-five-ring", { scale: 0.5, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s26-supplier-1, #s26-supplier-2, #s26-supplier-3", { scale: 0, opacity: 0, transformOrigin: "50% 50%" });
+      gsap.set("#s26-redact", { scaleX: 0, opacity: 0, transformOrigin: "0% 50%" });
+      gsap.set("#s26-redact-sheen", { opacity: 0 });
+      gsap.set("#s26-badge", { opacity: 0, scale: 1.4, rotation: -4, transformOrigin: "50% 50%" });
+      gsap.set("#s26-exit-bloom", { opacity: 0, scale: 0.3, transformOrigin: "50% 50%" });
+
+      /* ---------- phase 1: folder opens on 16-degree perspective ---------- */
+      tl.to("#s26-folder-back", { opacity: 1, scaleY: 1, duration: 1.3, ease: "power3.out" }, 0.1);
+      tl.to("#s26-folder-3d", { rotationX: 16, duration: 1.7, ease: "power2.inOut" }, 0.2);
+      tl.to("#s26-folder-front", { scaleY: 0.08, duration: 0.9, ease: "power2.out" }, 0.9);
+      tl.to("#s26-bloom", { opacity: 1, scale: 1, duration: 1.8, ease: "power2.out" }, 0.6);
+      tl.to("#s26-badge", { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(2.4)" }, 1.0);
+      tl.to("#s26-badge", { y: -5, duration: 1.4, yoyo: true, repeat: 2, ease: "sine.inOut" }, 2.4);
+
+      /* ---------- phase 2: four cards rise and fan at -18 degrees ---------- */
+      tl.to("#s26-card-a, #s26-card-b, #s26-card-c, #s26-card-d", { opacity: 1, duration: 0.45, stagger: 0.09, ease: "power1.out" }, 1.9);
+      tl.to("#s26-card-a", { x: -210, y: 130, rotation: -18, scale: 0.96, duration: 1.4, ease: "power3.out" }, 2.6);
+      tl.to("#s26-card-b", { x: -550, y: 140, rotation: -18, scale: 0.96, duration: 1.4, ease: "power3.out" }, 2.72);
+      tl.to("#s26-card-c", { x: 550, y: -170, rotation: -18, scale: 0.96, duration: 1.4, ease: "power3.out" }, 2.84);
+      tl.to("#s26-card-d", { x: 210, y: -160, rotation: -18, scale: 0.96, duration: 1.4, ease: "power3.out" }, 2.96);
+
+      /* ---------- phase 3: cards settle into the grid at 0 degrees ---------- */
+      tl.to("#s26-card-a", { x: 0, y: 0, rotation: 0, scale: 1, duration: 1.5, ease: "power3.inOut" }, 5.2);
+      tl.to("#s26-card-b", { x: 0, y: 0, rotation: 0, scale: 1, duration: 1.5, ease: "power3.inOut" }, 5.32);
+      tl.to("#s26-card-c", { x: 0, y: 0, rotation: 0, scale: 1, duration: 1.5, ease: "power3.inOut" }, 5.44);
+      tl.to("#s26-card-d", { x: 0, y: 0, rotation: 0, scale: 1, duration: 1.5, ease: "power3.inOut" }, 5.56);
+      tl.to("#s26-card-a, #s26-card-b, #s26-card-c, #s26-card-d", { y: -6, duration: 0.3, yoyo: true, repeat: 1, stagger: 0.06, ease: "sine.inOut" }, 6.9);
+
+      /* ---------- phase 4: stamp the findings in sequence ---------- */
+      tl.to("#s26-seal-stamp", { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(3)" }, 8.2);
+      tl.to("#s26-seal-ring", { opacity: 0.8, scale: 1.25, duration: 0.55, ease: "power2.out" }, 8.35);
+      tl.to("#s26-seal-ring", { opacity: 0, scale: 1.8, duration: 0.5, ease: "power2.in" }, 8.75);
+      tl.to("#s26-card-a", { y: 7, duration: 0.16, yoyo: true, repeat: 1, ease: "power2.out" }, 8.2);
+
+      tl.to("#s26-five", { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(2.6)" }, 9.6);
+      tl.to("#s26-five-ring", { opacity: 0.7, scale: 1.15, duration: 0.55, ease: "power2.out" }, 9.75);
+      tl.to("#s26-five-ring", { opacity: 0, scale: 1.6, duration: 0.5, ease: "power2.in" }, 10.15);
+      tl.to("#s26-card-b", { y: 7, duration: 0.16, yoyo: true, repeat: 1, ease: "power2.out" }, 9.6);
+
+      tl.to("#s26-supplier-1", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(3)" }, 11.0);
+      tl.to("#s26-supplier-2", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(3)" }, 11.16);
+      tl.to("#s26-supplier-3", { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(3)" }, 11.32);
+      tl.to("#s26-card-c", { y: 6, duration: 0.16, yoyo: true, repeat: 1, ease: "power2.out" }, 11.0);
+
+      tl.to("#s26-redact", { opacity: 1, scaleX: 1, duration: 0.45, ease: "power3.out" }, 12.6);
+      tl.to("#s26-redact-sheen", { opacity: 0.35, duration: 0.18, ease: "power1.out" }, 12.9);
+      tl.to("#s26-redact-sheen", { opacity: 0, duration: 0.3, ease: "power1.in" }, 13.08);
+      tl.to("#s26-card-d", { y: 7, duration: 0.16, yoyo: true, repeat: 1, ease: "power2.out" }, 12.6);
+
+      /* ---------- phase 5: folder closes halfway ---------- */
+      tl.to("#s26-folder-front", { scaleY: 0.46, duration: 1.3, ease: "power2.inOut" }, 15.2);
+      tl.to("#s26-folder-3d", { rotationX: 18, duration: 1.3, ease: "power2.inOut" }, 15.2);
+
+      /* ---------- living holds ---------- */
+      tl.to("#s26-card-a", { scale: 1.004, duration: 1.3, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 15.7);
+      tl.to("#s26-card-d", { scale: 1.004, duration: 1.2, yoyo: true, repeat: 1, transformOrigin: "50% 50%", ease: "sine.inOut" }, 15.9);
+      tl.to("#s26-bloom", { opacity: 0.78, duration: 1.3, yoyo: true, repeat: 1, ease: "sine.inOut" }, 15.8);
+      tl.to("#s26-folder-front", { scaleY: 0.44, duration: 1.1, yoyo: true, repeat: 1, transformOrigin: "50% 100%", ease: "sine.inOut" }, 16.9);
+
+      /* ---------- camera and parallax planes ---------- */
+      tl.fromTo("#s26-world", { rotationY: -2.4, scale: 1.0 }, { rotationY: 2.4, scale: 1.05, duration: 18.58, transformOrigin: "50% 54%", ease: "sine.inOut" }, 0);
+      tl.fromTo("#s26-bg", { x: 12 }, { x: -12, duration: 18.58, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s26-folder-3d", { x: -8 }, { x: 8, duration: 18.58, ease: "sine.inOut" }, 0);
+      tl.fromTo("#s26-fg", { x: 14 }, { x: -14, duration: 18.58, ease: "sine.inOut" }, 0);
+
+      /* ---------- exit: heavy payload-map bloom ---------- */
+      tl.to("#s26-exit-bloom", { opacity: 0.9, scale: 1.1, duration: 0.7, transformOrigin: "50% 50%", ease: "power2.out" }, 17.35);
+      tl.to("#s26-exit-bloom", { opacity: 0, scale: 1.9, duration: 0.55, transformOrigin: "50% 50%", ease: "power3.in" }, 18.03);
+      tl.to("#s26-flash", { opacity: 0.2, duration: 0.16, ease: "power1.out" }, 18.1);
+      tl.to("#s26-flash", { opacity: 0, duration: 0.2, ease: "power1.in" }, 18.26);
+
+      tl.to({}, { duration: 18.580 }, 0);
+      window.__timelines["26-four-findings"] = tl;
+    })();
+  </script>
+</div>
+</template>

@@ -1,0 +1,101 @@
+{
+  "name": "cosmic-ember",
+  "realm": "cosmic-ember",
+  "lead": "var(--rl-ember)",
+  "support": "var(--rl-nebula-violet)",
+  "topics": [
+    "black holes",
+    "stars",
+    "supernovae"
+  ],
+  "colors": {
+    "void-indigo": "#0A0E24",
+    "panel-navy": "#151B3B",
+    "core-black": "#050814",
+    "starlight": "#F4EFE3",
+    "moon-dust": "#B8C0D8",
+    "ember": "#FF7A1A",
+    "solar-gold": "#FFD23F",
+    "nebula-violet": "#8E5FD9"
+  },
+  "fonts": {
+    "display": {
+      "family": "Archivo Black",
+      "weights": [
+        400
+      ],
+      "sizes": "96-180px",
+      "role": "Packaging/thumbnail titles & hero numbers; punchy video callouts (≤3 words)"
+    },
+    "body": {
+      "family": "Nunito",
+      "weights": [
+        400,
+        700,
+        800
+      ],
+      "sizes": "42-48px",
+      "role": "Packaging & docs prose ONLY — zero on-screen prose/sentences"
+    },
+    "label": {
+      "family": "Quicksand",
+      "weights": [
+        500,
+        600,
+        700
+      ],
+      "sizes": "24-36px",
+      "role": "Packaging kickers, tags, units, badges (≤3 words on screen)"
+    }
+  },
+  "timeline": {
+    "runtime_band": [
+      "8:00",
+      "9:00"
+    ],
+    "word_count": [
+      1440,
+      1620
+    ],
+    "wpm_target": 180,
+    "fps": [
+      60,
+      30
+    ],
+    "resolution": "1920x1080",
+    "scenes": [
+      80,
+      120
+    ],
+    "format": "deep-dive"
+  },
+  "audio": {
+    "voice": "en-US-ChristopherNeural",
+    "voice_rate": "+11%",
+    "voice_lufs": -14.5,
+    "bgm_bed_nominal": 0.34,
+    "bgm_bed_ceiling": 0.4,
+    "sfx_ceiling": 0.35,
+    "sfx_max_per_8s": 1,
+    "master_lufs": -14,
+    "master_true_peak_dbtp": -1,
+    "tool": "assets/audio/bgm/synth/synth_produce.py"
+  },
+  "packaging": {
+    "titles": 3,
+    "thumbnails": 3,
+    "thumbnail_size": "1920x1080",
+    "thumbnail_legible_at_px": 120,
+    "description_words_min": 200,
+    "description_chars_max": 5000,
+    "tags_min": 8,
+    "tags_max": 15,
+    "tags_chars_max": 500
+  },
+  "benchmark": "kurzgesagt",
+  "notes": [
+    "Ember leads every payoff moment; violet carries mystery/scale. Signal-red sparingly — one element max per frame.",
+    "Hero plates 75-88% canvas on glassmorphism mounts; analytical mounts >=65% viewport width.",
+    "2D/3D kinematics mandatory (>=3 parallax planes; worlds strictly 2D); 1D/1.5D flat motion fails G5/G7 on sight."
+  ]
+}
