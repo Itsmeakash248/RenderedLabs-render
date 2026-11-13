@@ -4,3 +4,6 @@ output/*.part
 .DS_Store
 *.log
 .hyperframes/
+
+# local deliverables (never publish to the public render repo)
+/*.mp4
