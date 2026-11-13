@@ -1,0 +1,64 @@
+<template id="s04-template">
+  <div id="root" data-composition-id="s04-louis-xiv" data-width="1920" data-height="1080" data-start="54.00" data-duration="18.00">
+    <div class="s04-cam" id="s04-cam">
+      <div id="s04-bg" class="wbg-container">
+        <svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="s04Panel" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#C89D42" stop-opacity="0.26"/>
+              <stop offset="60%" stop-color="#151B3B" stop-opacity="0.58"/>
+              <stop offset="100%" stop-color="#070A12" stop-opacity="0.90"/>
+            </linearGradient>
+          </defs>
+          <rect width="1920" height="1080" fill="#070A12"/>
+          <rect width="1920" height="1080" fill="url(#s04Panel)"/>
+          <g opacity="0.68" stroke="#C89D42" stroke-width="8" fill="none">
+            <path d="M200,180 L200,900"/>
+            <path d="M420,140 L420,940"/>
+            <path d="M1500,140 L1500,940"/>
+            <path d="M1720,180 L1720,900"/>
+          </g>
+          <g opacity="0.5" fill="#1E1813">
+            <rect x="0" y="960" width="1920" height="120"/>
+            <rect x="240" y="300" width="160" height="560"/>
+            <rect x="1520" y="300" width="160" height="560"/>
+          </g>
+        </svg>
+      </div>
+      <div id="s04-fg" class="hero-container">
+        <svg viewBox="0 0 1920 1080">
+          <defs>
+            <radialGradient id="s04CrestGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#C89D42" stop-opacity="0.48"/>
+              <stop offset="100%" stop-color="#C89D42" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="s04Blur" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="20"/>
+            </filter>
+          </defs>
+          <ellipse cx="960" cy="480" rx="440" ry="340" fill="url(#s04CrestGlow)" filter="url(#s04Blur)"/>
+          <circle cx="960" cy="440" r="190" stroke="#C89D42" stroke-width="28" fill="none"/>
+          <circle cx="960" cy="440" r="120" stroke="#D9822B" stroke-width="14" fill="none"/>
+          <path d="M960,240 L1040,440 L960,640 L880,440 Z" stroke="#EAE0D0" stroke-width="16" fill="none"/>
+          <path d="M820,380 L1100,380" stroke="#C2593F" stroke-width="12" stroke-linecap="round"/>
+          <path d="M700,720 Q960,660 1220,720" stroke="#C2593F" stroke-width="26" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div id="s04-text" class="text-container" style="position: absolute; top: 100px; left: 100px; color: #C89D42; font-family: 'Archivo Black'; font-size: 64px; background: rgba(7,10,18,0.55); padding: 14px 28px; border-radius: 10px;">
+        LOUIS XIV
+      </div>
+    </div>
+  </div>
+  <script>
+    (function initS04() {
+      const ID = 's04-louis-xiv';
+      const tl = gsap.timeline({ paused: true });
+      tl.to({}, { duration: 18.00 }, 0);
+      tl.from('#s04-fg', { duration: 2.2, opacity: 0, scale: 0.9, ease: 'power2.inOut' }, 1.2);
+      tl.from('#s04-text', { duration: 0.7, opacity: 0, scale: 0.85, ease: 'back.out(1.7)' }, 2.4);
+      tl.to('#s04-fg', { duration: 8.0, rotation: 4, transformOrigin: '50% 50%', ease: 'sine.inOut', yoyo: true, repeat: 1 }, 7.0);
+      window.__timelines = window.__timelines || {};
+      window.__timelines[ID] = tl;
+    })();
+  </script>
+</template>

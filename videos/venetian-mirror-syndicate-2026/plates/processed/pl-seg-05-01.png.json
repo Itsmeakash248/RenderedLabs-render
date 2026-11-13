@@ -1,0 +1,35 @@
+{
+  "asset_id": "pl-seg-05-01",
+  "source_url": "https://fr.wikisource.org/wiki/Lettres_patentes_pour_l%27%C3%A9tablissement_de_la_Manufacture_royale_des_glaces_de_miroirs,_1665",
+  "publication_date": "1665-10-08",
+  "width": 1400,
+  "height": 1000,
+  "scale_factor": 1.0,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": [
+    {
+      "phrase": "pour y faire des Glaces \u00e0 Miroir de toutes les grandeurs",
+      "x": 622,
+      "y": 324,
+      "w": 256,
+      "h": 17
+    },
+    {
+      "phrase": "pour y faire des Glaces \u00e0 Miroir de toutes les grandeurs",
+      "x": 302,
+      "y": 350,
+      "w": 145,
+      "h": 17
+    },
+    {
+      "phrase": "Moran pr\u00e8s la Ville de Venise",
+      "x": 543,
+      "y": 350,
+      "w": 207,
+      "h": 17
+    }
+  ]
+}

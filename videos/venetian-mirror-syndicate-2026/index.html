@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920, height=1080">
+<title>The Venetian Mirror War That Built the Hall of Mirrors &mdash; master schedule</title>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+  html, body { margin:0; padding:0; width:100%; height:100%; background:#1E1813; overflow:hidden; }
+  #root { position:relative; width:100%; height:100%; overflow:hidden; background:#1E1813; }
+  [data-composition-id="root"] > div[data-composition-src] { position:absolute; inset:0; }
+  .wbg-slot { filter:brightness(0.62) saturate(0.86) blur(1.2px); }
+  #scrim { position:absolute; inset:0; pointer-events:none;
+    background:
+      radial-gradient(ellipse at 50% 50%, rgba(43,31,23,0) 44%, rgba(43,31,23,0.40) 100%),
+      linear-gradient(180deg, rgba(43,31,23,0.30) 0%, rgba(43,31,23,0) 15%, rgba(43,31,23,0) 85%, rgba(43,31,23,0.30) 100%); }
+</style>
+</head>
+<body>
+<!--
+  MASTER ORCHESTRATOR — The Venetian Mirror War That Built the Hall of Mirrors
+  Master 520.989s = transcript span 0.000 -> 520.989 (1,492 words, zero gaps/overlaps).
+  Track 1: 27 scene slots contiguous on measured word onsets (S01..S27, sum = 520.989).
+  Track 0: 9 persistent world backgrounds on the STORYBOARD §2 windows, 0.8s opacity
+           crossfades centred on the 57/121/187/250/318/375/432/487 marks.
+  Audio: VO unity on #voiceover group; BGM bed 0.34 (ceiling 0.40) with 6-band VO carve
+         0.45 @1.6kHz, act-break ducks at 189.868/303.122/414.549, 0.5s in / 2.2s out.
+         SFX are baked into the FLAC bed (34 hits, 1:1 with cues.json) — no SFX elements.
+-->
+<div id="root" data-composition-id="root" data-width="1920" data-height="1080" data-duration="520.989">
+
+  <!-- ── world backgrounds (track 0) ─────────────────────────────────────── -->
+  <div id="wbg-01" class="wbg-slot" data-composition-id="wbg-01-gilded-gallery" data-composition-src="compositions/wbg-01-gilded-gallery.html" data-start="0.000" data-duration="57.400" data-track-index="0" data-width="1920" data-height="1080" style="z-index:0;opacity:1;"></div>
+  <div id="wbg-02" class="wbg-slot" data-composition-id="wbg-02-customs-ledger" data-composition-src="compositions/wbg-02-customs-ledger.html" data-start="56.600" data-duration="64.800" data-track-index="0" data-width="1920" data-height="1080" style="z-index:0;opacity:0;"></div>
+  <div id="wbg-03" class="wbg-slot" data-composition-id="wbg-03-furnace-island" data-composition-src="compositions/wbg-03-furnace-island.html" data-start="120.600" data-duration="66.800" data-track-index="0" data-width="1920" data-height="1080" style="z-index:0;opacity:0;"></div>
+  <div id="wbg-04" class="wbg-slot" data-composition-id="wbg-04-alpine-route" data-composition-src="compositions/wbg-04-alpine-route.html" data-start="186.600" data-duration="63.800" data-track-index="0" data-width="1920" data-height="1080" style="z-index:0;opacity:0;"></div>
+  <div id="wbg-05" class="wbg-slot" data-composition-id="wbg-05-rue-de-reuilly" data-composition-src="compositions/wbg-05-rue-de-reuilly.html" data-start="249.600" data-duration="68.800" data-track-index="0" data-width="1920" data-height="1080" style="z-index:0;opacity:0;"></div>
+  <div id="wbg-06" class="wbg-slot" data-composition-id="wbg-06-mercury-chamber" data-composition-src="compositions/wbg-06-mercury-chamber.html" data-start="317.600" data-duration="57.800" data-track-index="0" data-width="1920" data-height="1080" style="z-index:0;opacity:0;"></div>
+  <div id="wbg-07" class="wbg-slot" data-composition-id="wbg-07-archive-of-refusals" data-composition-src="compositions/wbg-07-archive-of-refusals.html" data-start="374.600" data-duration="57.800" data-track-index="0" data-width="1920" data-height="1080" style="z-index:0;opacity:0;"></div>
+  <div id="wbg-08" class="wbg-slot" data-composition-id="wbg-08-hall-under-construction" data-composition-src="compositions/wbg-08-hall-under-construction.html" data-start="431.600" data-duration="55.800" data-track-index="0" data-width="1920" data-height="1080" style="z-index:0;opacity:0;"></div>
+  <div id="wbg-09" class="wbg-slot" data-composition-id="wbg-09-mirror-room-today" data-composition-src="compositions/wbg-09-mirror-room-today.html" data-start="486.600" data-duration="34.389" data-track-index="0" data-width="1920" data-height="1080" style="z-index:0;opacity:0;"></div>
+
+  <div id="scrim" style="z-index:1;"></div>
+
+  <!-- ── scenes (track 1) ────────────────────────────────────────────────── -->
+  <div id="el-01" class="scene-slot" data-composition-id="s01-gilded-tally" data-composition-src="compositions/s01-gilded-tally.html" data-start="0.000" data-duration="18.993" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-02" class="scene-slot" data-composition-id="s02-bought-people" data-composition-src="compositions/s02-bought-people.html" data-start="18.993" data-duration="17.183" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-03" class="scene-slot" data-composition-id="s03-three-documents" data-composition-src="compositions/s03-three-documents.html" data-start="36.176" data-duration="24.265" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-04" class="scene-slot" data-composition-id="s04-zero-masters" data-composition-src="compositions/s04-zero-masters.html" data-start="60.441" data-duration="22.660" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-05" class="scene-slot" data-composition-id="s05-eight-hundred-days" data-composition-src="compositions/s05-eight-hundred-days.html" data-start="83.101" data-duration="17.646" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-06" class="scene-slot" data-composition-id="s06-customs-hemorrhage" data-composition-src="compositions/s06-customs-hemorrhage.html" data-start="100.747" data-duration="21.056" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-07" class="scene-slot" data-composition-id="s07-mercury-mirror" data-composition-src="compositions/s07-mercury-mirror.html" data-start="121.803" data-duration="16.608" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-08" class="scene-slot" data-composition-id="s08-golden-cage" data-composition-src="compositions/s08-golden-cage.html" data-start="138.411" data-duration="20.969" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-09" class="scene-slot" data-composition-id="s09-ten-seals" data-composition-src="compositions/s09-ten-seals.html" data-start="159.380" data-duration="15.626" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-10" class="scene-slot" data-composition-id="s10-gold-instead" data-composition-src="compositions/s10-gold-instead.html" data-start="175.006" data-duration="15.157" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-11" class="scene-slot" data-composition-id="s11-three-masters" data-composition-src="compositions/s11-three-masters.html" data-start="190.163" data-duration="18.322" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-12" class="scene-slot" data-composition-id="s12-before-dawn" data-composition-src="compositions/s12-before-dawn.html" data-start="208.485" data-duration="18.588" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-13" class="scene-slot" data-composition-id="s13-payroll-foundry" data-composition-src="compositions/s13-payroll-foundry.html" data-start="227.073" data-duration="18.049" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-14" class="scene-slot" data-composition-id="s14-first-mirror" data-composition-src="compositions/s14-first-mirror.html" data-start="245.122" data-duration="22.464" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-15" class="scene-slot" data-composition-id="s15-forged-replies" data-composition-src="compositions/s15-forged-replies.html" data-start="267.586" data-duration="18.932" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-16" class="scene-slot" data-composition-id="s16-matchlock-street" data-composition-src="compositions/s16-matchlock-street.html" data-start="286.518" data-duration="16.899" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-17" class="scene-slot" data-composition-id="s17-january-1667" data-composition-src="compositions/s17-january-1667.html" data-start="303.417" data-duration="27.087" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-18" class="scene-slot" data-composition-id="s18-no-proof" data-composition-src="compositions/s18-no-proof.html" data-start="330.504" data-duration="16.854" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-19" class="scene-slot" data-composition-id="s19-terror-won" data-composition-src="compositions/s19-terror-won.html" data-start="347.358" data-duration="19.425" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-20" class="scene-slot" data-composition-id="s20-tacit-knowledge" data-composition-src="compositions/s20-tacit-knowledge.html" data-start="366.783" data-duration="24.550" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-21" class="scene-slot" data-composition-id="s21-paper-chain" data-composition-src="compositions/s21-paper-chain.html" data-start="391.333" data-duration="23.511" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-22" class="scene-slot" data-composition-id="s22-counting-room" data-composition-src="compositions/s22-counting-room.html" data-start="414.844" data-duration="16.621" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-23" class="scene-slot" data-composition-id="s23-assembled-mosaic" data-composition-src="compositions/s23-assembled-mosaic.html" data-start="431.465" data-duration="16.349" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-24" class="scene-slot" data-composition-id="s24-open-questions" data-composition-src="compositions/s24-open-questions.html" data-start="447.814" data-duration="20.020" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-25" class="scene-slot" data-composition-id="s25-inverted-flow" data-composition-src="compositions/s25-inverted-flow.html" data-start="467.834" data-duration="20.043" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-26" class="scene-slot" data-composition-id="s26-still-gilded" data-composition-src="compositions/s26-still-gilded.html" data-start="487.877" data-duration="12.225" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+  <div id="el-27" class="scene-slot" data-composition-id="s27-human-hands" data-composition-src="compositions/s27-human-hands.html" data-start="500.102" data-duration="20.887" data-track-index="1" data-width="1920" data-height="1080" style="z-index:1;"></div>
+
+  <!-- ── audio graph ─────────────────────────────────────────────────────── -->
+  <hf-audio-group id="voiceover" data-label="Voiceover"></hf-audio-group>
+  <audio id="narration" src="assets/voice/narration.optimized.mp3" data-start="0" data-duration="520.989" data-track-index="10" data-volume="1" data-audio-group="voiceover"></audio>
+  <audio id="bgm-bed"
+         src="assets/bgm/venetian-mirror-syndicate-2026_bgm_bed_525s.mp3"
+         data-start="0" data-duration="520.989" data-track-index="11" data-volume="1"
+         data-fx-carve="{&quot;enabled&quot;: true, &quot;sources&quot;: [&quot;voiceover&quot;], &quot;strength&quot;: 0.45, &quot;dynamic&quot;: true}"
+         data-fx-chain="{&quot;version&quot;: 1, &quot;nodes&quot;: [{&quot;type&quot;: &quot;peaking&quot;, &quot;id&quot;: &quot;n1&quot;, &quot;label&quot;: &quot;Voiceover carve 250Hz&quot;, &quot;fromCarve&quot;: true, &quot;params&quot;: {&quot;frequency&quot;: 250, &quot;gain&quot;: -4.2, &quot;q&quot;: 2.06}}, {&quot;type&quot;: &quot;peaking&quot;, &quot;id&quot;: &quot;n2&quot;, &quot;label&quot;: &quot;Voiceover carve 400Hz&quot;, &quot;fromCarve&quot;: true, &quot;params&quot;: {&quot;frequency&quot;: 400, &quot;gain&quot;: -4.2, &quot;q&quot;: 2.06}}, {&quot;type&quot;: &quot;peaking&quot;, &quot;id&quot;: &quot;n3&quot;, &quot;label&quot;: &quot;Voiceover carve 630Hz&quot;, &quot;fromCarve&quot;: true, &quot;params&quot;: {&quot;frequency&quot;: 630, &quot;gain&quot;: -4.2, &quot;q&quot;: 2.06}}, {&quot;type&quot;: &quot;peaking&quot;, &quot;id&quot;: &quot;n4&quot;, &quot;label&quot;: &quot;Voiceover carve 1000Hz&quot;, &quot;fromCarve&quot;: true, &quot;params&quot;: {&quot;frequency&quot;: 1000, &quot;gain&quot;: -4.2, &quot;q&quot;: 2.06}}, {&quot;type&quot;: &quot;peaking&quot;, &quot;id&quot;: &quot;n5&quot;, &quot;label&quot;: &quot;Voiceover carve presence 1600Hz&quot;, &quot;fromCarve&quot;: true, &quot;params&quot;: {&quot;frequency&quot;: 1600, &quot;gain&quot;: -8.4, &quot;q&quot;: 2.06}}, {&quot;type&quot;: &quot;peaking&quot;, &quot;id&quot;: &quot;n6&quot;, &quot;label&quot;: &quot;Voiceover carve 2500Hz&quot;, &quot;fromCarve&quot;: true, &quot;params&quot;: {&quot;frequency&quot;: 2500, &quot;gain&quot;: -4.2, &quot;q&quot;: 2.06}}, {&quot;type&quot;: &quot;gain&quot;, &quot;id&quot;: &quot;n7&quot;, &quot;label&quot;: &quot;Voiceover carve level&quot;, &quot;fromCarve&quot;: true, &quot;params&quot;: {&quot;gain&quot;: 0}}]}"
+         data-automation="{&quot;version&quot;: 1, &quot;lanes&quot;: [{&quot;target&quot;: &quot;volume&quot;, &quot;points&quot;: [{&quot;t&quot;: 0, &quot;v&quot;: 0}, {&quot;t&quot;: 0.5, &quot;v&quot;: 0.34}, {&quot;t&quot;: 189.4, &quot;v&quot;: 0.34}, {&quot;t&quot;: 189.8, &quot;v&quot;: 0.19}, {&quot;t&quot;: 190.7, &quot;v&quot;: 0.19}, {&quot;t&quot;: 191.1, &quot;v&quot;: 0.34}, {&quot;t&quot;: 302.7, &quot;v&quot;: 0.34}, {&quot;t&quot;: 303.1, &quot;v&quot;: 0.19}, {&quot;t&quot;: 304.0, &quot;v&quot;: 0.19}, {&quot;t&quot;: 304.4, &quot;v&quot;: 0.34}, {&quot;t&quot;: 414.1, &quot;v&quot;: 0.34}, {&quot;t&quot;: 414.5, &quot;v&quot;: 0.19}, {&quot;t&quot;: 415.4, &quot;v&quot;: 0.19}, {&quot;t&quot;: 415.8, &quot;v&quot;: 0.34}, {&quot;t&quot;: 518.789, &quot;v&quot;: 0.34}, {&quot;t&quot;: 520.989, &quot;v&quot;: 0}]}]}"></audio>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    (function () {
+      var tl = gsap.timeline({ paused: true });
+      tl.to({}, { duration: 520.989 }, 0);
+      // World crossfades: 0.8s equal-weight dissolves centred on each world mark.
+      var marks = [56.6, 120.6, 186.6, 249.6, 317.6, 374.6, 431.6, 486.6];
+      for (var i = 0; i < marks.length; i++) {
+        var m = marks[i];
+        var outId = "#wbg-" + ("0" + (i + 1)).slice(-2);
+        var inId = "#wbg-" + ("0" + (i + 2)).slice(-2);
+        tl.fromTo(outId, { opacity: 1 }, { opacity: 0, duration: 0.8, ease: "power2.inOut" }, m);
+        tl.fromTo(inId, { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "power2.inOut" }, m);
+      }
+      window.__timelines["root"] = tl;
+    })();
+  </script>
+</div>
+</body>
+</html>

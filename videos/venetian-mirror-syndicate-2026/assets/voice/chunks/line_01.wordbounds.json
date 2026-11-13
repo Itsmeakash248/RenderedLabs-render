@@ -1,0 +1,82 @@
+[
+  {
+    "word": "Stand",
+    "start": 0.095,
+    "end": 0.523
+  },
+  {
+    "word": "inside",
+    "start": 0.534,
+    "end": 0.928
+  },
+  {
+    "word": "the",
+    "start": 0.94,
+    "end": 0.996
+  },
+  {
+    "word": "Hall",
+    "start": 1.007,
+    "end": 1.266
+  },
+  {
+    "word": "of",
+    "start": 1.277,
+    "end": 1.356
+  },
+  {
+    "word": "Mirrors",
+    "start": 1.368,
+    "end": 1.807
+  },
+  {
+    "word": "at",
+    "start": 1.818,
+    "end": 1.897
+  },
+  {
+    "word": "Versailles,",
+    "start": 1.908,
+    "end": 2.392
+  },
+  {
+    "word": "and",
+    "start": 2.629,
+    "end": 2.764
+  },
+  {
+    "word": "you",
+    "start": 2.775,
+    "end": 2.877
+  },
+  {
+    "word": "see",
+    "start": 2.888,
+    "end": 3.136
+  },
+  {
+    "word": "seventy-three",
+    "start": 3.147,
+    "end": 3.744
+  },
+  {
+    "word": "metres",
+    "start": 3.755,
+    "end": 4.104
+  },
+  {
+    "word": "of",
+    "start": 4.115,
+    "end": 4.217
+  },
+  {
+    "word": "golden",
+    "start": 4.228,
+    "end": 4.543
+  },
+  {
+    "word": "light.",
+    "start": 4.554,
+    "end": 4.87
+  }
+]

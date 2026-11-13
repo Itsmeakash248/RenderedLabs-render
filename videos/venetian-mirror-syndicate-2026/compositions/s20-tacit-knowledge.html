@@ -1,0 +1,706 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s20-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s20-tacit-knowledge"] .s20-stage{position:absolute;inset:0;transform-origin:50% 54%;}
+[data-composition-id="s20-tacit-knowledge"] .s20-ground{position:absolute;inset:0;background:
+  radial-gradient(44% 40% at 26% 24%, rgba(255,240,205,0.5) 0%, rgba(255,240,205,0.14) 58%, rgba(255,240,205,0) 82%),
+  radial-gradient(38% 40% at 82% 46%, rgba(232,154,60,0.26) 0%, rgba(232,154,60,0.07) 54%, rgba(232,154,60,0) 78%),
+  linear-gradient(174deg, #FCF4E1 0%, #F2E0BE 36%, #E2C9A2 68%, #C9A87C 100%);}
+[data-composition-id="s20-tacit-knowledge"] .s20-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="s20-tacit-knowledge"] .s20-p-bg{z-index:1;}
+[data-composition-id="s20-tacit-knowledge"] .s20-p-mg{z-index:2;}
+[data-composition-id="s20-tacit-knowledge"] .s20-p-fg{z-index:4;}
+[data-composition-id="s20-tacit-knowledge"] .s20-grain{position:absolute;inset:0;z-index:6;pointer-events:none;
+  background-image:radial-gradient(rgba(43,31,23,0.55) 0.4px, transparent 0.5px);background-size:3px 3px;
+  opacity:0.12;mix-blend-mode:multiply;}
+[data-composition-id="s20-tacit-knowledge"] .s20-vignette{position:absolute;inset:0;z-index:7;pointer-events:none;
+  background:
+    linear-gradient(to top, rgba(30,24,19,0.58) 0%, rgba(30,24,19,0.22) 12%, rgba(30,24,19,0) 28%),
+    linear-gradient(to right, rgba(43,31,23,0.26) 0%, rgba(43,31,23,0.05) 18%, rgba(43,31,23,0) 36%),
+    linear-gradient(to left, rgba(43,31,23,0.22) 0%, rgba(43,31,23,0) 28%),
+    radial-gradient(104% 84% at 50% 48%, rgba(43,31,23,0) 40%, rgba(43,31,23,0.42) 100%);}
+[data-composition-id="s20-tacit-knowledge"] .s20-tag{position:absolute;left:86px;top:92px;z-index:8;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;
+  background:linear-gradient(180deg,#FDFAF4 0%,#F1E7D6 100%);
+  box-shadow:0 12px 30px rgba(43,31,23,0.26),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s20-tacit-knowledge"] .s20-tag-dot{width:15px;height:15px;border-radius:50%;background:#C2593F;
+  box-shadow:0 0 0 5px rgba(194,89,63,0.20),inset 0 0 0 3px #A8462F;}
+[data-composition-id="s20-tacit-knowledge"] .s20-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.16em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s20-tacit-knowledge"] .s20-rule{position:absolute;left:86px;top:158px;height:5px;width:0;z-index:8;background:#C2593F;border-radius:4px;
+  box-shadow:0 2px 6px rgba(43,31,23,0.25);}
+[data-composition-id="s20-tacit-knowledge"] .s20-mote{transform-box:fill-box;transform-origin:50% 50%;}
+</style>
+
+<div id="root" data-composition-id="s20-tacit-knowledge" data-width="1920" data-height="1080" data-start="0" data-duration="24.550">
+  <div class="s20-stage" id="s20-stage">
+    <div class="s20-ground"></div>
+
+    <!-- BG · the gallery wall -->
+    <svg class="s20-plane s20-p-bg" id="s20-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s20-wall" x1="0" y1="0" x2="0.06" y2="1">
+          <stop offset="0" stop-color="#FDF7E8"/><stop offset="0.44" stop-color="#F4E5C8"/><stop offset="1" stop-color="#DCC29B"/>
+        </linearGradient>
+        <linearGradient id="s20-wallshade" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="860">
+          <stop offset="0" stop-color="#F8EED8" stop-opacity="0"/>
+          <stop offset="0.55" stop-color="#D9BE96" stop-opacity="0.26"/>
+          <stop offset="1" stop-color="#B08C60" stop-opacity="0.46"/>
+        </linearGradient>
+        <linearGradient id="s20-windowlight" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FFFDF4"/><stop offset="0.55" stop-color="#FFF0CE"/><stop offset="1" stop-color="#F6DBA8"/>
+        </linearGradient>
+        <linearGradient id="s20-shelf" x1="0" y1="0" x2="0.08" y2="1">
+          <stop offset="0" stop-color="#C99A67"/><stop offset="0.42" stop-color="#A2743F"/><stop offset="1" stop-color="#6E4826"/>
+        </linearGradient>
+        <linearGradient id="s20-glass" x1="0" y1="0" x2="0.32" y2="1">
+          <stop offset="0" stop-color="#FFFDF6" stop-opacity="0.92"/>
+          <stop offset="0.5" stop-color="#F0DEB8" stop-opacity="0.55"/>
+          <stop offset="1" stop-color="#B99A6E" stop-opacity="0.45"/>
+        </linearGradient>
+        <pattern id="s20-hair" width="120" height="120" patternUnits="userSpaceOnUse">
+          <path d="M0,20 C30,14 60,26 120,18" stroke="#A97445" stroke-width="2" fill="none" opacity="0.15"/>
+          <path d="M0,66 C40,58 70,72 120,62" stroke="#A97445" stroke-width="2" fill="none" opacity="0.12"/>
+          <path d="M0,104 C26,98 62,110 120,102" stroke="#A97445" stroke-width="2" fill="none" opacity="0.11"/>
+        </pattern>
+        <filter id="s20-bblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="34"/></filter>
+        <filter id="s20-mblur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="12"/></filter>
+        <filter id="s20-grainf" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.84" numOctaves="2" seed="57" result="n"/>
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.13  0 0 0 0 0.10  0 0 0 0 0.07  0 0 0 0.5 0"/>
+        </filter>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s20-wall)"/>
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s20-hair)" opacity="0.7"/>
+      <rect x="0" y="0" width="1920" height="900" fill="url(#s20-wallshade)"/>
+
+      <!-- wall panelling -->
+      <g stroke="#C9A87C" stroke-width="4" opacity="0.28">
+        <path d="M0,96 H1920"/><path d="M0,760 H1920"/>
+        <path d="M56,96 V760"/><path d="M1864,96 V760"/>
+      </g>
+
+      <!-- dado rail -->
+      <g id="s20-dado">
+        <path d="M0,736 H1920 V756 H0 Z" fill="#C9A87C" opacity="0.55"/>
+        <path d="M0,736 H1920" stroke="#F6E6C6" stroke-width="4" opacity="0.6"/>
+        <path d="M0,756 H1920" stroke="#8A6B49" stroke-width="5" opacity="0.4"/>
+        <path d="M0,764 H1920" stroke="#3A2A1E" stroke-width="18" opacity="0.1" filter="url(#s20-mblur)"/>
+      </g>
+
+      <!-- the tall window, far left -->
+      <g id="s20-window" transform="translate(28,148)">
+        <g id="s20-window-in">
+          <path d="M-10,-22 H150 V560 H-10 Z" fill="#6E4826"/>
+          <path d="M4,-6 H136 V544 H4 Z" fill="url(#s20-windowlight)"/>
+          <path d="M4,-6 H136 V210 H4 Z" fill="#FFFDF4" opacity="0.55"/>
+          <g stroke="#6E4826" stroke-width="9">
+            <path d="M70,-6 V544"/><path d="M4,266 H136"/>
+          </g>
+          <g stroke="#8A5F36" stroke-width="3" opacity="0.35">
+            <path d="M22,-6 V544"/><path d="M118,-6 V544"/>
+          </g>
+          <path d="M-24,544 H164 L190,578 H-48 Z" fill="#D8C4A0" stroke="#6E4826" stroke-width="6"/>
+          <path d="M-24,544 H164" stroke="#FFF6E0" stroke-width="5" opacity="0.5"/>
+        </g>
+      </g>
+
+      <!-- a shelf of carboys, right -->
+      <g id="s20-shelf" transform="translate(1530,322)">
+        <g id="s20-shelf-in">
+          <path d="M-206,0 H206 V22 H-206 Z" fill="url(#s20-shelf)" stroke="#3A2A1E" stroke-width="5"/>
+          <path d="M-206,0 H206" stroke="#E0BE90" stroke-width="4" opacity="0.4"/>
+          <path d="M-176,22 L-196,110 M176,22 L196,110" stroke="#6E4826" stroke-width="10"/>
+          <g transform="translate(-108,-128)">
+            <path d="M-22,0 H22 V20 C50,36 62,62 62,92 C62,126 34,146 0,146 C-34,146 -62,126 -62,92 C-62,62 -50,36 -22,20 Z" fill="url(#s20-glass)" stroke="#8A6B49" stroke-width="5"/>
+            <path d="M-38,62 C-50,86 -46,114 -28,130" fill="none" stroke="#FFFDF6" stroke-width="8" opacity="0.5"/>
+            <path d="M-16,20 H16" stroke="#8A6B49" stroke-width="4" opacity="0.6"/>
+            <path d="M-44,116 C-28,126 28,126 44,116 L44,134 C28,144 -28,144 -44,134 Z" fill="#C9A87C" opacity="0.3"/>
+          </g>
+          <g transform="translate(4,-82)">
+            <path d="M-12,0 H12 V12 C32,24 40,44 40,64 C40,90 22,102 0,102 C-22,102 -40,90 -40,64 C-40,44 -32,24 -12,12 Z" fill="url(#s20-glass)" stroke="#8A6B49" stroke-width="4"/>
+            <path d="M-22,50 C-30,66 -26,84 -14,94" fill="none" stroke="#FFFDF6" stroke-width="6" opacity="0.45"/>
+          </g>
+          <g transform="translate(108,-92)">
+            <path d="M-32,0 H32 V92 C32,106 -32,106 -32,92 Z" fill="#E9D8B2" stroke="#8A6B49" stroke-width="4" opacity="0.92"/>
+            <path d="M-32,50 H32 V92 C32,106 -32,106 -32,92 Z" fill="#C9A87C" opacity="0.7"/>
+            <path d="M-26,0 H26 V-12 H-26 Z" fill="#B98A5C" stroke="#8A6B49" stroke-width="3"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- the mirror that the whole film is about -->
+      <g id="s20-mirror" transform="translate(1236,222) rotate(-1.2)">
+        <g id="s20-mirror-in">
+          <path d="M-12,-12 H312 V512 H-12 Z" fill="#3A2A1E" opacity="0.22" filter="url(#s20-bblur)"/>
+          <rect x="-20" y="-18" width="328" height="536" fill="url(#s20-gilt)" stroke="#6E4826" stroke-width="5"/>
+          <rect x="-8" y="-6" width="304" height="512" fill="#B98A3C" stroke="#6E4826" stroke-width="4"/>
+          <rect x="0" y="0" width="288" height="500" fill="#7A5A1C"/>
+          <rect x="8" y="8" width="272" height="484" fill="url(#s20-mirrorglass)"/>
+
+          <!-- what the glass gives back -->
+          <g opacity="0.5">
+            <path d="M20,484 L20,120 L104,96 L104,484 Z" fill="#FFFDF6" opacity="0.42"/>
+            <path d="M112,484 L112,86 L188,64 L188,484 Z" fill="#FFF6D8" opacity="0.28"/>
+            <path d="M20,120 L104,96 L188,64 L188,80 L104,112 L20,136 Z" fill="#FFFDF6" opacity="0.34"/>
+            <path d="M198,484 L198,232 L268,212 L268,484 Z" fill="#E8D6B0" opacity="0.14"/>
+          </g>
+          <!-- the reflection of the framed plate -->
+          <g opacity="0.32">
+            <rect x="146" y="212" width="108" height="76" fill="none" stroke="#FFFDF6" stroke-width="4"/>
+            <rect x="154" y="220" width="92" height="60" fill="#FFF6D8" opacity="0.18"/>
+          </g>
+          <!-- a candle, reflected -->
+          <g opacity="0.55">
+            <ellipse cx="118" cy="330" rx="26" ry="34" fill="#FFCE7C" opacity="0.4" filter="url(#s20-mblur)"/>
+            <path d="M114,346 C110,334 116,326 118,316 C120,326 126,334 122,346 Z" fill="#FFD98E"/>
+          </g>
+          <!-- the reflected floor, darker -->
+          <path d="M8,492 L8,404 C80,392 200,396 280,386 L280,492 Z" fill="#8A5F3C" opacity="0.22"/>
+          <!-- bevels -->
+          <g opacity="0.55">
+            <path d="M8,8 L28,28 V468 L8,492 Z" fill="#FFFDF6" opacity="0.35"/>
+            <path d="M280,8 L260,28 V468 L280,492 Z" fill="#8A6B49" opacity="0.3"/>
+            <path d="M8,8 L28,28 H260 L280,8 Z" fill="#FFFDF6" opacity="0.2"/>
+            <path d="M8,492 L28,468 H260 L280,492 Z" fill="#6E4826" opacity="0.25"/>
+          </g>
+          <!-- diagonal specular -->
+          <g opacity="0.45">
+            <path d="M22,470 L120,54 L152,54 L58,470 Z" fill="#FFFDF6" opacity="0.26"/>
+            <path d="M214,470 L256,120 L268,120 L230,470 Z" fill="#FFF6D8" opacity="0.2"/>
+          </g>
+          <g stroke="#FFFDF6" stroke-width="2" opacity="0.28">
+            <path d="M34,460 C54,320 70,180 84,60"/>
+            <path d="M240,460 C246,320 250,190 254,80"/>
+          </g>
+          <!-- engraved border of the glass -->
+          <rect x="14" y="14" width="260" height="472" fill="none" stroke="#C9A87C" stroke-width="2" opacity="0.3"/>
+          <g fill="url(#s20-gilt)" stroke="#6E4826" stroke-width="3">
+            <path d="M-20,-18 C2,-18 14,-6 16,14 C-4,12 -16,0 -20,-18 Z"/>
+            <path d="M308,-18 C286,-18 274,-6 272,14 C292,12 304,0 308,-18 Z"/>
+            <path d="M-20,518 C2,518 14,506 16,486 C-4,488 -16,500 -20,518 Z"/>
+            <path d="M308,518 C286,518 274,506 272,486 C292,488 304,500 308,518 Z"/>
+          </g>
+          <g fill="#F7DFA4" opacity="0.45">
+            <circle cx="0" cy="-4" r="5"/><circle cx="288" cy="-4" r="5"/>
+            <circle cx="0" cy="504" r="5"/><circle cx="288" cy="504" r="5"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- sconce beside the mirror -->
+      <g id="s20-sconce" transform="translate(1152,452)">
+        <g id="s20-sconce-in">
+          <path d="M-8,10 C-30,10 -40,-4 -36,-20 C-32,-34 -20,-40 -10,-36" fill="none" stroke="#8E6A22" stroke-width="9"/>
+          <path d="M-8,10 V26" stroke="#8E6A22" stroke-width="7"/>
+          <path d="M-30,26 H14" stroke="#8E6A22" stroke-width="7"/>
+          <path d="M-26,-14 H10 V26 H-26 Z" fill="url(#s20-brass)" stroke="#6E4826" stroke-width="3" opacity="0.85"/>
+          <path d="M-14,-14 H-2 V-58 H-14 Z" fill="#FBF1DA" stroke="#B99A6E" stroke-width="3"/>
+          <path d="M-8,-58 C-12,-70 -6,-76 -4,-84 C-2,-76 4,-70 0,-58 Z" fill="#FFD98E"/>
+          <path d="M-4,-64 C-6,-70 -4,-74 -4,-78 C-4,-74 -2,-70 -4,-64 Z" fill="#FFF6D8"/>
+          <ellipse cx="-8" cy="-50" rx="42" ry="48" fill="#FFCE7C" opacity="0.18" filter="url(#s20-mblur)"/>
+        </g>
+      </g>
+
+      <!-- the table that holds the relics -->
+      <g id="s20-table">
+        <path d="M-40,846 H1960 V886 H-40 Z" fill="#DCC29B"/>
+        <path d="M-40,886 H1920 V1080 H-40 Z" fill="#7A4F2C"/>
+        <path d="M-40,886 H1920" stroke="#4A2E1C" stroke-width="9" opacity="0.45"/>
+        <path d="M-40,900 H1920" stroke="#F0D8AE" stroke-width="5" opacity="0.2"/>
+        <g stroke="#6E4826" stroke-width="4" opacity="0.32">
+          <path d="M-40,950 C300,944 700,958 1120,950 C1440,944 1720,956 1920,950"/>
+          <path d="M-40,1030 C320,1024 720,1038 1140,1030 C1460,1024 1740,1036 1920,1030"/>
+        </g>
+        <path d="M-40,1080 H1920 V1046 H-40 Z" fill="#4A2E1C" opacity="0.5"/>
+      </g>
+
+      <ellipse cx="700" cy="250" rx="420" ry="300" fill="#FFF6DC" opacity="0.26" filter="url(#s20-bblur)"/>
+      <ellipse cx="1560" cy="880" rx="360" ry="140" fill="#3A2A1E" opacity="0.14" filter="url(#s20-bblur)"/>
+      <rect x="0" y="0" width="1920" height="1080" filter="url(#s20-grainf)" opacity="0.05" style="mix-blend-mode:multiply"/>
+
+      <g fill="#FFD98E" opacity="0.5">
+        <circle class="s20-mote" cx="360" cy="300" r="4"/><circle class="s20-mote" cx="620" cy="220" r="3"/>
+        <circle class="s20-mote" cx="1010" cy="320" r="3.5"/><circle class="s20-mote" cx="1300" cy="240" r="3"/>
+        <circle class="s20-mote" cx="1690" cy="300" r="4"/><circle class="s20-mote" cx="880" cy="160" r="2.5"/>
+      </g>
+    </svg>
+
+    <!-- MG · the framed record -->
+    <svg class="s20-plane s20-p-mg" id="s20-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s20-gilt" x1="0" y1="0" x2="0.24" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.22" stop-color="#E3BB64"/>
+          <stop offset="0.48" stop-color="#C89D42"/><stop offset="0.72" stop-color="#9E742A"/>
+          <stop offset="0.88" stop-color="#D9AE56"/><stop offset="1" stop-color="#B98A3C"/>
+        </linearGradient>
+        <linearGradient id="s20-giltv" gradientUnits="userSpaceOnUse" x1="0" y1="248" x2="0" y2="666">
+          <stop offset="0" stop-color="#F7DFA4"/><stop offset="0.34" stop-color="#D9AE56"/>
+          <stop offset="0.62" stop-color="#B98A3C"/><stop offset="1" stop-color="#8E6A22"/>
+        </linearGradient>
+        <linearGradient id="s20-mirrorglass" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#E8D6B0"/><stop offset="0.34" stop-color="#C9AC80"/>
+          <stop offset="0.62" stop-color="#A98A5E"/><stop offset="0.86" stop-color="#CBB086"/>
+          <stop offset="1" stop-color="#E4D0A8"/>
+        </linearGradient>
+        <linearGradient id="s20-plate" x1="0" y1="0" x2="0.14" y2="1">
+          <stop offset="0" stop-color="#F4E5C8"/><stop offset="0.44" stop-color="#E9D4AE"/>
+          <stop offset="1" stop-color="#D2B78C"/>
+        </linearGradient>
+        <linearGradient id="s20-brass" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.28" stop-color="#E3BB64"/><stop offset="0.6" stop-color="#C89D42"/>
+          <stop offset="0.84" stop-color="#9E742A"/><stop offset="1" stop-color="#D9AE56"/>
+        </linearGradient>
+        <radialGradient id="s20-fire" cx="50%" cy="56%" r="54%">
+          <stop offset="0" stop-color="#FFF6D8"/><stop offset="0.34" stop-color="#FFD98E"/>
+          <stop offset="0.7" stop-color="#E89A3C"/><stop offset="1" stop-color="#B24A32" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s20-fireglow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFCE7C" stop-opacity="0.55"/>
+          <stop offset="0.6" stop-color="#E89A3C" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="#C2593F" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s20-irisgrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFF6D8"/><stop offset="0.28" stop-color="#FFD98E"/>
+          <stop offset="0.58" stop-color="#E89A3C"/><stop offset="0.82" stop-color="#C2593F"/>
+          <stop offset="0.93" stop-color="#FFE8B4"/><stop offset="1" stop-color="#C2593F"/>
+        </radialGradient>
+        <filter id="s20-soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="9"/></filter>
+        <filter id="s20-deep" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="20"/></filter>
+        <filter id="s20-glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="14"/></filter>
+        <radialGradient id="s20-platevig" cx="58%" cy="46%" r="62%">
+          <stop offset="0.5" stop-color="#8A5F3C" stop-opacity="0"/>
+          <stop offset="0.78" stop-color="#8A5F3C" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="#6E4826" stop-opacity="0.40"/>
+        </radialGradient>
+        <clipPath id="s20-plateclip"><rect x="0" y="0" width="880" height="500"/></clipPath>
+      </defs>
+
+      <!-- the frame -->
+      <g id="s20-frame" transform="translate(118,196)">
+        <g id="s20-frame-in">
+          <path d="M18,24 H924 V548 H18 Z" fill="#3A2A1E" opacity="0.34" filter="url(#s20-deep)"/>
+          <path d="M-8,-8 H888 V508 H-8 Z" fill="#3A2A1E" opacity="0.18" filter="url(#s20-mblur)"/>
+          <!-- outer moulding -->
+          <rect x="-26" y="-20" width="932" height="540" fill="url(#s20-gilt)" stroke="#6E4826" stroke-width="5"/>
+          <rect x="-12" y="-8" width="904" height="516" fill="#B98A3C" stroke="#6E4826" stroke-width="4"/>
+          <rect x="-2" y="0" width="884" height="500" fill="#8E6A22"/>
+          <!-- stepped inner moulding -->
+          <rect x="0" y="0" width="880" height="500" fill="none" stroke="#F7DFA4" stroke-width="7" opacity="0.7"/>
+          <rect x="9" y="9" width="862" height="482" fill="none" stroke="#7A5A1C" stroke-width="5" opacity="0.7"/>
+          <rect x="16" y="16" width="848" height="468" fill="#FBF1DC"/>
+          <!-- corner bosses -->
+          <g fill="url(#s20-gilt)" stroke="#6E4826" stroke-width="4">
+            <path d="M-28,-22 C-6,-22 8,-10 10,10 C-10,8 -24,-4 -28,-22 Z"/>
+            <path d="M906,-22 C884,-22 870,-10 868,10 C888,8 902,-4 906,-22 Z"/>
+            <path d="M-28,522 C-6,522 8,510 10,490 C-10,492 -24,504 -28,522 Z"/>
+            <path d="M906,522 C884,522 870,510 868,490 C888,492 902,504 906,522 Z"/>
+          </g>
+          <g fill="#F7DFA4" opacity="0.5">
+            <circle cx="0" cy="-4" r="5"/><circle cx="880" cy="-4" r="5"/>
+            <circle cx="0" cy="504" r="5"/><circle cx="880" cy="504" r="5"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- the engraving -->
+      <g id="s20-engraving" transform="translate(134,212)">
+        <g id="s20-engraving-in" clip-path="url(#s20-plateclip)">
+          <rect x="0" y="0" width="880" height="500" fill="url(#s20-plate)"/>
+          <rect x="18" y="18" width="844" height="464" fill="none" stroke="#B99A6E" stroke-width="3" opacity="0.5"/>
+          <g stroke="#C9A87C" stroke-width="1.8" opacity="0.28">
+            <path d="M18,86 H862"/><path d="M18,120 H862"/>
+          </g>
+
+          <!-- the wall behind the bench, hatched -->
+          <g stroke="#8A6B49" stroke-width="1.6" opacity="0.16">
+            <path d="M596,196 L596,462"/><path d="M612,196 L612,462"/><path d="M628,196 L628,462"/>
+            <path d="M644,196 L644,462"/><path d="M660,196 L660,462"/><path d="M676,196 L676,462"/>
+            <path d="M692,196 L692,462"/><path d="M708,196 L708,462"/><path d="M724,196 L724,462"/>
+            <path d="M740,196 L740,462"/><path d="M756,196 L756,462"/><path d="M772,196 L772,462"/>
+            <path d="M788,196 L788,462"/><path d="M804,196 L804,462"/><path d="M820,196 L820,462"/>
+            <path d="M836,196 L836,462"/><path d="M852,196 L852,462"/><path d="M868,196 L868,462"/>
+          </g>
+          <rect x="0" y="440" width="880" height="60" fill="#8A5F3C" opacity="0.16"/>
+          <rect x="0" y="18" width="880" height="26" fill="#8A5F3C" opacity="0.10"/>
+
+          <!-- the workshop floor -->
+          <path d="M18,462 H862" stroke="#2B1F17" stroke-width="3.5" opacity="0.6"/>
+          <g stroke="#8A6B49" stroke-width="2" opacity="0.34">
+            <path d="M110,462 L88,498"/><path d="M300,462 L286,498"/><path d="M490,462 L478,498"/>
+            <path d="M670,462 L660,498"/><path d="M830,462 L822,498"/>
+          </g>
+          <g stroke="#B99A6E" stroke-width="1.4" opacity="0.2">
+            <path d="M18,476 H862"/><path d="M18,488 H862"/>
+          </g>
+
+          <!-- three finished panes, hung up to dry -->
+          <g id="s20-eng-rack">
+            <path d="M74,196 H340" stroke="#2B1F17" stroke-width="5" stroke-linecap="round"/>
+            <path d="M84,190 H330" stroke="#8A6B49" stroke-width="2" opacity="0.5"/>
+            <g fill="#2B1F17" opacity="0.6">
+              <circle cx="118" cy="196" r="4"/><circle cx="206" cy="196" r="4"/><circle cx="294" cy="196" r="4"/>
+            </g>
+            <!-- pane 1 -->
+            <g transform="translate(118,196)">
+              <path d="M0,0 V20" stroke="#2B1F17" stroke-width="3"/>
+              <rect x="-32" y="20" width="64" height="84" fill="#FBF1DC" stroke="#2B1F17" stroke-width="3.5"/>
+              <rect x="-24" y="28" width="48" height="68" fill="none" stroke="#2B1F17" stroke-width="2" opacity="0.7"/>
+              <g stroke="#2B1F17" stroke-width="1.4" opacity="0.4">
+                <path d="M-16,96 L-16,44 L-6,40 L-6,96 Z"/>
+                <path d="M6,96 L6,34 L16,32 L16,96 Z"/>
+              </g>
+              <path d="M-32,20 H32" stroke="#FFFDF6" stroke-width="2.5" opacity="0.7"/>
+            </g>
+            <!-- pane 2 -->
+            <g transform="translate(206,196)">
+              <path d="M0,0 V18" stroke="#2B1F17" stroke-width="3"/>
+              <rect x="-36" y="18" width="72" height="96" fill="#FBF1DC" stroke="#2B1F17" stroke-width="3.5"/>
+              <rect x="-28" y="26" width="56" height="80" fill="none" stroke="#2B1F17" stroke-width="2" opacity="0.7"/>
+              <g stroke="#2B1F17" stroke-width="1.4" opacity="0.4">
+                <path d="M-18,106 L-18,48 L-6,44 L-6,106 Z"/>
+                <path d="M6,106 L6,38 L18,36 L18,106 Z"/>
+              </g>
+              <path d="M-36,18 H36" stroke="#FFFDF6" stroke-width="2.5" opacity="0.7"/>
+            </g>
+            <!-- pane 3 -->
+            <g transform="translate(294,196)">
+              <path d="M0,0 V20" stroke="#2B1F17" stroke-width="3"/>
+              <rect x="-32" y="20" width="64" height="84" fill="#FBF1DC" stroke="#2B1F17" stroke-width="3.5"/>
+              <rect x="-24" y="28" width="48" height="68" fill="none" stroke="#2B1F17" stroke-width="2" opacity="0.7"/>
+              <g stroke="#2B1F17" stroke-width="1.4" opacity="0.4">
+                <path d="M-16,96 L-16,44 L-6,40 L-6,96 Z"/>
+                <path d="M6,96 L6,34 L16,32 L16,96 Z"/>
+              </g>
+              <path d="M-32,20 H32" stroke="#FFFDF6" stroke-width="2.5" opacity="0.7"/>
+            </g>
+          </g>
+
+          <!-- the furnace -->
+          <g id="s20-eng-furnace" transform="translate(768,462)">
+            <path d="M-96,0 V-118 C-96,-176 -54,-206 0,-206 C54,-206 96,-176 96,-118 V0 Z" fill="#FBF1DC" stroke="#2B1F17" stroke-width="4"/>
+            <path d="M-72,0 V-110 C-72,-152 -40,-176 0,-176 C40,-176 72,-152 72,-110 V0 Z" fill="none" stroke="#2B1F17" stroke-width="3" opacity="0.7"/>
+            <path d="M-48,0 V-96 C-48,-128 -26,-146 0,-146 C26,-146 48,-128 48,-96 V0 Z" fill="#8A5F3C" opacity="0.28"/>
+            <ellipse id="s20-eng-fire" cx="0" cy="-70" rx="52" ry="54" fill="url(#s20-fire)"/>
+            <ellipse id="s20-eng-fire2" cx="0" cy="-62" rx="30" ry="32" fill="#FFF6D8" opacity="0.72"/>
+            <ellipse cx="0" cy="-70" rx="128" ry="128" fill="url(#s20-fireglow)" opacity="0.7" filter="url(#s20-glow)"/>
+            <path d="M-30,-96 C-34,-120 -18,-136 0,-146 C14,-132 26,-116 22,-96 C18,-80 4,-74 -6,-82 C-16,-74 -26,-82 -30,-96 Z" fill="#FFD98E" opacity="0.5"/>
+            <path d="M-96,0 H96" stroke="#2B1F17" stroke-width="4"/>
+            <path d="M-106,0 V-7 H106 V0" fill="#FBF1DC" stroke="#2B1F17" stroke-width="3"/>
+            <path d="M-26,-206 V-268 H26 V-206" fill="#FBF1DC" stroke="#2B1F17" stroke-width="3"/>
+            <path d="M-36,-268 H36" stroke="#2B1F17" stroke-width="3"/>
+            <path d="M-30,-262 H30" stroke="#8A6B49" stroke-width="2" opacity="0.5"/>
+            <g stroke="#8A6B49" stroke-width="2" opacity="0.45">
+              <path d="M-96,-42 H-74"/><path d="M-96,-98 H-74"/><path d="M74,-42 H96"/><path d="M74,-98 H96"/>
+            </g>
+            <g stroke="#2B1F17" stroke-width="2" opacity="0.38">
+              <path d="M-82,-128 L-74,-124"/><path d="M-62,-160 L-56,-154"/><path d="M-34,-182 L-30,-174"/>
+              <path d="M0,-190 V-182"/><path d="M34,-182 L30,-174"/><path d="M62,-160 L56,-154"/>
+              <path d="M82,-128 L74,-124"/>
+            </g>
+            <g stroke="#8A5F3C" stroke-width="2" opacity="0.3">
+              <path d="M-60,0 V-104"/><path d="M-20,0 V-136"/><path d="M20,0 V-136"/><path d="M60,0 V-104"/>
+            </g>
+          </g>
+
+          <!-- the yoke that steadies the pipe -->
+          <g id="s20-eng-yoke" transform="translate(556,462)">
+            <path d="M0,0 V-92" stroke="#2B1F17" stroke-width="7" stroke-linecap="round"/>
+            <path d="M-42,0 H42" stroke="#2B1F17" stroke-width="6" stroke-linecap="round"/>
+            <path d="M-36,-2 L-36,-11 H36 V-2 Z" fill="#2B1F17" opacity="0.55"/>
+            <path d="M-28,-101 H28 V-77 H-28 Z" fill="#FBF1DC" stroke="#2B1F17" stroke-width="3.5"/>
+            <path d="M-28,-93 H28" stroke="#2B1F17" stroke-width="2" opacity="0.45"/>
+            <path d="M-14,-107 V-101 M14,-107 V-101" stroke="#2B1F17" stroke-width="3.5"/>
+          </g>
+
+          <!-- the pipe, held at two worn grips -->
+          <g id="s20-eng-pipe">
+            <path d="M96,340 L652,368" stroke="#2B1F17" stroke-width="10" stroke-linecap="round" fill="none"/>
+            <path d="M100,334 L646,362" stroke="#FBF1DC" stroke-width="2.5" opacity="0.5"/>
+            <path d="M96,340 L74,338" stroke="#2B1F17" stroke-width="14" stroke-linecap="round"/>
+            <path d="M74,338 L64,337" stroke="#8A6B49" stroke-width="9" stroke-linecap="round"/>
+            <g transform="translate(238,347) rotate(2.9)">
+              <g id="s20-eng-gripA">
+                <rect x="-38" y="-15" width="76" height="30" rx="8" fill="#C9A87C" stroke="#2B1F17" stroke-width="3.5"/>
+                <path d="M-30,-11 V11 M-18,-13 V13 M-6,-14 V14 M6,-14 V14 M18,-13 V13 M30,-11 V11"
+                      stroke="#2B1F17" stroke-width="2" opacity="0.42"/>
+                <rect x="-6" y="-19" width="12" height="38" rx="3" fill="#8A5F3C" stroke="#2B1F17" stroke-width="2.5"/>
+              </g>
+            </g>
+            <g transform="translate(436,358) rotate(2.9)">
+              <g id="s20-eng-gripB">
+                <rect x="-38" y="-15" width="76" height="30" rx="8" fill="#C9A87C" stroke="#2B1F17" stroke-width="3.5"/>
+                <path d="M-30,-11 V11 M-18,-13 V13 M-6,-14 V14 M6,-14 V14 M18,-13 V13 M30,-11 V11"
+                      stroke="#2B1F17" stroke-width="2" opacity="0.42"/>
+                <rect x="-6" y="-19" width="12" height="38" rx="3" fill="#8A5F3C" stroke="#2B1F17" stroke-width="2.5"/>
+              </g>
+            </g>
+            <!-- the gather, just outside the furnace mouth -->
+            <ellipse cx="652" cy="372" rx="31" ry="28" fill="url(#s20-fire)" opacity="0.95"/>
+            <path d="M638,390 C633,376 640,364 648,355 C655,366 664,372 662,385 C660,397 647,399 638,390 Z" fill="#FFD98E" opacity="0.9"/>
+            <ellipse cx="652" cy="372" rx="31" ry="28" fill="none" stroke="#2B1F17" stroke-width="2.5" opacity="0.55"/>
+            <path d="M641,352 C645,344 653,342 659,346" fill="none" stroke="#FFF6D8" stroke-width="4" opacity="0.8"/>
+          </g>
+
+          <!-- tools lying on the floor -->
+          <g id="s20-eng-floortools">
+            <path d="M132,432 L206,420" stroke="#2B1F17" stroke-width="5" stroke-linecap="round"/>
+            <path d="M132,438 L206,426" stroke="#2B1F17" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+            <circle cx="170" cy="429" r="5" fill="#FBF1DC" stroke="#2B1F17" stroke-width="2.5"/>
+            <path d="M132,432 L120,428 M206,420 L218,416" stroke="#2B1F17" stroke-width="3" stroke-linecap="round"/>
+            <path d="M256,444 L340,444" stroke="#2B1F17" stroke-width="7" stroke-linecap="round"/>
+            <path d="M340,444 L366,438" stroke="#2B1F17" stroke-width="11" stroke-linecap="round"/>
+            <path d="M262,440 L330,440" stroke="#FBF1DC" stroke-width="2" opacity="0.5"/>
+            <path d="M404,452 C404,436 418,428 432,432 C444,436 448,448 442,456 Z" fill="#E4CFA8" stroke="#2B1F17" stroke-width="3.5"/>
+            <path d="M410,440 C414,434 424,432 430,436" fill="none" stroke="#8A6B49" stroke-width="2" opacity="0.5"/>
+          </g>
+
+          <ellipse cx="768" cy="392" rx="220" ry="200" fill="#E89A3C" opacity="0.10"/>
+
+          <!-- dimensions -->
+          <g id="s20-eng-dim" stroke="#2B1F17" stroke-width="2" opacity="0.5">
+            <path d="M96,410 H652"/>
+            <path d="M96,402 V418"/><path d="M652,402 V418"/>
+            <path d="M104,406 L96,410 L104,414"/><path d="M644,406 L652,410 L644,414"/>
+            <path d="M664,478 H872"/>
+            <path d="M664,470 V486"/><path d="M872,470 V486"/>
+            <path d="M672,474 L664,478 L672,482"/><path d="M864,474 L872,478 L864,482"/>
+          </g>
+
+          <!-- scale bar -->
+          <g id="s20-eng-scale">
+            <path d="M300,486 H470" stroke="#2B1F17" stroke-width="3"/>
+            <g stroke="#2B1F17" stroke-width="2.5">
+              <path d="M300,478 V494"/><path d="M334,482 V494"/><path d="M368,478 V494"/>
+              <path d="M402,482 V494"/><path d="M436,478 V494"/><path d="M470,482 V494"/>
+            </g>
+          </g>
+
+          <!-- hatched shadows -->
+          <g stroke="#2B1F17" stroke-width="1.6" opacity="0.24">
+            <path d="M660,498 L740,462"/><path d="M676,498 L756,462"/><path d="M692,498 L772,462"/>
+            <path d="M776,498 L830,462"/><path d="M792,498 L846,462"/>
+            <path d="M510,498 L550,462"/><path d="M526,498 L566,462"/>
+          </g>
+
+          <rect x="0.5" y="0.5" width="879" height="499" fill="none" stroke="#2B1F17" stroke-width="3" opacity="0.55"/>
+          <rect x="0" y="0" width="880" height="500" fill="url(#s20-platevig)" opacity="0.85"/>
+        </g>
+      </g>
+
+      <!-- the plaque -->
+      <g id="s20-plaque" transform="translate(560,718)">
+        <g id="s20-plaque-in">
+          <rect x="-104" y="-16" width="208" height="34" rx="4" fill="url(#s20-brass)" stroke="#6E4826" stroke-width="4"/>
+          <rect x="-96" y="-8" width="192" height="18" rx="2" fill="#8E6A22" opacity="0.35"/>
+          <path d="M-70,1 H70" stroke="#6E4826" stroke-width="3" opacity="0.4"/>
+          <circle cx="-94" cy="-9" r="3.5" fill="#5C3A20"/><circle cx="94" cy="-9" r="3.5" fill="#5C3A20"/>
+        </g>
+      </g>
+    </svg>
+
+    <!-- FG · the relics on the table, and the iris -->
+    <svg class="s20-plane s20-p-fg" id="s20-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s20-iron" x1="0" y1="0" x2="0.16" y2="1">
+          <stop offset="0" stop-color="#CFC2AA"/><stop offset="0.42" stop-color="#9C8C74"/><stop offset="1" stop-color="#5E5344"/>
+        </linearGradient>
+        <linearGradient id="s20-gather" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FFF6D8" stop-opacity="0.95"/>
+          <stop offset="0.4" stop-color="#FFCE7C" stop-opacity="0.9"/>
+          <stop offset="0.78" stop-color="#E8B45C" stop-opacity="0.82"/>
+          <stop offset="1" stop-color="#C98A3C" stop-opacity="0.45"/>
+        </linearGradient>
+        <radialGradient id="s20-gathglow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFE8B4" stop-opacity="0.8"/>
+          <stop offset="0.5" stop-color="#E89A3C" stop-opacity="0.28"/>
+          <stop offset="1" stop-color="#C2593F" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="s20-fglip" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#4A2E1C"/><stop offset="1" stop-color="#241812"/>
+        </linearGradient>
+        <filter id="s20-fsoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="11"/></filter>
+        <filter id="s20-fdeep" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="20"/></filter>
+        <filter id="s20-fglow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="16"/></filter>
+      </defs>
+
+      <!-- panes leaning on the table front -->
+      <g id="s20-lean" transform="translate(610,1002)">
+        <g id="s20-lean-in">
+          <ellipse cx="0" cy="52" rx="120" ry="20" fill="#1E1813" opacity="0.3" filter="url(#s20-fsoft)"/>
+          <g transform="rotate(-4)">
+            <rect x="-96" y="-58" width="72" height="112" fill="url(#s20-gilt)" stroke="#6E4826" stroke-width="4"/>
+            <rect x="-88" y="-50" width="56" height="96" fill="url(#s20-mirrorglass)" stroke="#6E4826" stroke-width="2.5"/>
+            <path d="M-80,38 L-80,-38 L-60,-42 L-60,38 Z" fill="#FFFDF6" opacity="0.3"/>
+            <rect x="-24" y="-52" width="80" height="118" fill="url(#s20-gilt)" stroke="#6E4826" stroke-width="4"/>
+            <rect x="-16" y="-44" width="64" height="102" fill="url(#s20-mirrorglass)" stroke="#6E4826" stroke-width="2.5"/>
+            <path d="M-6,48 L-6,-32 L16,-36 L16,48 Z" fill="#FFF6D8" opacity="0.22"/>
+          </g>
+          <g transform="rotate(5)">
+            <rect x="34" y="-40" width="64" height="94" fill="url(#s20-gilt)" stroke="#6E4826" stroke-width="4"/>
+            <rect x="42" y="-32" width="48" height="78" fill="url(#s20-mirrorglass)" stroke="#6E4826" stroke-width="2.5"/>
+            <path d="M50,36 L50,-20 L66,-24 L66,36 Z" fill="#FFFDF6" opacity="0.26"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- the pipe lying on the table -->
+      <g id="s20-pipewrap" transform="translate(1096,930)">
+        <g id="s20-pipe">
+          <ellipse cx="40" cy="40" rx="270" ry="26" fill="#2B1F17" opacity="0.34" filter="url(#s20-fdeep)"/>
+          <rect x="-262" y="-15" width="452" height="30" rx="15" fill="url(#s20-iron)" stroke="#3A2A1E" stroke-width="4"/>
+          <rect x="-240" y="-5" width="404" height="4" rx="2" fill="#F4E6CA" opacity="0.5"/>
+          <path d="M180,0 H214" stroke="#8E7F68" stroke-width="16" stroke-linecap="round"/>
+          <path d="M-250,0 H-282" stroke="#5E5344" stroke-width="20" stroke-linecap="round"/>
+          <path d="M-282,0 H-296" stroke="#3A2A1E" stroke-width="24" stroke-linecap="round"/>
+          <g id="s20-gather">
+            <ellipse cx="242" cy="0" rx="80" ry="70" fill="url(#s20-gathglow)" opacity="0.75" filter="url(#s20-fglow)"/>
+            <path d="M196,-6 C196,-54 212,-82 242,-82 C272,-82 288,-54 288,-6 C288,44 272,72 242,72 C212,72 196,44 196,-6 Z" fill="url(#s20-gather)" stroke="#A97445" stroke-width="5"/>
+            <path d="M208,-36 C214,-62 228,-72 244,-72" fill="none" stroke="#FFF8E0" stroke-width="9" opacity="0.75"/>
+            <path d="M206,10 C208,44 222,60 240,64" fill="none" stroke="#FFF6D8" stroke-width="6" opacity="0.45"/>
+            <ellipse cx="242" cy="26" rx="30" ry="20" fill="#FFF6D8" opacity="0.4"/>
+            <circle cx="222" cy="-46" r="5" fill="#FFFDF6" opacity="0.9"/>
+          </g>
+          <g stroke="#6E6152" stroke-width="3" opacity="0.4">
+            <path d="M-180,0 H-120"/><path d="M-40,0 H20"/><path d="M80,0 H140"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- a lens and a folded note -->
+      <g id="s20-lens" transform="translate(376,930) rotate(-12)">
+        <g id="s20-lens-in">
+          <ellipse cx="0" cy="46" rx="86" ry="18" fill="#2B1F17" opacity="0.24" filter="url(#s20-fsoft)"/>
+          <circle cx="0" cy="0" r="62" fill="#FFFDF6" opacity="0.18"/>
+          <circle cx="0" cy="0" r="62" fill="none" stroke="url(#s20-brass)" stroke-width="12"/>
+          <circle cx="0" cy="0" r="52" fill="none" stroke="#8A6B49" stroke-width="2" opacity="0.4"/>
+          <path d="M-34,-38 C-22,-50 -4,-54 8,-50" fill="none" stroke="#FFFDF6" stroke-width="8" opacity="0.75"/>
+          <path d="M66,40 L106,74" stroke="#C89D42" stroke-width="14" stroke-linecap="round"/>
+          <path d="M66,40 L106,74" stroke="#8E6A22" stroke-width="5" stroke-linecap="round"/>
+        </g>
+      </g>
+      <g id="s20-note" transform="translate(1600,986) rotate(6)">
+        <path d="M-120,-30 L96,-42 L124,18 L-92,30 Z" fill="#F6E6C6" stroke="#8A6B49" stroke-width="4"/>
+        <path d="M-120,-30 L92,-24" stroke="#C9A87C" stroke-width="3" opacity="0.5"/>
+        <g stroke="#B24A32" stroke-width="3" opacity="0.55">
+          <path d="M-70,-16 C-30,-22 30,-24 70,-18"/>
+          <path d="M-66,0 C-20,-6 30,-8 68,-2"/>
+        </g>
+      </g>
+
+      <!-- foreground table lip -->
+      <g id="s20-fglip" filter="url(#s20-fsoft)" opacity="0.9">
+        <path d="M-60,1080 L-60,1042 L420,1024 L520,1080 Z" fill="url(#s20-fglip)"/>
+        <path d="M1420,1080 L1432,1038 L1920,1026 L1920,1080 Z" fill="url(#s20-fglip)"/>
+        <ellipse cx="1640" cy="1056" rx="80" ry="16" fill="#1E1813" opacity="0.7"/>
+      </g>
+
+      <!-- the furnace iris -->
+      <g transform="translate(902,600)">
+        <g id="s20-iris" opacity="0">
+          <circle cx="0" cy="0" r="110" fill="url(#s20-irisgrad)"/>
+          <!-- the glass inside the aperture -->
+          <path d="M-92,-22 C-84,-58 -52,-82 -14,-86 C26,-90 62,-72 80,-44" fill="none" stroke="#FFE8B4" stroke-width="4" opacity="0.3"/>
+          <path d="M-70,34 C-52,62 -14,78 24,74 C56,70 82,50 92,22" fill="none" stroke="#FFF6D8" stroke-width="3" opacity="0.24"/>
+          <path d="M-44,-14 C-30,-34 -2,-44 26,-40" fill="none" stroke="#FFF6D8" stroke-width="3" opacity="0.2"/>
+          <g stroke="#FFF6D8" stroke-width="2.5" opacity="0.18">
+            <path d="M0,-100 L0,-62"/><path d="M72,-72 L48,-46"/><path d="M100,-4 L64,-6"/>
+            <path d="M74,70 L50,44"/><path d="M0,102 L0,64"/><path d="M-72,72 L-48,46"/>
+            <path d="M-100,-2 L-64,-4"/><path d="M-72,-72 L-48,-46"/>
+          </g>
+          <circle cx="0" cy="0" r="109" fill="none" stroke="#FFF3CE" stroke-width="3" opacity="0.45"/>
+        </g>
+      </g>
+    </svg>
+
+    <div class="s20-grain"></div>
+    <div class="s20-vignette"></div>
+
+    <div class="s20-tag" id="s20-tag">
+      <span class="s20-tag-dot"></span>
+      <span class="s20-tag-text">TACIT KNOWLEDGE</span>
+    </div>
+    <div class="s20-rule" id="s20-rule"></div>
+  </div>
+</div>
+
+<script>
+(function initS20(){
+  var ID = "s20-tacit-knowledge";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, { duration: 24.550 }, 0);
+
+  // ── PHASE 1: the wall settles ────────────────────────────────────────────
+  tl.fromTo("#s20-bg", { scale: 1.05, x: -10, y: -8 }, { scale: 1, x: 0, y: 0, duration: 24.2, ease: "sine.out" }, 0.05);
+  tl.fromTo("#s20-window-in", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 1.0, ease: "power2.out" }, 0.24);
+  tl.fromTo("#s20-shelf-in", { y: -34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.95, ease: "power2.out" }, 0.52);
+  tl.fromTo("#s20-table", { y: 44, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "power2.out" }, 0.78);
+
+  // ── PHASE 2: the frame is hung ───────────────────────────────────────────
+  tl.fromTo("#s20-frame-in", { y: -60, opacity: 0 }, { y: 0, opacity: 1, duration: 1.1, ease: "power3.out" }, 1.10);
+  tl.fromTo("#s20-engraving-in", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "sine.out" }, 1.70);
+  tl.fromTo("#s20-plaque-in", { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, 2.20);
+
+  // ── PHASE 3: the fire inside the plate takes ─────────────────────────────
+  tl.set("#s20-eng-fire", { opacity: 0.2, scale: 0.7, transformOrigin: "50% 60%" }, 2.60);
+  tl.to("#s20-eng-fire", { opacity: 1, scale: 1, duration: 1.5, ease: "sine.out" }, 2.66);
+  tl.to("#s20-eng-fire2", { opacity: 0.85, duration: 1.2, ease: "sine.out" }, 3.10);
+  tl.to("#s20-eng-fire", { scale: 1.08, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 12, transformOrigin: "50% 60%" }, 4.30);
+
+  // ── PHASE 4: the plate's pipe turns in the yoke ─────────────────────────
+  tl.set("#s20-eng-pipe", { rotation: 0, transformOrigin: "96px 244px" }, 4.20);
+  tl.to("#s20-eng-pipe", { rotation: -1.6, duration: 1.5, ease: "sine.inOut" }, 4.34);
+  tl.to("#s20-eng-pipe", { rotation: -0.4, duration: 2.2, ease: "sine.inOut" }, 6.40);
+  tl.to("#s20-eng-gripA", { x: 2, y: -2, duration: 2.4, ease: "sine.inOut", yoyo: true, repeat: 3 }, 5.00);
+  tl.to("#s20-eng-gripB", { x: -2, y: 2, duration: 2.8, ease: "sine.inOut", yoyo: true, repeat: 3 }, 5.30);
+
+  // ── PHASE 5: the apprentice takes the weight ─────────────────────────────
+  tl.to("#s20-eng-gripB", { y: -4, duration: 1.4, ease: "sine.inOut" }, 8.10);
+  tl.to("#s20-eng-gripB", { y: 0, duration: 1.6, ease: "sine.inOut" }, 9.80);
+  tl.to("#s20-eng-gripA", { y: 3, duration: 1.6, ease: "sine.inOut" }, 10.40);
+  tl.to("#s20-eng-gripA", { y: 0, duration: 1.8, ease: "sine.inOut" }, 12.20);
+
+  // ── PHASE 6: the master lets go ──────────────────────────────────────────
+  tl.to("#s20-eng-gripA", { x: -8, opacity: 0.4, duration: 1.4, ease: "sine.inOut" }, 14.40);
+  tl.to("#s20-eng-gripA", { x: 0, opacity: 1, duration: 1.8, ease: "sine.inOut" }, 16.60);
+  tl.to("#s20-eng-gripB", { y: -6, duration: 1.8, ease: "sine.inOut" }, 16.00);
+  tl.to("#s20-eng-gripB", { y: 0, duration: 1.6, ease: "sine.inOut" }, 18.10);
+  tl.fromTo("#s20-eng-floortools", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 5.80);
+  tl.fromTo("#s20-eng-rack", { y: -18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }, 3.90);
+  tl.fromTo("#s20-eng-yoke", { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "power2.out" }, 4.10);
+  tl.fromTo("#s20-eng-scale", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 6.30);
+
+  // ── PHASE 7: the relics on the table ─────────────────────────────────────
+  tl.fromTo("#s20-pipe", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "power3.out" }, 3.40);
+  tl.fromTo("#s20-gather", { opacity: 0.3, scale: 0.9 }, { opacity: 1, scale: 1, duration: 1.0, ease: "sine.out", transformOrigin: "50% 50%" }, 4.10);
+  tl.to("#s20-gather", { scale: 1.05, duration: 2.2, ease: "sine.inOut", yoyo: true, repeat: 8, transformOrigin: "50% 50%" }, 5.40);
+  tl.fromTo("#s20-lens-in", { y: 26, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power2.out" }, 5.00);
+  tl.fromTo("#s20-note", { x: 30, opacity: 0 }, { x: 0, opacity: 1, duration: 0.8, ease: "power2.out" }, 5.60);
+
+  // ── living hold ──────────────────────────────────────────────────────────
+  tl.fromTo("#s20-stage", { scale: 1, y: 0 }, { scale: 1.045, y: -14, duration: 24.3, ease: "sine.inOut" }, 0.10);
+  tl.fromTo(".s20-mote", { y: 0, x: 0 }, { y: -76, x: 14, duration: 7.6, ease: "sine.inOut", yoyo: true, repeat: 2, stagger: 0.24 }, 1.20);
+  tl.to("#s20-frame-in", { rotation: 0.3, duration: 12.0, ease: "sine.inOut", yoyo: true, repeat: 1, transformOrigin: "50% 0%" }, 3.00);
+  tl.to("#s20-pipe", { rotation: 0.6, duration: 6.4, ease: "sine.inOut", yoyo: true, repeat: 2, transformOrigin: "20% 50%" }, 6.40);
+  tl.to("#s20-plaque-in", { opacity: 0.92, duration: 3.2, ease: "sine.inOut", yoyo: true, repeat: 3 }, 4.00);
+
+  // ── TAG ─────────────────────────────────────────────────────────────────
+  tl.fromTo("#s20-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -14 }, { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.6, ease: "power3.inOut" }, 15.20);
+  tl.fromTo("#s20-rule", { width: 0 }, { width: 372, duration: 0.5, ease: "power2.out" }, 15.56);
+  tl.to("#s20-tag", { clipPath: "inset(0% 100% 0% 0%)", duration: 0.22, ease: "power2.in" }, 21.30);
+  tl.to("#s20-rule", { width: 0, duration: 0.22, ease: "power2.in" }, 21.30);
+
+  // ── SEAM: the furnace iris opens and takes the frame ────────────────────
+  tl.set("#s20-iris", { opacity: 0, scale: 0.02, transformOrigin: "50% 50%" }, 21.90);
+  tl.to("#s20-iris", { opacity: 1, duration: 0.26, ease: "sine.out" }, 21.94);
+  tl.to("#s20-iris", { scale: 12.4, duration: 2.50, ease: "power1.in" }, 21.98);
+  tl.to("#s20-frame-in", { scale: 1.03, duration: 2.3, ease: "sine.in", transformOrigin: "50% 50%" }, 22.00);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

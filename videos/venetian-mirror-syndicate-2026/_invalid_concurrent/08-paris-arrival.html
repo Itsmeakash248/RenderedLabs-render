@@ -1,0 +1,71 @@
+<template id="s08-template">
+  <div id="root" data-composition-id="s08-paris-arrival" data-width="1920" data-height="1080" data-start="126.00" data-duration="18.00">
+    <div class="s08-cam" id="s08-cam">
+      <div id="s08-bg" class="wbg-container">
+        <svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <radialGradient id="s08Amber" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#D9822B" stop-opacity="0.26"/>
+              <stop offset="58%" stop-color="#2B1F17" stop-opacity="0.62"/>
+              <stop offset="100%" stop-color="#070A12" stop-opacity="0.92"/>
+            </radialGradient>
+          </defs>
+          <rect width="1920" height="1080" fill="#070A12"/>
+          <rect width="1920" height="1080" fill="url(#s08Amber)"/>
+          <g opacity="0.62" fill="#1E1813">
+            <rect x="0" y="860" width="1920" height="220"/>
+            <path d="M120,860 L120,560 L340,470 L340,860 Z"/>
+            <path d="M400,860 L400,640 L560,580 L560,860 Z"/>
+            <path d="M1420,860 L1420,600 L1580,520 L1580,860 Z"/>
+            <path d="M1640,860 L1640,680 L1820,620 L1820,860 Z"/>
+          </g>
+          <g opacity="0.36" stroke="#C89D42" stroke-width="6">
+            <path d="M700,900 L1220,900"/>
+            <path d="M760,960 L1160,960"/>
+          </g>
+        </svg>
+      </div>
+      <div id="s08-fg" class="hero-container">
+        <svg viewBox="0 0 1920 1080">
+          <defs>
+            <radialGradient id="s08LampGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#D9822B" stop-opacity="0.52"/>
+              <stop offset="100%" stop-color="#D9822B" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="s08Blur" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="20"/>
+            </filter>
+          </defs>
+          <ellipse cx="1420" cy="320" rx="300" ry="260" fill="url(#s08LampGlow)" filter="url(#s08Blur)"/>
+          <circle cx="1420" cy="320" r="54" fill="#FAF7F0" opacity="0.92"/>
+          <circle cx="1420" cy="320" r="110" stroke="#C89D42" stroke-width="12" fill="none" opacity="0.6"/>
+          <g stroke="#1E1813" stroke-width="22" fill="none" opacity="0.92">
+            <circle cx="860" cy="640" r="200"/>
+            <circle cx="860" cy="640" r="120"/>
+          </g>
+          <g stroke="#C2593F" stroke-width="12" fill="none" opacity="0.85">
+            <path d="M860,440 L860,840"/>
+            <path d="M660,640 L1060,640"/>
+            <path d="M720,500 L1000,780"/>
+            <path d="M1000,500 L720,780"/>
+          </g>
+        </svg>
+      </div>
+      <div id="s08-text" class="text-container" style="position: absolute; top: 100px; left: 100px; color: #D9822B; font-family: 'Archivo Black'; font-size: 64px; background: rgba(7,10,18,0.55); padding: 14px 28px; border-radius: 10px;">
+        PARIS ARRIVAL
+      </div>
+    </div>
+  </div>
+  <script>
+    (function initS08() {
+      const ID = 's08-paris-arrival';
+      const tl = gsap.timeline({ paused: true });
+      tl.to({}, { duration: 18.00 }, 0);
+      tl.from('#s08-fg', { duration: 2.2, opacity: 0, scale: 0.88, ease: 'power2.inOut' }, 1.2);
+      tl.from('#s08-text', { duration: 0.7, opacity: 0, scale: 0.85, ease: 'back.out(1.7)' }, 2.4);
+      tl.to('#s08-fg', { duration: 8.0, rotation: 12, transformOrigin: '50% 60%', ease: 'sine.inOut', yoyo: true, repeat: 1 }, 7.0);
+      window.__timelines = window.__timelines || {};
+      window.__timelines[ID] = tl;
+    })();
+  </script>
+</template>

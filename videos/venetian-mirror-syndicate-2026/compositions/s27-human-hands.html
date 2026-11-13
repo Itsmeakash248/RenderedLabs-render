@@ -1,0 +1,534 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s27-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s27-human-hands"] .s27-stage{position:absolute;inset:0;transform-origin:50% 54%;}
+[data-composition-id="s27-human-hands"] .s27-ground{position:absolute;inset:0;background:
+  radial-gradient(42% 38% at 18% 32%, rgba(255,206,124,0.52) 0%, rgba(255,206,124,0.15) 56%, rgba(255,206,124,0) 82%),
+  radial-gradient(38% 36% at 84% 74%, rgba(194,89,63,0.14) 0%, rgba(194,89,63,0) 76%),
+  linear-gradient(176deg, #F9EFD9 0%, #F1DDBB 32%, #E2C69E 62%, #C6A279 100%);}
+[data-composition-id="s27-human-hands"] .s27-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="s27-human-hands"] .s27-p-bg{z-index:1;}
+[data-composition-id="s27-human-hands"] .s27-p-mg{z-index:2;}
+[data-composition-id="s27-human-hands"] .s27-p-fg{z-index:4;}
+[data-composition-id="s27-human-hands"] .s27-grain{position:absolute;inset:0;z-index:6;pointer-events:none;
+  background-image:radial-gradient(rgba(43,31,23,0.55) 0.4px, transparent 0.5px);background-size:3px 3px;
+  opacity:0.12;mix-blend-mode:multiply;}
+[data-composition-id="s27-human-hands"] .s27-vignette{position:absolute;inset:0;z-index:7;pointer-events:none;
+  background:
+    linear-gradient(to top, rgba(43,31,23,0.40) 0%, rgba(43,31,23,0.1) 15%, rgba(43,31,23,0) 30%),
+    linear-gradient(to right, rgba(43,31,23,0.28) 0%, rgba(43,31,23,0.05) 18%, rgba(43,31,23,0) 36%),
+    linear-gradient(to left, rgba(43,31,23,0.22) 0%, rgba(43,31,23,0) 28%),
+    radial-gradient(110% 88% at 50% 50%, rgba(43,31,23,0) 46%, rgba(43,31,23,0.34) 100%);}
+[data-composition-id="s27-human-hands"] .s27-tag{position:absolute;left:86px;top:92px;z-index:8;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;
+  background:linear-gradient(180deg,#FDFAF4 0%,#F1E7D6 100%);
+  box-shadow:0 12px 30px rgba(43,31,23,0.26),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s27-human-hands"] .s27-tag-dot{width:15px;height:15px;border-radius:50%;background:#C2593F;
+  box-shadow:0 0 0 5px rgba(194,89,63,0.20),inset 0 0 0 3px #A8462F;}
+[data-composition-id="s27-human-hands"] .s27-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.16em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s27-human-hands"] .s27-rule{position:absolute;left:86px;top:158px;height:5px;width:0;z-index:8;background:#C2593F;border-radius:4px;
+  box-shadow:0 2px 6px rgba(43,31,23,0.25);}
+[data-composition-id="s27-human-hands"] .s27-mote{transform-box:fill-box;transform-origin:50% 50%;}
+</style>
+
+<div id="root" data-composition-id="s27-human-hands" data-width="1920" data-height="1080" data-start="0" data-duration="20.887">
+  <div class="s27-stage" id="s27-stage">
+    <div class="s27-ground"></div>
+
+    <!-- BG · the archive room, one lamp burning at the left -->
+    <svg class="s27-plane s27-p-bg" id="s27-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s27-wallgrad" x1="0" y1="0" x2="0.06" y2="1">
+          <stop offset="0" stop-color="#FAF1DD"/><stop offset="0.42" stop-color="#F1DEBE"/><stop offset="1" stop-color="#D8BB94"/>
+        </linearGradient>
+        <linearGradient id="s27-panelgrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F6E8CB" stop-opacity="0.55"/><stop offset="1" stop-color="#DCC29B" stop-opacity="0.18"/>
+        </linearGradient>
+        <linearGradient id="s27-floorgrad" x1="0" y1="0" x2="0.05" y2="1">
+          <stop offset="0" stop-color="#C99A67"/><stop offset="0.4" stop-color="#A97445"/><stop offset="1" stop-color="#6E4826"/>
+        </linearGradient>
+        <radialGradient id="s27-lampgrad" cx="50%" cy="48%" r="52%">
+          <stop offset="0" stop-color="#FFE8B4" stop-opacity="0.85"/><stop offset="0.45" stop-color="#FFD98E" stop-opacity="0.34"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="s27-plankpat" width="220" height="130" patternUnits="userSpaceOnUse">
+          <rect width="220" height="130" fill="none"/>
+          <path d="M0,0 H220" stroke="#6E4826" stroke-width="5" opacity="0.26"/>
+          <path d="M0,128 H220" stroke="#E0BE90" stroke-width="3" opacity="0.14"/>
+          <path d="M112,0 V130" stroke="#6E4826" stroke-width="4" opacity="0.16"/>
+        </pattern>
+        <filter id="s27-bblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="36"/></filter>
+        <filter id="s27-grainf" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.84" numOctaves="2" seed="271" result="n"/>
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.13  0 0 0 0 0.10  0 0 0 0 0.07  0 0 0 0.48 0"/>
+        </filter>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s27-wallgrad)"/>
+
+      <g id="s27-wallpanel-in">
+        <rect x="0" y="0" width="1920" height="196" fill="#E9D4AF" opacity="0.34"/>
+        <path d="M0,196 H1920" stroke="#A97445" stroke-width="6" opacity="0.26"/>
+        <path d="M0,214 H1920" stroke="#FBF1DA" stroke-width="4" opacity="0.42"/>
+        <g stroke="#A97445" stroke-width="4" opacity="0.13">
+          <path d="M300,214 V906"/><path d="M640,214 V906"/><path d="M980,214 V906"/>
+          <path d="M1320,214 V906"/><path d="M1660,214 V906"/>
+        </g>
+        <g fill="url(#s27-panelgrad)" opacity="0.6">
+          <rect x="318" y="250" width="300" height="620" rx="10"/>
+          <rect x="998" y="250" width="300" height="620" rx="10"/>
+          <rect x="1338" y="250" width="300" height="620" rx="10"/>
+        </g>
+        <path d="M0,880 H1920" stroke="#8A5F36" stroke-width="8" opacity="0.32"/>
+        <path d="M0,902 H1920" stroke="#6E4826" stroke-width="6" opacity="0.22"/>
+      </g>
+
+      <!-- a shelf of refused folios at the right edge -->
+      <g id="s27-shelf-in">
+        <rect x="1648" y="330" width="272" height="20" rx="4" fill="#8A5F36" opacity="0.55"/>
+        <rect x="1648" y="600" width="272" height="20" rx="4" fill="#8A5F36" opacity="0.5"/>
+        <g opacity="0.72">
+          <rect x="1672" y="238" width="30" height="92" rx="4" fill="#C99A67"/>
+          <rect x="1708" y="252" width="24" height="78" rx="4" fill="#A97445"/>
+          <rect x="1738" y="230" width="34" height="100" rx="4" fill="#DCC29B"/>
+          <rect x="1778" y="246" width="26" height="84" rx="4" fill="#8A5F36"/>
+          <rect x="1810" y="226" width="38" height="104" rx="4" fill="#C99A67"/>
+          <rect x="1854" y="254" width="26" height="76" rx="4" fill="#A97445"/>
+        </g>
+        <g opacity="0.62">
+          <rect x="1668" y="512" width="34" height="88" rx="4" fill="#A97445"/>
+          <rect x="1708" y="498" width="26" height="102" rx="4" fill="#DCC29B"/>
+          <rect x="1740" y="520" width="38" height="80" rx="4" fill="#C99A67"/>
+          <rect x="1784" y="504" width="24" height="96" rx="4" fill="#8A5F36"/>
+          <rect x="1814" y="526" width="32" height="74" rx="4" fill="#DCC29B"/>
+        </g>
+        <g stroke="#6E4826" stroke-width="3" opacity="0.28">
+          <path d="M1676,262 H1876"/><path d="M1672,540 H1884"/>
+        </g>
+      </g>
+
+      <!-- the lamp: warm wash and a brass bracket at the left edge -->
+      <g id="s27-lamp-in">
+        <ellipse id="s27-lampglow" cx="196" cy="352" rx="330" ry="300" fill="url(#s27-lampgrad)" opacity="0.72"/>
+        <path d="M0,320 H96" stroke="#8A5F36" stroke-width="12" opacity="0.6"/>
+        <path d="M96,300 Q150,300 156,352 Q150,404 96,404" fill="none" stroke="#9E742A" stroke-width="9" opacity="0.72"/>
+        <ellipse cx="160" cy="352" rx="20" ry="34" fill="#FCEBB8" opacity="0.9"/>
+        <ellipse cx="160" cy="352" rx="9" ry="20" fill="#FFF8E2" opacity="0.85"/>
+        <g stroke="#E89A3C" stroke-width="4" opacity="0.5">
+          <path d="M188,320 Q206,352 188,384"/><path d="M212,304 Q236,352 212,400"/>
+        </g>
+      </g>
+
+      <g id="s27-floor-in">
+        <rect x="0" y="900" width="1920" height="180" fill="url(#s27-floorgrad)"/>
+        <rect x="0" y="900" width="1920" height="180" fill="url(#s27-plankpat)" opacity="0.62"/>
+        <path d="M0,900 H1920" stroke="#E0BE90" stroke-width="5" opacity="0.3"/>
+        <ellipse cx="1010" cy="966" rx="330" ry="52" fill="#4A2E1C" opacity="0.26" filter="url(#s27-bblur)"/>
+        <g stroke="#4A2E1C" stroke-width="4" opacity="0.18">
+          <path d="M120,946 H560"/><path d="M760,1004 H1180"/><path d="M1360,940 H1800"/>
+        </g>
+      </g>
+    </svg>
+
+    <!-- MG · the easel, the mirror, and what the glass remembers -->
+    <svg class="s27-plane s27-p-mg" id="s27-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s27-brassgrad" x1="0" y1="0" x2="0.32" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.28" stop-color="#E3BB64"/><stop offset="0.6" stop-color="#C89D42"/>
+          <stop offset="0.86" stop-color="#9E742A"/><stop offset="1" stop-color="#D9AE56"/>
+        </linearGradient>
+        <linearGradient id="s27-brassgrad2" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#E3BB64"/><stop offset="0.5" stop-color="#C89D42"/><stop offset="1" stop-color="#8A5F36"/>
+        </linearGradient>
+        <linearGradient id="s27-glassgrad" x1="0.08" y1="0" x2="0.9" y2="1">
+          <stop offset="0" stop-color="#FFF8E2"/><stop offset="0.34" stop-color="#F6E6C6"/>
+          <stop offset="0.66" stop-color="#E9D4AF"/><stop offset="1" stop-color="#D6B98F"/>
+        </linearGradient>
+        <linearGradient id="s27-skingrad" gradientUnits="userSpaceOnUse" x1="-150" y1="-290" x2="150" y2="270">
+          <stop offset="0" stop-color="#F3C9A2"/><stop offset="0.44" stop-color="#DCA57C"/><stop offset="1" stop-color="#B9794F"/>
+        </linearGradient>
+        <linearGradient id="s27-papergrad" x1="0" y1="0" x2="0.14" y2="1">
+          <stop offset="0" stop-color="#FFFDF6"/><stop offset="0.5" stop-color="#FBF1DA"/><stop offset="1" stop-color="#E9D4AF"/>
+        </linearGradient>
+        <linearGradient id="s27-lettergrad" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#FDF7E7"/><stop offset="0.6" stop-color="#F3E4C8"/><stop offset="1" stop-color="#E2CBA6"/>
+        </linearGradient>
+        <linearGradient id="s27-easelgrad" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#A97445"/><stop offset="0.5" stop-color="#8A5F36"/><stop offset="1" stop-color="#4A2E1C"/>
+        </linearGradient>
+        <radialGradient id="s27-printgrad" cx="50%" cy="50%" r="52%">
+          <stop offset="0" stop-color="#E89A3C" stop-opacity="0.72"/><stop offset="0.55" stop-color="#C2593F" stop-opacity="0.36"/>
+          <stop offset="1" stop-color="#C2593F" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s27-poolgrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFE8B4" stop-opacity="0.6"/><stop offset="0.55" stop-color="#FFD98E" stop-opacity="0.22"/>
+          <stop offset="1" stop-color="#FFD98E" stop-opacity="0"/>
+        </radialGradient>
+        <clipPath id="s27-glassclip"><rect x="-286" y="-371" width="572" height="742" rx="8"/></clipPath>
+        <clipPath id="s27-paperclip"><rect id="s27-paperclip-rect" x="-288" y="371" width="576" height="0"/></clipPath>
+        <filter id="s27-mblur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="12"/></filter>
+        <filter id="s27-sblur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+        <filter id="s27-pblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="8"/></filter>
+      </defs>
+
+      <!-- easel behind the frame -->
+      <g id="s27-easel-in">
+        <path d="M1010,96 L1010,1010" stroke="url(#s27-easelgrad)" stroke-width="26" stroke-linecap="round"/>
+        <path d="M1010,470 L836,1014" stroke="url(#s27-easelgrad)" stroke-width="24" stroke-linecap="round"/>
+        <path d="M1010,470 L1184,1014" stroke="url(#s27-easelgrad)" stroke-width="24" stroke-linecap="round"/>
+        <path d="M868,760 H1152" stroke="#6E4826" stroke-width="18" stroke-linecap="round"/>
+        <path d="M862,918 H1158" stroke="#8A5F36" stroke-width="22" stroke-linecap="round"/>
+        <rect x="848" y="902" width="324" height="18" rx="6" fill="url(#s27-brassgrad2)" opacity="0.9"/>
+        <circle cx="1010" cy="760" r="14" fill="#C89D42" stroke="#6E4826" stroke-width="4"/>
+        <g stroke="#4A2E1C" stroke-width="4" opacity="0.4">
+          <path d="M900,990 L884,1022"/><path d="M1120,990 L1136,1022"/>
+        </g>
+      </g>
+
+      <g transform="translate(1010,490)">
+        <g id="s27-mirror-in">
+
+          <!-- frame shadow -->
+          <rect x="-338" y="-423" width="676" height="846" rx="30" fill="#4A2E1C" opacity="0.26" filter="url(#s27-mblur)"/>
+
+          <!-- outer gilt frame -->
+          <rect x="-330" y="-415" width="660" height="830" rx="24" fill="url(#s27-brassgrad)" stroke="#6E4826" stroke-width="9"/>
+          <rect x="-312" y="-397" width="624" height="794" rx="18" fill="none" stroke="#FCEBB8" stroke-width="5" opacity="0.62"/>
+          <rect x="-298" y="-383" width="596" height="766" rx="14" fill="url(#s27-brassgrad2)" stroke="#9E742A" stroke-width="6"/>
+          <rect x="-286" y="-371" width="572" height="742" rx="10" fill="#3A2A1E" opacity="0.55"/>
+          <rect x="-282" y="-367" width="564" height="734" rx="8" fill="none" stroke="#FCEBB8" stroke-width="4" opacity="0.5"/>
+
+          <!-- glass -->
+          <g clip-path="url(#s27-glassclip)">
+            <rect x="-286" y="-371" width="572" height="742" fill="url(#s27-glassgrad)"/>
+            <ellipse cx="-120" cy="-250" rx="220" ry="160" fill="#FFFDF6" opacity="0.4"/>
+            <ellipse cx="180" cy="300" rx="190" ry="200" fill="#C99A67" opacity="0.18"/>
+            <g id="s27-glasssheen">
+              <path d="M-260,-350 L-150,-350 L-250,330 L-286,330 Z" fill="#FFFDF6" opacity="0.26"/>
+              <path d="M-60,-350 L-20,-350 L-120,330 L-160,330 Z" fill="#FFFDF6" opacity="0.16"/>
+              <path d="M180,-350 L214,-350 L114,330 L80,330 Z" fill="#FFFDF6" opacity="0.12"/>
+            </g>
+
+            <!-- the refusal letter, kept behind the glass -->
+            <g transform="translate(-148,44) rotate(-7)">
+              <g id="s27-letter-in">
+                <rect x="-108" y="-138" width="216" height="276" rx="5" fill="#4A2E1C" opacity="0.18" filter="url(#s27-sblur)"/>
+                <rect x="-106" y="-140" width="212" height="272" rx="4" fill="url(#s27-lettergrad)" stroke="#A97445" stroke-width="4"/>
+                <path d="M-86,-140 L-74,-154 L-60,-140" fill="#F3E4C8" stroke="#A97445" stroke-width="3" opacity="0.7"/>
+                <g stroke="#6E4826" stroke-width="4" opacity="0.4">
+                  <path d="M-78,-96 H78"/><path d="M-78,-64 H62"/><path d="M-78,-32 H74"/>
+                  <path d="M-78,0 H54"/><path d="M-78,32 H70"/><path d="M-78,64 H44"/>
+                </g>
+                <g stroke="#8A5F36" stroke-width="3" opacity="0.3">
+                  <path d="M-78,92 H20"/><path d="M-78,112 H-6"/>
+                </g>
+                <circle cx="54" cy="86" r="30" fill="#C2593F" stroke="#8A2F22" stroke-width="4" opacity="0.9"/>
+                <circle cx="54" cy="86" r="20" fill="none" stroke="#F3C9A2" stroke-width="3" opacity="0.55"/>
+                <g stroke="#F3C9A2" stroke-width="3" opacity="0.45">
+                  <path d="M44,86 H64"/><path d="M54,76 V96"/>
+                </g>
+              </g>
+            </g>
+
+            <!-- the parchment the mirror becomes -->
+            <g clip-path="url(#s27-paperclip)">
+              <rect x="-288" y="-371" width="576" height="742" fill="url(#s27-papergrad)"/>
+              <rect x="-288" y="-371" width="576" height="742" fill="#C99A67" opacity="0.1"/>
+              <g stroke="#A97445" stroke-width="3" opacity="0.22">
+                <path d="M-230,-300 H230"/><path d="M-230,-232 H230"/><path d="M-230,-164 H196"/>
+                <path d="M-230,-96 H230"/><path d="M-230,-28 H180"/><path d="M-230,40 H230"/>
+                <path d="M-230,108 H204"/><path d="M-230,176 H230"/><path d="M-230,244 H168"/>
+              </g>
+              <g stroke="#8A5F36" stroke-width="3" opacity="0.16">
+                <path d="M-230,-330 H-120"/><path d="M120,-330 H230"/>
+              </g>
+              <circle cx="190" cy="300" r="40" fill="#C2593F" opacity="0.16"/>
+              <circle cx="190" cy="300" r="26" fill="none" stroke="#C2593F" stroke-width="4" opacity="0.22"/>
+            </g>
+
+            <!-- the print the hand leaves -->
+            <g id="s27-print-in" opacity="0">
+              <ellipse cx="30" cy="96" rx="168" ry="206" fill="url(#s27-printgrad)" filter="url(#s27-mblur)"/>
+              <g filter="url(#s27-pblur)" fill="#C2593F" opacity="0.46">
+                <path d="M-105,-30 Q-105,-52 -83,-52 H83 Q105,-52 105,-30 V140 Q105,176 69,176 H-69 Q-105,176 -105,140 Z"/>
+                <rect x="-92" y="-256" width="52" height="256" rx="26"/>
+                <rect x="-32" y="-286" width="54" height="286" rx="27"/>
+                <rect x="30" y="-266" width="54" height="266" rx="27"/>
+                <rect x="90" y="-216" width="50" height="216" rx="25"/>
+                <g transform="translate(-116,86) rotate(-38)"><rect x="-30" y="-88" width="60" height="176" rx="30"/></g>
+                <rect x="-58" y="168" width="132" height="96" rx="24"/>
+              </g>
+              <g fill="#E89A3C" opacity="0.3">
+                <ellipse cx="-66" cy="-170" rx="15" ry="42"/>
+                <ellipse cx="-5" cy="-196" rx="15" ry="48"/>
+                <ellipse cx="57" cy="-182" rx="15" ry="44"/>
+                <ellipse cx="115" cy="-142" rx="13" ry="34"/>
+              </g>
+            </g>
+
+            <!-- the hand pressed to the glass -->
+            <g transform="translate(24,40)">
+              <g id="s27-hand-in">
+                <g stroke="#8A5F36" stroke-width="8" fill="url(#s27-skingrad)">
+                  <g transform="translate(-92,0)"><g id="s27-f1-in"><rect x="-26" y="-256" width="52" height="256" rx="26"/></g></g>
+                  <g transform="translate(-32,0)"><g id="s27-f2-in"><rect x="-27" y="-286" width="54" height="286" rx="27"/></g></g>
+                  <g transform="translate(30,0)"><g id="s27-f3-in"><rect x="-27" y="-266" width="54" height="266" rx="27"/></g></g>
+                  <g transform="translate(90,0)"><g id="s27-f4-in"><rect x="-25" y="-216" width="50" height="216" rx="25"/></g></g>
+                  <g transform="translate(-116,86) rotate(-38)"><g id="s27-f5-in"><rect x="-30" y="-88" width="60" height="176" rx="30"/></g></g>
+                  <rect x="-58" y="150" width="132" height="114" rx="24"/>
+                  <path d="M-105,-30 Q-105,-52 -83,-52 H83 Q105,-52 105,-30 V140 Q105,176 69,176 H-69 Q-105,176 -105,140 Z" stroke="none"/>
+                  <path d="M-105,140 V-30 Q-105,-52 -83,-52 H83 Q105,-52 105,-30 V140" fill="none" stroke="#8A5F36" stroke-width="8"/>
+                </g>
+                <g stroke="#8A5F36" stroke-width="4" opacity="0.28">
+                  <path d="M-92,-30 V6"/><path d="M-32,-30 V6"/><path d="M30,-30 V6"/><path d="M90,-30 V2"/>
+                  <path d="M-64,104 Q0,136 66,102"/><path d="M-54,148 Q0,174 56,146"/>
+                  <path d="M-30,190 V248"/><path d="M30,190 V248"/>
+                </g>
+                <g fill="#F3C9A2" opacity="0.55">
+                  <ellipse cx="-66" cy="-214" rx="15" ry="22"/><ellipse cx="-5" cy="-242" rx="15" ry="24"/>
+                  <ellipse cx="57" cy="-222" rx="15" ry="22"/><ellipse cx="115" cy="-174" rx="13" ry="19"/>
+                </g>
+                <g fill="#B9794F" opacity="0.18">
+                  <ellipse cx="16" cy="104" rx="78" ry="66"/>
+                </g>
+                <circle id="s27-ripple1" cx="0" cy="60" r="16" fill="none" stroke="#FFF8E2" stroke-width="7" opacity="0"/>
+                <circle id="s27-ripple2" cx="0" cy="60" r="16" fill="none" stroke="#FFE8B4" stroke-width="5" opacity="0"/>
+              </g>
+            </g>
+
+            <!-- glass glints -->
+            <g id="s27-glints">
+              <path d="M-250,-300 L-214,-300 L-262,120 L-286,120 Z" fill="#FFFDF6" opacity="0.42"/>
+              <path d="M120,-340 L138,-340 L88,60 L70,60 Z" fill="#FFFDF6" opacity="0.3"/>
+              <path d="M220,180 L236,180 L206,360 L190,360 Z" fill="#FFFDF6" opacity="0.24"/>
+            </g>
+          </g>
+
+          <!-- frame hardware on top of the glass edge -->
+          <g fill="url(#s27-brassgrad)" stroke="#6E4826" stroke-width="5">
+            <circle cx="-300" cy="-385" r="26"/><circle cx="300" cy="-385" r="26"/>
+            <circle cx="-300" cy="385" r="26"/><circle cx="300" cy="385" r="26"/>
+          </g>
+          <g fill="#FCEBB8" opacity="0.55">
+            <circle cx="-300" cy="-385" r="9"/><circle cx="300" cy="-385" r="9"/>
+            <circle cx="-300" cy="385" r="9"/><circle cx="300" cy="385" r="9"/>
+          </g>
+
+          <!-- crest and plinth -->
+          <g transform="translate(0,-452)">
+            <g id="s27-crest-in">
+              <path d="M-118,26 Q-118,-16 -74,-16 H74 Q118,-16 118,26 Q118,60 74,60 H-74 Q-118,60 -118,26 Z" fill="url(#s27-brassgrad)" stroke="#6E4826" stroke-width="7"/>
+              <path d="M-88,22 H88" stroke="#FCEBB8" stroke-width="4" opacity="0.55"/>
+              <circle cx="0" cy="22" r="13" fill="#C89D42" stroke="#6E4826" stroke-width="4"/>
+              <circle cx="0" cy="22" r="5" fill="#FCEBB8" opacity="0.8"/>
+            </g>
+          </g>
+          <g transform="translate(0,432)">
+            <g id="s27-plinth-in">
+              <rect x="-148" y="-16" width="296" height="34" rx="10" fill="url(#s27-brassgrad2)" stroke="#6E4826" stroke-width="6"/>
+              <path d="M-108,2 H108" stroke="#FCEBB8" stroke-width="4" opacity="0.45"/>
+            </g>
+          </g>
+
+          <!-- warm pool on the floor beneath the frame -->
+          <ellipse cx="0" cy="470" rx="300" ry="54" fill="url(#s27-poolgrad)" opacity="0.55"/>
+        </g>
+      </g>
+    </svg>
+
+    <!-- FG · seven name tags socketing around the frame, dust in the lamp -->
+    <svg class="s27-plane s27-p-fg" id="s27-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s27-taggrad" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.34" stop-color="#E3BB64"/><stop offset="0.7" stop-color="#C89D42"/>
+          <stop offset="1" stop-color="#9E742A"/>
+        </linearGradient>
+        <filter id="s27-fgblur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="7"/></filter>
+      </defs>
+
+      <g transform="translate(650,244) rotate(-6)">
+        <g class="s27-name" id="s27-name1" opacity="0">
+          <rect x="-98" y="-28" width="196" height="56" rx="28" fill="#4A2E1C" opacity="0.24" filter="url(#s27-fgblur)"/>
+          <rect x="-96" y="-27" width="192" height="54" rx="27" fill="url(#s27-taggrad)" stroke="#9E742A" stroke-width="5"/>
+          <line x1="-62" y1="-7" x2="54" y2="-7" stroke="#6E4826" stroke-width="5" opacity="0.42"/>
+          <line x1="-42" y1="11" x2="38" y2="11" stroke="#6E4826" stroke-width="4" opacity="0.32"/>
+          <circle cx="-72" cy="0" r="7" fill="#C2593F" opacity="0.85"/>
+        </g>
+      </g>
+      <g transform="translate(636,626) rotate(4)">
+        <g class="s27-name" id="s27-name2" opacity="0">
+          <rect x="-98" y="-28" width="196" height="56" rx="28" fill="#4A2E1C" opacity="0.24" filter="url(#s27-fgblur)"/>
+          <rect x="-96" y="-27" width="192" height="54" rx="27" fill="url(#s27-taggrad)" stroke="#9E742A" stroke-width="5"/>
+          <line x1="-62" y1="-7" x2="54" y2="-7" stroke="#6E4826" stroke-width="5" opacity="0.42"/>
+          <line x1="-42" y1="11" x2="38" y2="11" stroke="#6E4826" stroke-width="4" opacity="0.32"/>
+          <circle cx="-72" cy="0" r="7" fill="#C2593F" opacity="0.85"/>
+        </g>
+      </g>
+      <g transform="translate(1374,300) rotate(5)">
+        <g class="s27-name" id="s27-name3" opacity="0">
+          <rect x="-98" y="-28" width="196" height="56" rx="28" fill="#4A2E1C" opacity="0.24" filter="url(#s27-fgblur)"/>
+          <rect x="-96" y="-27" width="192" height="54" rx="27" fill="url(#s27-taggrad)" stroke="#9E742A" stroke-width="5"/>
+          <line x1="-62" y1="-7" x2="54" y2="-7" stroke="#6E4826" stroke-width="5" opacity="0.42"/>
+          <line x1="-42" y1="11" x2="38" y2="11" stroke="#6E4826" stroke-width="4" opacity="0.32"/>
+          <circle cx="-72" cy="0" r="7" fill="#C2593F" opacity="0.85"/>
+        </g>
+      </g>
+      <g transform="translate(1390,676) rotate(-4)">
+        <g class="s27-name" id="s27-name4" opacity="0">
+          <rect x="-98" y="-28" width="196" height="56" rx="28" fill="#4A2E1C" opacity="0.24" filter="url(#s27-fgblur)"/>
+          <rect x="-96" y="-27" width="192" height="54" rx="27" fill="url(#s27-taggrad)" stroke="#9E742A" stroke-width="5"/>
+          <line x1="-62" y1="-7" x2="54" y2="-7" stroke="#6E4826" stroke-width="5" opacity="0.42"/>
+          <line x1="-42" y1="11" x2="38" y2="11" stroke="#6E4826" stroke-width="4" opacity="0.32"/>
+          <circle cx="-72" cy="0" r="7" fill="#C2593F" opacity="0.85"/>
+        </g>
+      </g>
+      <g transform="translate(726,58) rotate(-3)">
+        <g class="s27-name" id="s27-name5" opacity="0">
+          <rect x="-98" y="-28" width="196" height="56" rx="28" fill="#4A2E1C" opacity="0.24" filter="url(#s27-fgblur)"/>
+          <rect x="-96" y="-27" width="192" height="54" rx="27" fill="url(#s27-taggrad)" stroke="#9E742A" stroke-width="5"/>
+          <line x1="-62" y1="-7" x2="54" y2="-7" stroke="#6E4826" stroke-width="5" opacity="0.42"/>
+          <line x1="-42" y1="11" x2="38" y2="11" stroke="#6E4826" stroke-width="4" opacity="0.32"/>
+          <circle cx="-72" cy="0" r="7" fill="#C2593F" opacity="0.85"/>
+        </g>
+      </g>
+      <g transform="translate(1294,52) rotate(3)">
+        <g class="s27-name" id="s27-name6" opacity="0">
+          <rect x="-98" y="-28" width="196" height="56" rx="28" fill="#4A2E1C" opacity="0.24" filter="url(#s27-fgblur)"/>
+          <rect x="-96" y="-27" width="192" height="54" rx="27" fill="url(#s27-taggrad)" stroke="#9E742A" stroke-width="5"/>
+          <line x1="-62" y1="-7" x2="54" y2="-7" stroke="#6E4826" stroke-width="5" opacity="0.42"/>
+          <line x1="-42" y1="11" x2="38" y2="11" stroke="#6E4826" stroke-width="4" opacity="0.32"/>
+          <circle cx="-72" cy="0" r="7" fill="#C2593F" opacity="0.85"/>
+        </g>
+      </g>
+      <g transform="translate(1010,966) rotate(0)">
+        <g class="s27-name" id="s27-name7" opacity="0">
+          <rect x="-98" y="-28" width="196" height="56" rx="28" fill="#4A2E1C" opacity="0.24" filter="url(#s27-fgblur)"/>
+          <rect x="-96" y="-27" width="192" height="54" rx="27" fill="url(#s27-taggrad)" stroke="#9E742A" stroke-width="5"/>
+          <line x1="-62" y1="-7" x2="54" y2="-7" stroke="#6E4826" stroke-width="5" opacity="0.42"/>
+          <line x1="-42" y1="11" x2="38" y2="11" stroke="#6E4826" stroke-width="4" opacity="0.32"/>
+          <circle cx="-72" cy="0" r="7" fill="#C2593F" opacity="0.85"/>
+        </g>
+      </g>
+
+      <g class="s27-mote" fill="#E89A3C">
+        <circle id="s27-d1" cx="286" cy="620" r="4" opacity="0.5"/>
+        <circle id="s27-d2" cx="372" cy="742" r="3" opacity="0.42"/>
+        <circle id="s27-d3" cx="196" cy="824" r="5" opacity="0.4"/>
+        <circle id="s27-d4" cx="452" cy="540" r="3" opacity="0.46"/>
+        <circle id="s27-d5" cx="1560" cy="620" r="4" opacity="0.4"/>
+        <circle id="s27-d6" cx="1478" cy="782" r="3" opacity="0.36"/>
+        <circle id="s27-d7" cx="1636" cy="470" r="4" opacity="0.32"/>
+        <circle id="s27-d8" cx="1010" cy="180" r="3" opacity="0.38"/>
+      </g>
+
+      <!-- front easel foot, closest to the lens -->
+      <g id="s27-foot-in">
+        <ellipse cx="1010" cy="1042" rx="168" ry="24" fill="#4A2E1C" opacity="0.32"/>
+        <rect x="942" y="1004" width="136" height="26" rx="10" fill="#8A5F36" stroke="#4A2E1C" stroke-width="4"/>
+        <rect x="974" y="1010" width="72" height="8" rx="4" fill="#E3BB64" opacity="0.7"/>
+      </g>
+
+      <!-- seam handoff: the S26 canvas and its gold legs rush past the lens -->
+      <g id="s27-handoff">
+        <rect x="-240" y="-240" width="2400" height="1560" fill="#5C3A20"/>
+        <rect x="-240" y="-240" width="2400" height="1560" fill="#8A5F36" opacity="0.35"/>
+        <g stroke="#E3BB64" stroke-width="74" opacity="0.92" stroke-linecap="round">
+          <path d="M742,-120 L612,1200"/>
+          <path d="M1278,-120 L1408,1200"/>
+          <path d="M250,912 H1670" stroke-width="56"/>
+        </g>
+        <g stroke="#FCEBB8" stroke-width="10" opacity="0.5">
+          <path d="M742,-120 L612,1200"/><path d="M1278,-120 L1408,1200"/>
+        </g>
+        <path d="M250,912 H1670" stroke="#9E742A" stroke-width="10" opacity="0.55"/>
+      </g>
+    </svg>
+
+    <div class="s27-grain"></div>
+    <div class="s27-vignette"></div>
+    <div class="s27-tag" id="s27-tag">
+      <span class="s27-tag-dot"></span>
+      <span class="s27-tag-text">HUMAN HANDS</span>
+    </div>
+    <div class="s27-rule" id="s27-rule"></div>
+  </div>
+</div>
+
+<script>
+(function initS27(){
+  var ID = "s27-human-hands";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, { duration: 20.887 }, 0);
+
+  // ── camera: a slow push that settles on the glass ────────────────────────
+  tl.fromTo("#s27-stage", { scale: 1.0, y: 0 }, { scale: 1.022, y: -12, duration: 20.6, ease: "sine.inOut" }, 0.08);
+  tl.fromTo("#s27-bg", { x: -6, y: -4 }, { x: 4, y: 2, duration: 20.4, ease: "sine.inOut" }, 0.08);
+  tl.fromTo("#s27-fg", { x: 8 }, { x: -6, duration: 20.4, ease: "sine.inOut" }, 0.08);
+
+  // ── B1 · the room, the easel, the frame ──────────────────────────────────
+  tl.fromTo("#s27-handoff", { scale: 1, opacity: 1 }, { scale: 1.5, opacity: 0, duration: 0.62, ease: "power3.inOut", transformOrigin: "50% 50%" }, 0.02);
+  tl.fromTo("#s27-wallpanel-in", { y: 26, opacity: 0 }, { y: 0, opacity: 1, duration: 1.1, ease: "power2.out" }, 0.14);
+  tl.fromTo("#s27-floor-in", { y: 54, opacity: 0 }, { y: 0, opacity: 1, duration: 1.0, ease: "power2.out" }, 0.28);
+  tl.fromTo("#s27-shelf-in", { x: 40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.9, ease: "power2.out" }, 0.46);
+  tl.fromTo("#s27-lamp-in", { x: -30, opacity: 0 }, { x: 0, opacity: 1, duration: 0.9, ease: "power2.out" }, 0.34);
+  tl.fromTo("#s27-easel-in", { y: 66, opacity: 0 }, { y: 0, opacity: 1, duration: 1.0, ease: "power3.out" }, 0.52);
+  tl.fromTo("#s27-mirror-in", { scale: 0.955, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.15, ease: "power3.out" }, 0.66);
+  tl.fromTo("#s27-crest-in", { y: -56, opacity: 0, scale: 0.9 }, { y: 0, opacity: 1, scale: 1, duration: 0.72, ease: "back.out(1.5)" }, 1.42);
+  tl.fromTo("#s27-plinth-in", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "power2.out" }, 1.56);
+  tl.fromTo("#s27-glasssheen", { opacity: 0 }, { opacity: 1, duration: 1.3, ease: "sine.out" }, 1.18);
+  tl.fromTo("#s27-foot-in", { y: 26, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }, 1.72);
+
+  // ── B2 · the seven name tags socket around the frame ─────────────────────
+  tl.fromTo(".s27-name", { y: 74, opacity: 0, scale: 0.9 }, { y: 0, opacity: 1, scale: 1, duration: 0.78, ease: "back.out(1.6)", stagger: 0.18 }, 7.10);
+  tl.to(".s27-name", { y: -4, duration: 3.6, ease: "sine.inOut", yoyo: true, repeat: 3, stagger: 0.12 }, 9.10);
+  tl.fromTo("#s27-letter-in", { x: -46, opacity: 0 }, { x: 0, opacity: 1, duration: 0.95, ease: "power2.out" }, 6.42);
+  tl.fromTo("#s27-glints", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "sine.out" }, 7.10);
+  tl.to("#s27-glints", { opacity: 0.72, duration: 2.8, ease: "sine.inOut", yoyo: true, repeat: 4 }, 8.20);
+  tl.to("#s27-lampglow", { opacity: 0.9, duration: 2.2, ease: "sine.inOut", yoyo: true, repeat: 7 }, 1.60);
+
+  // ── B3 · the hand rises and presses on the refusal ───────────────────────
+  tl.fromTo("#s27-hand-in", { y: 132, opacity: 0, scale: 0.96 }, { y: 0, opacity: 1, scale: 1, duration: 1.5, ease: "power3.out" }, 10.15);
+  tl.to("#s27-f1-in", { rotation: -2.2, duration: 2.6, ease: "sine.inOut", yoyo: true, repeat: 2, transformOrigin: "50% 100%" }, 11.10);
+  tl.to("#s27-f2-in", { rotation: 1.4, duration: 2.9, ease: "sine.inOut", yoyo: true, repeat: 2, transformOrigin: "50% 100%" }, 11.24);
+  tl.to("#s27-f3-in", { rotation: -1.6, duration: 3.1, ease: "sine.inOut", yoyo: true, repeat: 2, transformOrigin: "50% 100%" }, 11.38);
+  tl.to("#s27-f4-in", { rotation: 2.4, duration: 2.4, ease: "sine.inOut", yoyo: true, repeat: 2, transformOrigin: "50% 100%" }, 11.52);
+  tl.to("#s27-f5-in", { rotation: 2.8, duration: 2.8, ease: "sine.inOut", yoyo: true, repeat: 2, transformOrigin: "50% 100%" }, 11.66);
+  tl.to("#s27-hand-in", { scale: 1.035, duration: 0.55, ease: "power2.in" }, 13.02);
+  tl.to("#s27-hand-in", { scale: 1.0, duration: 0.7, ease: "power2.out" }, 13.60);
+  tl.fromTo("#s27-ripple1", { attr: { r: 16 }, opacity: 0.8 }, { attr: { r: 232 }, opacity: 0, duration: 1.15, ease: "power2.out" }, 13.10);
+  tl.fromTo("#s27-ripple2", { attr: { r: 16 }, opacity: 0.65 }, { attr: { r: 178 }, opacity: 0, duration: 1.35, ease: "power2.out" }, 13.28);
+  tl.to("#s27-letter-in", { rotation: -2.4, duration: 1.4, ease: "power2.inOut" }, 13.06);
+  tl.to("#s27-glasssheen", { opacity: 0.72, duration: 1.8, ease: "sine.inOut", yoyo: true, repeat: 2 }, 12.60);
+
+  // ── B4 · withdrawal, print, and the glass turning to parchment ───────────
+  tl.to("#s27-hand-in", { y: 156, opacity: 0, scale: 0.97, duration: 1.35, ease: "power2.in" }, 16.98);
+  tl.fromTo("#s27-print-in", { opacity: 0, scale: 0.88 }, { opacity: 1, scale: 1, duration: 1.1, ease: "power2.out" }, 17.55);
+  tl.to("#s27-print-in", { opacity: 0.78, duration: 2.6, ease: "sine.inOut", yoyo: true, repeat: 1 }, 18.60);
+  tl.to("#s27-paperclip-rect", { attr: { y: -371, height: 742 }, duration: 1.15, ease: "power3.inOut" }, 18.28);
+  tl.to("#s27-mirror-in", { rotation: -3.0, duration: 1.5, ease: "power2.inOut", transformOrigin: "50% 50%" }, 18.42);
+  tl.to("#s27-mirror-in", { rotation: -2.55, duration: 0.34, ease: "sine.out", transformOrigin: "50% 50%" }, 20.02);
+  tl.fromTo("#s27-poolgrad", { opacity: 0.55 }, { opacity: 0.9, duration: 1.8, ease: "sine.out" }, 18.50);
+  tl.to("#s27-glints", { opacity: 0.34, duration: 1.6, ease: "sine.out" }, 18.40);
+  tl.to("#s27-tag", { clipPath: "inset(0% 0% 0% 0%)", duration: 0.01 }, 15.30);
+  tl.fromTo("#s27-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -14 }, { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.6, ease: "power3.inOut" }, 15.40);
+  tl.fromTo("#s27-rule", { width: 0 }, { width: 300, duration: 0.5, ease: "power2.out" }, 15.76);
+
+  // ── living hold: dust and embers never settle ────────────────────────────
+  tl.fromTo("#s27-d1", { y: 0, opacity: 0.5 }, { y: -132, opacity: 0, duration: 6.8, ease: "sine.out", repeat: 1 }, 2.20);
+  tl.fromTo("#s27-d2", { y: 0, opacity: 0.42 }, { y: -168, opacity: 0, duration: 7.6, ease: "sine.out", repeat: 1 }, 3.10);
+  tl.fromTo("#s27-d3", { y: 0, opacity: 0.4 }, { y: -146, opacity: 0, duration: 6.2, ease: "sine.out", repeat: 1 }, 4.30);
+  tl.fromTo("#s27-d4", { y: 0, opacity: 0.46 }, { y: -188, opacity: 0, duration: 8.2, ease: "sine.out" }, 5.10);
+  tl.fromTo("#s27-d5", { y: 0, opacity: 0.4 }, { y: -120, opacity: 0, duration: 6.6, ease: "sine.out", repeat: 1 }, 6.40);
+  tl.fromTo("#s27-d6", { y: 0, opacity: 0.36 }, { y: -156, opacity: 0, duration: 7.4, ease: "sine.out" }, 7.20);
+  tl.fromTo("#s27-d7", { y: 0, opacity: 0.32 }, { y: -104, opacity: 0, duration: 5.8, ease: "sine.out", repeat: 1 }, 8.10);
+  tl.fromTo("#s27-d8", { y: 0, opacity: 0.38 }, { y: -142, opacity: 0, duration: 7.0, ease: "sine.out" }, 9.30);
+  tl.to("#s27-crest-in", { rotation: 0.6, duration: 5.2, ease: "sine.inOut", yoyo: true, repeat: 3, transformOrigin: "50% 50%" }, 3.40);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

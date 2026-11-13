@@ -1,0 +1,577 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s13-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s13-payroll-foundry"] .s13-stage{position:absolute;inset:0;transform-origin:50% 60%;}
+[data-composition-id="s13-payroll-foundry"] .s13-ground{position:absolute;inset:0;background:
+  radial-gradient(52% 46% at 82% 62%, rgba(255,186,96,0.50) 0%, rgba(255,186,96,0.18) 46%, rgba(255,186,96,0) 76%),
+  radial-gradient(40% 34% at 16% 10%, rgba(255,236,196,0.48) 0%, rgba(255,236,196,0) 70%),
+  linear-gradient(174deg, #FBF2DE 0%, #F6E8CC 38%, #EFD9B4 68%, #E1C49B 100%);}
+[data-composition-id="s13-payroll-foundry"] .s13-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="s13-payroll-foundry"] .s13-p-bg{z-index:1;}
+[data-composition-id="s13-payroll-foundry"] .s13-p-mg{z-index:2;}
+[data-composition-id="s13-payroll-foundry"] .s13-p-fg{z-index:4;}
+[data-composition-id="s13-payroll-foundry"] .s13-grain{position:absolute;inset:0;z-index:6;pointer-events:none;
+  background-image:radial-gradient(rgba(43,31,23,0.55) 0.4px, transparent 0.5px);background-size:3px 3px;
+  opacity:0.10;mix-blend-mode:multiply;}
+[data-composition-id="s13-payroll-foundry"] .s13-vignette{position:absolute;inset:0;z-index:7;pointer-events:none;
+  background:
+    linear-gradient(to top, rgba(43,31,23,0.30) 0%, rgba(43,31,23,0.05) 14%, rgba(43,31,23,0) 30%),
+    linear-gradient(to right, rgba(43,31,23,0.20) 0%, rgba(43,31,23,0.03) 18%, rgba(43,31,23,0) 36%),
+    radial-gradient(116% 96% at 50% 46%, rgba(43,31,23,0) 52%, rgba(43,31,23,0.26) 100%);}
+[data-composition-id="s13-payroll-foundry"] .s13-tag{position:absolute;left:86px;top:92px;z-index:8;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;background:linear-gradient(180deg,#FDFAF4 0%,#F1E7D6 100%);
+  box-shadow:0 12px 30px rgba(43,31,23,0.26),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s13-payroll-foundry"] .s13-tag-dot{width:15px;height:15px;border-radius:50%;background:#C2593F;
+  box-shadow:0 0 0 5px rgba(194,89,63,0.20),inset 0 0 0 3px #A8462F;}
+[data-composition-id="s13-payroll-foundry"] .s13-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.14em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s13-payroll-foundry"] .s13-rule{position:absolute;left:86px;top:158px;height:5px;width:0;z-index:8;background:#C2593F;border-radius:4px;
+  box-shadow:0 2px 6px rgba(43,31,23,0.25);}
+[data-composition-id="s13-payroll-foundry"] .s13-mote{transform-box:fill-box;transform-origin:50% 50%;}
+[data-composition-id="s13-payroll-foundry"] .s13-arch,
+[data-composition-id="s13-payroll-foundry"] .s13-post-in,
+[data-composition-id="s13-payroll-foundry"] .s13-bar-in{transform-box:fill-box;transform-origin:50% 100%;}
+[data-composition-id="s13-payroll-foundry"] #s13-tagA,
+[data-composition-id="s13-payroll-foundry"] #s13-tagB,
+[data-composition-id="s13-payroll-foundry"] #s13-tagC,
+[data-composition-id="s13-payroll-foundry"] #s13-bigtag{transform-box:fill-box;}
+</style>
+
+<div id="root" data-composition-id="s13-payroll-foundry" data-width="1920" data-height="1080" data-start="0" data-duration="18.049">
+  <div class="s13-stage" id="s13-stage">
+    <div class="s13-ground"></div>
+
+    <!-- BG · workshop wall, brick courses, three furnace arches -->
+    <svg class="s13-plane s13-p-bg" id="s13-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s13-wall" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FAF0DA"/><stop offset="0.55" stop-color="#F2E0C1"/><stop offset="1" stop-color="#DFC7A2"/>
+        </linearGradient>
+        <pattern id="s13-bricks" width="188" height="96" patternUnits="userSpaceOnUse">
+          <g fill="none" stroke="#8A6B49" stroke-width="3" opacity="0.55">
+            <path d="M0,0 H188 M0,48 H188 M0,96 H188"/>
+            <path d="M0,0 V48 M94,0 V48 M47,48 V96 M141,48 V96"/>
+          </g>
+        </pattern>
+        <linearGradient id="s13-archin" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#4A2C1C"/><stop offset="0.46" stop-color="#6E3A1E"/>
+          <stop offset="0.78" stop-color="#B4601F"/><stop offset="1" stop-color="#E09238"/>
+        </linearGradient>
+        <radialGradient id="s13-fireglow" cx="50%" cy="58%" r="56%">
+          <stop offset="0" stop-color="#FFE7AE" stop-opacity="0.95"/>
+          <stop offset="0.42" stop-color="#FFB85C" stop-opacity="0.55"/>
+          <stop offset="1" stop-color="#E07A22" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="s13-floor" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#D8BC93"/><stop offset="0.4" stop-color="#C8A87C"/><stop offset="1" stop-color="#A9855A"/>
+        </linearGradient>
+        <linearGradient id="s13-beam" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#5C4030"/><stop offset="0.6" stop-color="#3A2A1E"/><stop offset="1" stop-color="#241812"/>
+        </linearGradient>
+        <filter id="s13-bblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="28"/></filter>
+        <filter id="s13-hblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="11"/></filter>
+        <radialGradient id="s13-lampglow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFF6D8" stop-opacity="0.9"/>
+          <stop offset="0.45" stop-color="#FFCE7C" stop-opacity="0.45"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="s13-grain" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="2" seed="29" result="n"/>
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0.5 0"/>
+        </filter>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s13-wall)"/>
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s13-bricks)" opacity="0.055"/>
+      <g id="s13-cornice">
+        <rect x="-20" y="-6" width="1960" height="54" fill="url(#s13-beam)"/>
+        <rect x="-20" y="48" width="1960" height="9" fill="#241812" opacity="0.55"/>
+        <g fill="#8A6B49" opacity="0.35">
+          <path d="M120,48 L150,96 L90,96 Z"/><path d="M420,48 L450,96 L390,96 Z"/><path d="M720,48 L750,96 L690,96 Z"/>
+          <path d="M1020,48 L1050,96 L990,96 Z"/><path d="M1320,48 L1350,96 L1290,96 Z"/><path d="M1620,48 L1650,96 L1590,96 Z"/>
+        </g>
+      </g>
+
+      <g id="s13-arches">
+        <g class="s13-archwrap" transform="translate(1140,706)">
+          <g class="s13-arch">
+            <path d="M-168,150 L-168,-30 C-168,-128 -96,-186 0,-186 C96,-186 168,-128 168,-30 L168,150 Z"
+                  fill="#7C4A28" stroke="#3A2A1E" stroke-width="11"/>
+            <path d="M-132,150 L-132,-24 C-132,-104 -74,-150 0,-150 C74,-150 132,-104 132,-24 L132,150 Z"
+                  fill="url(#s13-archin)" stroke="#2B1F17" stroke-width="7"/>
+            <ellipse class="s13-fire" cx="0" cy="118" rx="118" ry="76" fill="url(#s13-fireglow)" opacity="0.5"/>
+            <g stroke="#5C4030" stroke-width="6" opacity="0.55">
+              <path d="M-168,-30 L-132,-24"/><path d="M-168,30 L-132,24"/><path d="M-168,90 L-132,84"/>
+              <path d="M168,-30 L132,-24"/><path d="M168,30 L132,24"/><path d="M168,90 L132,84"/>
+            </g>
+            <g stroke="#7C4A28" stroke-width="7" opacity="0.7">
+              <path d="M-40,-146 L-34,-186"/><path d="M0,-150 V-186"/><path d="M40,-146 L34,-186"/>
+            </g>
+            <path d="M-132,150 H132" stroke="#2B1F17" stroke-width="10"/>
+            <g fill="#FFCE7C" opacity="0.85">
+              <ellipse cx="-52" cy="128" rx="26" ry="9"/><ellipse cx="6" cy="138" rx="34" ry="11"/><ellipse cx="58" cy="126" rx="22" ry="8"/>
+            </g>
+            <path d="M-96,132 L-40,120 M-10,140 L46,128" stroke="#FFE7AE" stroke-width="5" opacity="0.5" stroke-linecap="round"/>
+          </g>
+        </g>
+        <g class="s13-archwrap" transform="translate(1448,706)">
+          <g class="s13-arch">
+            <path d="M-168,150 L-168,-30 C-168,-128 -96,-186 0,-186 C96,-186 168,-128 168,-30 L168,150 Z"
+                  fill="#7C4A28" stroke="#3A2A1E" stroke-width="11"/>
+            <path d="M-132,150 L-132,-24 C-132,-104 -74,-150 0,-150 C74,-150 132,-104 132,-24 L132,150 Z"
+                  fill="url(#s13-archin)" stroke="#2B1F17" stroke-width="7"/>
+            <ellipse class="s13-fire" cx="0" cy="118" rx="118" ry="76" fill="url(#s13-fireglow)" opacity="0.62"/>
+            <g stroke="#5C4030" stroke-width="6" opacity="0.55">
+              <path d="M-168,-30 L-132,-24"/><path d="M-168,30 L-132,24"/><path d="M-168,90 L-132,84"/>
+              <path d="M168,-30 L132,-24"/><path d="M168,30 L132,24"/><path d="M168,90 L132,84"/>
+            </g>
+            <g stroke="#7C4A28" stroke-width="7" opacity="0.7">
+              <path d="M-40,-146 L-34,-186"/><path d="M0,-150 V-186"/><path d="M40,-146 L34,-186"/>
+            </g>
+            <path d="M-132,150 H132" stroke="#2B1F17" stroke-width="10"/>
+            <g fill="#FFCE7C" opacity="0.85">
+              <ellipse cx="-48" cy="130" rx="24" ry="9"/><ellipse cx="10" cy="140" rx="36" ry="12"/><ellipse cx="60" cy="128" rx="20" ry="8"/>
+            </g>
+            <path d="M-90,134 L-34,122 M-4,142 L52,130" stroke="#FFE7AE" stroke-width="5" opacity="0.55" stroke-linecap="round"/>
+          </g>
+        </g>
+        <g class="s13-archwrap" transform="translate(1756,706)">
+          <g class="s13-arch">
+            <path d="M-168,150 L-168,-30 C-168,-128 -96,-186 0,-186 C96,-186 168,-128 168,-30 L168,150 Z"
+                  fill="#7C4A28" stroke="#3A2A1E" stroke-width="11"/>
+            <path d="M-132,150 L-132,-24 C-132,-104 -74,-150 0,-150 C74,-150 132,-104 132,-24 L132,150 Z"
+                  fill="url(#s13-archin)" stroke="#2B1F17" stroke-width="7"/>
+            <ellipse class="s13-fire" cx="0" cy="118" rx="118" ry="76" fill="url(#s13-fireglow)" opacity="0.46"/>
+            <g stroke="#5C4030" stroke-width="6" opacity="0.55">
+              <path d="M-168,-30 L-132,-24"/><path d="M-168,30 L-132,24"/><path d="M-168,90 L-132,84"/>
+              <path d="M168,-30 L132,-24"/><path d="M168,30 L132,24"/><path d="M168,90 L132,84"/>
+            </g>
+            <path d="M-132,150 H132" stroke="#2B1F17" stroke-width="10"/>
+            <g fill="#FFCE7C" opacity="0.8">
+              <ellipse cx="-40" cy="132" rx="24" ry="9"/><ellipse cx="20" cy="140" rx="30" ry="11"/>
+            </g>
+          </g>
+        </g>
+        <g fill="#5C4030" opacity="0.4">
+          <rect x="1180" y="380" width="60" height="22"/><rect x="1488" y="380" width="60" height="22"/><rect x="1796" y="380" width="60" height="22"/>
+        </g>
+      </g>
+
+      <g id="s13-floor">
+        <rect x="0" y="932" width="1920" height="148" fill="url(#s13-floor)"/>
+        <path d="M0,932 H1920" stroke="#3A2A1E" stroke-width="9" opacity="0.45"/>
+        <path d="M0,946 H1920" stroke="#FFF0CE" stroke-width="5" opacity="0.28"/>
+        <g stroke="#8A6B49" stroke-width="4" opacity="0.3">
+          <path d="M180,932 L120,1080"/><path d="M520,932 L500,1080"/><path d="M900,932 L920,1080"/>
+          <path d="M1280,932 L1320,1080"/><path d="M1660,932 L1720,1080"/>
+        </g>
+        <g fill="#6E5338" opacity="0.25">
+          <ellipse cx="420" cy="1006" rx="70" ry="10"/><ellipse cx="980" cy="1032" rx="90" ry="12"/>
+          <ellipse cx="1480" cy="1002" rx="64" ry="9"/>
+        </g>
+      </g>
+
+      <ellipse cx="1450" cy="1010" rx="620" ry="120" fill="#E07A22" opacity="0.22" filter="url(#s13-bblur)"/>
+      <ellipse cx="420" cy="880" rx="520" ry="120" fill="#2B1F17" opacity="0.16" filter="url(#s13-bblur)"/>
+      <rect x="0" y="0" width="1920" height="1080" filter="url(#s13-grain)" opacity="0.055" style="mix-blend-mode:multiply"/>
+
+      <g id="s13-lamp" transform="translate(760,54)">
+        <path d="M0,0 V150" stroke="#3A2A1E" stroke-width="8"/>
+        <path d="M-30,150 H30" stroke="#3A2A1E" stroke-width="9" stroke-linecap="round"/>
+        <path d="M0,150 V184" stroke="#3A2A1E" stroke-width="7"/>
+        <circle id="s13-lamphalo" cx="0" cy="222" r="118" fill="url(#s13-lampglow)" opacity="0"/>
+        <path d="M-16,184 H16 L12,196 H-12 Z" fill="#3A2A1E"/>
+        <path d="M-36,196 H36 L26,250 H-26 Z" fill="url(#s13-brass)" fill-opacity="0.5" stroke="#1E1813" stroke-width="6"/>
+        <path d="M-22,202 H22 L16,244 H-16 Z" fill="none" stroke="#3A2A1E" stroke-width="4" opacity="0.5"/>
+        <g id="s13-lampflame">
+          <path d="M0,210 C9,222 11,232 5,240 C2,245 -2,245 -5,240 C-11,232 -9,222 0,210 Z" fill="#FFF3CE"/>
+        </g>
+        <path d="M-44,250 H44" stroke="#3A2A1E" stroke-width="7" stroke-linecap="round"/>
+      </g>
+      <g fill="#FFD98E" opacity="0.55">
+        <circle class="s13-ember" cx="1120" cy="800" r="4"/><circle class="s13-ember" cx="1430" cy="770" r="3"/>
+        <circle class="s13-ember" cx="1740" cy="810" r="4"/><circle class="s13-ember" cx="1290" cy="690" r="3"/>
+        <circle class="s13-ember" cx="1600" cy="700" r="4"/><circle class="s13-ember" cx="1830" cy="742" r="3"/>
+      </g>
+      <g fill="#FFF3D8" opacity="0.4">
+        <circle class="s13-mote" cx="360" cy="300" r="4"/><circle class="s13-mote" cx="720" cy="220" r="3"/>
+        <circle class="s13-mote" cx="1000" cy="380" r="4"/><circle class="s13-mote" cx="180" cy="540" r="3"/>
+      </g>
+    </svg>
+
+    <!-- MG · coin pillars, foundation slab, payroll rack, three tags -->
+    <svg class="s13-plane s13-p-mg" id="s13-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s13-brass" x1="0" y1="0" x2="0.28" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.22" stop-color="#E3BB64"/><stop offset="0.5" stop-color="#C89D42"/>
+          <stop offset="0.72" stop-color="#9E742A"/><stop offset="1" stop-color="#D9AE56"/>
+        </linearGradient>
+        <linearGradient id="s13-brassv" gradientUnits="userSpaceOnUse" x1="480" y1="0" x2="1220" y2="0">
+          <stop offset="0" stop-color="#D9AE56"/><stop offset="0.3" stop-color="#C89D42"/><stop offset="0.55" stop-color="#E9C77B"/>
+          <stop offset="0.8" stop-color="#A87A2A"/><stop offset="1" stop-color="#D9AE56"/>
+        </linearGradient>
+        <linearGradient id="s13-tagface" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#FDF8EA"/><stop offset="0.55" stop-color="#F3E4C6"/><stop offset="1" stop-color="#E2CBA4"/>
+        </linearGradient>
+        <linearGradient id="s13-slabtop" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#F5E3BF"/><stop offset="0.5" stop-color="#E7CDA1"/><stop offset="1" stop-color="#D2B182"/>
+        </linearGradient>
+        <linearGradient id="s13-slabfront" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#C8A87C"/><stop offset="0.5" stop-color="#A9855A"/><stop offset="1" stop-color="#7C5C3E"/>
+        </linearGradient>
+        <linearGradient id="s13-coin" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FFF1C7"/><stop offset="0.4" stop-color="#E3BB64"/><stop offset="0.78" stop-color="#B0832F"/><stop offset="1" stop-color="#8A6323"/>
+        </linearGradient>
+        <linearGradient id="s13-hanger" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.5" stop-color="#B0832F"/><stop offset="1" stop-color="#7E5A1C"/>
+        </linearGradient>
+        <filter id="s13-mblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="22"/></filter>
+        <filter id="s13-msoft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+        <filter id="s13-msoft3" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+        <clipPath id="s13-slabclip"><rect id="s13-slabrect" x="280" y="800" width="0" height="160"/></clipPath>
+        <g id="s13-pillar">
+          <rect x="-28" y="-112" width="56" height="112" rx="12" fill="url(#s13-coin)" stroke="#7E5A1C" stroke-width="3"/>
+          <g stroke="#7E5A1C" stroke-width="3" opacity="0.6">
+            <path d="M-28,-100 H28"/><path d="M-28,-88 H28"/><path d="M-28,-76 H28"/>
+            <path d="M-28,-64 H28"/><path d="M-28,-52 H28"/><path d="M-28,-40 H28"/>
+            <path d="M-28,-28 H28"/><path d="M-28,-16 H28"/>
+          </g>
+          <ellipse cx="0" cy="-112" rx="28" ry="9" fill="#FCEBB8" stroke="#7E5A1C" stroke-width="3"/>
+          <ellipse cx="0" cy="-112" rx="17" ry="5" fill="#E3BB64" opacity="0.8"/>
+        </g>
+      </defs>
+
+      <ellipse cx="820" cy="960" rx="620" ry="96" fill="#2B1F17" opacity="0.3" filter="url(#s13-mblur)"/>
+
+      <!-- twelve coin pillars -->
+      <g id="s13-pillars">
+        <g class="s13-pil" transform="translate(392,880)"><g class="s13-pil-in"><use href="#s13-pillar"/></g></g>
+        <g class="s13-pil" transform="translate(468,880)"><g class="s13-pil-in"><use href="#s13-pillar"/></g></g>
+        <g class="s13-pil" transform="translate(544,880)"><g class="s13-pil-in"><use href="#s13-pillar"/></g></g>
+        <g class="s13-pil" transform="translate(620,880)"><g class="s13-pil-in"><use href="#s13-pillar"/></g></g>
+        <g class="s13-pil" transform="translate(696,880)"><g class="s13-pil-in"><use href="#s13-pillar"/></g></g>
+        <g class="s13-pil" transform="translate(772,880)"><g class="s13-pil-in"><use href="#s13-pillar"/></g></g>
+        <g class="s13-pil" transform="translate(848,880)"><g class="s13-pil-in"><use href="#s13-pillar"/></g></g>
+        <g class="s13-pil" transform="translate(924,880)"><g class="s13-pil-in"><use href="#s13-pillar"/></g></g>
+        <g class="s13-pil" transform="translate(1000,880)"><g class="s13-pil-in"><use href="#s13-pillar"/></g></g>
+        <g class="s13-pil" transform="translate(1076,880)"><g class="s13-pil-in"><use href="#s13-pillar"/></g></g>
+        <g class="s13-pil" transform="translate(1152,880)"><g class="s13-pil-in"><use href="#s13-pillar"/></g></g>
+        <g class="s13-pil" transform="translate(1228,880)"><g class="s13-pil-in"><use href="#s13-pillar"/></g></g>
+      </g>
+
+      <!-- foundation slab, drawn then dropped onto the pillars -->
+      <g id="s13-slabwrap">
+        <g id="s13-slab-in">
+          <g clip-path="url(#s13-slabclip)">
+            <path d="M300,820 L1240,820 L1300,868 L360,868 Z" fill="url(#s13-slabtop)" stroke="#3A2A1E" stroke-width="8"/>
+            <path d="M360,868 L1300,868 L1300,932 L360,932 Z" fill="url(#s13-slabfront)" stroke="#3A2A1E" stroke-width="8"/>
+            <path d="M300,820 L360,868 L360,932 L300,884 Z" fill="#8A6B49" stroke="#3A2A1E" stroke-width="8"/>
+            <path d="M318,828 L318,884" stroke="#FFF0CE" stroke-width="5" opacity="0.35"/>
+            <g stroke="#6E5338" stroke-width="4" opacity="0.4">
+              <path d="M380,892 H1280"/><path d="M386,912 H1272"/>
+            </g>
+            <g fill="#7E5A1C" opacity="0.35">
+              <circle cx="470" cy="850" r="7"/><circle cx="700" cy="850" r="7"/><circle cx="930" cy="850" r="7"/><circle cx="1160" cy="850" r="7"/>
+            </g>
+            <path d="M300,820 L1240,820" stroke="#FFF6DE" stroke-width="5" opacity="0.55"/>
+            <g id="s13-slabcoins" fill="url(#s13-coin)" stroke="#7E5A1C" stroke-width="3">
+              <circle cx="410" cy="888" r="17"/><circle cx="486" cy="888" r="17"/><circle cx="562" cy="888" r="17"/>
+              <circle cx="638" cy="888" r="17"/><circle cx="714" cy="888" r="17"/><circle cx="790" cy="888" r="17"/>
+              <circle cx="866" cy="888" r="17"/><circle cx="942" cy="888" r="17"/><circle cx="1018" cy="888" r="17"/>
+              <circle cx="1094" cy="888" r="17"/><circle cx="1170" cy="888" r="17"/><circle cx="1246" cy="888" r="17"/>
+            </g>
+            <g fill="none" stroke="#7E5A1C" stroke-width="2" opacity="0.55">
+              <circle cx="410" cy="888" r="9"/><circle cx="486" cy="888" r="9"/><circle cx="562" cy="888" r="9"/>
+              <circle cx="638" cy="888" r="9"/><circle cx="714" cy="888" r="9"/><circle cx="790" cy="888" r="9"/>
+              <circle cx="866" cy="888" r="9"/><circle cx="942" cy="888" r="9"/><circle cx="1018" cy="888" r="9"/>
+              <circle cx="1094" cy="888" r="9"/><circle cx="1170" cy="888" r="9"/><circle cx="1246" cy="888" r="9"/>
+            </g>
+          </g>
+        </g>
+      </g>
+
+      <!-- payroll rack -->
+      <g id="s13-rack">
+        <g class="s13-postwrap" transform="translate(520,828)">
+          <g class="s13-post-in">
+            <rect x="-17" y="-528" width="34" height="528" fill="url(#s13-brass)" stroke="#2B1F17" stroke-width="6"/>
+            <rect x="-7" y="-520" width="7" height="512" fill="#FFF1C7" opacity="0.35"/>
+            <circle cx="0" cy="-536" r="20" fill="url(#s13-brass)" stroke="#2B1F17" stroke-width="5"/>
+            <path d="M-17,-6 H17" stroke="#2B1F17" stroke-width="8"/>
+            <path d="M-40,-14 H40 L28,10 H-28 Z" fill="url(#s13-brass)" stroke="#2B1F17" stroke-width="5"/>
+          </g>
+        </g>
+        <g class="s13-postwrap" transform="translate(1180,828)">
+          <g class="s13-post-in">
+            <rect x="-17" y="-528" width="34" height="528" fill="url(#s13-brass)" stroke="#2B1F17" stroke-width="6"/>
+            <rect x="-7" y="-520" width="7" height="512" fill="#FFF1C7" opacity="0.35"/>
+            <circle cx="0" cy="-536" r="20" fill="url(#s13-brass)" stroke="#2B1F17" stroke-width="5"/>
+            <path d="M-17,-6 H17" stroke="#2B1F17" stroke-width="8"/>
+            <path d="M-40,-14 H40 L28,10 H-28 Z" fill="url(#s13-brass)" stroke="#2B1F17" stroke-width="5"/>
+          </g>
+        </g>
+        <g class="s13-barwrap" transform="translate(850,318)">
+          <g class="s13-bar-in">
+            <rect x="-386" y="-15" width="772" height="30" rx="15" fill="url(#s13-brassv)" stroke="#2B1F17" stroke-width="6"/>
+            <rect x="-372" y="-9" width="744" height="7" fill="#FFF1C7" opacity="0.4"/>
+            <g fill="url(#s13-brass)" stroke="#2B1F17" stroke-width="4">
+              <circle cx="-330" cy="0" r="9"/><circle cx="330" cy="0" r="9"/>
+            </g>
+          </g>
+        </g>
+        <g id="s13-hooks" fill="none" stroke="url(#s13-hanger)" stroke-width="9" stroke-linecap="round">
+          <path id="s13-hookA" d="M650,334 C650,356 634,364 620,356"/>
+          <path id="s13-hookB" d="M850,334 C850,358 832,366 818,358"/>
+          <path id="s13-hookC" d="M1050,334 C1050,356 1034,364 1020,356"/>
+        </g>
+        <g fill="none" stroke="url(#s13-hanger)" stroke-width="7">
+          <path class="s13-hanger" d="M646,356 C644,392 630,428 612,450"/>
+          <path class="s13-hanger" d="M842,358 C842,410 846,438 850,462"/>
+          <path class="s13-hanger" d="M1046,356 C1050,392 1074,428 1104,450"/>
+        </g>
+
+        <!-- tag A -->
+        <g class="s13-tagwrap" transform="translate(610,560)">
+          <g class="s13-tag" id="s13-tagA">
+            <path d="M-104,-52 C-104,-72 -90,-86 -70,-86 L70,-86 C90,-86 104,-72 104,-52 L104,52 C104,72 90,86 70,86 L-70,86 C-90,86 -104,72 -104,52 Z"
+                  fill="url(#s13-tagface)" stroke="url(#s13-brass)" stroke-width="9"/>
+            <path d="M-88,-30 H88" stroke="#C89D42" stroke-width="4" opacity="0.6"/>
+            <path d="M-88,26 H88" stroke="#C89D42" stroke-width="4" opacity="0.6"/>
+            <g stroke="#8A6B49" stroke-width="4" opacity="0.55">
+              <path d="M-64,-8 V14"/><path d="M-48,-8 V14"/><path d="M-32,-8 V14"/><path d="M-16,-8 V14"/>
+              <path d="M0,-8 V14"/><path d="M16,-8 V14"/><path d="M32,-8 V14"/><path d="M48,-8 V14"/><path d="M64,-8 V14"/>
+            </g>
+            <g id="s13-tagA-tab">
+              <path d="M-22,-86 L-22,-112 C-22,-124 -12,-132 0,-132 C12,-132 22,-124 22,-112 L22,-86 Z"
+                    fill="url(#s13-brass)" stroke="#2B1F17" stroke-width="5"/>
+              <circle cx="0" cy="-108" r="11" fill="#F6E8CC" stroke="#2B1F17" stroke-width="4"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- tag C -->
+        <g class="s13-tagwrap" transform="translate(1106,565)">
+          <g class="s13-tag" id="s13-tagC">
+            <path d="M-104,-52 C-104,-72 -90,-86 -70,-86 L70,-86 C90,-86 104,-72 104,-52 L104,52 C104,72 90,86 70,86 L-70,86 C-90,86 -104,72 -104,52 Z"
+                  fill="url(#s13-tagface)" stroke="url(#s13-brass)" stroke-width="9"/>
+            <path d="M-88,-30 H88" stroke="#C89D42" stroke-width="4" opacity="0.6"/>
+            <path d="M-88,26 H88" stroke="#C89D42" stroke-width="4" opacity="0.6"/>
+            <g fill="none" stroke="#B0832F" stroke-width="4" opacity="0.7">
+              <circle cx="0" cy="-2" r="30"/><path d="M0,-26 L6,-6 L26,-6 L10,6 L16,26 L0,13 L-16,26 L-10,6 L-26,-6 L-6,-6 Z"/>
+            </g>
+            <g stroke="#8A6B49" stroke-width="4" opacity="0.5">
+              <path d="M-64,28 V40"/><path d="M-48,28 V40"/><path d="M-32,28 V40"/><path d="M-16,28 V40"/>
+              <path d="M0,28 V40"/><path d="M16,28 V40"/><path d="M32,28 V40"/><path d="M48,28 V40"/><path d="M64,28 V40"/>
+            </g>
+            <g id="s13-tagC-tab">
+              <path d="M-22,-86 L-22,-112 C-22,-124 -12,-132 0,-132 C12,-132 22,-124 22,-112 L22,-86 Z"
+                    fill="url(#s13-brass)" stroke="#2B1F17" stroke-width="5"/>
+              <circle cx="0" cy="-108" r="11" fill="#F6E8CC" stroke="#2B1F17" stroke-width="4"/>
+            </g>
+          </g>
+        </g>
+        <!-- tag B, the salary tag -->
+        <g class="s13-tagwrap" transform="translate(850,600)">
+          <g class="s13-tag" id="s13-tagB">
+            <path d="M-150,-70 C-150,-94 -132,-112 -108,-112 L108,-112 C132,-112 150,-94 150,-70 L150,70 C150,94 132,112 108,112 L-108,112 C-132,112 -150,94 -150,70 Z"
+                  fill="url(#s13-tagface)" stroke="url(#s13-brass)" stroke-width="11"/>
+            <path d="M-128,-46 H128" stroke="#C89D42" stroke-width="5" opacity="0.55"/>
+            <path d="M-128,46 H128" stroke="#C89D42" stroke-width="5" opacity="0.55"/>
+            <g fill="none" stroke="#B0832F" stroke-width="5" opacity="0.75">
+              <circle cx="0" cy="-2" r="44"/>
+              <circle cx="0" cy="-2" r="31"/>
+              <path d="M0,-40 L9,-12 L38,-12 L14,5 L23,33 L0,15 L-23,33 L-14,5 L-38,-12 L-9,-12 Z"/>
+            </g>
+            <g stroke="#8A6B49" stroke-width="4" opacity="0.45">
+              <path d="M-112,26 V36"/><path d="M-96,26 V36"/><path d="M-80,26 V36"/><path d="M-64,26 V36"/>
+              <path d="M64,26 V36"/><path d="M80,26 V36"/><path d="M96,26 V36"/><path d="M112,26 V36"/>
+            </g>
+            <g id="s13-tagB-tab">
+              <path d="M-24,-112 L-24,-142 C-24,-156 -12,-164 0,-164 C12,-164 24,-156 24,-142 L24,-112 Z"
+                    fill="url(#s13-brass)" stroke="#2B1F17" stroke-width="5"/>
+              <circle cx="0" cy="-136" r="12" fill="#F6E8CC" stroke="#2B1F17" stroke-width="4"/>
+            </g>
+          </g>
+        </g>
+
+      </g>
+
+      <!-- leaning tongs and a crucible for workshop life -->
+      <g id="s13-tongs" transform="translate(1408,930) rotate(-14)" opacity="0.85">
+        <path d="M-8,0 L-30,-186 L-16,-190 L6,0 Z" fill="url(#s13-brass)" stroke="#2B1F17" stroke-width="4"/>
+        <path d="M16,0 L40,-182 L54,-178 L32,0 Z" fill="url(#s13-brass)" stroke="#2B1F17" stroke-width="4"/>
+        <circle cx="0" cy="-4" r="11" fill="#3A2A1E"/>
+      </g>
+      <g id="s13-crucible" transform="translate(1768,924)">
+        <ellipse cx="0" cy="6" rx="62" ry="16" fill="#2B1F17" opacity="0.35" filter="url(#s13-msoft)"/>
+        <path d="M-46,-58 C-52,-16 -44,4 0,4 C44,4 52,-16 46,-58 Z" fill="#5C4030" stroke="#1E1813" stroke-width="6"/>
+        <ellipse cx="0" cy="-58" rx="46" ry="14" fill="#3A2A1E" stroke="#1E1813" stroke-width="5"/>
+        <ellipse cx="0" cy="-58" rx="33" ry="8" fill="#E07A22" opacity="0.8"/>
+        <path d="M-30,-52 C-20,-44 20,-44 30,-52" fill="none" stroke="#FFCE7C" stroke-width="4" opacity="0.5"/>
+      </g>
+
+      <g fill="#FFD98E" opacity="0.6">
+        <circle class="s13-ember" cx="1380" cy="840" r="4"/><circle class="s13-ember" cx="1620" cy="800" r="3"/>
+      </g>
+    </svg>
+
+    <!-- FG · blurred bench corner and the giant salary tag seam -->
+    <svg class="s13-plane s13-p-fg" id="s13-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s13-fgwood" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#4A3524"/><stop offset="0.6" stop-color="#2B1F17"/><stop offset="1" stop-color="#1E1813"/>
+        </linearGradient>
+        <linearGradient id="s13-bigtagface" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FDF8EA"/><stop offset="0.4" stop-color="#F5E7CB"/><stop offset="0.78" stop-color="#E8D3AE"/><stop offset="1" stop-color="#D8BE95"/>
+        </linearGradient>
+        <linearGradient id="s13-bigrim" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.3" stop-color="#D9AE56"/><stop offset="0.6" stop-color="#9E742A"/><stop offset="1" stop-color="#E3BB64"/>
+        </linearGradient>
+        <filter id="s13-fgblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter>
+      </defs>
+
+      <g id="s13-fgbench" filter="url(#s13-fgblur)" opacity="0.92">
+        <path d="M-40,1080 L-40,846 L300,806 L340,1080 Z" fill="url(#s13-fgwood)" stroke="#1E1813" stroke-width="8"/>
+        <path d="M-40,900 L316,862" stroke="#8A6B49" stroke-width="7" opacity="0.4"/>
+        <path d="M-40,962 L326,926" stroke="#8A6B49" stroke-width="7" opacity="0.32"/>
+        <path d="M-40,1024 L336,990" stroke="#8A6B49" stroke-width="7" opacity="0.26"/>
+        <g fill="#6E5338" opacity="0.5">
+          <circle cx="70" cy="864" r="5"/><circle cx="170" cy="852" r="5"/><circle cx="250" cy="842" r="4"/>
+        </g>
+      </g>
+
+      <g id="s13-bigtagwrap" transform="translate(960,-940)">
+        <g id="s13-bigtag" opacity="0">
+          <path d="M0,0 V720" stroke="#8A6B49" stroke-width="22"/>
+          <path d="M0,0 V720" stroke="#D9AE56" stroke-width="8" opacity="0.6"/>
+          <path d="M-1290,760 C-1290,690 -1230,640 -1150,640 L1150,640 C1230,640 1290,690 1290,760 L1290,2480 C1290,2550 1230,2600 1150,2600 L-1150,2600 C-1230,2600 -1290,2550 -1290,2480 Z"
+                fill="url(#s13-bigtagface)" stroke="url(#s13-bigrim)" stroke-width="34"/>
+          <path d="M-1200,800 C-1200,744 -1156,710 -1100,710 L1100,710 C1156,710 1200,744 1200,800 L1200,2440 C1200,2496 1156,2530 1100,2530 L-1100,2530 C-1156,2530 -1200,2496 -1200,2440 Z"
+                fill="none" stroke="#C89D42" stroke-width="6" opacity="0.55"/>
+          <path d="M-70,720 C-70,668 -38,634 0,634 C38,634 70,668 70,720 L70,760 L-70,760 Z"
+                fill="url(#s13-bigrim)" stroke="#2B1F17" stroke-width="12"/>
+          <circle cx="0" cy="700" r="32" fill="#2B1F17"/>
+          <circle cx="0" cy="700" r="52" fill="none" stroke="#D9AE56" stroke-width="12"/>
+          <g id="s13-bigdecor">
+            <rect x="-880" y="980" width="1760" height="980" rx="46" fill="none" stroke="#C89D42" stroke-width="12" opacity="0.75"/>
+            <rect x="-850" y="1010" width="1700" height="920" rx="30" fill="none" stroke="#8A6B49" stroke-width="5" opacity="0.45"/>
+            <g stroke="#8A6B49" stroke-width="7" opacity="0.5">
+              <path d="M-800,1180 H800"/><path d="M-800,1340 H800"/><path d="M-800,1500 H800"/>
+              <path d="M-800,1660 H800"/><path d="M-800,1820 H800"/>
+              <path d="M-640,1040 V1900"/><path d="M-440,1040 V1900"/><path d="M-240,1040 V1900"/>
+              <path d="M-40,1040 V1900"/><path d="M160,1040 V1900"/><path d="M360,1040 V1900"/><path d="M560,1040 V1900"/>
+            </g>
+            <g fill="#C89D42" opacity="0.6">
+              <circle cx="-800" cy="1180" r="14"/><circle cx="-800" cy="1340" r="14"/><circle cx="-800" cy="1500" r="14"/>
+              <circle cx="800" cy="1180" r="14"/><circle cx="800" cy="1340" r="14"/><circle cx="800" cy="1500" r="14"/>
+            </g>
+            <g stroke="#B0832F" stroke-width="9" opacity="0.7" stroke-linecap="round">
+              <path d="M-560,1110 V1152"/><path d="M-500,1110 V1152"/><path d="M-440,1110 V1152"/><path d="M-380,1110 V1152"/>
+              <path d="M280,1590 V1632"/><path d="M340,1590 V1632"/><path d="M400,1590 V1632"/><path d="M460,1590 V1632"/>
+              <path d="M-760,1750 V1792"/><path d="M-700,1750 V1792"/><path d="M-640,1750 V1792"/>
+            </g>
+            <g fill="none" stroke="#C89D42" stroke-width="10" opacity="0.7">
+              <path d="M-880,1050 C-840,1010 -790,1000 -740,1000"/>
+              <path d="M880,1050 C840,1010 790,1000 740,1000"/>
+              <path d="M-880,1890 C-840,1930 -790,1940 -740,1940"/>
+              <path d="M880,1890 C840,1930 790,1940 740,1940"/>
+            </g>
+            <circle cx="0" cy="1650" r="196" fill="url(#s13-bigrim)" stroke="#2B1F17" stroke-width="12"/>
+            <circle cx="0" cy="1650" r="158" fill="#C2593F" stroke="#8E3524" stroke-width="8"/>
+            <circle cx="0" cy="1650" r="128" fill="none" stroke="#F0C7B6" stroke-width="6" opacity="0.5"/>
+            <path d="M0,1556 L28,1622 L100,1622 L42,1668 L64,1736 L0,1692 L-64,1736 L-42,1668 L-100,1622 L-28,1622 Z" fill="#8E3524" opacity="0.6"/>
+            <path d="M0,1608 L12,1638 L44,1638 L18,1658 L28,1690 L0,1670 L-28,1690 L-18,1658 L-44,1638 L-12,1638 Z" fill="none" stroke="#F0C7B6" stroke-width="5" opacity="0.55"/>
+            <path d="M-140,1650 H-620" stroke="#8A6B49" stroke-width="7" opacity="0.4"/>
+            <path d="M140,1650 H620" stroke="#8A6B49" stroke-width="7" opacity="0.4"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+
+    <div class="s13-grain"></div>
+    <div class="s13-vignette"></div>
+
+    <div class="s13-tag" id="s13-tag">
+      <span class="s13-tag-dot"></span>
+      <span class="s13-tag-text">1,200 LIVRES</span>
+    </div>
+    <div class="s13-rule" id="s13-rule"></div>
+  </div>
+</div>
+
+<script>
+(function initS13(){
+  var ID = "s13-payroll-foundry";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, { duration: 18.049 }, 0);
+
+  // ── PHASE 1: the workshop and the foundation slab ────────────────────────
+  tl.fromTo("#s13-bg", { scale: 1.05, x: -10, y: -8 }, { scale: 1, x: 0, y: 0, duration: 17.9, ease: "sine.out" }, 0.05);
+  tl.fromTo("#s13-cornice", { y: -48, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }, 0.10);
+  tl.fromTo("#s13-arches", { opacity: 0 }, { opacity: 1, duration: 1.1, ease: "sine.out" }, 0.30);
+  tl.fromTo(".s13-arch", { scaleY: 0.28 }, { scaleY: 1, duration: 1.1, ease: "power3.out", stagger: 0.14, transformOrigin: "50% 100%" }, 0.55);
+  tl.fromTo(".s13-fire", { opacity: 0, scale: 0.6 }, { opacity: 0.55, scale: 1, duration: 1.4, ease: "sine.out", stagger: 0.18, transformOrigin: "50% 100%" }, 1.10);
+  tl.fromTo("#s13-floor", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "power2.out" }, 0.55);
+  tl.fromTo("#s13-lamp", { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.85, ease: "power2.out" }, 1.55);
+  tl.fromTo("#s13-lamphalo", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 0.7, duration: 1.2, ease: "sine.out" }, 1.95);
+  tl.fromTo("#s13-lampflame", { scaleY: 0.4, opacity: 0 }, { scaleY: 1, opacity: 1, duration: 0.45, ease: "back.out(2)" }, 2.05);
+  tl.to("#s13-lampflame", { scaleY: 1.14, scaleX: 0.9, duration: 0.22, ease: "sine.inOut", yoyo: true, repeat: 26, transformOrigin: "50% 100%" }, 2.55);
+  tl.to("#s13-lamphalo", { opacity: 0.5, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 8 }, 2.80);
+  tl.to("#s13-lamp", { rotation: 1.8, duration: 2.8, ease: "sine.inOut", yoyo: true, repeat: 4, transformOrigin: "50% 0%" }, 2.60);
+  tl.fromTo("#s13-slabrect", { attr: { width: 0 } }, { attr: { width: 1040 }, duration: 1.5, ease: "power3.inOut" }, 0.70);
+  tl.fromTo("#s13-slab-in", { y: -16, opacity: 0.6 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 2.05);
+  tl.fromTo("#s13-slabcoins", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 2.30);
+
+  // ── PHASE 2: twelve coin pillars rise ────────────────────────────────────
+  tl.fromTo(".s13-pil-in", { y: 96, opacity: 0 }, { y: 0, opacity: 1, duration: 0.62, ease: "power3.out", stagger: 0.11 }, 3.55);
+  tl.to(".s13-pil-in", { y: 10, duration: 0.28, ease: "power2.inOut", stagger: 0.05 }, 5.10);
+  tl.to("#s13-slab-in", { y: -12, duration: 0.26, ease: "power2.out" }, 6.02);
+  tl.to("#s13-slab-in", { y: 0, duration: 0.30, ease: "power3.in" }, 6.28);
+  tl.to(".s13-pil-in", { y: 34, duration: 0.30, ease: "power3.in", stagger: 0.035 }, 6.28);
+  tl.to("#s13-slabwrap", { scaleY: 1.0, duration: 0.30, ease: "power2.out", transformOrigin: "50% 100%" }, 6.56);
+  tl.fromTo("#s13-tongs", { x: 90, opacity: 0 }, { x: 0, opacity: 0.85, duration: 0.8, ease: "power2.out" }, 6.70);
+  tl.fromTo("#s13-crucible", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "power2.out" }, 7.00);
+
+  // ── PHASE 3: the rack assembles and the tags socket ──────────────────────
+  tl.fromTo(".s13-post-in", { scaleY: 0, opacity: 0 }, { scaleY: 1, opacity: 1, duration: 0.75, ease: "power3.out", stagger: 0.16, transformOrigin: "50% 100%" }, 6.85);
+  tl.fromTo(".s13-bar-in", { scaleX: 0, opacity: 0 }, { scaleX: 1, opacity: 1, duration: 0.7, ease: "power3.inOut", transformOrigin: "50% 50%" }, 7.55);
+  tl.fromTo("#s13-hooks", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2)", transformOrigin: "50% 50%" }, 8.05);
+  tl.fromTo(".s13-hanger", { attr: { "stroke-dasharray": 130, "stroke-dashoffset": 130 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.5, ease: "power2.out", stagger: 0.14 }, 8.20);
+  tl.fromTo("#s13-tagA", { y: -46, opacity: 0, rotation: -9 }, { y: 0, opacity: 1, rotation: 0, duration: 0.62, ease: "power3.out", transformOrigin: "0px -108px" }, 8.55);
+  tl.fromTo("#s13-tagB", { y: -56, opacity: 0, rotation: 7 }, { y: 0, opacity: 1, rotation: 0, duration: 0.66, ease: "power3.out", transformOrigin: "0px -136px" }, 8.80);
+  tl.fromTo("#s13-tagC", { y: -44, opacity: 0, rotation: -7 }, { y: 0, opacity: 1, rotation: 0, duration: 0.62, ease: "power3.out", transformOrigin: "0px -108px" }, 9.05);
+  tl.to("#s13-tagA", { rotation: -3.2, duration: 1.2, ease: "sine.inOut", yoyo: true, repeat: 2, transformOrigin: "0px -108px" }, 9.30);
+  tl.to("#s13-tagB", { rotation: 2.6, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 2, transformOrigin: "0px -136px" }, 9.55);
+  tl.to("#s13-tagC", { rotation: -2.8, duration: 1.3, ease: "sine.inOut", yoyo: true, repeat: 2, transformOrigin: "0px -108px" }, 9.80);
+
+  // ── PHASE 4: furnace arches bloom and the camera rises ───────────────────
+  tl.to(".s13-arch", { scaleY: 1.03, duration: 2.4, ease: "sine.inOut", stagger: 0.12, yoyo: true, repeat: 0, transformOrigin: "50% 100%" }, 13.20);
+  tl.to(".s13-fire", { opacity: 0.82, duration: 1.4, ease: "sine.inOut", stagger: 0.14, yoyo: true, repeat: 1 }, 13.55);
+  tl.fromTo(".s13-ember", { y: 0, opacity: 0 }, { y: -170, opacity: 0.7, duration: 3.4, ease: "sine.out", stagger: 0.22 }, 12.80);
+  tl.to("#s13-arches", { y: -10, duration: 4.2, ease: "sine.inOut" }, 13.80);
+  tl.fromTo("#s13-stage", { y: 0, scale: 1 }, { y: -14, scale: 1.04, duration: 17.9, ease: "sine.inOut" }, 0.10);
+  tl.to(".s13-fire", { opacity: 1, duration: 0.45, ease: "sine.out", stagger: 0.1 }, 16.70);
+
+  // ── living hold ──────────────────────────────────────────────────────────
+  tl.fromTo(".s13-mote", { y: 0, x: 0 }, { y: -50, x: 12, duration: 6.6, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 0.24 }, 1.40);
+  tl.to("#s13-crucible", { rotation: -1.2, duration: 3.0, ease: "sine.inOut", yoyo: true, repeat: 1, transformOrigin: "50% 100%" }, 9.20);
+  tl.to("#s13-tongs", { rotation: -1.6, duration: 2.6, ease: "sine.inOut", yoyo: true, repeat: 1, transformOrigin: "50% 100%" }, 9.60);
+  tl.to("#s13-crucible", { opacity: 0.96, duration: 1.6, ease: "sine.inOut", yoyo: true, repeat: 2 }, 11.20);
+
+  // ── TAG ──────────────────────────────────────────────────────────────────
+  tl.fromTo("#s13-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -14 }, { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.6, ease: "power3.inOut" }, 3.30);
+  tl.fromTo("#s13-rule", { width: 0 }, { width: 300, duration: 0.5, ease: "power2.out" }, 3.66);
+
+  // ── SEAM: the salary tag swings across the lens ──────────────────────────
+  tl.to("#s13-tag", { clipPath: "inset(0% 100% 0% 0%)", duration: 0.16, ease: "power2.in" }, 17.30);
+  tl.to("#s13-rule", { width: 0, duration: 0.16, ease: "power2.in" }, 17.30);
+  tl.set("#s13-bigtag", { opacity: 1 }, 17.34);
+  tl.fromTo("#s13-bigtag", { rotation: -38 }, { rotation: 0, duration: 0.52, ease: "power2.inOut", transformOrigin: "0px 0px" }, 17.38);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

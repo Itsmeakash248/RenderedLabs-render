@@ -1,0 +1,603 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s08-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s08-golden-cage"] .s08-stage{position:absolute;inset:0;transform-origin:50% 50%;}
+[data-composition-id="s08-golden-cage"] .s08-ground{position:absolute;inset:0;background:
+  radial-gradient(56% 44% at 24% 12%, rgba(255,222,164,0.46) 0%, rgba(255,222,164,0) 68%),
+  radial-gradient(122% 100% at 52% 16%, #FDF9EE 0%, #F8F0DE 32%, #EDDFC6 64%, #DAC5A4 100%);}
+[data-composition-id="s08-golden-cage"] .s08-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="s08-golden-cage"] .s08-p-bg{z-index:1;}
+[data-composition-id="s08-golden-cage"] .s08-p-mg{z-index:2;}
+[data-composition-id="s08-golden-cage"] .s08-p-mg2{z-index:3;}
+[data-composition-id="s08-golden-cage"] .s08-p-fg{z-index:4;}
+[data-composition-id="s08-golden-cage"] .s08-grain{position:absolute;inset:0;z-index:6;pointer-events:none;
+  background-image:radial-gradient(rgba(43,31,23,0.55) 0.4px, transparent 0.5px);background-size:3px 3px;
+  opacity:0.10;mix-blend-mode:multiply;}
+[data-composition-id="s08-golden-cage"] .s08-vignette{position:absolute;inset:0;z-index:7;pointer-events:none;
+  background:
+    linear-gradient(to top, rgba(43,31,23,0.28) 0%, rgba(43,31,23,0.05) 13%, rgba(43,31,23,0) 32%),
+    radial-gradient(118% 94% at 50% 44%, rgba(43,31,23,0) 54%, rgba(43,31,23,0.22) 100%);}
+[data-composition-id="s08-golden-cage"] .s08-tag{position:absolute;left:86px;top:908px;z-index:8;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;background:linear-gradient(180deg,#FDFAF4 0%,#F1E7D6 100%);
+  box-shadow:0 12px 30px rgba(43,31,23,0.24),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s08-golden-cage"] .s08-tag-dot{width:15px;height:15px;border-radius:50%;background:#C2593F;
+  box-shadow:0 0 0 5px rgba(194,89,63,0.20),inset 0 0 0 3px #A8462F;}
+[data-composition-id="s08-golden-cage"] .s08-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.14em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s08-golden-cage"] .s08-glow{transform-box:fill-box;transform-origin:50% 50%;}
+[data-composition-id="s08-golden-cage"] .s08-post{transform-box:fill-box;transform-origin:50% 50%;}
+[data-composition-id="s08-golden-cage"] .s08-mote{transform-box:fill-box;transform-origin:50% 50%;}
+[data-composition-id="s08-golden-cage"] .s08-rivet{transform-box:fill-box;transform-origin:50% 50%;}
+[data-composition-id="s08-golden-cage"] .s08-rule{position:absolute;left:86px;top:974px;height:5px;width:0;z-index:8;background:#C2593F;border-radius:4px;
+  box-shadow:0 2px 6px rgba(43,31,23,0.25);}
+</style>
+
+<div id="root" data-composition-id="s08-golden-cage" data-width="1920" data-height="1080" data-start="0" data-duration="20.969">
+  <div class="s08-stage" id="s08-stage">
+    <div class="s08-ground"></div>
+
+    <!-- BG · lagoon plane, far shore, contour rings -->
+    <svg class="s08-plane s08-p-bg" id="s08-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <radialGradient id="s08-haze" cx="62%" cy="24%" r="76%">
+          <stop offset="0" stop-color="#FFF4D6" stop-opacity="0.90"/><stop offset="0.55" stop-color="#F3E1BE" stop-opacity="0.36"/><stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="s08-water" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#EBD9B8" stop-opacity="0.46"/>
+          <stop offset="0.26" stop-color="#CFB187" stop-opacity="0.66"/>
+          <stop offset="0.62" stop-color="#97764F" stop-opacity="0.84"/>
+          <stop offset="1" stop-color="#4E3827" stop-opacity="0.96"/>
+        </linearGradient>
+        <linearGradient id="s08-farshore" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F7EBD5" stop-opacity="0"/><stop offset="1" stop-color="#F7EBD5" stop-opacity="0.72"/>
+        </linearGradient>
+        <filter id="s08-b1blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>
+        <filter id="s08-grain" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.86" numOctaves="2" seed="41" result="n"/>
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0.5 0"/>
+        </filter>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s08-haze)" filter="url(#s08-b1blur)"/>
+      <rect x="0" y="-2" width="1920" height="560" fill="#FBF4E4" opacity="0.34"/>
+
+      <!-- lagoon plane -->
+      <path id="s08-waterline" d="M-40,536 L1960,498 L1960,1120 L-40,1120 Z" fill="url(#s08-water)"/>
+      <path d="M-40,536 L1960,498" stroke="#FBF2DE" stroke-width="5" opacity="0.55"/>
+      <rect x="0" y="470" width="1920" height="150" fill="url(#s08-farshore)" filter="url(#s08-b1blur)" opacity="0.7"/>
+
+      <!-- far shore: campanili, roofs, chimneys -->
+      <g id="s08-skyline" fill="#63472F" opacity="0.13">
+        <path d="M40,540 V474 H88 V540 Z"/><path d="M84,474 L64,444 H104 Z"/><path d="M100,476 L100,458 H110 V476 Z"/>
+        <path d="M166,540 V498 H206 V540 Z"/><path d="M214,540 V516 H252 V540 Z"/>
+        <path d="M292,540 V502 H330 V540 Z"/><path d="M322,502 L314,478 H338 Z"/>
+        <path d="M1588,528 V470 H1628 V528 Z"/><path d="M1624,470 L1606,438 H1642 Z"/>
+        <path d="M1690,528 V492 H1734 V528 Z"/><path d="M1742,528 V508 H1786 V528 Z"/>
+        <path d="M1826,528 V486 H1850 V528 Z"/><path d="M1846,486 L1838,458 H1858 Z"/>
+        <path d="M1466,530 V496 H1500 V530 Z"/><path d="M1520,530 V510 H1556 V530 Z"/>
+      </g>
+
+      <!-- survey rings on the water -->
+      <g fill="none" stroke="#F8EED8" stroke-width="4" opacity="0.16">
+        <ellipse cx="960" cy="690" rx="702" ry="286"/>
+        <ellipse cx="960" cy="690" rx="612" ry="246"/>
+        <ellipse cx="960" cy="690" rx="522" ry="206" stroke-dasharray="24 20"/>
+        <ellipse cx="960" cy="690" rx="790" ry="322" stroke-dasharray="10 26"/>
+      </g>
+      <g stroke="#F8EED8" stroke-width="5" opacity="0.20">
+        <path d="M330,946 H1590"/><path d="M330,928 V964"/><path d="M546,938 V954"/><path d="M762,928 V964"/>
+        <path d="M978,938 V954"/><path d="M1194,928 V964"/><path d="M1410,938 V954"/><path d="M1590,928 V964"/>
+      </g>
+
+      <!-- furnace glow reflected on the lagoon -->
+      <g id="s08-reflections" opacity="0">
+        <g filter="url(#s08-b1blur)" opacity="0.34">
+          <rect x="762" y="852" width="34" height="126" rx="16" fill="#FFB055"/>
+          <rect x="944" y="866" width="40" height="148" rx="18" fill="#FFBE66"/>
+          <rect x="1104" y="858" width="32" height="120" rx="15" fill="#F2A044"/>
+        </g>
+        <g fill="#F3D9A4" opacity="0.34">
+          <rect x="748" y="884" width="66" height="6" rx="3"/><rect x="744" y="924" width="48" height="5" rx="3"/>
+          <rect x="936" y="902" width="72" height="6" rx="3"/><rect x="932" y="946" width="54" height="5" rx="3"/>
+          <rect x="1096" y="890" width="60" height="6" rx="3"/><rect x="1092" y="930" width="44" height="5" rx="3"/>
+        </g>
+      </g>
+
+      <!-- water glints -->
+      <g id="s08-glints" fill="none" stroke="#F8EAD0" stroke-linecap="round" opacity="0.30">
+        <path d="M120,600 H420" stroke-width="4"/><path d="M520,624 H760" stroke-width="3" opacity="0.7"/>
+        <path d="M1300,592 H1580" stroke-width="4"/><path d="M1150,640 H1420" stroke-width="3" opacity="0.7"/>
+        <path d="M240,880 H520" stroke-width="4" opacity="0.5"/><path d="M1350,900 H1680" stroke-width="4" opacity="0.5"/>
+      </g>
+
+      <!-- three birds over the lagoon -->
+      <g id="s08-birds" fill="none" stroke="#5C5248" stroke-width="5" stroke-linecap="round" opacity="0.22">
+        <path class="s08-bird" d="M1476,196 q18,-14 36,0 q18,-14 36,0"/>
+        <path class="s08-bird" d="M1556,240 q14,-11 28,0 q14,-11 28,0"/>
+        <path class="s08-bird" d="M1410,254 q12,-9 24,0 q12,-9 24,0"/>
+      </g>
+
+      <rect x="0" y="0" width="1920" height="1080" filter="url(#s08-grain)" opacity="0.06" style="mix-blend-mode:multiply"/>
+    </svg>
+
+    <!-- MG · the island of Murano inside a hanging cage -->
+    <svg class="s08-plane s08-p-mg" id="s08-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s08-brass" x1="0" y1="0" x2="0.22" y2="1">
+          <stop offset="0" stop-color="#FBE7AE"/><stop offset="0.32" stop-color="#D9AE56"/><stop offset="0.66" stop-color="#B98A33"/><stop offset="1" stop-color="#7E5A1C"/>
+        </linearGradient>
+        <linearGradient id="s08-brass-dim" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#C9A25A"/><stop offset="1" stop-color="#8A6323"/>
+        </linearGradient>
+        <linearGradient id="s08-brass-v" gradientUnits="userSpaceOnUse" x1="500" y1="0" x2="1440" y2="0">
+          <stop offset="0" stop-color="#8A6323"/><stop offset="0.26" stop-color="#D9AE56"/><stop offset="0.5" stop-color="#FBE7AE"/><stop offset="0.74" stop-color="#C89D42"/><stop offset="1" stop-color="#7E5A1C"/>
+        </linearGradient>
+        <linearGradient id="s08-brass-dim-v" gradientUnits="userSpaceOnUse" x1="500" y1="0" x2="1440" y2="0">
+          <stop offset="0" stop-color="#6E4C1A"/><stop offset="0.3" stop-color="#A9812F"/><stop offset="0.55" stop-color="#C9A25A"/><stop offset="0.8" stop-color="#9A7328"/><stop offset="1" stop-color="#5F4114"/>
+        </linearGradient>
+        <linearGradient id="s08-brick" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#C06646"/><stop offset="0.52" stop-color="#9E4A30"/><stop offset="1" stop-color="#6E2E1E"/>
+        </linearGradient>
+        <linearGradient id="s08-brick-side" x1="0" y1="0" x2="1" y2="0.3">
+          <stop offset="0" stop-color="#8C3D26"/><stop offset="1" stop-color="#5A2216"/>
+        </linearGradient>
+        <linearGradient id="s08-brick-top" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#D98C63"/><stop offset="1" stop-color="#B05E3E"/>
+        </linearGradient>
+        <linearGradient id="s08-land" x1="0" y1="0" x2="0.65" y2="1">
+          <stop offset="0" stop-color="#EFE3CB"/><stop offset="0.5" stop-color="#DCC7A6"/><stop offset="1" stop-color="#B79C74"/>
+        </linearGradient>
+        <linearGradient id="s08-steel" x1="0" y1="0" x2="1" y2="0.2">
+          <stop offset="0" stop-color="#F6EEDC"/><stop offset="0.34" stop-color="#D8C8AA"/><stop offset="0.62" stop-color="#A8957A"/><stop offset="1" stop-color="#E4D6BC"/>
+        </linearGradient>
+        <radialGradient id="s08-amber" cx="50%" cy="42%" r="62%">
+          <stop offset="0" stop-color="#FFD98F"/><stop offset="0.42" stop-color="#FFA63F"/><stop offset="1" stop-color="#C96F1E"/>
+        </radialGradient>
+        <radialGradient id="s08-mouth" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFCE7C" stop-opacity="0.92"/><stop offset="0.55" stop-color="#E88C2A" stop-opacity="0.34"/><stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s08-sunk" cx="50%" cy="44%" r="72%">
+          <stop offset="0" stop-color="#2B1F17" stop-opacity="0"/><stop offset="0.68" stop-color="#2B1F17" stop-opacity="0.08"/><stop offset="1" stop-color="#2B1F17" stop-opacity="0.38"/>
+        </radialGradient>
+        <linearGradient id="s08-shore" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#E8D7B6"/><stop offset="1" stop-color="#C6A87C"/>
+        </linearGradient>
+        <filter id="s08-grade" x="-5%" y="-5%" width="110%" height="110%">
+          <feColorMatrix type="saturate" values="0.56"/>
+          <feComponentTransfer><feFuncR type="linear" slope="1.10" intercept="0.03"/><feFuncG type="linear" slope="1.00"/><feFuncB type="linear" slope="0.80"/></feComponentTransfer>
+        </filter>
+        <filter id="s08-soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="24"/></filter>
+        <filter id="s08-soft2" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="8"/></filter>
+        <filter id="s08-heat" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6"/></filter>
+        <clipPath id="s08-island-clip">
+          <path d="M-466,6 C-458,-76 -372,-138 -262,-150 C-176,-160 -108,-140 -44,-148 C30,-158 92,-170 158,-164 C248,-156 318,-138 388,-116 C452,-96 478,-42 466,16 C454,74 394,116 316,138 C234,162 150,172 64,168 C-26,164 -128,156 -214,144 C-312,130 -474,96 -466,6 Z"/>
+        </clipPath>
+        <clipPath id="s08-plan-clip"><rect id="s08-plan-rect" x="430" y="372" width="1060" height="0"/></clipPath>
+      </defs>
+
+      <!-- cage, rear half: seen through the island -->
+      <g id="s08-cage-back" opacity="0.9">
+        <path d="M488,654 A472,152 0 0 1 1432,654" fill="none" stroke="#1E1813" stroke-width="18" opacity="0.30"/>
+        <path d="M488,654 A472,152 0 0 1 1432,654" fill="none" stroke="url(#s08-brass-dim)" stroke-width="9" opacity="0.42"/>
+        <g fill="none" stroke="url(#s08-brass-dim)" stroke-linecap="round">
+          <path d="M549,320 A411,132 0 0 1 1371,320" stroke-width="7" opacity="0.40"/>
+          <path d="M631,440 A329,106 0 0 1 1289,440" stroke-width="7" opacity="0.40"/>
+        </g>
+        <g id="s08-bbar-ink" stroke-linecap="round" opacity="0.34">
+          <path class="s08-bbar" d="M960,214 V502" stroke="#1E1813" stroke-width="13"/>
+          <path class="s08-bbar" d="M795,268 V496" stroke="#1E1813" stroke-width="13"/>
+          <path class="s08-bbar" d="M1125,268 V496" stroke="#1E1813" stroke-width="13"/>
+          <path class="s08-bbar" d="M667,383 V466" stroke="#1E1813" stroke-width="13"/>
+          <path class="s08-bbar" d="M1253,383 V466" stroke="#1E1813" stroke-width="13"/>
+        </g>
+        <g id="s08-bbar-brass" stroke="url(#s08-brass-dim-v)" stroke-width="6" stroke-linecap="round" opacity="0.46">
+          <path class="s08-bbar" d="M960,214 V502"/>
+          <path class="s08-bbar" d="M795,268 V496"/>
+          <path class="s08-bbar" d="M1125,268 V496"/>
+          <path class="s08-bbar" d="M667,383 V466"/>
+          <path class="s08-bbar" d="M1253,383 V466"/>
+        </g>
+      </g>
+
+      <!-- island cast shadow on the lagoon -->
+      <g id="s08-island-shadow" opacity="0">
+        <ellipse cx="986" cy="842" rx="540" ry="108" fill="#2B1F17" opacity="0.42" filter="url(#s08-soft)"/>
+        <ellipse cx="970" cy="812" rx="452" ry="66" fill="#2B1F17" opacity="0.34" filter="url(#s08-soft2)"/>
+      </g>
+
+      <g clip-path="url(#s08-plan-clip)">
+        <g id="s08-mg-all" transform="translate(960,640) rotate(-6)">
+          <g id="s08-island">
+            <!-- foam halo around the shore -->
+            <path d="M-466,6 C-458,-76 -372,-138 -262,-150 C-176,-160 -108,-140 -44,-148 C30,-158 92,-170 158,-164 C248,-156 318,-138 388,-116 C452,-96 478,-42 466,16 C454,74 394,116 316,138 C234,162 150,172 64,168 C-26,164 -128,156 -214,144 C-312,130 -474,96 -466,6 Z"
+                  fill="none" stroke="#FCF4E1" stroke-width="26" opacity="0.55" transform="scale(1.035)"/>
+            <path d="M-466,6 C-458,-76 -372,-138 -262,-150 C-176,-160 -108,-140 -44,-148 C30,-158 92,-170 158,-164 C248,-156 318,-138 388,-116 C452,-96 478,-42 466,16 C454,74 394,116 316,138 C234,162 150,172 64,168 C-26,164 -128,156 -214,144 C-312,130 -474,96 -466,6 Z"
+                  fill="url(#s08-land)"/>
+
+            <g clip-path="url(#s08-island-clip)">
+              <image id="s08-photo" href="plates/processed/art-murano-skyline.jpg" x="-520" y="-250" width="1040" height="560"
+                     preserveAspectRatio="xMidYMax slice" filter="url(#s08-grade)" opacity="0.92"/>
+              <rect x="-520" y="-250" width="1040" height="560" fill="#D9822B" opacity="0.20"/>
+              <rect x="-520" y="-250" width="1040" height="560" fill="url(#s08-sunk)"/>
+              <rect x="-520" y="-250" width="1040" height="560" fill="#C2593F" opacity="0.07"/>
+
+              <!-- survey graticule -->
+              <g id="s08-grid" stroke="#5C5248" stroke-width="4" opacity="0.16">
+                <path d="M-360,-220 V220"/><path d="M-180,-220 V220"/><path d="M0,-220 V220"/><path d="M180,-220 V220"/><path d="M360,-220 V220"/>
+                <path d="M-520,-120 H520"/><path d="M-520,0 H520"/><path d="M-520,120 H520"/>
+              </g>
+
+              <!-- canals -->
+              <g id="s08-canals" fill="none" stroke="#5C5248" stroke-width="10" opacity="0.40" stroke-linecap="round">
+                <path d="M-470,42 C-330,18 -210,-16 -96,-38 C18,-60 130,-66 236,-58 C322,-52 396,-40 470,-22"/>
+                <path d="M-250,180 C-214,96 -180,20 -140,-56 C-120,-94 -104,-126 -96,-166"/>
+                <path d="M96,176 C104,96 116,26 140,-44 C158,-96 176,-132 190,-170"/>
+              </g>
+              <g fill="none" stroke="#FCF4E1" stroke-width="5" opacity="0.46" stroke-linecap="round">
+                <path d="M-470,36 C-330,12 -210,-22 -96,-44 C18,-66 130,-72 236,-64 C322,-58 396,-46 470,-28"/>
+                <path d="M-250,174 C-214,90 -180,14 -140,-62"/>
+                <path d="M96,170 C104,90 116,20 140,-50"/>
+              </g>
+            </g>
+
+            <!-- shoreline inner cut -->
+            <path d="M-466,6 C-458,-76 -372,-138 -262,-150 C-176,-160 -108,-140 -44,-148 C30,-158 92,-170 158,-164 C248,-156 318,-138 388,-116 C452,-96 478,-42 466,16 C454,74 394,116 316,138 C234,162 150,172 64,168 C-26,164 -128,156 -214,144 C-312,130 -474,96 -466,6 Z"
+                  fill="none" stroke="#F8EED8" stroke-width="8" opacity="0.40" transform="scale(0.968)"/>
+
+            <!-- furnace towers: extruded brick blocks with lit mouths -->
+            <g id="s08-towers">
+              <g id="s08-tower-1">
+                <ellipse cx="-150" cy="42" rx="72" ry="22" fill="#2B1F17" opacity="0.38" filter="url(#s08-soft2)"/>
+                <path d="M-188,-112 L-112,-112 L-84,-130 L-160,-130 Z" fill="url(#s08-brick-top)" stroke="#1E1813" stroke-width="9" stroke-linejoin="round"/>
+                <path d="M-112,34 L-84,16 L-84,-130 L-112,-112 Z" fill="url(#s08-brick-side)" stroke="#1E1813" stroke-width="9" stroke-linejoin="round"/>
+                <rect x="-188" y="-112" width="76" height="146" fill="url(#s08-brick)" stroke="#1E1813" stroke-width="9"/>
+                <g stroke="#4E2116" stroke-width="3" opacity="0.55">
+                  <path d="M-184,-78 H-116"/><path d="M-184,-44 H-116"/><path d="M-184,-10 H-116"/>
+                  <path d="M-150,-108 V30"/>
+                </g>
+                <rect x="-160" y="-192" width="22" height="62" fill="#7E3421" stroke="#1E1813" stroke-width="7"/>
+                <rect x="-169" y="-202" width="40" height="13" rx="3" fill="#B05E3E" stroke="#1E1813" stroke-width="7"/>
+                <path d="M-166,34 V8 A16,16 0 0 1 -134,8 V34 Z" fill="url(#s08-amber)" stroke="#1E1813" stroke-width="7"/>
+                <circle class="s08-glow" cx="-150" cy="14" r="58" fill="url(#s08-mouth)" filter="url(#s08-heat)"/>
+                <g class="s08-smoke" fill="none" stroke="#5C5248" stroke-width="7" stroke-linecap="round" opacity="0.32">
+                  <path d="M-149,-204 C-160,-236 -138,-254 -152,-284"/>
+                  <path d="M-141,-206 C-128,-238 -152,-258 -140,-290"/>
+                </g>
+              </g>
+
+              <g id="s08-tower-2">
+                <ellipse cx="0" cy="66" rx="80" ry="24" fill="#2B1F17" opacity="0.40" filter="url(#s08-soft2)"/>
+                <path d="M-44,-108 L36,-108 L70,-128 L-10,-128 Z" fill="url(#s08-brick-top)" stroke="#1E1813" stroke-width="9" stroke-linejoin="round"/>
+                <path d="M36,58 L70,38 L70,-128 L36,-108 Z" fill="url(#s08-brick-side)" stroke="#1E1813" stroke-width="9" stroke-linejoin="round"/>
+                <rect x="-44" y="-108" width="80" height="166" fill="url(#s08-brick)" stroke="#1E1813" stroke-width="9"/>
+                <g stroke="#4E2116" stroke-width="3" opacity="0.55">
+                  <path d="M-40,-72 H32"/><path d="M-40,-36 H32"/><path d="M-40,0 H32"/>
+                  <path d="M0,-104 V54"/>
+                </g>
+                <rect x="-14" y="-190" width="24" height="62" fill="#7E3421" stroke="#1E1813" stroke-width="7"/>
+                <rect x="-23" y="-200" width="42" height="13" rx="3" fill="#B05E3E" stroke="#1E1813" stroke-width="7"/>
+                <path d="M-26,58 V20 A22,22 0 0 1 18,20 V58 Z" fill="url(#s08-amber)" stroke="#1E1813" stroke-width="7"/>
+                <circle class="s08-glow" cx="0" cy="26" r="66" fill="url(#s08-mouth)" filter="url(#s08-heat)"/>
+                <g class="s08-smoke" fill="none" stroke="#5C5248" stroke-width="7" stroke-linecap="round" opacity="0.32">
+                  <path d="M0,-202 C-12,-236 10,-256 -4,-288"/>
+                  <path d="M8,-204 C22,-238 -2,-260 10,-292"/>
+                </g>
+              </g>
+
+              <g id="s08-tower-3">
+                <ellipse cx="152" cy="54" rx="70" ry="21" fill="#2B1F17" opacity="0.38" filter="url(#s08-soft2)"/>
+                <path d="M116,-86 L190,-86 L218,-102 L144,-102 Z" fill="url(#s08-brick-top)" stroke="#1E1813" stroke-width="9" stroke-linejoin="round"/>
+                <path d="M190,46 L218,28 L218,-102 L190,-86 Z" fill="url(#s08-brick-side)" stroke="#1E1813" stroke-width="9" stroke-linejoin="round"/>
+                <rect x="116" y="-86" width="74" height="132" fill="url(#s08-brick)" stroke="#1E1813" stroke-width="9"/>
+                <g stroke="#4E2116" stroke-width="3" opacity="0.55">
+                  <path d="M120,-54 H186"/><path d="M120,-22 H186"/><path d="M120,12 H186"/>
+                  <path d="M152,-82 V42"/>
+                </g>
+                <rect x="144" y="-162" width="20" height="60" fill="#7E3421" stroke="#1E1813" stroke-width="7"/>
+                <rect x="136" y="-172" width="36" height="12" rx="3" fill="#B05E3E" stroke="#1E1813" stroke-width="7"/>
+                <path d="M130,46 V18 A16,16 0 0 1 162,18 V46 Z" fill="url(#s08-amber)" stroke="#1E1813" stroke-width="7"/>
+                <circle class="s08-glow" cx="152" cy="22" r="54" fill="url(#s08-mouth)" filter="url(#s08-heat)"/>
+                <g class="s08-smoke" fill="none" stroke="#5C5248" stroke-width="7" stroke-linecap="round" opacity="0.32">
+                  <path d="M152,-174 C142,-204 166,-222 152,-252"/>
+                </g>
+              </g>
+            </g>
+
+            <!-- the seawall ring: brass palisade along the shore -->
+            <ellipse id="s08-wall" cx="0" cy="8" rx="428" ry="146" fill="none" stroke="url(#s08-brass)" stroke-width="10"
+                     stroke-dasharray="18 14" opacity="0.62"/>
+            <g id="s08-posts" fill="url(#s08-brass)" stroke="#1E1813" stroke-width="4">
+              <circle class="s08-post" cx="428" cy="8" r="9"/><circle class="s08-post" cx="370" cy="81" r="9"/>
+              <circle class="s08-post" cx="214" cy="134" r="9"/><circle class="s08-post" cx="0" cy="154" r="9"/>
+              <circle class="s08-post" cx="-214" cy="134" r="9"/><circle class="s08-post" cx="-370" cy="81" r="9"/>
+              <circle class="s08-post" cx="-428" cy="8" r="9"/><circle class="s08-post" cx="-370" cy="-65" r="9"/>
+              <circle class="s08-post" cx="-214" cy="-118" r="9"/><circle class="s08-post" cx="0" cy="-138" r="9"/>
+              <circle class="s08-post" cx="214" cy="-118" r="9"/><circle class="s08-post" cx="370" cy="-65" r="9"/>
+            </g>
+
+            <!-- island edge: ink contour with a brass touch -->
+            <path id="s08-island-line"
+                  d="M-466,6 C-458,-76 -372,-138 -262,-150 C-176,-160 -108,-140 -44,-148 C30,-158 92,-170 158,-164 C248,-156 318,-138 388,-116 C452,-96 478,-42 466,16 C454,74 394,116 316,138 C234,162 150,172 64,168 C-26,164 -128,156 -214,144 C-312,130 -474,96 -466,6 Z"
+                  fill="none" stroke="#1E1813" stroke-width="22" stroke-linejoin="round" stroke-dasharray="2900" stroke-dashoffset="2900"/>
+            <path d="M-466,6 C-458,-76 -372,-138 -262,-150 C-176,-160 -108,-140 -44,-148 C30,-158 92,-170 158,-164 C248,-156 318,-138 388,-116 C452,-96 478,-42 466,16 C454,74 394,116 316,138 C234,162 150,172 64,168 C-26,164 -128,156 -214,144 C-312,130 -474,96 -466,6 Z"
+                  fill="none" stroke="#D9AE56" stroke-width="5" opacity="0.6" transform="scale(0.984)"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+
+    <!-- MG continued · sword, cage front, signet hanger, escape route -->
+    <svg class="s08-plane s08-p-mg2" id="s08-mg2" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- the sword of privilege, leaning inside the cage -->
+      <g transform="translate(702,690) rotate(-13)">
+      <g id="s08-sword" opacity="0">
+        <path d="M0,-262 L16,-224 V-4 L0,30 L-16,-4 V-224 Z" fill="url(#s08-steel)" stroke="#1E1813" stroke-width="7" stroke-linejoin="round"/>
+        <path d="M0,-228 V12" stroke="#FCF4E1" stroke-width="4" opacity="0.55"/>
+        <path d="M-66,-4 H66" stroke="#1E1813" stroke-width="26" stroke-linecap="round"/>
+        <path d="M-66,-4 H66" stroke="url(#s08-brass)" stroke-width="17" stroke-linecap="round"/>
+        <path d="M-66,-4 H66" stroke="#FBE7AE" stroke-width="4" opacity="0.45"/>
+        <circle cx="-66" cy="-4" r="9" fill="url(#s08-brass)" stroke="#1E1813" stroke-width="4"/>
+        <circle cx="66" cy="-4" r="9" fill="url(#s08-brass)" stroke="#1E1813" stroke-width="4"/>
+        <rect x="-12" y="30" width="24" height="70" fill="#3A2A1E" stroke="#1E1813" stroke-width="5"/>
+        <g stroke="#C89D42" stroke-width="4" opacity="0.65">
+          <path d="M-12,44 L12,36"/><path d="M-12,60 L12,52"/><path d="M-12,76 L12,68"/><path d="M-12,92 L12,84"/>
+        </g>
+        <circle cx="0" cy="114" r="19" fill="url(#s08-brass)" stroke="#1E1813" stroke-width="6"/>
+        <circle cx="0" cy="114" r="7" fill="#7E5A1C" opacity="0.7"/>
+      </g>
+      </g>
+
+      <!-- cage front: dome ribs, hoops, bars, portcullis door -->
+      <g id="s08-cage-front">
+        <path id="s08-dome" d="M488,654 C488,440 690,214 960,214 C1230,214 1432,440 1432,654"
+              fill="none" stroke="#1E1813" stroke-width="24" stroke-linecap="round" stroke-dasharray="1400" stroke-dashoffset="1400"/>
+        <path id="s08-dome-brass" d="M488,654 C488,440 690,214 960,214 C1230,214 1432,440 1432,654"
+              fill="none" stroke="url(#s08-brass)" stroke-width="13" stroke-linecap="round" stroke-dasharray="1400" stroke-dashoffset="1400"/>
+        <path d="M552,548 C536,462 578,392 646,348" fill="none" stroke="#FCF2D2" stroke-width="5" stroke-linecap="round" opacity="0.52"/>
+
+        <path id="s08-base" d="M488,654 A472,152 0 0 0 1432,654" fill="none" stroke="#1E1813" stroke-width="26" stroke-linecap="round" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+        <path id="s08-base-brass" d="M488,654 A472,152 0 0 0 1432,654" fill="none" stroke="url(#s08-brass)" stroke-width="14" stroke-linecap="round" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+
+        <g id="s08-hoop-bolts" fill="url(#s08-brass)" stroke="#1E1813" stroke-width="3">
+          <circle cx="549" cy="320" r="8"/><circle cx="1371" cy="320" r="8"/>
+          <circle cx="631" cy="440" r="8"/><circle cx="1289" cy="440" r="8"/>
+        </g>
+        <g fill="none" stroke-linecap="round">
+          <path class="s08-hoop-ink" d="M549,320 A411,132 0 0 0 1371,320" stroke="#1E1813" stroke-width="12" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+          <path class="s08-hoop-ink" d="M631,440 A329,106 0 0 0 1289,440" stroke="#1E1813" stroke-width="12" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+          <path class="s08-hoop" d="M549,320 A411,132 0 0 0 1371,320" stroke="url(#s08-brass)" stroke-width="7" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+          <path class="s08-hoop" d="M631,440 A329,106 0 0 0 1289,440" stroke="url(#s08-brass)" stroke-width="7" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+        </g>
+
+        <g id="s08-bars-front">
+          <g class="s08-fbar"><path d="M875,228 V804" stroke="#1E1813" stroke-width="17" stroke-linecap="round"/><path d="M875,228 V804" stroke="url(#s08-brass-v)" stroke-width="9"/><circle cx="875" cy="804" r="9" fill="url(#s08-brass)" stroke="#1E1813" stroke-width="4"/></g>
+          <g class="s08-fbar"><path d="M1045,228 V804" stroke="#1E1813" stroke-width="17" stroke-linecap="round"/><path d="M1045,228 V804" stroke="url(#s08-brass-v)" stroke-width="9"/><circle cx="1045" cy="804" r="9" fill="url(#s08-brass)" stroke="#1E1813" stroke-width="4"/></g>
+          <g class="s08-fbar"><path d="M724,324 V786" stroke="#1E1813" stroke-width="17" stroke-linecap="round"/><path d="M724,324 V786" stroke="url(#s08-brass-v)" stroke-width="9"/><circle cx="724" cy="786" r="9" fill="url(#s08-brass)" stroke="#1E1813" stroke-width="4"/></g>
+          <g class="s08-fbar"><path d="M1196,324 V786" stroke="#1E1813" stroke-width="17" stroke-linecap="round"/><path d="M1196,324 V786" stroke="url(#s08-brass-v)" stroke-width="9"/><circle cx="1196" cy="786" r="9" fill="url(#s08-brass)" stroke="#1E1813" stroke-width="4"/></g>
+          <g class="s08-fbar"><path d="M592,482 V755" stroke="#1E1813" stroke-width="17" stroke-linecap="round"/><path d="M592,482 V755" stroke="url(#s08-brass-v)" stroke-width="9"/><circle cx="592" cy="755" r="9" fill="url(#s08-brass)" stroke="#1E1813" stroke-width="4"/></g>
+          <g class="s08-fbar"><path d="M1328,482 V755" stroke="#1E1813" stroke-width="17" stroke-linecap="round"/><path d="M1328,482 V755" stroke="url(#s08-brass-v)" stroke-width="9"/><circle cx="1328" cy="755" r="9" fill="url(#s08-brass)" stroke="#1E1813" stroke-width="4"/></g>
+          <g class="s08-fbar"><path d="M512,611 V701" stroke="#1E1813" stroke-width="17" stroke-linecap="round"/><path d="M512,611 V701" stroke="url(#s08-brass-v)" stroke-width="9"/><circle cx="512" cy="701" r="9" fill="url(#s08-brass)" stroke="#1E1813" stroke-width="4"/></g>
+          <g class="s08-fbar"><path d="M1408,611 V701" stroke="#1E1813" stroke-width="17" stroke-linecap="round"/><path d="M1408,611 V701" stroke="url(#s08-brass-v)" stroke-width="9"/><circle cx="1408" cy="701" r="9" fill="url(#s08-brass)" stroke="#1E1813" stroke-width="4"/></g>
+        </g>
+
+        <!-- portcullis door: five rails, spikes, lock -->
+        <g id="s08-door">
+          <rect x="898" y="404" width="148" height="404" fill="#E8D6B2" opacity="0.12"/>
+          <g stroke-linecap="round">
+            <path class="s08-doorink" d="M908,412 V806" stroke="#1E1813" stroke-width="15"/>
+            <path class="s08-doorink" d="M940,412 V806" stroke="#1E1813" stroke-width="15"/>
+            <path class="s08-doorink" d="M972,412 V806" stroke="#1E1813" stroke-width="15"/>
+            <path class="s08-doorink" d="M1004,412 V806" stroke="#1E1813" stroke-width="15"/>
+            <path class="s08-doorink" d="M1036,412 V806" stroke="#1E1813" stroke-width="15"/>
+            <path class="s08-doormain" d="M908,412 V806" stroke="url(#s08-brass-v)" stroke-width="8"/>
+            <path class="s08-doormain" d="M940,412 V806" stroke="url(#s08-brass-v)" stroke-width="8"/>
+            <path class="s08-doormain" d="M972,412 V806" stroke="url(#s08-brass-v)" stroke-width="8"/>
+            <path class="s08-doormain" d="M1004,412 V806" stroke="url(#s08-brass-v)" stroke-width="8"/>
+            <path class="s08-doormain" d="M1036,412 V806" stroke="url(#s08-brass-v)" stroke-width="8"/>
+          </g>
+          <g fill="url(#s08-brass)" stroke="#1E1813" stroke-width="5">
+            <path d="M898,500 H1046 V518 H898 Z"/><path d="M898,616 H1046 V634 H898 Z"/><path d="M898,724 H1046 V742 H898 Z"/>
+          </g>
+          <g fill="url(#s08-brass)" stroke="#1E1813" stroke-width="5" stroke-linejoin="round">
+            <path d="M898,806 L918,806 L908,844 Z"/><path d="M930,806 L950,806 L940,844 Z"/><path d="M962,806 L982,806 L972,844 Z"/>
+            <path d="M994,806 L1014,806 L1004,844 Z"/><path d="M1026,806 L1046,806 L1036,844 Z"/>
+          </g>
+          <circle cx="1036" cy="660" r="15" fill="url(#s08-amber)" stroke="#1E1813" stroke-width="5"/>
+          <circle cx="1036" cy="660" r="5" fill="#3A2A1E"/>
+          <g fill="#7E5A1C" opacity="0.55"><rect x="890" y="520" width="18" height="26" rx="3"/><rect x="890" y="700" width="18" height="26" rx="3"/></g>
+        </g>
+
+        <!-- dome rivets -->
+        <g id="s08-rivets" fill="url(#s08-brass)" stroke="#1E1813" stroke-width="3">
+          <circle class="s08-rivet" cx="606" cy="452" r="7"/><circle class="s08-rivet" cx="696" cy="330" r="7"/>
+          <circle class="s08-rivet" cx="826" cy="246" r="7"/><circle class="s08-rivet" cx="960" cy="214" r="7"/>
+          <circle class="s08-rivet" cx="1094" cy="246" r="7"/><circle class="s08-rivet" cx="1224" cy="330" r="7"/>
+          <circle class="s08-rivet" cx="1314" cy="452" r="7"/>
+        </g>
+      </g>
+
+      <!-- the signet ring the cage hangs from -->
+      <g id="s08-ring">
+        <g id="s08-chain" stroke-linecap="round">
+          <path d="M960,-40 V96" stroke="#1E1813" stroke-width="22"/>
+          <path d="M960,-40 V96" stroke="url(#s08-brass-v)" stroke-width="12"/>
+          <ellipse cx="960" cy="-16" rx="12" ry="22" fill="none" stroke="#8A6323" stroke-width="6"/>
+          <ellipse cx="960" cy="18" rx="22" ry="12" fill="none" stroke="#8A6323" stroke-width="6"/>
+          <ellipse cx="960" cy="52" rx="12" ry="22" fill="none" stroke="#8A6323" stroke-width="6"/>
+          <ellipse cx="960" cy="86" rx="22" ry="12" fill="none" stroke="#8A6323" stroke-width="6"/>
+        </g>
+        <circle cx="960" cy="152" r="54" fill="none" stroke="#1E1813" stroke-width="30"/>
+        <circle cx="960" cy="152" r="54" fill="none" stroke="url(#s08-brass)" stroke-width="20"/>
+        <circle cx="960" cy="152" r="34" fill="none" stroke="#FBE7AE" stroke-width="4" opacity="0.55"/>
+        <rect x="922" y="182" width="76" height="42" rx="10" fill="url(#s08-brass)" stroke="#1E1813" stroke-width="6"/>
+        <g stroke="#7E5A1C" stroke-width="4" opacity="0.65"><path d="M936,196 H1006"/><path d="M936,210 H1006"/></g>
+      </g>
+
+      <!-- the route that slips out through the opened door -->
+      <g id="s08-route-wrap">
+        <path d="M986,816 C1076,858 1216,886 1376,904 C1536,922 1740,926 1980,916" fill="none" stroke="#D9822B" stroke-width="28" opacity="0.14" stroke-linecap="round"/>
+        <path id="s08-route" d="M986,816 C1076,858 1216,886 1376,904 C1536,922 1740,926 1980,916" fill="none" stroke="#C2593F" stroke-width="10"
+              stroke-linecap="round" stroke-dasharray="1200" stroke-dashoffset="1200"/>
+        <g id="s08-route-beads" fill="url(#s08-brass)" stroke="#1E1813" stroke-width="4">
+          <circle class="s08-route-bead" cx="1128" cy="872" r="11" opacity="0"/>
+          <circle class="s08-route-bead" cx="1332" cy="898" r="11" opacity="0"/>
+          <circle class="s08-route-bead" cx="1560" cy="912" r="11" opacity="0"/>
+        </g>
+      </g>
+    </svg>
+
+    <!-- FG · out-of-focus lagoon water and the wax seal -->
+    <svg class="s08-plane s08-p-fg" id="s08-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s08-riff" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#F6E4C4" stop-opacity="0"/><stop offset="0.34" stop-color="#F6E4C4" stop-opacity="0.56"/><stop offset="1" stop-color="#F6E4C4" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="s08-bok" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#3A2A1E" stop-opacity="0.30"/><stop offset="1" stop-color="#3A2A1E" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="s08-fgblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>
+      </defs>
+
+      <g id="s08-ripples" fill="none" stroke-linecap="round">
+        <path d="M-60,930 Q440,896 960,928 T1980,912" stroke="url(#s08-riff)" stroke-width="9"/>
+        <path d="M-60,982 Q440,948 960,980 T1980,964" stroke="url(#s08-riff)" stroke-width="7" opacity="0.74"/>
+        <path d="M-60,1034 Q440,1000 960,1032 T1980,1016" stroke="url(#s08-riff)" stroke-width="6" opacity="0.52"/>
+      </g>
+      <g id="s08-fgglints" fill="#F3DCAE" opacity="0.40">
+        <rect x="286" y="922" width="72" height="6" rx="3"/>
+        <rect x="1206" y="968" width="94" height="6" rx="3"/>
+        <rect x="1588" y="1024" width="60" height="5" rx="3"/>
+        <rect x="620" y="1042" width="52" height="5" rx="3"/>
+      </g>
+      <ellipse cx="120" cy="1090" rx="520" ry="230" fill="url(#s08-bok)" filter="url(#s08-fgblur)"/>
+      <ellipse cx="1840" cy="1080" rx="480" ry="210" fill="url(#s08-bok)" filter="url(#s08-fgblur)"/>
+
+      <g fill="#FBF3E2" opacity="0.55">
+        <circle class="s08-mote" cx="372" cy="286" r="4"/><circle class="s08-mote" cx="1544" cy="248" r="5"/>
+        <circle class="s08-mote" cx="1612" cy="742" r="4"/><circle class="s08-mote" cx="298" cy="676" r="5"/>
+        <circle class="s08-mote" cx="1148" cy="168" r="4"/><circle class="s08-mote" cx="742" cy="196" r="4"/>
+      </g>
+
+      <!-- wax seal: the seam -->
+      <g transform="translate(960,548)">
+      <g id="s08-seal" opacity="0">
+        <circle r="112" fill="#C2593F"/>
+        <circle r="112" fill="none" stroke="#8E3524" stroke-width="12"/>
+        <circle r="86" fill="none" stroke="#F0C7B6" stroke-width="6" opacity="0.55"/>
+        <path d="M0,-58 L16,-20 L56,-16 L26,10 L36,50 L0,28 L-36,50 L-26,10 L-56,-16 L-16,-20 Z" fill="#8E3524" opacity="0.65"/>
+        <circle cx="0" cy="0" r="16" fill="#C2593F" stroke="#F0C7B6" stroke-width="4" opacity="0.7"/>
+        <g fill="#F0C7B6" opacity="0.45">
+          <circle cx="-62" cy="-58" r="6"/><circle cx="62" cy="-58" r="6"/><circle cx="0" cy="70" r="6"/>
+        </g>
+      </g>
+      </g>
+    </svg>
+
+    <div class="s08-grain"></div>
+    <div class="s08-vignette"></div>
+
+    <div class="s08-tag" id="s08-tag">
+      <span class="s08-tag-dot"></span>
+      <span class="s08-tag-text">GOLDEN CAGE</span>
+    </div>
+    <div class="s08-rule" id="s08-rule"></div>
+  </div>
+</div>
+
+<script>
+(function initS08(){
+  var ID = "s08-golden-cage";
+  var root = document.querySelector('[data-composition-id="' + ID + '"]');
+  var tl = gsap.timeline({ paused: true });
+
+  tl.to({}, { duration: 20.969 }, 0);
+
+  // ── BG: lagoon rises out of haze, far shore, glints, birds ────────────────
+  tl.fromTo("#s08-bg", { scale: 1.055, x: -14, y: -6 }, { scale: 1, x: 0, y: 0, duration: 20.3, ease: "sine.out" }, 0.05);
+  tl.fromTo("#s08-waterline", { attr: { d: "M-40,660 L1960,622 L1960,1120 L-40,1120 Z" } },
+            { attr: { d: "M-40,536 L1960,498 L1960,1120 L-40,1120 Z" }, duration: 1.9, ease: "power2.out" }, 0.25);
+  tl.fromTo("#s08-skyline", { y: 34, opacity: 0 }, { y: 0, opacity: 0.13, duration: 1.5, ease: "sine.out" }, 0.55);
+  tl.fromTo("#s08-glints", { x: -46, opacity: 0 }, { x: 0, opacity: 0.30, duration: 2.1, ease: "sine.out" }, 0.90);
+  tl.fromTo(".s08-bird", { opacity: 0, y: 14 }, { opacity: 0.55, y: 0, duration: 0.9, ease: "sine.out", stagger: 0.22 }, 2.10);
+  tl.to(".s08-bird", { x: 44, y: -16, duration: 8.4, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 0.3 }, 3.40);
+
+  // ── PHASE 1: island plan unrolls out of the lagoon ───────────────────────
+  tl.fromTo("#s08-plan-rect", { attr: { y: 864, height: 0 } }, { attr: { y: 372, height: 488 }, duration: 1.55, ease: "power3.inOut" }, 0.70);
+  tl.fromTo("#s08-island-shadow", { opacity: 0 }, { opacity: 1, duration: 1.4, ease: "sine.out" }, 1.10);
+  tl.fromTo("#s08-island-line", { attr: { "stroke-dashoffset": 2900 } }, { attr: { "stroke-dashoffset": 0 }, duration: 1.9, ease: "power2.inOut" }, 0.92);
+  tl.fromTo("#s08-grid", { opacity: 0, x: -24 }, { opacity: 0.16, x: 0, duration: 1.3, ease: "sine.out" }, 1.50);
+  tl.fromTo("#s08-canals", { opacity: 0, x: 26 }, { opacity: 1, x: 0, duration: 1.25, ease: "sine.out" }, 1.70);
+  tl.to("#s08-photo", { scale: 1.045, x: -14, y: 6, duration: 12.6, ease: "sine.inOut", transformOrigin: "50% 50%" }, 1.00);
+
+  // seawall ring and palisade posts
+  tl.fromTo("#s08-wall", { attr: { "stroke-dashoffset": 2600 }, opacity: 0 },
+            { attr: { "stroke-dashoffset": 0 }, opacity: 0.82, duration: 1.6, ease: "power2.inOut" }, 2.90);
+  tl.fromTo(".s08-post", { scale: 0 }, { scale: 1, duration: 0.34, ease: "back.out(3)", stagger: 0.055 }, 3.30);
+
+  // ── PHASE 2: furnace towers rise, mouths ignite ──────────────────────────
+  tl.fromTo("#s08-tower-1", { scaleY: 0.05, opacity: 0 }, { scaleY: 1, opacity: 1, duration: 0.90, ease: "back.out(1.7)", svgOrigin: "-150 34" }, 3.50);
+  tl.fromTo("#s08-tower-2", { scaleY: 0.05, opacity: 0 }, { scaleY: 1, opacity: 1, duration: 0.95, ease: "back.out(1.7)", svgOrigin: "0 58" }, 3.66);
+  tl.fromTo("#s08-tower-3", { scaleY: 0.05, opacity: 0 }, { scaleY: 1, opacity: 1, duration: 0.88, ease: "back.out(1.7)", svgOrigin: "152 46" }, 3.82);
+  tl.fromTo(".s08-glow", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.65, ease: "back.out(2.4)", stagger: 0.10 }, 4.20);
+  tl.to(".s08-glow", { opacity: 0.66, duration: 0.46, ease: "sine.inOut", yoyo: true, repeat: 13, stagger: 0.14 }, 4.95);
+  tl.fromTo(".s08-smoke", { opacity: 0, y: 16 }, { opacity: 0.32, y: 0, duration: 1.2, ease: "sine.out", stagger: 0.12 }, 4.50);
+  tl.to(".s08-smoke", { y: -22, x: 10, duration: 5.2, ease: "sine.inOut", yoyo: true, repeat: 2, stagger: 0.2 }, 5.40);
+  tl.fromTo("#s08-reflections", { opacity: 0 }, { opacity: 1, duration: 1.6, ease: "sine.out" }, 4.80);
+  tl.to("#s08-glints", { x: 28, duration: 8.2, ease: "sine.inOut", yoyo: true, repeat: 1 }, 5.20);
+
+  // ── PHASE 3: the cage is lowered and locked ──────────────────────────────
+  tl.fromTo("#s08-ring", { y: -300, opacity: 0 }, { y: 0, opacity: 1, duration: 1.25, ease: "back.out(1.4)" }, 5.90);
+  tl.to("#s08-ring", { rotation: 1.6, svgOrigin: "960 96", duration: 6.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 7.30);
+  tl.fromTo("#s08-dome", { attr: { "stroke-dashoffset": 1400 } }, { attr: { "stroke-dashoffset": 0 }, duration: 1.25, ease: "power2.inOut" }, 6.85);
+  tl.fromTo("#s08-dome-brass", { attr: { "stroke-dashoffset": 1400 } }, { attr: { "stroke-dashoffset": 0 }, duration: 1.25, ease: "power2.inOut" }, 6.95);
+  tl.fromTo("#s08-base", { attr: { "stroke-dashoffset": 1000 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.95, ease: "power2.inOut" }, 7.50);
+  tl.fromTo("#s08-base-brass", { attr: { "stroke-dashoffset": 1000 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.95, ease: "power2.inOut" }, 7.60);
+  tl.fromTo(".s08-hoop-ink", { attr: { "stroke-dashoffset": 1000 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.95, ease: "power2.inOut", stagger: 0.12 }, 7.35);
+  tl.fromTo(".s08-hoop", { attr: { "stroke-dashoffset": 1000 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.95, ease: "power2.inOut", stagger: 0.12 }, 7.45);
+  tl.fromTo("#s08-bbar-ink", { y: -340, opacity: 0 }, { y: 0, opacity: 0.34, duration: 0.86, ease: "back.out(1.5)" }, 8.00);
+  tl.fromTo("#s08-bbar-brass", { y: -340, opacity: 0 }, { y: 0, opacity: 0.46, duration: 0.86, ease: "back.out(1.5)" }, 8.00);
+  tl.fromTo(".s08-fbar", { y: -460, opacity: 0 }, { y: 0, opacity: 1, duration: 0.82, ease: "back.out(1.55)", stagger: 0.07 }, 8.35);
+  tl.to(".s08-fbar", { y: 6, duration: 0.30, ease: "sine.out", stagger: 0.05 }, 9.15);
+  tl.fromTo("#s08-door", { y: -140, opacity: 0 }, { y: 0, opacity: 1, duration: 0.72, ease: "back.out(1.7)" }, 9.55);
+  tl.fromTo("#s08-rivets", { opacity: 0 }, { opacity: 1, duration: 0.40 }, 10.00);
+  tl.fromTo(".s08-rivet", { scale: 0 }, { scale: 1, duration: 0.24, ease: "back.out(3)", stagger: 0.05 }, 10.00);
+
+  // ── PHASE 4: privileges socket, the cage sways, the door lifts ───────────
+  tl.fromTo("#s08-sword", { opacity: 0, y: -120, rotation: -30 }, { opacity: 1, y: 0, rotation: 0, duration: 0.85, ease: "back.out(1.6)" }, 10.40);
+  tl.to("#s08-sword", { rotation: -4, duration: 2.8, ease: "sine.inOut", yoyo: true, repeat: 2 }, 11.40);
+  tl.to("#s08-cage-front", { rotation: 0.70, svgOrigin: "960 150", duration: 6.6, ease: "sine.inOut", yoyo: true, repeat: 1 }, 11.80);
+  tl.to("#s08-cage-back", { rotation: 0.70, svgOrigin: "960 150", duration: 6.6, ease: "sine.inOut", yoyo: true, repeat: 1 }, 11.80);
+  tl.to("#s08-bars-front", { x: 3, duration: 3.4, ease: "sine.inOut", yoyo: true, repeat: 2 }, 12.60);
+  tl.to("#s08-rivets", { opacity: 0.72, duration: 2.2, ease: "sine.inOut", yoyo: true, repeat: 3 }, 12.90);
+
+  tl.to("#s08-door", { scaleX: 0.02, svgOrigin: "900 660", duration: 0.90, ease: "power3.inOut" }, 15.10);
+  tl.set("#s08-door", { opacity: 0 }, 15.98);
+  tl.to("#s08-door", { rotation: -1.5, svgOrigin: "900 660", duration: 0.50, ease: "sine.out" }, 16.00);
+  tl.fromTo("#s08-route", { attr: { "stroke-dashoffset": 1200 } }, { attr: { "stroke-dashoffset": 0 }, duration: 1.5, ease: "power2.inOut" }, 15.40);
+  tl.fromTo(".s08-route-bead", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.34, ease: "back.out(3)", stagger: 0.20 }, 16.00);
+  tl.to("#s08-route", { opacity: 0.74, duration: 2.2, ease: "sine.inOut", yoyo: true, repeat: 2 }, 17.60);
+
+  // ── living holds ─────────────────────────────────────────────────────────
+  tl.fromTo("#s08-stage", { scale: 1.0, x: 0 }, { scale: 1.024, x: -12, y: -8, duration: 20.6, ease: "sine.inOut" }, 0.10);
+  tl.fromTo("#s08-ripples", { x: 0 }, { x: 44, duration: 7.0, ease: "sine.inOut", yoyo: true, repeat: 2 }, 1.40);
+  tl.to("#s08-ripples", { opacity: 0.58, duration: 3.6, ease: "sine.inOut", yoyo: true, repeat: 2 }, 3.00);
+  tl.fromTo("#s08-fgglints", { x: -22 }, { x: 24, duration: 6.2, ease: "sine.inOut", yoyo: true, repeat: 2 }, 2.20);
+  tl.fromTo(".s08-mote", { y: 0, x: 0 }, { y: -58, x: 18, duration: 7.4, ease: "sine.inOut", yoyo: true, repeat: 2, stagger: 0.26 }, 1.20);
+
+  // ── TAG ──────────────────────────────────────────────────────────────────
+  tl.fromTo("#s08-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -14 }, { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.62, ease: "power3.inOut" }, 3.20);
+  tl.fromTo("#s08-rule", { width: 0 }, { width: 318, duration: 0.55, ease: "power2.out" }, 3.58);
+
+  // ── SEAM: wax seal presses the lens, then irises open ────────────────────
+  tl.fromTo("#s08-seal", { opacity: 0, scale: 0.04 }, { opacity: 1, scale: 1, duration: 0.50, ease: "power3.in" }, 20.28);
+  tl.to("#s08-seal", { scale: 9.5, duration: 0.30, ease: "power3.in" }, 20.62);
+  tl.to("#s08-tag", { clipPath: "inset(0% 100% 0% 0%)", duration: 0.28, ease: "power2.in" }, 20.50);
+  tl.to("#s08-rule", { width: 0, duration: 0.26, ease: "power2.in" }, 20.50);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

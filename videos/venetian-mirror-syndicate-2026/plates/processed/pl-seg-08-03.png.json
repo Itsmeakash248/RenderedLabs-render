@@ -1,0 +1,35 @@
+{
+  "asset_id": "pl-seg-08-03",
+  "source_url": "https://theses.chartes.psl.eu/document/ENCPOS_1908_08",
+  "publication_date": "1908-05-01",
+  "width": 1400,
+  "height": 1000,
+  "scale_factor": 1.0,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": [
+    {
+      "phrase": "Giustiniani, successeur de Sagredo, d\u00e9cide",
+      "x": 922,
+      "y": 322,
+      "w": 218,
+      "h": 20
+    },
+    {
+      "phrase": "Giustiniani, successeur de Sagredo, d\u00e9cide",
+      "x": 260,
+      "y": 350,
+      "w": 131,
+      "h": 20
+    },
+    {
+      "phrase": "La Rivetta et ses camarades \u00e0 regagner Venise",
+      "x": 570,
+      "y": 350,
+      "w": 380,
+      "h": 20
+    }
+  ]
+}

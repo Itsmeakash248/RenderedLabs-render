@@ -1,0 +1,272 @@
+[
+ {
+  "asset_id": "art-hall-wide",
+  "file": "plates/art/hall-wide.jpg",
+  "title": "Chateau Versailles Galerie des Glaces",
+  "license": "CC BY-SA 3.0",
+  "credit": "Photo: Ch\u00e2teau de Versailles / Wikimedia Commons",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Chateau_Versailles_Galerie_des_Glaces.jpg",
+  "width": 1600,
+  "height": 1062
+ },
+ {
+  "asset_id": "art-hall-ceiling",
+  "file": "plates/art/hall-ceiling.jpg",
+  "title": "Hall of Mirrors, Palace of Versailles chandelier",
+  "license": "CC BY-SA 3.0",
+  "credit": "Wikimedia Commons",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Hall_of_Mirrors%2C_Palace_of_Versailles_chandelier.JPG",
+  "width": 900,
+  "height": 1200
+ },
+ {
+  "asset_id": "art-hall-detail",
+  "file": "plates/art/hall-detail.jpg",
+  "title": "Nec pluribus impar ceiling galerie des glaces versailles",
+  "license": "CC0",
+  "credit": "Wikimedia Commons",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Nec_pluribus_impar_ceiling_galerie_des_glaces_versailles.jpg",
+  "width": 1564,
+  "height": 1200
+ },
+ {
+  "asset_id": "art-hall-bw",
+  "file": "plates/art/hall-bw.jpg",
+  "title": "Palais de Versailles, Galerie des Glaces",
+  "license": "CC BY 2.0",
+  "credit": "Wikimedia Commons",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Palais_de_Versailles%2C_Galerie_des_Glaces.jpg",
+  "width": 1600,
+  "height": 1009
+ },
+ {
+  "asset_id": "art-colbert",
+  "file": "plates/art/colbert.jpg",
+  "title": "Colbert-5",
+  "license": "Public domain",
+  "credit": "Wikimedia Commons",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Colbert-5.jpg",
+  "width": 918,
+  "height": 1200
+ },
+ {
+  "asset_id": "art-versailles-silvestre",
+  "file": "plates/art/versailles-silvestre.jpg",
+  "title": "Israel Silvestre Versailles 1676",
+  "license": "Public domain",
+  "credit": "Isra\u00ebl Silvestre, 1676",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Israel_Silvestre_Versailles_1676.jpg",
+  "width": 1600,
+  "height": 1200
+ },
+ {
+  "asset_id": "art-versailles-court",
+  "file": "plates/art/versailles-court.jpg",
+  "title": "Isra\u00ebl Silvestre - Cour de Marbre in Versailles - WGA21326",
+  "license": "Public domain",
+  "credit": "Isra\u00ebl Silvestre",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Isra%C3%ABl_Silvestre_-_Cour_de_Marbre_in_Versailles_-_WGA21326.jpg",
+  "width": 1004,
+  "height": 650
+ },
+ {
+  "asset_id": "art-paris-map",
+  "file": "plates/art/paris-map.jpg",
+  "title": "Atlas des anciens plans de Paris - 063. Paris en 1652 - David Rumsey",
+  "license": "Public domain",
+  "credit": "David Rumsey Map Collection",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Atlas_des_anciens_plans_de_Paris_-_063._Paris_en_1652_-_David_Rumsey.jpg",
+  "width": 1600,
+  "height": 1155
+ },
+ {
+  "asset_id": "art-venice-plan",
+  "file": "plates/art/venice-plan.jpg",
+  "title": "Venice, Museo Correr, painted plan of Venice (17th ct.), Pza",
+  "license": "CC BY-SA 4.0",
+  "credit": "Museo Correr, Venice",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Venice%2C_Museo_Correr%2C_painted_plan_of_Venice_%2817th_ct.%29%2C_Pza.jpg",
+  "width": 1600,
+  "height": 1056
+ },
+ {
+  "asset_id": "art-lagoon-map",
+  "file": "plates/art/lagoon-map.jpg",
+  "title": "Carte hydrographique de la V\u00e9n\u00e9tie - Io. Bat. Maza f. - btv1b53170332x (2 of 3)",
+  "license": "Public domain",
+  "credit": "Biblioth\u00e8que nationale de France",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Carte_hydrographique_de_la_V%C3%A9n%C3%A9tie_-_Io._Bat._Maza_f._-_btv1b53170332x_%282_of_3%29.jpg",
+  "width": 1600,
+  "height": 1040
+ },
+ {
+  "asset_id": "art-canaletto",
+  "file": "plates/art/canaletto.jpg",
+  "title": "(Venice) Veduta del Canal Grande dalla Punta della Dogana - Bernardo Bellotto",
+  "license": "Public domain",
+  "credit": "Bernardo Bellotto",
+  "source_url": "https://commons.wikimedia.org/wiki/File:%28Venice%29_Veduta_del_Canal_Grande_dalla_Punta_della_Dogana_-_Bernardo_Bellotto.jpg",
+  "width": 1600,
+  "height": 1015
+ },
+ {
+  "asset_id": "art-gondola",
+  "file": "plates/art/gondola.jpg",
+  "title": "Gondola, Venice (Anders Zorn) - Gothenburg Museum of Art - GKM 1842",
+  "license": "Public domain",
+  "credit": "Anders Zorn, 1908",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Gondola%2C_Venice_%28Anders_Zorn%29_-_Gothenburg_Museum_of_Art_-_GKM_1842.tif",
+  "width": 747,
+  "height": 1200
+ },
+ {
+  "asset_id": "art-murano-tower",
+  "file": "plates/art/murano-tower.jpg",
+  "title": "Faro (Murano)",
+  "license": "CC BY-SA 4.0",
+  "credit": "Wikimedia Commons",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Faro_%28Murano%29.jpg",
+  "width": 1600,
+  "height": 1068
+ },
+ {
+  "asset_id": "art-murano-skyline",
+  "file": "plates/art/murano-skyline.jpg",
+  "title": "Canale San Giovanni (Murano)",
+  "license": "CC BY-SA 4.0",
+  "credit": "Wikimedia Commons",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Canale_San_Giovanni_%28Murano%29.jpg",
+  "width": 1600,
+  "height": 624
+ },
+ {
+  "asset_id": "art-furnace",
+  "file": "plates/art/furnace.jpg",
+  "title": "Murano furnace closeup",
+  "license": "CC BY-SA 3.0",
+  "credit": "Wikimedia Commons",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Murano_furnace_closeup.jpg",
+  "width": 1600,
+  "height": 1200
+ },
+ {
+  "asset_id": "art-blowing",
+  "file": "plates/art/blowing.jpg",
+  "title": "Murano glassblowing demo 2",
+  "license": "CC BY-SA 3.0",
+  "credit": "Wikimedia Commons",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Murano_glassblowing_demo_2.jpg",
+  "width": 1600,
+  "height": 1200
+ },
+ {
+  "asset_id": "art-blowing-hands",
+  "file": "plates/art/blowing-hands.jpg",
+  "title": "Murano glassblowing demo 6",
+  "license": "CC BY-SA 3.0",
+  "credit": "Wikimedia Commons",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Murano_glassblowing_demo_6.jpg",
+  "width": 1600,
+  "height": 1200
+ },
+ {
+  "asset_id": "art-glassworks",
+  "file": "plates/art/glassworks.jpg",
+  "title": "Diderot Encyclopedia Making Crown Glass 5",
+  "license": "Public domain",
+  "credit": "Diderot & d'Alembert, Encyclop\u00e9die",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Diderot_Encyclopedia_Making_Crown_Glass_5.JPG",
+  "width": 1543,
+  "height": 1200
+ },
+ {
+  "asset_id": "art-mirror-design",
+  "file": "plates/art/mirror-design.jpg",
+  "title": "Design for Mirror or Box MET DP803197",
+  "license": "CC0",
+  "credit": "Metropolitan Museum of Art",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Design_for_Mirror_or_Box_MET_DP803197.jpg",
+  "width": 1600,
+  "height": 1067
+ },
+ {
+  "asset_id": "art-council",
+  "file": "plates/art/council.jpg",
+  "title": "Council of Ten (Republic of Venice)",
+  "license": "CC BY-SA 4.0",
+  "credit": "Wikimedia Commons",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Council_of_Ten_%28Republic_of_Venice%29.jpg",
+  "width": 1230,
+  "height": 827
+ },
+ {
+  "asset_id": "art-doge",
+  "file": "plates/art/doge.jpg",
+  "title": "(Venice) Bocca di Leone in the Doge's Palace",
+  "license": "CC BY-SA 4.0",
+  "credit": "Doge's Palace, Venice",
+  "source_url": "https://commons.wikimedia.org/wiki/File:%28Venice%29_Bocca_di_Leone_in_the_Doge%27s_Palace.jpg",
+  "width": 1089,
+  "height": 1200
+ },
+ {
+  "asset_id": "art-goblet",
+  "file": "plates/art/goblet.jpg",
+  "title": "Murano Glass Museum 04",
+  "license": "CC BY 4.0",
+  "credit": "Murano Glass Museum",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Murano_Glass_Museum_04.jpg",
+  "width": 1600,
+  "height": 653
+ },
+ {
+  "asset_id": "art-chandelier",
+  "file": "plates/art/chandelier.jpg",
+  "title": "Lampadario in vetro di Murano - Ca' Rezzonico, Venice",
+  "license": "CC BY-SA 4.0",
+  "credit": "Ca' Rezzonico, Venice",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Lampadario_in_vetro_di_Murano_-_Ca%27_Rezzonico%2C_Venice.jpg",
+  "width": 1387,
+  "height": 1200
+ },
+ {
+  "asset_id": "art-saintgobain",
+  "file": "plates/art/saintgobain.jpg",
+  "title": "Saint-Gobain 18Jhdt",
+  "license": "CC BY-SA 2.0 de",
+  "credit": "Wikimedia Commons",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Saint-Gobain_18Jhdt.jpg",
+  "width": 1379,
+  "height": 850
+ },
+ {
+  "asset_id": "art-louis",
+  "file": "plates/art/louis.jpg",
+  "title": "Portrait of Louis XIV in Coronation Robes",
+  "license": "Public domain",
+  "credit": "Hyacinthe Rigaud, Louvre",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Louis_XIV_of_France_in_Coronation_Robes_(by_Hyacinthe_Rigaud)_-_Louvre_Museum.jpg",
+  "width": 861,
+  "height": 1200
+ },
+ {
+  "asset_id": "art-patent",
+  "file": "plates/art/patent.jpg",
+  "title": "Lettres patentes, Manufacture royale des glaces, 1708",
+  "license": "Public domain",
+  "credit": "Archives nationales / Wikimedia Commons",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Lettres_patentes_portant_privil%C3%A8ge_exclusif_de_la_Manufacture_royale_des_glaces_en_faveur_d%27Antoine_Dagincourt,_31_mars_1708.djvu",
+  "width": 660,
+  "height": 1200
+ },
+ {
+  "asset_id": "art-mirror-gilt",
+  "file": "plates/art/mirror-gilt.jpg",
+  "title": "Venetian wall mirror, Vihorlat Museum",
+  "license": "CC BY-SA 4.0",
+  "credit": "Vihorlat Museum",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Vihorlat_Museum_in_Humenn%C3%A9_-_History_and_art_history_permanent_exhibition_-_Golden_salon_(ladies%27_room)_-_Venetian_wall_mirror_(May_2011).jpg",
+  "width": 1419,
+  "height": 1200
+ }
+]

@@ -1,0 +1,568 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s07-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s07-mercury-mirror"] .s07-stage{position:absolute;inset:0;transform-origin:50% 50%;}
+[data-composition-id="s07-mercury-mirror"] .s07-ground{position:absolute;inset:0;background:
+  radial-gradient(120% 100% at 42% 38%, #FBF7F0 0%, #F5EFEB 38%, #E9DCC9 76%, #C8B296 100%);}
+[data-composition-id="s07-mercury-mirror"] .s07-plane{position:absolute;inset:0;width:1920px;height:1080px;transform-origin:50% 50%;}
+[data-composition-id="s07-mercury-mirror"] .s07-tag{position:absolute;left:78px;top:902px;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;background:rgba(250,247,240,0.95);
+  box-shadow:0 12px 30px rgba(43,31,23,0.26),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s07-mercury-mirror"] .s07-tag-dot{width:15px;height:15px;border-radius:50%;background:#C2593F;
+  box-shadow:0 0 0 5px rgba(194,89,63,0.20),inset 0 0 0 3px #A8462F;}
+[data-composition-id="s07-mercury-mirror"] .s07-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.13em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s07-mercury-mirror"] .s07-rule{position:absolute;left:78px;top:968px;height:5px;width:0px;background:#C2593F;border-radius:4px;
+  box-shadow:0 2px 6px rgba(43,31,23,0.25);}
+[data-composition-id="s07-mercury-mirror"] .s07-seam{position:absolute;left:-180px;top:-40px;width:64px;height:1160px;
+  background:linear-gradient(90deg,#5C3F12 0%,#7E5A1C 10%,#C89D42 26%,#F3DA96 40%,#C89D42 56%,#A87A2B 72%,#5C3F12 100%);
+  box-shadow:20px 0 42px rgba(43,31,23,0.36),-10px 0 26px rgba(43,31,23,0.22),inset 0 0 0 3px #3A2C22;}
+[data-composition-id="s07-mercury-mirror"] .s07-bead{transform-box:fill-box;transform-origin:50% 100%;}
+[data-composition-id="s07-mercury-mirror"] .s07-win{transform-box:fill-box;transform-origin:50% 100%;}
+[data-composition-id="s07-mercury-mirror"] .s07-tab{transform-box:fill-box;transform-origin:50% 50%;}
+</style>
+
+<div id="root" data-composition-id="s07-mercury-mirror" data-width="1920" data-height="1080" data-start="0" data-duration="16.608">
+  <div class="s07-stage" id="s07-stage">
+    <div class="s07-ground"></div>
+
+    <!-- BG plane — 0.958: furnace wall, mount shadow, ghost ornament curves -->
+    <svg class="s07-plane s07-bg" id="s07-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <radialGradient id="s07-wallglow" cx="50%" cy="88%" r="66%">
+          <stop offset="0" stop-color="#FFC46B" stop-opacity="0.50"/><stop offset="0.5" stop-color="#D9822B" stop-opacity="0.16"/><stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="s07-hazeband" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#2B1F17" stop-opacity="0"/><stop offset="0.5" stop-color="#2B1F17" stop-opacity="0.10"/><stop offset="1" stop-color="#2B1F17" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="s07-b1blur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>
+      </defs>
+      <rect x="0" y="620" width="1920" height="460" fill="url(#s07-wallglow)"/>
+      <!-- furnace wall arches -->
+      <g fill="none" stroke="#2B1F17" opacity="0.10">
+        <path d="M430,1080 L430,884 A530,380 0 0 1 1490,884 L1490,1080" stroke-width="14"/>
+        <path d="M492,1080 L492,906 A468,320 0 0 1 1428,906 L1428,1080" stroke-width="10"/>
+        <path d="M556,1080 L556,926 A404,258 0 0 1 1364,926 L1364,1080" stroke-width="8"/>
+        <path d="M640,1080 L640,944 A320,196 0 0 1 1280,944 L1280,1080" stroke-width="7"/>
+      </g>
+      <g stroke="#2B1F17" opacity="0.055">
+        <path d="M430,640 L1490,640" stroke-width="8"/><path d="M470,700 L1450,700" stroke-width="8"/>
+        <path d="M520,760 L1400,760" stroke-width="8"/><path d="M590,820 L1330,820" stroke-width="8"/>
+        <path d="M640,880 L1280,880" stroke-width="8"/><path d="M700,940 L1220,940" stroke-width="8"/>
+      </g>
+      <!-- ghost ornament sweeps from the plate, enlarged -->
+      <g fill="none" stroke="#5C5248" stroke-linecap="round" opacity="0.085">
+        <path d="M-70,742 C120,590 214,884 386,730 C486,640 452,520 586,556" stroke-width="12"/>
+        <path d="M-40,900 C170,820 230,1010 430,900 C540,838 660,880 730,820" stroke-width="9"/>
+        <path d="M-20,420 C90,330 210,360 230,470 C246,558 340,580 372,500" stroke-width="8"/>
+      </g>
+      <rect x="380" y="250" width="1560" height="110" fill="url(#s07-hazeband)"/>
+      <rect x="380" y="560" width="1560" height="86" fill="url(#s07-hazeband)"/>
+      <!-- mount shadow down-right -->
+      <rect x="600" y="152" width="1291" height="824" fill="#2B1F17" opacity="0.26" filter="url(#s07-b1blur)"/>
+      <!-- ruler ticks under the plate -->
+      <g stroke="#5C5248" stroke-width="6" opacity="0.13">
+        <path d="M620,1000 L1840,1000"/><path d="M620,986 L620,1014"/><path d="M720,992 L720,1008"/>
+        <path d="M820,986 L820,1014"/><path d="M920,992 L920,1008"/><path d="M1020,986 L1020,1014"/>
+        <path d="M1120,992 L1120,1008"/><path d="M1220,986 L1220,1014"/><path d="M1320,992 L1320,1008"/>
+        <path d="M1420,986 L1420,1014"/><path d="M1520,992 L1520,1008"/><path d="M1620,986 L1620,1014"/>
+        <path d="M1720,992 L1720,1008"/><path d="M1820,986 L1820,1014"/>
+      </g>
+    </svg>
+    <!-- MG plane — 1.000: mounted ornament plate, oval mirror, press rig -->
+    <svg class="s07-plane s07-mg" id="s07-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s07-brass" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#F3DA96"/><stop offset="0.36" stop-color="#C89D42"/><stop offset="0.74" stop-color="#A87A2B"/><stop offset="1" stop-color="#7E5A1C"/>
+        </linearGradient>
+        <linearGradient id="s07-iron" x1="0" y1="0" x2="0.26" y2="1">
+          <stop offset="0" stop-color="#8C8273"/><stop offset="0.42" stop-color="#5C5248"/><stop offset="1" stop-color="#3A2C22"/>
+        </linearGradient>
+        <linearGradient id="s07-mat" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#3A2C22"/><stop offset="0.5" stop-color="#2B1F17"/><stop offset="1" stop-color="#1E1813"/>
+        </linearGradient>
+        <linearGradient id="s07-glass" x1="0" y1="0" x2="0.28" y2="1">
+          <stop offset="0" stop-color="#FBF7F0"/><stop offset="0.34" stop-color="#EDE4D3"/><stop offset="0.68" stop-color="#CFC2A9"/><stop offset="1" stop-color="#A8997F"/>
+        </linearGradient>
+        <linearGradient id="s07-tingrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F9F3E3"/><stop offset="0.38" stop-color="#DCD1BA"/><stop offset="1" stop-color="#A99C86"/>
+        </linearGradient>
+        <radialGradient id="s07-merc" cx="36%" cy="28%" r="72%">
+          <stop offset="0" stop-color="#FFFDF6"/><stop offset="0.4" stop-color="#E7E0D2"/><stop offset="0.78" stop-color="#A9A296"/><stop offset="1" stop-color="#6E685E"/>
+        </radialGradient>
+        <linearGradient id="s07-amalgamgrad" x1="0" y1="0" x2="1" y2="0.4">
+          <stop offset="0" stop-color="#FAF3E2"/><stop offset="0.28" stop-color="#C9C0AE"/><stop offset="0.56" stop-color="#D9B25E"/><stop offset="0.82" stop-color="#B9AA92"/><stop offset="1" stop-color="#F1E7D2"/>
+        </linearGradient>
+        <radialGradient id="s07-mirrorglass" cx="46%" cy="42%" r="70%">
+          <stop offset="0" stop-color="#3A2C22"/><stop offset="0.52" stop-color="#241A13"/><stop offset="1" stop-color="#120D0A"/>
+        </radialGradient>
+        <linearGradient id="s07-roomwall" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#8E4E20"/><stop offset="0.45" stop-color="#5E3618"/><stop offset="1" stop-color="#2B1F17"/>
+        </linearGradient>
+        <linearGradient id="s07-window" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFE3B4"/><stop offset="0.5" stop-color="#FFC46B"/><stop offset="1" stop-color="#D9822B"/>
+        </linearGradient>
+        <linearGradient id="s07-floor" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#7E4A22"/><stop offset="1" stop-color="#2B1F17"/>
+        </linearGradient>
+        <linearGradient id="s07-fig" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#4A3526"/><stop offset="1" stop-color="#120D0A"/>
+        </linearGradient>
+        <radialGradient id="s07-amber" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFC46B" stop-opacity="0.75"/><stop offset="0.52" stop-color="#D9822B" stop-opacity="0.30"/><stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s07-mirrorglowgrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFC46B" stop-opacity="0.42"/><stop offset="0.55" stop-color="#D9822B" stop-opacity="0.16"/><stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s07-plateinner" cx="48%" cy="46%" r="72%">
+          <stop offset="0" stop-color="#2B1F17" stop-opacity="0"/><stop offset="0.74" stop-color="#2B1F17" stop-opacity="0.06"/><stop offset="1" stop-color="#2B1F17" stop-opacity="0.22"/>
+        </radialGradient>
+        <filter id="s07-grade" x="-5%" y="-5%" width="110%" height="110%">
+          <feColorMatrix type="saturate" values="0.78"/>
+          <feComponentTransfer><feFuncR type="linear" slope="1.05"/><feFuncB type="linear" slope="0.90"/></feComponentTransfer>
+        </filter>
+        <filter id="s07-soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="12"/></filter>
+        <filter id="s07-soft2" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="4"/></filter>
+        <filter id="s07-heatblur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5"/></filter>
+        <mask id="s07-reveal"><rect id="s07-pr" x="590" y="140" width="1267" height="0" fill="#fff"/></mask>
+        <clipPath id="s07-plate-clip"><rect x="590" y="140" width="1267" height="800"/></clipPath>
+        <clipPath id="s07-roomclip"><ellipse id="s07-roomap" cx="1235" cy="671" rx="0" ry="0"/></clipPath>
+        <clipPath id="s07-tinclip"><rect id="s07-tinrev" x="110" y="452" width="0" height="62"/></clipPath>
+        <clipPath id="s07-capsule-clip">
+          <path d="M160,530 L440,530 A100,100 0 0 1 440,730 L160,730 A100,100 0 0 1 160,530 Z"/>
+        </clipPath>
+      </defs>
+
+      <!-- 24px umber mat with cast shadow -->
+      <rect x="580" y="130" width="1315" height="848" fill="#2B1F17" opacity="0.28" filter="url(#s07-soft2)" transform="translate(12,14)"/>
+      <rect x="566" y="116" width="1315" height="848" fill="url(#s07-mat)"/>
+      <rect x="590" y="140" width="1267" height="800" fill="none" stroke="#C89D42" stroke-width="3" opacity="0.55"/>
+
+      <!-- plate as world -->
+      <g clip-path="url(#s07-plate-clip)" mask="url(#s07-reveal)">
+        <rect x="590" y="140" width="1267" height="800" fill="#E8D9BF"/>
+        <image id="s07-photo" href="plates/processed/art-mirror-design.jpg" x="590" y="140" width="1267" height="800"
+               preserveAspectRatio="xMidYMid slice" filter="url(#s07-grade)"/>
+        <rect x="590" y="140" width="1267" height="800" fill="#D9822B" opacity="0.10"/>
+        <rect x="590" y="140" width="1267" height="800" fill="#2B1F17" opacity="0.05"/>
+        <rect x="590" y="140" width="1267" height="800" fill="url(#s07-plateinner)"/>
+
+        <!-- finished oval mirror sitting in the ornament's blank cartouche -->
+        <g id="s07-mirror">
+          <ellipse id="s07-mirrorshadow" cx="1245" cy="683" rx="367" ry="150" fill="#2B1F17" opacity="0.34" filter="url(#s07-soft)"/>
+          <ellipse id="s07-mirrorglow" cx="1235" cy="671" rx="435" ry="200" fill="url(#s07-mirrorglowgrad)"/>
+          <ellipse id="s07-glassellipse" cx="1235" cy="671" rx="0" ry="0" fill="url(#s07-mirrorglass)"/>
+          <g clip-path="url(#s07-roomclip)">
+            <rect x="860" y="470" width="760" height="380" fill="url(#s07-roomwall)"/>
+            <ellipse cx="1235" cy="720" rx="330" ry="110" fill="url(#s07-amber)" opacity="0.5"/>
+            <g id="s07-win1" class="s07-win">
+              <path d="M1035,772 L1035,640 A50,54 0 0 1 1135,640 L1135,772 Z" fill="url(#s07-window)" stroke="#1E1813" stroke-width="8"/>
+              <path d="M1080,772 L1080,640" stroke="#1E1813" stroke-width="5"/>
+              <path d="M1035,700 L1135,700" stroke="#1E1813" stroke-width="5"/>
+            </g>
+            <g id="s07-win2" class="s07-win">
+              <path d="M1335,772 L1335,640 A50,54 0 0 1 1435,640 L1435,772 Z" fill="url(#s07-window)" stroke="#1E1813" stroke-width="8"/>
+              <path d="M1385,772 L1385,640" stroke="#1E1813" stroke-width="5"/>
+              <path d="M1335,700 L1435,700" stroke="#1E1813" stroke-width="5"/>
+            </g>
+            <rect x="860" y="772" width="760" height="90" fill="url(#s07-floor)"/>
+            <path id="s07-floorline" d="M880,772 L1590,772" stroke="#1E1813" stroke-width="10" stroke-linecap="round"/>
+            <g stroke="#5C5248" stroke-width="5" opacity="0.38">
+              <path d="M1235,772 L942,832"/><path d="M1235,772 L1528,832"/><path d="M1235,772 L1046,832"/><path d="M1235,772 L1424,832"/>
+            </g>
+            <g id="s07-figure">
+              <ellipse cx="1235" cy="782" rx="56" ry="12" fill="#2B1F17" opacity="0.42"/>
+              <rect x="1201" y="696" width="68" height="86" rx="34" fill="url(#s07-fig)"/>
+              <circle cx="1235" cy="678" r="22" fill="url(#s07-fig)"/>
+              <path d="M1208,714 L1208,768" stroke="#D9822B" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+            </g>
+            <g id="s07-chand">
+              <path d="M1235,506 L1235,552" stroke="#C89D42" stroke-width="6"/>
+              <path d="M1185,566 Q1235,542 1285,566" stroke="#C89D42" stroke-width="7" fill="none"/>
+              <path d="M1235,552 L1185,566 M1235,552 L1285,566" stroke="#C89D42" stroke-width="6"/>
+              <g fill="#FFC46B" stroke="#C89D42" stroke-width="3">
+                <circle cx="1185" cy="562" r="6"/><circle cx="1210" cy="554" r="6"/><circle cx="1235" cy="552" r="6"/>
+                <circle cx="1260" cy="554" r="6"/><circle cx="1285" cy="562" r="6"/>
+              </g>
+            </g>
+            <rect id="s07-sweep" x="850" y="470" width="130" height="380" fill="#FAF7F0" opacity="0.16" transform="rotate(-18 1235 671)"/>
+          </g>
+          <ellipse id="s07-mirrorframe" cx="1235" cy="671" rx="355" ry="140" fill="none" stroke="url(#s07-brass)" stroke-width="24"/>
+          <ellipse cx="1235" cy="671" rx="335" ry="120" fill="none" stroke="#FFF0C6" stroke-width="5" opacity="0.62"/>
+          <g id="s07-tab-top" class="s07-tab"><rect x="1224" y="514" width="22" height="30" rx="5" fill="url(#s07-brass)" stroke="#1E1813" stroke-width="5"/></g>
+          <g id="s07-tab-bottom" class="s07-tab"><rect x="1224" y="798" width="22" height="30" rx="5" fill="url(#s07-brass)" stroke="#1E1813" stroke-width="5"/></g>
+          <g id="s07-tab-left" class="s07-tab"><rect x="862" y="660" width="30" height="22" rx="5" fill="url(#s07-brass)" stroke="#1E1813" stroke-width="5"/></g>
+          <g id="s07-tab-right" class="s07-tab"><rect x="1578" y="660" width="30" height="22" rx="5" fill="url(#s07-brass)" stroke="#1E1813" stroke-width="5"/></g>
+        </g>
+      </g>
+
+      <!-- four 26px brass corner brackets -->
+      <g fill="none" stroke-linecap="butt">
+        <g class="s07-bracket" id="s07-br-tl">
+          <path d="M566,238 L566,116 L688,116" stroke="#2B1F17" stroke-width="34" opacity="0.32" transform="translate(5,8)" filter="url(#s07-soft)"/>
+          <path d="M566,238 L566,116 L688,116" stroke="url(#s07-brass)" stroke-width="26"/>
+          <path d="M573,230 L573,123 L682,123" stroke="#FFF0C6" stroke-width="4" opacity="0.65"/>
+        </g>
+        <g class="s07-bracket" id="s07-br-tr">
+          <path d="M1881,238 L1881,116 L1759,116" stroke="#2B1F17" stroke-width="34" opacity="0.32" transform="translate(5,8)" filter="url(#s07-soft)"/>
+          <path d="M1881,238 L1881,116 L1759,116" stroke="url(#s07-brass)" stroke-width="26"/>
+          <path d="M1874,230 L1874,123 L1765,123" stroke="#FFF0C6" stroke-width="4" opacity="0.65"/>
+        </g>
+        <g class="s07-bracket" id="s07-br-bl">
+          <path d="M566,842 L566,964 L688,964" stroke="#2B1F17" stroke-width="34" opacity="0.32" transform="translate(5,8)" filter="url(#s07-soft)"/>
+          <path d="M566,842 L566,964 L688,964" stroke="url(#s07-brass)" stroke-width="26"/>
+          <path d="M573,850 L573,957 L682,957" stroke="#FFF0C6" stroke-width="4" opacity="0.65"/>
+        </g>
+        <g class="s07-bracket" id="s07-br-br">
+          <path d="M1881,842 L1881,964 L1759,964" stroke="#2B1F17" stroke-width="34" opacity="0.32" transform="translate(5,8)" filter="url(#s07-soft)"/>
+          <path d="M1881,842 L1881,964 L1759,964" stroke="url(#s07-brass)" stroke-width="26"/>
+          <path d="M1874,850 L1874,957 L1765,957" stroke="#FFF0C6" stroke-width="4" opacity="0.65"/>
+        </g>
+      </g>
+      <!-- iron press arch, drawn first and covered at the ram slot later -->
+      <g id="s07-press">
+        <path id="s07-presspath" d="M30,900 L30,286 Q30,214 106,214 L494,214 Q552,214 552,286 L552,900"
+              fill="none" stroke="url(#s07-iron)" stroke-width="30" stroke-linecap="round"/>
+        <path id="s07-pressbevel" d="M46,900 L46,292 Q46,230 112,230 L488,230 Q536,230 536,292 L536,900"
+              fill="none" stroke="#8C8273" stroke-width="5" opacity="0.5"/>
+        <g id="s07-pressbolts" fill="url(#s07-brass)" stroke="#1E1813" stroke-width="5">
+          <circle cx="54" cy="238" r="10"/><circle cx="528" cy="238" r="10"/>
+          <circle cx="54" cy="700" r="8"/><circle cx="528" cy="700" r="8"/>
+        </g>
+      </g>
+
+      <!-- four heat ribbons rising from the burner -->
+      <g id="s07-ribbons">
+        <g fill="none" stroke-linecap="round" filter="url(#s07-heatblur)" opacity="0.4">
+          <path class="s07-heat" d="M140,900 C100,780 200,700 150,560 C110,460 190,380 160,300" stroke="#D9822B" stroke-width="16"/>
+          <path class="s07-heat" d="M260,910 C220,800 320,730 270,600 C230,500 310,420 280,330" stroke="#D9822B" stroke-width="16"/>
+          <path class="s07-heat" d="M390,900 C350,790 460,710 400,580 C360,480 440,400 410,310" stroke="#D9822B" stroke-width="16"/>
+          <path class="s07-heat" d="M500,900 C460,800 550,720 510,600 C470,510 550,430 520,350" stroke="#D9822B" stroke-width="16"/>
+        </g>
+        <g fill="none" stroke-linecap="round">
+          <path class="s07-heat" d="M140,900 C100,780 200,700 150,560 C110,460 190,380 160,300" stroke="#C2593F" stroke-width="8"/>
+          <path class="s07-heat" d="M260,910 C220,800 320,730 270,600 C230,500 310,420 280,330" stroke="#C2593F" stroke-width="8"/>
+          <path class="s07-heat" d="M390,900 C350,790 460,710 400,580 C360,480 440,400 410,310" stroke="#C2593F" stroke-width="8"/>
+          <path class="s07-heat" d="M500,900 C460,800 550,720 510,600 C470,510 550,430 520,350" stroke="#C2593F" stroke-width="8"/>
+        </g>
+      </g>
+
+      <!-- ============ CROSS-SECTION RIG ============ -->
+      <g id="s07-rig">
+        <!-- burner under the bench -->
+        <g id="s07-burner">
+          <ellipse id="s07-burnerglow" cx="300" cy="846" rx="190" ry="74" fill="url(#s07-amber)"/>
+          <rect x="180" y="856" width="240" height="26" rx="13" fill="url(#s07-iron)" stroke="#1E1813" stroke-width="10"/>
+          <rect x="200" y="862" width="200" height="7" rx="4" fill="#FFC46B" opacity="0.75"/>
+          <g id="s07-flames" fill="#D9822B" stroke="#1E1813" stroke-width="5">
+            <path d="M236,856 C222,830 248,818 238,796 C264,812 258,838 262,856 Z"/>
+            <path d="M286,856 C270,824 300,810 292,782 C320,804 312,834 314,856 Z"/>
+            <path d="M338,856 C326,832 352,820 344,800 C368,816 360,838 364,856 Z"/>
+          </g>
+        </g>
+
+        <!-- bench -->
+        <g id="s07-bench">
+          <ellipse cx="300" cy="826" rx="300" ry="30" fill="#2B1F17" opacity="0.26" filter="url(#s07-soft)"/>
+          <path d="M20,748 L580,748 L580,812 L20,812 Z" fill="url(#s07-iron)" stroke="#1E1813" stroke-width="12"/>
+          <path d="M20,748 L580,748 L580,770 L20,770 Z" fill="#8C8273" opacity="0.55"/>
+          <path d="M36,758 L564,758" stroke="#FFF0C6" stroke-width="4" opacity="0.4"/>
+          <path d="M20,812 L580,812" stroke="#1E1813" stroke-width="16"/>
+        </g>
+
+        <!-- glass cylinder in cross-section, 100px end radii -->
+        <g id="s07-capsule">
+          <path id="s07-capsule-fill" d="M160,530 L440,530 A100,100 0 0 1 440,730 L160,730 A100,100 0 0 1 160,530 Z"
+                fill="url(#s07-glass)"/>
+          <g clip-path="url(#s07-capsule-clip)" stroke="#5C5248" stroke-width="5" opacity="0.16">
+            <path d="M80,760 L280,480"/><path d="M130,780 L330,500"/><path d="M180,800 L380,520"/>
+            <path d="M230,820 L430,540"/><path d="M280,840 L480,560"/><path d="M330,860 L530,580"/>
+            <path d="M380,880 L580,600"/><path d="M430,900 L630,620"/>
+          </g>
+          <path id="s07-capsule-outline" d="M160,530 L440,530 A100,100 0 0 1 440,730 L160,730 A100,100 0 0 1 160,530 Z"
+                fill="none" stroke="#1E1813" stroke-width="28" stroke-linejoin="round"/>
+          <path d="M176,552 L424,552 A78,78 0 0 1 424,708 L176,708 A78,78 0 0 1 176,552 Z"
+                fill="none" stroke="#FFF9EA" stroke-width="7" opacity="0.6"/>
+          <path d="M250,572 L408,572" stroke="#FAF7F0" stroke-width="14" stroke-linecap="round" opacity="0.5"/>
+          <g clip-path="url(#s07-capsule-clip)" id="s07-glint">
+            <path d="M120,590 L260,590" stroke="#FFFDF4" stroke-width="12" stroke-linecap="round" opacity="0.65"/>
+          </g>
+        </g>
+
+        <!-- tin sheet on a roll -->
+        <g id="s07-tin" clip-path="url(#s07-tinclip)">
+          <rect x="118" y="476" width="386" height="28" rx="6" fill="#2B1F17" opacity="0.28" transform="translate(8,10)" filter="url(#s07-soft2)"/>
+          <rect x="110" y="462" width="390" height="28" rx="14" fill="url(#s07-tingrad)" stroke="#1E1813" stroke-width="12"/>
+          <path d="M128,470 L484,470" stroke="#FAF7F0" stroke-width="4" opacity="0.7"/>
+          <path d="M128,483 L484,483" stroke="#5C5248" stroke-width="4" opacity="0.35"/>
+        </g>
+        <g id="s07-tinroll">
+          <ellipse cx="0" cy="0" rx="16" ry="21" fill="url(#s07-tingrad)" stroke="#1E1813" stroke-width="8"/>
+          <ellipse cx="0" cy="0" rx="6" ry="11" fill="#5C5248"/>
+        </g>
+
+        <!-- amalgam wash between tin and glass -->
+        <g id="s07-amalgam">
+          <rect x="110" y="492" width="390" height="36" fill="url(#s07-amalgamgrad)"/>
+          <path d="M118,500 L492,500" stroke="#FFFDF4" stroke-width="5" opacity="0.55"/>
+          <path d="M118,522 L492,522" stroke="#8A6420" stroke-width="5" opacity="0.3"/>
+        </g>
+
+        <!-- mercury bead field (built in script) -->
+        <g id="s07-mercury"></g>
+
+        <!-- brass clamp dogs grip the glass ends -->
+        <g id="s07-clamp-l">
+          <rect x="64" y="508" width="40" height="66" rx="8" fill="url(#s07-brass)" stroke="#1E1813" stroke-width="8"/>
+          <circle cx="84" cy="542" r="6" fill="#1E1813"/>
+        </g>
+        <g id="s07-clamp-r">
+          <rect x="496" y="508" width="40" height="66" rx="8" fill="url(#s07-brass)" stroke="#1E1813" stroke-width="8"/>
+          <circle cx="516" cy="542" r="6" fill="#1E1813"/>
+        </g>
+
+        <!-- brass platen and ram -->
+        <g id="s07-platen">
+          <path d="M110,366 L490,366 L506,382 L506,434 L490,450 L110,450 L94,434 L94,382 Z"
+                fill="#2B1F17" opacity="0.36" transform="translate(10,12)" filter="url(#s07-soft2)"/>
+          <rect x="268" y="210" width="64" height="158" fill="url(#s07-iron)" stroke="#1E1813" stroke-width="10"/>
+          <rect x="252" y="352" width="96" height="18" rx="9" fill="url(#s07-brass)" stroke="#1E1813" stroke-width="6"/>
+          <path d="M110,366 L490,366 L506,382 L506,434 L490,450 L110,450 L94,434 L94,382 Z"
+                fill="url(#s07-brass)" stroke="#1E1813" stroke-width="28" stroke-linejoin="round"/>
+          <path d="M124,382 L476,382 L488,394 L488,424 L476,436 L124,436 L112,424 L112,394 Z"
+                fill="none" stroke="#FFF0C6" stroke-width="5" opacity="0.62"/>
+          <circle cx="140" cy="408" r="12" fill="#A87A2B" stroke="#1E1813" stroke-width="5"/>
+          <circle cx="460" cy="408" r="12" fill="#A87A2B" stroke="#1E1813" stroke-width="5"/>
+          <polygon points="300,392 316,408 300,424 284,408" fill="#C2593F" stroke="#1E1813" stroke-width="4"/>
+        </g>
+
+        <!-- beam front hides the ram entering from above -->
+        <g id="s07-beamfront">
+          <rect x="24" y="204" width="534" height="36" rx="17" fill="url(#s07-iron)" stroke="#1E1813" stroke-width="10"/>
+          <path d="M40,214 L542,214" stroke="#8C8273" stroke-width="5" opacity="0.55"/>
+          <circle cx="58" cy="222" r="9" fill="url(#s07-brass)" stroke="#1E1813" stroke-width="5"/>
+          <circle cx="524" cy="222" r="9" fill="url(#s07-brass)" stroke="#1E1813" stroke-width="5"/>
+        </g>
+
+        <!-- compression shock ring -->
+        <ellipse id="s07-shock" cx="300" cy="470" rx="250" ry="16" fill="none" stroke="#C2593F" stroke-width="8"/>
+      </g>
+    </svg>
+    <!-- FG plane — 1.062: cut bench edge, accession tag, brass seam bar -->
+    <svg class="s07-plane s07-fg" id="s07-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <radialGradient id="s07-vig" cx="50%" cy="47%" r="74%">
+          <stop offset="0.5" stop-color="#2B1F17" stop-opacity="0"/><stop offset="1" stop-color="#2B1F17" stop-opacity="0.17"/>
+        </radialGradient>
+        <filter id="s07-grain" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.87" numOctaves="2" seed="17" result="n"/>
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0.55 0"/>
+        </filter>
+        <filter id="s07-fgblur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="11"/></filter>
+      </defs>
+
+      <!-- cut bench edge, bottom-left -->
+      <g id="s07-ledge">
+        <path d="M-30,972 L740,952 L740,1080 L-30,1080 Z" fill="#2B1F17" opacity="0.34" transform="translate(10,14)" filter="url(#s07-fgblur)"/>
+        <path d="M-30,972 L740,952 L740,1080 L-30,1080 Z" fill="#EAE0D0"/>
+        <path d="M-30,972 L740,952 L740,1004 L-30,1026 Z" fill="#D9C7AC"/>
+        <path d="M-30,972 L740,952" stroke="#1E1813" stroke-width="20" stroke-linecap="round"/>
+        <path d="M-30,1004 L740,984" stroke="#C89D42" stroke-width="5" opacity="0.72"/>
+        <g stroke="#5C5248" stroke-width="6" opacity="0.32">
+          <path d="M40,1042 L680,1024"/><path d="M150,1068 L600,1054"/><path d="M260,1090 L520,1080"/>
+        </g>
+        <path d="M740,952 L740,1080" stroke="#1E1813" stroke-width="12"/>
+        <g fill="#5C5248" opacity="0.4">
+          <rect x="80" y="1016" width="26" height="5" rx="2"/><rect x="140" y="1013" width="40" height="5" rx="2"/>
+          <rect x="220" y="1010" width="18" height="5" rx="2"/><rect x="280" y="1008" width="34" height="5" rx="2"/>
+          <rect x="360" y="1005" width="24" height="5" rx="2"/><rect x="430" y="1002" width="44" height="5" rx="2"/>
+        </g>
+      </g>
+
+      <rect x="-220" y="-220" width="2360" height="1520" fill="url(#s07-vig)"/>
+      <rect x="-220" y="-220" width="2360" height="1520" filter="url(#s07-grain)" opacity="0.055" style="mix-blend-mode:multiply"/>
+    </svg>
+
+    <!-- FG: accession tag -->
+    <div class="s07-tag" id="s07-tag">
+      <span class="s07-tag-dot"></span>
+      <span class="s07-tag-text">MERCURY MIRROR</span>
+    </div>
+    <div class="s07-rule" id="s07-tag-rule"></div>
+    <div class="s07-seam" id="s07-seam"></div>
+  </div>
+</div>
+<script>
+(function initS07(){
+  var ID = "s07-mercury-mirror";
+  var root = document.querySelector('[data-composition-id="' + ID + '"]');
+  var q = function(sel){ return root.querySelector(sel); };
+  var qa = function(sel){ return Array.prototype.slice.call(root.querySelectorAll(sel)); };
+  var tl = gsap.timeline({ paused: true });
+
+  // ── SLOT GUARD ────────────────────────────────────────────────────────────
+  tl.to({}, { duration: 16.608 }, 0);
+
+  var NS = "http://www.w3.org/2000/svg";
+
+  // ── PRE-STATE ─────────────────────────────────────────────────────────────
+  tl.set("#s07-pr", { attr: { y: 140, height: 0 } }, 0);
+  tl.set("#s07-tag", { clipPath: "inset(0% 100% 0% 0%)" }, 0);
+  tl.set("#s07-tag-rule", { width: 0 }, 0);
+  qa(".s07-bracket").forEach(function(b){ tl.set(b, { opacity: 0, scale: 0.55 }, 0); });
+  tl.set("#s07-capsule-fill", { opacity: 0 }, 0);
+  tl.set("#s07-tinrev", { attr: { width: 0 } }, 0);
+  tl.set("#s07-tinroll", { x: 110, y: 476, scale: 0 }, 0);
+  tl.set("#s07-amalgam", { scaleX: 0, transformOrigin: "0% 50%" }, 0);
+  tl.set("#s07-platen", { y: -560 }, 0);
+  tl.set("#s07-shock", { scale: 0.2, opacity: 0, transformOrigin: "50% 50%" }, 0);
+  tl.set("#s07-burnerglow", { scale: 0.3, opacity: 0, transformOrigin: "50% 50%" }, 0);
+  tl.set("#s07-flames", { scaleY: 0, transformOrigin: "50% 100%" }, 0);
+  tl.set("#s07-mirrorglow", { scale: 0.4, opacity: 0, transformOrigin: "50% 50%" }, 0);
+  tl.set("#s07-mirrorshadow", { scale: 0.55, opacity: 0, transformOrigin: "50% 50%" }, 0);
+  tl.set("#s07-roomap", { attr: { rx: 0, ry: 0 } }, 0);
+  tl.set("#s07-glassellipse", { attr: { rx: 0, ry: 0 } }, 0);
+  tl.set("#s07-win1", { scaleY: 0, transformOrigin: "50% 100%" }, 0);
+  tl.set("#s07-win2", { scaleY: 0, transformOrigin: "50% 100%" }, 0);
+  tl.set("#s07-figure", { scale: 0, transformOrigin: "50% 100%" }, 0);
+  tl.set("#s07-chand", { scaleY: 0, transformOrigin: "50% 0%" }, 0);
+  qa(".s07-tab").forEach(function(t){ tl.set(t, { scale: 0 }, 0); });
+  tl.set("#s07-sweep", { x: 0 }, 0);
+  tl.set("#s07-seam", { x: 0 }, 0);
+  tl.set("#s07-clamp-l", { scale: 0, transformOrigin: "50% 50%" }, 0);
+  tl.set("#s07-clamp-r", { scale: 0, transformOrigin: "50% 50%" }, 0);
+  tl.set("#s07-pressbolts", { scale: 0.4, opacity: 0, transformOrigin: "50% 50%" }, 0);
+  tl.set("#s07-bench", { scaleX: 0, transformOrigin: "50% 50%" }, 0);
+  tl.set("#s07-burner", { scaleX: 0, transformOrigin: "50% 50%" }, 0);
+  tl.set("#s07-beamfront", { scaleX: 0, transformOrigin: "50% 50%" }, 0);
+
+  // ── DASH PREPARATION ──────────────────────────────────────────────────────
+  var capOut = q("#s07-capsule-outline");
+  var capLen = capOut.getTotalLength();
+  tl.set(capOut, { attr: { "stroke-dasharray": capLen, "stroke-dashoffset": capLen } }, 0);
+
+  var pressPath = q("#s07-presspath");
+  var pressLen = pressPath.getTotalLength();
+  tl.set(pressPath, { attr: { "stroke-dasharray": pressLen, "stroke-dashoffset": pressLen } }, 0);
+
+  var pressBevel = q("#s07-pressbevel");
+  var pressBevelLen = pressBevel.getTotalLength();
+  tl.set(pressBevel, { attr: { "stroke-dasharray": pressBevelLen, "stroke-dashoffset": pressBevelLen } }, 0);
+
+  var heats = qa(".s07-heat");
+  heats.forEach(function(h){
+    var hl = h.getTotalLength();
+    tl.set(h, { attr: { "stroke-dasharray": hl, "stroke-dashoffset": hl } }, 0);
+  });
+
+  var floorLine = q("#s07-floorline");
+  var floorLen = floorLine.getTotalLength();
+  tl.set(floorLine, { attr: { "stroke-dasharray": floorLen, "stroke-dashoffset": floorLen } }, 0);
+
+  var frame = q("#s07-mirrorframe");
+  var frameLen = frame.getTotalLength();
+  tl.set(frame, { attr: { "stroke-dasharray": frameLen, "stroke-dashoffset": frameLen } }, 0);
+
+  // ── PHASE 1: plate wipes down, brackets socket, capsule draws ─────────────
+  tl.fromTo("#s07-pr", { attr: { y: 140, height: 0 } }, { attr: { y: 140, height: 800 }, duration: 1.4, ease: "power2.inOut" }, 0.12);
+  qa(".s07-bracket").forEach(function(b, i){
+    tl.set(b, { transformOrigin: (i % 2 ? "100%" : "0%") + " " + (i < 2 ? "0%" : "100%") }, 0);
+    tl.fromTo(b, { scale: 0.55, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.42, ease: "back.out(2.4)" }, 0.72 + i * 0.1);
+  });
+  tl.to(capOut, { attr: { "stroke-dashoffset": 0 }, duration: 1.65, ease: "power2.inOut" }, 0.5);
+  tl.fromTo("#s07-capsule-fill", { opacity: 0 }, { opacity: 1, duration: 1.1, ease: "sine.out" }, 0.95);
+  tl.to(pressPath, { attr: { "stroke-dashoffset": 0 }, duration: 1.4, ease: "power2.inOut" }, 0.8);
+  tl.to(pressBevel, { attr: { "stroke-dashoffset": 0 }, duration: 1.3, ease: "power2.inOut" }, 0.9);
+  tl.fromTo("#s07-pressbolts", { scale: 0.4, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35, ease: "back.out(2.4)" }, 2.1);
+  tl.fromTo("#s07-beamfront", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "back.out(2)" }, 2.15);
+  tl.fromTo("#s07-bench", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "back.out(1.4)" }, 2.4);
+  tl.fromTo("#s07-clamp-l", { scale: 0 }, { scale: 1, duration: 0.4, ease: "back.out(2.2)" }, 2.75);
+  tl.fromTo("#s07-clamp-r", { scale: 0 }, { scale: 1, duration: 0.4, ease: "back.out(2.2)" }, 2.9);
+
+  // ── PHASE 2: tin unrolls, amalgam floods, twelve mercury beads pour ───────
+  tl.to("#s07-tinrev", { attr: { width: 390 }, duration: 1.0, ease: "power2.inOut" }, 3.5);
+  tl.to("#s07-tinroll", { scale: 1, duration: 0.28, ease: "back.out(2.2)" }, 3.3);
+  tl.to("#s07-tinroll", { x: 500, duration: 1.0, ease: "none" }, 3.55);
+  tl.to("#s07-tinroll", { scale: 0, duration: 0.22, ease: "power2.in" }, 4.55);
+  tl.to("#s07-amalgam", { scaleX: 1, duration: 1.9, ease: "power2.inOut" }, 4.4);
+
+  var beadGroup = q("#s07-mercury");
+  var beads = [];
+  for (var i = 0; i < 12; i++){
+    var bx = 150 + i * 30;
+    var g = document.createElementNS(NS, "g");
+    g.setAttribute("class", "s07-bead");
+    var c = document.createElementNS(NS, "circle");
+    c.setAttribute("cx", bx); c.setAttribute("cy", 516); c.setAttribute("r", 15);
+    c.setAttribute("fill", "url(#s07-merc)"); c.setAttribute("stroke", "#1E1813"); c.setAttribute("stroke-width", "5");
+    var hi = document.createElementNS(NS, "path");
+    hi.setAttribute("d", "M" + (bx - 8) + ",508 A10,10 0 0 1 " + (bx + 3) + ",503");
+    hi.setAttribute("fill", "none"); hi.setAttribute("stroke", "#FFFDF6"); hi.setAttribute("stroke-width", "4"); hi.setAttribute("stroke-linecap", "round");
+    g.appendChild(c); g.appendChild(hi);
+    beadGroup.appendChild(g);
+    beads.push(g);
+    tl.set(g, { x: 150 - bx, y: -130, scale: 0.45, transformOrigin: "50% 50%" }, 0);
+  }
+  tl.to(beads, { x: 0, y: 0, scale: 1, duration: 0.55, ease: "back.out(1.8)", stagger: 0.055 }, 5.2);
+
+  // ── PHASE 3: heat, burner, platen descent and compression ─────────────────
+  tl.to(heats, { attr: { "stroke-dashoffset": 0 }, duration: 1.7, ease: "power2.out", stagger: 0.12 }, 6.2);
+  tl.fromTo("#s07-burner", { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "back.out(1.6)" }, 6.7);
+  tl.fromTo("#s07-burnerglow", { scale: 0.3, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.5, ease: "sine.out" }, 6.9);
+  tl.fromTo("#s07-flames", { scaleY: 0 }, { scaleY: 1, duration: 0.5, ease: "back.out(1.8)" }, 7.1);
+  tl.to("#s07-flames", { scaleY: 1.12, duration: 0.7, ease: "sine.inOut", yoyo: true, repeat: 2, transformOrigin: "50% 100%" }, 7.8);
+
+  tl.to("#s07-platen", { y: 0, duration: 2.3, ease: "power3.in" }, 8.3);
+  tl.to("#s07-platen", { y: 12, duration: 0.45, ease: "power2.inOut" }, 10.82);
+  tl.fromTo("#s07-shock", { scale: 0.2, opacity: 0 }, { scale: 1.35, opacity: 0.85, duration: 0.22, ease: "power2.out" }, 10.82);
+  tl.to("#s07-shock", { scale: 1.7, opacity: 0, duration: 0.55, ease: "power2.out" }, 11.08);
+  tl.to(beads, { scaleY: 0.8, y: 4, duration: 0.35, ease: "power2.inOut", transformOrigin: "50% 100%" }, 10.82);
+  tl.to(beads, { scaleY: 1, y: 0, duration: 0.4, ease: "sine.out", transformOrigin: "50% 100%" }, 11.35);
+  tl.fromTo("#s07-glint", { x: -160 }, { x: 240, duration: 1.5, ease: "sine.inOut" }, 11.1);
+
+  // ── PHASE 4: the finished oval mirror blooms an amber room ────────────────
+  tl.fromTo("#s07-mirrorshadow", { scale: 0.55, opacity: 0 }, { scale: 1, opacity: 0.34, duration: 1.2, ease: "sine.out" }, 12.35);
+  tl.fromTo("#s07-mirrorglow", { scale: 0.4, opacity: 0 }, { scale: 1, opacity: 0.85, duration: 1.3, ease: "sine.out" }, 12.4);
+  tl.to(frame, { attr: { "stroke-dashoffset": 0 }, duration: 1.2, ease: "power2.inOut" }, 12.5);
+  tl.to("#s07-glassellipse", { attr: { rx: 343, ry: 128 }, duration: 1.1, ease: "power2.out" }, 13.0);
+  tl.to("#s07-roomap", { attr: { rx: 339, ry: 124 }, duration: 1.2, ease: "power2.out" }, 13.0);
+  tl.to(floorLine, { attr: { "stroke-dashoffset": 0 }, duration: 0.6, ease: "power2.out" }, 13.25);
+  tl.fromTo("#s07-win1", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.55, ease: "back.out(1.8)", transformOrigin: "50% 100%" }, 13.35);
+  tl.fromTo("#s07-win2", { scaleY: 0, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 0.55, ease: "back.out(1.8)", transformOrigin: "50% 100%" }, 13.5);
+  tl.fromTo("#s07-figure", { scale: 0 }, { scale: 1, duration: 0.5, ease: "back.out(2)" }, 13.75);
+  tl.fromTo("#s07-chand", { scaleY: 0 }, { scaleY: 1, duration: 0.6, ease: "back.out(1.6)" }, 13.95);
+  qa(".s07-tab").forEach(function(t, i){
+    tl.fromTo(t, { scale: 0 }, { scale: 1, duration: 0.3, ease: "back.out(2.6)" }, 14.1 + i * 0.07);
+  });
+  tl.to("#s07-sweep", { x: 740, duration: 0.8, ease: "sine.inOut" }, 14.55);
+  tl.to("#s07-mirror", { scale: 1.012, duration: 3.5, ease: "sine.inOut", transformOrigin: "50% 50%" }, 12.9);
+
+  // ── accession tag ─────────────────────────────────────────────────────────
+  tl.fromTo("#s07-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -12 },
+            { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.6, ease: "power3.inOut" }, 9.7);
+  tl.fromTo("#s07-tag-rule", { width: 0 }, { width: 372, duration: 0.55, ease: "power2.out" }, 10.04);
+  tl.fromTo("#s07-tag", { clipPath: "inset(0% 0% 0% 0%)" },
+            { clipPath: "inset(0% 0% 0% 100%)", duration: 0.4, ease: "power2.in" }, 15.8);
+  tl.to("#s07-tag-rule", { width: 0, duration: 0.34, ease: "power2.in" }, 15.8);
+
+  // ── living hold: rig tilts, beads breathe, chandelier sways ───────────────
+  tl.fromTo("#s07-rig", { rotation: -1.4 }, { rotation: 1.0, duration: 16.2, ease: "sine.inOut", transformOrigin: "50% 55%" }, 0.3);
+  tl.to("#s07-mercury", { y: 4, duration: 1.3, ease: "sine.inOut", yoyo: true, repeat: 2 }, 11.8);
+  tl.to("#s07-chand", { rotation: 1.5, duration: 0.9, ease: "sine.inOut", yoyo: true, repeat: 1, transformOrigin: "50% 0%" }, 14.4);
+
+  // ── SEAM: brass cage bar passes the lens ──────────────────────────────────
+  tl.to("#s07-seam", { x: 2300, duration: 0.22, ease: "power2.in" }, 16.36);
+
+  // ── Multi-plane parallax + camera ─────────────────────────────────────────
+  tl.fromTo("#s07-bg", { scale: 0.958, x: -8 }, { scale: 0.97, x: 8, duration: 16.3, ease: "sine.inOut" }, 0.1);
+  tl.fromTo("#s07-mg", { scale: 1.0, y: 3 }, { scale: 1.012, y: -3, duration: 16.3, ease: "sine.inOut" }, 0.1);
+  tl.fromTo("#s07-fg", { scale: 1.062, transformOrigin: "0% 100%" }, { scale: 1.075, duration: 16.3, ease: "sine.inOut", transformOrigin: "0% 100%" }, 0.1);
+  tl.fromTo("#s07-stage", { scale: 1.0 }, { scale: 1.024, duration: 16.2, ease: "sine.inOut" }, 0.2);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

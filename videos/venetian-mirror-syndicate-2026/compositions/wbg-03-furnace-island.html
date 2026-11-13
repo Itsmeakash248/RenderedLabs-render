@@ -1,0 +1,182 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="wbg03-template">
+<style>
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="wbg-03-furnace-island"] .w-stage{position:absolute;inset:0;}
+[data-composition-id="wbg-03-furnace-island"] .w-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="wbg-03-furnace-island"] .w-p1{z-index:1;}
+[data-composition-id="wbg-03-furnace-island"] .w-p2{z-index:2;}
+[data-composition-id="wbg-03-furnace-island"] .w-p3{z-index:3;}
+[data-composition-id="wbg-03-furnace-island"] .w-haze{position:absolute;inset:0;z-index:5;pointer-events:none;
+  background:
+    radial-gradient(30% 34% at 22% 58%, rgba(255,206,124,0.30) 0%, rgba(255,206,124,0.08) 58%, rgba(255,206,124,0) 82%),
+    radial-gradient(80% 44% at 50% 104%, rgba(74,46,28,0.34) 0%, rgba(74,46,28,0) 76%);}
+</style>
+
+<div id="root" data-composition-id="wbg-03-furnace-island" data-width="1920" data-height="1080" data-start="0" data-duration="60.000">
+  <div class="w-stage" id="wbg03-stage">
+
+    <!-- far · sky and lagoon haze -->
+    <svg class="w-plane w-p1" id="wbg03-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w03-sky" x1="0" y1="0" x2="0.06" y2="1">
+          <stop offset="0" stop-color="#FBF1DA"/><stop offset="0.3" stop-color="#F6E2BE"/>
+          <stop offset="0.56" stop-color="#EFD3A6"/><stop offset="0.78" stop-color="#E2BE8C"/>
+          <stop offset="1" stop-color="#CFA87A"/>
+        </linearGradient>
+        <linearGradient id="w03-band" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1920" y2="0">
+          <stop offset="0" stop-color="#FFF6DC" stop-opacity="0.34"/>
+          <stop offset="0.4" stop-color="#FFF6DC" stop-opacity="0.10"/>
+          <stop offset="1" stop-color="#FFF6DC" stop-opacity="0.26"/>
+        </linearGradient>
+        <radialGradient id="w03-sun" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFF6D8" stop-opacity="0.7"/>
+          <stop offset="0.5" stop-color="#FFD98E" stop-opacity="0.24"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="w03-blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="38"/></filter>
+        <filter id="w03-soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#w03-sky)"/>
+      <ellipse cx="1436" cy="404" rx="330" ry="270" fill="url(#w03-sun)" opacity="0.8"/>
+
+      <!-- lagoon haze bands -->
+      <g opacity="0.7">
+        <path d="M0,632 H1920 V684 H0 Z" fill="url(#w03-band)"/>
+        <path d="M0,712 H1920 V752 H0 Z" fill="url(#w03-band)" opacity="0.8"/>
+        <path d="M0,790 H1920 V824 H0 Z" fill="url(#w03-band)" opacity="0.6"/>
+      </g>
+      <g stroke="#B99A6E" stroke-width="4" opacity="0.16">
+        <path d="M0,648 H1920"/><path d="M0,724 H1920"/><path d="M0,800 H1920"/>
+      </g>
+    </svg>
+
+    <!-- mid · the island and the furnace -->
+    <svg class="w-plane w-p2" id="wbg03-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w03-land" gradientUnits="userSpaceOnUse" x1="0" y1="600" x2="0" y2="900">
+          <stop offset="0" stop-color="#8A5F36" stop-opacity="0.55"/>
+          <stop offset="0.6" stop-color="#6E4826" stop-opacity="0.40"/>
+          <stop offset="1" stop-color="#4A2E1C" stop-opacity="0.26"/>
+        </linearGradient>
+        <linearGradient id="w03-furn" gradientUnits="userSpaceOnUse" x1="0" y1="440" x2="0" y2="740">
+          <stop offset="0" stop-color="#4A2E1C" stop-opacity="0.62"/>
+          <stop offset="1" stop-color="#2B1F17" stop-opacity="0.44"/>
+        </linearGradient>
+        <radialGradient id="w03-mouth" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFF6D8"/>
+          <stop offset="0.34" stop-color="#FFD98E"/>
+          <stop offset="0.7" stop-color="#E89A3C" stop-opacity="0.8"/>
+          <stop offset="1" stop-color="#C2593F" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <!-- the island mass, left -->
+      <path d="M-60,880 C40,812 150,776 300,760 C470,742 610,748 720,772 C820,794 890,838 940,880 Z"
+            fill="url(#w03-land)"/>
+      <path d="M-60,880 C40,812 150,776 300,760 C470,742 610,748 720,772 C820,794 890,838 940,880"
+            fill="none" stroke="#4A2E1C" stroke-width="6" opacity="0.24"/>
+
+      <!-- the furnace, on the island -->
+      <g opacity="0.9">
+        <path d="M196,762 V568 C196,500 240,462 300,462 C360,462 404,500 404,568 V762 Z" fill="url(#w03-furn)"/>
+        <path d="M224,762 V574 C224,520 256,490 300,490 C344,490 376,520 376,574 V762 Z"
+              fill="#3A2A1E" opacity="0.32"/>
+        <path d="M262,462 V404 H338 V462" fill="#4A2E1C" opacity="0.55"/>
+        <path d="M254,404 H346" stroke="#3A2A1E" stroke-width="7" opacity="0.4"/>
+        <ellipse cx="300" cy="676" rx="58" ry="62" fill="url(#w03-mouth)" opacity="0.95"/>
+        <ellipse cx="300" cy="676" rx="26" ry="30" fill="#FFF6D8" opacity="0.55"/>
+        <ellipse cx="300" cy="676" rx="160" ry="150" fill="url(#w03-mouth)" opacity="0.32" filter="url(#w03-blur)"/>
+        <path d="M196,762 H404" stroke="#2B1F17" stroke-width="8" opacity="0.3"/>
+        <g stroke="#3A2A1E" stroke-width="5" opacity="0.2">
+          <path d="M196,600 H224"/><path d="M196,672 H224"/><path d="M376,600 H404"/><path d="M376,672 H404"/>
+        </g>
+      </g>
+
+      <!-- a second small furnace, right, for rhythm -->
+      <g opacity="0.5">
+        <path d="M1520,838 V722 C1520,684 1544,662 1578,662 C1612,662 1636,684 1636,722 V838 Z"
+              fill="#6E4826" opacity="0.45"/>
+        <path d="M1560,662 V628 H1596 V662" fill="#6E4826" opacity="0.4"/>
+        <ellipse cx="1578" cy="790" rx="26" ry="28" fill="#FFD98E" opacity="0.5"/>
+        <ellipse cx="1578" cy="790" rx="70" ry="66" fill="#E89A3C" opacity="0.18" filter="url(#w03-soft)"/>
+      </g>
+
+      <!-- far shoreline -->
+      <path d="M1180,872 C1300,848 1420,842 1540,850 C1660,858 1780,868 1900,862 L1960,880 L1180,880 Z"
+            fill="#8A5F36" opacity="0.20"/>
+    </svg>
+
+    <!-- near · water, embers, the near bank -->
+    <svg class="w-plane w-p3" id="wbg03-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w03-water" x1="0" y1="0" x2="0.04" y2="1">
+          <stop offset="0" stop-color="#D9B98C"/><stop offset="0.34" stop-color="#B9906A"/>
+          <stop offset="0.72" stop-color="#8A5F36"/><stop offset="1" stop-color="#4A2E1C"/>
+        </linearGradient>
+        <linearGradient id="w03-watershade" gradientUnits="userSpaceOnUse" x1="0" y1="880" x2="0" y2="1080">
+          <stop offset="0" stop-color="#2B1F17" stop-opacity="0"/>
+          <stop offset="1" stop-color="#2B1F17" stop-opacity="0.5"/>
+        </linearGradient>
+      </defs>
+
+      <path d="M0,880 H1920 V1080 H0 Z" fill="url(#w03-water)"/>
+      <path d="M0,880 H1920 V1080 H0 Z" fill="url(#w03-watershade)"/>
+      <path d="M0,880 H1920" stroke="#FFF6DC" stroke-width="6" opacity="0.24"/>
+      <g stroke="#FFE8B4" stroke-width="5" opacity="0.18">
+        <path d="M120,930 H520"/><path d="M620,962 H980"/><path d="M1080,918 H1460"/>
+        <path d="M240,1010 H640"/><path d="M860,1034 H1240"/><path d="M1400,986 H1800"/>
+      </g>
+      <g stroke="#4A2E1C" stroke-width="6" opacity="0.16">
+        <path d="M0,1000 H1920"/><path d="M0,1054 H1920"/>
+      </g>
+
+      <!-- the furnace light on the water -->
+      <path d="M220,884 C260,920 300,960 300,1010 C300,1046 260,1070 220,1080 L120,1080 C160,1030 180,960 220,884 Z"
+            fill="#FFD98E" opacity="0.22"/>
+      <path d="M160,890 C190,930 210,976 206,1030" fill="none" stroke="#FFF6D8" stroke-width="6" opacity="0.24"/>
+
+      <!-- embers -->
+      <g fill="#FFCE7C">
+        <circle class="w03-ember" cx="272" cy="640" r="6" opacity="0.8"/>
+        <circle class="w03-ember" cx="336" cy="590" r="4.5" opacity="0.7"/>
+        <circle class="w03-ember" cx="214" cy="556" r="5" opacity="0.75"/>
+        <circle class="w03-ember" cx="390" cy="520" r="4" opacity="0.6"/>
+        <circle class="w03-ember" cx="180" cy="470" r="4.5" opacity="0.55"/>
+        <circle class="w03-ember" cx="430" cy="620" r="3.5" opacity="0.5"/>
+        <circle class="w03-ember" cx="1548" cy="700" r="4" opacity="0.55"/>
+        <circle class="w03-ember" cx="1608" cy="654" r="3.5" opacity="0.45"/>
+      </g>
+      <g fill="#FFF6D8" opacity="0.4">
+        <circle class="w03-spark" cx="300" cy="720" r="3"/>
+        <circle class="w03-spark" cx="248" cy="690" r="2.5"/>
+        <circle class="w03-spark" cx="360" cy="672" r="2.5"/>
+        <circle class="w03-spark" cx="1578" cy="742" r="2.5"/>
+      </g>
+    </svg>
+
+    <div class="w-haze"></div>
+  </div>
+</div>
+
+<script>
+(function initWbg03(){
+  var ID = "wbg-03-furnace-island";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, { duration: 60.000 }, 0);
+
+  tl.fromTo("#wbg03-bg", { x: 0, y: 0 }, { x: -22, y: 4, duration: 60, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+  tl.fromTo("#wbg03-mg", { x: 0, y: 0 }, { x: -54, y: -6, duration: 46, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+  tl.fromTo("#wbg03-fg", { x: 0, y: 0 }, { x: -96, y: 12, duration: 34, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+
+  tl.fromTo(".w03-ember", { y: 0, x: 0, opacity: 0.8 }, { y: -210, x: 34, opacity: 0, duration: 18, ease: "sine.out", repeat: 2, stagger: 1.6 }, 0);
+  tl.fromTo(".w03-spark", { y: 0, x: 0, opacity: 0.4 }, { y: -160, x: -22, opacity: 0, duration: 14, ease: "sine.out", repeat: 3, stagger: 1.1 }, 2);
+
+  // the haze bands slide
+  tl.fromTo("#wbg03-bg", { opacity: 0.92 }, { opacity: 1, duration: 22, ease: "sine.inOut", yoyo: true, repeat: 1 }, 3);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

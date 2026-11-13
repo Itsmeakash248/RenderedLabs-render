@@ -1,0 +1,69 @@
+<template id="s05-template">
+  <div id="root" data-composition-id="s05-colbert-plan" data-width="1920" data-height="1080" data-start="72.00" data-duration="18.00">
+    <div class="s05-cam" id="s05-cam">
+      <div id="s05-bg" class="wbg-container">
+        <svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <radialGradient id="s05Desk" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#D9822B" stop-opacity="0.18"/>
+              <stop offset="65%" stop-color="#151B3B" stop-opacity="0.60"/>
+              <stop offset="100%" stop-color="#070A12" stop-opacity="0.92"/>
+            </radialGradient>
+          </defs>
+          <rect width="1920" height="1080" fill="#070A12"/>
+          <rect width="1920" height="1080" fill="url(#s05Desk)"/>
+          <g opacity="0.62">
+            <rect x="0" y="880" width="1920" height="200" fill="#2B1F17"/>
+            <rect x="120" y="120" width="180" height="620" fill="#151B3B"/>
+            <rect x="1620" y="120" width="180" height="620" fill="#151B3B"/>
+            <rect x="420" y="60" width="120" height="680" fill="#1E1813"/>
+            <rect x="1380" y="60" width="120" height="680" fill="#1E1813"/>
+          </g>
+          <g opacity="0.42" stroke="#B8C0D8" stroke-width="6">
+            <path d="M760,180 L1160,180"/>
+            <path d="M760,260 L1160,260"/>
+            <path d="M760,340 L1160,340"/>
+          </g>
+        </svg>
+      </div>
+      <div id="s05-fg" class="hero-container">
+        <svg viewBox="0 0 1920 1080">
+          <defs>
+            <radialGradient id="s05QuillGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#D9822B" stop-opacity="0.42"/>
+              <stop offset="100%" stop-color="#D9822B" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="s05Blur" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="16"/>
+            </filter>
+          </defs>
+          <ellipse cx="900" cy="560" rx="380" ry="300" fill="url(#s05QuillGlow)" filter="url(#s05Blur)"/>
+          <rect x="640" y="360" width="520" height="360" stroke="#EAE0D0" stroke-width="16" fill="#F5EFEB" opacity="0.92"/>
+          <g stroke="#1E1813" stroke-width="8" opacity="0.62">
+            <path d="M700,450 L1060,450"/>
+            <path d="M700,530 L1000,530"/>
+            <path d="M700,610 L1040,610"/>
+          </g>
+          <path d="M1180,760 Q1300,520 1420,240" stroke="#C2593F" stroke-width="26" fill="none" stroke-linecap="round"/>
+          <path d="M1420,240 Q1470,300 1440,360 Q1400,330 1420,240 Z" fill="#C2593F"/>
+          <path d="M1180,760 Q1340,700 1520,790" stroke="#1E1813" stroke-width="14" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div id="s05-text" class="text-container" style="position: absolute; top: 100px; left: 100px; color: #D9822B; font-family: 'Archivo Black'; font-size: 60px; background: rgba(7,10,18,0.55); padding: 14px 28px; border-radius: 10px;">
+        COLBERT'S PLAN
+      </div>
+    </div>
+  </div>
+  <script>
+    (function initS05() {
+      const ID = 's05-colbert-plan';
+      const tl = gsap.timeline({ paused: true });
+      tl.to({}, { duration: 18.00 }, 0);
+      tl.from('#s05-fg', { duration: 2.2, opacity: 0, y: 70, ease: 'power2.inOut' }, 1.2);
+      tl.from('#s05-text', { duration: 0.7, opacity: 0, scale: 0.85, ease: 'back.out(1.7)' }, 2.4);
+      tl.to('#s05-fg', { duration: 8.5, x: -26, ease: 'sine.inOut', yoyo: true, repeat: 1 }, 6.5);
+      window.__timelines = window.__timelines || {};
+      window.__timelines[ID] = tl;
+    })();
+  </script>
+</template>

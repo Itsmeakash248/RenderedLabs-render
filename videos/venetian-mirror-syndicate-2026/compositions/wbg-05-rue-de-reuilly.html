@@ -1,0 +1,315 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="wbg05-template">
+<style>
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="wbg-05-rue-de-reuilly"] .w-stage{position:absolute;inset:0;
+  background:linear-gradient(180deg,#F6E6C6 0%,#E9D4AF 58%,#DCC29B 100%);}
+[data-composition-id="wbg-05-rue-de-reuilly"] .w-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="wbg-05-rue-de-reuilly"] .w-p1{z-index:1;}
+[data-composition-id="wbg-05-rue-de-reuilly"] .w-p2{z-index:2;}
+[data-composition-id="wbg-05-rue-de-reuilly"] .w-p3{z-index:3;}
+[data-composition-id="wbg-05-rue-de-reuilly"] .w-haze{position:absolute;inset:0;z-index:5;pointer-events:none;
+  background:
+    radial-gradient(30% 36% at 10% 70%, rgba(255,222,150,0.34) 0%, rgba(232,154,60,0.12) 48%, rgba(232,154,60,0) 80%),
+    linear-gradient(180deg, rgba(43,31,23,0.16) 0%, rgba(43,31,23,0) 22%, rgba(43,31,23,0) 66%, rgba(30,24,19,0.40) 100%);}
+</style>
+
+<div id="root" data-composition-id="wbg-05-rue-de-reuilly" data-width="1920" data-height="1080" data-start="0" data-duration="60.000">
+  <div class="w-stage" id="wbg05-stage">
+
+    <!-- far · the brick wall, blind arcade, beam and hanging tools -->
+    <svg class="w-plane w-p1" id="wbg05-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w05-wall" x1="0" y1="0" x2="0.05" y2="1">
+          <stop offset="0" stop-color="#F6E6C6"/>
+          <stop offset="0.42" stop-color="#EFD9B4"/>
+          <stop offset="0.74" stop-color="#E9D4AF"/>
+          <stop offset="1" stop-color="#DCC29B"/>
+        </linearGradient>
+        <linearGradient id="w05-archfill" gradientUnits="userSpaceOnUse" x1="0" y1="30" x2="0" y2="250">
+          <stop offset="0" stop-color="#C99A67" stop-opacity="0.30"/>
+          <stop offset="0.6" stop-color="#DCC29B" stop-opacity="0.16"/>
+          <stop offset="1" stop-color="#F6E6C6" stop-opacity="0.08"/>
+        </linearGradient>
+        <linearGradient id="w05-beam" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#8A5F36" stop-opacity="0.62"/>
+          <stop offset="0.5" stop-color="#6E4826" stop-opacity="0.55"/>
+          <stop offset="1" stop-color="#4A2E1C" stop-opacity="0.48"/>
+        </linearGradient>
+        <pattern id="w05-brick" width="128" height="56" patternUnits="userSpaceOnUse">
+          <path d="M0,0 H128" fill="none" stroke="#C99A67" stroke-width="4" opacity="0.15"/>
+          <path d="M64,0 V28" fill="none" stroke="#C99A67" stroke-width="4" opacity="0.11"/>
+          <path d="M0,28 V56" fill="none" stroke="#C99A67" stroke-width="4" opacity="0.11"/>
+        </pattern>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#w05-wall)"/>
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#w05-brick)" opacity="0.9"/>
+
+      <!-- the blind arcade, brick rhythm along the top -->
+      <g fill="url(#w05-archfill)" stroke="#A97445" stroke-width="6" opacity="0.55">
+        <path d="M40,244 L40,152 C40,92 94,42 160,42 C226,42 280,92 280,152 L280,244 Z"/>
+        <path d="M360,244 L360,152 C360,92 414,42 480,42 C546,42 600,92 600,152 L600,244 Z"/>
+        <path d="M680,244 L680,152 C680,92 734,42 800,42 C866,42 920,92 920,152 L920,244 Z"/>
+        <path d="M1000,244 L1000,152 C1000,92 1054,42 1120,42 C1186,42 1240,92 1240,152 L1240,244 Z"/>
+        <path d="M1320,244 L1320,152 C1320,92 1374,42 1440,42 C1506,42 1560,92 1560,152 L1560,244 Z"/>
+        <path d="M1640,244 L1640,152 C1640,92 1694,42 1760,42 C1826,42 1880,92 1880,152 L1880,244 Z"/>
+      </g>
+      <g fill="#C99A67" opacity="0.30">
+        <path d="M150,42 L170,20 L190,42 Z"/>
+        <path d="M470,42 L490,20 L510,42 Z"/>
+        <path d="M790,42 L810,20 L830,42 Z"/>
+        <path d="M1110,42 L1130,20 L1150,42 Z"/>
+        <path d="M1430,42 L1450,20 L1470,42 Z"/>
+        <path d="M1750,42 L1770,20 L1790,42 Z"/>
+      </g>
+      <g fill="#C99A67" opacity="0.22">
+        <path d="M296,0 H320 V244 H296 Z"/>
+        <path d="M616,0 H640 V244 H616 Z"/>
+        <path d="M936,0 H960 V244 H936 Z"/>
+        <path d="M1256,0 H1280 V244 H1256 Z"/>
+        <path d="M1576,0 H1600 V244 H1576 Z"/>
+        <path d="M1896,0 H1920 V244 H1896 Z"/>
+      </g>
+
+      <!-- the beam, with one warm edge -->
+      <rect x="0" y="248" width="1920" height="34" fill="url(#w05-beam)"/>
+      <path d="M0,250 H1920" fill="none" stroke="#C99A67" stroke-width="4" opacity="0.32"/>
+      <path d="M0,280 H1920" fill="none" stroke="#2B1F17" stroke-width="7" opacity="0.28"/>
+
+      <!-- hanging tools, left cluster -->
+      <g opacity="0.9">
+        <g stroke="#8A5F36" stroke-width="4" opacity="0.42">
+          <path d="M108,282 V330"/><path d="M196,282 V318"/><path d="M282,282 V344"/>
+        </g>
+        <g stroke="#3A2A1E" stroke-width="8" stroke-linecap="round" opacity="0.55">
+          <path d="M92,336 L76,468"/><path d="M124,336 L142,468"/>
+        </g>
+        <circle cx="108" cy="336" r="9" fill="#6E4826" opacity="0.55"/>
+        <path d="M196,318 L204,444" fill="none" stroke="#6E4826" stroke-width="9" stroke-linecap="round" opacity="0.55"/>
+        <path d="M170,436 L232,436 L226,464 L176,464 Z" fill="#3A2A1E" opacity="0.58"/>
+        <path d="M282,344 C322,348 334,392 310,428" fill="none" stroke="#4A2E1C" stroke-width="9" stroke-linecap="round" opacity="0.52"/>
+        <path d="M310,428 L318,444" fill="none" stroke="#4A2E1C" stroke-width="9" stroke-linecap="round" opacity="0.52"/>
+      </g>
+
+      <!-- hanging tools, right cluster -->
+      <g opacity="0.82">
+        <g stroke="#8A5F36" stroke-width="4" opacity="0.40">
+          <path d="M1640,282 V324"/><path d="M1738,282 V310"/><path d="M1830,282 V348"/>
+        </g>
+        <path d="M1620,330 L1668,452 L1688,448 L1648,326 Z" fill="#6E4826" opacity="0.48"/>
+        <g stroke="#3A2A1E" stroke-width="6" opacity="0.42">
+          <path d="M1626,352 L1664,448"/><path d="M1644,348 L1678,444"/>
+        </g>
+        <path d="M1738,310 L1744,430" fill="none" stroke="#6E4826" stroke-width="9" stroke-linecap="round" opacity="0.52"/>
+        <path d="M1712,422 L1774,422 L1768,450 L1718,450 Z" fill="#3A2A1E" opacity="0.55"/>
+        <path d="M1830,348 C1868,356 1874,402 1848,432" fill="none" stroke="#4A2E1C" stroke-width="8" stroke-linecap="round" opacity="0.48"/>
+      </g>
+
+      <!-- plaster patches, damp stains at the edges -->
+      <path d="M0,700 C60,676 128,690 172,724 C214,756 232,820 220,900 L220,980 L0,980 Z"
+            fill="#FFF6DC" opacity="0.14"/>
+      <path d="M1920,620 C1848,604 1792,628 1770,678 C1748,728 1760,790 1782,840 L1920,840 Z"
+            fill="#C99A67" opacity="0.12"/>
+      <g fill="none" stroke="#8A5F36" stroke-width="4" opacity="0.14">
+        <path d="M238,760 C276,788 292,836 286,900"/>
+        <path d="M1688,700 C1710,740 1712,790 1698,836"/>
+        <path d="M420,640 C448,660 462,692 460,728"/>
+      </g>
+    </svg>
+
+    <!-- mid · the forge arch, its glow, the anvil and the passage shadow -->
+    <svg class="w-plane w-p2" id="wbg05-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <radialGradient id="w05-forge" cx="50%" cy="58%" r="62%">
+          <stop offset="0" stop-color="#FFFDF6" stop-opacity="0.95"/>
+          <stop offset="0.26" stop-color="#FCEBB8" stop-opacity="0.85"/>
+          <stop offset="0.56" stop-color="#E89A3C" stop-opacity="0.65"/>
+          <stop offset="0.82" stop-color="#C2593F" stop-opacity="0.38"/>
+          <stop offset="1" stop-color="#4A2E1C" stop-opacity="0.30"/>
+        </radialGradient>
+        <radialGradient id="w05-halo" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FCEBB8" stop-opacity="0.55"/>
+          <stop offset="0.42" stop-color="#E89A3C" stop-opacity="0.26"/>
+          <stop offset="1" stop-color="#C2593F" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="w05-passage" gradientUnits="userSpaceOnUse" x1="0" y1="510" x2="0" y2="930">
+          <stop offset="0" stop-color="#2B1F17" stop-opacity="0.50"/>
+          <stop offset="0.6" stop-color="#3A2A1E" stop-opacity="0.38"/>
+          <stop offset="1" stop-color="#1E1813" stop-opacity="0.52"/>
+        </linearGradient>
+        <linearGradient id="w05-archstone" gradientUnits="userSpaceOnUse" x1="0" y1="430" x2="0" y2="900">
+          <stop offset="0" stop-color="#A97445" stop-opacity="0.55"/>
+          <stop offset="0.6" stop-color="#8A5F36" stop-opacity="0.42"/>
+          <stop offset="1" stop-color="#4A2E1C" stop-opacity="0.40"/>
+        </linearGradient>
+        <filter id="w05-soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>
+      </defs>
+
+      <!-- the forge recess, left edge -->
+      <path d="M18,900 L18,592 C18,490 96,428 190,428 C284,428 362,490 362,592 L362,900 Z"
+            fill="url(#w05-archstone)" opacity="0.9"/>
+      <path d="M54,900 L54,600 C54,516 116,464 190,464 C264,464 326,516 326,600 L326,900 Z"
+            fill="#2B1F17" opacity="0.55"/>
+      <path d="M72,900 L72,690 C72,630 124,596 190,596 C256,596 308,630 308,690 L308,900 Z"
+            fill="url(#w05-forge)" opacity="0.95"/>
+      <ellipse cx="190" cy="826" rx="62" ry="28" fill="#E89A3C" opacity="0.72"/>
+      <ellipse cx="190" cy="818" rx="44" ry="20" fill="#FCEBB8" opacity="0.70"/>
+      <ellipse cx="190" cy="806" rx="24" ry="26" fill="#FFFDF6" opacity="0.42"/>
+      <ellipse class="w05-forgeglow" cx="190" cy="790" rx="300" ry="270" fill="url(#w05-halo)" opacity="0.48" filter="url(#w05-soft)"/>
+
+      <!-- brick voussoirs around the forge arch -->
+      <g fill="none" stroke="#C99A67" stroke-width="5" opacity="0.28">
+        <path d="M18,592 C18,490 96,428 190,428 C284,428 362,490 362,592"/>
+        <path d="M40,600 C40,510 108,452 190,452 C272,452 340,510 340,600"/>
+      </g>
+      <g fill="#C99A67" opacity="0.26">
+        <path d="M176,424 L204,424 L198,448 L182,448 Z"/>
+        <path d="M28,560 L50,560 L52,590 L26,590 Z"/>
+        <path d="M330,560 L352,560 L354,590 L328,590 Z"/>
+      </g>
+
+      <!-- anvil, catching the forge light -->
+      <g opacity="0.85">
+        <path d="M338,866 L344,846 L430,846 L438,866 L456,866 L460,890 L320,890 L322,866 Z"
+              fill="#3A2A1E" opacity="0.68"/>
+        <path d="M344,846 L430,846 L438,866 L338,866 Z" fill="#4A2E1C" opacity="0.55"/>
+        <path d="M348,846 L426,846" fill="none" stroke="#E89A3C" stroke-width="4" opacity="0.32"/>
+        <path d="M356,890 L360,924 L420,924 L424,890 Z" fill="#2B1F17" opacity="0.52"/>
+        <path d="M330,924 L450,924" fill="none" stroke="#2B1F17" stroke-width="7" opacity="0.38"/>
+        <path d="M462,876 C500,868 526,852 544,832" fill="none" stroke="#6E4826" stroke-width="8" stroke-linecap="round" opacity="0.48"/>
+      </g>
+
+      <!-- a shadowed passage, right edge -->
+      <path d="M1572,930 L1572,646 C1572,562 1640,512 1724,512 C1808,512 1876,562 1876,646 L1876,930 Z"
+            fill="url(#w05-passage)" opacity="0.95"/>
+      <path d="M1572,930 L1572,646 C1572,562 1640,512 1724,512 C1808,512 1876,562 1876,646 L1876,930"
+            fill="none" stroke="#A97445" stroke-width="8" opacity="0.38"/>
+      <path d="M1600,900 L1600,656 C1600,590 1654,548 1724,548 C1794,548 1848,590 1848,656 L1848,900"
+            fill="none" stroke="#6E4826" stroke-width="5" opacity="0.30"/>
+      <path d="M1580,700 C1588,650 1620,614 1662,594" fill="none" stroke="#E89A3C" stroke-width="5" opacity="0.22"/>
+      <g fill="#2B1F17" opacity="0.45">
+        <path d="M1640,930 L1640,760 L1668,760 L1668,930 Z"/>
+        <path d="M1782,930 L1782,792 L1810,792 L1810,930 Z"/>
+      </g>
+    </svg>
+
+    <!-- near · heat haze, soot, embers, cobbles -->
+    <svg class="w-plane w-p3" id="wbg05-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w05-ground" gradientUnits="userSpaceOnUse" x1="0" y1="972" x2="0" y2="1080">
+          <stop offset="0" stop-color="#4A2E1C" stop-opacity="0.38"/>
+          <stop offset="0.55" stop-color="#3A2A1E" stop-opacity="0.50"/>
+          <stop offset="1" stop-color="#1E1813" stop-opacity="0.60"/>
+        </linearGradient>
+        <linearGradient id="w05-hazeband" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FFF6DC" stop-opacity="0.30"/>
+          <stop offset="0.42" stop-color="#FFF6DC" stop-opacity="0.08"/>
+          <stop offset="1" stop-color="#FFF6DC" stop-opacity="0.20"/>
+        </linearGradient>
+        <filter id="w05-hazeblur" x="-20%" y="-30%" width="140%" height="160%"><feGaussianBlur stdDeviation="8"/></filter>
+        <filter id="w05-sootblur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2"/></filter>
+      </defs>
+
+      <!-- heat haze ribbons climbing off the forge -->
+      <g fill="none" stroke="#FFF6DC" stroke-linecap="round" filter="url(#w05-hazeblur)">
+        <path class="w05-haze" d="M170,824 C118,730 188,652 148,556 C118,482 168,404 140,332"
+              stroke-width="30" opacity="0.26"/>
+        <path class="w05-haze" d="M252,850 C302,764 240,684 300,596 C350,522 310,452 348,382"
+              stroke-width="30" opacity="0.22"/>
+        <path class="w05-haze" d="M116,862 C78,786 128,706 90,626 C62,566 92,510 78,462"
+              stroke-width="30" opacity="0.20"/>
+        <path class="w05-haze" d="M206,904 C400,864 520,902 700,882 C880,862 1000,902 1160,886"
+              stroke-width="30" opacity="0.16"/>
+      </g>
+
+      <!-- low haze sliding over the yard -->
+      <path d="M0,938 C220,918 440,944 660,932 C880,920 1100,946 1320,936 C1540,926 1740,946 1920,932 L1920,976 C1740,990 1540,970 1320,980 C1100,990 880,964 660,974 C440,984 220,958 0,978 Z"
+            fill="url(#w05-hazeband)" opacity="0.55"/>
+
+      <!-- cobbles, a dark frame at the bottom -->
+      <path d="M0,1002 C180,984 360,996 540,1014 C720,1032 900,1024 1080,1018 C1280,1010 1500,1026 1700,1040 C1820,1048 1880,1052 1920,1054 L1920,1080 L0,1080 Z"
+            fill="url(#w05-ground)"/>
+      <g fill="none" stroke="#6E4826" stroke-width="5" opacity="0.22">
+        <path d="M60,1032 C110,1018 160,1020 208,1036"/>
+        <path d="M250,1050 C304,1036 356,1038 404,1054"/>
+        <path d="M470,1038 C520,1024 570,1026 618,1042"/>
+        <path d="M690,1052 C742,1038 794,1040 844,1056"/>
+        <path d="M930,1040 C980,1026 1030,1028 1078,1044"/>
+        <path d="M1170,1054 C1222,1040 1274,1042 1324,1058"/>
+        <path d="M1410,1042 C1460,1028 1510,1030 1558,1046"/>
+        <path d="M1640,1056 C1692,1042 1744,1044 1794,1060"/>
+      </g>
+
+      <!-- a barrel at the right edge -->
+      <g opacity="0.8">
+        <path d="M1784,1060 L1784,972 C1784,948 1814,932 1852,932 C1890,932 1920,948 1920,972 L1920,1060 Z"
+              fill="#6E4826" opacity="0.52"/>
+        <ellipse cx="1852" cy="972" rx="68" ry="20" fill="#8A5F36" opacity="0.55"/>
+        <ellipse cx="1852" cy="972" rx="48" ry="12" fill="#A97445" opacity="0.38"/>
+        <g fill="none" stroke="#3A2A1E" stroke-width="6" opacity="0.40">
+          <path d="M1786,990 C1820,1002 1884,1002 1918,990"/>
+          <path d="M1786,1028 C1820,1040 1884,1040 1918,1028"/>
+        </g>
+      </g>
+
+      <!-- soot motes rising, edges only -->
+      <g fill="#4A2E1C" filter="url(#w05-sootblur)">
+        <circle class="w05-soot" cx="108" cy="760" r="6" opacity="0.42"/>
+        <circle class="w05-soot" cx="156" cy="690" r="4" opacity="0.38"/>
+        <circle class="w05-soot" cx="214" cy="728" r="5" opacity="0.40"/>
+        <circle class="w05-soot" cx="268" cy="654" r="3.5" opacity="0.34"/>
+        <circle class="w05-soot" cx="318" cy="706" r="4.5" opacity="0.36"/>
+        <circle class="w05-soot" cx="92" cy="608" r="5" opacity="0.30"/>
+        <circle class="w05-soot" cx="186" cy="566" r="3" opacity="0.28"/>
+        <circle class="w05-soot" cx="252" cy="598" r="4" opacity="0.32"/>
+        <circle class="w05-soot" cx="352" cy="620" r="3" opacity="0.26"/>
+        <circle class="w05-soot" cx="404" cy="690" r="4" opacity="0.30"/>
+        <circle class="w05-soot" cx="438" cy="760" r="3.5" opacity="0.26"/>
+        <circle class="w05-soot" cx="1622" cy="700" r="4" opacity="0.24"/>
+        <circle class="w05-soot" cx="1688" cy="642" r="3.5" opacity="0.22"/>
+        <circle class="w05-soot" cx="1812" cy="720" r="4.5" opacity="0.20"/>
+        <circle class="w05-soot" cx="1868" cy="650" r="3" opacity="0.18"/>
+      </g>
+
+      <!-- embers at the forge mouth -->
+      <g fill="#E89A3C">
+        <circle class="w05-ember" cx="146" cy="736" r="4" opacity="0.55"/>
+        <circle class="w05-ember" cx="198" cy="700" r="3" opacity="0.50"/>
+        <circle class="w05-ember" cx="238" cy="760" r="3.5" opacity="0.48"/>
+        <circle class="w05-ember" cx="118" cy="690" r="2.5" opacity="0.42"/>
+        <circle class="w05-ember" cx="276" cy="722" r="2.5" opacity="0.40"/>
+      </g>
+    </svg>
+
+    <div class="w-haze"></div>
+  </div>
+</div>
+
+<script>
+(function initWbg05(){
+  var ID = "wbg-05-rue-de-reuilly";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, {duration:60.000},0);
+
+  // wall 0.17 px/s, arch shadow 0.57 px/s, heat haze 1.13 px/s
+  tl.fromTo("#wbg05-bg", { x: 0, y: 0 }, { x: 5, y: 2, duration: 30, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+  tl.fromTo("#wbg05-mg", { x: 0, y: 0 }, { x: 17, y: -3, duration: 30, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+  tl.fromTo("#wbg05-fg", { x: 0, y: 0 }, { x: 34, y: 6, duration: 30, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+
+  // heat ribbons climb and lean
+  tl.fromTo(".w05-haze", { x: 0, y: 0 }, { x: 12, y: -44, duration: 20, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 1.2 }, 0);
+
+  // soot rises slowly out of the light
+  tl.fromTo(".w05-soot", { x: 0, y: 0, opacity: 0.42 }, { x: 18, y: -220, opacity: 0.10, duration: 16, ease: "sine.out", yoyo: true, repeat: 1, stagger: 0.9 }, 0);
+
+  // embers lift and fade
+  tl.fromTo(".w05-ember", { x: 0, y: 0, opacity: 0.55 }, { x: -10, y: -150, opacity: 0.05, duration: 12, ease: "sine.out", repeat: 3, stagger: 0.7 }, 1);
+
+  // the forge breathes
+  tl.to(".w05-forgeglow", { opacity: 0.78, duration: 15, ease: "sine.inOut", yoyo: true, repeat: 3 }, 0);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

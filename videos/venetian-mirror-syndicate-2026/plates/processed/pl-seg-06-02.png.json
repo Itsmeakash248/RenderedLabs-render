@@ -1,0 +1,35 @@
+{
+  "asset_id": "pl-seg-06-02",
+  "source_url": "https://cabinetmagazine.org/issues/14/mcelheny.php",
+  "publication_date": "2004-06-01",
+  "width": 1400,
+  "height": 1000,
+  "scale_factor": 1.0,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": [
+    {
+      "phrase": "amalgam of tin and mercury",
+      "x": 862,
+      "y": 350,
+      "w": 177,
+      "h": 20
+    },
+    {
+      "phrase": "amalgam of tin and mercury",
+      "x": 350,
+      "y": 382,
+      "w": 77,
+      "h": 20
+    },
+    {
+      "phrase": "back of a smooth sheet of glass",
+      "x": 489,
+      "y": 382,
+      "w": 282,
+      "h": 20
+    }
+  ]
+}

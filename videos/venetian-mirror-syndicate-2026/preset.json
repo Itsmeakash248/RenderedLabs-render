@@ -1,0 +1,117 @@
+{
+  "name": "terra-rose",
+  "realm": "terra-rose",
+  "skin": "amber-margins",
+  "skin_notes": "Amber Margins 'Warm Claude Editorial' skin applied over terra-rose scaffold mechanics. Parchment/ink/terracotta/amber world; no dark cosmic navy, indigo, or neon gradients. Harness audio/QA constants unchanged.",
+  "lead": "#C2593F",
+  "support": "#D9822B",
+  "topics": [
+    "history",
+    "archives",
+    "espionage",
+    "cartography"
+  ],
+  "colors": {
+    "parchment": "#F5EFEB",
+    "vellum": "#EAE0D0",
+    "ink": "#1E1813",
+    "sepia": "#5C5248",
+    "terracotta": "#C2593F",
+    "amber": "#D9822B",
+    "ivory": "#FAF7F0",
+    "umber": "#2B1F17",
+    "brass": "#C89D42"
+  },
+  "color_roles": {
+    "canvas": "parchment",
+    "panel": "vellum",
+    "text": "ink",
+    "muted": "sepia",
+    "accent": "terracotta",
+    "glow": "amber",
+    "mat": "ivory",
+    "shadow": "umber",
+    "metal": "brass"
+  },
+  "fonts": {
+    "display": {
+      "family": "Instrument Serif",
+      "weights": [
+        400
+      ],
+      "sizes": "104-128px",
+      "role": "Chapter titles, act openers, literary quotations, channel title lockup (200-220px)"
+    },
+    "body": {
+      "family": "EB Garamond",
+      "weights": [
+        400,
+        600
+      ],
+      "sizes": "36-56px",
+      "role": "Editorial headings, on-screen quotations, labels; on-screen prose still capped at 3 words"
+    },
+    "label": {
+      "family": "JetBrains Mono",
+      "weights": [
+        500
+      ],
+      "sizes": "22-26px",
+      "role": "Archival accession stamps, dates, coordinates, folio numbers (22-26px floor)"
+    }
+  },
+  "timeline": {
+    "runtime_band": [
+      "8:00",
+      "9:00"
+    ],
+    "word_count": [
+      1440,
+      1620
+    ],
+    "wpm_target": 180,
+    "fps": [
+      30,
+      30
+    ],
+    "resolution": "1920x1080",
+    "scenes": [
+      20,
+      35
+    ],
+    "format": "deep-dive"
+  },
+  "audio": {
+    "voice": "en-US-ChristopherNeural",
+    "voice_rate": "+11%",
+    "voice_lufs": -14.5,
+    "bgm_bed_nominal": 0.34,
+    "bgm_bed_ceiling": 0.4,
+    "sfx_ceiling": 0.35,
+    "sfx_max_per_8s": 1,
+    "master_lufs": -14,
+    "master_true_peak_dbtp": -1,
+    "tool": "assets/audio/bgm/synth/synth_produce.py"
+  },
+  "packaging": {
+    "titles": 3,
+    "thumbnails": 3,
+    "thumbnail_size": "1920x1080",
+    "thumbnail_legible_at_px": 120,
+    "description_words_min": 200,
+    "description_chars_max": 5000,
+    "tags_min": 8,
+    "tags_max": 15,
+    "tags_chars_max": 500
+  },
+  "benchmark": "kurzgesagt",
+  "notes": [
+    "AMBER MARGINS SKIN: parchment #F5EFEB / vellum #EAE0D0 grounds, ink #1E1813 type, terracotta #C2593F and amber #D9822B accents, brass #C89D42 details.",
+    "Pure black #000000 and pure white #FFFFFF are banned; contrast comes from warm tonal values.",
+    "At least 70% of every frame is parchment/vellum/ivory; terracotta + amber stay under 10% of frame area.",
+    "Type: Instrument Serif (display), EB Garamond (editorial body), JetBrains Mono (archival labels). Minimum rendered text 14px; on-screen text max 3 words per scene.",
+    "Layout: archival folio, museum passe-partout, cartographic graticules, paper grain 4-6% multiply, warm radial vignette.",
+    "Motion: macro dolly 1.000-1.035, no snap zooms or camera shake; heavy seams still follow harness tier rules.",
+    "Harness constants retained: voice en-US-ChristopherNeural @ +11%, ~180 WPM, 8:00-9:00, 20-35 scenes, -14.0 LUFS, -1.0 dBTP, BGM 0.34, SFX <= 0.35."
+  ]
+}

@@ -1,0 +1,2512 @@
+{
+ "contract": "C8b",
+ "version": 4,
+ "slug": "venetian-mirror-syndicate-2026",
+ "generated_at": "2026-11-11T20:10:23.727856+00:00",
+ "benchmark": "kurzgesagt",
+ "canvas_tokens": {
+  "resolution": "1920x1080",
+  "background": "#F5EFEB",
+  "panel": "#EAE0D0",
+  "text": "#1E1813",
+  "accent": "#C2593F",
+  "support": "#D9822B"
+ },
+ "canvas": {
+  "ground_hex": "#F5EFEB"
+ },
+ "counts": {
+  "plates": 50,
+  "approved": 50,
+  "conditional": 0,
+  "killed": 0,
+  "detail_crops": 6,
+  "total_assets": 56,
+  "art_hero_plates": 27
+ },
+ "triage_coverage_pct": 100,
+ "mounting_guidance": {
+  "hero_width_pct": "75-88",
+  "analytical_min_width_pct": 65,
+  "detail_crop_required": "dense text plates",
+  "motion_treatment": "living_hold_slow_drift, <=1.05 scale over scene duration",
+  "safe_area": "keep 5% gutter; never clip text or case numbers"
+ },
+ "plates": [
+  {
+   "asset_id": "pl-seg-01-01",
+   "processed_path": "plates/processed/pl-seg-01-01.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-01-01.png",
+    "source_url": "https://en.chateauversailles.fr/discover/estate/palace/hall-mirrors",
+    "publication_date": "2026-11-12",
+    "credit": "Ch\u00e2teau de Versailles",
+    "evidence_rationale": "Official Versailles estate documentation of the 73m gallery length, 17 windows and 17 mirrored arcades containing 357 mirrors."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [
+    {
+     "path": "plates/processed/pl-seg-01-01-detail-a.png",
+     "region": [
+      200,
+      200,
+      900,
+      450
+     ],
+     "purpose": "Gallery dimensions passage: 73m length and 17 mirrored arcades."
+    }
+   ],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "dense",
+    "detail_crop_value": "high",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Crisp typography from official monument institution establishing gallery scale."
+   }
+  },
+  {
+   "asset_id": "pl-seg-01-02",
+   "processed_path": "plates/processed/pl-seg-01-02.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-01-02.png",
+    "source_url": "https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/3d0e56c9-ac99-4aa0-9c3c-1f8fa3d1641b-chateau-versailles/article/01ae13d3-c1fe-4ee6-a25e-f6dd851af447-miroirs-la-galerie-glaces",
+    "publication_date": "2024-05-15",
+    "credit": "Biblioth\u00e8que nationale de France",
+    "evidence_rationale": "BnF architectural analysis establishing the assembly of 21 individual mirrors per arch."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [
+    {
+     "path": "plates/processed/pl-seg-01-02-detail-a.png",
+     "region": [
+      150,
+      180,
+      850,
+      400
+     ],
+     "purpose": "21 mirrors per arch specification: proof of multi-pane assembly."
+    }
+   ],
+   "triage": {
+    "recommended_mount": "split-screen",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "dense",
+    "detail_crop_value": "high",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Clear evidence of 21 mirrors per arch, proving the room was assembled from smaller panes."
+   }
+  },
+  {
+   "asset_id": "pl-seg-02-01",
+   "processed_path": "plates/processed/pl-seg-02-01.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-02-01.png",
+    "source_url": "https://www.persee.fr/doc/versa_1285-8412_2017_num_20_1_1170",
+    "publication_date": "2017-06-01",
+    "credit": "Maurice Hamon, Versalia",
+    "evidence_rationale": "Archival proof that France imported 120,000 livres of glass in Q1 1660 alone."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [
+    {
+     "path": "plates/processed/pl-seg-02-01-detail-a.png",
+     "region": [
+      120,
+      220,
+      880,
+      420
+     ],
+     "purpose": "120,000 livres import figure in Q1 1660 customs declaration."
+    }
+   ],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "dense",
+    "detail_crop_value": "high",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Authoritative archival study by Saint-Gobain historian Maurice Hamon in Versalia."
+   }
+  },
+  {
+   "asset_id": "pl-seg-02-02",
+   "processed_path": "plates/processed/pl-seg-02-02.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-02-02.png",
+    "source_url": "https://www.persee.fr/doc/versa_1285-8412_2017_num_20_1_1170",
+    "publication_date": "2017-06-01",
+    "credit": "Maurice Hamon, Versalia",
+    "evidence_rationale": "French customs accounts tallying 216 crates of Venetian mirrors entering France in 1665."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "hud-bracket",
+    "scale_to_fit_verified": true,
+    "legibility": "medium",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Customs documentation proving persistent physical shipment of Venetian mirrors into France."
+   }
+  },
+  {
+   "asset_id": "pl-seg-03-01",
+   "processed_path": "plates/processed/pl-seg-03-01.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-03-01.png",
+    "source_url": "https://www.persee.fr/doc/efr_0223-5099_2011_act_447_1_10165",
+    "publication_date": "2011-09-01",
+    "credit": "Corine Maitte, EFR",
+    "evidence_rationale": "Primary guild statutes proving Venetian prohibition on artisan migration dating from 1271."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Scholarly publication by \u00c9cole fran\u00e7aise de Rome tracking medieval Venetian mobility bans."
+   }
+  },
+  {
+   "asset_id": "pl-seg-03-02",
+   "processed_path": "plates/processed/pl-seg-03-02.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-03-02.png",
+    "source_url": "https://www.ngv.vic.gov.au/essay/portrait-of-venice-majestic-murano/",
+    "publication_date": "2024-07-30",
+    "credit": "Catherine Kovesi, NGV",
+    "evidence_rationale": "Curatorial history documenting the 1295 island confinement and capital punishment for trade secrets."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "callout-overlay",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Curatorial monograph outlining the legal quarantine of glassmaking secrets on Murano."
+   }
+  },
+  {
+   "asset_id": "pl-seg-03-03",
+   "processed_path": "plates/processed/pl-seg-03-03.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-03-03.png",
+    "source_url": "https://www.persee.fr/doc/pharm_0995-838x_1926_num_14_51_1639_t1_0261_0000_1",
+    "publication_date": "1926-03-01",
+    "credit": "E.-H. Guitard, Rev. Hist. Pharm.",
+    "evidence_rationale": "Archival citation of Venetian decrees authorizing Council of Ten special emissaries to assassinate defectors abroad."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Legal records confirming statutory authorization for state-directed extraterritorial assassination."
+   }
+  },
+  {
+   "asset_id": "pl-seg-04-01",
+   "processed_path": "plates/processed/pl-seg-04-01.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-04-01.png",
+    "source_url": "https://theses.chartes.psl.eu/document/ENCPOS_1908_08",
+    "publication_date": "1908-05-01",
+    "credit": "\u00c9cole nationale des chartes",
+    "evidence_rationale": "Archival thesis documenting Colbert's secret order to Ambassador Bonzi in 1664 to recruit Murano mirror workers."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "split-screen",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Elph\u00e8ge Fr\u00e9my thesis at \u00c9cole des chartes: direct provenance of the 1664 recruitment mission."
+   }
+  },
+  {
+   "asset_id": "pl-seg-04-02",
+   "processed_path": "plates/processed/pl-seg-04-02.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-04-02.png",
+    "source_url": "https://theses.chartes.psl.eu/document/ENCPOS_1908_08",
+    "publication_date": "1908-05-01",
+    "credit": "\u00c9cole nationale des chartes",
+    "evidence_rationale": "Record of Antonio della Rivetta and his companions successfully arriving in Paris in October 1665."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "hud-bracket",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Archival confirmation of Antonio della Rivetta leading the senior glassmaster cohort into Paris."
+   }
+  },
+  {
+   "asset_id": "pl-seg-05-01",
+   "processed_path": "plates/processed/pl-seg-05-01.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-05-01.png",
+    "source_url": "https://fr.wikisource.org/wiki/Lettres_patentes_pour_l%27%C3%A9tablissement_de_la_Manufacture_royale_des_glaces_de_miroirs,_1665",
+    "publication_date": "1665-10-08",
+    "credit": "Archives Nationales / Wikisource",
+    "evidence_rationale": "Primary royal letters patent creating the manufacture to replicate Murano mirror sizes."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [
+    {
+     "path": "plates/processed/pl-seg-05-01-detail-a.png",
+     "region": [
+      100,
+      150,
+      950,
+      450
+     ],
+     "purpose": "Clause specifying manufacture of mirrors of all sizes made in Murano near Venice."
+    }
+   ],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "dense",
+    "detail_crop_value": "high",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Official text of the October 1665 Letters Patent by Louis XIV naming 'Moran pr\u00e8s la Ville de Venise'."
+   }
+  },
+  {
+   "asset_id": "pl-seg-05-02",
+   "processed_path": "plates/processed/pl-seg-05-02.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-05-02.png",
+    "source_url": "https://fr.wikisource.org/wiki/Lettres_patentes_pour_l%27%C3%A9tablissement_de_la_Manufacture_royale_des_glaces_de_miroirs,_1665",
+    "publication_date": "1665-10-08",
+    "credit": "Archives Nationales / Wikisource",
+    "evidence_rationale": "Financial covenants granting 12,000 livres royal advance and naturalization after 8 years."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [
+    {
+     "path": "plates/processed/pl-seg-05-02-detail-a.png",
+     "region": [
+      80,
+      200,
+      920,
+      400
+     ],
+     "purpose": "12,000 livres interest-free loan and 8-year naturalization covenant for Venetian defectors."
+    }
+   ],
+   "triage": {
+    "recommended_mount": "split-screen",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "dense",
+    "detail_crop_value": "high",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Explicit statutory evidence of French state incentives: 12,000 livres advance and citizenship."
+   }
+  },
+  {
+   "asset_id": "pl-seg-06-01",
+   "processed_path": "plates/processed/pl-seg-06-01.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-06-01.png",
+    "source_url": "https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/3d0e56c9-ac99-4aa0-9c3c-1f8fa3d1641b-chateau-versailles/article/01ae13d3-c1fe-4ee6-a25e-f6dd851af447-miroirs-la-galerie-glaces",
+    "publication_date": "2024-05-15",
+    "credit": "Biblioth\u00e8que nationale de France",
+    "evidence_rationale": "Official date of the first French-manufactured flawless mirror output at the rue de Reuilly workshop."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "BnF chronology marking 1666 as the breakthrough year for flawless French-blown mirrors."
+   }
+  },
+  {
+   "asset_id": "pl-seg-06-02",
+   "processed_path": "plates/processed/pl-seg-06-02.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-06-02.png",
+    "source_url": "https://cabinetmagazine.org/issues/14/mcelheny.php",
+    "publication_date": "2004-06-01",
+    "credit": "Josiah McElheny, Cabinet",
+    "evidence_rationale": "Technical analysis of the chemical tin-mercury amalgam process that created the Venetian mirror secret."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "hud-bracket",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Explanation of the tin-mercury amalgam backing that made Venetian glass reflective and hazardous."
+   }
+  },
+  {
+   "asset_id": "pl-seg-07-01",
+   "processed_path": "plates/processed/pl-seg-07-01.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-07-01.png",
+    "source_url": "https://www.areion24.news/2025/08/25/laffaire-des-miroirs-de-venise/",
+    "publication_date": "2025-08-25",
+    "credit": "Florence Vidal, Areion24",
+    "evidence_rationale": "Investigative review of Venetian ambassador Sagredo's surveillance and sabotage mission against the Paris workshop."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "callout-overlay",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Investigation into the Venetian state's diplomatic counter-offensive and clandestine surveillance."
+   }
+  },
+  {
+   "asset_id": "pl-seg-07-02",
+   "processed_path": "plates/processed/pl-seg-07-02.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-07-02.png",
+    "source_url": "https://theses.chartes.psl.eu/document/ENCPOS_1908_08",
+    "publication_date": "1908-05-01",
+    "credit": "\u00c9cole nationale des chartes",
+    "evidence_rationale": "Archival proof of Venetian diplomatic efforts to sow division and provoke infighting between La Motta and Rivetta."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Evidence of Ambassador Sagredo manipulating rivalries between Venetian masters in Paris."
+   }
+  },
+  {
+   "asset_id": "pl-seg-08-01",
+   "processed_path": "plates/processed/pl-seg-08-01.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-08-01.png",
+    "source_url": "https://www.geo.fr/histoire/la-galerie-des-glaces-miroir-du-pouvoir-a-versailles-231778",
+    "publication_date": "2026-05-08",
+    "credit": "Fr\u00e9d\u00e9ric Brillet, Geo",
+    "evidence_rationale": "Economic equivalence demonstrating that a single luxury mirror was priced at 800 artisan workdays."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "split-screen",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Striking cost metric proving mirrors were high-capital strategic assets, not casual furnishings."
+   }
+  },
+  {
+   "asset_id": "pl-seg-08-02",
+   "processed_path": "plates/processed/pl-seg-08-02.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-08-02.png",
+    "source_url": "https://cabinetmagazine.org/issues/14/mcelheny.php",
+    "publication_date": "2004-06-01",
+    "credit": "Josiah McElheny, Cabinet",
+    "evidence_rationale": "Archival record of the sudden 1667 Paris artisan deaths and the enduring attribution to Council of Ten reprisals."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "callout-overlay",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Historical reception of the mysterious 1667 deaths in the rue de Reuilly manufactory."
+   }
+  },
+  {
+   "asset_id": "pl-seg-08-03",
+   "processed_path": "plates/processed/pl-seg-08-03.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-08-03.png",
+    "source_url": "https://theses.chartes.psl.eu/document/ENCPOS_1908_08",
+    "publication_date": "1908-05-01",
+    "credit": "\u00c9cole nationale des chartes",
+    "evidence_rationale": "Return of Antonio della Rivetta and the senior masters to Venice in spring 1667 under threat and amnesty."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [
+    {
+     "path": "plates/processed/pl-seg-08-03-detail-a.png",
+     "region": [
+      120,
+      260,
+      880,
+      380
+     ],
+     "purpose": "Amnesty and threat negotiation forcing Rivetta and companions to repatriate to Venice."
+    }
+   ],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "dense",
+    "detail_crop_value": "high",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Archival closure of the Paris operation: Giustiniani successfully securing the return of key masters."
+   }
+  },
+  {
+   "asset_id": "pl-seg-09-01",
+   "processed_path": "plates/processed/pl-seg-09-01.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-09-01.png",
+    "source_url": "https://www.persee.fr/doc/corr_0000-0002_1863_cor_2_2_924_t1_0529_0000_2",
+    "publication_date": "1863-01-01",
+    "credit": "Pierre Cl\u00e9ment, Lettres de Colbert",
+    "evidence_rationale": "Primary letter from Colbert to France's ambassador refusing the return of Rivetta and Barbin due to their past disruption."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Ministerial letter in Colbert's correspondence denouncing the 'malignit\u00e9' of the Venetian artisans."
+   }
+  },
+  {
+   "asset_id": "pl-seg-09-02",
+   "processed_path": "plates/processed/pl-seg-09-02.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-09-02.png",
+    "source_url": "https://www.persee.fr/doc/corr_0000-0002_1863_cor_2_2_924_t1_0484_0000_2",
+    "publication_date": "1863-01-01",
+    "credit": "Pierre Cl\u00e9ment, Lettres de Colbert",
+    "evidence_rationale": "Primary ministerial instruction by Colbert launching a secret intelligence survey into Murano's glassworks in August 1669."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "hud-bracket",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "Colbert commanding Ambassador Saint-Andr\u00e9 to conduct secret reconnaissance of Murano glass furnaces."
+   }
+  },
+  {
+   "asset_id": "pl-seg-09-03",
+   "processed_path": "plates/processed/pl-seg-09-03.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-09-03.png",
+    "source_url": "https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/3d0e56c9-ac99-4aa0-9c3c-1f8fa3d1641b-chateau-versailles/article/01ae13d3-c1fe-4ee6-a25e-f6dd851af447-miroirs-la-galerie-glaces",
+    "publication_date": "2024-05-15",
+    "credit": "Biblioth\u00e8que nationale de France",
+    "evidence_rationale": "Decree of September 1672 placing a total embargo on the importation of Venetian glass into France."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "split-screen",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "The decisive economic embargo of September 1672 banning all Venetian mirror glass from entering France."
+   }
+  },
+  {
+   "asset_id": "pl-seg-10-01",
+   "processed_path": "plates/processed/pl-seg-10-01.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-10-01.png",
+    "source_url": "https://en.chateauversailles.fr/discover/estate/palace/hall-mirrors",
+    "publication_date": "2026-11-12",
+    "credit": "Ch\u00e2teau de Versailles",
+    "evidence_rationale": "Official confirmation that the Hall of Mirrors served as the sovereign proof that French manufacture had shattered the Venetian monopoly."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "The official Versailles verdict confirming the Hall as sovereign industrial triumph over Murano."
+   }
+  },
+  {
+   "asset_id": "pl-seg-10-02",
+   "processed_path": "plates/processed/pl-seg-10-02.png",
+   "source": {
+    "raw_path": "plates/raw/raw-seg-10-02.png",
+    "source_url": "https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/3d0e56c9-ac99-4aa0-9c3c-1f8fa3d1641b-chateau-versailles/article/01ae13d3-c1fe-4ee6-a25e-f6dd851af447-miroirs-la-galerie-glaces",
+    "publication_date": "2024-05-15",
+    "credit": "Biblioth\u00e8que nationale de France",
+    "evidence_rationale": "Economic outcome: French mirror manufacturing reversing trade flows to generate 300,000\u2013400,000 livres/year in exports across Europe."
+   },
+   "original_px": [
+    1400,
+    1000
+   ],
+   "processed_px": [
+    1400,
+    1000
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+1.5%",
+    "b_offset": "-1.5%",
+    "applied": true,
+    "method": "per-channel gain R x1.015, B x0.985, clip 0-255"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "split-screen",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "standard",
+    "detail_crop_value": "none",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "notes": "BnF summary showing total trade flow reversal: France exporting 300,000-400,000 livres gold/year."
+   }
+  },
+  {
+   "asset_id": "art-hall-wide",
+   "processed_path": "plates/processed/hall-wide.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/hall-wide.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Chateau_Versailles_Galerie_des_Glaces.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Photo: Ch\u00e2teau de Versailles / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "evidence_rationale": "Wide interior of the Galerie des Glaces showing the mirrored arcades, gilded capitals and parquet; primary establishing view of the 73m hall."
+   },
+   "original_px": [
+    1600,
+    1062
+   ],
+   "processed_px": [
+    1600,
+    1062
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "hero",
+    "notes": "Wide interior of the Galerie des Glaces showing the mirrored arcades, gilded capitals and parquet; primary establishing view of the 73m hall."
+   }
+  },
+  {
+   "asset_id": "art-hall-ceiling",
+   "processed_path": "plates/processed/hall-ceiling.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/hall-ceiling.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Hall_of_Mirrors%2C_Palace_of_Versailles_chandelier.JPG",
+    "publication_date": "2026-11-12",
+    "credit": "Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "evidence_rationale": "Chandelier and gilded vault of the Hall of Mirrors; supports the room-as-total-artwork and modern-visitor beats."
+   },
+   "original_px": [
+    900,
+    1200
+   ],
+   "processed_px": [
+    900,
+    1200
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "full-bleed",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "hero",
+    "notes": "Chandelier and gilded vault of the Hall of Mirrors; supports the room-as-total-artwork and modern-visitor beats."
+   }
+  },
+  {
+   "asset_id": "art-hall-detail",
+   "processed_path": "plates/processed/hall-detail.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/hall-detail.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Nec_pluribus_impar_ceiling_galerie_des_glaces_versailles.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Wikimedia Commons",
+    "license": "CC0",
+    "evidence_rationale": "Painted ceiling medallion with the royal cipher; demonstrates the political iconography embedded in the gallery."
+   },
+   "original_px": [
+    1564,
+    1200
+   ],
+   "processed_px": [
+    1564,
+    1200
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "hud-bracket",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "atmosphere",
+    "notes": "Painted ceiling medallion with the royal cipher; demonstrates the political iconography embedded in the gallery."
+   }
+  },
+  {
+   "asset_id": "art-hall-bw",
+   "processed_path": "plates/processed/hall-bw.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/hall-bw.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Palais_de_Versailles%2C_Galerie_des_Glaces.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "evidence_rationale": "Nineteenth-century photographic print of the Galerie des Glaces; shows the assembled mirror bays as a repeating system."
+   },
+   "original_px": [
+    1600,
+    1009
+   ],
+   "processed_px": [
+    1600,
+    1009
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "hero",
+    "notes": "Nineteenth-century photographic print of the Galerie des Glaces; shows the assembled mirror bays as a repeating system."
+   }
+  },
+  {
+   "asset_id": "art-colbert",
+   "processed_path": "plates/processed/colbert.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/colbert.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Colbert-5.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Wikimedia Commons",
+    "license": "Public domain",
+    "evidence_rationale": "Portrait of Jean-Baptiste Colbert holding a document; the minister who ran the mirror policy and the talent raid."
+   },
+   "original_px": [
+    918,
+    1200
+   ],
+   "processed_px": [
+    918,
+    1200
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "split-screen",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "atmosphere",
+    "notes": "Portrait of Jean-Baptiste Colbert holding a document; the minister who ran the mirror policy and the talent raid."
+   }
+  },
+  {
+   "asset_id": "art-versailles-silvestre",
+   "processed_path": "plates/processed/versailles-silvestre.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/versailles-silvestre.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Israel_Silvestre_Versailles_1676.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Isra\u00ebl Silvestre, 1676",
+    "license": "Public domain",
+    "evidence_rationale": "Isra\u00ebl Silvestre engraving of Versailles in 1676; shows the palace and gardens before the Hall of Mirrors was complete."
+   },
+   "original_px": [
+    1600,
+    1200
+   ],
+   "processed_px": [
+    1600,
+    1200
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "hero",
+    "notes": "Isra\u00ebl Silvestre engraving of Versailles in 1676; shows the palace and gardens before the Hall of Mirrors was complete."
+   }
+  },
+  {
+   "asset_id": "art-versailles-court",
+   "processed_path": "plates/processed/versailles-court.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/versailles-court.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Isra%C3%ABl_Silvestre_-_Cour_de_Marbre_in_Versailles_-_WGA21326.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Isra\u00ebl Silvestre",
+    "license": "Public domain",
+    "evidence_rationale": "Silvestre engraving of the Cour de Marbre at Versailles; the court setting that consumed Venetian mirrors."
+   },
+   "original_px": [
+    1004,
+    650
+   ],
+   "processed_px": [
+    1004,
+    650
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "split-screen",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "atmosphere",
+    "notes": "Silvestre engraving of the Cour de Marbre at Versailles; the court setting that consumed Venetian mirrors."
+   }
+  },
+  {
+   "asset_id": "art-paris-map",
+   "processed_path": "plates/processed/paris-map.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/paris-map.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Atlas_des_anciens_plans_de_Paris_-_063._Paris_en_1652_-_David_Rumsey.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "David Rumsey Map Collection",
+    "license": "Public domain",
+    "evidence_rationale": "Paris in 1652 from the Atlas des anciens plans de Paris; street geometry for the Rue de Reuilly shootout beat."
+   },
+   "original_px": [
+    1600,
+    1155
+   ],
+   "processed_px": [
+    1600,
+    1155
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "hero",
+    "notes": "Paris in 1652 from the Atlas des anciens plans de Paris; street geometry for the Rue de Reuilly shootout beat."
+   }
+  },
+  {
+   "asset_id": "art-venice-plan",
+   "processed_path": "plates/processed/venice-plan.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/venice-plan.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Venice%2C_Museo_Correr%2C_painted_plan_of_Venice_%2817th_ct.%29%2C_Pza.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Museo Correr, Venice",
+    "license": "CC BY-SA 4.0",
+    "evidence_rationale": "Seventeenth-century painted plan of Venice in the Museo Correr; the lagoon city as a fortified trading state."
+   },
+   "original_px": [
+    1600,
+    1056
+   ],
+   "processed_px": [
+    1600,
+    1056
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "full-bleed",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "hero",
+    "notes": "Seventeenth-century painted plan of Venice in the Museo Correr; the lagoon city as a fortified trading state."
+   }
+  },
+  {
+   "asset_id": "art-lagoon-map",
+   "processed_path": "plates/processed/lagoon-map.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/lagoon-map.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Carte_hydrographique_de_la_V%C3%A9n%C3%A9tie_-_Io._Bat._Maza_f._-_btv1b53170332x_%282_of_3%29.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Biblioth\u00e8que nationale de France",
+    "license": "Public domain",
+    "evidence_rationale": "Hydrographic chart of the Veneto by Giovanni Battista Maza; the lagoon, islands and mainland routes."
+   },
+   "original_px": [
+    1600,
+    1040
+   ],
+   "processed_px": [
+    1600,
+    1040
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "hud-bracket",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "atmosphere",
+    "notes": "Hydrographic chart of the Veneto by Giovanni Battista Maza; the lagoon, islands and mainland routes."
+   }
+  },
+  {
+   "asset_id": "art-canaletto",
+   "processed_path": "plates/processed/canaletto.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/canaletto.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:%28Venice%29_Veduta_del_Canal_Grande_dalla_Punta_della_Dogana_-_Bernardo_Bellotto.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Bernardo Bellotto",
+    "license": "Public domain",
+    "evidence_rationale": "Bellotto view of the Grand Canal; Venetian mercantile wealth and the city's image economy."
+   },
+   "original_px": [
+    1600,
+    1015
+   ],
+   "processed_px": [
+    1600,
+    1015
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "hud-bracket",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "atmosphere",
+    "notes": "Bellotto view of the Grand Canal; Venetian mercantile wealth and the city's image economy."
+   }
+  },
+  {
+   "asset_id": "art-gondola",
+   "processed_path": "plates/processed/gondola.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/gondola.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Gondola%2C_Venice_%28Anders_Zorn%29_-_Gothenburg_Museum_of_Art_-_GKM_1842.tif",
+    "publication_date": "2026-11-12",
+    "credit": "Anders Zorn, 1908",
+    "license": "Public domain",
+    "evidence_rationale": "Anders Zorn's night gondola painting; the clandestine departure mood."
+   },
+   "original_px": [
+    747,
+    1200
+   ],
+   "processed_px": [
+    747,
+    1200
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "split-screen",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "atmosphere",
+    "notes": "Anders Zorn's night gondola painting; the clandestine departure mood."
+   }
+  },
+  {
+   "asset_id": "art-murano-tower",
+   "processed_path": "plates/processed/murano-tower.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/murano-tower.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Faro_%28Murano%29.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "evidence_rationale": "Murano's lighthouse and waterfront; the island as a visible, guarded industrial site."
+   },
+   "original_px": [
+    1600,
+    1068
+   ],
+   "processed_px": [
+    1600,
+    1068
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "hero",
+    "notes": "Murano's lighthouse and waterfront; the island as a visible, guarded industrial site."
+   }
+  },
+  {
+   "asset_id": "art-murano-skyline",
+   "processed_path": "plates/processed/murano-skyline.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/murano-skyline.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Canale_San_Giovanni_%28Murano%29.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "evidence_rationale": "Murano canal frontage; the glassmaking quarter as a working island town."
+   },
+   "original_px": [
+    1600,
+    624
+   ],
+   "processed_px": [
+    1600,
+    624
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "callout",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "atmosphere",
+    "notes": "Murano canal frontage; the glassmaking quarter as a working island town."
+   }
+  },
+  {
+   "asset_id": "art-furnace",
+   "processed_path": "plates/processed/furnace.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/furnace.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Murano_furnace_closeup.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "evidence_rationale": "Close view of a Murano furnace mouth at working heat; the physical source of glass and the film's amber light."
+   },
+   "original_px": [
+    1600,
+    1200
+   ],
+   "processed_px": [
+    1600,
+    1200
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "hero",
+    "notes": "Close view of a Murano furnace mouth at working heat; the physical source of glass and the film's amber light."
+   }
+  },
+  {
+   "asset_id": "art-blowing",
+   "processed_path": "plates/processed/blowing.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/blowing.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Murano_glassblowing_demo_2.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "evidence_rationale": "Glassblower at the Murano furnace with a gather on the pipe; the labour behind a mirror pane."
+   },
+   "original_px": [
+    1600,
+    1200
+   ],
+   "processed_px": [
+    1600,
+    1200
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "hero",
+    "notes": "Glassblower at the Murano furnace with a gather on the pipe; the labour behind a mirror pane."
+   }
+  },
+  {
+   "asset_id": "art-blowing-hands",
+   "processed_path": "plates/processed/blowing-hands.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/blowing-hands.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Murano_glassblowing_demo_6.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "evidence_rationale": "Hands shaping hot glass at the bench; tacit knowledge held in the body rather than in a formula."
+   },
+   "original_px": [
+    1600,
+    1200
+   ],
+   "processed_px": [
+    1600,
+    1200
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "callout",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "atmosphere",
+    "notes": "Hands shaping hot glass at the bench; tacit knowledge held in the body rather than in a formula."
+   }
+  },
+  {
+   "asset_id": "art-glassworks",
+   "processed_path": "plates/processed/glassworks.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/glassworks.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Diderot_Encyclopedia_Making_Crown_Glass_5.JPG",
+    "publication_date": "2026-11-12",
+    "credit": "Diderot & d'Alembert, Encyclop\u00e9die",
+    "license": "Public domain",
+    "evidence_rationale": "Diderot Encyclop\u00e9die plate of crown-glass manufacture; the workshop as a drawn industrial system."
+   },
+   "original_px": [
+    1543,
+    1200
+   ],
+   "processed_px": [
+    1543,
+    1200
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "split-screen",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "atmosphere",
+    "notes": "Diderot Encyclop\u00e9die plate of crown-glass manufacture; the workshop as a drawn industrial system."
+   }
+  },
+  {
+   "asset_id": "art-mirror-design",
+   "processed_path": "plates/processed/mirror-design.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/mirror-design.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Design_for_Mirror_or_Box_MET_DP803197.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Metropolitan Museum of Art",
+    "license": "CC0",
+    "evidence_rationale": "Metropolitan Museum design for a mirror or box; seventeenth-century ornament grammar for the mirror as luxury object."
+   },
+   "original_px": [
+    1600,
+    1067
+   ],
+   "processed_px": [
+    1600,
+    1067
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "hud-bracket",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "atmosphere",
+    "notes": "Metropolitan Museum design for a mirror or box; seventeenth-century ornament grammar for the mirror as luxury object."
+   }
+  },
+  {
+   "asset_id": "art-council",
+   "processed_path": "plates/processed/council.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/council.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Council_of_Ten_%28Republic_of_Venice%29.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "evidence_rationale": "The Council of Ten in session; the Venetian security organ behind the exit ban and extraterritorial warrants."
+   },
+   "original_px": [
+    1230,
+    827
+   ],
+   "processed_px": [
+    1230,
+    827
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "hero",
+    "notes": "The Council of Ten in session; the Venetian security organ behind the exit ban and extraterritorial warrants."
+   }
+  },
+  {
+   "asset_id": "art-doge",
+   "processed_path": "plates/processed/doge.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/doge.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:%28Venice%29_Bocca_di_Leone_in_the_Doge%27s_Palace.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Doge's Palace, Venice",
+    "license": "CC BY-SA 4.0",
+    "evidence_rationale": "Bocca di Leone letterbox in the Doge's Palace; the denunciation machinery of the Venetian state."
+   },
+   "original_px": [
+    1089,
+    1200
+   ],
+   "processed_px": [
+    1089,
+    1200
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "hud-bracket",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "atmosphere",
+    "notes": "Bocca di Leone letterbox in the Doge's Palace; the denunciation machinery of the Venetian state."
+   }
+  },
+  {
+   "asset_id": "art-goblet",
+   "processed_path": "plates/processed/goblet.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/goblet.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Murano_Glass_Museum_04.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Murano Glass Museum",
+    "license": "CC BY 4.0",
+    "evidence_rationale": "Murano glass goblet in the Murano Glass Museum; the craft's colour and technical display."
+   },
+   "original_px": [
+    1600,
+    653
+   ],
+   "processed_px": [
+    1600,
+    653
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "callout",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "atmosphere",
+    "notes": "Murano glass goblet in the Murano Glass Museum; the craft's colour and technical display."
+   }
+  },
+  {
+   "asset_id": "art-chandelier",
+   "processed_path": "plates/processed/chandelier.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/chandelier.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lampadario_in_vetro_di_Murano_-_Ca%27_Rezzonico%2C_Venice.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Ca' Rezzonico, Venice",
+    "license": "CC BY-SA 4.0",
+    "evidence_rationale": "Murano glass chandelier at Ca' Rezzonico; the later export success that inverted the trade flow."
+   },
+   "original_px": [
+    1387,
+    1200
+   ],
+   "processed_px": [
+    1387,
+    1200
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "full-bleed",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "hero",
+    "notes": "Murano glass chandelier at Ca' Rezzonico; the later export success that inverted the trade flow."
+   }
+  },
+  {
+   "asset_id": "art-saintgobain",
+   "processed_path": "plates/processed/saintgobain.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/saintgobain.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Saint-Gobain_18Jhdt.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Wikimedia Commons",
+    "license": "CC BY-SA 2.0 de",
+    "evidence_rationale": "Eighteenth-century view of the Saint-Gobain glassworks; the French mirror industry after the Venetian transfer."
+   },
+   "original_px": [
+    1379,
+    850
+   ],
+   "processed_px": [
+    1379,
+    850
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "split-screen",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "atmosphere",
+    "notes": "Eighteenth-century view of the Saint-Gobain glassworks; the French mirror industry after the Venetian transfer."
+   }
+  },
+  {
+   "asset_id": "art-louis",
+   "processed_path": "plates/processed/louis.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/louis.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Louis_XIV_of_France_in_Coronation_Robes_(by_Hyacinthe_Rigaud)_-_Louvre_Museum.jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Hyacinthe Rigaud, Louvre",
+    "license": "Public domain",
+    "evidence_rationale": "Rigaud state portrait of Louis XIV in coronation robes; the Sun King as the political author of the Versailles programme."
+   },
+   "original_px": [
+    861,
+    1200
+   ],
+   "processed_px": [
+    861,
+    1200
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "callout",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "atmosphere",
+    "notes": "Rigaud state portrait of Louis XIV in coronation robes; the Sun King as the political author of the Versailles programme."
+   }
+  },
+  {
+   "asset_id": "art-patent",
+   "processed_path": "plates/processed/patent.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/patent.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Lettres_patentes_portant_privil%C3%A8ge_exclusif_de_la_Manufacture_royale_des_glaces_en_faveur_d%27Antoine_Dagincourt,_31_mars_1708.djvu",
+    "publication_date": "2026-11-12",
+    "credit": "Archives nationales / Wikimedia Commons",
+    "license": "Public domain",
+    "evidence_rationale": "Printed letters patent granting an exclusive privilege to the Manufacture royale des glaces; a primary instrument of royal industrial policy."
+   },
+   "original_px": [
+    660,
+    1200
+   ],
+   "processed_px": [
+    660,
+    1200
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "framed-glass",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "hero",
+    "notes": "Printed letters patent granting an exclusive privilege to the Manufacture royale des glaces; a primary instrument of royal industrial policy."
+   }
+  },
+  {
+   "asset_id": "art-mirror-gilt",
+   "processed_path": "plates/processed/mirror-gilt.jpg",
+   "source": {
+    "raw_path": "plates/art/raw/mirror-gilt.bin",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Vihorlat_Museum_in_Humenn%C3%A9_-_History_and_art_history_permanent_exhibition_-_Golden_salon_(ladies%27_room)_-_Venetian_wall_mirror_(May_2011).jpg",
+    "publication_date": "2026-11-12",
+    "credit": "Vihorlat Museum",
+    "license": "CC BY-SA 4.0",
+    "evidence_rationale": "Gilded Venetian wall mirror in a museum interior; the finished luxury object in a palace setting."
+   },
+   "original_px": [
+    1419,
+    1200
+   ],
+   "processed_px": [
+    1419,
+    1200
+   ],
+   "scale_to_fit": {
+    "mode": "contain",
+    "scale_factor": 1.0,
+    "upscaled": false,
+    "aspect_preserved": true,
+    "data_clip": "none",
+    "verified_100pct": true,
+    "chrome_stripped": true
+   },
+   "warm_grade": {
+    "r_offset": "+2%",
+    "b_offset": "-3%",
+    "applied": true,
+    "method": "magick -modulate 100,96,100 + color-matrix R1.02 B0.97"
+   },
+   "detail_crops": [],
+   "triage": {
+    "recommended_mount": "callout",
+    "scale_to_fit_verified": true,
+    "legibility": "high",
+    "contrast_fit": "pass",
+    "density": "rich",
+    "detail_crop_value": "medium",
+    "motion_treatment": "living_hold_slow_drift",
+    "anti_outdated_audit": "pass",
+    "verdict": "approved",
+    "usage": "atmosphere",
+    "notes": "Gilded Venetian wall mirror in a museum interior; the finished luxury object in a palace setting."
+   }
+  }
+ ],
+ "art_library": {
+  "added_at": "2026-11-12T08:01:04.405118+00:00",
+  "count": 27,
+  "note": "Primary cinematic plates sourced from Wikimedia Commons (public domain / CC) with attribution. The original 23 page captures remain for document-evidence crops only and must never be mounted as full-bleed heroes."
+ }
+}

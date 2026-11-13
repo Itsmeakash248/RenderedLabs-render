@@ -1,0 +1,188 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="wbg01-template">
+<style>
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="wbg-01-gilded-gallery"] .w-stage{position:absolute;inset:0;}
+[data-composition-id="wbg-01-gilded-gallery"] .w-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="wbg-01-gilded-gallery"] .w-p1{z-index:1;}
+[data-composition-id="wbg-01-gilded-gallery"] .w-p2{z-index:2;}
+[data-composition-id="wbg-01-gilded-gallery"] .w-p3{z-index:3;}
+[data-composition-id="wbg-01-gilded-gallery"] .w-haze{position:absolute;inset:0;z-index:5;pointer-events:none;
+  background:
+    radial-gradient(38% 46% at 18% 14%, rgba(255,246,216,0.42) 0%, rgba(255,246,216,0.10) 62%, rgba(255,246,216,0) 84%),
+    radial-gradient(70% 60% at 50% 108%, rgba(74,46,28,0.30) 0%, rgba(74,46,28,0) 70%);}
+</style>
+
+<div id="root" data-composition-id="wbg-01-gilded-gallery" data-width="1920" data-height="1080" data-start="0" data-duration="60.000">
+  <div class="w-stage" id="wbg01-stage">
+
+    <!-- far · the wall and the light -->
+    <svg class="w-plane w-p1" id="wbg01-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w01-wall" x1="0" y1="0" x2="0.08" y2="1">
+          <stop offset="0" stop-color="#FBF1DA"/><stop offset="0.38" stop-color="#F1DFBE"/>
+          <stop offset="0.72" stop-color="#E3CBA4"/><stop offset="1" stop-color="#CDB088"/>
+        </linearGradient>
+        <linearGradient id="w01-shaft" x1="0" y1="0" x2="0.6" y2="1">
+          <stop offset="0" stop-color="#FFF9E8" stop-opacity="0.62"/>
+          <stop offset="0.55" stop-color="#FFF3D2" stop-opacity="0.24"/>
+          <stop offset="1" stop-color="#FFEFC8" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="w01-cornice" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F7E4BE"/><stop offset="0.5" stop-color="#DCC29B"/>
+          <stop offset="1" stop-color="#B08C60"/>
+        </linearGradient>
+        <radialGradient id="w01-glow" cx="18%" cy="12%" r="52%">
+          <stop offset="0" stop-color="#FFF6DC" stop-opacity="0.5"/>
+          <stop offset="1" stop-color="#FFF6DC" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="w01-blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="42"/></filter>
+        <filter id="w01-soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#w01-wall)"/>
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#w01-glow)" opacity="0.8"/>
+
+      <!-- the two shafts from the high window -->
+      <g opacity="0.75">
+        <path d="M132,-40 L392,-40 L708,1080 L288,1080 Z" fill="url(#w01-shaft)"/>
+        <path d="M420,-40 L556,-40 L836,1080 L620,1080 Z" fill="url(#w01-shaft)" opacity="0.6"/>
+      </g>
+
+      <!-- the cornice and the vault spring -->
+      <g opacity="0.9">
+        <path d="M0,84 H1920 V126 H0 Z" fill="url(#w01-cornice)"/>
+        <path d="M0,84 H1920" stroke="#FBF1DA" stroke-width="6" opacity="0.55"/>
+        <path d="M0,126 H1920" stroke="#6E4826" stroke-width="7" opacity="0.35"/>
+        <path d="M0,150 H1920" stroke="#8A5F36" stroke-width="5" opacity="0.16"/>
+      </g>
+
+      <ellipse cx="286" cy="120" rx="330" ry="240" fill="#FFF6DC" opacity="0.3" filter="url(#w01-blur)"/>
+    </svg>
+
+    <!-- mid · seventeen arches in shadow rhythm -->
+    <svg class="w-plane w-p2" id="wbg01-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w01-arch" gradientUnits="userSpaceOnUse" x1="0" y1="170" x2="0" y2="470">
+          <stop offset="0" stop-color="#4A2E1C" stop-opacity="0.34"/>
+          <stop offset="0.52" stop-color="#6E4826" stop-opacity="0.20"/>
+          <stop offset="1" stop-color="#A97445" stop-opacity="0.05"/>
+        </linearGradient>
+        <linearGradient id="w01-pier" gradientUnits="userSpaceOnUse" x1="0" y1="170" x2="0" y2="560">
+          <stop offset="0" stop-color="#8A5F36" stop-opacity="0.26"/>
+          <stop offset="1" stop-color="#C9A87C" stop-opacity="0.06"/>
+        </linearGradient>
+        <linearGradient id="w01-archfade" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1920" y2="0">
+          <stop offset="0" stop-color="#F6E6C6" stop-opacity="0"/>
+          <stop offset="0.18" stop-color="#F6E6C6" stop-opacity="0.34"/>
+          <stop offset="0.5" stop-color="#F6E6C6" stop-opacity="0.62"/>
+          <stop offset="0.82" stop-color="#F6E6C6" stop-opacity="0.34"/>
+          <stop offset="1" stop-color="#F6E6C6" stop-opacity="0"/>
+        </linearGradient>
+        <pattern id="w01-archrow" x="0" y="0" width="113" height="560" patternUnits="userSpaceOnUse">
+          <path d="M0,170 H113 V560 H0 Z" fill="url(#w01-pier)"/>
+          <path d="M12,470 V304 C12,244 30,196 56,196 C82,196 100,244 100,304 V470 Z" fill="url(#w01-arch)"/>
+          <path d="M12,470 V304 C12,244 30,196 56,196 C82,196 100,244 100,304 V470"
+                fill="none" stroke="#4A2E1C" stroke-width="6" opacity="0.24"/>
+          <path d="M6,470 V300 C6,236 26,186 56,186 C86,186 106,236 106,300 V470"
+                fill="none" stroke="#FBF1DA" stroke-width="5" opacity="0.18"/>
+          <path d="M56,196 V470" stroke="#4A2E1C" stroke-width="4" opacity="0.12"/>
+          <path d="M12,470 H100" stroke="#4A2E1C" stroke-width="7" opacity="0.22"/>
+          <path d="M24,246 H88" stroke="#4A2E1C" stroke-width="4" opacity="0.10"/>
+        </pattern>
+      </defs>
+
+      <rect x="0" y="150" width="1920" height="420" fill="url(#w01-archrow)" opacity="0.95"/>
+      <rect x="0" y="150" width="1920" height="420" fill="url(#w01-archfade)" opacity="0.85"/>
+
+      <!-- a second, softer arcade further back -->
+      <g opacity="0.34" transform="translate(0,-64)">
+        <rect x="0" y="150" width="1920" height="420" fill="url(#w01-archrow)"/>
+      </g>
+
+      <!-- the entablature over the arcade -->
+      <g opacity="0.5">
+        <path d="M0,556 H1920 V590 H0 Z" fill="#B08C60" opacity="0.24"/>
+        <path d="M0,556 H1920" stroke="#F6E6C6" stroke-width="6" opacity="0.3"/>
+        <path d="M0,590 H1920" stroke="#6E4826" stroke-width="6" opacity="0.2"/>
+      </g>
+
+      <!-- foreground piers at the edges -->
+      <g opacity="0.5">
+        <path d="M-40,60 H120 V1080 H-40 Z" fill="#8A5F36" opacity="0.22"/>
+        <path d="M120,60 V1080" stroke="#6E4826" stroke-width="7" opacity="0.28"/>
+        <path d="M1800,60 H1960 V1080 H1800 Z" fill="#8A5F36" opacity="0.18"/>
+        <path d="M1800,60 V1080" stroke="#6E4826" stroke-width="7" opacity="0.24"/>
+      </g>
+    </svg>
+
+    <!-- near · the floor and the drifting haze -->
+    <svg class="w-plane w-p3" id="wbg01-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w01-floor" x1="0" y1="0" x2="0.04" y2="1">
+          <stop offset="0" stop-color="#DCC29B"/><stop offset="0.34" stop-color="#C9A87C"/>
+          <stop offset="0.72" stop-color="#A97C4E"/><stop offset="1" stop-color="#7A4F2C"/>
+        </linearGradient>
+        <linearGradient id="w01-floorshade" gradientUnits="userSpaceOnUse" x1="0" y1="852" x2="0" y2="1080">
+          <stop offset="0" stop-color="#4A2E1C" stop-opacity="0"/>
+          <stop offset="1" stop-color="#2B1F17" stop-opacity="0.5"/>
+        </linearGradient>
+        <radialGradient id="w01-dustglow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFF3CE" stop-opacity="0.55"/>
+          <stop offset="1" stop-color="#FFF3CE" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <path d="M0,852 H1920 V1080 H0 Z" fill="url(#w01-floor)"/>
+      <path d="M0,852 H1920 V1080 H0 Z" fill="url(#w01-floorshade)"/>
+      <path d="M0,852 H1920" stroke="#F6E6C6" stroke-width="6" opacity="0.3"/>
+      <g stroke="#6E4826" stroke-width="4" opacity="0.14">
+        <path d="M0,920 H1920"/><path d="M0,1004 H1920"/>
+        <path d="M420,852 L392,1080"/><path d="M980,852 L968,1080"/><path d="M1500,852 L1524,1080"/>
+      </g>
+
+      <g fill="#FFE8B4" opacity="0.4">
+        <circle class="w01-mote" cx="356" cy="286" r="5"/>
+        <circle class="w01-mote" cx="486" cy="392" r="4"/>
+        <circle class="w01-mote" cx="640" cy="248" r="3.5"/>
+        <circle class="w01-mote" cx="742" cy="446" r="4.5"/>
+        <circle class="w01-mote" cx="286" cy="512" r="3"/>
+        <circle class="w01-mote" cx="1442" cy="300" r="4"/>
+        <circle class="w01-mote" cx="1560" cy="430" r="3.5"/>
+        <circle class="w01-mote" cx="1690" cy="268" r="3"/>
+        <circle class="w01-mote" cx="1256" cy="500" r="3.5"/>
+      </g>
+      <g fill="#FFF6DC" opacity="0.22">
+        <circle class="w01-mote2" cx="420" cy="620" r="6"/>
+        <circle class="w01-mote2" cx="900" cy="700" r="5"/>
+        <circle class="w01-mote2" cx="1620" cy="660" r="6"/>
+      </g>
+      <ellipse cx="420" cy="520" rx="260" ry="200" fill="url(#w01-dustglow)" opacity="0.3"/>
+    </svg>
+
+    <div class="w-haze"></div>
+  </div>
+</div>
+
+<script>
+(function initWbg01(){
+  var ID = "wbg-01-gilded-gallery";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, { duration: 60.000 }, 0);
+
+  // three drift rates, far to near
+  tl.fromTo("#wbg01-bg", { x: 0, y: 0 }, { x: -26, y: 6, duration: 60, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+  tl.fromTo("#wbg01-mg", { x: 0, y: 0 }, { x: -62, y: -4, duration: 48, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+  tl.fromTo("#wbg01-fg", { x: 0, y: 0 }, { x: -104, y: 8, duration: 36, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+
+  // dust in the shafts
+  tl.fromTo(".w01-mote", { y: 0, x: 0 }, { y: -120, x: 22, duration: 22, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 1.1 }, 0);
+  tl.fromTo(".w01-mote2", { y: 0, x: 0 }, { y: -160, x: -18, duration: 30, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 1.8 }, 2);
+
+  // the shafts breathe
+  tl.to("#wbg01-bg", { opacity: 0.92, duration: 18, ease: "sine.inOut", yoyo: true, repeat: 1 }, 4);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

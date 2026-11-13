@@ -1,0 +1,60 @@
+{
+  "voice": {
+    "path": "assets/voice/narration.mp3",
+    "voice_id": "en-US-ChristopherNeural",
+    "rate": "+11%",
+    "pitch": "+0Hz",
+    "duration_s": 520.989,
+    "integrated_lufs": -14.01,
+    "peak_dbfs": -1.46,
+    "true_peak_dbtp": -1.46,
+    "wpm": 171.8,
+    "words_count": 1492,
+    "max_silence_gap_s": 0.295,
+    "mastered": true,
+    "rate_log": "Rendered with en-US-ChristopherNeural @ +11%, pitch +0Hz. Normalized to -14.0 LUFS. 121 chunks. True-peak-safe loudnorm pass (I=-14.0, TP=-1.5): delivered -14.01 LUFS / -1.46 dBTP.",
+    "optimized_path": "assets/voice/narration.optimized.mp3"
+  },
+  "total_duration": 520.989,
+  "bgm": {
+    "path": "assets/bgm/venetian-mirror-syndicate-2026_bgm_bed_525s.flac",
+    "template": "cine",
+    "key": "Dm",
+    "prog": "F",
+    "bpm": 90,
+    "bed_volume": 0.34,
+    "ceiling": 0.4,
+    "carve": {
+      "freq_hz": 1600,
+      "strength": 0.45
+    },
+    "fade_in": 0.5,
+    "fade_out": 2.2,
+    "integrated_lufs": -13.99,
+    "true_peak_dbtp": -3.19,
+    "sample_rate": 48000,
+    "duration_s": 525.267,
+    "segments": "A 0-298.667s (112 bars) + B 298.667-525.267s (84 bars), 8s equal-power crossfade at bar 112",
+    "note": "196 bars @ 90 BPM, key Dm, prog F, +2 semitone modulation at bar 114. 34 SFX baked 1:1 from cues.json."
+  },
+  "mid_roll_marks": [
+    189.868,
+    303.122,
+    414.549
+  ],
+  "mid_roll_wall_clock": {
+    "break1": 189.868,
+    "break2": 303.122,
+    "break3": 414.549
+  },
+  "sfx": {
+    "cues_ref": "cues.json",
+    "measured_grid": true,
+    "hits_count": 34,
+    "max_vol": 0.35,
+    "ceiling": 0.35,
+    "bed_embedded": true,
+    "beat_grid": "beats.json (90.0 BPM, offset 0.000, p95 residual 7.69 ms)"
+  },
+  "separation_db": 12
+}

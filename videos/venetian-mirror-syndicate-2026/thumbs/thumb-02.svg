@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="A glassblower silhouetted against a furnace arch in dead center, holding a glowing gather on a blowpipe, with bold headline banner across the top and badge at bottom-left">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0.55" y2="1">
+      <stop offset="0%" stop-color="#FAF7F0"/>
+      <stop offset="44%" stop-color="#F5EFEB"/>
+      <stop offset="100%" stop-color="#EAE0D0"/>
+    </linearGradient>
+
+    <radialGradient id="ambient" cx="0.50" cy="0.66" r="0.62">
+      <stop offset="0%" stop-color="#F6D79B" stop-opacity="0.55"/>
+      <stop offset="42%" stop-color="#D9822B" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#D9822B" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="roomArch" x1="0" y1="300" x2="0" y2="920" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E1813"/>
+      <stop offset="52%" stop-color="#2B1F17"/>
+      <stop offset="82%" stop-color="#4A2C1C"/>
+      <stop offset="100%" stop-color="#6B3A22"/>
+    </linearGradient>
+
+    <radialGradient id="furnace" cx="0.5" cy="0.54" r="0.5">
+      <stop offset="0%" stop-color="#FAF7F0"/>
+      <stop offset="18%" stop-color="#F6D79B"/>
+      <stop offset="40%" stop-color="#D9822B" stop-opacity="0.92"/>
+      <stop offset="70%" stop-color="#C2593F" stop-opacity="0.52"/>
+      <stop offset="100%" stop-color="#C2593F" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="gatherGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FAF7F0" stop-opacity="0.95"/>
+      <stop offset="25%" stop-color="#F6D79B" stop-opacity="0.85"/>
+      <stop offset="55%" stop-color="#D9822B" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#D9822B" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="furnaceCore" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FAF7F0"/>
+      <stop offset="46%" stop-color="#F6D79B"/>
+      <stop offset="78%" stop-color="#D9822B"/>
+      <stop offset="100%" stop-color="#C2593F" stop-opacity="0.85"/>
+    </radialGradient>
+
+    <linearGradient id="floor" x1="0" y1="868" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4E3626"/>
+      <stop offset="30%" stop-color="#38261A"/>
+      <stop offset="100%" stop-color="#1E1813"/>
+    </linearGradient>
+
+    <linearGradient id="floorEdge" x1="0" y1="948" x2="0" y2="868" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#C89D42" stop-opacity="0.12"/>
+      <stop offset="52%" stop-color="#C89D42" stop-opacity="0.44"/>
+      <stop offset="100%" stop-color="#E7C882" stop-opacity="0.26"/>
+    </linearGradient>
+
+    <radialGradient id="floorPool" cx="0.50" cy="0.1" r="0.6">
+      <stop offset="0%" stop-color="#D9822B" stop-opacity="0.34"/>
+      <stop offset="50%" stop-color="#C2593F" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#C2593F" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="cornerHaze" cx="1" cy="1" r="0.65">
+      <stop offset="0%" stop-color="#1E1813" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#1E1813" stop-opacity="0.75"/>
+      <stop offset="80%" stop-color="#1E1813" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#1E1813" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="vignette" cx="0.5" cy="0.46" r="0.82">
+      <stop offset="0%" stop-color="#2B1F17" stop-opacity="0"/>
+      <stop offset="62%" stop-color="#2B1F17" stop-opacity="0.02"/>
+      <stop offset="88%" stop-color="#2B1F17" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#2B1F17" stop-opacity="0.22"/>
+    </radialGradient>
+
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="0.2">
+      <stop offset="0%" stop-color="#5C5248"/>
+      <stop offset="30%" stop-color="#3A2B20"/>
+      <stop offset="70%" stop-color="#4A382A"/>
+      <stop offset="100%" stop-color="#2B1F17"/>
+    </linearGradient>
+
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+
+    <filter id="softSmall" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="26" result="b1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b2"/>
+      <feMerge>
+        <feMergeNode in="b1"/>
+        <feMergeNode in="b2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="paper" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.74" numOctaves="4" seed="23" result="t"/>
+      <feColorMatrix in="t" type="matrix"
+        values="0 0 0 0 0.145  0 0 0 0 0.112  0 0 0 0 0.083  0.34 0.14 0 0 0"/>
+    </filter>
+
+    <filter id="typeShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#2B1F17" flood-opacity="0.38"/>
+    </filter>
+
+    <clipPath id="archClip">
+      <path d="M648,920 L648,600 A312,312 0 0 1 1272,600 L1272,920 Z"/>
+    </clipPath>
+
+    <clipPath id="floorClip">
+      <path d="M0,948 L1920,868 L1920,1080 L0,1080 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background Grounds -->
+  <rect width="1920" height="1080" fill="url(#ground)"/>
+  <rect width="1920" height="1080" fill="url(#ambient)"/>
+
+  <!-- Radial Perspective Rays -->
+  <g opacity="0.10" stroke="#5C5248" stroke-width="2" fill="none">
+    <path d="M960,700 L1920,236"/><path d="M960,700 L1920,470"/><path d="M960,700 L1920,700"/>
+    <path d="M960,700 L1920,930"/><path d="M960,700 L0,120"/><path d="M960,700 L0,360"/>
+    <path d="M960,700 L0,700"/><path d="M960,700 L0,940"/>
+    <circle cx="960" cy="700" r="470"/>
+    <circle cx="960" cy="700" r="620"/>
+  </g>
+
+  <!-- Hero Apparatus: Center Radial Split Furnace Arch (Dead Center x=960, y=590) -->
+  <g id="arch">
+    <path d="M648,920 L648,600 A312,312 0 0 1 1272,600 L1272,920 Z" fill="url(#roomArch)"/>
+
+    <g clip-path="url(#archClip)">
+      <ellipse cx="960" cy="846" rx="270" ry="210" fill="url(#furnace)"/>
+      <circle cx="960" cy="884" r="122" fill="url(#furnaceCore)" opacity="0.95"/>
+      <circle cx="960" cy="890" r="78" fill="#F6D79B"/>
+      <g opacity="0.55">
+        <path d="M852,908 C850,872 864,850 870,812 C884,846 898,864 896,908 Z" fill="#D9822B"/>
+        <path d="M800,908 C798,878 810,860 816,832 C828,858 838,874 836,908 Z" fill="#C2593F"/>
+        <path d="M1062,908 C1060,870 1076,848 1082,810 C1096,846 1110,864 1108,908 Z" fill="#D9822B"/>
+        <path d="M1120,908 C1118,880 1130,862 1136,838 C1148,862 1158,876 1156,908 Z" fill="#C2593F"/>
+      </g>
+      <g stroke="#1E1813" stroke-width="6" opacity="0.5">
+        <path d="M800,920 L800,700"/><path d="M1120,920 L1120,704"/>
+        <path d="M800,760 L1120,760" opacity="0.35"/>
+      </g>
+    </g>
+
+    <path d="M648,920 L648,600 A312,312 0 0 1 1272,600 L1272,920"
+          fill="none" stroke="url(#stone)" stroke-width="46"/>
+    <path d="M648,920 L648,600 A312,312 0 0 1 1272,600 L1272,920"
+          fill="none" stroke="#1E1813" stroke-width="10" opacity="0.85"/>
+    <path d="M670,920 L670,602 A290,290 0 0 1 1250,602 L1250,920"
+          fill="none" stroke="#C89D42" stroke-width="8" opacity="0.75"/>
+
+    <g stroke="#1E1813" stroke-width="6" opacity="0.65">
+      <path d="M648,700 L694,700"/><path d="M648,790 L694,790"/>
+      <path d="M1226,700 L1272,700"/><path d="M1226,790 L1272,790"/>
+      <path d="M716,512 L748,534"/><path d="M816,406 L834,446"/>
+      <path d="M960,354 L960,398"/><path d="M1104,406 L1086,446"/>
+      <path d="M1204,512 L1172,534"/>
+    </g>
+
+    <circle cx="960" cy="330" r="17" fill="#C89D42" stroke="#1E1813" stroke-width="8"/>
+  </g>
+
+  <!-- Glassmaster in Dead Center -->
+  <g id="glassmaster" transform="translate(962,918) scale(1.3) translate(-762,-918)">
+    <ellipse cx="762" cy="912" rx="150" ry="26" fill="#1E1813" opacity="0.55" filter="url(#softSmall)"/>
+
+    <g fill="#1E1813" stroke="#D9822B" stroke-width="10" stroke-opacity="0.60" stroke-linejoin="round">
+      <circle cx="762" cy="676" r="27"/>
+      <path d="M750,700 L774,700 L778,726 L746,726 Z"/>
+      <path d="M724,724 C736,708 788,708 800,724 L806,800 L718,800 Z"/>
+      <path d="M718,782 L806,782 L812,860 L712,860 Z"/>
+      <path d="M722,858 L756,858 L750,918 L714,918 Z"/>
+      <path d="M774,858 L808,858 L814,918 L778,918 Z"/>
+      <path d="M728,740 L712,776 L724,782 L742,748 Z"/>
+      <path d="M796,740 L790,780 L802,784 L810,744 Z"/>
+    </g>
+
+    <path d="M584,720 L846,826" stroke="#1E1813" stroke-width="12" stroke-linecap="round"/>
+    <path d="M584,720 L700,766" stroke="#C89D42" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+
+    <g fill="#1E1813">
+      <ellipse cx="726" cy="780" rx="15" ry="11" transform="rotate(22 726 780)"/>
+      <ellipse cx="768" cy="796" rx="15" ry="11" transform="rotate(22 768 796)"/>
+    </g>
+    <circle cx="576" cy="716" r="54" fill="url(#gatherGlow)"/>
+    <circle cx="576" cy="716" r="22" fill="#F6D79B" stroke="#1E1813" stroke-width="6"/>
+    <circle cx="576" cy="716" r="10" fill="#FAF7F0"/>
+  </g>
+
+  <!-- Floor Plane -->
+  <g id="floor-plane">
+    <path d="M0,948 L1920,868 L1920,1080 L0,1080 Z" fill="url(#floor)"/>
+    <g clip-path="url(#floorClip)">
+      <rect x="0" y="868" width="1920" height="212" fill="url(#floorPool)"/>
+      <g stroke="#8A6A2C" stroke-linecap="round" fill="none">
+        <path d="M0,1042 L1420,914" stroke-width="2" opacity="0.15"/>
+        <path d="M0,1066 L1180,946" stroke-width="3" opacity="0.11"/>
+        <path d="M60,1080 L980,970" stroke-width="2" opacity="0.13"/>
+        <path d="M280,1080 L860,987" stroke-width="2" opacity="0.10"/>
+        <path d="M0,1010 L640,933" stroke-width="2" opacity="0.12"/>
+        <path d="M700,930 L1490,887" stroke-width="2" opacity="0.09"/>
+      </g>
+      <path d="M670,1010 C820,986 1100,986 1250,1010 L1250,1080 L670,1080 Z"
+            fill="#D9822B" opacity="0.10" filter="url(#soft)"/>
+    </g>
+    <path d="M0,948 L1920,868" stroke="url(#floorEdge)" stroke-width="4"/>
+    <path d="M0,953 L1920,873" stroke="#1E1813" stroke-width="10" opacity="0.45"/>
+  </g>
+
+  <!-- Archetype 2: Wide Text Banner Centered at Top (x=960, y=190) -->
+  <g filter="url(#typeShadow)">
+    <text x="960" y="210" text-anchor="middle" font-family="Instrument Serif" font-size="172" letter-spacing="-3"
+          fill="#1E1813" stroke="#FAF7F0" stroke-width="28" stroke-linejoin="round" paint-order="stroke fill">A TALENT RAID</text>
+  </g>
+
+  <!-- Accent Rule under Header Banner -->
+  <g>
+    <rect x="680" y="246" width="560" height="14" rx="7" fill="#C2593F"/>
+    <rect x="910" y="246" width="100" height="14" rx="7" fill="#C89D42"/>
+  </g>
+
+  <!-- Archetype 2: Badge at Bottom-Left (x=120, y=880) -->
+  <g>
+    <rect x="120" y="876" width="480" height="74" rx="37" fill="#EAE0D0" stroke="#1E1813" stroke-width="9"/>
+    <circle cx="162" cy="913" r="18" fill="#C89D42" stroke="#1E1813" stroke-width="6"/>
+    <circle cx="162" cy="913" r="7" fill="#2B1F17"/>
+    <text x="196" y="924" font-family="JetBrains Mono" font-size="28" letter-spacing="1.2" fill="#1E1813">1,200 LIVRES A YEAR</text>
+  </g>
+
+  <!-- Ambient Vignette & Bottom-Right Timestamp Dead-Zone Shield -->
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+  <rect x="1400" y="800" width="520" height="280" fill="url(#cornerHaze)"/>
+  <rect width="1920" height="1080" filter="url(#paper)" opacity="0.34"/>
+</svg>

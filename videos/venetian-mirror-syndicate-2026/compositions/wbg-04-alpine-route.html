@@ -1,0 +1,262 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="wbg04-template">
+<style>
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="wbg-04-alpine-route"] .w-stage{position:absolute;inset:0;
+  background:linear-gradient(180deg,#FBF1DA 0%,#F6E6C6 48%,#E9D4AF 100%);}
+[data-composition-id="wbg-04-alpine-route"] .w-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="wbg-04-alpine-route"] .w-p1{z-index:1;}
+[data-composition-id="wbg-04-alpine-route"] .w-p2{z-index:2;}
+[data-composition-id="wbg-04-alpine-route"] .w-p3{z-index:3;}
+[data-composition-id="wbg-04-alpine-route"] .w-haze{position:absolute;inset:0;z-index:5;pointer-events:none;
+  background:
+    radial-gradient(36% 40% at 22% 65%, rgba(255,253,246,0.30) 0%, rgba(252,235,184,0.14) 46%, rgba(232,154,60,0) 80%),
+    linear-gradient(180deg, rgba(74,46,28,0.10) 0%, rgba(74,46,28,0) 16%, rgba(74,46,28,0) 70%, rgba(43,31,23,0.30) 100%);}
+</style>
+
+<div id="root" data-composition-id="wbg-04-alpine-route" data-width="1920" data-height="1080" data-start="0" data-duration="60.000">
+  <div class="w-stage" id="wbg04-stage">
+
+    <!-- far · dawn sky, sun low in the left third, folded distant peaks -->
+    <svg class="w-plane w-p1" id="wbg04-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w04-sky" x1="0" y1="0" x2="0.04" y2="1">
+          <stop offset="0" stop-color="#FBF1DA"/>
+          <stop offset="0.34" stop-color="#F6E6C6"/>
+          <stop offset="0.58" stop-color="#EFD9B4"/>
+          <stop offset="0.78" stop-color="#E6C69B"/>
+          <stop offset="1" stop-color="#D9B183"/>
+        </linearGradient>
+        <radialGradient id="w04-dawn" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFFDF6" stop-opacity="0.86"/>
+          <stop offset="0.30" stop-color="#FCEBB8" stop-opacity="0.46"/>
+          <stop offset="0.62" stop-color="#E89A3C" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="#C2593F" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="w04-core" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFFDF6" stop-opacity="0.95"/>
+          <stop offset="0.55" stop-color="#FCEBB8" stop-opacity="0.40"/>
+          <stop offset="1" stop-color="#FCEBB8" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="w04-ray" gradientUnits="userSpaceOnUse" x1="430" y1="700" x2="760" y2="60">
+          <stop offset="0" stop-color="#FFFDF6" stop-opacity="0.42"/>
+          <stop offset="0.6" stop-color="#FCEBB8" stop-opacity="0.12"/>
+          <stop offset="1" stop-color="#FCEBB8" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="w04-farL" gradientUnits="userSpaceOnUse" x1="0" y1="600" x2="0" y2="920">
+          <stop offset="0" stop-color="#C99A67" stop-opacity="0.32"/>
+          <stop offset="1" stop-color="#8A5F36" stop-opacity="0.18"/>
+        </linearGradient>
+        <linearGradient id="w04-farR" gradientUnits="userSpaceOnUse" x1="0" y1="600" x2="0" y2="920">
+          <stop offset="0" stop-color="#B98A5C" stop-opacity="0.28"/>
+          <stop offset="1" stop-color="#8A5F36" stop-opacity="0.16"/>
+        </linearGradient>
+        <linearGradient id="w04-horizon" gradientUnits="userSpaceOnUse" x1="0" y1="690" x2="0" y2="820">
+          <stop offset="0" stop-color="#FFF6DC" stop-opacity="0"/>
+          <stop offset="0.45" stop-color="#FFF6DC" stop-opacity="0.42"/>
+          <stop offset="1" stop-color="#FFF6DC" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="w04-soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="22"/></filter>
+        <linearGradient id="w04-cloud" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FFF6DC" stop-opacity="0"/>
+          <stop offset="0.30" stop-color="#FFF6DC" stop-opacity="0.38"/>
+          <stop offset="0.68" stop-color="#FFF6DC" stop-opacity="0.30"/>
+          <stop offset="1" stop-color="#FFF6DC" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="w04-cloudblur" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#w04-sky)"/>
+      <ellipse cx="430" cy="694" rx="390" ry="330" fill="url(#w04-dawn)" opacity="0.9"/>
+      <ellipse cx="430" cy="694" rx="168" ry="148" fill="url(#w04-core)" opacity="0.8"/>
+      <path d="M0,690 H1920 V820 H0 Z" fill="url(#w04-horizon)" opacity="0.7"/>
+
+      <!-- two broad dawn rays falling across the valley -->
+      <path d="M430,700 L742,0 L928,0 L498,722 Z" fill="url(#w04-ray)" opacity="0.16"/>
+      <path d="M430,700 L1058,0 L1188,0 L520,718 Z" fill="url(#w04-ray)" opacity="0.10"/>
+
+      <!-- high dawn wisps, above the quiet centre -->
+      <g filter="url(#w04-cloudblur)">
+        <path d="M90,214 C230,198 352,208 486,202 C610,196 690,206 756,202"
+              fill="none" stroke="url(#w04-cloud)" stroke-width="9" stroke-linecap="round" opacity="0.30"/>
+        <path d="M1150,246 C1280,232 1400,240 1520,234 C1640,228 1760,238 1876,232"
+              fill="none" stroke="url(#w04-cloud)" stroke-width="9" stroke-linecap="round" opacity="0.24"/>
+        <path d="M300,164 C404,154 500,160 596,156"
+              fill="none" stroke="url(#w04-cloud)" stroke-width="9" stroke-linecap="round" opacity="0.20"/>
+      </g>
+
+      <!-- one continuous distant range, folded low through the centre -->
+      <path d="M-80,1080 L-80,812 L0,752 L78,772 L150,690 L210,720 L282,624 L350,678 L410,648 L470,712 L520,756 L590,792 L680,776 L770,800 L860,782 L960,796 L1060,780 L1160,798 L1260,782 L1340,796 L1408,752 L1478,776 L1552,682 L1620,720 L1694,620 L1762,676 L1830,646 L1896,716 L1960,756 L2000,782 L2000,1080 Z"
+            fill="url(#w04-farL)" opacity="0.9"/>
+      <path d="M282,624 L350,678 L282,706 Z" fill="#8A5F36" opacity="0.18"/>
+      <path d="M150,690 L210,720 L150,744 Z" fill="#E9D4AF" opacity="0.24"/>
+      <path d="M410,648 L470,712 L410,730 Z" fill="#6E4826" opacity="0.12"/>
+      <path d="M1552,682 L1620,720 L1552,750 Z" fill="#6E4826" opacity="0.13"/>
+      <path d="M1694,620 L1762,676 L1694,704 Z" fill="#E9D4AF" opacity="0.20"/>
+      <path d="M1830,646 L1896,716 L1830,736 Z" fill="#8A5F36" opacity="0.16"/>
+
+      <!-- snow-light on the highest folds, sun side -->
+      <path d="M282,624 L304,662 L282,678 Z" fill="#FFF6DC" opacity="0.30"/>
+      <path d="M1694,620 L1716,656 L1694,670 Z" fill="#FFF6DC" opacity="0.24"/>
+      <path d="M282,624 L350,678 L410,648" fill="none" stroke="#FCEBB8" stroke-width="5" opacity="0.20"/>
+    </svg>
+
+    <!-- mid · the ridge, the switchback road, the pass hut -->
+    <svg class="w-plane w-p2" id="wbg04-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w04-ridgeL" gradientUnits="userSpaceOnUse" x1="0" y1="640" x2="0" y2="1050">
+          <stop offset="0" stop-color="#B98A5C" stop-opacity="0.62"/>
+          <stop offset="0.52" stop-color="#8A5F36" stop-opacity="0.46"/>
+          <stop offset="1" stop-color="#4A2E1C" stop-opacity="0.40"/>
+        </linearGradient>
+        <linearGradient id="w04-ridgeR" gradientUnits="userSpaceOnUse" x1="0" y1="650" x2="0" y2="1050">
+          <stop offset="0" stop-color="#A97445" stop-opacity="0.50"/>
+          <stop offset="0.55" stop-color="#6E4826" stop-opacity="0.40"/>
+          <stop offset="1" stop-color="#3A2A1E" stop-opacity="0.36"/>
+        </linearGradient>
+        <linearGradient id="w04-floor" gradientUnits="userSpaceOnUse" x1="0" y1="900" x2="0" y2="1050">
+          <stop offset="0" stop-color="#A97445" stop-opacity="0.24"/>
+          <stop offset="1" stop-color="#6E4826" stop-opacity="0.30"/>
+        </linearGradient>
+        <radialGradient id="w04-hutglow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FCEBB8" stop-opacity="0.55"/>
+          <stop offset="0.55" stop-color="#E89A3C" stop-opacity="0.20"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="w04-floorblur" x="-10%" y="-40%" width="120%" height="180%"><feGaussianBlur stdDeviation="16"/></filter>
+      </defs>
+
+      <!-- one continuous mid ridge, flanks joined through the valley floor -->
+      <path d="M-80,1050 L-80,980 L-20,946 L60,900 L140,842 L214,776 L292,720 L360,676 L420,646 L470,690 L510,760 L534,812 L518,850 L560,898 L544,938 L596,986 L640,1014 L720,1040 L820,1050 L1380,1050 L1400,980 L1438,942 L1424,900 L1462,856 L1450,818 L1492,772 L1532,700 L1596,664 L1660,700 L1730,758 L1800,826 L1868,890 L1940,952 L2000,1050 Z"
+            fill="url(#w04-ridgeL)" opacity="0.95"/>
+      <path d="M292,720 L360,676 L420,646 L438,676 L360,716 L318,762 Z" fill="#E9D4AF" opacity="0.20"/>
+      <path d="M420,646 L470,690 L510,760 L470,742 L438,696 Z" fill="#4A2E1C" opacity="0.18"/>
+      <path d="M140,842 L214,776 L292,720 L268,820 L208,908 Z" fill="#4A2E1C" opacity="0.13"/>
+      <path d="M1596,664 L1660,700 L1730,758 L1688,748 L1628,704 L1590,694 Z" fill="#E9D4AF" opacity="0.18"/>
+      <path d="M1532,700 L1488,770 L1452,852 L1478,812 L1520,744 Z" fill="#2B1F17" opacity="0.16"/>
+      <path d="M1730,758 L1800,826 L1868,890 L1822,884 L1760,812 Z" fill="#2B1F17" opacity="0.12"/>
+
+
+      <!-- switchback road climbing the left flank -->
+      <path d="M96,1036 L286,962 L196,928 L352,858 L268,826 L408,760 L344,730 L438,676"
+            fill="none" stroke="#F6E6C6" stroke-width="9" stroke-linejoin="round" opacity="0.52"/>
+      <path d="M96,1036 L286,962 L196,928 L352,858 L268,826 L408,760 L344,730 L438,676"
+            fill="none" stroke="#FFFDF6" stroke-width="4" stroke-linejoin="round" opacity="0.22"/>
+      <g stroke="#6E4826" stroke-width="5" opacity="0.28">
+        <path d="M286,962 L286,1000"/><path d="M196,928 L196,966"/>
+        <path d="M352,858 L352,896"/><path d="M268,826 L268,864"/>
+        <path d="M408,760 L408,798"/>
+      </g>
+
+      <!-- a second road, far right, almost lost in the haze -->
+      <path d="M1976,1002 L1846,956 L1918,908 L1806,864 L1876,820 L1788,782"
+            fill="none" stroke="#E9D4AF" stroke-width="7" stroke-linejoin="round" opacity="0.32"/>
+
+      <!-- ridge crest light -->
+      <path d="M292,720 L360,676 L420,646" fill="none" stroke="#FCEBB8" stroke-width="5" opacity="0.30"/>
+      <path d="M1660,700 L1596,664 L1532,700" fill="none" stroke="#FCEBB8" stroke-width="5" opacity="0.22"/>
+
+      <!-- the pass hut, low left, one warm window -->
+      <g opacity="0.9">
+        <path d="M300,748 L300,700 L350,676 L400,700 L400,748 Z" fill="#6E4826" opacity="0.58"/>
+        <path d="M290,704 L350,668 L410,704 L400,710 L350,680 L300,710 Z" fill="#4A2E1C" opacity="0.62"/>
+        <rect x="330" y="714" width="16" height="20" fill="#E89A3C" opacity="0.62"/>
+        <ellipse cx="338" cy="724" rx="46" ry="36" fill="url(#w04-hutglow)" opacity="0.38"/>
+        <path d="M400,748 L432,748" stroke="#4A2E1C" stroke-width="6" opacity="0.35"/>
+      </g>
+
+      <!-- pines, bottom corners only -->
+      <g fill="#3A2A1E" opacity="0.55">
+        <path d="M54,1046 L82,952 L110,1046 Z"/>
+        <path d="M96,1046 L128,928 L160,1046 Z"/>
+        <path d="M146,1046 L170,978 L194,1046 Z"/>
+        <path d="M1790,1046 L1818,944 L1846,1046 Z"/>
+        <path d="M1832,1046 L1866,918 L1900,1046 Z"/>
+        <path d="M1884,1046 L1906,986 L1928,1046 Z"/>
+      </g>
+      <g fill="#6E4826" opacity="0.30">
+        <path d="M110,1046 L128,972 L146,1046 Z"/>
+        <path d="M1846,1046 L1866,960 L1886,1046 Z"/>
+      </g>
+    </svg>
+
+    <!-- near · valley haze bands, foreground fold, dust -->
+    <svg class="w-plane w-p3" id="wbg04-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="w04-mist" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#FFF6DC" stop-opacity="0.34"/>
+          <stop offset="0.40" stop-color="#FFF6DC" stop-opacity="0.10"/>
+          <stop offset="1" stop-color="#FFF6DC" stop-opacity="0.28"/>
+        </linearGradient>
+        <linearGradient id="w04-near" gradientUnits="userSpaceOnUse" x1="0" y1="988" x2="0" y2="1080">
+          <stop offset="0" stop-color="#4A2E1C" stop-opacity="0.42"/>
+          <stop offset="1" stop-color="#2B1F17" stop-opacity="0.58"/>
+        </linearGradient>
+        <filter id="w04-mistblur" x="-10%" y="-40%" width="120%" height="180%"><feGaussianBlur stdDeviation="9"/></filter>
+      </defs>
+
+      <g class="w04-mist" filter="url(#w04-mistblur)" opacity="0.7">
+        <path d="M0,790 C240,772 420,800 640,786 C860,772 1080,798 1300,784 C1520,770 1720,796 1920,780 L1920,840 C1700,856 1500,830 1280,844 C1060,858 840,832 620,846 C400,860 200,834 0,850 Z"
+              fill="url(#w04-mist)"/>
+      </g>
+      <g class="w04-mist" filter="url(#w04-mistblur)" opacity="0.55">
+        <path d="M0,862 C200,846 420,872 640,860 C860,848 1080,874 1300,862 C1520,850 1740,872 1920,858 L1920,910 C1740,924 1520,902 1300,914 C1080,926 860,900 640,912 C420,924 200,898 0,914 Z"
+              fill="url(#w04-mist)"/>
+      </g>
+      <g class="w04-mist" filter="url(#w04-mistblur)" opacity="0.42">
+        <path d="M0,936 C220,920 440,944 660,934 C880,924 1100,948 1320,938 C1540,928 1740,946 1920,934 L1920,976 C1740,988 1540,970 1320,980 C1100,990 880,966 660,976 C440,986 220,962 0,978 Z"
+              fill="url(#w04-mist)"/>
+      </g>
+
+      <!-- foreground fold, a dark frame at the bottom -->
+      <path d="M0,1006 C180,986 360,998 520,1022 C700,1048 900,1038 1080,1026 C1280,1012 1500,1030 1700,1044 C1820,1052 1880,1056 1920,1058 L1920,1080 L0,1080 Z"
+            fill="url(#w04-near)"/>
+      <path d="M0,1006 C180,986 360,998 520,1022 C700,1048 900,1038 1080,1026 C1280,1012 1500,1030 1700,1044 C1820,1052 1880,1056 1920,1058"
+            fill="none" stroke="#8A5F36" stroke-width="5" opacity="0.30"/>
+
+      <!-- dust in the dawn light, edges only -->
+      <g fill="#FFF6DC">
+        <circle class="w04-mote" cx="296" cy="520" r="5" opacity="0.38"/>
+        <circle class="w04-mote" cx="352" cy="606" r="4" opacity="0.34"/>
+        <circle class="w04-mote" cx="252" cy="676" r="6" opacity="0.30"/>
+        <circle class="w04-mote" cx="408" cy="556" r="3.5" opacity="0.36"/>
+        <circle class="w04-mote" cx="474" cy="640" r="4.5" opacity="0.28"/>
+        <circle class="w04-mote" cx="1684" cy="596" r="4" opacity="0.24"/>
+        <circle class="w04-mote" cx="1762" cy="668" r="5" opacity="0.20"/>
+        <circle class="w04-mote" cx="1846" cy="618" r="3.5" opacity="0.18"/>
+      </g>
+      <g fill="#FCEBB8" opacity="0.30">
+        <circle class="w04-mote" cx="330" cy="760" r="3.5"/>
+        <circle class="w04-mote" cx="452" cy="726" r="3"/>
+        <circle class="w04-mote" cx="1620" cy="744" r="3"/>
+      </g>
+    </svg>
+
+    <div class="w-haze"></div>
+  </div>
+</div>
+
+<script>
+(function initWbg04(){
+  var ID = "wbg-04-alpine-route";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, {duration:60.000},0);
+
+  // three depth planes: far 0.2 px/s, mid 0.7 px/s, near 1.4 px/s
+  tl.fromTo("#wbg04-bg", { x: 0, y: 0 }, { x: 6, y: 2, duration: 30, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+  tl.fromTo("#wbg04-mg", { x: 0, y: 0 }, { x: 21, y: -4, duration: 30, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+  tl.fromTo("#wbg04-fg", { x: 0, y: 0 }, { x: 42, y: 7, duration: 30, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+
+  // the valley haze slides against the ridges
+  tl.fromTo(".w04-mist", { x: 0, y: 0 }, { x: -16, y: 3, duration: 24, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 1.4 }, 0);
+
+  // dust hangs and turns slowly in the light
+  tl.fromTo(".w04-mote", { x: 0, y: 0, opacity: 0.38 }, { x: 10, y: -26, opacity: 0.58, duration: 17, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 1.2 }, 1);
+
+  // the dawn breathes once across the slot
+  tl.to("#wbg04-bg", { opacity: 0.94, duration: 30, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

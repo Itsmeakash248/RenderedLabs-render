@@ -1,0 +1,29 @@
+<template id="s02-template">
+  <div id="root" data-composition-id="s02-murano-furnace" data-width="1920" data-height="1080" data-start="18.00" data-duration="18.00">
+    <div class="s02-cam" id="s02-cam">
+      <div id="s02-bg" class="wbg-container">
+        <svg viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="1920" height="1080" fill="#2B1F17" />
+        </svg>
+      </div>
+      <div id="s02-fg" class="hero-container">
+        <svg viewBox="0 0 1920 1080">
+          <path d="M960,800 C1100,500 820,500 960,200" stroke="#FF7A1A" stroke-width="32" stroke-linecap="round" fill="none" />
+        </svg>
+      </div>
+      <div id="s02-text" class="text-container" style="position: absolute; top: 100px; left: 100px; color: #F5EFEB; font-family: 'Archivo Black'; font-size: 64px;">
+        MURANO GLASS
+      </div>
+    </div>
+  </div>
+  <script>
+    (function initS02() {
+      const ID = 's02-murano-furnace';
+      const tl = gsap.timeline({ paused: true });
+      tl.to({}, { duration: 18.00 }, 0);
+      tl.from('#s02-fg', { duration: 2.0, opacity: 0, scale: 0.8, ease: 'power2.inOut' }, 1.2);
+      window.__timelines = window.__timelines || {};
+      window.__timelines[ID] = tl;
+    })();
+  </script>
+</template>

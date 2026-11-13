@@ -1,0 +1,502 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s18-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s18-no-proof"] .s18-stage{position:absolute;inset:0;transform-origin:50% 52%;}
+[data-composition-id="s18-no-proof"] .s18-ground{position:absolute;inset:0;background:
+  radial-gradient(46% 42% at 30% 26%, rgba(255,226,168,0.42) 0%, rgba(255,226,168,0.12) 56%, rgba(255,226,168,0) 80%),
+  radial-gradient(40% 38% at 82% 66%, rgba(194,89,63,0.14) 0%, rgba(194,89,63,0) 76%),
+  linear-gradient(172deg, #FBF3E0 0%, #F4E4C5 36%, #E7CFA8 68%, #D3B58C 100%);}
+[data-composition-id="s18-no-proof"] .s18-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="s18-no-proof"] .s18-p-bg{z-index:1;}
+[data-composition-id="s18-no-proof"] .s18-p-mg{z-index:2;}
+[data-composition-id="s18-no-proof"] .s18-p-fg{z-index:4;}
+[data-composition-id="s18-no-proof"] .s18-grain{position:absolute;inset:0;z-index:6;pointer-events:none;
+  background-image:radial-gradient(rgba(43,31,23,0.55) 0.4px, transparent 0.5px);background-size:3px 3px;
+  opacity:0.12;mix-blend-mode:multiply;}
+[data-composition-id="s18-no-proof"] .s18-vignette{position:absolute;inset:0;z-index:7;pointer-events:none;
+  background:
+    linear-gradient(to top, rgba(43,31,23,0.38) 0%, rgba(43,31,23,0.08) 15%, rgba(43,31,23,0) 30%),
+    linear-gradient(to right, rgba(43,31,23,0.26) 0%, rgba(43,31,23,0.05) 18%, rgba(43,31,23,0) 36%),
+    linear-gradient(to left, rgba(43,31,23,0.2) 0%, rgba(43,31,23,0) 28%),
+    radial-gradient(112% 90% at 50% 50%, rgba(43,31,23,0) 48%, rgba(43,31,23,0.32) 100%);}
+[data-composition-id="s18-no-proof"] .s18-tag{position:absolute;left:86px;top:92px;z-index:8;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;
+  background:linear-gradient(180deg,#FDFAF4 0%,#F1E7D6 100%);
+  box-shadow:0 12px 30px rgba(43,31,23,0.26),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s18-no-proof"] .s18-tag-dot{width:15px;height:15px;border-radius:50%;background:#C2593F;
+  box-shadow:0 0 0 5px rgba(194,89,63,0.20),inset 0 0 0 3px #A8462F;}
+[data-composition-id="s18-no-proof"] .s18-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.16em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s18-no-proof"] .s18-rule{position:absolute;left:86px;top:158px;height:5px;width:0;z-index:8;background:#C2593F;border-radius:4px;
+  box-shadow:0 2px 6px rgba(43,31,23,0.25);}
+[data-composition-id="s18-no-proof"] .s18-mote{transform-box:fill-box;transform-origin:50% 50%;}
+</style>
+
+<div id="root" data-composition-id="s18-no-proof" data-width="1920" data-height="1080" data-start="0" data-duration="16.854">
+  <div class="s18-stage" id="s18-stage">
+    <div class="s18-ground"></div>
+
+    <!-- BG · the examiner's wall and bench -->
+    <svg class="s18-plane s18-p-bg" id="s18-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s18-wall" x1="0" y1="0" x2="0.06" y2="1">
+          <stop offset="0" stop-color="#FCF5E4"/><stop offset="0.4" stop-color="#F6E6C8"/><stop offset="1" stop-color="#DFC49C"/>
+        </linearGradient>
+        <linearGradient id="s18-bench" x1="0" y1="0" x2="0.08" y2="1">
+          <stop offset="0" stop-color="#D6AA7A"/><stop offset="0.42" stop-color="#BE8D5B"/><stop offset="1" stop-color="#8A5C34"/>
+        </linearGradient>
+        <linearGradient id="s18-benchlip" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#7A4F2C"/><stop offset="1" stop-color="#42291A"/>
+        </linearGradient>
+        <linearGradient id="s18-brass" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.28" stop-color="#E3BB64"/><stop offset="0.6" stop-color="#C89D42"/>
+          <stop offset="0.84" stop-color="#9E742A"/><stop offset="1" stop-color="#D9AE56"/>
+        </linearGradient>
+        <linearGradient id="s18-brassv" gradientUnits="userSpaceOnUse" x1="480" y1="0" x2="520" y2="0">
+          <stop offset="0" stop-color="#D9AE56"/><stop offset="0.35" stop-color="#C89D42"/><stop offset="0.6" stop-color="#E9C77B"/>
+          <stop offset="1" stop-color="#A87A2A"/>
+        </linearGradient>
+        <linearGradient id="s18-paper" x1="0" y1="0" x2="0.16" y2="1">
+          <stop offset="0" stop-color="#FFFBF0"/><stop offset="0.5" stop-color="#FBF1DC"/><stop offset="1" stop-color="#EBD8B5"/>
+        </linearGradient>
+        <linearGradient id="s18-plaster" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#F8EED8"/><stop offset="0.55" stop-color="#ECDBBA"/><stop offset="1" stop-color="#D6BC95"/>
+        </linearGradient>
+        <linearGradient id="s18-steel" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#BFB097"/><stop offset="0.5" stop-color="#94856D"/><stop offset="1" stop-color="#685C4C"/>
+        </linearGradient>
+        <radialGradient id="s18-mercury" cx="40%" cy="30%" r="68%">
+          <stop offset="0" stop-color="#FFFDF4"/><stop offset="0.42" stop-color="#DCCFAE"/>
+          <stop offset="0.78" stop-color="#9C9072"/><stop offset="1" stop-color="#5E5644"/>
+        </radialGradient>
+        <radialGradient id="s18-lampglow" cx="50%" cy="46%" r="52%">
+          <stop offset="0" stop-color="#FFF6D8" stop-opacity="0.9"/><stop offset="0.38" stop-color="#FFCE7C" stop-opacity="0.42"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s18-puff" cx="42%" cy="36%" r="62%">
+          <stop offset="0" stop-color="#FFFDF6" stop-opacity="0.9"/>
+          <stop offset="0.46" stop-color="#F2E2C0" stop-opacity="0.72"/>
+          <stop offset="0.78" stop-color="#D3B78C" stop-opacity="0.46"/>
+          <stop offset="1" stop-color="#B99A6E" stop-opacity="0.18"/>
+        </radialGradient>
+        <radialGradient id="s18-vapor" cx="50%" cy="72%" r="60%">
+          <stop offset="0" stop-color="#FFFDF2" stop-opacity="0.85"/><stop offset="0.5" stop-color="#F4E4C6" stop-opacity="0.45"/>
+          <stop offset="1" stop-color="#E4CFA8" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="s18-mottle" width="180" height="180" patternUnits="userSpaceOnUse">
+          <rect width="180" height="180" fill="none"/>
+          <ellipse cx="40" cy="44" rx="46" ry="22" fill="#C9A574" opacity="0.18"/>
+          <ellipse cx="132" cy="96" rx="58" ry="26" fill="#D2AF80" opacity="0.14"/>
+          <ellipse cx="72" cy="150" rx="40" ry="19" fill="#C29C6C" opacity="0.15"/>
+        </pattern>
+        <filter id="s18-bblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="36"/></filter>
+        <filter id="s18-mblur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="12"/></filter>
+        <filter id="s18-vblur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+        <filter id="s18-grainf" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="2" seed="91" result="n"/>
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.13  0 0 0 0 0.10  0 0 0 0 0.07  0 0 0 0.5 0"/>
+        </filter>
+        <clipPath id="s18-journalclip"><rect x="-286" y="-196" width="572" height="392"/></clipPath>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s18-wall)"/>
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s18-mottle)" opacity="0.55"/>
+      <g stroke="#A97445" stroke-width="3" opacity="0.1">
+        <path d="M0,236 H1920"/><path d="M0,470 H1920"/><path d="M760,0 V740"/><path d="M1400,0 V740"/>
+      </g>
+
+      <!-- nailed timber brace, top right -->
+      <g id="s18-brace" transform="translate(1560,0)">
+        <g id="s18-brace-in">
+        <path d="M28,0 H62 V470 H28 Z" fill="#8E5F36" stroke="#5C3A20" stroke-width="4"/>
+        <path d="M84,0 H108 V300 H84 Z" fill="#A97445" opacity="0.7"/>
+        <path d="M240,0 L320,0 L470,180 L404,220 Z" fill="#9A6B3E" stroke="#5C3A20" stroke-width="4"/>
+        <circle cx="45" cy="120" r="7" fill="#3A2A1E"/><circle cx="45" cy="330" r="7" fill="#3A2A1E"/>
+      
+        </g>
+      </g>
+
+      <!-- the narrow window, high left -->
+      <g id="s18-window" transform="translate(96,96)">
+        <g id="s18-window-in">
+        <path d="M0,0 H232 V400 H0 Z" fill="#5C4030"/>
+        <path d="M16,16 H216 V384 H16 Z" fill="#F8DCA8"/>
+        <path d="M16,16 H216 V200 H16 Z" fill="#FFEFC8" opacity="0.7"/>
+        <g stroke="#5C4030" stroke-width="9">
+          <path d="M116,18 V382"/><path d="M18,200 H214"/>
+        </g>
+        <path d="M-14,400 H246" stroke="#3A2A1E" stroke-width="11"/>
+        <path d="M-30,412 H262 L292,432 H-60 Z" fill="#DFC49C" stroke="#5C4030" stroke-width="5"/>
+        <ellipse cx="116" cy="0" rx="210" ry="60" fill="#FFCE7C" opacity="0.22" filter="url(#s18-bblur)"/>
+      
+        </g>
+      </g>
+
+      <!-- the bench -->
+      <g id="s18-bench">
+        <path d="M-40,700 H1960 V760 H-40 Z" fill="#EBD3AC"/>
+        <path d="M-40,760 H1920 V1080 H-40 Z" fill="url(#s18-bench)"/>
+        <path d="M-40,760 H1920" stroke="#5C3A20" stroke-width="9" opacity="0.45"/>
+        <path d="M-40,778 H1920" stroke="#FFF0CE" stroke-width="5" opacity="0.2"/>
+        <g stroke="#8E5F36" stroke-width="4" opacity="0.32">
+          <path d="M-40,830 C300,824 700,838 1120,830 C1440,824 1720,836 1920,830"/>
+          <path d="M-40,930 C320,924 720,938 1140,930 C1460,924 1740,936 1920,930"/>
+          <path d="M-40,1030 C300,1024 700,1038 1120,1030 C1440,1024 1720,1036 1920,1030"/>
+        </g>
+        <g stroke="#F0D8AE" stroke-width="3" opacity="0.24">
+          <path d="M-20,872 C300,866 700,880 1120,872 C1440,866 1720,878 1900,872"/>
+          <path d="M-20,980 C320,974 720,988 1140,980 C1460,974 1740,986 1900,980"/>
+        </g>
+        <path d="M-40,1080 H1920 V1042 H-40 Z" fill="url(#s18-benchlip)" opacity="0.6"/>
+      </g>
+
+      <ellipse cx="300" cy="300" rx="420" ry="300" fill="#FFF0C8" opacity="0.2" filter="url(#s18-bblur)"/>
+      <ellipse cx="1600" cy="430" rx="240" ry="380" fill="#8A6B49" opacity="0.13" filter="url(#s18-bblur)"/>
+      <ellipse cx="1520" cy="820" rx="360" ry="160" fill="#3A2A1E" opacity="0.18" filter="url(#s18-bblur)"/>
+      <rect x="0" y="0" width="1920" height="1080" filter="url(#s18-grainf)" opacity="0.05" style="mix-blend-mode:multiply"/>
+
+      <g fill="#FFD98E" opacity="0.5">
+        <circle class="s18-mote" cx="420" cy="380" r="4"/><circle class="s18-mote" cx="880" cy="300" r="3"/>
+        <circle class="s18-mote" cx="1240" cy="420" r="4"/><circle class="s18-mote" cx="1700" cy="340" r="3"/>
+      </g>
+    </svg>
+
+    <!-- MG · the broadsheet, the balance, the retort -->
+    <svg class="s18-plane s18-p-mg" id="s18-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s18-page" x1="0" y1="0" x2="0.14" y2="1">
+          <stop offset="0" stop-color="#FFFCF2"/><stop offset="0.48" stop-color="#FBF0D8"/><stop offset="1" stop-color="#E9D4AF"/>
+        </linearGradient>
+        <linearGradient id="s18-page2" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#FBF3E0"/><stop offset="1" stop-color="#DFC69E"/>
+        </linearGradient>
+        <linearGradient id="s18-inkwell" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#6B4526"/><stop offset="0.55" stop-color="#3A2A1E"/><stop offset="1" stop-color="#1E1813"/>
+        </linearGradient>
+        <radialGradient id="s18-globe" cx="34%" cy="28%" r="70%">
+          <stop offset="0" stop-color="#FFFDF6" stop-opacity="0.9"/><stop offset="0.4" stop-color="#F2E2BE" stop-opacity="0.65"/>
+          <stop offset="1" stop-color="#B99A6E" stop-opacity="0.5"/>
+        </radialGradient>
+        <filter id="s18-soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="10"/></filter>
+        <filter id="s18-puffblur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+        <filter id="s18-deep" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+        <filter id="s18-vsoft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+      </defs>
+
+      <!-- the peer-reviewed broadsheet, pinned to the wall -->
+      <g id="s18-sheet" transform="translate(1160,268) rotate(-1.6)">
+        <g id="s18-sheet-in">
+          <path d="M-296,-206 H296 V206 H-296 Z" fill="#8A6B49" opacity="0.22" filter="url(#s18-deep)"/>
+          <path d="M-300,-200 H300 V200 H-300 Z" fill="url(#s18-page)" stroke="#8A6B49" stroke-width="5"/>
+          <path d="M-300,-200 H300 V-176 H-300 Z" fill="#E3CBA3" opacity="0.5"/>
+          <g clip-path="url(#s18-journalclip)">
+            <g stroke="#C9A87C" stroke-width="3" opacity="0.45">
+              <path d="M-268,-128 H34"/><path d="M-268,-88 H34"/><path d="M-268,-48 H34"/>
+              <path d="M-268,-8 H34"/><path d="M-268,32 H34"/><path d="M-268,72 H34"/>
+              <path d="M-268,112 H34"/><path d="M-268,152 H34"/>
+            </g>
+            <g stroke="#2B1F17" stroke-width="4" fill="none" opacity="0.5" stroke-linecap="round">
+              <path d="M-268,-146 C-250,-152 -232,-140 -214,-146 C-196,-152 -178,-140 -160,-146 C-142,-152 -124,-140 -106,-146 C-88,-152 -70,-140 -52,-146"/>
+              <path d="M-268,-106 C-248,-112 -228,-100 -208,-106 C-188,-112 -168,-100 -148,-106 C-128,-112 -108,-100 -88,-106 C-68,-112 -48,-100 -30,-106"/>
+              <path d="M-268,-66 C-250,-72 -232,-60 -214,-66 C-196,-72 -178,-60 -160,-66 C-142,-72 -124,-60 -106,-66"/>
+              <path d="M-268,-26 C-248,-32 -228,-20 -208,-26 C-188,-32 -168,-20 -148,-26 C-128,-32 -108,-20 -88,-26 C-68,-32 -48,-20 -30,-26"/>
+              <path d="M-268,14 C-250,8 -232,20 -214,14 C-196,8 -178,20 -160,14 C-142,8 -124,20 -106,14"/>
+              <path d="M-268,54 C-248,48 -228,60 -208,54 C-188,48 -168,60 -148,54 C-128,48 -108,60 -88,54 C-68,48 -48,60 -30,54"/>
+              <path d="M-268,94 C-250,88 -232,100 -214,94 C-196,88 -178,100 -160,94"/>
+              <path d="M-268,134 C-248,128 -228,140 -208,134 C-188,128 -168,140 -148,134 C-128,128 -108,140 -88,134"/>
+            </g>
+            <!-- a printed diagram: retort and vapour -->
+            <g stroke="#8A5F3C" stroke-width="4" fill="none" opacity="0.45">
+              <path d="M150,-40 C186,-40 206,-16 206,12 C206,44 182,66 150,66 C118,66 94,44 94,12 C94,-16 114,-40 150,-40 Z"/>
+              <path d="M150,-40 V-70 M138,-70 H162"/>
+              <path d="M150,66 V96 M108,96 H192"/>
+            </g>
+            <g stroke="#8A5F3C" stroke-width="3" fill="none" opacity="0.35">
+              <path d="M200,-84 C216,-96 208,-112 224,-120"/>
+              <path d="M212,-64 C230,-76 222,-92 238,-100"/>
+            </g>
+            <path d="M-268,164 H-120" stroke="#2B1F17" stroke-width="6" opacity="0.4"/>
+          </g>
+          <!-- red editorial mark -->
+          <g id="s18-mark" opacity="0" stroke="#B24A32" stroke-width="6" fill="none" stroke-linecap="round">
+            <path id="s18-mark1" pathLength="100" d="M-150,96 C-104,120 -60,72 -14,96"/>
+            <path id="s18-mark2" pathLength="100" d="M-136,118 C-96,138 -58,104 -22,120"/>
+          </g>
+          <!-- pins -->
+          <g>
+            <circle cx="-268" cy="-168" r="13" fill="url(#s18-brass)" stroke="#7A5A1C" stroke-width="4"/>
+            <circle cx="-268" cy="-168" r="4" fill="#8E6A22"/>
+            <circle cx="268" cy="-168" r="13" fill="url(#s18-brass)" stroke="#7A5A1C" stroke-width="4"/>
+            <circle cx="268" cy="-168" r="4" fill="#8E6A22"/>
+          </g>
+          <path d="M-300,200 L-286,214" stroke="#8A6B49" stroke-width="4" opacity="0.5"/>
+          <path d="M300,200 L286,214" stroke="#8A6B49" stroke-width="4" opacity="0.5"/>
+        </g>
+      </g>
+
+      <!-- the balance: rumour weighed against proof -->
+      <g id="s18-scale" transform="translate(648,742)">
+        <ellipse cx="6" cy="8" rx="150" ry="30" fill="#2B1F17" opacity="0.26" filter="url(#s18-deep)"/>
+        <g id="s18-scale-in">
+          <path d="M-96,0 H96 L72,-22 H-72 Z" fill="url(#s18-brass)" stroke="#3A2A1E" stroke-width="5"/>
+          <path d="M-72,-22 H72 L56,-40 H-56 Z" fill="#B98A3C" stroke="#3A2A1E" stroke-width="4"/>
+          <path d="M-16,-40 H16 V-306 H-16 Z" fill="url(#s18-brassv)" stroke="#3A2A1E" stroke-width="4"/>
+          <circle cx="0" cy="-206" r="17" fill="url(#s18-brass)" stroke="#3A2A1E" stroke-width="4"/>
+          <circle cx="0" cy="-206" r="6" fill="#8E6A22"/>
+          <path d="M-34,-40 H34" stroke="#3A2A1E" stroke-width="5"/>
+          <path d="M-96,0 C-60,-10 60,-10 96,0" fill="none" stroke="#9E742A" stroke-width="3" opacity="0.5"/>
+        </g>
+        <g id="s18-beamwrap" transform="translate(0,-306)">
+          <g id="s18-beam">
+            <rect x="-196" y="-8" width="392" height="16" rx="7" fill="url(#s18-brass)" stroke="#3A2A1E" stroke-width="3"/>
+            <path d="M-186,-3 H186" stroke="#FFF1C7" stroke-width="3" opacity="0.45" stroke-linecap="round"/>
+            <circle cx="0" cy="0" r="11" fill="url(#s18-brass)" stroke="#3A2A1E" stroke-width="4"/>
+            <!-- left: the rumour, a curled paper -->
+            <g id="s18-panL" transform="translate(-196,0)">
+              <path d="M-52,16 L0,120 M52,16 L0,120" stroke="#8A6B49" stroke-width="3"/>
+              <g id="s18-panL-in">
+                <path d="M-58,118 H58 L46,164 H-46 Z" fill="url(#s18-brass)" stroke="#3A2A1E" stroke-width="4"/>
+                <ellipse cx="0" cy="118" rx="58" ry="14" fill="#C89D42" stroke="#3A2A1E" stroke-width="4"/>
+                <ellipse cx="0" cy="118" rx="44" ry="9" fill="#9E742A" opacity="0.6"/>
+                <g id="s18-rumour" transform="translate(0,108)">
+        <g id="s18-rumour-in">
+                  <path d="M-44,-18 C-20,-40 24,-40 44,-16 C56,-2 44,14 24,16 C4,18 -12,8 -14,-4 C-16,-16 -2,-24 12,-22" fill="url(#s18-page2)" stroke="#8A6B49" stroke-width="4"/>
+                  <path d="M-30,0 C-14,-8 8,-8 22,0" stroke="#B0832F" stroke-width="3" fill="none" opacity="0.5"/>
+                
+        </g>
+      </g>
+              </g>
+            </g>
+            <!-- right: proof, and nothing in it -->
+            <g id="s18-panR" transform="translate(196,0)">
+              <path d="M-52,16 L0,120 M52,16 L0,120" stroke="#8A6B49" stroke-width="3"/>
+              <g id="s18-panR-in">
+                <path d="M-58,118 H58 L46,164 H-46 Z" fill="url(#s18-brass)" stroke="#3A2A1E" stroke-width="4"/>
+                <ellipse cx="0" cy="118" rx="58" ry="14" fill="#C89D42" stroke="#3A2A1E" stroke-width="4"/>
+                <ellipse cx="0" cy="118" rx="44" ry="9" fill="#6E5338"/>
+                <ellipse cx="0" cy="120" rx="34" ry="6" fill="#3A2A1E" opacity="0.55"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="s18-needlewrap" transform="translate(0,-306)">
+          <g id="s18-needle">
+            <path d="M0,10 V70" stroke="#B24A32" stroke-width="6" stroke-linecap="round"/>
+            <path d="M0,70 L-8,58 M0,70 L8,58" stroke="#B24A32" stroke-width="5" fill="none"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- the retort and its lamp -->
+      <g id="s18-retort" transform="translate(1596,752)">
+        <ellipse cx="0" cy="24" rx="128" ry="26" fill="#2B1F17" opacity="0.24" filter="url(#s18-deep)"/>
+        <g id="s18-retort-in">
+          <path d="M-84,18 H84 L66,-8 H-66 Z" fill="#7A4F2C" stroke="#3A2A1E" stroke-width="5"/>
+          <g id="s18-burner">
+            <path d="M0,-8 C-24,-8 -30,-26 -22,-40 C-14,-52 -6,-58 0,-70 C6,-58 14,-52 22,-40 C30,-26 24,-8 0,-8 Z" fill="#E89A3C" opacity="0.85"/>
+            <path d="M0,-10 C-14,-10 -18,-24 -12,-34 C-6,-44 0,-48 0,-56 C0,-48 6,-44 12,-34 C18,-24 14,-10 0,-10 Z" fill="#FFCE7C"/>
+            <path d="M0,-12 C-6,-12 -8,-20 -4,-26 C-2,-30 0,-32 0,-36 C0,-32 2,-30 4,-26 C8,-20 6,-12 0,-12 Z" fill="#FFF6D8"/>
+          </g>
+          <circle id="s18-retortglow" cx="0" cy="-40" r="120" fill="url(#s18-lampglow)" opacity="0.6"/>
+          <path d="M-30,-78 H30 V-104 H-30 Z" fill="url(#s18-brass)" stroke="#3A2A1E" stroke-width="4"/>
+          <path d="M-84,-104 C-118,-140 -120,-196 -92,-222 C-58,-252 30,-252 62,-220 C92,-190 84,-140 54,-108 C30,-84 -52,-82 -84,-104 Z"
+                fill="url(#s18-globe)" stroke="#8A6B49" stroke-width="5"/>
+          <path d="M-70,-124 C-66,-176 -20,-204 26,-202" fill="none" stroke="#FFFDF6" stroke-width="9" opacity="0.6"/>
+          <path d="M-78,-108 C-96,-140 -96,-180 -76,-204" fill="none" stroke="#FFFDF6" stroke-width="5" opacity="0.35"/>
+          <g id="s18-beads" fill="url(#s18-mercury)" stroke="#6E6154" stroke-width="2.5">
+            <path d="M-58,-104 C-40,-92 40,-92 58,-106 C56,-88 30,-80 0,-80 C-30,-80 -56,-88 -58,-104 Z" opacity="0.85"/>
+            <circle id="s18-bead1" cx="-30" cy="-104" r="10"/>
+            <circle id="s18-bead2" cx="6" cy="-98" r="13"/>
+            <circle id="s18-bead3" cx="38" cy="-110" r="8"/>
+            <circle id="s18-bead4" cx="-4" cy="-118" r="6"/>
+          </g>
+          <path d="M-46,-88 C-24,-78 22,-78 46,-90" fill="none" stroke="#8A7A64" stroke-width="4" opacity="0.4"/>
+          <path d="M-20,-186 C-6,-206 26,-210 44,-196" fill="none" stroke="#8A6B49" stroke-width="4" opacity="0.35"/>
+        </g>
+      </g>
+
+      <!-- vapour rising from the retort -->
+      <g id="s18-vapor" opacity="0" filter="url(#s18-puffblur)">
+        <ellipse id="s18-vap1" cx="1588" cy="520" rx="58" ry="42" fill="url(#s18-puff)" opacity="0.95"/>
+        <ellipse id="s18-vap2" cx="1572" cy="468" rx="72" ry="50" fill="url(#s18-puff)" opacity="0.92"/>
+        <ellipse id="s18-vap3" cx="1600" cy="412" rx="84" ry="58" fill="url(#s18-puff)" opacity="0.9"/>
+        <ellipse id="s18-vap4" cx="1580" cy="352" rx="94" ry="64" fill="url(#s18-puff)" opacity="0.85"/>
+        <ellipse id="s18-vap5" cx="1598" cy="286" rx="100" ry="68" fill="url(#s18-puff)" opacity="0.72"/>
+        <ellipse id="s18-vap6" cx="1584" cy="214" rx="104" ry="72" fill="url(#s18-puff)" opacity="0.55"/>
+        <ellipse id="s18-vap7" cx="1592" cy="556" rx="30" ry="22" fill="#FFFDF6" opacity="0.75"/>
+      </g>
+
+      <!-- the evidence that is not there: a folded sheet, a lens -->
+      <g id="s18-evidence" transform="translate(986,946)">
+        <ellipse cx="0" cy="36" rx="180" ry="30" fill="#2B1F17" opacity="0.24" filter="url(#s18-deep)"/>
+        <g id="s18-evidence-in">
+          <path d="M-150,-12 L-8,-46 L150,-10 L12,26 Z" fill="#F4E4C4" stroke="#8A6B49" stroke-width="4"/>
+          <path d="M-150,-12 L12,26 L12,44 L-150,6 Z" fill="#E4CFA8" stroke="#8A6B49" stroke-width="4"/>
+          <path d="M150,-10 L12,26 L12,44 L150,8 Z" fill="#DCC49B" stroke="#8A6B49" stroke-width="4"/>
+          <g stroke="#C9A87C" stroke-width="3" opacity="0.6">
+            <path d="M-120,-8 L-30,12"/><path d="M-104,-2 L-24,16"/><path d="M-88,4 L-40,14"/>
+          </g>
+          <ellipse cx="26" cy="18" rx="21" ry="13" fill="url(#s18-brass)" stroke="#8A6B49" stroke-width="3"/>
+          <path d="M26,18 C30,6 40,2 46,6" fill="none" stroke="#B24A32" stroke-width="4" opacity="0.7"/>
+        </g>
+        <g id="s18-lens" transform="translate(-104,30) rotate(-18)">
+          <circle cx="0" cy="0" r="52" fill="#FFFDF6" opacity="0.22"/>
+          <circle cx="0" cy="0" r="52" fill="none" stroke="url(#s18-brass)" stroke-width="11"/>
+          <circle cx="0" cy="0" r="44" fill="none" stroke="#8A6B49" stroke-width="2" opacity="0.4"/>
+          <path d="M-28,-30 C-18,-42 -2,-46 8,-42" fill="none" stroke="#FFFDF6" stroke-width="7" opacity="0.8"/>
+          <path d="M58,34 L96,66" stroke="#C89D42" stroke-width="13" stroke-linecap="round"/>
+          <path d="M58,34 L96,66" stroke="#8E6A22" stroke-width="4" stroke-linecap="round"/>
+        </g>
+      </g>
+
+      <!-- a dish of mercury beads, foreground left -->
+      <g id="s18-dish" transform="translate(232,948)">
+        <g id="s18-dish-in">
+        <ellipse cx="0" cy="22" rx="106" ry="22" fill="#2B1F17" opacity="0.24" filter="url(#s18-soft)"/>
+        <path d="M-98,-4 C-94,26 -56,44 0,44 C56,44 94,26 98,-4 Z" fill="url(#s18-brass)" stroke="#3A2A1E" stroke-width="5"/>
+        <ellipse cx="0" cy="-4" rx="98" ry="24" fill="#6E5338" stroke="#3A2A1E" stroke-width="5"/>
+        <g fill="url(#s18-mercury)" stroke="#6E6154" stroke-width="2.5">
+          <circle cx="-44" cy="-2" r="15"/><circle cx="-8" cy="4" r="19"/><circle cx="34" cy="-2" r="12"/>
+          <circle cx="60" cy="6" r="9"/><circle cx="-68" cy="6" r="8"/>
+        </g>
+        <ellipse cx="-20" cy="0" rx="10" ry="5" fill="#FFFDF4" opacity="0.7"/>
+      
+        </g>
+      </g>
+    </svg>
+
+    <!-- FG · bench lip, vapour drift, the curl -->
+    <svg class="s18-plane s18-p-fg" id="s18-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s18-fglip" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#5C3A20"/><stop offset="0.6" stop-color="#3A2A1E"/><stop offset="1" stop-color="#241812"/>
+        </linearGradient>
+        <linearGradient id="s18-curlpaper" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FFFCF0"/><stop offset="0.42" stop-color="#F9EDD2"/>
+          <stop offset="0.78" stop-color="#E9D4AF"/><stop offset="1" stop-color="#CBAA7C"/>
+        </linearGradient>
+        <linearGradient id="s18-curledge" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#D8BE93"/><stop offset="1" stop-color="#A9835A"/>
+        </linearGradient>
+        <filter id="s18-fgblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>
+        <filter id="s18-fgsmoke" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="24"/></filter>
+      </defs>
+
+      <g id="s18-fglip" filter="url(#s18-fgblur)" opacity="0.95">
+        <path d="M-60,1080 L-60,1018 L620,998 L780,1080 Z" fill="url(#s18-fglip)"/>
+        <path d="M-60,1036 L646,1014" stroke="#8A6B49" stroke-width="8" opacity="0.3"/>
+        <ellipse cx="200" cy="1050" rx="86" ry="19" fill="#1E1813" opacity="0.7"/>
+        <path d="M1300,1080 L1312,1024 L1920,1008 L1920,1080 Z" fill="url(#s18-fglip)"/>
+        <ellipse cx="1620" cy="1046" rx="88" ry="19" fill="#1E1813" opacity="0.65"/>
+      </g>
+
+      <g id="s18-drift" opacity="0.5">
+        <ellipse cx="1180" cy="700" rx="330" ry="90" fill="#FBF1DA" opacity="0.3" filter="url(#s18-fgsmoke)"/>
+        <ellipse cx="820" cy="640" rx="260" ry="70" fill="#FFFDF6" opacity="0.22" filter="url(#s18-fgsmoke)"/>
+      </g>
+
+      <!-- the vapour curls into paper and takes the frame -->
+      <g id="s18-curlwrap" transform="translate(1600,540)">
+        <g id="s18-curl" opacity="0">
+          <circle cx="0" cy="0" r="230" fill="#FBF1DA"/>
+          <path d="M0,0 C0,-96 96,-150 176,-120 C264,-86 292,20 246,96 C196,180 74,196 -16,150" fill="none" stroke="#FDF6E6" stroke-width="150" stroke-linecap="round"/>
+          <path d="M0,0 C0,-96 96,-150 176,-120 C264,-86 292,20 246,96 C196,180 74,196 -16,150" fill="none" stroke="#D8BE93" stroke-width="158" stroke-linecap="round" opacity="0.28"/>
+          <path d="M-40,-30 C-24,-72 24,-96 68,-84" fill="none" stroke="#FFFDF6" stroke-width="26" opacity="0.35" stroke-linecap="round"/>
+        </g>
+      </g>
+    </svg>
+
+    <div class="s18-grain"></div>
+    <div class="s18-vignette"></div>
+
+    <div class="s18-tag" id="s18-tag">
+      <span class="s18-tag-dot"></span>
+      <span class="s18-tag-text">NO PROOF</span>
+    </div>
+    <div class="s18-rule" id="s18-rule"></div>
+  </div>
+</div>
+
+<script>
+(function initS18(){
+  var ID = "s18-no-proof";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, { duration: 16.854 }, 0);
+
+  // ── PHASE 1: the examination room settles ────────────────────────────────
+  tl.fromTo("#s18-bg", { scale: 1.055, x: -10, y: -8 }, { scale: 1, x: 0, y: 0, duration: 16.7, ease: "sine.out" }, 0.05);
+  tl.fromTo("#s18-window-in", { x: -46, opacity: 0 }, { x: 0, opacity: 1, duration: 0.9, ease: "power2.out" }, 0.24);
+  tl.fromTo("#s18-brace-in", { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.95, ease: "power2.out" }, 0.36);
+  tl.fromTo("#s18-bench", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 1.0, ease: "power2.out" }, 0.50);
+
+  // ── PHASE 2: the broadsheet is pinned up ─────────────────────────────────
+  tl.fromTo("#s18-sheet-in", { y: -42, rotation: -3, opacity: 0 }, { y: 0, rotation: 0, opacity: 1, duration: 1.05, ease: "power3.out", transformOrigin: "50% 0%" }, 1.30);
+  tl.fromTo("#s18-mark", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "sine.out" }, 5.30);
+  tl.fromTo("#s18-mark1", { attr: { "stroke-dashoffset": 100 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.5, ease: "power2.out" }, 5.34);
+  tl.fromTo("#s18-mark2", { attr: { "stroke-dashoffset": 100 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.45, ease: "power2.out" }, 5.62);
+
+  // ── PHASE 3: the balance comes down ──────────────────────────────────────
+  tl.fromTo("#s18-scale-in", { y: 54, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "power2.out" }, 2.30);
+  tl.set("#s18-beam", { rotation: 0, transformOrigin: "0px 0px" }, 3.30);
+  tl.fromTo("#s18-beam", { rotation: -1.6 }, { rotation: 1.2, duration: 2.2, ease: "sine.inOut" }, 3.36);
+  tl.to("#s18-beam", { rotation: -0.6, duration: 1.9, ease: "sine.inOut" }, 5.70);
+  tl.to("#s18-beam", { rotation: -2.1, duration: 1.5, ease: "sine.inOut" }, 7.70);
+  tl.to("#s18-beam", { rotation: -1.3, duration: 2.0, ease: "sine.inOut" }, 9.40);
+
+  tl.fromTo("#s18-rumour-in", { y: -20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "back.out(2.2)" }, 3.60);
+  tl.fromTo("#s18-dish-in", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power2.out" }, 4.10);
+
+  // ── PHASE 4: the retort is lit, mercury lifts ────────────────────────────
+  tl.fromTo("#s18-retort-in", { y: 44, opacity: 0 }, { y: 0, opacity: 1, duration: 0.85, ease: "power2.out" }, 6.60);
+  tl.set("#s18-burner", { scaleY: 0.25, transformOrigin: "50% 100%" }, 7.40);
+  tl.to("#s18-burner", { scaleY: 1, duration: 0.5, ease: "back.out(2.4)" }, 7.42);
+  tl.to("#s18-burner", { scaleY: 1.14, scaleX: 0.9, duration: 0.24, ease: "sine.inOut", yoyo: true, repeat: 32 }, 7.98);
+  tl.to("#s18-retortglow", { opacity: 0.44, duration: 1.7, ease: "sine.inOut", yoyo: true, repeat: 5 }, 7.90);
+
+  tl.set("#s18-bead1", { y: 0, x: 0, scale: 1 }, 8.30);
+  tl.set("#s18-bead2", { y: 0, x: 0, scale: 1 }, 8.30);
+  tl.set("#s18-bead3", { y: 0, x: 0, scale: 1 }, 8.30);
+  tl.set("#s18-bead4", { y: 0, x: 0, scale: 1 }, 8.30);
+  tl.to("#s18-bead1", { y: 16, x: 6, scale: 1.4, duration: 2.0, ease: "sine.inOut" }, 8.34);
+  tl.to("#s18-bead2", { y: -18, x: -6, scale: 0.86, duration: 2.4, ease: "sine.inOut" }, 8.40);
+  tl.to("#s18-bead3", { y: 22, x: -4, scale: 1.5, duration: 2.6, ease: "sine.inOut" }, 8.36);
+  tl.to("#s18-bead4", { y: 30, x: 8, scale: 1.2, duration: 2.2, ease: "sine.inOut" }, 8.44);
+  tl.to("#s18-bead2", { y: 8, x: 4, scale: 1.1, duration: 1.6, ease: "sine.inOut" }, 10.90);
+
+  // vapour begins to rise
+  tl.set("#s18-vapor", { opacity: 0 }, 9.60);
+  tl.to("#s18-vapor", { opacity: 1, duration: 2.0, ease: "sine.out" }, 9.64);
+  tl.fromTo("#s18-vap1", { y: 22, x: 0 }, { y: -46, x: -16, duration: 5.2, ease: "sine.out" }, 9.90);
+  tl.fromTo("#s18-vap2", { y: 26, x: 0 }, { y: -58, x: -30, duration: 5.8, ease: "sine.out" }, 10.10);
+  tl.fromTo("#s18-vap3", { y: 30, x: 0 }, { y: -70, x: 18, duration: 5.4, ease: "sine.out" }, 10.30);
+  tl.fromTo("#s18-vap4", { y: 34, x: 0 }, { y: -84, x: -22, duration: 5.9, ease: "sine.out" }, 10.50);
+  tl.fromTo("#s18-vap5", { y: 38, x: 0 }, { y: -96, x: 24, duration: 6.2, ease: "sine.out" }, 10.70);
+  tl.fromTo("#s18-vap6", { y: 42, x: 0 }, { y: -108, x: -12, duration: 6.6, ease: "sine.out" }, 10.90);
+  tl.fromTo("#s18-vap7", { y: 16, scale: 0.6 }, { y: -34, scale: 1.15, duration: 3.4, ease: "sine.out" }, 9.90);
+  tl.to("#s18-drift", { x: -60, duration: 5.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 9.20);
+
+  // ── living hold ──────────────────────────────────────────────────────────
+  tl.fromTo("#s18-stage", { scale: 1, y: 0 }, { scale: 1.04, y: -12, duration: 16.6, ease: "sine.inOut" }, 0.10);
+  tl.fromTo(".s18-mote", { y: 0, x: 0 }, { y: -58, x: 12, duration: 6.6, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 0.22 }, 1.30);
+  tl.to("#s18-panL-in", { rotation: -1.4, duration: 3.4, ease: "sine.inOut", yoyo: true, repeat: 1, transformOrigin: "50% 0%" }, 6.20);
+  tl.to("#s18-panR-in", { rotation: 1.2, duration: 3.8, ease: "sine.inOut", yoyo: true, repeat: 1, transformOrigin: "50% 0%" }, 6.40);
+  tl.to("#s18-needle", { rotation: 1.6, duration: 2.6, ease: "sine.inOut", yoyo: true, repeat: 1, transformOrigin: "0px 10px" }, 6.60);
+
+  // ── TAG ──────────────────────────────────────────────────────────────────
+  tl.fromTo("#s18-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -14 }, { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.6, ease: "power3.inOut" }, 2.20);
+  tl.fromTo("#s18-rule", { width: 0 }, { width: 286, duration: 0.5, ease: "power2.out" }, 2.56);
+
+  // ── SEAM: the vapour curls and takes the frame ───────────────────────────
+  tl.to("#s18-tag", { clipPath: "inset(0% 100% 0% 0%)", duration: 0.18, ease: "power2.in" }, 14.16);
+  tl.to("#s18-rule", { width: 0, duration: 0.18, ease: "power2.in" }, 14.16);
+  tl.set("#s18-curl", { opacity: 1, scale: 0.02, rotation: -30, transformOrigin: "50% 50%" }, 14.24);
+  tl.to("#s18-curl", { scale: 12.5, rotation: 8, duration: 2.15, ease: "power2.in" }, 14.28);
+  tl.to("#s18-drift", { opacity: 0, duration: 0.6, ease: "sine.in" }, 14.30);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

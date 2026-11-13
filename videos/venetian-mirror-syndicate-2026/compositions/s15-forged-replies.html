@@ -1,0 +1,460 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s15-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s15-forged-replies"] .s15-stage{position:absolute;inset:0;transform-origin:50% 58%;}
+[data-composition-id="s15-forged-replies"] .s15-ground{position:absolute;inset:0;background:
+  radial-gradient(48% 44% at 76% 30%, rgba(255,214,150,0.42) 0%, rgba(255,214,150,0.14) 52%, rgba(255,214,150,0) 78%),
+  radial-gradient(40% 34% at 14% 18%, rgba(255,240,208,0.5) 0%, rgba(255,240,208,0) 72%),
+  linear-gradient(176deg, #FBF3E0 0%, #F6E9CE 34%, #EFDCBB 66%, #DFC49C 100%);}
+[data-composition-id="s15-forged-replies"] .s15-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="s15-forged-replies"] .s15-p-bg{z-index:1;}
+[data-composition-id="s15-forged-replies"] .s15-p-mg{z-index:2;}
+[data-composition-id="s15-forged-replies"] .s15-p-fg{z-index:4;}
+[data-composition-id="s15-forged-replies"] .s15-grain{position:absolute;inset:0;z-index:6;pointer-events:none;
+  background-image:radial-gradient(rgba(43,31,23,0.55) 0.4px, transparent 0.5px);background-size:3px 3px;
+  opacity:0.10;mix-blend-mode:multiply;}
+[data-composition-id="s15-forged-replies"] .s15-vignette{position:absolute;inset:0;z-index:7;pointer-events:none;
+  background:
+    linear-gradient(to top, rgba(43,31,23,0.32) 0%, rgba(43,31,23,0.06) 16%, rgba(43,31,23,0) 32%),
+    linear-gradient(to right, rgba(43,31,23,0.20) 0%, rgba(43,31,23,0.03) 18%, rgba(43,31,23,0) 36%),
+    radial-gradient(118% 96% at 50% 46%, rgba(43,31,23,0) 52%, rgba(43,31,23,0.26) 100%);}
+[data-composition-id="s15-forged-replies"] .s15-tag{position:absolute;left:86px;top:92px;z-index:8;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;background:linear-gradient(180deg,#FDFAF4 0%,#F1E7D6 100%);
+  box-shadow:0 12px 30px rgba(43,31,23,0.26),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s15-forged-replies"] .s15-tag-dot{width:15px;height:15px;border-radius:50%;background:#C2593F;
+  box-shadow:0 0 0 5px rgba(194,89,63,0.20),inset 0 0 0 3px #A8462F;}
+[data-composition-id="s15-forged-replies"] .s15-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.14em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s15-forged-replies"] .s15-rule{position:absolute;left:86px;top:158px;height:5px;width:0;z-index:8;background:#C2593F;border-radius:4px;
+  box-shadow:0 2px 6px rgba(43,31,23,0.25);}
+[data-composition-id="s15-forged-replies"] .s15-mote{transform-box:fill-box;transform-origin:50% 50%;}
+[data-composition-id="s15-forged-replies"] .s15-paper{filter:drop-shadow(0 18px 26px rgba(43,31,23,0.28));}
+</style>
+
+<div id="root" data-composition-id="s15-forged-replies" data-width="1920" data-height="1080" data-start="0" data-duration="18.932">
+  <div class="s15-stage" id="s15-stage">
+    <div class="s15-ground"></div>
+
+    <!-- BG · plaster wall, amber window, plank desk -->
+    <svg class="s15-plane s15-p-bg" id="s15-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s15-wall" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#FCF4E2"/><stop offset="0.5" stop-color="#F5E6C9"/><stop offset="1" stop-color="#E6CFAC"/>
+        </linearGradient>
+        <linearGradient id="s15-glass" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#FFE9BC"/><stop offset="0.5" stop-color="#F7D095"/><stop offset="1" stop-color="#E9AE6A"/>
+        </linearGradient>
+        <linearGradient id="s15-desk" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#C89A67"/><stop offset="0.35" stop-color="#B48553"/><stop offset="1" stop-color="#8E6238"/>
+        </linearGradient>
+        <linearGradient id="s15-deskedge" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#7A5330"/><stop offset="1" stop-color="#4E3520"/>
+        </linearGradient>
+        <radialGradient id="s15-lamp" cx="50%" cy="46%" r="50%">
+          <stop offset="0" stop-color="#FFF6D8" stop-opacity="0.92"/>
+          <stop offset="0.42" stop-color="#FFCE7C" stop-opacity="0.42"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="s15-sill" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#EBD7B4"/><stop offset="0.55" stop-color="#D9BE97"/><stop offset="1" stop-color="#BC9C74"/>
+        </linearGradient>
+        <filter id="s15-bblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="32"/></filter>
+        <filter id="s15-hblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="12"/></filter>
+        <filter id="s15-grain" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.84" numOctaves="2" seed="41" result="n"/>
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0.5 0"/>
+        </filter>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s15-wall)"/>
+      <g stroke="#8A6B49" stroke-width="3" opacity="0.09">
+        <path d="M0,206 H1920"/><path d="M0,402 H1920"/><path d="M620,0 V560"/><path d="M1180,0 V560"/>
+      </g>
+
+      <g id="s15-window">
+        <rect x="1206" y="118" width="366" height="386" fill="url(#s15-glass)" stroke="#5C4030" stroke-width="15"/>
+        <rect x="1226" y="138" width="326" height="346" fill="none" stroke="#FFF3D8" stroke-width="4" opacity="0.5"/>
+        <g stroke="#5C4030" stroke-width="10">
+          <path d="M1389,124 V498"/><path d="M1212,314 H1566"/>
+        </g>
+        <g fill="#FFF6DE" opacity="0.45">
+          <path d="M1236,166 L1370,146 L1370,286 L1236,286 Z"/>
+          <path d="M1418,150 L1548,172 L1548,286 L1418,286 Z"/>
+        </g>
+        <g fill="#C98A4E" opacity="0.5">
+          <path d="M1226,420 C1300,404 1370,428 1440,410 C1500,396 1530,410 1552,402 L1552,484 L1226,484 Z"/>
+          <path d="M1236,452 C1310,440 1380,462 1450,448 C1510,436 1532,448 1548,444 L1548,484 L1236,484 Z"/>
+        </g>
+        <path d="M1206,504 H1572 L1604,522 H1174 Z" fill="url(#s15-sill)" stroke="#5C4030" stroke-width="7"/>
+        <path d="M1206,118 H1572" stroke="#5C4030" stroke-width="16"/>
+        <g stroke="#8A6B49" stroke-width="4" opacity="0.35">
+          <path d="M1226,470 H1548"/><path d="M1246,452 H1528"/>
+        </g>
+      </g>
+
+      <g id="s15-frame" transform="translate(760,268) rotate(-1.2)">
+        <path d="M-236,-150 H236 V150 H-236 Z" fill="#3A2A1E" stroke="#241812" stroke-width="7"/>
+        <path d="M-218,-132 H218 V132 H-218 Z" fill="#F6E8CC" stroke="#8A6B49" stroke-width="5"/>
+        <path d="M-206,-120 H206 V120 H-206 Z" fill="#FDF6E4"/>
+        <g stroke="#B0832F" stroke-width="3" opacity="0.35">
+          <path d="M-186,-84 H186"/><path d="M-186,-52 H186"/><path d="M-186,-20 H186"/>
+          <path d="M-186,12 H186"/><path d="M-186,44 H186"/><path d="M-186,76 H186"/>
+        </g>
+        <g stroke="#2B1F17" stroke-width="4" fill="none" opacity="0.55" stroke-linecap="round">
+          <path d="M-178,-88 C-169,-93 -160,-90 -152,-88 C-143,-83 -134,-86 -126,-87 C-117,-93 -108,-90 -100,-88 C-91,-83 -82,-86 -74,-87 C-65,-93 -56,-90 -48,-88 C-39,-83 -30,-86 -22,-87 C-13,-93 -4,-90 4,-88 C12,-83 21,-86 30,-87 C38,-93 47,-90 56,-88 C64,-83 73,-86 82,-87 C90,-93 99,-90 108,-88 C116,-83 125,-86 134,-87 C142,-93 151,-90 160,-88 C168,-83 177,-86 170,-87"/>
+          <path d="M-178,-56 C-169,-61 -160,-58 -152,-56 C-143,-51 -134,-54 -126,-55 C-117,-61 -108,-58 -100,-56 C-91,-51 -82,-54 -74,-55 C-65,-61 -56,-58 -48,-56 C-39,-51 -30,-54 -22,-55 C-13,-61 -4,-58 4,-56 C12,-51 21,-54 30,-55 C38,-61 47,-58 56,-56 C64,-51 73,-54 82,-55 C90,-61 99,-58 108,-56 C116,-51 125,-54 134,-55 C142,-61 151,-58 160,-56 C168,-51 177,-54 170,-55"/>
+          <path d="M-178,-24 C-169,-29 -160,-26 -152,-24 C-143,-19 -134,-22 -126,-23 C-117,-29 -108,-26 -100,-24 C-91,-19 -82,-22 -74,-23 C-65,-29 -56,-26 -48,-24 C-39,-19 -30,-22 -22,-23 C-13,-29 -4,-26 4,-24 C12,-19 21,-22 30,-23 C38,-29 47,-26 56,-24 C64,-19 73,-22 82,-23 C90,-29 99,-26 108,-24 C116,-19 125,-22 134,-23 C142,-29 151,-26 160,-24 C168,-19 177,-22 170,-23"/>
+          <path d="M-178,8 C-169,3 -160,6 -152,7 C-143,13 -134,10 -126,8 C-117,3 -108,6 -100,7 C-91,13 -82,10 -74,8 C-65,3 -56,6 -48,7 C-39,13 -30,10 -22,8 C-13,3 -4,6 4,7 C12,13 21,10 30,8 C38,3 47,6 56,7 C64,13 73,10 82,8 C90,3 99,6 108,7 C116,13 125,10 134,8 C142,3 151,6 160,7 C168,13 177,10 170,8"/>
+          <path d="M-178,40 C-169,35 -160,38 -152,39 C-143,45 -134,42 -126,40 C-117,35 -108,38 -100,39 C-91,45 -82,42 -74,40 C-65,35 -56,38 -48,39 C-39,45 -30,42 -22,40 C-13,35 -4,38 4,39 C12,45 21,42 30,40 C38,35 47,38 56,39 C64,45 73,42 82,40 C90,35 99,38 108,39 C116,45 125,42 134,40 C142,35 151,38 160,39 C168,45 177,42 170,40"/>
+        </g>
+        <circle cx="150" cy="86" r="30" fill="url(#s15-wax)" stroke="#8E3524" stroke-width="4"/>
+        <path d="M150,72 L158,84 L172,84 L161,93 L165,106 L150,98 L135,106 L139,93 L128,84 L142,84 Z" fill="#8E3524" opacity="0.5"/>
+        <path d="M-236,-150 H236" stroke="#7C5C3E" stroke-width="6" opacity="0.7"/>
+        <path d="M0,-186 V-150" stroke="#8A6B49" stroke-width="5"/>
+        <circle cx="0" cy="-190" r="8" fill="#C89D42" stroke="#2B1F17" stroke-width="3"/>
+      </g>
+
+      <g id="s15-lantern" transform="translate(1712,96)"><g id="s15-lantern-in">
+        <path d="M0,0 V92" stroke="#3A2A1E" stroke-width="7"/>
+        <path d="M-34,92 H34" stroke="#3A2A1E" stroke-width="10" stroke-linecap="round"/>
+        <path d="M0,92 V118" stroke="#3A2A1E" stroke-width="6"/>
+        <circle id="s15-lampglow" cx="0" cy="152" r="132" fill="url(#s15-lamp)" opacity="0.75"/>
+        <path d="M-14,118 H14 L10,132 H-10 Z" fill="#3A2A1E"/>
+        <path d="M-40,132 H40 L30,208 H-30 Z" fill="#E8C077" fill-opacity="0.35" stroke="#1E1813" stroke-width="6"/>
+        <path d="M-26,140 H26 L19,200 H-19 Z" fill="none" stroke="#3A2A1E" stroke-width="4" opacity="0.55"/>
+        <g id="s15-lampflame">
+          <path d="M0,158 C8,170 10,182 4,190 C1,194 -1,194 -4,190 C-10,182 -8,170 0,158 Z" fill="#FFF3CE"/>
+        </g>
+        <path d="M-46,208 H46" stroke="#3A2A1E" stroke-width="8" stroke-linecap="round"/>
+      </g></g>
+
+      <!-- desk -->
+      <g id="s15-desk">
+        <path d="M40,566 L1880,566 L1920,700 L-40,700 Z" fill="#D7B183"/>
+        <path d="M-40,700 L1920,700 L1920,1080 L-40,1080 Z" fill="url(#s15-desk)"/>
+        <path d="M-40,700 L1920,700" stroke="#5C4030" stroke-width="9" opacity="0.5"/>
+        <path d="M-40,714 L1920,714" stroke="#FFF0CE" stroke-width="5" opacity="0.22"/>
+        <g stroke="#7C5330" stroke-width="4" opacity="0.35">
+          <path d="M-40,748 C300,742 700,756 1100,748 C1400,742 1700,754 1920,748"/>
+          <path d="M-40,836 C320,830 720,844 1120,836 C1420,830 1720,842 1920,836"/>
+          <path d="M-40,930 C300,924 700,938 1100,930 C1400,924 1700,936 1920,930"/>
+          <path d="M-40,1024 C320,1018 720,1032 1120,1024 C1420,1018 1720,1030 1920,1024"/>
+        </g>
+        <g stroke="#E8C79B" stroke-width="3" opacity="0.3">
+          <path d="M-20,776 C300,770 700,784 1100,776 C1400,770 1700,782 1900,776"/>
+          <path d="M-20,882 C320,876 720,890 1120,882 C1420,876 1720,888 1900,882"/>
+        </g>
+        <path d="M-40,1080 L1920,1080 L1920,1032 L-40,1032 Z" fill="url(#s15-deskedge)" opacity="0.55"/>
+      </g>
+
+      <ellipse cx="1712" cy="560" rx="420" ry="180" fill="#FFCE7C" opacity="0.18" filter="url(#s15-bblur)"/>
+      <ellipse cx="820" cy="900" rx="560" ry="150" fill="#3A2A1E" opacity="0.14" filter="url(#s15-bblur)"/>
+      <rect x="0" y="0" width="1920" height="1080" filter="url(#s15-grain)" opacity="0.055" style="mix-blend-mode:multiply"/>
+
+      <g fill="#FFD98E" opacity="0.5">
+        <circle class="s15-mote" cx="1180" cy="360" r="4"/><circle class="s15-mote" cx="940" cy="220" r="3"/>
+        <circle class="s15-mote" cx="1500" cy="430" r="4"/><circle class="s15-mote" cx="420" cy="300" r="3"/>
+      </g>
+    </svg>
+
+    <!-- MG · letters, ink, seal, quill -->
+    <svg class="s15-plane s15-p-mg" id="s15-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s15-paper" x1="0" y1="0" x2="0.24" y2="1">
+          <stop offset="0" stop-color="#FDF8EA"/><stop offset="0.55" stop-color="#F7EBD2"/><stop offset="1" stop-color="#EAD6B2"/>
+        </linearGradient>
+        <linearGradient id="s15-paper2" x1="0" y1="0" x2="0.24" y2="1">
+          <stop offset="0" stop-color="#FBF3E1"/><stop offset="0.55" stop-color="#F2E2C4"/><stop offset="1" stop-color="#E2CBA4"/>
+        </linearGradient>
+        <linearGradient id="s15-brass" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.24" stop-color="#E3BB64"/><stop offset="0.52" stop-color="#C89D42"/>
+          <stop offset="0.74" stop-color="#9E742A"/><stop offset="1" stop-color="#D9AE56"/>
+        </linearGradient>
+        <linearGradient id="s15-brassv" gradientUnits="userSpaceOnUse" x1="1330" y1="0" x2="1490" y2="0">
+          <stop offset="0" stop-color="#D9AE56"/><stop offset="0.3" stop-color="#C89D42"/><stop offset="0.55" stop-color="#E9C77B"/>
+          <stop offset="0.8" stop-color="#A87A2A"/><stop offset="1" stop-color="#D9AE56"/>
+        </linearGradient>
+        <radialGradient id="s15-ink" cx="50%" cy="46%" r="50%">
+          <stop offset="0" stop-color="#4A3524"/><stop offset="0.6" stop-color="#2B1F17"/><stop offset="1" stop-color="#1A120C"/>
+        </radialGradient>
+        <radialGradient id="s15-wax" cx="42%" cy="34%" r="66%">
+          <stop offset="0" stop-color="#D9704F"/><stop offset="0.5" stop-color="#C2593F"/><stop offset="1" stop-color="#93392A"/>
+        </radialGradient>
+        <linearGradient id="s15-feather" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#FFF6DE"/><stop offset="0.45" stop-color="#EED9B2"/><stop offset="0.8" stop-color="#C9A87C"/><stop offset="1" stop-color="#A9855A"/>
+        </linearGradient>
+        <linearGradient id="s15-string" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#B08A5E"/><stop offset="0.5" stop-color="#8A6B49"/><stop offset="1" stop-color="#5C4030"/>
+        </linearGradient>
+        <filter id="s15-mblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="22"/></filter>
+        <filter id="s15-msoft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+        <filter id="s15-msoft3" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+      </defs>
+
+      <ellipse cx="820" cy="932" rx="470" ry="72" fill="#2B1F17" opacity="0.34" filter="url(#s15-mblur)"/>
+      <ellipse cx="1210" cy="900" rx="220" ry="52" fill="#2B1F17" opacity="0.24" filter="url(#s15-mblur)"/>
+
+      <!-- bundle of intercepted letters, tied -->
+      <g id="s15-stack" transform="translate(408,782)"><g id="s15-stack-in">
+        <g id="s15-sheetA" transform="rotate(-7)">
+          <path d="M-176,-96 H176 V96 H-176 Z" fill="url(#s15-paper2)" stroke="#8A6B49" stroke-width="5"/>
+          <g stroke="#B0832F" stroke-width="4" opacity="0.4">
+            <path d="M-150,-58 H150"/><path d="M-150,-26 H150"/><path d="M-150,6 H150"/><path d="M-150,38 H150"/>
+          </g>
+          <circle cx="120" cy="-52" r="24" fill="url(#s15-wax)" stroke="#8E3524" stroke-width="3"/>
+          <circle cx="120" cy="-52" r="12" fill="none" stroke="#F0C7B6" stroke-width="2.5" opacity="0.5"/>
+        </g>
+        <g id="s15-sheetB" transform="rotate(4)">
+          <path d="M-180,-100 H180 V100 H-180 Z" fill="url(#s15-paper)" stroke="#8A6B49" stroke-width="5"/>
+          <g stroke="#B0832F" stroke-width="4" opacity="0.35">
+            <path d="M-154,-62 H154"/><path d="M-154,-30 H154"/><path d="M-154,2 H154"/><path d="M-154,34 H154"/>
+          </g>
+          <path d="M-180,0 H180" stroke="#C89D42" stroke-width="3" opacity="0.3"/>
+          <circle cx="118" cy="56" r="26" fill="url(#s15-wax)" stroke="#8E3524" stroke-width="3"/>
+          <circle cx="118" cy="56" r="13" fill="none" stroke="#F0C7B6" stroke-width="2.5" opacity="0.5"/>
+        </g>
+        <g id="s15-sheetC" transform="rotate(11)">
+          <path d="M-176,-92 H176 V92 H-176 Z" fill="url(#s15-paper2)" stroke="#8A6B49" stroke-width="5"/>
+          <circle cx="112" cy="54" r="26" fill="url(#s15-wax)" stroke="#8E3524" stroke-width="3"/>
+          <path d="M112,40 L120,52 L134,52 L123,61 L127,74 L112,66 L97,74 L101,61 L90,52 L104,52 Z" fill="#8E3524" opacity="0.5"/>
+        </g>
+        <g id="s15-tie"><path d="M-14,-118 H14 V116 H-14 Z" fill="url(#s15-string)" opacity="0.9" transform="rotate(3)"/>
+        <path d="M-40,-116 C-20,-104 20,-104 40,-116" fill="none" stroke="url(#s15-string)" stroke-width="9"/>
+        <ellipse cx="0" cy="-118" rx="22" ry="10" fill="#8A6B49"/></g>
+      </g></g>
+
+      <!-- brass dish with wax sticks -->
+      <g id="s15-dish" transform="translate(1150,930)"><g id="s15-dish-in">
+        <ellipse cx="0" cy="8" rx="96" ry="26" fill="#2B1F17" opacity="0.28" filter="url(#s15-msoft)"/>
+        <ellipse cx="0" cy="0" rx="92" ry="24" fill="url(#s15-brass)" stroke="#2B1F17" stroke-width="5"/>
+        <ellipse cx="0" cy="-4" rx="72" ry="16" fill="#7E5A1C" opacity="0.55"/>
+        <g stroke="#8E3524" stroke-width="3">
+          <rect x="-46" y="-38" width="18" height="34" rx="8" fill="#C2593F"/>
+          <rect x="-14" y="-44" width="18" height="40" rx="8" fill="#D9704F"/>
+          <rect x="20" y="-34" width="18" height="30" rx="8" fill="#B24A32"/>
+        </g>
+        <path d="M-58,-6 H58" stroke="#FFF1C7" stroke-width="4" opacity="0.35"/>
+      </g></g>
+
+      <!-- ink bottle -->
+      <g id="s15-inkpot" transform="translate(1548,846)"><g id="s15-inkpot-in">
+        <ellipse cx="0" cy="30" rx="82" ry="24" fill="#2B1F17" opacity="0.3" filter="url(#s15-msoft)"/>
+        <path d="M-52,-34 C-58,4 -46,26 0,26 C46,26 58,4 52,-34 Z" fill="#3A2A1E" stroke="#1E1813" stroke-width="6"/>
+        <ellipse cx="0" cy="-34" rx="52" ry="16" fill="#241812" stroke="#1E1813" stroke-width="5"/>
+        <ellipse cx="0" cy="-34" rx="38" ry="10" fill="url(#s15-ink)"/>
+        <ellipse cx="-12" cy="-36" rx="16" ry="4" fill="#6E5338" opacity="0.5"/>
+        <path d="M-40,-14 C-44,2 -38,14 -22,20" fill="none" stroke="#FFF3D8" stroke-width="5" opacity="0.28"/>
+        <ellipse cx="0" cy="-34" rx="52" ry="16" fill="none" stroke="url(#s15-brass)" stroke-width="5" opacity="0.65"/>
+      </g></g>
+
+      <!-- hero letter -->
+      <g id="s15-letterwrap" transform="translate(806,752) rotate(-4)">
+        <g id="s15-letter" class="s15-paper">
+          <path d="M-322,-214 H322 V214 H-322 Z" fill="url(#s15-paper)" stroke="#8A6B49" stroke-width="6"/>
+          <path d="M-322,-214 H322 V-198 H-322 Z" fill="#E2CBA4" opacity="0.55"/>
+          <g stroke="#B0832F" stroke-width="4" opacity="0.42">
+            <path d="M-282,-148 H282"/><path d="M-282,-106 H282"/><path d="M-282,-64 H282"/>
+            <path d="M-282,-22 H282"/><path d="M-282,20 H282"/><path d="M-282,62 H282"/>
+            <path d="M-282,104 H282"/><path d="M-282,146 H282"/>
+          </g>
+          <g id="s15-ink" stroke="#2B1F17" stroke-width="6" fill="none" opacity="0.74" stroke-linecap="round">
+            <path class="s15-stroke" pathLength="100" d="M-266,-146 C-256,-151 -247,-148 -238,-146 C-228,-141 -219,-144 -210,-145 C-200,-151 -191,-148 -182,-146 C-172,-141 -163,-144 -154,-145 C-144,-151 -135,-148 -126,-146 C-116,-141 -107,-144 -98,-145 C-88,-151 -79,-148 -70,-146 C-60,-141 -51,-144 -42,-145 C-32,-151 -23,-148 -14,-146 C-4,-141 4,-144 14,-145 C23,-151 32,-148 42,-146 C51,-141 60,-144 70,-145 C79,-151 88,-148 98,-146 C107,-141 116,-144 126,-145 C135,-151 144,-148 154,-146 C163,-141 172,-144 182,-145 C191,-151 200,-148 210,-146 C219,-141 228,-144 238,-145 C247,-151 256,-148 254,-146"/>
+            <path class="s15-stroke" pathLength="100" d="M-266,-104 C-256,-109 -247,-106 -238,-104 C-228,-99 -219,-102 -210,-103 C-200,-109 -191,-106 -182,-104 C-172,-99 -163,-102 -154,-103 C-144,-109 -135,-106 -126,-104 C-116,-99 -107,-102 -98,-103 C-88,-109 -79,-106 -70,-104 C-60,-99 -51,-102 -42,-103 C-32,-109 -23,-106 -14,-104 C-4,-99 4,-102 14,-103 C23,-109 32,-106 42,-104 C51,-99 60,-102 70,-103 C79,-109 88,-106 98,-104 C107,-99 116,-102 126,-103 C135,-109 144,-106 154,-104 C163,-99 172,-102 182,-103 C191,-109 200,-106 210,-104 C219,-99 228,-102 238,-103 C247,-109 256,-106 266,-104 C275,-99 284,-102 294,-103"/>
+            <path class="s15-stroke" pathLength="100" d="M-252,-62 C-242,-67 -233,-64 -224,-62 C-214,-57 -205,-60 -196,-61 C-186,-67 -177,-64 -168,-62 C-158,-57 -149,-60 -140,-61 C-130,-67 -121,-64 -112,-62 C-102,-57 -93,-60 -84,-61 C-74,-67 -65,-64 -56,-62 C-46,-57 -37,-60 -28,-61 C-18,-67 -9,-64 0,-62 C9,-57 18,-60 28,-61 C37,-67 46,-64 56,-62 C65,-57 74,-60 84,-61 C93,-67 102,-64 112,-62 C121,-57 130,-60 140,-61 C149,-67 158,-64 168,-62 C177,-57 186,-60 196,-61 C205,-67 214,-64 218,-62"/>
+            <path class="s15-stroke" pathLength="100" d="M-266,-20 C-256,-25 -247,-22 -238,-20 C-228,-15 -219,-18 -210,-19 C-200,-25 -191,-22 -182,-20 C-172,-15 -163,-18 -154,-19 C-144,-25 -135,-22 -126,-20 C-116,-15 -107,-18 -98,-19 C-88,-25 -79,-22 -70,-20 C-60,-15 -51,-18 -42,-19 C-32,-25 -23,-22 -14,-20 C-4,-15 4,-18 14,-19 C23,-25 32,-22 42,-20 C51,-15 60,-18 70,-19 C79,-25 88,-22 98,-20 C107,-15 116,-18 126,-19 C135,-25 144,-22 154,-20 C163,-15 172,-18 182,-19 C191,-25 200,-22 210,-20 C219,-15 228,-18 238,-19 C247,-25 256,-22 266,-20 C275,-15 284,-18 286,-19"/>
+            <path class="s15-stroke" pathLength="100" d="M-266,22 C-256,17 -247,20 -238,21 C-228,27 -219,24 -210,22 C-200,17 -191,20 -182,21 C-172,27 -163,24 -154,22 C-144,17 -135,20 -126,21 C-116,27 -107,24 -98,22 C-88,17 -79,20 -70,21 C-60,27 -51,24 -42,22 C-32,17 -23,20 -14,21 C-4,27 4,24 14,22 C23,17 32,20 42,21 C51,27 60,24 70,22 C79,17 88,20 98,21 C107,27 116,24 126,22 C135,17 144,20 136,21"/>
+            <path class="s15-stroke" pathLength="100" d="M-256,64 C-246,59 -237,62 -228,63 C-218,69 -209,66 -200,64 C-190,59 -181,62 -172,63 C-162,69 -153,66 -144,64 C-134,59 -125,62 -116,63 C-106,69 -97,66 -88,64 C-78,59 -69,62 -60,63 C-50,69 -41,66 -32,64 C-22,59 -13,62 -4,63 C5,69 14,66 24,64 C33,59 42,62 52,63 C61,69 70,66 80,64 C89,59 98,62 108,63 C117,69 126,66 136,64 C145,59 154,62 164,63 C173,69 182,66 192,64 C201,59 210,62 220,63 C229,69 238,66 244,64"/>
+            <path class="s15-stroke" pathLength="100" d="M-266,106 C-256,101 -247,104 -238,105 C-228,111 -219,108 -210,106 C-200,101 -191,104 -182,105 C-172,111 -163,108 -154,106 C-144,101 -135,104 -126,105 C-116,111 -107,108 -98,106 C-88,101 -79,104 -70,105 C-60,111 -51,108 -42,106 C-32,101 -23,104 -14,105 C-4,111 4,108 14,106 C23,101 32,104 42,105 C51,111 60,108 70,106 C79,101 88,104 98,105 C107,111 116,108 126,106 C135,101 144,104 154,105 C163,111 172,108 182,106 C191,101 200,104 204,105"/>
+            <path class="s15-stroke" pathLength="100" d="M-240,146 C-230,141 -221,144 -212,145 C-202,151 -193,148 -184,146 C-174,141 -165,144 -156,145 C-146,151 -137,148 -128,146 C-118,141 -109,144 -100,145 C-90,151 -81,148 -72,146 C-62,141 -53,144 -44,145 C-34,151 -25,148 -16,146 C-6,141 2,144 -8,145"/>
+          </g>
+          <g fill="#8A6B49" opacity="0.35">
+            <circle cx="-282" cy="-148" r="4"/><circle cx="-282" cy="-106" r="4"/><circle cx="-282" cy="-64" r="4"/>
+            <circle cx="-282" cy="-22" r="4"/><circle cx="-282" cy="20" r="4"/><circle cx="-282" cy="62" r="4"/>
+          </g>
+          <g id="s15-seal" opacity="0">
+            <circle id="s15-sealwax" cx="212" cy="148" r="1" fill="url(#s15-wax)" stroke="#8E3524" stroke-width="5"/>
+            <g id="s15-sealemblem" opacity="0">
+              <circle cx="212" cy="148" r="30" fill="none" stroke="#F0C7B6" stroke-width="4" opacity="0.55"/>
+              <path d="M196,160 C200,142 210,132 224,130 C220,146 210,158 196,160 Z" fill="#8E3524" opacity="0.65"/>
+              <path d="M196,160 C206,158 216,150 224,138" fill="none" stroke="#F0C7B6" stroke-width="3" opacity="0.6"/>
+              <circle cx="224" cy="132" r="4" fill="#F0C7B6" opacity="0.7"/>
+            </g>
+          </g>
+          <path d="M-300,-192 C-280,-206 -258,-206 -240,-196" fill="none" stroke="#FFF6DE" stroke-width="5" opacity="0.5"/>
+        </g>
+      </g>
+
+      <!-- wax seal stamp -->
+      <g id="s15-stampwrap" transform="translate(1330,600)">
+        <g id="s15-stamp">
+          <ellipse cx="0" cy="118" rx="74" ry="18" fill="#2B1F17" opacity="0.24" filter="url(#s15-msoft)"/>
+          <rect x="-16" y="-118" width="32" height="150" fill="url(#s15-brassv)" stroke="#2B1F17" stroke-width="5"/>
+          <circle cx="0" cy="-120" r="24" fill="url(#s15-brass)" stroke="#2B1F17" stroke-width="5"/>
+          <path d="M-52,32 H52 L44,76 H-44 Z" fill="url(#s15-brass)" stroke="#2B1F17" stroke-width="6"/>
+          <path d="M-44,76 H44 L38,104 H-38 Z" fill="#A87A2A" stroke="#2B1F17" stroke-width="6"/>
+          <ellipse cx="0" cy="104" rx="38" ry="12" fill="#C89D42" stroke="#2B1F17" stroke-width="4"/>
+          <circle cx="0" cy="-120" r="12" fill="#FCEBB8" opacity="0.7"/>
+          <path d="M-10,-124 L0,-108 L10,-124" fill="none" stroke="#8A6323" stroke-width="4"/>
+        </g>
+      </g>
+
+      <!-- quill -->
+      <g id="s15-quill" transform="translate(1512,796) rotate(-26)"><g id="s15-quill-in">
+        <path d="M0,0 C-28,-56 -44,-128 -12,-204 C26,-146 40,-64 18,0 Z" fill="url(#s15-feather)" stroke="#8A6B49" stroke-width="4"/>
+        <path d="M2,-4 C-2,-62 -4,-130 0,-192" fill="none" stroke="#8A6B49" stroke-width="5" opacity="0.7"/>
+        <g stroke="#C9A87C" stroke-width="3" opacity="0.55">
+          <path d="M-6,-40 C-20,-52 -30,-68 -28,-86"/><path d="M-10,-76 C-24,-90 -32,-108 -28,-126"/>
+          <path d="M-12,-112 C-24,-126 -30,-142 -26,-158"/>
+          <path d="M6,-40 C20,-52 28,-68 26,-86"/><path d="M10,-76 C24,-90 30,-108 26,-126"/>
+          <path d="M12,-112 C22,-126 26,-142 22,-158"/>
+        </g>
+        <path d="M-4,0 H4 L2,22 H-2 Z" fill="#3A2A1E"/>
+        <path d="M0,22 V40" stroke="#1E1813" stroke-width="3"/>
+      </g></g>
+
+      <g fill="#FFF3D8" opacity="0.42">
+        <circle class="s15-mote" cx="700" cy="470" r="4"/><circle class="s15-mote" cx="1050" cy="420" r="3"/>
+        <circle class="s15-mote" cx="1320" cy="540" r="4"/>
+      </g>
+    </svg>
+
+    <!-- FG · blurred desk edge, then the letter shutter -->
+    <svg class="s15-plane s15-p-fg" id="s15-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s15-fgedge" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#5C4030"/><stop offset="0.6" stop-color="#3A2A1E"/><stop offset="1" stop-color="#241812"/>
+        </linearGradient>
+        <linearGradient id="s15-bigpaper" x1="0" y1="0" x2="0.22" y2="1">
+          <stop offset="0" stop-color="#FDF8EA"/><stop offset="0.42" stop-color="#F6E8CA"/><stop offset="0.76" stop-color="#EBD7B0"/>
+          <stop offset="1" stop-color="#DCC096"/>
+        </linearGradient>
+        <filter id="s15-fgblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>
+        <linearGradient id="s15-bigshadow" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#2B1F17" stop-opacity="0"/>
+          <stop offset="0.55" stop-color="#2B1F17" stop-opacity="0.16"/>
+          <stop offset="1" stop-color="#2B1F17" stop-opacity="0.4"/>
+        </linearGradient>
+      </defs>
+
+      <g id="s15-fgdesk" filter="url(#s15-fgblur)" opacity="0.95">
+        <path d="M-40,1080 L-40,1026 L520,996 L620,1080 Z" fill="url(#s15-fgedge)"/>
+        <path d="M-40,1042 L560,1010" stroke="#8A6B49" stroke-width="8" opacity="0.35"/>
+        <ellipse cx="180" cy="1046" rx="70" ry="16" fill="#1E1813" opacity="0.8"/>
+        <rect x="300" y="996" width="210" height="22" rx="10" fill="#1E1813" opacity="0.75" transform="rotate(-3 405 1007)"/>
+      </g>
+
+      <g id="s15-bigwrap" transform="translate(960,0)">
+        <g id="s15-big" opacity="0">
+          <rect x="-1400" y="-190" width="2800" height="150" fill="url(#s15-bigshadow)"/>
+          <path d="M-1400,-40 H1400 V2060 H-1400 Z" fill="url(#s15-bigpaper)" stroke="#8A6B49" stroke-width="10"/>
+          <g stroke="#B0832F" stroke-width="7" opacity="0.3">
+            <path d="M-1300,700 H1300"/><path d="M-1300,880 H1300"/><path d="M-1300,1060 H1300"/>
+            <path d="M-1300,1240 H1300"/><path d="M-1300,1420 H1300"/><path d="M-1300,1600 H1300"/>
+          </g>
+          <g stroke="#2B1F17" stroke-width="8" fill="none" opacity="0.34" stroke-linecap="round">
+            <path d="M-1240,760 C-1120,712 -1000,788 -880,740 C-760,692 -640,768 -520,720 C-400,672 -280,748 -160,700 C-40,652 80,728 200,680"/>
+            <path d="M-1240,940 C-1100,892 -960,968 -820,920 C-680,872 -540,948 -400,900 C-260,852 -120,928 20,880 C160,832 300,908 440,860"/>
+            <path d="M-1240,1120 C-1120,1072 -1000,1148 -880,1100 C-760,1052 -640,1128 -520,1080 C-400,1032 -280,1108 -160,1060 C-40,1012 80,1088 200,1040"/>
+            <path d="M-1240,1300 C-1100,1252 -960,1328 -820,1280 C-680,1232 -540,1308 -400,1260 C-260,1212 -120,1288 20,1240 C160,1192 300,1268 420,1220"/>
+            <path d="M-1240,1480 C-1120,1432 -1000,1508 -880,1460 C-760,1412 -640,1488 -520,1440 C-400,1392 -280,1468 -160,1420 C-40,1372 80,1448 180,1400"/>
+          </g>
+          <circle cx="1090" cy="1640" r="150" fill="url(#s15-wax)" stroke="#8E3524" stroke-width="12"/>
+          <circle cx="1090" cy="1640" r="96" fill="none" stroke="#F0C7B6" stroke-width="8" opacity="0.45"/>
+          <path d="M1030,1680 C1042,1618 1080,1580 1138,1572 C1126,1632 1090,1672 1030,1680 Z" fill="#8E3524" opacity="0.6"/>
+          <path d="M-1400,0 H1400" stroke="#FFF6DE" stroke-width="10" opacity="0.5"/>
+        </g>
+      </g>
+    </svg>
+
+    <div class="s15-grain"></div>
+    <div class="s15-vignette"></div>
+
+    <div class="s15-tag" id="s15-tag">
+      <span class="s15-tag-dot"></span>
+      <span class="s15-tag-text">FORGED REPLIES</span>
+    </div>
+    <div class="s15-rule" id="s15-rule"></div>
+  </div>
+</div>
+
+<script>
+(function initS15(){
+  var ID = "s15-forged-replies";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, { duration: 18.932 }, 0);
+
+  // ── PHASE 1: the room settles, the desk arrives ──────────────────────────
+  tl.fromTo("#s15-bg", { scale: 1.05, x: -10, y: -8 }, { scale: 1, x: 0, y: 0, duration: 18.8, ease: "sine.out" }, 0.05);
+  tl.fromTo("#s15-window", { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 1.0, ease: "power2.out" }, 0.28);
+  tl.fromTo("#s15-desk", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 1.0, ease: "power2.out" }, 0.45);
+  tl.fromTo("#s15-lantern-in", { y: -60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "power2.out" }, 0.70);
+  tl.fromTo("#s15-lampglow", { opacity: 0 }, { opacity: 0.75, duration: 1.1, ease: "sine.out" }, 1.10);
+  tl.set("#s15-lampflame", { scaleY: 0.5, transformOrigin: "50% 100%" }, 1.02);
+  tl.to("#s15-lampflame", { scaleY: 1, duration: 0.45, ease: "back.out(2)" }, 1.05);
+  tl.to("#s15-lampflame", { scaleY: 1.14, scaleX: 0.9, duration: 0.26, ease: "sine.inOut", yoyo: true, repeat: 18 }, 1.60);
+  tl.to("#s15-lampglow", { opacity: 0.5, duration: 1.5, ease: "sine.inOut", yoyo: true, repeat: 6 }, 2.30);
+  tl.to("#s15-lantern-in", { rotation: 1.6, duration: 3.2, ease: "sine.inOut", yoyo: true, repeat: 3, transformOrigin: "50% 0%" }, 2.60);
+
+  // ── PHASE 2: the desk is dressed ─────────────────────────────────────────
+  tl.fromTo("#s15-stack-in", { y: 44, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power2.out" }, 1.45);
+  tl.fromTo("#s15-dish-in", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.65, ease: "power2.out" }, 1.72);
+  tl.fromTo("#s15-inkpot-in", { y: 34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "power2.out" }, 1.90);
+  tl.fromTo("#s15-quill-in", { y: -30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }, 2.10);
+  tl.fromTo("#s15-stamp", { y: -56, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }, 2.30);
+
+  // ── PHASE 3: the hero letter lands and the hand writes ───────────────────
+  tl.fromTo("#s15-letter", { y: -70, opacity: 0 }, { y: 0, opacity: 1, duration: 0.85, ease: "power3.out" }, 2.70);
+  tl.fromTo("#s15-letter", { rotation: -2.5 }, { rotation: 0, duration: 0.9, ease: "power2.out", transformOrigin: "50% 50%" }, 2.70);
+  tl.fromTo(".s15-stroke", { attr: { "stroke-dasharray": 100, "stroke-dashoffset": 100 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.55, ease: "sine.inOut", stagger: 0.30 }, 3.55);
+  tl.fromTo("#s15-ink", { opacity: 0 }, { opacity: 0.78, duration: 0.4, ease: "sine.out" }, 3.40);
+
+  // quill dips and travels down the sheet
+  tl.to("#s15-quill-in", { y: -22, x: -18, duration: 0.5, ease: "power2.out" }, 4.20);
+  tl.to("#s15-quill-in", { y: -100, x: -430, duration: 0.9, ease: "power1.inOut" }, 4.72);
+  tl.to("#s15-quill-in", { y: -40, x: -520, duration: 1.2, ease: "power1.inOut" }, 5.66);
+  tl.to("#s15-quill-in", { y: 60, x: -560, duration: 0.9, ease: "power1.inOut" }, 6.90);
+  tl.to("#s15-quill-in", { y: 0, x: 0, duration: 0.8, ease: "power2.inOut" }, 8.00);
+
+  // ── PHASE 4: the seal is struck ──────────────────────────────────────────
+  tl.to("#s15-stamp", { x: -312, y: 196, duration: 0.72, ease: "power2.inOut" }, 7.98);
+  tl.to("#s15-stamp", { y: 232, duration: 0.12, ease: "power2.in" }, 8.70);
+  tl.set("#s15-seal", { opacity: 1 }, 8.80);
+  tl.fromTo("#s15-sealwax", { attr: { r: 1 } }, { attr: { r: 46 }, duration: 0.42, ease: "back.out(2.4)" }, 8.80);
+  tl.fromTo("#s15-sealemblem", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "sine.out" }, 9.10);
+  tl.to("#s15-stamp", { y: 190, duration: 0.22, ease: "power2.out" }, 9.24);
+  tl.to("#s15-stamp", { x: 0, y: 0, duration: 0.92, ease: "power2.inOut" }, 9.52);
+
+  // ── PHASE 5: the forged copy slides out from beneath ─────────────────────
+  tl.to("#s15-letter", { x: -26, y: -14, duration: 1.1, ease: "power2.out" }, 10.26);
+
+  // ── PHASE 5: the bundle gives up its sealed replies ───────────────────────
+  tl.to("#s15-tie", { opacity: 0, duration: 0.35, ease: "sine.in" }, 10.10);
+  tl.set("#s15-sheetA", { rotation: -7, transformOrigin: "0px 0px" }, 10.14);
+  tl.set("#s15-sheetB", { rotation: 4, transformOrigin: "0px 0px" }, 10.14);
+  tl.set("#s15-sheetC", { rotation: 11, transformOrigin: "0px 0px" }, 10.14);
+  tl.to("#s15-sheetA", { rotation: -29, x: -26, y: -18, duration: 0.95, ease: "power3.out" }, 10.18);
+  tl.to("#s15-sheetB", { rotation: 3, x: 2, y: -8, duration: 0.95, ease: "power3.out" }, 10.24);
+  tl.to("#s15-sheetC", { rotation: 31, x: 30, y: -10, duration: 0.95, ease: "power3.out" }, 10.30);
+
+  // ── living hold ──────────────────────────────────────────────────────────
+  tl.fromTo("#s15-stage", { scale: 1, y: 0 }, { scale: 1.035, y: -10, duration: 18.8, ease: "sine.inOut" }, 0.10);
+  tl.fromTo(".s15-mote", { y: 0, x: 0 }, { y: -54, x: 12, duration: 7.0, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 0.26 }, 1.40);
+  tl.to("#s15-letter", { y: -8, duration: 3.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 12.40);
+
+  // ── TAG ──────────────────────────────────────────────────────────────────
+  tl.fromTo("#s15-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -14 }, { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.6, ease: "power3.inOut" }, 3.20);
+  tl.fromTo("#s15-rule", { width: 0 }, { width: 306, duration: 0.5, ease: "power2.out" }, 3.56);
+
+  // ── SEAM: the great letter sweeps up over the lens ───────────────────────
+  tl.to("#s15-tag", { clipPath: "inset(0% 100% 0% 0%)", duration: 0.16, ease: "power2.in" }, 18.06);
+  tl.to("#s15-rule", { width: 0, duration: 0.16, ease: "power2.in" }, 18.06);
+  tl.set("#s15-big", { opacity: 1 }, 18.16);
+  tl.fromTo("#s15-big", { y: 1560 }, { y: -760, duration: 0.72, ease: "power2.inOut" }, 18.20);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

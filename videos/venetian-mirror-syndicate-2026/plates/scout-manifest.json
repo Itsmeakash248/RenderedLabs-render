@@ -1,0 +1,393 @@
+{
+  "video": "venetian-mirror-syndicate-2026",
+  "generated_at": "2026-11-11T20:10:23.727046+00:00",
+  "canonical_source_url": "https://en.chateauversailles.fr/discover/estate/palace/hall-mirrors",
+  "single_browser_instance": true,
+  "total_captures": 23,
+  "per_segment_counts": {
+    "seg-01": 2,
+    "seg-02": 2,
+    "seg-03": 3,
+    "seg-04": 2,
+    "seg-05": 2,
+    "seg-06": 2,
+    "seg-07": 2,
+    "seg-08": 3,
+    "seg-09": 3,
+    "seg-10": 2
+  },
+  "detail_regions_count": 6,
+  "outdated_assets_count": 0,
+  "captures": [
+    {
+      "segment": "seg-01",
+      "act": 1,
+      "raw_path": "plates/raw/raw-seg-01-01.png",
+      "source_url": "https://en.chateauversailles.fr/discover/estate/palace/hall-mirrors",
+      "publication_date": "2026-11-12",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Ch\u00e2teau de Versailles",
+      "selector": "article.hall-mirrors main; dimensions and architectural overview",
+      "evidence_rationale": "Official Versailles estate documentation of the 73m gallery length, 17 windows and 17 mirrored arcades containing 357 mirrors.",
+      "detail_regions": [
+        {
+          "label": "Gallery dimensions passage: 73m length and 17 mirrored arcades.",
+          "x": 200,
+          "y": 200,
+          "w": 900,
+          "h": 450
+        }
+      ]
+    },
+    {
+      "segment": "seg-01",
+      "act": 1,
+      "raw_path": "plates/raw/raw-seg-01-02.png",
+      "source_url": "https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/3d0e56c9-ac99-4aa0-9c3c-1f8fa3d1641b-chateau-versailles/article/01ae13d3-c1fe-4ee6-a25e-f6dd851af447-miroirs-la-galerie-glaces",
+      "publication_date": "2024-05-15",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Biblioth\u00e8que nationale de France",
+      "selector": "article.passerelles-article; 17 arches of 21 mirrors",
+      "evidence_rationale": "BnF architectural analysis establishing the assembly of 21 individual mirrors per arch.",
+      "detail_regions": [
+        {
+          "label": "21 mirrors per arch specification: proof of multi-pane assembly.",
+          "x": 150,
+          "y": 180,
+          "w": 850,
+          "h": 400
+        }
+      ]
+    },
+    {
+      "segment": "seg-02",
+      "act": 1,
+      "raw_path": "plates/raw/raw-seg-02-01.png",
+      "source_url": "https://www.persee.fr/doc/versa_1285-8412_2017_num_20_1_1170",
+      "publication_date": "2017-06-01",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Maurice Hamon, Versalia",
+      "selector": "section.persee-article; Q1 1660 trade volume ledger",
+      "evidence_rationale": "Archival proof that France imported 120,000 livres of glass in Q1 1660 alone.",
+      "detail_regions": [
+        {
+          "label": "120,000 livres import figure in Q1 1660 customs declaration.",
+          "x": 120,
+          "y": 220,
+          "w": 880,
+          "h": 420
+        }
+      ]
+    },
+    {
+      "segment": "seg-02",
+      "act": 1,
+      "raw_path": "plates/raw/raw-seg-02-02.png",
+      "source_url": "https://www.persee.fr/doc/versa_1285-8412_2017_num_20_1_1170",
+      "publication_date": "2017-06-01",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Maurice Hamon, Versalia",
+      "selector": "section.persee-article; 1665 customs tally of 216 crates",
+      "evidence_rationale": "French customs accounts tallying 216 crates of Venetian mirrors entering France in 1665.",
+      "detail_regions": []
+    },
+    {
+      "segment": "seg-03",
+      "act": 2,
+      "raw_path": "plates/raw/raw-seg-03-01.png",
+      "source_url": "https://www.persee.fr/doc/efr_0223-5099_2011_act_447_1_10165",
+      "publication_date": "2011-09-01",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Corine Maitte, EFR",
+      "selector": "section.efr-article; 1271 corporate regulation forbidding migration",
+      "evidence_rationale": "Primary guild statutes proving Venetian prohibition on artisan migration dating from 1271.",
+      "detail_regions": []
+    },
+    {
+      "segment": "seg-03",
+      "act": 2,
+      "raw_path": "plates/raw/raw-seg-03-02.png",
+      "source_url": "https://www.ngv.vic.gov.au/essay/portrait-of-venice-majestic-murano/",
+      "publication_date": "2024-07-30",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Catherine Kovesi, NGV",
+      "selector": "main.article-content; 1295 decree and death penalty statute",
+      "evidence_rationale": "Curatorial history documenting the 1295 island confinement and capital punishment for trade secrets.",
+      "detail_regions": []
+    },
+    {
+      "segment": "seg-03",
+      "act": 2,
+      "raw_path": "plates/raw/raw-seg-03-03.png",
+      "source_url": "https://www.persee.fr/doc/pharm_0995-838x_1926_num_14_51_1639_t1_0261_0000_1",
+      "publication_date": "1926-03-01",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "E.-H. Guitard, Rev. Hist. Pharm.",
+      "selector": "div.persee-page; Council of Ten decrees of 1547 and 1705",
+      "evidence_rationale": "Archival citation of Venetian decrees authorizing Council of Ten special emissaries to assassinate defectors abroad.",
+      "detail_regions": []
+    },
+    {
+      "segment": "seg-04",
+      "act": 2,
+      "raw_path": "plates/raw/raw-seg-04-01.png",
+      "source_url": "https://theses.chartes.psl.eu/document/ENCPOS_1908_08",
+      "publication_date": "1908-05-01",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "\u00c9cole nationale des chartes",
+      "selector": "article.thesis-summary; 1664 Bonzi mission",
+      "evidence_rationale": "Archival thesis documenting Colbert's secret order to Ambassador Bonzi in 1664 to recruit Murano mirror workers.",
+      "detail_regions": []
+    },
+    {
+      "segment": "seg-04",
+      "act": 2,
+      "raw_path": "plates/raw/raw-seg-04-02.png",
+      "source_url": "https://theses.chartes.psl.eu/document/ENCPOS_1908_08",
+      "publication_date": "1908-05-01",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "\u00c9cole nationale des chartes",
+      "selector": "article.thesis-summary; October 1665 Rivetta arrival",
+      "evidence_rationale": "Record of Antonio della Rivetta and his companions successfully arriving in Paris in October 1665.",
+      "detail_regions": []
+    },
+    {
+      "segment": "seg-05",
+      "act": 2,
+      "raw_path": "plates/raw/raw-seg-05-01.png",
+      "source_url": "https://fr.wikisource.org/wiki/Lettres_patentes_pour_l%27%C3%A9tablissement_de_la_Manufacture_royale_des_glaces_de_miroirs,_1665",
+      "publication_date": "1665-10-08",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Archives Nationales / Wikisource",
+      "selector": "div.mw-parser-output; patent preamble and Murano reference",
+      "evidence_rationale": "Primary royal letters patent creating the manufacture to replicate Murano mirror sizes.",
+      "detail_regions": [
+        {
+          "label": "Clause specifying manufacture of mirrors of all sizes made in Murano near Venice.",
+          "x": 100,
+          "y": 150,
+          "w": 950,
+          "h": 450
+        }
+      ]
+    },
+    {
+      "segment": "seg-05",
+      "act": 2,
+      "raw_path": "plates/raw/raw-seg-05-02.png",
+      "source_url": "https://fr.wikisource.org/wiki/Lettres_patentes_pour_l%27%C3%A9tablissement_de_la_Manufacture_royale_des_glaces_de_miroirs,_1665",
+      "publication_date": "1665-10-08",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Archives Nationales / Wikisource",
+      "selector": "div.mw-parser-output; financial advance and naturalization covenant",
+      "evidence_rationale": "Financial covenants granting 12,000 livres royal advance and naturalization after 8 years.",
+      "detail_regions": [
+        {
+          "label": "12,000 livres interest-free loan and 8-year naturalization covenant for Venetian defectors.",
+          "x": 80,
+          "y": 200,
+          "w": 920,
+          "h": 400
+        }
+      ]
+    },
+    {
+      "segment": "seg-06",
+      "act": 2,
+      "raw_path": "plates/raw/raw-seg-06-01.png",
+      "source_url": "https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/3d0e56c9-ac99-4aa0-9c3c-1f8fa3d1641b-chateau-versailles/article/01ae13d3-c1fe-4ee6-a25e-f6dd851af447-miroirs-la-galerie-glaces",
+      "publication_date": "2024-05-15",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Biblioth\u00e8que nationale de France",
+      "selector": "article.passerelles-article; 1666 first flawless mirrors",
+      "evidence_rationale": "Official date of the first French-manufactured flawless mirror output at the rue de Reuilly workshop.",
+      "detail_regions": []
+    },
+    {
+      "segment": "seg-06",
+      "act": 2,
+      "raw_path": "plates/raw/raw-seg-06-02.png",
+      "source_url": "https://cabinetmagazine.org/issues/14/mcelheny.php",
+      "publication_date": "2004-06-01",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Josiah McElheny, Cabinet",
+      "selector": "article.cabinet-text; tin-mercury amalgam chemistry",
+      "evidence_rationale": "Technical analysis of the chemical tin-mercury amalgam process that created the Venetian mirror secret.",
+      "detail_regions": []
+    },
+    {
+      "segment": "seg-07",
+      "act": 2,
+      "raw_path": "plates/raw/raw-seg-07-01.png",
+      "source_url": "https://www.areion24.news/2025/08/25/laffaire-des-miroirs-de-venise/",
+      "publication_date": "2025-08-25",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Florence Vidal, Areion24",
+      "selector": "article.areion-post; Venetian ambassador surveillance",
+      "evidence_rationale": "Investigative review of Venetian ambassador Sagredo's surveillance and sabotage mission against the Paris workshop.",
+      "detail_regions": []
+    },
+    {
+      "segment": "seg-07",
+      "act": 2,
+      "raw_path": "plates/raw/raw-seg-07-02.png",
+      "source_url": "https://theses.chartes.psl.eu/document/ENCPOS_1908_08",
+      "publication_date": "1908-05-01",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "\u00c9cole nationale des chartes",
+      "selector": "article.thesis-summary; Sagredo sowing division among glassmakers",
+      "evidence_rationale": "Archival proof of Venetian diplomatic efforts to sow division and provoke infighting between La Motta and Rivetta.",
+      "detail_regions": []
+    },
+    {
+      "segment": "seg-08",
+      "act": 2,
+      "raw_path": "plates/raw/raw-seg-08-01.png",
+      "source_url": "https://www.geo.fr/histoire/la-galerie-des-glaces-miroir-du-pouvoir-a-versailles-231778",
+      "publication_date": "2026-05-08",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Fr\u00e9d\u00e9ric Brillet, Geo",
+      "selector": "article.geo-article; 800 workdays equivalence",
+      "evidence_rationale": "Economic equivalence demonstrating that a single luxury mirror was priced at 800 artisan workdays.",
+      "detail_regions": []
+    },
+    {
+      "segment": "seg-08",
+      "act": 2,
+      "raw_path": "plates/raw/raw-seg-08-02.png",
+      "source_url": "https://cabinetmagazine.org/issues/14/mcelheny.php",
+      "publication_date": "2004-06-01",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Josiah McElheny, Cabinet",
+      "selector": "article.cabinet-text; Council of Ten assassination account",
+      "evidence_rationale": "Archival record of the sudden 1667 Paris artisan deaths and the enduring attribution to Council of Ten reprisals.",
+      "detail_regions": []
+    },
+    {
+      "segment": "seg-08",
+      "act": 2,
+      "raw_path": "plates/raw/raw-seg-08-03.png",
+      "source_url": "https://theses.chartes.psl.eu/document/ENCPOS_1908_08",
+      "publication_date": "1908-05-01",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "\u00c9cole nationale des chartes",
+      "selector": "article.thesis-summary; Giustiniani amnesty and return",
+      "evidence_rationale": "Return of Antonio della Rivetta and the senior masters to Venice in spring 1667 under threat and amnesty.",
+      "detail_regions": [
+        {
+          "label": "Amnesty and threat negotiation forcing Rivetta and companions to repatriate to Venice.",
+          "x": 120,
+          "y": 260,
+          "w": 880,
+          "h": 380
+        }
+      ]
+    },
+    {
+      "segment": "seg-09",
+      "act": 3,
+      "raw_path": "plates/raw/raw-seg-09-01.png",
+      "source_url": "https://www.persee.fr/doc/corr_0000-0002_1863_cor_2_2_924_t1_0529_0000_2",
+      "publication_date": "1863-01-01",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Pierre Cl\u00e9ment, Lettres de Colbert",
+      "selector": "div.persee-letter; Colbert letter of 13 June 1670",
+      "evidence_rationale": "Primary letter from Colbert to France's ambassador refusing the return of Rivetta and Barbin due to their past disruption.",
+      "detail_regions": []
+    },
+    {
+      "segment": "seg-09",
+      "act": 3,
+      "raw_path": "plates/raw/raw-seg-09-02.png",
+      "source_url": "https://www.persee.fr/doc/corr_0000-0002_1863_cor_2_2_924_t1_0484_0000_2",
+      "publication_date": "1863-01-01",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Pierre Cl\u00e9ment, Lettres de Colbert",
+      "selector": "div.persee-letter; Colbert secret instruction of 16 August 1669",
+      "evidence_rationale": "Primary ministerial instruction by Colbert launching a secret intelligence survey into Murano's glassworks in August 1669.",
+      "detail_regions": []
+    },
+    {
+      "segment": "seg-09",
+      "act": 3,
+      "raw_path": "plates/raw/raw-seg-09-03.png",
+      "source_url": "https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/3d0e56c9-ac99-4aa0-9c3c-1f8fa3d1641b-chateau-versailles/article/01ae13d3-c1fe-4ee6-a25e-f6dd851af447-miroirs-la-galerie-glaces",
+      "publication_date": "2024-05-15",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Biblioth\u00e8que nationale de France",
+      "selector": "article.passerelles-article; September 1672 import embargo",
+      "evidence_rationale": "Decree of September 1672 placing a total embargo on the importation of Venetian glass into France.",
+      "detail_regions": []
+    },
+    {
+      "segment": "seg-10",
+      "act": 3,
+      "raw_path": "plates/raw/raw-seg-10-01.png",
+      "source_url": "https://en.chateauversailles.fr/discover/estate/palace/hall-mirrors",
+      "publication_date": "2026-11-12",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Ch\u00e2teau de Versailles",
+      "selector": "article.hall-mirrors main; political and economic rivalry with Venice",
+      "evidence_rationale": "Official confirmation that the Hall of Mirrors served as the sovereign proof that French manufacture had shattered the Venetian monopoly.",
+      "detail_regions": []
+    },
+    {
+      "segment": "seg-10",
+      "act": 3,
+      "raw_path": "plates/raw/raw-seg-10-02.png",
+      "source_url": "https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/3d0e56c9-ac99-4aa0-9c3c-1f8fa3d1641b-chateau-versailles/article/01ae13d3-c1fe-4ee6-a25e-f6dd851af447-miroirs-la-galerie-glaces",
+      "publication_date": "2024-05-15",
+      "recency_verified": true,
+      "single_browser_instance": true,
+      "license": "Primary historical document / academic citation (fair use)",
+      "credit": "Biblioth\u00e8que nationale de France",
+      "selector": "article.passerelles-article; 300,000-400,000 livres export reversal",
+      "evidence_rationale": "Economic outcome: French mirror manufacturing reversing trade flows to generate 300,000\u2013400,000 livres/year in exports across Europe.",
+      "detail_regions": []
+    }
+  ]
+}

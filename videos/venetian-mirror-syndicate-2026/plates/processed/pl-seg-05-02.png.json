@@ -1,0 +1,28 @@
+{
+  "asset_id": "pl-seg-05-02",
+  "source_url": "https://fr.wikisource.org/wiki/Lettres_patentes_pour_l%27%C3%A9tablissement_de_la_Manufacture_royale_des_glaces_de_miroirs,_1665",
+  "publication_date": "1665-10-08",
+  "width": 1400,
+  "height": 1000,
+  "scale_factor": 1.0,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": [
+    {
+      "phrase": "servi actuellement pendant huit ann\u00e9es en ladite Manufacture",
+      "x": 844,
+      "y": 2938,
+      "w": 34,
+      "h": 17
+    },
+    {
+      "phrase": "servi actuellement pendant huit ann\u00e9es en ladite Manufacture",
+      "x": 302,
+      "y": 2964,
+      "w": 408,
+      "h": 17
+    }
+  ]
+}

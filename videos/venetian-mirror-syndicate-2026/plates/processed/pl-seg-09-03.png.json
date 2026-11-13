@@ -1,0 +1,21 @@
+{
+  "asset_id": "pl-seg-09-03",
+  "source_url": "https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/3d0e56c9-ac99-4aa0-9c3c-1f8fa3d1641b-chateau-versailles/article/01ae13d3-c1fe-4ee6-a25e-f6dd851af447-miroirs-la-galerie-glaces",
+  "publication_date": "2024-05-15",
+  "width": 1400,
+  "height": 1000,
+  "scale_factor": 1.0,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": [
+    {
+      "phrase": "En septembre 1672",
+      "x": 218,
+      "y": 341,
+      "w": 126,
+      "h": 21
+    }
+  ]
+}

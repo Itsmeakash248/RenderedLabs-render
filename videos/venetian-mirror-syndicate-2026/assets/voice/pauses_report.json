@@ -1,0 +1,16 @@
+{
+  "input": "videos/venetian-mirror-syndicate-2026/assets/voice/narration.mp3",
+  "output": "videos/venetian-mirror-syndicate-2026/assets/voice/narration.mp3",
+  "profile": "documentary",
+  "speech_level_dbfs": -12.1,
+  "silence_thresh_dbfs": -45.4,
+  "duration_before_s": 520.989,
+  "duration_after_s": 520.989,
+  "time_saved_s": 0.0,
+  "total_pauses_detected": 125,
+  "median_pause_s": 0.35,
+  "max_pause_s": 0.41,
+  "pauses_shortened_count": 0,
+  "applied": true,
+  "cuts": []
+}

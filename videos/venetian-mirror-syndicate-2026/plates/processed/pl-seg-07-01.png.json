@@ -1,0 +1,21 @@
+{
+  "asset_id": "pl-seg-07-01",
+  "source_url": "https://www.areion24.news/2025/08/25/laffaire-des-miroirs-de-venise/",
+  "publication_date": "2025-08-25",
+  "width": 1400,
+  "height": 1000,
+  "scale_factor": 1.0,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": [
+    {
+      "phrase": "supr\u00e9matie miroiti\u00e8re de la S\u00e9r\u00e9nissime",
+      "x": 237,
+      "y": 250,
+      "w": 753,
+      "h": 177
+    }
+  ]
+}

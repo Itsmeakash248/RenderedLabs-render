@@ -1,0 +1,331 @@
+{
+  "theme": "The Venetian Mirror War That Built the Hall of Mirrors. A bureaucratic thriller of glass, secrecy and stolen light: wonder at the furnace, dread in the customs house and the archive, scale at Versailles, and a quiet resolution on human hands. One continuous arc, no per-section volume steps.",
+  "narration": {
+    "act_i": "0-111s - Venice, the furnace island, the mirror as luxury; arp and warm pad, no drums",
+    "act_ii": "111-303s - customs, espionage, poison, the embargo; strings and a straight processional pulse",
+    "act_iii": "303-415s - the archive of refusals, the portcullis, the count; drums enter, Neapolitan weight",
+    "act_iv": "415-521s - 357 mirrors, the Hall, the handprint; golden modulation, arch motif, resolve"
+  },
+  "template": "cine",
+  "key": "dm",
+  "prog": "F",
+  "bpm": 90,
+  "bars": 196,
+  "tail": 2.6,
+  "seed": 2711,
+  "intro": 44,
+  "build": 70,
+  "climax": 82,
+  "groove": "straight",
+  "motif_style": "arch",
+  "modulate": true,
+  "mod_semitones": 2,
+  "arp": {
+    "on": true,
+    "vel": 48,
+    "jit": 4,
+    "gain": 0.46,
+    "dur": 2.0,
+    "rel": 1.1
+  },
+  "pulse": {
+    "on": true,
+    "vel": 50,
+    "gain": 0.28,
+    "dur": 1.7,
+    "rel": 1.0
+  },
+  "strings": {
+    "on": true,
+    "vel_build": 54,
+    "vel_climax": 62,
+    "gain": 0.92,
+    "overlap": 1.4
+  },
+  "drums": {
+    "on": true,
+    "kick": true,
+    "hats": true,
+    "snare": true,
+    "shaker": true,
+    "vel_kick": 0.62,
+    "vel_kick_soft": 0.34,
+    "vel_hat": 0.2,
+    "vel_hat_soft": 0.1,
+    "vel_snare": 0.46,
+    "vel_shaker": 0.07,
+    "fill": true,
+    "crash": true,
+    "sub": true,
+    "gain": 0.9
+  },
+  "lead": {
+    "on": true,
+    "motif": null,
+    "oct_harp": 12,
+    "vel_harp": 58,
+    "vel_piano": 64,
+    "gain_harp": 0.24,
+    "gain_piano": 0.32,
+    "dur_harp": 2.3,
+    "rel_harp": 1.6,
+    "dur_piano": 1.5,
+    "rel_piano": 0.9
+  },
+  "hits": {
+    "fill": true,
+    "crash": true,
+    "sub": true,
+    "gain_crash": 0.24,
+    "gain_crash_final": 0.18,
+    "gain_sub": 0.34
+  },
+  "mix": {
+    "piano": 0.78,
+    "strings": 0.86,
+    "harp": 0.62,
+    "drums": 0.56,
+    "sfx": 0.7,
+    "brass": 0.86,
+    "perc": 0.66,
+    "pluck": 0.74,
+    "duck_on": true,
+    "duck_depth": 0.45,
+    "duck_tau": 0.2,
+    "delay_wet": 0.09,
+    "verb_room_scale": 1.06,
+    "verb_wet_scale": 1.04,
+    "width": 0.12,
+    "fades": [
+      0.5,
+      2.2
+    ],
+    "lufs": -14.0
+  },
+  "sfx": {
+    "impact": [
+      [
+        1.007,
+        0.35
+      ],
+      [
+        132.351,
+        0.35
+      ],
+      [
+        190.163,
+        0.35
+      ],
+      [
+        303.417,
+        0.35
+      ],
+      [
+        402.936,
+        0.35
+      ],
+      [
+        431.465,
+        0.35
+      ],
+      [
+        470.19,
+        0.35
+      ],
+      [
+        500.102,
+        0.35
+      ]
+    ],
+    "whoosh": [
+      [
+        25.903,
+        0.3
+      ],
+      [
+        116.9,
+        0.3
+      ],
+      [
+        175.006,
+        0.3
+      ],
+      [
+        203.832,
+        0.3
+      ],
+      [
+        218.264,
+        0.3
+      ],
+      [
+        278.527,
+        0.3
+      ],
+      [
+        374.15,
+        0.3
+      ]
+    ],
+    "click": [
+      [
+        51.655,
+        0.28
+      ],
+      [
+        100.747,
+        0.28
+      ],
+      [
+        159.38,
+        0.28
+      ],
+      [
+        234.913,
+        0.28
+      ],
+      [
+        317.311,
+        0.28
+      ],
+      [
+        337.601,
+        0.28
+      ],
+      [
+        391.333,
+        0.28
+      ],
+      [
+        451.319,
+        0.28
+      ]
+    ],
+    "chime": [
+      [
+        73.793,
+        0.3
+      ],
+      [
+        251.969,
+        0.3
+      ],
+      [
+        439.578,
+        0.3
+      ],
+      [
+        481.512,
+        0.3
+      ],
+      [
+        508.363,
+        0.3
+      ]
+    ],
+    "sub": [
+      [
+        83.101,
+        0.34
+      ],
+      [
+        147.997,
+        0.34
+      ],
+      [
+        291.07,
+        0.34
+      ],
+      [
+        356.822,
+        0.34
+      ],
+      [
+        414.844,
+        0.34
+      ]
+    ],
+    "riser": [
+      [
+        267.586,
+        0.32
+      ]
+    ]
+  },
+  "events": {
+    "harp": [
+      [
+        1.05,
+        62,
+        68,
+        2.4,
+        0.44
+      ],
+      [
+        500.45,
+        74,
+        62,
+        2.8,
+        0.46
+      ],
+      [
+        518.9,
+        69,
+        58,
+        3.0,
+        0.4
+      ]
+    ],
+    "piano": [
+      [
+        83.101,
+        38,
+        74,
+        2.2,
+        0.32
+      ],
+      [
+        190.163,
+        38,
+        76,
+        2.2,
+        0.32
+      ],
+      [
+        303.417,
+        38,
+        80,
+        2.4,
+        0.34
+      ],
+      [
+        414.844,
+        38,
+        80,
+        2.4,
+        0.34
+      ],
+      [
+        447.95,
+        62,
+        54,
+        1.6,
+        0.3
+      ],
+      [
+        487.95,
+        57,
+        52,
+        1.8,
+        0.3
+      ],
+      [
+        500.102,
+        26,
+        84,
+        2.8,
+        0.36
+      ]
+    ]
+  }
+}

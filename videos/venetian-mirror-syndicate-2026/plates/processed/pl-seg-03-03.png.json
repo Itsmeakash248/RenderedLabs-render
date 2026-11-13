@@ -1,0 +1,13 @@
+{
+  "asset_id": "pl-seg-03-03",
+  "source_url": "https://www.persee.fr/doc/pharm_0995-838x_1926_num_14_51_1639_t1_0261_0000_1",
+  "publication_date": "1926-03-01",
+  "width": 1400,
+  "height": 1000,
+  "scale_factor": 1.0,
+  "warm_grade": {
+    "R": "+1.5%",
+    "B": "-1.5%"
+  },
+  "boxes": []
+}

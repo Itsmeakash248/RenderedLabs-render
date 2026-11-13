@@ -1,0 +1,872 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s26-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s26-still-gilded"] .s26-stage{position:absolute;inset:0;transform-origin:50% 54%;}
+[data-composition-id="s26-still-gilded"] .s26-ground{position:absolute;inset:0;background:
+  radial-gradient(46% 42% at 52% 38%, rgba(255,226,168,0.58) 0%, rgba(255,226,168,0.18) 55%, rgba(255,226,168,0) 80%),
+  radial-gradient(30% 30% at 88% 26%, rgba(255,246,222,0.55) 0%, rgba(255,246,222,0) 70%),
+  radial-gradient(36% 32% at 8% 86%, rgba(194,89,63,0.13) 0%, rgba(194,89,63,0) 72%),
+  linear-gradient(178deg, #FBF1DA 0%, #F4E3C4 38%, #E6CEA6 68%, #CBA87C 100%);}
+[data-composition-id="s26-still-gilded"] .s26-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="s26-still-gilded"] .s26-p-bg{z-index:1;}
+[data-composition-id="s26-still-gilded"] .s26-p-mg{z-index:2;}
+[data-composition-id="s26-still-gilded"] .s26-p-fg{z-index:4;}
+[data-composition-id="s26-still-gilded"] .s26-grain{position:absolute;inset:0;z-index:6;pointer-events:none;
+  background-image:radial-gradient(rgba(43,31,23,0.55) 0.4px, transparent 0.5px);background-size:3px 3px;
+  opacity:0.11;mix-blend-mode:multiply;}
+[data-composition-id="s26-still-gilded"] .s26-vignette{position:absolute;inset:0;z-index:7;pointer-events:none;
+  background:
+    linear-gradient(to top, rgba(43,31,23,0.40) 0%, rgba(43,31,23,0.10) 14%, rgba(43,31,23,0) 28%),
+    linear-gradient(to right, rgba(43,31,23,0.30) 0%, rgba(43,31,23,0.06) 17%, rgba(43,31,23,0) 34%),
+    linear-gradient(to left, rgba(43,31,23,0.22) 0%, rgba(43,31,23,0) 26%),
+    radial-gradient(112% 90% at 50% 52%, rgba(43,31,23,0) 46%, rgba(43,31,23,0.34) 100%);}
+[data-composition-id="s26-still-gilded"] .s26-tag{position:absolute;left:86px;top:92px;z-index:8;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;
+  background:linear-gradient(180deg,#FDFAF4 0%,#F1E7D6 100%);
+  box-shadow:0 12px 30px rgba(43,31,23,0.26),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s26-still-gilded"] .s26-tag-dot{width:15px;height:15px;border-radius:50%;background:#C2593F;
+  box-shadow:0 0 0 5px rgba(194,89,63,0.20),inset 0 0 0 3px #A8462F;}
+[data-composition-id="s26-still-gilded"] .s26-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.16em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s26-still-gilded"] .s26-rule{position:absolute;left:86px;top:158px;height:5px;width:0;z-index:8;background:#C2593F;border-radius:4px;
+  box-shadow:0 2px 6px rgba(43,31,23,0.25);}
+[data-composition-id="s26-still-gilded"] .s26-mote{transform-box:fill-box;transform-origin:50% 50%;}
+[data-composition-id="s26-still-gilded"] .s26-glint{transform-box:fill-box;transform-origin:50% 50%;}
+[data-composition-id="s26-still-gilded"] .s26-flake{transform-box:fill-box;transform-origin:50% 50%;}
+</style>
+
+<div id="root" data-composition-id="s26-still-gilded" data-width="1920" data-height="1080" data-start="0" data-duration="12.225">
+  <div class="s26-stage" id="s26-stage">
+    <div class="s26-ground"></div>
+
+    <!-- BG · the Hall of Mirrors, full bleed, one-point perspective -->
+    <svg class="s26-plane s26-p-bg" id="s26-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s26-wallL" x1="0" y1="0" x2="1" y2="0.14">
+          <stop offset="0" stop-color="#B98A5C"/><stop offset="0.34" stop-color="#DCC29B"/><stop offset="0.72" stop-color="#F1DDB9"/><stop offset="1" stop-color="#FBF1DA"/>
+        </linearGradient>
+        <linearGradient id="s26-wallR" x1="1" y1="0" x2="0" y2="0.14">
+          <stop offset="0" stop-color="#D2A87A"/><stop offset="0.38" stop-color="#F0DBB5"/><stop offset="0.76" stop-color="#FDF3DC"/><stop offset="1" stop-color="#FFF9E9"/>
+        </linearGradient>
+        <linearGradient id="s26-ceil" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#FDF6E4"/><stop offset="0.36" stop-color="#F4E2C1"/><stop offset="0.72" stop-color="#E4C89E"/><stop offset="1" stop-color="#D3B287"/>
+        </linearGradient>
+        <linearGradient id="s26-vaultpaint" x1="0" y1="0" x2="0.06" y2="1">
+          <stop offset="0" stop-color="#E89A3C" stop-opacity="0.30"/><stop offset="0.48" stop-color="#C2593F" stop-opacity="0.20"/><stop offset="1" stop-color="#E3BB64" stop-opacity="0.26"/>
+        </linearGradient>
+        <linearGradient id="s26-floor" x1="0" y1="0" x2="0.04" y2="1">
+          <stop offset="0" stop-color="#E9D4AF"/><stop offset="0.30" stop-color="#D9BC92"/><stop offset="0.62" stop-color="#C99A67"/><stop offset="1" stop-color="#A97445"/>
+        </linearGradient>
+        <linearGradient id="s26-far" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#F6E6C6"/><stop offset="0.5" stop-color="#E4CBA4"/><stop offset="1" stop-color="#C99A67"/>
+        </linearGradient>
+        <radialGradient id="s26-door" cx="50%" cy="52%" r="58%">
+          <stop offset="0" stop-color="#FFFDF6" stop-opacity="0.95"/><stop offset="0.36" stop-color="#FFE8B4" stop-opacity="0.7"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="s26-mirror" x1="0" y1="0" x2="0.1" y2="1">
+          <stop offset="0" stop-color="#C99A67"/><stop offset="0.18" stop-color="#B98A5C"/><stop offset="0.55" stop-color="#8A5F36"/>
+          <stop offset="0.82" stop-color="#6E4826"/><stop offset="1" stop-color="#9E742A"/>
+        </linearGradient>
+        <linearGradient id="s26-win" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#FFFDF6"/><stop offset="0.30" stop-color="#FFF3D6"/><stop offset="0.62" stop-color="#F6DCAE"/>
+          <stop offset="0.85" stop-color="#DFBE8C"/><stop offset="1" stop-color="#C99A67"/>
+        </linearGradient>
+        <linearGradient id="s26-brass" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.28" stop-color="#E3BB64"/><stop offset="0.62" stop-color="#C89D42"/>
+          <stop offset="0.88" stop-color="#9E742A"/><stop offset="1" stop-color="#D9AE56"/>
+        </linearGradient>
+        <linearGradient id="s26-brassH" gradientUnits="userSpaceOnUse" x1="-80" y1="0" x2="2000" y2="0">
+          <stop offset="0" stop-color="#9E742A"/><stop offset="0.18" stop-color="#E3BB64"/><stop offset="0.4" stop-color="#FCEBB8"/>
+          <stop offset="0.6" stop-color="#C89D42"/><stop offset="0.82" stop-color="#E3BB64"/><stop offset="1" stop-color="#9E742A"/>
+        </linearGradient>
+        <linearGradient id="s26-brassV" gradientUnits="userSpaceOnUse" x1="0" y1="-200" x2="0" y2="640">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.35" stop-color="#E3BB64"/><stop offset="0.68" stop-color="#C89D42"/>
+          <stop offset="0.9" stop-color="#9E742A"/><stop offset="1" stop-color="#D9AE56"/>
+        </linearGradient>
+        <radialGradient id="s26-glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFE8B4" stop-opacity="0.62"/><stop offset="0.45" stop-color="#FFD98E" stop-opacity="0.24"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s26-pool" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFF6DE" stop-opacity="0.55"/><stop offset="0.55" stop-color="#FFD98E" stop-opacity="0.2"/>
+          <stop offset="1" stop-color="#FFD98E" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="s26-shaft" gradientUnits="userSpaceOnUse" x1="1700" y1="250" x2="1080" y2="980">
+          <stop offset="0" stop-color="#FFF3D6" stop-opacity="0.5"/><stop offset="0.55" stop-color="#FFE3B0" stop-opacity="0.24"/>
+          <stop offset="1" stop-color="#E8C48E" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="s26-spec" gradientUnits="userSpaceOnUse" x1="960" y1="600" x2="960" y2="1080">
+          <stop offset="0" stop-color="#FFF9E9" stop-opacity="0.1"/><stop offset="0.4" stop-color="#FFE8B4" stop-opacity="0.4"/>
+          <stop offset="1" stop-color="#FFD98E" stop-opacity="0.08"/>
+        </linearGradient>
+        <linearGradient id="s26-crystal" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stop-color="#FFFDF6"/><stop offset="0.55" stop-color="#FCEBB8"/><stop offset="1" stop-color="#C89D42"/>
+        </linearGradient>
+        <clipPath id="s26-floorclip"><path d="M 0,1000 L 749,688 L 1171,688 L 1920,1000 L 1920,1080 L 0,1080 Z"/></clipPath>
+        <clipPath id="s26-wallLclip"><path d="M 0,140 L 749,499 L 749,688 L 0,1000 Z"/></clipPath>
+        <clipPath id="s26-wallRclip"><path d="M 1920,140 L 1171,499 L 1171,688 L 1920,1000 Z"/></clipPath>
+        <filter id="s26-bblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="32"/></filter>
+        <filter id="s26-mblur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="12"/></filter>
+        <filter id="s26-soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6"/></filter>
+        <filter id="s26-deep" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="19"/></filter>
+        <filter id="s26-grainf" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.84" numOctaves="2" seed="126" result="n"/>
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.14  0 0 0 0 0.10  0 0 0 0 0.07  0 0 0 0.5 0"/>
+        </filter>
+      </defs>
+
+      <g id="s26-hall">
+        <!-- vault -->
+        <path d="M 0,0 L 0,140 L 749,499 L 1171,499 L 1920,140 L 1920,0 Z" fill="url(#s26-ceil)"/>
+        <path d="M 640,-60 C 760,150 878,346 946,590 L 974,590 C 1042,346 1160,150 1280,-60 Z" fill="url(#s26-vaultpaint)"/>
+        <ellipse cx="960" cy="250" rx="330" ry="150" fill="#FFE8B4" opacity="0.22" filter="url(#s26-bblur)"/>
+
+        <!-- painted panels on the vault -->
+        <g id="s26-paint1">
+          <ellipse cx="792" cy="168" rx="58" ry="78" fill="#E89A3C" opacity="0.34" stroke="#9E742A" stroke-width="6"/>
+          <ellipse cx="792" cy="168" rx="40" ry="58" fill="#C2593F" opacity="0.24"/>
+          <path d="M 772,206 C 760,160 786,132 806,140 C 828,148 820,196 794,206" fill="none" stroke="#FCEBB8" stroke-width="5" opacity="0.6"/>
+          <path d="M 780,150 C 792,160 800,180 796,200" fill="none" stroke="#5C3A20" stroke-width="3" opacity="0.4"/>
+        </g>
+        <g id="s26-paint2">
+          <ellipse cx="1128" cy="238" rx="44" ry="60" fill="#E89A3C" opacity="0.30" stroke="#9E742A" stroke-width="5"/>
+          <ellipse cx="1128" cy="238" rx="30" ry="44" fill="#C2593F" opacity="0.22"/>
+          <path d="M 1112,268 C 1104,234 1122,212 1138,218 C 1152,224 1148,258 1128,268" fill="none" stroke="#FCEBB8" stroke-width="4" opacity="0.55"/>
+        </g>
+        <g id="s26-paint3">
+          <ellipse cx="872" cy="418" rx="30" ry="42" fill="#E89A3C" opacity="0.26" stroke="#9E742A" stroke-width="4"/>
+          <path d="M 860,444 C 854,420 866,404 878,408 C 888,412 886,436 872,444" fill="none" stroke="#FCEBB8" stroke-width="3" opacity="0.5"/>
+        </g>
+
+        <!-- vault ribs: the gilded arches over the ceiling -->
+        <g fill="none" stroke-linecap="round">
+          <path d="M 19,149 Q 960,-77 1901,149" stroke="#3A2A1E" stroke-width="30" opacity="0.30"/>
+          <path d="M 19,149 Q 960,-77 1901,149" stroke="url(#s26-brassH)" stroke-width="19"/>
+          <path d="M 19,143 Q 960,-83 1901,143" stroke="#FCEBB8" stroke-width="5" opacity="0.55"/>
+          <path d="M 154,214 Q 960,15 1766,214" stroke="#3A2A1E" stroke-width="24" opacity="0.34"/>
+          <path d="M 154,214 Q 960,15 1766,214" stroke="url(#s26-brassH)" stroke-width="15"/>
+          <path d="M 154,209 Q 960,9 1766,209" stroke="#FCEBB8" stroke-width="4" opacity="0.5"/>
+          <path d="M 288,278 Q 960,108 1632,278" stroke="#3A2A1E" stroke-width="20" opacity="0.36"/>
+          <path d="M 288,278 Q 960,108 1632,278" stroke="url(#s26-brassH)" stroke-width="13"/>
+          <path d="M 422,342 Q 960,202 1498,342" stroke="#3A2A1E" stroke-width="17" opacity="0.38"/>
+          <path d="M 422,342 Q 960,202 1498,342" stroke="url(#s26-brassH)" stroke-width="11"/>
+          <path d="M 557,407 Q 960,297 1363,407" stroke="#3A2A1E" stroke-width="14" opacity="0.4"/>
+          <path d="M 557,407 Q 960,297 1363,407" stroke="url(#s26-brassH)" stroke-width="9"/>
+          <path d="M 682,467 Q 960,386 1238,467" stroke="#3A2A1E" stroke-width="12" opacity="0.42"/>
+          <path d="M 682,467 Q 960,386 1238,467" stroke="url(#s26-brassH)" stroke-width="7"/>
+          <path d="M 797,522 Q 960,471 1123,522" stroke="#3A2A1E" stroke-width="10" opacity="0.44"/>
+          <path d="M 797,522 Q 960,471 1123,522" stroke="url(#s26-brassH)" stroke-width="6"/>
+          <path d="M 893,568 Q 960,544 1027,568" stroke="#3A2A1E" stroke-width="8" opacity="0.46"/>
+          <path d="M 893,568 Q 960,544 1027,568" stroke="url(#s26-brassH)" stroke-width="4"/>
+        </g>
+        <!-- painted spandrels between the ribs -->
+        <g fill="#C2593F" opacity="0.14">
+          <path d="M 240,196 Q 380,240 500,300 L 470,330 Q 350,272 214,232 Z"/>
+          <path d="M 1680,196 Q 1540,240 1420,300 L 1450,330 Q 1570,272 1706,232 Z"/>
+          <path d="M 620,404 Q 740,440 850,486 L 826,510 Q 716,468 600,436 Z"/>
+          <path d="M 1300,404 Q 1180,440 1070,486 L 1094,510 Q 1204,468 1320,436 Z"/>
+        </g>
+
+        <!-- side walls -->
+        <path d="M 0,140 L 749,499 L 749,688 L 0,1000 Z" fill="url(#s26-wallL)"/>
+        <path d="M 1920,140 L 1171,499 L 1171,688 L 1920,1000 Z" fill="url(#s26-wallR)"/>
+
+        <!-- LEFT ARCADE · mirrors -->
+        <g clip-path="url(#s26-wallLclip)">
+          <g transform="translate(108,573)"><g id="s26-aL1">
+            <path d="M -86.0,417.7 L -86.0,-103.6 Q 7.5,-219.5 101.1,-77.6 L 101.1,339.7 Z" fill="url(#s26-mirror)"/>
+            <path d="M -52,404 L -52,-58 Q 4,-166 74,-64 L 74,336 Z" fill="#FFF6DE" opacity="0.4"/>
+            <path d="M -34,398 L -34,-40 Q 4,-130 46,-56 L 46,332 Z" fill="#FCEBB8" opacity="0.3"/>
+            <path d="M -86,236 L 101,204" stroke="#5C3A20" stroke-width="7" opacity="0.4"/>
+            <path d="M -86,417.7 L -86.0,-103.6 Q 7.5,-219.5 101.1,-77.6 L 101.1,339.7" fill="none" stroke="#3A2A1E" stroke-width="32" opacity="0.5"/>
+            <path d="M -86,417.7 L -86.0,-103.6 Q 7.5,-219.5 101.1,-77.6 L 101.1,339.7" fill="none" stroke="url(#s26-brassV)" stroke-width="21"/>
+            <path d="M -86,417.7 L -86.0,-103.6 Q 7.5,-219.5 101.1,-77.6 L 101.1,339.7" fill="none" stroke="#FCEBB8" stroke-width="5" opacity="0.5"/>
+            <path d="M -1,-212 L 17,-212 L 22,-146 L -6,-146 Z" fill="url(#s26-brassV)" stroke="#5C3A20" stroke-width="4"/>
+            <circle cx="-42" cy="-152" r="5" fill="#FCEBB8" opacity="0.75"/>
+            <circle cx="58" cy="-136" r="5" fill="#FCEBB8" opacity="0.65"/>
+            <circle cx="-60" cy="-30" r="4" fill="#FCEBB8" opacity="0.5"/>
+          </g></g>
+          <g transform="translate(298,579)"><g id="s26-aL2">
+            <path d="M -66.0,324.2 L -66.0,-80.4 Q 5.8,-169.4 77.6,-60.5 L 77.6,264.4 Z" fill="url(#s26-mirror)"/>
+            <path d="M -40,314 L -40,-46 Q 4,-130 58,-50 L 58,260 Z" fill="#FFF6DE" opacity="0.4"/>
+            <path d="M -66,182 L 77,158" stroke="#5C3A20" stroke-width="6" opacity="0.4"/>
+            <path d="M -66.0,324.2 L -66.0,-80.4 Q 5.8,-169.4 77.6,-60.5 L 77.6,264.4" fill="none" stroke="#3A2A1E" stroke-width="26" opacity="0.5"/>
+            <path d="M -66.0,324.2 L -66.0,-80.4 Q 5.8,-169.4 77.6,-60.5 L 77.6,264.4" fill="none" stroke="url(#s26-brassV)" stroke-width="17"/>
+            <path d="M -66.0,324.2 L -66.0,-80.4 Q 5.8,-169.4 77.6,-60.5 L 77.6,264.4" fill="none" stroke="#FCEBB8" stroke-width="4" opacity="0.5"/>
+            <path d="M 0,-164 L 14,-164 L 18,-112 L -4,-112 Z" fill="url(#s26-brassV)" stroke="#5C3A20" stroke-width="3"/>
+            <circle cx="-34" cy="-118" r="4" fill="#FCEBB8" opacity="0.7"/>
+            <circle cx="46" cy="-108" r="4" fill="#FCEBB8" opacity="0.6"/>
+          </g></g>
+          <g transform="translate(440,584)"><g id="s26-aL3">
+            <path d="M -48.0,252.9 L -48.0,-62.6 Q 4.2,-127.3 56.4,-48.1 L 56.4,209.4 Z" fill="url(#s26-mirror)"/>
+            <path d="M -28,246 L -28,-34 Q 3,-98 42,-40 L 42,206 Z" fill="#FFF6DE" opacity="0.4"/>
+            <path d="M -48,142 L 56,124" stroke="#5C3A20" stroke-width="5" opacity="0.4"/>
+            <path d="M -48.0,252.9 L -48.0,-62.6 Q 4.2,-127.3 56.4,-48.1 L 56.4,209.4" fill="none" stroke="#3A2A1E" stroke-width="21" opacity="0.5"/>
+            <path d="M -48.0,252.9 L -48.0,-62.6 Q 4.2,-127.3 56.4,-48.1 L 56.4,209.4" fill="none" stroke="url(#s26-brassV)" stroke-width="14"/>
+            <path d="M -48.0,252.9 L -48.0,-62.6 Q 4.2,-127.3 56.4,-48.1 L 56.4,209.4" fill="none" stroke="#FCEBB8" stroke-width="4" opacity="0.5"/>
+            <path d="M 0,-123 L 12,-123 L 15,-84 L -3,-84 Z" fill="url(#s26-brassV)" stroke="#5C3A20" stroke-width="3"/>
+            <circle cx="34" cy="-82" r="3.5" fill="#FCEBB8" opacity="0.65"/>
+          </g></g>
+          <g transform="translate(546,587)"><g id="s26-aL4">
+            <path d="M -36.8,200.8 L -36.8,-49.6 Q 3.2,-99.2 43.2,-38.5 L 43.2,167.4 Z" fill="url(#s26-mirror)"/>
+            <path d="M -22,196 L -22,-28 Q 2,-78 32,-32 L 32,164 Z" fill="#FFF6DE" opacity="0.4"/>
+            <path d="M -36.8,200.8 L -36.8,-49.6 Q 3.2,-99.2 43.2,-38.5 L 43.2,167.4" fill="none" stroke="#3A2A1E" stroke-width="17" opacity="0.5"/>
+            <path d="M -36.8,200.8 L -36.8,-49.6 Q 3.2,-99.2 43.2,-38.5 L 43.2,167.4" fill="none" stroke="url(#s26-brassV)" stroke-width="11"/>
+            <path d="M -36.8,200.8 L -36.8,-49.6 Q 3.2,-99.2 43.2,-38.5 L 43.2,167.4" fill="none" stroke="#FCEBB8" stroke-width="3" opacity="0.5"/>
+            <path d="M 0,-96 L 10,-96 L 12,-66 L -2,-66 Z" fill="url(#s26-brassV)" stroke="#5C3A20" stroke-width="3"/>
+          </g></g>
+          <g transform="translate(627,590)"><g id="s26-aL5">
+            <path d="M -28.0,160.8 L -28.0,-39.7 Q 2.5,-77.4 32.9,-31.2 L 32.9,135.4 Z" fill="url(#s26-mirror)"/>
+            <path d="M -16,158 L -16,-22 Q 2,-62 24,-26 L 24,132 Z" fill="#FFF6DE" opacity="0.4"/>
+            <path d="M -28.0,160.8 L -28.0,-39.7 Q 2.5,-77.4 32.9,-31.2 L 32.9,135.4" fill="none" stroke="#3A2A1E" stroke-width="14" opacity="0.5"/>
+            <path d="M -28.0,160.8 L -28.0,-39.7 Q 2.5,-77.4 32.9,-31.2 L 32.9,135.4" fill="none" stroke="url(#s26-brassV)" stroke-width="9"/>
+            <path d="M -28.0,160.8 L -28.0,-39.7 Q 2.5,-77.4 32.9,-31.2 L 32.9,135.4" fill="none" stroke="#FCEBB8" stroke-width="3" opacity="0.5"/>
+          </g></g>
+          <g transform="translate(690,592)"><g id="s26-aL6">
+            <path d="M -22.4,130.3 L -22.4,-32.1 Q 2.0,-62.3 26.3,-25.4 L 26.3,110.0 Z" fill="url(#s26-mirror)"/>
+            <path d="M -13,128 L -13,-18 Q 2,-50 19,-22 L 19,108 Z" fill="#FFF6DE" opacity="0.4"/>
+            <path d="M -22.4,130.3 L -22.4,-32.1 Q 2.0,-62.3 26.3,-25.4 L 26.3,110.0" fill="none" stroke="#3A2A1E" stroke-width="12" opacity="0.5"/>
+            <path d="M -22.4,130.3 L -22.4,-32.1 Q 2.0,-62.3 26.3,-25.4 L 26.3,110.0" fill="none" stroke="url(#s26-brassV)" stroke-width="8"/>
+          </g></g>
+        </g>
+
+        <!-- RIGHT ARCADE · windows -->
+        <g clip-path="url(#s26-wallRclip)">
+          <g transform="translate(1812,573)"><g id="s26-aR1">
+            <path d="M 86.0,417.7 L 86.0,-103.6 Q -7.5,-219.5 -101.1,-77.6 L -101.1,339.7 Z" fill="url(#s26-win)"/>
+            <path d="M 60,404 L 60,-70 Q -4,-172 -72,-70 L -72,336 Z" fill="#FFFDF6" opacity="0.34"/>
+            <g stroke="#8A5F36" stroke-width="5" opacity="0.55">
+              <path d="M 20,398 L 20,-96"/><path d="M -30,382 L -30,-88"/>
+              <path d="M -86,160 L 101,128"/>
+            </g>
+            <path d="M 86.0,417.7 L 86.0,-103.6 Q -7.5,-219.5 -101.1,-77.6 L -101.1,339.7" fill="none" stroke="#3A2A1E" stroke-width="32" opacity="0.5"/>
+            <path d="M 86.0,417.7 L 86.0,-103.6 Q -7.5,-219.5 -101.1,-77.6 L -101.1,339.7" fill="none" stroke="url(#s26-brassV)" stroke-width="21"/>
+            <path d="M 86.0,417.7 L 86.0,-103.6 Q -7.5,-219.5 -101.1,-77.6 L -101.1,339.7" fill="none" stroke="#FCEBB8" stroke-width="5" opacity="0.55"/>
+            <path d="M 1,-212 L -17,-212 L -22,-146 L 6,-146 Z" fill="url(#s26-brassV)" stroke="#5C3A20" stroke-width="4"/>
+            <path d="M 40,-40 L 70,-46 L 70,60 L 40,54 Z" fill="#FFF9E9" opacity="0.5"/>
+          </g></g>
+          <g transform="translate(1622,579)"><g id="s26-aR2">
+            <path d="M 66.0,324.2 L 66.0,-80.4 Q -5.8,-169.4 -77.6,-60.5 L -77.6,264.4 Z" fill="url(#s26-win)"/>
+            <path d="M 46,314 L 46,-58 Q -4,-134 -56,-54 L -56,260 Z" fill="#FFFDF6" opacity="0.34"/>
+            <g stroke="#8A5F36" stroke-width="4" opacity="0.55">
+              <path d="M 14,310 L 14,-74"/><path d="M -24,298 L -24,-68"/>
+              <path d="M -66,122 L 77,98"/>
+            </g>
+            <path d="M 66.0,324.2 L 66.0,-80.4 Q -5.8,-169.4 -77.6,-60.5 L -77.6,264.4" fill="none" stroke="#3A2A1E" stroke-width="26" opacity="0.5"/>
+            <path d="M 66.0,324.2 L 66.0,-80.4 Q -5.8,-169.4 -77.6,-60.5 L -77.6,264.4" fill="none" stroke="url(#s26-brassV)" stroke-width="17"/>
+            <path d="M 66.0,324.2 L 66.0,-80.4 Q -5.8,-169.4 -77.6,-60.5 L -77.6,264.4" fill="none" stroke="#FCEBB8" stroke-width="4" opacity="0.55"/>
+            <path d="M 0,-164 L -14,-164 L -18,-112 L 4,-112 Z" fill="url(#s26-brassV)" stroke="#5C3A20" stroke-width="3"/>
+          </g></g>
+          <g transform="translate(1480,584)"><g id="s26-aR3">
+            <path d="M 48.0,252.9 L 48.0,-62.6 Q -4.2,-127.3 -56.4,-48.1 L -56.4,209.4 Z" fill="url(#s26-win)"/>
+            <path d="M 32,246 L 32,-46 Q -3,-102 -40,-44 L -40,206 Z" fill="#FFFDF6" opacity="0.34"/>
+            <g stroke="#8A5F36" stroke-width="4" opacity="0.5">
+              <path d="M 10,244 L 10,-58"/><path d="M -18,234 L -18,-54"/>
+              <path d="M -48,96 L 56,78"/>
+            </g>
+            <path d="M 48.0,252.9 L 48.0,-62.6 Q -4.2,-127.3 -56.4,-48.1 L -56.4,209.4" fill="none" stroke="#3A2A1E" stroke-width="21" opacity="0.5"/>
+            <path d="M 48.0,252.9 L 48.0,-62.6 Q -4.2,-127.3 -56.4,-48.1 L -56.4,209.4" fill="none" stroke="url(#s26-brassV)" stroke-width="14"/>
+            <path d="M 48.0,252.9 L 48.0,-62.6 Q -4.2,-127.3 -56.4,-48.1 L -56.4,209.4" fill="none" stroke="#FCEBB8" stroke-width="4" opacity="0.55"/>
+          </g></g>
+          <g transform="translate(1374,587)"><g id="s26-aR4">
+            <path d="M 36.8,200.8 L 36.8,-49.6 Q -3.2,-99.2 -43.2,-38.5 L -43.2,167.4 Z" fill="url(#s26-win)"/>
+            <path d="M 24,196 L 24,-38 Q -2,-84 -30,-36 L -30,164 Z" fill="#FFFDF6" opacity="0.5"/>
+            <path d="M 36.8,200.8 L 36.8,-49.6 Q -3.2,-99.2 -43.2,-38.5 L -43.2,167.4" fill="none" stroke="#3A2A1E" stroke-width="17" opacity="0.5"/>
+            <path d="M 36.8,200.8 L 36.8,-49.6 Q -3.2,-99.2 -43.2,-38.5 L -43.2,167.4" fill="none" stroke="url(#s26-brassV)" stroke-width="11"/>
+            <path d="M 0,-96 L -10,-96 L -12,-66 L 2,-66 Z" fill="url(#s26-brassV)" stroke="#5C3A20" stroke-width="3"/>
+          </g></g>
+          <g transform="translate(1293,590)"><g id="s26-aR5">
+            <path d="M 28.0,160.8 L 28.0,-39.7 Q -2.5,-77.4 -32.9,-31.2 L -32.9,135.4 Z" fill="url(#s26-win)"/>
+            <path d="M 18,158 L 18,-32 Q -2,-68 -22,-28 L -22,132 Z" fill="#FFFDF6" opacity="0.48"/>
+            <path d="M 28.0,160.8 L 28.0,-39.7 Q -2.5,-77.4 -32.9,-31.2 L -32.9,135.4" fill="none" stroke="#3A2A1E" stroke-width="14" opacity="0.5"/>
+            <path d="M 28.0,160.8 L 28.0,-39.7 Q -2.5,-77.4 -32.9,-31.2 L -32.9,135.4" fill="none" stroke="url(#s26-brassV)" stroke-width="9"/>
+          </g></g>
+          <g transform="translate(1230,592)"><g id="s26-aR6">
+            <path d="M 22.4,130.3 L 22.4,-32.1 Q -2.0,-62.3 -26.3,-25.4 L -26.3,110.0 Z" fill="url(#s26-win)"/>
+            <path d="M 13,128 L 13,-28 Q -2,-56 -17,-24 L -17,108 Z" fill="#FFFDF6" opacity="0.45"/>
+            <path d="M 22.4,130.3 L 22.4,-32.1 Q -2.0,-62.3 -26.3,-25.4 L -26.3,110.0" fill="none" stroke="#3A2A1E" stroke-width="12" opacity="0.5"/>
+            <path d="M 22.4,130.3 L 22.4,-32.1 Q -2.0,-62.3 -26.3,-25.4 L -26.3,110.0" fill="none" stroke="url(#s26-brassV)" stroke-width="8"/>
+          </g></g>
+        </g>
+
+        <!-- cornice + skirting along both walls -->
+        <g fill="none" stroke-linecap="round">
+          <path d="M 0,140 L 749,499" stroke="#3A2A1E" stroke-width="30" opacity="0.34"/>
+          <path d="M 0,140 L 749,499" stroke="url(#s26-brassH)" stroke-width="19"/>
+          <path d="M 0,131 L 749,490" stroke="#FCEBB8" stroke-width="5" opacity="0.5"/>
+          <path d="M 1920,140 L 1171,499" stroke="#3A2A1E" stroke-width="30" opacity="0.34"/>
+          <path d="M 1920,140 L 1171,499" stroke="url(#s26-brassH)" stroke-width="19"/>
+          <path d="M 1920,131 L 1171,490" stroke="#FCEBB8" stroke-width="5" opacity="0.5"/>
+          <path d="M 0,1000 L 749,688" stroke="#3A2A1E" stroke-width="26" opacity="0.4"/>
+          <path d="M 0,1000 L 749,688" stroke="url(#s26-brassH)" stroke-width="14"/>
+          <path d="M 1920,1000 L 1171,688" stroke="#3A2A1E" stroke-width="26" opacity="0.4"/>
+          <path d="M 1920,1000 L 1171,688" stroke="url(#s26-brassH)" stroke-width="14"/>
+        </g>
+        <g fill="#5C3A20" opacity="0.16">
+          <path d="M 0,140 L 749,499 L 749,530 L 0,180 Z"/>
+          <path d="M 1920,140 L 1171,499 L 1171,530 L 1920,180 Z"/>
+        </g>
+
+        <!-- far end wall and its door -->
+        <path d="M 749,499 H 1171 V 688 H 749 Z" fill="url(#s26-far)"/>
+        <path d="M 749,499 H 1171 V 520 H 749 Z" fill="#C99A67" opacity="0.4"/>
+        <path d="M 900,688 L 900,588 Q 960,536 1020,588 L 1020,688 Z" fill="url(#s26-door)"/>
+        <path d="M 900,688 L 900,588 Q 960,536 1020,588 L 1020,688" fill="none" stroke="#9E742A" stroke-width="9"/>
+        <path d="M 906,686 L 906,592 Q 960,546 1014,592 L 1014,686 Z" fill="#FFF6DE" opacity="0.45"/>
+        <ellipse cx="960" cy="640" rx="150" ry="120" fill="#FFE8B4" opacity="0.3" filter="url(#s26-bblur)"/>
+        <path d="M 749,499 H 1171" stroke="#3A2A1E" stroke-width="6" opacity="0.4"/>
+        <path d="M 749,499 V 688" stroke="#3A2A1E" stroke-width="5" opacity="0.35"/>
+        <path d="M 1171,499 V 688" stroke="#3A2A1E" stroke-width="5" opacity="0.35"/>
+
+        <!-- parquet floor -->
+        <path d="M 0,1000 L 749,688 L 1171,688 L 1920,1000 L 1920,1080 L 0,1080 Z" fill="url(#s26-floor)"/>
+        <g clip-path="url(#s26-floorclip)">
+          <g stroke="#8A5F36" stroke-width="3" opacity="0.26">
+            <path d="M 0,1080 L 960,600"/><path d="M 160,1080 L 960,600"/><path d="M 320,1080 L 960,600"/>
+            <path d="M 480,1080 L 960,600"/><path d="M 640,1080 L 960,600"/><path d="M 800,1080 L 960,600"/>
+            <path d="M 1120,1080 L 960,600"/><path d="M 1280,1080 L 960,600"/><path d="M 1440,1080 L 960,600"/>
+            <path d="M 1600,1080 L 960,600"/><path d="M 1760,1080 L 960,600"/><path d="M 1920,1080 L 960,600"/>
+          </g>
+          <g stroke="#6E4826" stroke-width="4" opacity="0.22">
+            <path d="M 0,1050 H 1920"/><path d="M 0,1005 H 1920"/><path d="M 91,962 H 1829"/><path d="M 182,924 H 1738"/>
+            <path d="M 264,890 H 1656"/><path d="M 336,860 H 1584"/><path d="M 401,833 H 1519"/><path d="M 458,809 H 1462"/>
+            <path d="M 511,787 H 1409"/><path d="M 559,767 H 1361"/><path d="M 602,749 H 1318"/><path d="M 641,733 H 1279"/>
+            <path d="M 677,718 H 1243"/><path d="M 708,705 H 1212"/><path d="M 737,693 H 1183"/>
+          </g>
+          <g stroke="#FFF3D6" stroke-width="2" opacity="0.22">
+            <path d="M 0,1048 H 1920"/><path d="M 0,1003 H 1920"/><path d="M 91,960 H 1829"/><path d="M 182,922 H 1738"/>
+            <path d="M 264,888 H 1656"/><path d="M 336,858 H 1584"/><path d="M 401,831 H 1519"/><path d="M 458,807 H 1462"/>
+          </g>
+          <!-- polished specular -->
+          <path d="M 880,620 L 1040,620 L 1160,1080 L 760,1080 Z" fill="url(#s26-spec)" opacity="0.85"/>
+          <ellipse cx="960" cy="800" rx="420" ry="240" fill="url(#s26-pool)" opacity="0.5"/>
+          <ellipse cx="960" cy="690" rx="150" ry="70" fill="#FFF9E9" opacity="0.4" filter="url(#s26-mblur)"/>
+          <g opacity="0.34" filter="url(#s26-mblur)">
+            <path d="M 1150,700 L 1330,700 L 1470,1080 L 940,1080 Z" fill="#FFF3D6"/>
+            <path d="M 1380,720 L 1520,720 L 1640,1080 L 1180,1080 Z" fill="#FFE8B4"/>
+            <path d="M 860,700 L 960,700 L 900,1080 L 700,1080 Z" fill="#FFF3D6" opacity="0.6"/>
+          </g>
+          <g opacity="0.5" filter="url(#s26-mblur)">
+            <ellipse cx="960" cy="930" rx="120" ry="40" fill="#FFE8B4"/>
+            <ellipse cx="960" cy="862" rx="86" ry="26" fill="#FFD98E" opacity="0.8"/>
+            <ellipse cx="960" cy="812" rx="58" ry="16" fill="#FFE8B4" opacity="0.7"/>
+          </g>
+          <path d="M 0,1000 L 749,688" stroke="#3A2A1E" stroke-width="9" opacity="0.25"/>
+          <path d="M 1920,1000 L 1171,688" stroke="#3A2A1E" stroke-width="9" opacity="0.25"/>
+        </g>
+        <path d="M 0,1000 L 749,688 L 1171,688 L 1920,1000" fill="none" stroke="#3A2A1E" stroke-width="7" opacity="0.3"/>
+
+        <!-- dust in the vault -->
+        <g fill="#FFF6DE" opacity="0.4">
+          <circle class="s26-mote" cx="700" cy="300" r="4"/><circle class="s26-mote" cx="1120" cy="360" r="3"/>
+          <circle class="s26-mote" cx="880" cy="240" r="3.5"/><circle class="s26-mote" cx="1240" cy="420" r="3"/>
+          <circle class="s26-mote" cx="620" cy="440" r="3"/><circle class="s26-mote" cx="1040" cy="500" r="2.5"/>
+        </g>
+
+        <!-- CHANDELIER 3 · far -->
+        <g transform="translate(960,540) scale(0.36)">
+          <g id="s26-ch3">
+            <ellipse cx="0" cy="20" rx="180" ry="120" fill="url(#s26-glow)" opacity="0.5"/>
+            <path d="M0,-300 V-128" stroke="#9E742A" stroke-width="8" stroke-dasharray="3 7"/>
+            <path d="M-32,-128 H32 L20,-100 H-20 Z" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="5"/>
+            <path d="M0,-100 V34" stroke="#C89D42" stroke-width="18"/>
+            <ellipse cx="0" cy="40" rx="32" ry="17" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="5"/>
+            <path d="M0,-64 C-58,-70 -90,-14 -82,42" fill="none" stroke="#9E742A" stroke-width="11"/>
+            <path d="M0,-64 C58,-70 90,-14 82,42" fill="none" stroke="#9E742A" stroke-width="11"/>
+            <path d="M0,-44 C-34,-44 -50,-2 -46,38" fill="none" stroke="#C89D42" stroke-width="9"/>
+            <path d="M0,-44 C34,-44 50,-2 46,38" fill="none" stroke="#C89D42" stroke-width="9"/>
+            <g>
+              <ellipse cx="-82" cy="44" rx="15" ry="8" fill="#C89D42" stroke="#5C3A20" stroke-width="4"/>
+              <rect x="-85" y="14" width="7" height="28" fill="#FFF6DE"/>
+              <ellipse cx="-82" cy="4" rx="8" ry="15" fill="#E89A3C"/>
+              <ellipse cx="82" cy="44" rx="15" ry="8" fill="#C89D42" stroke="#5C3A20" stroke-width="4"/>
+              <rect x="78" y="14" width="7" height="28" fill="#FFF6DE"/>
+              <ellipse cx="82" cy="4" rx="8" ry="15" fill="#E89A3C"/>
+              <ellipse cx="-46" cy="40" rx="12" ry="7" fill="#C89D42" stroke="#5C3A20" stroke-width="4"/>
+              <ellipse cx="-46" cy="4" rx="7" ry="13" fill="#E89A3C"/>
+              <ellipse cx="46" cy="40" rx="12" ry="7" fill="#C89D42" stroke="#5C3A20" stroke-width="4"/>
+              <ellipse cx="46" cy="4" rx="7" ry="13" fill="#E89A3C"/>
+            </g>
+            <ellipse cx="0" cy="56" rx="70" ry="19" fill="none" stroke="#E3BB64" stroke-width="5"/>
+            <g fill="url(#s26-crystal)">
+              <circle cx="-70" cy="70" r="6"/><circle cx="-50" cy="76" r="5"/><circle cx="-28" cy="80" r="4"/>
+              <circle cx="0" cy="82" r="5"/><circle cx="28" cy="80" r="4"/><circle cx="50" cy="76" r="5"/><circle cx="70" cy="70" r="6"/>
+              <circle cx="-40" cy="60" r="4"/><circle cx="40" cy="60" r="4"/>
+            </g>
+            <g fill="#FFFDF6">
+              <ellipse class="s26-glint" cx="-82" cy="0" rx="5" ry="11" opacity="0.6"/>
+              <ellipse class="s26-glint" cx="82" cy="0" rx="5" ry="11" opacity="0.6"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- CHANDELIER 2 · middle -->
+        <g transform="translate(960,462) scale(0.62)">
+          <g id="s26-ch2">
+            <ellipse cx="0" cy="20" rx="190" ry="130" fill="url(#s26-glow)" opacity="0.55"/>
+            <path d="M0,-320 V-128" stroke="#9E742A" stroke-width="7" stroke-dasharray="3 7"/>
+            <path d="M-32,-128 H32 L20,-100 H-20 Z" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="4"/>
+            <path d="M0,-100 V34" stroke="#C89D42" stroke-width="17"/>
+            <path d="M0,-100 V34" stroke="#FCEBB8" stroke-width="5" opacity="0.5"/>
+            <ellipse cx="0" cy="40" rx="32" ry="17" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="4"/>
+            <ellipse cx="0" cy="33" rx="32" ry="10" fill="#E3BB64"/>
+            <path d="M0,-64 C-58,-70 -90,-14 -82,42" fill="none" stroke="#9E742A" stroke-width="10"/>
+            <path d="M0,-64 C58,-70 90,-14 82,42" fill="none" stroke="#9E742A" stroke-width="10"/>
+            <path d="M0,-44 C-34,-44 -50,-2 -46,38" fill="none" stroke="#C89D42" stroke-width="8"/>
+            <path d="M0,-44 C34,-44 50,-2 46,38" fill="none" stroke="#C89D42" stroke-width="8"/>
+            <path d="M0,-52 C-14,-52 -20,-20 -18,20" fill="none" stroke="#E3BB64" stroke-width="6"/>
+            <path d="M0,-52 C14,-52 20,-20 18,20" fill="none" stroke="#E3BB64" stroke-width="6"/>
+            <g>
+              <ellipse cx="-82" cy="44" rx="15" ry="8" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="3"/>
+              <rect x="-85" y="14" width="6" height="28" fill="#FFF6DE"/>
+              <ellipse cx="-82" cy="4" rx="7" ry="14" fill="#E89A3C"/>
+              <ellipse cx="-82" cy="7" rx="3.5" ry="8" fill="#FFE8B4"/>
+              <ellipse cx="82" cy="44" rx="15" ry="8" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="3"/>
+              <rect x="79" y="14" width="6" height="28" fill="#FFF6DE"/>
+              <ellipse cx="82" cy="4" rx="7" ry="14" fill="#E89A3C"/>
+              <ellipse cx="82" cy="7" rx="3.5" ry="8" fill="#FFE8B4"/>
+              <ellipse cx="-46" cy="40" rx="12" ry="7" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="3"/>
+              <rect x="-48" y="14" width="5" height="26" fill="#FFF6DE"/>
+              <ellipse cx="-46" cy="4" rx="6" ry="12" fill="#E89A3C"/>
+              <ellipse cx="46" cy="40" rx="12" ry="7" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="3"/>
+              <rect x="44" y="14" width="5" height="26" fill="#FFF6DE"/>
+              <ellipse cx="46" cy="4" rx="6" ry="12" fill="#E89A3C"/>
+              <ellipse cx="0" cy="46" rx="12" ry="7" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="3"/>
+              <ellipse cx="0" cy="8" rx="6" ry="12" fill="#E89A3C"/>
+            </g>
+            <ellipse cx="0" cy="56" rx="70" ry="19" fill="none" stroke="#E3BB64" stroke-width="4" opacity="0.9"/>
+            <g fill="url(#s26-crystal)">
+              <circle cx="-70" cy="70" r="6"/><circle cx="-48" cy="76" r="5"/><circle cx="-24" cy="80" r="4"/>
+              <circle cx="0" cy="82" r="5"/><circle cx="24" cy="80" r="4"/><circle cx="48" cy="76" r="5"/><circle cx="70" cy="70" r="6"/>
+              <circle cx="-34" cy="62" r="4"/><circle cx="34" cy="62" r="4"/><circle cx="0" cy="70" r="5"/>
+            </g>
+            <g fill="#FFFDF6">
+              <ellipse class="s26-glint" cx="-82" cy="0" rx="5" ry="12" opacity="0.6"/>
+              <ellipse class="s26-glint" cx="82" cy="0" rx="5" ry="12" opacity="0.6"/>
+              <ellipse class="s26-glint" cx="0" cy="76" rx="6" ry="6" opacity="0.5"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- CHANDELIER 1 · near -->
+        <g transform="translate(960,252) scale(1.16)">
+          <g id="s26-ch1">
+            <ellipse cx="0" cy="20" rx="210" ry="150" fill="url(#s26-glow)" opacity="0.6"/>
+            <path d="M0,-340 V-128" stroke="#9E742A" stroke-width="6" stroke-dasharray="3 7"/>
+            <path d="M-34,-128 H34 L22,-98 H-22 Z" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="4"/>
+            <path d="M0,-98 V34" stroke="#C89D42" stroke-width="18"/>
+            <path d="M0,-98 V34" stroke="#FCEBB8" stroke-width="5" opacity="0.55"/>
+            <ellipse cx="0" cy="40" rx="34" ry="18" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="4"/>
+            <ellipse cx="0" cy="32" rx="34" ry="10" fill="#E3BB64"/>
+            <path d="M0,-66 C-60,-72 -92,-14 -84,44" fill="none" stroke="#9E742A" stroke-width="11"/>
+            <path d="M0,-66 C60,-72 92,-14 84,44" fill="none" stroke="#9E742A" stroke-width="11"/>
+            <path d="M0,-46 C-36,-46 -52,-2 -48,40" fill="none" stroke="#C89D42" stroke-width="8"/>
+            <path d="M0,-46 C36,-46 52,-2 48,40" fill="none" stroke="#C89D42" stroke-width="8"/>
+            <path d="M0,-54 C-15,-54 -21,-20 -19,22" fill="none" stroke="#E3BB64" stroke-width="6"/>
+            <path d="M0,-54 C15,-54 21,-20 19,22" fill="none" stroke="#E3BB64" stroke-width="6"/>
+            <g>
+              <ellipse cx="-84" cy="46" rx="16" ry="8" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="3"/>
+              <rect x="-87" y="14" width="6" height="30" fill="#FFF6DE"/>
+              <ellipse cx="-84" cy="2" rx="7" ry="15" fill="#E89A3C"/>
+              <ellipse cx="-84" cy="5" rx="3.5" ry="9" fill="#FFE8B4"/>
+              <ellipse cx="84" cy="46" rx="16" ry="8" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="3"/>
+              <rect x="81" y="14" width="6" height="30" fill="#FFF6DE"/>
+              <ellipse cx="84" cy="2" rx="7" ry="15" fill="#E89A3C"/>
+              <ellipse cx="84" cy="5" rx="3.5" ry="9" fill="#FFE8B4"/>
+              <ellipse cx="-48" cy="42" rx="13" ry="7" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="3"/>
+              <rect x="-50" y="14" width="5" height="28" fill="#FFF6DE"/>
+              <ellipse cx="-48" cy="2" rx="6" ry="13" fill="#E89A3C"/>
+              <ellipse cx="48" cy="42" rx="13" ry="7" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="3"/>
+              <rect x="46" y="14" width="5" height="28" fill="#FFF6DE"/>
+              <ellipse cx="48" cy="2" rx="6" ry="13" fill="#E89A3C"/>
+              <ellipse cx="0" cy="48" rx="13" ry="7" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="3"/>
+              <ellipse cx="0" cy="6" rx="6" ry="13" fill="#E89A3C"/>
+              <ellipse cx="-19" cy="30" rx="10" ry="6" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="3"/>
+              <ellipse cx="19" cy="30" rx="10" ry="6" fill="url(#s26-brass)" stroke="#5C3A20" stroke-width="3"/>
+            </g>
+            <ellipse cx="0" cy="58" rx="72" ry="20" fill="none" stroke="#E3BB64" stroke-width="4" opacity="0.9"/>
+            <g fill="url(#s26-crystal)">
+              <circle cx="-72" cy="72" r="6"/><circle cx="-50" cy="78" r="5"/><circle cx="-26" cy="82" r="4"/>
+              <circle cx="0" cy="84" r="5"/><circle cx="26" cy="82" r="4"/><circle cx="50" cy="78" r="5"/><circle cx="72" cy="72" r="6"/>
+              <circle cx="-36" cy="64" r="4"/><circle cx="36" cy="64" r="4"/><circle cx="0" cy="72" r="5"/>
+              <circle cx="-60" cy="90" r="3"/><circle cx="60" cy="90" r="3"/>
+            </g>
+            <g fill="#FFFDF6">
+              <ellipse class="s26-glint" cx="-84" cy="-2" rx="5" ry="13" opacity="0.65"/>
+              <ellipse class="s26-glint" cx="84" cy="-2" rx="5" ry="13" opacity="0.65"/>
+              <ellipse class="s26-glint" cx="0" cy="80" rx="7" ry="7" opacity="0.55"/>
+              <ellipse class="s26-glint" cx="-48" cy="70" rx="4" ry="4" opacity="0.5"/>
+            </g>
+          </g>
+        </g>
+
+        <!-- VISITORS · small dark silhouettes for scale -->
+        <g transform="translate(316,1006) scale(1.22)">
+          <g id="s26-v1">
+            <ellipse cx="2" cy="6" rx="38" ry="10" fill="#1E1813" opacity="0.3"/>
+            <ellipse cx="2" cy="54" rx="18" ry="52" fill="#2B1F17" opacity="0.16" filter="url(#s26-soft)"/>
+            <path d="M-13,0 L-11,-52 C-20,-60 -21,-80 -13,-90 C-9,-95 9,-95 13,-90 C21,-80 20,-60 11,-52 L13,0 Z" fill="#2B1F17"/>
+            <path d="M-4,-56 L-15,-2" stroke="#2B1F17" stroke-width="9" stroke-linecap="round"/>
+            <path d="M4,-56 L14,-2" stroke="#2B1F17" stroke-width="9" stroke-linecap="round"/>
+            <circle cx="0" cy="-104" r="12" fill="#2B1F17"/>
+            <path d="M10,-88 C16,-80 16,-62 12,-50" fill="none" stroke="#E3BB64" stroke-width="2.5" opacity="0.45"/>
+            <path d="M9,-112 C15,-108 16,-101 13,-96" fill="none" stroke="#E3BB64" stroke-width="2" opacity="0.4"/>
+          </g>
+        </g>
+        <g transform="translate(1592,1016) scale(1.3)">
+          <g id="s26-v2">
+            <ellipse cx="-2" cy="6" rx="40" ry="10" fill="#1E1813" opacity="0.3"/>
+            <ellipse cx="-2" cy="54" rx="19" ry="54" fill="#2B1F17" opacity="0.16" filter="url(#s26-soft)"/>
+            <path d="M-14,0 L-12,-54 C-21,-62 -22,-82 -14,-92 C-10,-97 10,-97 14,-92 C22,-82 21,-62 12,-54 L14,0 Z" fill="#2B1F17"/>
+            <path d="M-4,-58 L-14,-2" stroke="#2B1F17" stroke-width="9" stroke-linecap="round"/>
+            <path d="M4,-58 L15,-2" stroke="#2B1F17" stroke-width="9" stroke-linecap="round"/>
+            <circle cx="0" cy="-106" r="12" fill="#2B1F17"/>
+            <path d="M-12,-86 C-18,-78 -18,-60 -14,-48" fill="none" stroke="#E3BB64" stroke-width="2.5" opacity="0.4"/>
+            <path d="M-9,-114 C-15,-110 -16,-103 -13,-98" fill="none" stroke="#E3BB64" stroke-width="2" opacity="0.35"/>
+          </g>
+        </g>
+        <g transform="translate(690,864) scale(0.64)">
+          <g id="s26-v3">
+            <ellipse cx="2" cy="6" rx="36" ry="9" fill="#1E1813" opacity="0.28"/>
+            <ellipse cx="2" cy="44" rx="16" ry="44" fill="#2B1F17" opacity="0.14" filter="url(#s26-soft)"/>
+            <path d="M-13,0 L-11,-52 C-20,-60 -21,-80 -13,-90 C-9,-95 9,-95 13,-90 C21,-80 20,-60 11,-52 L13,0 Z" fill="#2B1F17"/>
+            <path d="M-4,-56 L-14,-2" stroke="#2B1F17" stroke-width="9" stroke-linecap="round"/>
+            <path d="M4,-56 L13,-2" stroke="#2B1F17" stroke-width="9" stroke-linecap="round"/>
+            <circle cx="0" cy="-104" r="12" fill="#2B1F17"/>
+            <path d="M10,-86 C15,-78 15,-62 11,-50" fill="none" stroke="#E3BB64" stroke-width="3" opacity="0.4"/>
+          </g>
+        </g>
+        <g transform="translate(1168,870) scale(0.6)">
+          <g id="s26-v4">
+            <ellipse cx="2" cy="6" rx="36" ry="9" fill="#1E1813" opacity="0.28"/>
+            <path d="M-13,0 L-11,-52 C-20,-60 -21,-80 -13,-90 C-9,-95 9,-95 13,-90 C21,-80 20,-60 11,-52 L13,0 Z" fill="#2B1F17"/>
+            <path d="M-4,-56 L-14,-2" stroke="#2B1F17" stroke-width="9" stroke-linecap="round"/>
+            <path d="M4,-56 L13,-2" stroke="#2B1F17" stroke-width="9" stroke-linecap="round"/>
+            <circle cx="0" cy="-104" r="12" fill="#2B1F17"/>
+            <path d="M10,-86 C15,-78 15,-62 11,-50" fill="none" stroke="#E3BB64" stroke-width="3" opacity="0.4"/>
+          </g>
+        </g>
+        <g transform="translate(1234,872) scale(0.56)">
+          <g id="s26-v5">
+            <ellipse cx="2" cy="6" rx="36" ry="9" fill="#1E1813" opacity="0.26"/>
+            <path d="M-13,0 L-11,-52 C-20,-60 -21,-80 -13,-90 C-9,-95 9,-95 13,-90 C21,-80 20,-60 11,-52 L13,0 Z" fill="#2B1F17"/>
+            <path d="M-4,-56 L-13,-2" stroke="#2B1F17" stroke-width="9" stroke-linecap="round"/>
+            <path d="M4,-56 L13,-2" stroke="#2B1F17" stroke-width="9" stroke-linecap="round"/>
+            <circle cx="0" cy="-104" r="12" fill="#2B1F17"/>
+            <path d="M-10,-86 C-15,-78 -15,-62 -11,-50" fill="none" stroke="#E3BB64" stroke-width="3" opacity="0.35"/>
+          </g>
+        </g>
+        <g transform="translate(900,802) scale(0.36)">
+          <g id="s26-v6">
+            <ellipse cx="2" cy="6" rx="36" ry="9" fill="#1E1813" opacity="0.24"/>
+            <path d="M-13,0 L-11,-52 C-20,-60 -21,-80 -13,-90 C-9,-95 9,-95 13,-90 C21,-80 20,-60 11,-52 L13,0 Z" fill="#2B1F17"/>
+            <circle cx="0" cy="-104" r="12" fill="#2B1F17"/>
+          </g>
+        </g>
+        <g transform="translate(1032,806) scale(0.33)">
+          <g id="s26-v7">
+            <ellipse cx="2" cy="6" rx="36" ry="9" fill="#1E1813" opacity="0.22"/>
+            <path d="M-13,0 L-11,-52 C-20,-60 -21,-80 -13,-90 C-9,-95 9,-95 13,-90 C21,-80 20,-60 11,-52 L13,0 Z" fill="#2B1F17"/>
+            <circle cx="0" cy="-104" r="12" fill="#2B1F17"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+    <!-- MG · light through the windows, dust, the first flakes of gilt -->
+    <svg class="s26-plane s26-p-mg" id="s26-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s26-shaftA" gradientUnits="userSpaceOnUse" x1="1660" y1="280" x2="1040" y2="1010">
+          <stop offset="0" stop-color="#FFF9E9" stop-opacity="0.55"/><stop offset="0.5" stop-color="#FFE8B4" stop-opacity="0.24"/>
+          <stop offset="1" stop-color="#E8C48E" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="s26-shaftB" gradientUnits="userSpaceOnUse" x1="1460" y1="360" x2="980" y2="980">
+          <stop offset="0" stop-color="#FFF3D6" stop-opacity="0.45"/><stop offset="0.6" stop-color="#FFE3B0" stop-opacity="0.16"/>
+          <stop offset="1" stop-color="#E8C48E" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="s26-haze" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFF3D6" stop-opacity="0.3"/><stop offset="0.6" stop-color="#FFE8B4" stop-opacity="0.1"/>
+          <stop offset="1" stop-color="#FFE8B4" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="s26-mgblur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="16"/></filter>
+        <filter id="s26-mgsoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5"/></filter>
+      </defs>
+
+      <!-- the light the windows throw across the parquet -->
+      <g id="s26-shafts" filter="url(#s26-mgblur)">
+        <path d="M 1560,286 L 1700,296 L 1216,1010 L 940,1010 Z" fill="url(#s26-shaftA)"/>
+        <path d="M 1400,372 L 1508,382 L 1140,986 L 968,986 Z" fill="url(#s26-shaftB)"/>
+        <path d="M 1268,444 L 1344,452 L 1080,948 L 968,948 Z" fill="url(#s26-shaftB)" opacity="0.8"/>
+      </g>
+      <ellipse cx="1180" cy="880" rx="380" ry="180" fill="url(#s26-haze)" opacity="0.7"/>
+
+      <!-- dust suspended in the beams -->
+      <g fill="#FFF9E9">
+        <circle class="s26-mote" cx="1500" cy="420" r="3" opacity="0.75"/>
+        <circle class="s26-mote" cx="1442" cy="520" r="2.5" opacity="0.7"/>
+        <circle class="s26-mote" cx="1360" cy="640" r="3.5" opacity="0.65"/>
+        <circle class="s26-mote" cx="1290" cy="760" r="2" opacity="0.6"/>
+        <circle class="s26-mote" cx="1220" cy="880" r="3" opacity="0.55"/>
+        <circle class="s26-mote" cx="1560" cy="360" r="2" opacity="0.7"/>
+        <circle class="s26-mote" cx="1176" cy="700" r="2.5" opacity="0.5"/>
+        <circle class="s26-mote" cx="1080" cy="820" r="3" opacity="0.45"/>
+        <circle class="s26-mote" cx="1660" cy="500" r="2" opacity="0.55"/>
+        <circle class="s26-mote" cx="1000" cy="940" r="2.5" opacity="0.4"/>
+        <circle class="s26-mote" cx="1520" cy="640" r="2" opacity="0.5"/>
+        <circle class="s26-mote" cx="880" cy="560" r="2.5" opacity="0.45"/>
+      </g>
+
+      <!-- gilt flakes lifting before the fold -->
+      <g>
+        <path class="s26-flake" d="M 178,404 L 196,398 L 202,412 L 182,420 Z" fill="#E3BB64" opacity="0.85"/>
+        <path class="s26-flake" d="M 250,506 L 268,500 L 272,514 L 254,520 Z" fill="#FCEBB8" opacity="0.8"/>
+        <path class="s26-flake" d="M 146,616 L 162,610 L 168,624 L 150,630 Z" fill="#C89D42" opacity="0.85"/>
+        <path class="s26-flake" d="M 318,704 L 334,698 L 340,712 L 322,718 Z" fill="#E3BB64" opacity="0.75"/>
+        <path class="s26-flake" d="M 402,296 L 418,290 L 424,304 L 406,310 Z" fill="#FCEBB8" opacity="0.7"/>
+        <path class="s26-flake" d="M 1502,410 L 1520,404 L 1526,418 L 1506,426 Z" fill="#E3BB64" opacity="0.8"/>
+        <path class="s26-flake" d="M 1608,516 L 1624,510 L 1630,524 L 1612,530 Z" fill="#FCEBB8" opacity="0.7"/>
+        <path class="s26-flake" d="M 1704,628 L 1720,622 L 1726,636 L 1708,642 Z" fill="#C89D42" opacity="0.75"/>
+        <path class="s26-flake" d="M 92,760 L 108,754 L 114,768 L 96,774 Z" fill="#E3BB64" opacity="0.6"/>
+        <path class="s26-flake" d="M 1786,742 L 1802,736 L 1808,750 L 1790,756 Z" fill="#FCEBB8" opacity="0.6"/>
+      </g>
+
+      <!-- warm bloom off the parquet -->
+      <ellipse cx="960" cy="1010" rx="520" ry="120" fill="url(#s26-haze)" opacity="0.5"/>
+    </svg>
+    <!-- FG · the gilded near trim — it becomes the easel -->
+    <svg class="s26-plane s26-p-fg" id="s26-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <radialGradient id="s26-brown" cx="46%" cy="36%" r="74%">
+          <stop offset="0" stop-color="#7A4F2C"/><stop offset="0.42" stop-color="#5C3A20"/>
+          <stop offset="0.76" stop-color="#4A2E1C"/><stop offset="1" stop-color="#3A2A1E"/>
+        </radialGradient>
+        <linearGradient id="s26-easel" x1="0" y1="0" x2="0.25" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.22" stop-color="#E3BB64"/><stop offset="0.55" stop-color="#C89D42"/>
+          <stop offset="0.84" stop-color="#9E742A"/><stop offset="1" stop-color="#D9AE56"/>
+        </linearGradient>
+        <linearGradient id="s26-rim" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFE8B4" stop-opacity="0.9"/><stop offset="1" stop-color="#E89A3C" stop-opacity="0.1"/>
+        </linearGradient>
+        <filter id="s26-fgblur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="14"/></filter>
+        <filter id="s26-fgsoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5"/></filter>
+        <clipPath id="s26-flood" clipPathUnits="userSpaceOnUse"><circle id="s26-floodc" cx="0" cy="0" r="1"/></clipPath>
+      </defs>
+
+      <!-- the canvas the hall becomes -->
+      <g transform="translate(960,600)">
+        <g id="s26-canvas" clip-path="url(#s26-flood)">
+          <rect x="-1200" y="-750" width="2400" height="1500" fill="url(#s26-brown)"/>
+          <rect x="-1200" y="-750" width="2400" height="1500" fill="none" stroke="#9E742A" stroke-width="8" opacity="0.45"/>
+          <rect x="-1192" y="-742" width="2384" height="1484" fill="none" stroke="#E89A3C" stroke-width="12" opacity="0.35"/>
+          <g id="s26-ghost" fill="none" stroke="#C89D42" stroke-width="7" opacity="0.42" stroke-linecap="round">
+            <path class="s26-ghostline" stroke-dasharray="1900" d="M -470,300 L -470,-290 Q 0,-500 470,-290 L 470,300"/>
+            <path class="s26-ghostline" stroke-dasharray="1500" d="M -340,300 L -340,-224 Q 0,-392 340,-224 L 340,300"/>
+            <path class="s26-ghostline" stroke-dasharray="1100" d="M -212,300 L -212,-160 Q 0,-294 212,-160 L 212,300"/>
+            <path class="s26-ghostline" stroke-dasharray="1400" d="M -790,300 L 790,300"/>
+            <path class="s26-ghostline" stroke-dasharray="700" d="M 0,-452 L 0,-148"/>
+            <circle class="s26-ghostline" stroke-dasharray="180" cx="0" cy="-148" r="26"/>
+            <circle class="s26-ghostline" stroke-dasharray="130" cx="0" cy="-58" r="18"/>
+            <circle class="s26-ghostline" stroke-dasharray="90" cx="0" cy="32" r="12"/>
+          </g>
+        </g>
+        <circle id="s26-floodshadow" cx="0" cy="0" r="1" fill="none" stroke="#3A2A1E" stroke-width="150" opacity="0" filter="url(#s26-fgblur)"/>
+        <circle id="s26-floodring" cx="0" cy="0" r="1" fill="none" stroke="url(#s26-easel)" stroke-width="18" opacity="0"/>
+      </g>
+
+      <!-- the far doorway arch — becomes the easel's crest -->
+      <g transform="translate(960,636)">
+        <g id="s26-fararch">
+          <path d="M -66,54 L -66,-46 Q 0,-106 66,-46 L 66,54" fill="none" stroke="#3A2A1E" stroke-width="22" opacity="0.4"/>
+          <path d="M -66,54 L -66,-46 Q 0,-106 66,-46 L 66,54" fill="none" stroke="url(#s26-easel)" stroke-width="15"/>
+          <path d="M -66,54 L -66,-46 Q 0,-106 66,-46 L 66,54" fill="none" stroke="#FCEBB8" stroke-width="4" opacity="0.6"/>
+          <path d="M 0,-106 L 9,-124 L -9,-124 Z" fill="#E3BB64" stroke="#5C3A20" stroke-width="3"/>
+        </g>
+      </g>
+
+      <!-- the near vault rib — becomes the easel's left leg -->
+      <g transform="translate(960,6)">
+        <g id="s26-cornice">
+          <path d="M -1040,26 Q 0,-96 1040,26 L 1040,92 Q 0,-30 -1040,92 Z" fill="url(#s26-easel)" stroke="#3A2A1E" stroke-width="6"/>
+          <path d="M -1040,26 Q 0,-96 1040,26" fill="none" stroke="#FCEBB8" stroke-width="7" opacity="0.6"/>
+          <path d="M -1040,92 Q 0,-30 1040,92" fill="none" stroke="#5C3A20" stroke-width="7" opacity="0.55"/>
+          <g fill="#9E742A" opacity="0.5">
+            <rect x="-960" y="52" width="18" height="28"/><rect x="-800" y="44" width="18" height="28"/>
+            <rect x="-640" y="38" width="18" height="28"/><rect x="-480" y="32" width="18" height="28"/>
+            <rect x="-320" y="28" width="18" height="28"/><rect x="-160" y="25" width="18" height="28"/>
+            <rect x="0" y="23" width="18" height="28"/><rect x="160" y="25" width="18" height="28"/>
+            <rect x="320" y="28" width="18" height="28"/><rect x="480" y="32" width="18" height="28"/>
+            <rect x="640" y="38" width="18" height="28"/><rect x="800" y="44" width="18" height="28"/>
+            <rect x="960" y="52" width="18" height="28"/>
+          </g>
+          <path d="M -1040,60 Q 0,-66 1040,60" fill="none" stroke="#E3BB64" stroke-width="4" opacity="0.5"/>
+        </g>
+      </g>
+
+      <!-- the near skirting — becomes the easel's right leg -->
+      <g transform="translate(960,1052)">
+        <g id="s26-skirt">
+          <rect x="-1040" y="-30" width="2080" height="60" fill="#4A2E1C"/>
+          <rect x="-1040" y="-30" width="2080" height="16" fill="url(#s26-easel)"/>
+          <rect x="-1040" y="-14" width="2080" height="6" fill="#FCEBB8" opacity="0.45"/>
+          <rect x="-1040" y="18" width="2080" height="8" fill="#2B1F17" opacity="0.55"/>
+          <g fill="#C89D42" opacity="0.5">
+            <rect x="-980" y="2" width="12" height="12"/><rect x="-820" y="2" width="12" height="12"/>
+            <rect x="-660" y="2" width="12" height="12"/><rect x="-500" y="2" width="12" height="12"/>
+            <rect x="-340" y="2" width="12" height="12"/><rect x="-180" y="2" width="12" height="12"/>
+            <rect x="-20" y="2" width="12" height="12"/><rect x="140" y="2" width="12" height="12"/>
+            <rect x="300" y="2" width="12" height="12"/><rect x="460" y="2" width="12" height="12"/>
+            <rect x="620" y="2" width="12" height="12"/><rect x="780" y="2" width="12" height="12"/>
+            <rect x="940" y="2" width="12" height="12"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- near gilt pilasters — become the easel's ledge -->
+      <g transform="translate(38,500)">
+        <g id="s26-pilL">
+          <rect x="-36" y="-700" width="72" height="1400" fill="url(#s26-easel)" stroke="#3A2A1E" stroke-width="5"/>
+          <rect x="-36" y="-700" width="20" height="1400" fill="#FCEBB8" opacity="0.32"/>
+          <rect x="14" y="-700" width="22" height="1400" fill="#9E742A" opacity="0.45"/>
+          <g stroke="#8A5F36" stroke-width="3" opacity="0.35">
+            <path d="M -16,-660 V 660"/><path d="M 2,-660 V 660"/>
+          </g>
+          <g fill="#FCEBB8" opacity="0.55">
+            <circle cx="0" cy="-560" r="4"/><circle cx="0" cy="-420" r="4"/><circle cx="0" cy="-300" r="4"/>
+            <circle cx="0" cy="-160" r="4"/><circle cx="0" cy="-20" r="4"/><circle cx="0" cy="120" r="4"/>
+            <circle cx="0" cy="260" r="4"/><circle cx="0" cy="400" r="4"/><circle cx="0" cy="540" r="4"/>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(1882,500)">
+        <g id="s26-pilR">
+          <rect x="-36" y="-700" width="72" height="1400" fill="url(#s26-easel)" stroke="#3A2A1E" stroke-width="5"/>
+          <rect x="-36" y="-700" width="20" height="1400" fill="#FCEBB8" opacity="0.32"/>
+          <rect x="14" y="-700" width="22" height="1400" fill="#9E742A" opacity="0.45"/>
+          <g stroke="#8A5F36" stroke-width="3" opacity="0.35">
+            <path d="M -16,-660 V 660"/><path d="M 2,-660 V 660"/>
+          </g>
+          <g fill="#FCEBB8" opacity="0.55">
+            <circle cx="0" cy="-560" r="4"/><circle cx="0" cy="-420" r="4"/><circle cx="0" cy="-300" r="4"/>
+            <circle cx="0" cy="-160" r="4"/><circle cx="0" cy="-20" r="4"/><circle cx="0" cy="120" r="4"/>
+            <circle cx="0" cy="260" r="4"/><circle cx="0" cy="400" r="4"/><circle cx="0" cy="540" r="4"/>
+          </g>
+        </g>
+      </g>
+    </svg>
+
+    <div class="s26-grain"></div>
+    <div class="s26-vignette"></div>
+
+    <div class="s26-tag" id="s26-tag">
+      <span class="s26-tag-dot"></span>
+      <span class="s26-tag-text">STILL GILDED</span>
+    </div>
+    <div class="s26-rule" id="s26-rule"></div>
+  </div>
+</div>
+<script>
+(function initS26(){
+  var ID = "s26-still-gilded";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, { duration: 12.225 }, 0);
+
+  // ── CAMERA · one long push down the gallery ──────────────────────────────
+  tl.fromTo("#s26-stage", { scale: 1, y: 0 }, { scale: 1.045, y: -12, duration: 11.9, ease: "sine.inOut" }, 0.10);
+  tl.fromTo("#s26-bg", { scale: 1.055, x: -14, y: -8 }, { scale: 1, x: 0, y: 0, duration: 6.6, ease: "sine.out" }, 0.05);
+  tl.fromTo("#s26-mg", { x: 18, y: 12 }, { x: -10, y: -8, duration: 11.8, ease: "sine.inOut" }, 0.08);
+  tl.fromTo("#s26-fg", { x: -12, y: 6 }, { x: 8, y: -4, duration: 11.8, ease: "sine.inOut" }, 0.08);
+
+  // ── PHASE 1 · the hall establishes (0–3) ─────────────────────────────────
+  tl.fromTo("#s26-pilL", { y: -70, opacity: 0 }, { y: 0, opacity: 1, duration: 1.0, ease: "power2.out" }, 0.18);
+  tl.fromTo("#s26-pilR", { y: 70, opacity: 0 }, { y: 0, opacity: 1, duration: 1.0, ease: "power2.out" }, 0.24);
+  tl.fromTo("#s26-cornice", { y: -54, opacity: 0 }, { y: 0, opacity: 1, duration: 1.1, ease: "power2.out" }, 0.30);
+  tl.fromTo("#s26-skirt", { y: 46, opacity: 0 }, { y: 0, opacity: 1, duration: 1.0, ease: "power2.out" }, 0.34);
+  tl.fromTo("#s26-fararch", { y: 10, opacity: 0 }, { y: 0, opacity: 1, duration: 1.2, ease: "power2.out" }, 0.55);
+  tl.fromTo("#s26-shafts", { opacity: 0.4, scaleX: 0.95 }, { opacity: 1, scaleX: 1, duration: 2.4, ease: "sine.out", svgOrigin: "1700 300" }, 0.25);
+
+  // ── PHASE 2 · the chandeliers glint (3–6) ────────────────────────────────
+  tl.to("#s26-ch1", { rotation: 1.2, duration: 2.4, ease: "sine.inOut", yoyo: true, repeat: 2, svgOrigin: "0 -340" }, 1.20);
+  tl.to("#s26-ch2", { rotation: -1.0, duration: 2.6, ease: "sine.inOut", yoyo: true, repeat: 2, svgOrigin: "0 -320" }, 1.60);
+  tl.to("#s26-ch3", { rotation: 0.9, duration: 2.8, ease: "sine.inOut", yoyo: true, repeat: 2, svgOrigin: "0 -300" }, 2.00);
+
+  tl.fromTo("#s26-ch1 .s26-glint", { scale: 0.25, opacity: 0.25 }, { scale: 1.5, opacity: 1, duration: 0.42, ease: "sine.out", stagger: 0.07, transformOrigin: "50% 50%" }, 3.20);
+  tl.to("#s26-ch1 .s26-glint", { scale: 0.8, opacity: 0.5, duration: 1.0, ease: "sine.inOut", stagger: 0.05, transformOrigin: "50% 50%" }, 3.66);
+  tl.fromTo("#s26-ch2 .s26-glint", { scale: 0.25, opacity: 0.2 }, { scale: 1.45, opacity: 1, duration: 0.45, ease: "sine.out", stagger: 0.08, transformOrigin: "50% 50%" }, 3.90);
+  tl.to("#s26-ch2 .s26-glint", { scale: 0.75, opacity: 0.45, duration: 1.1, ease: "sine.inOut", stagger: 0.06, transformOrigin: "50% 50%" }, 4.40);
+  tl.fromTo("#s26-ch3 .s26-glint", { scale: 0.2, opacity: 0.2 }, { scale: 1.4, opacity: 0.95, duration: 0.5, ease: "sine.out", stagger: 0.09, transformOrigin: "50% 50%" }, 4.70);
+  tl.to("#s26-ch3 .s26-glint", { scale: 0.7, opacity: 0.4, duration: 1.2, ease: "sine.inOut", stagger: 0.07, transformOrigin: "50% 50%" }, 5.24);
+  tl.to("#s26-ch1", { scale: 1.02, duration: 2.4, ease: "sine.inOut", svgOrigin: "0 20" }, 5.90);
+  tl.to("#s26-shafts", { opacity: 0.8, duration: 2.0, ease: "sine.inOut", yoyo: true, repeat: 2 }, 3.10);
+  tl.fromTo(".s26-mote", { y: 0, x: 0 }, { y: -76, x: 22, duration: 4.2, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 0.06 }, 1.10);
+
+  // ── PHASE 3 · the visitors drift (6–9) ───────────────────────────────────
+  tl.to("#s26-v1", { x: -46, duration: 3.2, ease: "sine.inOut" }, 5.90);
+  tl.to("#s26-v2", { x: 34, duration: 3.4, ease: "sine.inOut" }, 6.10);
+  tl.to("#s26-v3", { x: 28, duration: 3.0, ease: "sine.inOut" }, 6.40);
+  tl.to("#s26-v4", { x: -22, duration: 3.2, ease: "sine.inOut" }, 6.20);
+  tl.to("#s26-v5", { x: -26, duration: 3.4, ease: "sine.inOut" }, 6.30);
+  tl.to("#s26-v6", { x: 16, duration: 3.6, ease: "sine.inOut" }, 6.00);
+  tl.to("#s26-v7", { x: -14, duration: 3.6, ease: "sine.inOut" }, 6.20);
+  tl.to("#s26-v2", { rotation: -1.6, duration: 1.6, ease: "sine.inOut", svgOrigin: "0 0" }, 8.10);
+  tl.to("#s26-v4", { rotation: 1.8, duration: 1.4, ease: "sine.inOut", svgOrigin: "0 0" }, 7.60);
+
+  // ── PHASE 4 · the gilt begins to peel (9–10.2) ───────────────────────────
+  tl.to("#s26-pilL", { rotation: -0.9, duration: 0.9, ease: "sine.inOut", svgOrigin: "0 0" }, 9.10);
+  tl.to("#s26-cornice", { y: -6, duration: 0.8, ease: "sine.inOut" }, 9.30);
+  tl.to(".s26-flake", { y: -58, x: 16, rotation: 46, opacity: 0, duration: 1.9, ease: "power2.out", stagger: 0.07 }, 9.02);
+  tl.to("#s26-ch1", { rotation: -1.6, duration: 0.9, ease: "sine.inOut", svgOrigin: "0 -340" }, 9.40);
+  tl.to("#s26-ch2", { rotation: 1.4, duration: 0.9, ease: "sine.inOut", svgOrigin: "0 -320" }, 9.50);
+
+  // ── TAG ──────────────────────────────────────────────────────────────────
+  tl.fromTo("#s26-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -14 }, { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.6, ease: "power3.inOut" }, 1.90);
+  tl.fromTo("#s26-rule", { width: 0 }, { width: 330, duration: 0.5, ease: "power2.out" }, 2.26);
+  tl.to("#s26-tag", { clipPath: "inset(0% 100% 0% 0%)", duration: 0.20, ease: "power2.in" }, 9.96);
+  tl.to("#s26-rule", { width: 0, duration: 0.20, ease: "power2.in" }, 9.96);
+
+  // ── SEAM · gilt-to-easel invert ──────────────────────────────────────────
+  tl.to("#s26-hall", { scale: 0.90, y: 44, rotation: -1.6, duration: 1.9, ease: "power3.inOut", svgOrigin: "960 604" }, 10.18);
+  tl.to("#s26-ch1", { rotation: 7, y: 34, duration: 1.6, ease: "power3.in", svgOrigin: "0 -340" }, 10.18);
+  tl.to("#s26-ch2", { rotation: -6, y: 28, duration: 1.6, ease: "power3.in", svgOrigin: "0 -320" }, 10.20);
+  tl.to("#s26-ch3", { rotation: 9, y: 24, duration: 1.6, ease: "power3.in", svgOrigin: "0 -300" }, 10.22);
+
+  // every arch turns on its own axis and collapses inward
+  tl.to("#s26-aL1", { rotation: 24, x: 70, y: -18, scale: 0.84, duration: 1.25, ease: "power2.inOut", svgOrigin: "0 0" }, 10.24);
+  tl.to("#s26-aL2", { rotation: 32, x: 96, y: -26, scale: 0.80, duration: 1.25, ease: "power2.inOut", svgOrigin: "0 0" }, 10.30);
+  tl.to("#s26-aL3", { rotation: 40, x: 118, y: -34, scale: 0.76, duration: 1.25, ease: "power2.inOut", svgOrigin: "0 0" }, 10.36);
+  tl.to("#s26-aL4", { rotation: 48, x: 134, y: -40, scale: 0.72, duration: 1.25, ease: "power2.inOut", svgOrigin: "0 0" }, 10.42);
+  tl.to("#s26-aL5", { rotation: 56, x: 146, y: -44, scale: 0.68, duration: 1.25, ease: "power2.inOut", svgOrigin: "0 0" }, 10.46);
+  tl.to("#s26-aL6", { rotation: 64, x: 154, y: -48, scale: 0.64, duration: 1.25, ease: "power2.inOut", svgOrigin: "0 0" }, 10.50);
+  tl.to("#s26-aR1", { rotation: -24, x: -70, y: -18, scale: 0.84, duration: 1.25, ease: "power2.inOut", svgOrigin: "0 0" }, 10.26);
+  tl.to("#s26-aR2", { rotation: -32, x: -96, y: -26, scale: 0.80, duration: 1.25, ease: "power2.inOut", svgOrigin: "0 0" }, 10.32);
+  tl.to("#s26-aR3", { rotation: -40, x: -118, y: -34, scale: 0.76, duration: 1.25, ease: "power2.inOut", svgOrigin: "0 0" }, 10.38);
+  tl.to("#s26-aR4", { rotation: -48, x: -134, y: -40, scale: 0.72, duration: 1.25, ease: "power2.inOut", svgOrigin: "0 0" }, 10.44);
+  tl.to("#s26-aR5", { rotation: -56, x: -146, y: -44, scale: 0.68, duration: 1.25, ease: "power2.inOut", svgOrigin: "0 0" }, 10.48);
+  tl.to("#s26-aR6", { rotation: -64, x: -154, y: -48, scale: 0.64, duration: 1.25, ease: "power2.inOut", svgOrigin: "0 0" }, 10.52);
+
+  // the trim itself stacks into an easel
+  tl.to("#s26-pilL", { rotation: 90, x: 342, y: 320, duration: 1.05, ease: "power3.inOut", svgOrigin: "0 0" }, 10.28);
+  tl.to("#s26-pilR", { rotation: -90, x: -342, y: 320, duration: 1.05, ease: "power3.inOut", svgOrigin: "0 0" }, 10.32);
+  tl.to("#s26-cornice", { rotation: 97, x: -180, y: 534, duration: 1.15, ease: "power3.inOut", svgOrigin: "0 0" }, 10.36);
+  tl.to("#s26-skirt", { rotation: 83.5, x: 180, y: -512, duration: 1.15, ease: "power3.inOut", svgOrigin: "0 0" }, 10.40);
+  tl.to("#s26-fararch", { scaleX: 4.6, scaleY: 1.7, y: -350, duration: 1.0, ease: "power3.inOut", transformOrigin: "50% 100%" }, 10.50);
+
+  // the canvas floods out of the far doorway and past every edge
+  tl.to("#s26-floodc", { attr: { r: 1520 }, duration: 1.5, ease: "power2.inOut" }, 10.26);
+  tl.fromTo("#s26-floodshadow", { attr: { r: 30 }, opacity: 0.55 }, { attr: { r: 1520 }, opacity: 0, duration: 1.5, ease: "power2.inOut" }, 10.26);
+  tl.fromTo("#s26-floodring", { attr: { r: 30 }, opacity: 0.9 }, { attr: { r: 1520 }, opacity: 0, duration: 1.5, ease: "power2.inOut" }, 10.26);
+  tl.fromTo(".s26-ghostline", { attr: { "stroke-dashoffset": 1900 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.8, ease: "sine.inOut", stagger: 0.05 }, 10.98);
+
+  // the easel settles, heavy
+  tl.to("#s26-pilL", { y: 326, duration: 0.5, ease: "sine.out" }, 11.60);
+  tl.to("#s26-pilR", { y: 326, duration: 0.5, ease: "sine.out" }, 11.60);
+  tl.to("#s26-cornice", { rotation: 96.2, duration: 0.6, ease: "sine.inOut" }, 11.55);
+  tl.to("#s26-skirt", { rotation: 84.4, duration: 0.6, ease: "sine.inOut" }, 11.55);
+  tl.to("#s26-fararch", { y: -320, duration: 0.6, ease: "sine.inOut" }, 11.55);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

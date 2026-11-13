@@ -1,0 +1,543 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s19-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s19-terror-won"] .s19-stage{position:absolute;inset:0;transform-origin:50% 54%;}
+[data-composition-id="s19-terror-won"] .s19-ground{position:absolute;inset:0;background:
+  radial-gradient(40% 36% at 68% 34%, rgba(255,206,124,0.5) 0%, rgba(255,206,124,0.14) 56%, rgba(255,206,124,0) 80%),
+  radial-gradient(36% 34% at 16% 72%, rgba(194,89,63,0.18) 0%, rgba(194,89,63,0) 74%),
+  linear-gradient(176deg, #F8EDD6 0%, #EFDAB6 34%, #DFC29A 64%, #C39F76 100%);}
+[data-composition-id="s19-terror-won"] .s19-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="s19-terror-won"] .s19-p-bg{z-index:1;}
+[data-composition-id="s19-terror-won"] .s19-p-mg{z-index:2;}
+[data-composition-id="s19-terror-won"] .s19-p-fg{z-index:4;}
+[data-composition-id="s19-terror-won"] .s19-grain{position:absolute;inset:0;z-index:6;pointer-events:none;
+  background-image:radial-gradient(rgba(43,31,23,0.55) 0.4px, transparent 0.5px);background-size:3px 3px;
+  opacity:0.12;mix-blend-mode:multiply;}
+[data-composition-id="s19-terror-won"] .s19-vignette{position:absolute;inset:0;z-index:7;pointer-events:none;
+  background:
+    linear-gradient(to top, rgba(43,31,23,0.42) 0%, rgba(43,31,23,0.1) 15%, rgba(43,31,23,0) 30%),
+    linear-gradient(to right, rgba(43,31,23,0.3) 0%, rgba(43,31,23,0.06) 18%, rgba(43,31,23,0) 36%),
+    linear-gradient(to left, rgba(43,31,23,0.24) 0%, rgba(43,31,23,0) 28%),
+    radial-gradient(110% 88% at 50% 50%, rgba(43,31,23,0) 46%, rgba(43,31,23,0.36) 100%);}
+[data-composition-id="s19-terror-won"] .s19-tag{position:absolute;left:86px;top:92px;z-index:8;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;
+  background:linear-gradient(180deg,#FDFAF4 0%,#F1E7D6 100%);
+  box-shadow:0 12px 30px rgba(43,31,23,0.26),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s19-terror-won"] .s19-tag-dot{width:15px;height:15px;border-radius:50%;background:#C2593F;
+  box-shadow:0 0 0 5px rgba(194,89,63,0.20),inset 0 0 0 3px #A8462F;}
+[data-composition-id="s19-terror-won"] .s19-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.16em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s19-terror-won"] .s19-rule{position:absolute;left:86px;top:158px;height:5px;width:0;z-index:8;background:#C2593F;border-radius:4px;
+  box-shadow:0 2px 6px rgba(43,31,23,0.25);}
+[data-composition-id="s19-terror-won"] .s19-mote{transform-box:fill-box;transform-origin:50% 50%;}
+</style>
+
+<div id="root" data-composition-id="s19-terror-won" data-width="1920" data-height="1080" data-start="0" data-duration="19.425">
+  <div class="s19-stage" id="s19-stage">
+    <div class="s19-ground"></div>
+
+    <!-- BG · the workshop after the men left -->
+    <svg class="s19-plane s19-p-bg" id="s19-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s19-wall" x1="0" y1="0" x2="0.06" y2="1">
+          <stop offset="0" stop-color="#FAF0DA"/><stop offset="0.44" stop-color="#F0DDBB"/><stop offset="1" stop-color="#D5B78F"/>
+        </linearGradient>
+        <linearGradient id="s19-floor" x1="0" y1="0" x2="0.06" y2="1">
+          <stop offset="0" stop-color="#C79A6A"/><stop offset="0.42" stop-color="#A97C4C"/><stop offset="1" stop-color="#70492A"/>
+        </linearGradient>
+        <linearGradient id="s19-door" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#8E5F36"/><stop offset="0.45" stop-color="#6E4826"/><stop offset="1" stop-color="#4A2E1C"/>
+        </linearGradient>
+        <linearGradient id="s19-doorleaf" x1="0" y1="0" x2="0.16" y2="1">
+          <stop offset="0" stop-color="#7A4F2C"/><stop offset="0.5" stop-color="#5C3A20"/><stop offset="1" stop-color="#3A2A1E"/>
+        </linearGradient>
+        <linearGradient id="s19-stone" x1="0" y1="0" x2="0.14" y2="1">
+          <stop offset="0" stop-color="#D6C09A"/><stop offset="0.5" stop-color="#B39A76"/><stop offset="1" stop-color="#8A7256"/>
+        </linearGradient>
+        <linearGradient id="s19-brass" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.3" stop-color="#E3BB64"/><stop offset="0.62" stop-color="#C89D42"/>
+          <stop offset="0.86" stop-color="#9E742A"/><stop offset="1" stop-color="#D9AE56"/>
+        </linearGradient>
+        <linearGradient id="s19-steel" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#BEB098"/><stop offset="0.5" stop-color="#8E7F68"/><stop offset="1" stop-color="#5E5344"/>
+        </linearGradient>
+        <radialGradient id="s19-gap" cx="50%" cy="46%" r="58%">
+          <stop offset="0" stop-color="#FFF8E2" stop-opacity="0.98"/><stop offset="0.4" stop-color="#FFD98E" stop-opacity="0.72"/>
+          <stop offset="1" stop-color="#E89A3C" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s19-ember" cx="50%" cy="52%" r="52%">
+          <stop offset="0" stop-color="#E89A3C" stop-opacity="0.55"/><stop offset="0.6" stop-color="#C2593F" stop-opacity="0.2"/>
+          <stop offset="1" stop-color="#C2593F" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="s19-pool" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFE8B4" stop-opacity="0.5"/><stop offset="0.6" stop-color="#FFD98E" stop-opacity="0.18"/>
+          <stop offset="1" stop-color="#FFD98E" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="s19-plank" width="180" height="120" patternUnits="userSpaceOnUse">
+          <rect width="180" height="120" fill="none"/>
+          <path d="M0,0 H180" stroke="#6E4826" stroke-width="4" opacity="0.3"/>
+          <path d="M0,118 H180" stroke="#E0BE90" stroke-width="2" opacity="0.16"/>
+          <path d="M92,0 V120" stroke="#6E4826" stroke-width="3" opacity="0.18"/>
+        </pattern>
+        <filter id="s19-bblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="34"/></filter>
+        <filter id="s19-mblur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="11"/></filter>
+        <filter id="s19-grainf" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.83" numOctaves="2" seed="113" result="n"/>
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.13  0 0 0 0 0.10  0 0 0 0 0.07  0 0 0 0.5 0"/>
+        </filter>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s19-wall)"/>
+      <g stroke="#A97445" stroke-width="3" opacity="0.1">
+        <path d="M0,268 H1920"/><path d="M0,520 H1920"/><path d="M560,0 V700"/><path d="M1500,0 V700"/>
+      </g>
+
+      <!-- the doorway, ajar, and the light that is leaving -->
+      <g id="s19-doorway" transform="translate(1296,206) scale(0.86)">
+        <g id="s19-doorway-in">
+        <path d="M-140,-42 H600 V620 H-140 Z" fill="#B98A5C"/>
+        <path d="M-118,-22 H578 V600 H-118 Z" fill="#8A5F3C"/>
+        <path d="M-118,-22 H578 V600 H-118 Z" fill="none" stroke="#3A2A1E" stroke-width="9"/>
+        <!-- the gap -->
+        <path d="M404,-22 H578 V600 H404 Z" fill="url(#s19-gap)"/>
+        <path d="M404,-22 H578 V600 H404 Z" fill="#FFD98E" opacity="0.24"/>
+        <!-- the leaf, swung inward -->
+        <g id="s19-leaf" transform="translate(120,0)">
+          <path d="M-22,-22 L296,-52 L296,628 L-22,600 Z" fill="url(#s19-doorleaf)" stroke="#2B1F17" stroke-width="8"/>
+          <g stroke="#3A2A1E" stroke-width="4" opacity="0.35">
+            <path d="M-16,120 L290,96"/><path d="M-16,248 L290,226"/><path d="M-16,376 L290,356"/><path d="M-16,504 L290,486"/>
+          </g>
+          <g stroke="#8A5F3C" stroke-width="4" opacity="0.3">
+            <path d="M24,-30 L24,610"/><path d="M112,-38 L112,616"/><path d="M200,-46 L200,622"/>
+          </g>
+          <path d="M-22,-22 L296,-52" stroke="#C9A87C" stroke-width="5" opacity="0.4"/>
+          <circle cx="246" cy="272" r="15" fill="url(#s19-brass)" stroke="#5C3A20" stroke-width="4"/>
+          <path d="M246,288 V318" stroke="#3A2A1E" stroke-width="7"/>
+        </g>
+        <!-- light spilling on the threshold -->
+        <path d="M404,600 L578,600 L700,760 L300,760 Z" fill="url(#s19-pool)" opacity="0.8"/>
+        <path d="M-140,618 H600" stroke="#3A2A1E" stroke-width="10" opacity="0.4"/>
+        <path d="M-152,626 H612 L640,656 H-180 Z" fill="#B39A76" stroke="#5C4030" stroke-width="5"/>
+        <path d="M-152,626 H612" stroke="#E4D0AC" stroke-width="4" opacity="0.45"/>
+        <ellipse cx="220" cy="668" rx="330" ry="34" fill="#2B1F17" opacity="0.22" filter="url(#s19-bblur)"/>
+      
+        </g>
+      </g>
+
+      <!-- the cold furnace, left -->
+      <g id="s19-furnace" transform="translate(300,0)">
+        <g id="s19-furnace-in">
+        <path d="M-260,880 V470 C-260,392 -180,344 0,344 C180,344 260,392 260,470 V880 Z" fill="url(#s19-stone)" stroke="#5C4030" stroke-width="8"/>
+        <path d="M-206,880 V486 C-206,428 -140,392 0,392 C140,392 206,428 206,486 V880 Z" fill="#8A7256"/>
+        <path d="M-136,880 V520 C-136,472 -80,446 0,446 C80,446 136,472 136,520 V880 Z" fill="#3A2A1E"/>
+        <path d="M-112,880 V532 C-112,494 -66,472 0,472 C66,472 112,494 112,532 V880 Z" fill="#241812"/>
+        <ellipse cx="0" cy="806" rx="150" ry="104" fill="url(#s19-ember)" opacity="0.95"/>
+        <ellipse cx="0" cy="824" rx="96" ry="44" fill="#E89A3C" opacity="0.45"/>
+        <ellipse cx="0" cy="828" rx="58" ry="24" fill="#FFCE7C" opacity="0.4"/>
+        <ellipse cx="0" cy="860" rx="70" ry="18" fill="#FFCE7C" opacity="0.35"/>
+        <g fill="#4A3524" opacity="0.85">
+          <ellipse cx="0" cy="812" rx="96" ry="46"/>
+          <ellipse cx="-40" cy="800" rx="34" ry="20" fill="#5C4030"/>
+          <ellipse cx="46" cy="806" rx="28" ry="17" fill="#5C4030"/>
+        </g>
+        <circle cx="-18" cy="806" r="4" fill="#FFE8B4" opacity="0.85"/>
+        <circle cx="26" cy="822" r="3" fill="#FFCE7C" opacity="0.75"/>
+        <circle cx="-48" cy="812" r="2.5" fill="#E89A3C" opacity="0.7"/>
+        <circle cx="58" cy="834" r="2" fill="#FFD98E" opacity="0.6"/>
+        <g stroke="#6E5338" stroke-width="6" opacity="0.5">
+          <path d="M-206,560 H206"/><path d="M-206,690 H206"/>
+        </g>
+        <path d="M-260,470 C-206,428 -80,404 0,404 C80,404 206,428 260,470" fill="none" stroke="#C9B08A" stroke-width="6" opacity="0.35"/>
+        <path d="M-120,404 C-96,300 -70,240 -30,196 C-6,172 24,180 40,208 C64,252 74,320 78,400 Z" fill="#4A3524" opacity="0.18"/>
+
+        <path d="M-260,880 H260" stroke="#5C4030" stroke-width="9"/>
+        <!-- cold chimney above -->
+        <path d="M-64,344 V220 H64 V344" fill="#B39A76" stroke="#5C4030" stroke-width="7"/>
+        <path d="M-84,220 H84" stroke="#5C4030" stroke-width="9"/>
+      
+        </g>
+      </g>
+
+      <!-- what the wall remembers -->
+      <g id="s19-shelfwall" transform="translate(660,352)">
+        <path d="M-150,0 H150 V18 H-150 Z" fill="#8E5F36" stroke="#3A2A1E" stroke-width="5"/>
+        <path d="M-150,0 H150" stroke="#C9A87C" stroke-width="4" opacity="0.4"/>
+        <g stroke="#5C3A20" stroke-width="7" fill="none">
+          <path d="M-110,18 L-88,66 L-110,18"/><path d="M110,18 L88,66 L110,18"/>
+        </g>
+        <g id="s19-jar1" transform="translate(-92,-46)">
+          <path d="M-30,0 H30 V40 C30,56 -30,56 -30,40 Z" fill="#E9D8B2" stroke="#8A6B49" stroke-width="4" opacity="0.9"/>
+          <path d="M-30,24 H30 V40 C30,56 -30,56 -30,40 Z" fill="#C2593F" opacity="0.55"/>
+          <path d="M-24,0 H24 V-10 H-24 Z" fill="#B98A5C" stroke="#8A6B49" stroke-width="3"/>
+          <path d="M-18,8 V30" stroke="#FFFDF2" stroke-width="4" opacity="0.5"/>
+        </g>
+        <g id="s19-jar2" transform="translate(-6,-66)">
+          <path d="M-26,0 H26 V46 C26,64 -26,64 -26,46 Z" fill="#E9D8B2" stroke="#8A6B49" stroke-width="4" opacity="0.9"/>
+          <path d="M-26,28 H26 V46 C26,64 -26,64 -26,46 Z" fill="#C89D42" opacity="0.6"/>
+          <path d="M-20,0 H20 V-10 H-20 Z" fill="#B98A5C" stroke="#8A6B49" stroke-width="3"/>
+          <path d="M-14,8 V34" stroke="#FFFDF2" stroke-width="4" opacity="0.5"/>
+        </g>
+        <g id="s19-jar3" transform="translate(82,-40)">
+          <path d="M-24,0 H24 V34 C24,50 -24,50 -24,34 Z" fill="#E9D8B2" stroke="#8A6B49" stroke-width="4" opacity="0.9"/>
+          <path d="M-24,20 H24 V34 C24,50 -24,50 -24,34 Z" fill="#8E5A33" opacity="0.5"/>
+          <path d="M-18,0 H18 V-9 H-18 Z" fill="#B98A5C" stroke="#8A6B49" stroke-width="3"/>
+        </g>
+      </g>
+      <g fill="#5C3A20" opacity="0.35">
+        <circle cx="472" cy="196" r="6"/><circle cx="508" cy="214" r="5"/><circle cx="446" cy="232" r="4"/>
+        <circle cx="1058" cy="180" r="5"/><circle cx="1092" cy="204" r="4"/>
+      </g>
+
+      <!-- the tally of what left -->
+      <g id="s19-tally" transform="translate(796,596)" stroke="#8A6B49" stroke-width="5" stroke-linecap="round" opacity="0.55">
+        <path d="M0,0 V72"/><path d="M22,0 V72"/><path d="M44,0 V72"/><path d="M66,0 V72"/>
+        <path d="M-6,72 H72" stroke-dasharray="7 10"/>
+        <path d="M104,0 V72"/><path d="M126,0 V72"/><path d="M148,0 V72"/>
+        <path d="M-6,128 H154" stroke-dasharray="7 10"/>
+        <path d="M186,0 V72"/><path d="M208,0 V72"/>
+        <path d="M186,84 V156"/><path d="M208,84 V156"/><path d="M230,84 V156"/>
+      </g>
+
+      <!-- the light that is leaving -->
+      <g id="s19-shaft" filter="url(#s19-mblur)" opacity="0.92">
+        <path d="M1648,690 L1768,690 L1920,1080 L1096,1080 Z" fill="url(#s19-pool)" opacity="0.85"/>
+        <path d="M1664,700 L1752,700 L1836,1080 L1258,1080 Z" fill="#FFE8B4" opacity="0.2"/>
+        <path d="M1680,706 L1740,706 L1786,1080 L1400,1080 Z" fill="#FFF6DE" opacity="0.16"/>
+
+        <ellipse cx="1512" cy="1016" rx="360" ry="96" fill="#FFD98E" opacity="0.2" filter="url(#s19-bblur)"/>
+      </g>
+
+      <!-- tools left on the wall -->
+      <g id="s19-tools" transform="translate(902,286)">
+        <g id="s19-tools-in">
+          <path d="M-190,-52 H190" stroke="#5C3A20" stroke-width="11" stroke-linecap="round"/>
+          <path d="M-186,-58 H190" stroke="#C9A87C" stroke-width="4" opacity="0.4"/>
+          <!-- tongs -->
+          <g transform="translate(-146,0)">
+            <path d="M0,-48 V40" stroke="#5C3A20" stroke-width="5"/>
+            <path d="M-2,-38 C-22,10 -18,76 -4,124" fill="none" stroke="#9C8C74" stroke-width="11" stroke-linecap="round"/>
+            <path d="M2,-38 C22,10 18,76 4,124" fill="none" stroke="#9C8C74" stroke-width="11" stroke-linecap="round"/>
+            <path d="M-4,124 L-14,140 M4,124 L14,140" stroke="#8E7F68" stroke-width="9" stroke-linecap="round"/>
+          </g>
+          <!-- shears -->
+          <g transform="translate(-48,0)">
+            <path d="M0,-48 V28" stroke="#5C3A20" stroke-width="5"/>
+            <path d="M-2,-22 L-26,120" stroke="#CFC0A6" stroke-width="9" stroke-linecap="round"/>
+            <path d="M2,-22 L26,120" stroke="#CFC0A6" stroke-width="9" stroke-linecap="round"/>
+            <path d="M-26,120 L-34,142 M26,120 L34,142" stroke="#9C8C74" stroke-width="7" stroke-linecap="round"/>
+            <path d="M-6,-30 C-26,-18 -28,8 -12,16 C0,22 8,10 4,-6 Z" fill="#C89D42" stroke="#5C3A20" stroke-width="3"/>
+            <path d="M0,-28 C-6,-18 2,-7 10,-14" fill="none" stroke="#5C3A20" stroke-width="4"/>
+            <circle cx="0" cy="-26" r="7" fill="url(#s19-brass)" stroke="#5C3A20" stroke-width="3"/>
+          </g>
+          <!-- paddle -->
+          <g transform="translate(62,0)">
+            <path d="M0,-48 V30" stroke="#5C3A20" stroke-width="5"/>
+            <path d="M0,26 V96" stroke="#8E5F36" stroke-width="9"/>
+            <path d="M-16,88 H16 L22,150 C22,172 -22,172 -22,150 Z" fill="#BE8D5B" stroke="#3A2A1E" stroke-width="4"/>
+            <path d="M-10,96 C-14,120 -16,140 -14,156" fill="none" stroke="#D8BE93" stroke-width="3" opacity="0.45"/>
+            <path d="M8,96 C10,120 12,140 10,156" fill="none" stroke="#6E4826" stroke-width="3" opacity="0.35"/>
+          </g>
+          <!-- small blowpipe nozzle -->
+          <g transform="translate(146,0)">
+            <path d="M0,-48 V10" stroke="#5C3A20" stroke-width="5"/>
+            <rect x="-6" y="10" width="12" height="104" rx="6" fill="#9C8C74" stroke="#3A2A1E" stroke-width="3"/>
+            <circle cx="0" cy="120" r="15" fill="#8E7F68" stroke="#3A2A1E" stroke-width="3"/>
+            <circle cx="0" cy="120" r="6" fill="#5E5344"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- the floor -->
+      <path d="M-40,760 H1960 V1080 H-40 Z" fill="url(#s19-floor)"/>
+      <path d="M-40,760 H1960 V1080 H-40 Z" fill="url(#s19-plank)" opacity="0.65"/>
+      <path d="M-40,760 H1960" stroke="#3A2A1E" stroke-width="8" opacity="0.4"/>
+      <path d="M-40,776 H1960" stroke="#E0BE90" stroke-width="4" opacity="0.2"/>
+      <path d="M420,760 L300,1080" stroke="#5C3A20" stroke-width="5" opacity="0.25"/>
+      <path d="M1240,760 L1360,1080" stroke="#5C3A20" stroke-width="5" opacity="0.25"/>
+
+      <ellipse cx="1420" cy="880" rx="440" ry="220" fill="#FFD98E" opacity="0.16" filter="url(#s19-bblur)"/>
+      <ellipse cx="300" cy="900" rx="360" ry="200" fill="#3A2A1E" opacity="0.16" filter="url(#s19-bblur)"/>
+      <rect x="0" y="0" width="1920" height="1080" filter="url(#s19-grainf)" opacity="0.05" style="mix-blend-mode:multiply"/>
+
+      <g fill="#FFD98E" opacity="0.55">
+        <circle class="s19-mote" cx="1320" cy="380" r="4"/><circle class="s19-mote" cx="1460" cy="520" r="3"/>
+        <circle class="s19-mote" cx="900" cy="430" r="4"/><circle class="s19-mote" cx="620" cy="600" r="3"/>
+        <circle class="s19-mote" cx="1660" cy="300" r="3"/>
+      </g>
+      <g fill="#FFF6DE" opacity="0.5">
+        <circle id="s19-d1" cx="1500" cy="760" r="3"/><circle id="s19-d2" cx="1610" cy="880" r="2.5"/>
+        <circle id="s19-d3" cx="1380" cy="930" r="2"/><circle id="s19-d4" cx="1740" cy="800" r="3.5"/>
+        <circle id="s19-d5" cx="1240" cy="860" r="2.5"/><circle id="s19-d6" cx="1860" cy="950" r="2"/>
+      </g>
+      <g fill="#FFCE7C">
+        <circle id="s19-c1" cx="292" cy="800" r="3.5" opacity="0.9"/>
+        <circle id="s19-c2" cx="316" cy="812" r="2.5" opacity="0.8"/>
+        <circle id="s19-c3" cx="270" cy="816" r="2" opacity="0.7"/>
+        <circle id="s19-c4" cx="326" cy="792" r="3" opacity="0.75"/>
+      </g>
+      <g fill="#FFFDF6">
+        <ellipse id="s19-gl1" cx="568" cy="298" rx="5" ry="11" opacity="0.55"/>
+        <ellipse id="s19-gl2" cx="654" cy="278" rx="5" ry="12" opacity="0.5"/>
+        <ellipse id="s19-gl3" cx="742" cy="306" rx="4" ry="9" opacity="0.45"/>
+        <ellipse id="s19-gl4" cx="2064" cy="516" rx="8" ry="4" opacity="0.5"/>
+      </g>
+    </svg>
+
+    <!-- MG · what the men left behind -->
+    <svg class="s19-plane s19-p-mg" id="s19-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s19-bench" x1="0" y1="0" x2="0.08" y2="1">
+          <stop offset="0" stop-color="#B08556"/><stop offset="0.45" stop-color="#8A5F36"/><stop offset="1" stop-color="#5C3A20"/>
+        </linearGradient>
+        <linearGradient id="s19-glass" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FFFDF2" stop-opacity="0.85"/><stop offset="0.5" stop-color="#E8D6AE" stop-opacity="0.5"/>
+          <stop offset="1" stop-color="#B08A5E" stop-opacity="0.45"/>
+        </linearGradient>
+        <filter id="s19-soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="9"/></filter>
+        <filter id="s19-deep" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="17"/></filter>
+      </defs>
+
+      <!-- bench -->
+      <g id="s19-bench" transform="translate(520,884)">
+        <ellipse cx="0" cy="168" rx="392" ry="46" fill="#2B1F17" opacity="0.32" filter="url(#s19-deep)"/>
+        <path d="M-390,-40 H390 V40 H-390 Z" fill="url(#s19-bench)" stroke="#3A2A1E" stroke-width="7"/>
+        <path d="M-390,-40 H390" stroke="#D2A374" stroke-width="5" opacity="0.4"/>
+        <g stroke="#4A2E1C" stroke-width="5" opacity="0.4">
+          <path d="M-300,-10 H300"/><path d="M-300,14 H300"/>
+        </g>
+        <path d="M-330,40 V150 M330,40 V150" stroke="#6E4826" stroke-width="22"/>
+        <path d="M-330,40 V150 M330,40 V150" stroke="#3A2A1E" stroke-width="6" opacity="0.5"/>
+        <path d="M-306,146 H306 V162 H-306 Z" fill="#7A4F2C" stroke="#3A2A1E" stroke-width="4"/>
+        <path d="M-260,162 V186 M260,162 V186" stroke="#5C3A20" stroke-width="9"/>
+        <g id="s19-bench-in">
+          <!-- abandoned blowpipe -->
+          <g id="s19-pipe" transform="translate(-170,-74) rotate(-5)">
+        <g id="s19-pipe-in">
+            <rect x="-190" y="-7" width="360" height="14" rx="7" fill="url(#s19-steel)" stroke="#3A2A1E" stroke-width="3"/>
+            <rect x="-184" y="-4" width="326" height="4" rx="2" fill="#F0E2C8" opacity="0.6"/>
+            <circle cx="-152" cy="0" r="24" fill="#8E7F68" stroke="#3A2A1E" stroke-width="4"/>
+            <circle cx="-152" cy="0" r="11" fill="#5E5344"/>
+            <circle cx="-152" cy="0" r="4" fill="#3A2A1E"/>
+            <path d="M170,0 L222,-11 L222,11 Z" fill="#C8B79C" stroke="#3A2A1E" stroke-width="3"/>
+            <path d="M-70,0 H70" stroke="#6E6152" stroke-width="3" opacity="0.5"/>
+          
+        </g>
+      </g>
+          <!-- the jacks, a wooden mould -->
+          <g id="s19-jacks" transform="translate(150,-104)">
+            <path d="M-58,52 C-70,-6 -54,-58 0,-58 C54,-58 70,-6 58,52 Z" fill="#7A4F2C" stroke="#3A2A1E" stroke-width="5"/>
+            <ellipse cx="0" cy="52" rx="58" ry="14" fill="#8E5F36" stroke="#3A2A1E" stroke-width="5"/>
+            <ellipse cx="0" cy="52" rx="42" ry="9" fill="#5C3A20"/>
+            <g stroke="#C9A87C" stroke-width="4" opacity="0.35">
+              <path d="M-20,-50 C-10,-10 -10,26 -18,50"/><path d="M20,-50 C10,-10 10,26 18,50"/>
+            </g>
+          </g>
+          <!-- a bucket -->
+          <g id="s19-bucket" transform="translate(300,-48)">
+            <ellipse cx="0" cy="46" rx="66" ry="17" fill="#2B1F17" opacity="0.3" filter="url(#s19-soft)"/>
+            <path d="M-52,0 H52 L42,44 H-42 Z" fill="#8A5A32" stroke="#3A2A1E" stroke-width="5"/>
+            <ellipse cx="0" cy="0" rx="52" ry="14" fill="#A97445" stroke="#3A2A1E" stroke-width="5"/>
+            <ellipse cx="0" cy="0" rx="38" ry="9" fill="#3A2A1E" opacity="0.6"/>
+            <path d="M-52,-2 C-40,-46 40,-46 52,-2" fill="none" stroke="#6E4826" stroke-width="5"/>
+          </g>
+        </g>
+      </g>
+
+      <!-- a stool on its side -->
+      <g id="s19-stool" transform="translate(1214,942) rotate(-7)">
+        <ellipse cx="0" cy="46" rx="96" ry="22" fill="#2B1F17" opacity="0.3" filter="url(#s19-deep)"/>
+        <g id="s19-stool-in">
+          <path d="M-52,14 L-72,72 M52,14 L72,72 M0,18 L0,78" stroke="#6E4826" stroke-width="12" stroke-linecap="round"/>
+          <path d="M-52,14 L-72,72" stroke="#3A2A1E" stroke-width="4" opacity="0.35"/>
+          <path d="M-88,-6 C-88,-30 88,-30 88,-6 C88,18 -88,18 -88,-6 Z" fill="#A97445" stroke="#3A2A1E" stroke-width="6"/>
+          <ellipse cx="0" cy="-10" rx="88" ry="17" fill="#BE8D5B" stroke="#3A2A1E" stroke-width="5"/>
+          <path d="M-58,-14 C-38,-22 38,-22 58,-14" fill="none" stroke="#D8BE93" stroke-width="4" opacity="0.45"/>
+        </g>
+      </g>
+
+      <!-- a dropped apron -->
+      <g id="s19-apron" transform="translate(1002,1006) rotate(7)">
+        <g id="s19-apron-in">
+          <path d="M-96,-26 C-70,-44 70,-44 96,-26 C104,10 96,30 78,34 C30,42 -30,42 -78,34 C-96,30 -104,10 -96,-26 Z" fill="#9A7852" stroke="#5C3A20" stroke-width="4"/>
+          <path d="M-78,-30 C-42,-40 42,-40 78,-30 C82,-8 78,14 66,20 C26,28 -26,28 -66,20 C-78,14 -82,-8 -78,-30 Z" fill="#B08A60" opacity="0.55"/>
+          <g stroke="#7A5A38" stroke-width="3" opacity="0.55">
+            <path d="M-60,-30 C-56,0 -58,22 -62,36"/><path d="M-20,-34 C-16,0 -18,24 -20,40"/>
+            <path d="M20,-34 C16,0 18,24 20,40"/><path d="M60,-30 C56,0 58,22 62,36"/>
+          </g>
+          <path d="M-52,-40 C-20,-50 20,-50 52,-40" fill="none" stroke="#8A6B49" stroke-width="5"/>
+        </g>
+      </g>
+
+      <!-- the last ember wants to live -->
+      <g id="s19-embers" opacity="0.9">
+        <circle cx="292" cy="812" r="3" fill="#FFCE7C"/>
+        <circle cx="316" cy="800" r="2.5" fill="#E89A3C"/>
+        <circle cx="276" cy="798" r="2" fill="#FFD98E"/>
+      </g>
+    </svg>
+
+    <!-- FG · foreground lip and the door-edge wipe -->
+    <svg class="s19-plane s19-p-fg" id="s19-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s19-fglip" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#4A2E1C"/><stop offset="1" stop-color="#241812"/>
+        </linearGradient>
+        <linearGradient id="s19-wipe" gradientUnits="userSpaceOnUse" x1="1900" y1="0" x2="4520" y2="0">
+          <stop offset="0" stop-color="#3A2A1E"/><stop offset="0.5" stop-color="#241812"/><stop offset="1" stop-color="#1A120D"/>
+        </linearGradient>
+        <linearGradient id="s19-wipeedge" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFD98E"/><stop offset="0.5" stop-color="#F0C7A0"/><stop offset="1" stop-color="#C2593F"/>
+        </linearGradient>
+        <filter id="s19-fgblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="15"/></filter>
+      </defs>
+
+      <g id="s19-fglip" filter="url(#s19-fgblur)" opacity="0.95">
+        <path d="M-60,1080 L-60,1026 L520,1008 L660,1080 Z" fill="url(#s19-fglip)"/>
+        <path d="M-60,1042 L546,1022" stroke="#8A6B49" stroke-width="7" opacity="0.28"/>
+        <path d="M1360,1080 L1372,1028 L1920,1014 L1920,1080 Z" fill="url(#s19-fglip)"/>
+        <ellipse cx="1560" cy="1050" rx="90" ry="18" fill="#1E1813" opacity="0.7"/>
+      </g>
+
+      <g id="s19-wipewrap">
+        <rect x="1920" y="-120" width="2600" height="1320" fill="url(#s19-wipe)"/>
+        <!-- the back of the door: boards, braces, studs -->
+        <g stroke="#4A2E1C" stroke-width="6" opacity="0.55">
+          <path d="M2064,-120 V1200"/><path d="M2210,-120 V1200"/><path d="M2356,-120 V1200"/>
+          <path d="M2502,-120 V1200"/><path d="M2648,-120 V1200"/><path d="M2794,-120 V1200"/>
+          <path d="M2940,-120 V1200"/><path d="M3086,-120 V1200"/>
+        </g>
+        <g stroke="#5C3A20" stroke-width="4" opacity="0.4">
+          <path d="M2060,-120 V1200"/><path d="M2206,-120 V1200"/><path d="M2352,-120 V1200"/>
+          <path d="M2498,-120 V1200"/><path d="M2644,-120 V1200"/><path d="M2790,-120 V1200"/>
+          <path d="M2936,-120 V1200"/><path d="M3082,-120 V1200"/>
+        </g>
+        <rect x="2028" y="90" width="352" height="360" fill="none" stroke="#5C3A20" stroke-width="9" opacity="0.6"/>
+        <rect x="2028" y="90" width="352" height="360" fill="none" stroke="#7A4F2C" stroke-width="4" opacity="0.35"/>
+        <rect x="2028" y="536" width="352" height="360" fill="none" stroke="#5C3A20" stroke-width="9" opacity="0.6"/>
+        <rect x="2028" y="536" width="352" height="360" fill="none" stroke="#7A4F2C" stroke-width="4" opacity="0.35"/>
+        <g fill="#3A2A1E" opacity="0.85">
+          <circle cx="2000" cy="120" r="14"/><circle cx="2000" cy="520" r="14"/><circle cx="2000" cy="900" r="14"/>
+          <circle cx="2420" cy="120" r="12"/><circle cx="2420" cy="520" r="12"/><circle cx="2420" cy="900" r="12"/>
+        </g>
+        <g fill="#C9A87C" opacity="0.22">
+          <circle cx="1996" cy="116" r="5"/><circle cx="1996" cy="516" r="5"/><circle cx="1996" cy="896" r="5"/>
+        </g>
+        <!-- the leading edge catches the last of the light -->
+        <rect x="1908" y="-120" width="14" height="1320" fill="#8A5F36"/>
+        <rect x="1909" y="-120" width="3" height="1320" fill="#FFE8B4" opacity="0.55"/>
+        <rect x="1922" y="-120" width="30" height="1320" fill="#3A2A1E" opacity="0.55"/>
+        <rect x="1952" y="-120" width="8" height="1320" fill="#2B1F17" opacity="0.3"/>
+        <!-- ring pull -->
+        <g transform="translate(2064,540)">
+          <circle cx="0" cy="0" r="34" fill="#4A2E1C" opacity="0.6"/>
+          <circle cx="0" cy="0" r="34" fill="none" stroke="#8A5F36" stroke-width="6" opacity="0.7"/>
+          <circle cx="0" cy="0" r="18" fill="none" stroke="#C89D42" stroke-width="9"/>
+          <circle cx="0" cy="0" r="18" fill="none" stroke="#9E742A" stroke-width="4" opacity="0.7"/>
+          <circle cx="0" cy="-18" r="7" fill="#C89D42"/>
+          <path d="M-14,-12 C-24,-4 -26,10 -18,20" fill="none" stroke="#FFE8B4" stroke-width="3" opacity="0.35"/>
+        </g>
+        <!-- iron strap hinges -->
+        <g fill="#241812" opacity="0.7">
+          <path d="M2600,116 L2960,92 L2960,146 L2600,170 Z"/>
+          <path d="M2600,896 L2960,872 L2960,926 L2600,950 Z"/>
+        </g>
+        <g fill="#8A5F36" opacity="0.22">
+          <path d="M2600,120 L2960,96 L2960,104 L2600,128 Z"/>
+          <path d="M2600,900 L2960,876 L2960,884 L2600,908 Z"/>
+        </g>
+        <g fill="#C89D42" opacity="0.5">
+          <circle cx="2640" cy="143" r="6"/><circle cx="2820" cy="131" r="6"/>
+          <circle cx="2640" cy="923" r="6"/><circle cx="2820" cy="911" r="6"/>
+        </g>
+        <rect x="2600" y="-120" width="4" height="1320" fill="#FFD98E" opacity="0.2"/>
+      </g>
+    </svg>
+
+    <div class="s19-grain"></div>
+    <div class="s19-vignette"></div>
+
+    <div class="s19-tag" id="s19-tag">
+      <span class="s19-tag-dot"></span>
+      <span class="s19-tag-text">TERROR WON</span>
+    </div>
+    <div class="s19-rule" id="s19-rule"></div>
+  </div>
+</div>
+
+<script>
+(function initS19(){
+  var ID = "s19-terror-won";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, { duration: 19.425 }, 0);
+
+  // ── PHASE 1: the room holds its breath ───────────────────────────────────
+  tl.fromTo("#s19-bg", { scale: 1.06, x: -12, y: -8 }, { scale: 1, x: 0, y: 0, duration: 19.2, ease: "sine.out" }, 0.05);
+  tl.fromTo("#s19-furnace-in", { x: -70, opacity: 0 }, { x: 0, opacity: 1, duration: 1.1, ease: "power2.out" }, 0.30);
+  tl.fromTo("#s19-tools-in", { y: -34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "power2.out" }, 0.60);
+  tl.fromTo("#s19-doorway-in", { x: 50, opacity: 0 }, { x: 0, opacity: 1, duration: 1.15, ease: "power2.out" }, 0.44);
+
+  // the door drifts inward, closing on the street
+  tl.set("#s19-leaf", { rotation: 0, transformOrigin: "0px 0px" }, 2.10);
+  tl.to("#s19-leaf", { rotation: -3.4, duration: 5.6, ease: "sine.inOut" }, 2.20);
+  tl.to("#s19-leaf", { rotation: -1.2, duration: 4.4, ease: "sine.inOut" }, 8.40);
+  tl.to("#s19-leaf", { rotation: -6.8, duration: 4.0, ease: "sine.inOut" }, 13.20);
+
+  // the embers breathe and dim
+  tl.to("#s19-embers", { opacity: 0.35, duration: 3.8, ease: "sine.inOut", yoyo: true, repeat: 3 }, 1.60);
+  tl.fromTo("#s19-embers circle", { y: 0 }, { y: -18, duration: 3.2, ease: "sine.inOut", yoyo: true, repeat: 4, stagger: 0.5 }, 1.40);
+
+  // ── PHASE 2: the bench and what was left ─────────────────────────────────
+  tl.fromTo("#s19-bench-in", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "power2.out" }, 3.10);
+  tl.fromTo("#s19-stool-in", { y: 34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }, 4.40);
+  tl.fromTo("#s19-apron-in", { y: 26, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "power2.out" }, 4.90);
+  tl.fromTo("#s19-pipe-in", { x: -40, rotation: -12, opacity: 0 }, { x: 0, rotation: 0, opacity: 1, duration: 1.0, ease: "power2.out", transformOrigin: "50% 50%" }, 3.60);
+
+  // dust drifts through the last of the light
+  tl.fromTo(".s19-mote", { y: 0, x: 0 }, { y: -84, x: 18, duration: 7.4, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 0.26 }, 1.20);
+  tl.to("#s19-apron-in", { rotation: 2.2, duration: 6.4, ease: "sine.inOut", yoyo: true, repeat: 1, transformOrigin: "50% 0%" }, 6.20);
+
+  // ── living hold ──────────────────────────────────────────────────────────
+  tl.fromTo("#s19-stage", { scale: 1, y: 0 }, { scale: 1.045, y: -14, duration: 19.1, ease: "sine.inOut" }, 0.10);
+
+  // dust drifts in the shaft
+  tl.fromTo("#s19-d1", { y: 0, opacity: 0.5 }, { y: -160, opacity: 0, duration: 7.4, ease: "sine.out", repeat: 1 }, 6.30);
+  tl.fromTo("#s19-d2", { y: 0, opacity: 0.45 }, { y: -190, opacity: 0, duration: 8.2, ease: "sine.out", repeat: 1 }, 7.10);
+  tl.fromTo("#s19-d3", { y: 0, opacity: 0.4 }, { y: -140, opacity: 0, duration: 6.8, ease: "sine.out", repeat: 1 }, 8.40);
+  tl.fromTo("#s19-d4", { y: 0, opacity: 0.5 }, { y: -210, opacity: 0, duration: 9.0, ease: "sine.out" }, 6.90);
+  tl.fromTo("#s19-d5", { y: 0, opacity: 0.42 }, { y: -170, opacity: 0, duration: 7.8, ease: "sine.out" }, 9.60);
+  tl.fromTo("#s19-d6", { y: 0, opacity: 0.38 }, { y: -150, opacity: 0, duration: 6.4, ease: "sine.out", repeat: 1 }, 10.40);
+
+  // sparks lift off the coals and die
+  tl.fromTo("#s19-c1", { y: 0, opacity: 0.9 }, { y: -120, opacity: 0, duration: 4.2, ease: "sine.out", repeat: 1 }, 4.20);
+  tl.fromTo("#s19-c2", { y: 0, opacity: 0.8 }, { y: -96, opacity: 0, duration: 3.6, ease: "sine.out", repeat: 1 }, 5.60);
+  tl.fromTo("#s19-c3", { y: 0, opacity: 0.7 }, { y: -84, opacity: 0, duration: 3.0, ease: "sine.out", repeat: 2 }, 7.20);
+  tl.fromTo("#s19-c4", { y: 0, opacity: 0.75 }, { y: -140, opacity: 0, duration: 4.8, ease: "sine.out", repeat: 1 }, 8.90);
+
+  // glass catches what light is left
+  tl.to("#s19-gl1", { opacity: 0.9, duration: 1.6, ease: "sine.inOut", yoyo: true, repeat: 8 }, 3.40);
+  tl.to("#s19-gl2", { opacity: 0.85, duration: 1.9, ease: "sine.inOut", yoyo: true, repeat: 7 }, 4.10);
+  tl.to("#s19-gl3", { opacity: 0.8, duration: 2.2, ease: "sine.inOut", yoyo: true, repeat: 5 }, 4.60);
+  tl.to("#s19-gl4", { opacity: 0.85, duration: 2.4, ease: "sine.inOut", yoyo: true, repeat: 5 }, 18.30);
+
+  // the shaft thins as the door closes
+  tl.to("#s19-shaft", { opacity: 0.55, duration: 12.0, ease: "sine.in" }, 4.60);
+  tl.to("#s19-tally", { opacity: 0.34, duration: 13.0, ease: "sine.in" }, 3.20);
+
+  // ── TAG ──────────────────────────────────────────────────────────────────
+  tl.fromTo("#s19-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -14 }, { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.6, ease: "power3.inOut" }, 15.30);
+  tl.fromTo("#s19-rule", { width: 0 }, { width: 320, duration: 0.5, ease: "power2.out" }, 15.66);
+
+  // ── SEAM: the door edge closes across the frame ──────────────────────────
+  tl.to("#s19-tag", { clipPath: "inset(0% 100% 0% 0%)", duration: 0.18, ease: "power2.in" }, 17.70);
+  tl.to("#s19-rule", { width: 0, duration: 0.18, ease: "power2.in" }, 17.70);
+  tl.set("#s19-wipewrap", { x: 0 }, 18.10);
+  tl.to("#s19-wipewrap", { x: -2040, duration: 1.05, ease: "power3.inOut" }, 18.14);
+  tl.to("#s19-fglip", { opacity: 0, duration: 0.5, ease: "sine.in" }, 18.14);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

@@ -1,0 +1,516 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s03-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s03-three-documents"] .s03-stage{position:absolute;inset:0;transform-origin:48% 50%;}
+[data-composition-id="s03-three-documents"] .s03-ground{position:absolute;inset:0;background:
+  radial-gradient(62% 58% at 68% 16%, rgba(255,224,172,0.40) 0%, rgba(255,224,172,0) 72%),
+  radial-gradient(125% 100% at 58% 22%, #FDF9F0 0%, #F8EBD3 26%, #EDD6AE 44%, #DDB878 70%, #C89A5A 100%);}
+[data-composition-id="s03-three-documents"] .s03-plane{position:absolute;inset:0;}
+[data-composition-id="s03-three-documents"] .s03-p-bg{z-index:1;}
+[data-composition-id="s03-three-documents"] .s03-p-mg{z-index:2;}
+[data-composition-id="s03-three-documents"] .s03-p-fg{z-index:3;}
+[data-composition-id="s03-three-documents"] .s03-art{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="s03-three-documents"] .s03-grain{position:absolute;inset:0;z-index:5;pointer-events:none;opacity:0.055;mix-blend-mode:multiply;}
+[data-composition-id="s03-three-documents"] .s03-vignette{position:absolute;inset:0;z-index:6;pointer-events:none;
+  background:
+    linear-gradient(to top, rgba(43,31,23,0.30) 0%, rgba(43,31,23,0.08) 18%, rgba(43,31,23,0) 36%),
+    radial-gradient(115% 95% at 50% 46%, rgba(43,31,23,0) 46%, rgba(43,31,23,0.26) 100%);}
+[data-composition-id="s03-three-documents"] .s03-tag{position:absolute;right:86px;top:62px;z-index:7;display:flex;align-items:center;gap:14px;
+  padding:12px 18px 12px 26px;border:3px solid #C89D42;border-radius:100px;background:linear-gradient(180deg,#FDFAF4 0%,#F1E7D6 100%);
+  box-shadow:0 12px 30px rgba(43,31,23,0.22),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:100% 50%;}
+[data-composition-id="s03-three-documents"] .s03-tag-dot{width:14px;height:14px;border-radius:50%;background:#C2593F;box-shadow:0 0 0 4px rgba(194,89,63,0.18);}
+[data-composition-id="s03-three-documents"] .s03-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.14em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s03-three-documents"] .s03-tag-rule{position:absolute;right:86px;top:130px;height:5px;width:0;z-index:7;background:#C2593F;border-radius:4px;}
+[data-composition-id="s03-three-documents"] .s03-tally{transform-box:fill-box;transform-origin:50% 0%;}
+[data-composition-id="s03-three-documents"] .s03-mote{transform-box:fill-box;transform-origin:50% 50%;}
+</style>
+
+<div id="root" data-composition-id="s03-three-documents" data-width="1920" data-height="1080" data-start="36.176" data-duration="24.265">
+  <div class="s03-stage" id="s03-stage">
+    <div class="s03-ground" id="s03-ground"></div>
+
+    <!-- PLANE BG · depth 0.97 · ruled field, umber stack shadow, gallery ghost -->
+    <div class="s03-plane s03-p-bg" id="s03-plane-bg">
+      <svg class="s03-art" id="s03-art-bg" viewBox="0 0 1920 1080" aria-hidden="true">
+        <defs>
+          <radialGradient id="s03-lamp" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#D9822B" stop-opacity="0.20"/>
+            <stop offset="1" stop-color="#D9822B" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="s03-field" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#F5EFEB"/><stop offset="1" stop-color="#E6D8C4"/>
+          </linearGradient>
+          <radialGradient id="s03-terracotta" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#C2593F" stop-opacity="0.10"/>
+            <stop offset="1" stop-color="#C2593F" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="s03-tr-wash" x1="1" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#C2593F" stop-opacity="0.10"/>
+            <stop offset="1" stop-color="#C2593F" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="s03-desk" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#2B1F17" stop-opacity="0.10"/>
+            <stop offset="0.35" stop-color="#2B1F17" stop-opacity="0.34"/>
+            <stop offset="1" stop-color="#2B1F17" stop-opacity="0.66"/>
+          </linearGradient>
+          <linearGradient id="s03-bind" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#8E3524"/><stop offset="0.45" stop-color="#C2593F"/><stop offset="1" stop-color="#A8452F"/>
+          </linearGradient>
+          <filter id="s03-soft" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="18"/>
+          </filter>
+          <filter id="s03-soft-lg" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="24"/>
+          </filter>
+          <filter id="s03-soft-sm" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="7"/>
+          </filter>
+          <filter id="s03-grain" x="0" y="0" width="100%" height="100%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.88" numOctaves="2" seed="23" result="n"/>
+            <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0.5 0"/>
+          </filter>
+        </defs>
+
+        <circle cx="1380" cy="140" r="520" fill="url(#s03-lamp)"/>
+
+        <!-- ledger rule field, 0.97 depth -->
+        <g transform="translate(760,150) rotate(-2)">
+          <rect x="0" y="0" width="1220" height="880" fill="url(#s03-field)" opacity="0.5"/>
+          <g stroke="#5C5248" stroke-width="6" opacity="0.10">
+            <path d="M0,90 H1220 M0,180 H1220 M0,270 H1220 M0,360 H1220 M0,450 H1220 M0,540 H1220 M0,630 H1220 M0,720 H1220 M0,810 H1220"/>
+            <path d="M150,0 V880 M300,0 V880 M450,0 V880 M600,0 V880 M750,0 V880 M900,0 V880 M1050,0 V880"/>
+          </g>
+        </g>
+
+        <!-- large umber mass + terracotta wash under the document stack -->
+        <circle cx="1640" cy="90" r="920" fill="url(#s03-terracotta)"/>
+        <path d="M1920,-20 H1230 L970,1100 H1920 Z" fill="url(#s03-tr-wash)"/>
+        <circle cx="1560" cy="760" r="390" fill="url(#s03-terracotta)"/>
+        <path d="M-40,812 L1960,664 L1960,1140 L-40,1140 Z" fill="url(#s03-desk)" filter="url(#s03-soft-sm)"/>
+        <g transform="translate(1268,566) rotate(-8) scale(1,0.857)">
+          <rect x="-322" y="18" width="644" height="250" rx="10" fill="#2B1F17" opacity="0.50" filter="url(#s03-doc-shadow)" transform="translate(34,52)"/>
+          <rect x="-300" y="150" width="600" height="86" rx="8" fill="#2B1F17" opacity="0.42" filter="url(#s03-blur-sm)" transform="translate(14,24)"/>
+        </g>
+        <ellipse cx="1660" cy="960" rx="470" ry="170" fill="#2B1F17" opacity="0.18" filter="url(#s03-soft-lg)"/>
+
+        <!-- 17-arch gallery elevation, brass 7px over a 3px umber under-stroke -->
+        <g transform="translate(960,520)">
+        <g id="s03-gallery" opacity="0.30">
+          <g fill="none" stroke="#1E1813" stroke-width="3" opacity="0.55" transform="translate(2,3)">
+            <use href="#s03-arch-0"/><use href="#s03-arch-1"/><use href="#s03-arch-2"/><use href="#s03-arch-3"/><use href="#s03-arch-4"/>
+            <use href="#s03-arch-5"/><use href="#s03-arch-6"/><use href="#s03-arch-7"/><use href="#s03-arch-8"/><use href="#s03-arch-9"/>
+            <use href="#s03-arch-10"/><use href="#s03-arch-11"/><use href="#s03-arch-12"/><use href="#s03-arch-13"/><use href="#s03-arch-14"/>
+            <use href="#s03-arch-15"/><use href="#s03-arch-16"/>
+          </g>
+          <g fill="none" stroke="url(#s03-brass)" stroke-width="7" stroke-linejoin="round">
+            <path id="s03-arch-0" d="M-960,0 V-250 A52,52 0 0 1 -856,-250 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <path id="s03-arch-1" d="M-847,0 V-210 A52,52 0 0 1 -743,-210 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <path id="s03-arch-2" d="M-734,0 V-250 A52,52 0 0 1 -630,-250 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <path id="s03-arch-3" d="M-621,0 V-210 A52,52 0 0 1 -517,-210 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <path id="s03-arch-4" d="M-508,0 V-250 A52,52 0 0 1 -404,-250 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <path id="s03-arch-5" d="M-395,0 V-210 A52,52 0 0 1 -291,-210 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <path id="s03-arch-6" d="M-282,0 V-250 A52,52 0 0 1 -178,-250 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <path id="s03-arch-7" d="M-169,0 V-210 A52,52 0 0 1 -65,-210 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <path id="s03-arch-8" d="M-56,0 V-250 A52,52 0 0 1 48,-250 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <path id="s03-arch-9" d="M57,0 V-210 A52,52 0 0 1 161,-210 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <path id="s03-arch-10" d="M170,0 V-250 A52,52 0 0 1 274,-250 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <path id="s03-arch-11" d="M283,0 V-210 A52,52 0 0 1 387,-210 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <path id="s03-arch-12" d="M396,0 V-250 A52,52 0 0 1 500,-250 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <path id="s03-arch-13" d="M509,0 V-210 A52,52 0 0 1 613,-210 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <path id="s03-arch-14" d="M622,0 V-250 A52,52 0 0 1 726,-250 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <path id="s03-arch-15" d="M735,0 V-210 A52,52 0 0 1 839,-210 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+            <path id="s03-arch-16" d="M848,0 V-250 A52,52 0 0 1 952,-250 V0" stroke-dasharray="620" stroke-dashoffset="620"/>
+          </g>
+          <path d="M-960,10 H960" stroke="#2B1F17" stroke-width="18" opacity="0.42" filter="url(#s03-blur-sm)"/>
+          <path d="M-960,0 H960" stroke="url(#s03-brass)" stroke-width="13"/>
+          <path d="M-960,18 H960" stroke="#1E1813" stroke-width="4" opacity="0.35"/>
+        </g>
+        </g>
+
+        <g stroke="#5C5248" stroke-width="4" opacity="0.10">
+          <path d="M120,40 V1040 M240,40 V1040 M360,40 V1040 M480,40 V1040 M600,40 V1040 M720,40 V1040 M840,40 V1040 M960,40 V1040 M1080,40 V1040 M1200,40 V1040 M1320,40 V1040 M1440,40 V1040 M1560,40 V1040 M1680,40 V1040 M1800,40 V1040"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- PLANE MG · depth 1.00 · letters-patent panel + isometric document stack -->
+    <div class="s03-plane s03-p-mg" id="s03-plane-mg">
+      <svg class="s03-art" id="s03-art-mg" viewBox="0 0 1920 1080" aria-hidden="true">
+        <defs>
+          <linearGradient id="s03-brass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#F2D68E"/><stop offset="0.45" stop-color="#C89D42"/><stop offset="1" stop-color="#7C581A"/>
+          </linearGradient>
+          <linearGradient id="s03-page" x1="0" y1="0" x2="0.85" y2="1">
+            <stop offset="0" stop-color="#F3E8D7"/><stop offset="0.46" stop-color="#D3BFA2"/><stop offset="1" stop-color="#AE9676"/>
+          </linearGradient>
+          <linearGradient id="s03-page-2" x1="0" y1="0" x2="0.85" y2="1">
+            <stop offset="0" stop-color="#F3E8D7"/><stop offset="0.5" stop-color="#D3BFA2"/><stop offset="1" stop-color="#AE9676"/>
+          </linearGradient>
+          <linearGradient id="s03-panel-wash" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FAF7F0" stop-opacity="0.16"/>
+            <stop offset="0.55" stop-color="#D9822B" stop-opacity="0.05"/>
+            <stop offset="1" stop-color="#2B1F17" stop-opacity="0.16"/>
+          </linearGradient>
+          <linearGradient id="s03-panel-edge" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#2B1F17" stop-opacity="0.28"/><stop offset="0.12" stop-color="#2B1F17" stop-opacity="0"/>
+          </linearGradient>
+          <radialGradient id="s03-seal" cx="38%" cy="32%" r="72%">
+            <stop offset="0" stop-color="#D46A4D"/><stop offset="0.6" stop-color="#C2593F"/><stop offset="1" stop-color="#8E3524"/>
+          </radialGradient>
+          <filter id="s03-photo-grade" x="-5%" y="-5%" width="110%" height="110%">
+            <feColorMatrix type="saturate" values="0.9"/>
+            <feComponentTransfer>
+              <feFuncR type="linear" slope="1.04" intercept="0.01"/>
+              <feFuncB type="linear" slope="0.92"/>
+            </feComponentTransfer>
+          </filter>
+          <filter id="s03-blur" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="16"/>
+          </filter>
+          <filter id="s03-blur-sm" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="7"/>
+          </filter>
+          <filter id="s03-doc-shadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="20"/>
+          </filter>
+
+          <clipPath id="s03-panel-reveal"><rect id="s03-panel-rect" x="60" y="1050" width="680" height="0"/></clipPath>
+          <clipPath id="s03-date-clip"><rect id="s03-date-rect" x="692" y="744" width="0" height="86"/></clipPath>
+          <clipPath id="s03-fill-1"><rect id="s03-fill-rect-1" x="-332" y="-222" width="664" height="0"/></clipPath>
+          <clipPath id="s03-fill-2"><rect id="s03-fill-rect-2" x="-332" y="-222" width="664" height="0"/></clipPath>
+          <clipPath id="s03-fill-3"><rect id="s03-fill-rect-3" x="-332" y="-222" width="664" height="0"/></clipPath>
+        </defs>
+
+        <!-- ============ LETTERS PATENT PANEL (left) ============ -->
+        <g transform="rotate(1.2 390 550)">
+        <g id="s03-patent">
+          <g clip-path="url(#s03-panel-reveal)">
+            <rect x="104" y="46" width="596" height="1040" fill="#2B1F17" opacity="0.42" filter="url(#s03-blur)" transform="translate(14,18)"/>
+            <rect x="92" y="30" width="596" height="1040" fill="#EAE0D0"/>
+            <rect x="92" y="30" width="596" height="1040" fill="none" stroke="#5C5248" stroke-width="4"/>
+            <rect x="92" y="30" width="26" height="1040" fill="url(#s03-bind)"/>
+            <path d="M118,30 V1070" stroke="#7A2C1D" stroke-width="4" opacity="0.7"/>
+            <g fill="#C89D42" stroke="#7C581A" stroke-width="3">
+              <circle cx="105" cy="126" r="6"/>
+              <circle cx="105" cy="550" r="6"/>
+              <circle cx="105" cy="974" r="6"/>
+            </g>
+            <rect x="116" y="54" width="548" height="992" fill="#FAF7F0"/>
+            <image href="plates/processed/art-patent.jpg" x="120" y="58" width="540" height="984"
+                   preserveAspectRatio="xMidYMid slice" filter="url(#s03-photo-grade)"/>
+            <rect x="120" y="58" width="540" height="984" fill="url(#s03-panel-wash)"/>
+            <rect x="120" y="58" width="540" height="984" fill="url(#s03-panel-edge)"/>
+            <rect x="120" y="58" width="540" height="984" fill="none" stroke="#C89D42" stroke-width="3"/>
+            <g stroke="#C89D42" stroke-width="4" opacity="0.85">
+              <path d="M138,76 h26 M138,76 v26 M642,76 h-26 M642,76 v26 M138,1024 h26 M138,1024 v-26 M642,1024 h-26 M642,1024 v-26"/>
+            </g>
+          </g>
+        </g>
+        </g>
+
+        <!-- wax seal on the patent page -->
+        <g id="s03-seal" transform="translate(600,958) rotate(-24) scale(0) translate(-600,-958)">
+          <ellipse cx="602" cy="976" rx="52" ry="16" fill="#2B1F17" opacity="0.32" filter="url(#s03-blur-sm)"/>
+          <path d="M600,908 C632,908 650,930 648,958 C646,986 626,1006 600,1006 C574,1006 554,986 552,958 C550,930 568,908 600,908 Z"
+                fill="url(#s03-seal)" stroke="#7A2C1D" stroke-width="6"/>
+          <path d="M600,922 C622,922 636,938 634,958 C632,978 618,992 600,992 C582,992 568,978 566,958 C564,938 578,922 600,922 Z"
+                fill="none" stroke="#8E3524" stroke-width="4" opacity="0.8"/>
+          <path d="M600,938 v34 M583,955 h34" stroke="#F0C7B6" stroke-width="5" opacity="0.65"/>
+          <path d="M562,930 a44,44 0 0 1 30,-18" fill="none" stroke="#F6D9CB" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+        </g>
+
+        <!-- brass bracket over the privilege clause -->
+        <g id="s03-bracket" opacity="0" transform="translate(394,710) scale(0.7) translate(-394,-710)">
+          <path d="M136,616 H166 V804 H136 M652,616 H622 V804 H652" fill="none" stroke="#2B1F17" stroke-width="26" opacity="0.30" transform="translate(6,10)" filter="url(#s03-blur-sm)"/>
+          <path d="M136,616 H166 V804 H136 M652,616 H622 V804 H652" fill="none" stroke="url(#s03-brass)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M136,616 H166 V804 H136 M652,616 H622 V804 H652" fill="none" stroke="#1E1813" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+          <rect x="372" y="604" width="44" height="24" rx="8" fill="#C89D42" stroke="#1E1813" stroke-width="5"/>
+        </g>
+
+        <!-- survey line: privilege bracket ties the patent to the stack -->
+        <g id="s03-survey">
+          <path d="M664,716 Q840,688 1004,618" fill="none" stroke="#C89D42" stroke-width="10" opacity="0.18"/>
+          <path id="s03-survey-line" d="M664,716 Q840,688 1004,618" fill="none" stroke="#C2593F" stroke-width="14"
+                stroke-linecap="round" stroke-dasharray="10 20" stroke-dashoffset="440" opacity="0.65"/>
+          <circle cx="664" cy="716" r="9" fill="url(#s03-brass)" stroke="#1E1813" stroke-width="4"/>
+          <circle cx="1004" cy="618" r="7" fill="#C89D42" stroke="#1E1813" stroke-width="4"/>
+        </g>
+
+        <!-- ============ ISOMETRIC DOCUMENT STACK (right) ============ -->
+        <g transform="translate(1268,566) rotate(-8) scale(1,0.857)">
+        <g id="s03-stack">
+          <!-- CABLE (bottom) -->
+          <g id="s03-doc-cable">
+            <g class="s03-doc-base" opacity="0">
+              <rect x="-320" y="-210" width="640" height="420" rx="6" fill="#2B1F17" opacity="0.34" filter="url(#s03-doc-shadow)" transform="translate(22,28)"/>
+              <path d="M320,-210 h12 v432 h-652 v-12 h640 Z" fill="#A8916F" stroke="#7C6A52" stroke-width="3"/>
+            </g>
+            <rect x="-320" y="-210" width="640" height="420" rx="6" fill="none" stroke="#1E1813" stroke-width="28" stroke-dasharray="2200" stroke-dashoffset="2200"/>
+            <g clip-path="url(#s03-fill-2)">
+              <rect x="-320" y="-202" width="640" height="420" rx="6" fill="#5C5248" opacity="0.5"/>
+              <rect x="-320" y="-210" width="640" height="420" rx="6" fill="url(#s03-page)"/>
+              <rect x="-298" y="-188" width="596" height="376" fill="#FAF7F0" opacity="0.10"/>
+              <path d="M-320,110 H320 V210 H-320 Z" fill="#8A7A63" opacity="0.12"/>
+              <path d="M-320,88 H320" stroke="#5C5248" stroke-width="6" opacity="0.4"/>
+              <path d="M-250,-150 H250 M-250,-104 H210 M-250,-58 H238" stroke="#5C5248" stroke-width="8" stroke-dasharray="22 16" opacity="0.65"/>
+              <path d="M-120,20 L0,120 L120,20" fill="none" stroke="#5C5248" stroke-width="7" opacity="0.7"/>
+              <path d="M0,20 V120" stroke="#5C5248" stroke-width="7" opacity="0.7"/>
+            </g>
+          </g>
+
+          <!-- PATENT (middle) -->
+          <g id="s03-doc-patent">
+            <g class="s03-doc-base" opacity="0">
+              <rect x="-320" y="-210" width="640" height="420" rx="6" fill="#2B1F17" opacity="0.34" filter="url(#s03-doc-shadow)" transform="translate(22,28)"/>
+              <path d="M320,-210 h12 v432 h-652 v-12 h640 Z" fill="#A8916F" stroke="#7C6A52" stroke-width="3"/>
+            </g>
+            <rect x="-320" y="-210" width="640" height="420" rx="6" fill="none" stroke="#1E1813" stroke-width="28" stroke-dasharray="2200" stroke-dashoffset="2200"/>
+            <g clip-path="url(#s03-fill-3)">
+              <rect x="-320" y="-202" width="640" height="420" rx="6" fill="#5C5248" opacity="0.5"/>
+              <rect x="-320" y="-210" width="640" height="420" rx="6" fill="url(#s03-page-2)"/>
+              <path d="M-320,110 H320 V210 H-320 Z" fill="#8A7A63" opacity="0.12"/>
+              <rect x="-298" y="-188" width="596" height="376" fill="none" stroke="#C89D42" stroke-width="4" opacity="0.75"/>
+              <path d="M-250,-160 H250" stroke="#1E1813" stroke-width="12"/>
+              <path d="M-250,-134 H120" stroke="#C89D42" stroke-width="6"/>
+              <g stroke="#5C5248" stroke-width="6" opacity="0.5">
+                <path d="M-250,-80 H250 M-250,-44 H250 M-250,-8 H230 M-250,28 H250 M-250,64 H210 M-250,100 H246 M-250,136 H190"/>
+              </g>
+              <circle cx="196" cy="96" r="38" fill="#C2593F" opacity="0.9" stroke="#8E3524" stroke-width="5"/>
+              <path d="M196,74 v44 M174,96 h44" stroke="#F0C7B6" stroke-width="5" opacity="0.7"/>
+            </g>
+          </g>
+
+          <!-- LEDGER (top) -->
+          <g id="s03-doc-ledger">
+            <g class="s03-doc-base" opacity="0">
+              <rect x="-320" y="-210" width="640" height="420" rx="6" fill="#2B1F17" opacity="0.34" filter="url(#s03-doc-shadow)" transform="translate(22,28)"/>
+              <path d="M320,-210 h12 v432 h-652 v-12 h640 Z" fill="#A8916F" stroke="#7C6A52" stroke-width="3"/>
+            </g>
+            <rect x="-320" y="-210" width="640" height="420" rx="6" fill="none" stroke="#1E1813" stroke-width="28" stroke-dasharray="2200" stroke-dashoffset="2200"/>
+            <g clip-path="url(#s03-fill-1)">
+              <rect x="-320" y="-202" width="640" height="420" rx="6" fill="#5C5248" opacity="0.55"/>
+              <rect x="-320" y="-210" width="640" height="420" rx="6" fill="url(#s03-page)"/>
+              <rect x="-298" y="-188" width="596" height="376" fill="#FAF7F0" opacity="0.08"/>
+              <path d="M-320,124 H320 V210 H-320 Z" fill="#8A7A63" opacity="0.12"/>
+
+              <!-- 6px ruled columns + rows -->
+              <g stroke="#5C5248" stroke-width="6" opacity="0.55">
+                <path d="M-300,-168 V168 M-160,-168 V168 M-20,-168 V168 M120,-168 V168 M260,-168 V168"/>
+                <path d="M-300,-168 H300 M-300,-128 H300 M-300,-88 H300 M-300,-48 H300 M-300,-8 H300 M-300,32 H300 M-300,72 H300 M-300,112 H300 M-300,168 H300"/>
+              </g>
+              <path d="M-300,-176 H300" stroke="#1E1813" stroke-width="12"/>
+              <path d="M-300,-176 H300" stroke="#C89D42" stroke-width="5" transform="translate(0,-8)"/>
+
+              <!-- 12px tally strokes, 20 of them -->
+              <g stroke="#1E1813" stroke-width="12" stroke-linecap="round">
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M-282,-152 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M-252,-152 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M-222,-152 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M-192,-152 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M-282,-112 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M-252,-112 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M-222,-112 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M-142,-72 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M-112,-72 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M-82,-72 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M-142,-32 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M-112,-32 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M-2,8 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M28,8 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M58,8 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M88,8 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M-2,48 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M28,48 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M-142,88 v30"/>
+                <path class="s03-tally" stroke-dasharray="30" stroke-dashoffset="30" d="M-112,88 v30"/>
+              </g>
+
+              <!-- coin column on the right, drains bead by bead -->
+              <g stroke="#1E1813" stroke-width="5">
+                <circle class="s03-coin" cx="250" cy="140" r="16" fill="#C89D42"/>
+                <circle class="s03-coin" cx="250" cy="104" r="16" fill="#D9B45E"/>
+                <circle class="s03-coin" cx="250" cy="68" r="16" fill="#C89D42"/>
+                <circle class="s03-coin" cx="250" cy="32" r="16" fill="#D9B45E"/>
+                <circle class="s03-coin" cx="250" cy="-4" r="16" fill="#C89D42"/>
+                <circle class="s03-coin" cx="250" cy="-40" r="16" fill="#D9B45E"/>
+                <circle class="s03-coin" cx="250" cy="-76" r="16" fill="#C89D42"/>
+                <circle class="s03-coin" cx="250" cy="-112" r="16" fill="#D9B45E"/>
+                <circle class="s03-coin" cx="250" cy="-148" r="16" fill="#C89D42"/>
+              </g>
+              <path d="M232,-176 v352" stroke="#C89D42" stroke-width="6" opacity="0.7"/>
+            </g>
+            <path d="M286,-210 L320,-210 L320,-176 Z" fill="url(#s03-brass)" stroke="#8A7A63" stroke-width="3"/>
+            <path d="M298,-210 L298,-188 L320,-188" fill="none" stroke="#7C581A" stroke-width="1.5" opacity="0.8"/>
+          </g>
+        </g>
+        </g>
+
+        <!-- 12px margin rule for the seam -->
+        <path id="s03-underline-glow" d="M-40,540 H1960" fill="none" stroke="#D9822B" stroke-width="26" opacity="0" filter="url(#s03-blur-sm)"/>
+        <path id="s03-underline" d="M-40,540 H1960" fill="none" stroke="#C2593F" stroke-width="16" stroke-linecap="round" stroke-dasharray="2000" stroke-dashoffset="2000"/>
+        <path id="s03-underline-hi" d="M-40,526 H1960" fill="none" stroke="#FAF7F0" stroke-width="4" opacity="0"/>
+        <path id="s03-margin-rule" d="M1268,566 H-140" fill="none" stroke="#1E1813" stroke-width="18" stroke-linecap="round" stroke-dasharray="1420" stroke-dashoffset="1420"/>
+        <path id="s03-margin-brass" d="M1268,556 H-140" fill="none" stroke="url(#s03-brass)" stroke-width="5" stroke-linecap="round" stroke-dasharray="1420" stroke-dashoffset="1420"/>
+
+        <g fill="#FAF7F0" opacity="0.65">
+          <circle class="s03-mote" cx="760" cy="230" r="4"/>
+          <circle class="s03-mote" cx="900" cy="880" r="3"/>
+          <circle class="s03-mote" cx="1500" cy="250" r="4"/>
+          <circle class="s03-mote" cx="1680" cy="700" r="3"/>
+          <circle class="s03-mote" cx="700" cy="620" r="3"/>
+        </g>
+
+        <!-- chronology chip: the eleven-year window the gallery was engineered -->
+        <g id="s03-date" clip-path="url(#s03-date-clip)">
+          <rect x="700" y="752" width="352" height="66" rx="8" fill="#2B1F17" opacity="0.32" transform="translate(6,8)"/>
+          <rect x="700" y="752" width="352" height="66" rx="8" fill="#FAF7F0" stroke="#1E1813" stroke-width="8"/>
+          <rect x="708" y="760" width="12" height="50" fill="#C2593F"/>
+          <path d="M734,785 H1042" stroke="#5C5248" stroke-width="4" opacity="0.55"/>
+          <g stroke="#1E1813" stroke-width="4" stroke-linecap="round">
+            <path d="M746,772 V798"/><path d="M776,778 V792"/><path d="M806,778 V792"/>
+            <path d="M836,774 V796"/><path d="M866,778 V792"/><path d="M896,778 V792"/>
+            <path d="M926,774 V796"/><path d="M956,778 V792"/><path d="M986,778 V792"/>
+            <path d="M1016,772 V798"/>
+          </g>
+          <circle cx="734" cy="785" r="7" fill="#C89D42" stroke="#1E1813" stroke-width="4"/>
+          <circle cx="1042" cy="785" r="7" fill="#C89D42" stroke="#1E1813" stroke-width="4"/>
+        </g>
+
+        <rect x="0" y="0" width="1920" height="1080" filter="url(#s03-grain)" opacity="0.05" style="mix-blend-mode:multiply"/>
+      </svg>
+    </div>
+
+    <!-- PLANE FG · depth 1.07 · page corner -->
+    <div class="s03-plane s03-p-fg" id="s03-plane-fg">
+      <svg class="s03-art" id="s03-art-fg" viewBox="0 0 1920 1080" aria-hidden="true">
+        <defs>
+          <filter id="s03-fg-shadow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="18"/>
+          </filter>
+        </defs>
+        <g id="s03-fg-corner">
+          <path d="M-40,916 L68,940 L112,910 L170,956 L214,926 L268,972 L316,944 L372,996 L424,972 L486,1030 L530,1010 L570,1080 L-40,1080 Z"
+                fill="#2B1F17" opacity="0.32" filter="url(#s03-fg-shadow)" transform="translate(10,16)"/>
+          <path d="M-40,900 L68,924 L112,894 L170,940 L214,910 L268,956 L316,928 L372,980 L424,956 L486,1014 L530,994 L570,1080 L-40,1080 Z"
+                fill="#EAE0D0" stroke="#1E1813" stroke-width="16" stroke-linejoin="round"/>
+          <g stroke="#5C5248" stroke-width="5" opacity="0.42">
+            <path d="M-20,958 L340,1058 M30,928 L390,1034 M140,914 L470,1012"/>
+          </g>
+          <path d="M-40,900 L68,924 L112,894 L170,940 L214,910 L268,956 L316,928 L372,980 L424,956 L486,1014 L530,994"
+                fill="none" stroke="#FAF7F0" stroke-width="5" opacity="0.7"/>
+          <path d="M16,918 L80,940 L124,910" fill="none" stroke="#C89D42" stroke-width="5" opacity="0.55"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="s03-tag" id="s03-tag">
+      <span class="s03-tag-dot"></span>
+      <span class="s03-tag-text">POLITICAL WEAPON</span>
+    </div>
+    <div class="s03-tag-rule" id="s03-tag-rule"></div>
+  </div>
+</div>
+
+<script>
+(function initS03(){
+  var ID = "s03-three-documents";
+  var root = document.querySelector('[data-composition-id="' + ID + '"]');
+  var tl = gsap.timeline({ paused: true });
+
+  // ── SLOT GUARD ────────────────────────────────────────────────────────────
+  tl.to({}, { duration: 24.265 }, 0);
+
+  // ── BG plane · 0.97 parallax ─────────────────────────────────────────────
+  tl.fromTo("#s03-plane-bg", { scale: 1.045, x: 16, transformOrigin: "50% 50%" },
+            { scale: 1.0, x: 0, duration: 23.6, ease: "sine.out" }, 0.10);
+  tl.to("#s03-plane-bg", { y: -16, duration: 23.6, ease: "sine.inOut" }, 0.10);
+
+  // ── PHASE 1 (0–5s): three folio outlines grow, stack fans into the plane ──
+  tl.fromTo("#s03-panel-rect", { attr: { y: 1050, height: 0 } },
+            { attr: { y: 30, height: 1044 }, duration: 1.35, ease: "power3.inOut" }, 0.55);
+  tl.fromTo("#s03-patent", { y: 26 }, { y: 0, duration: 1.35, ease: "power2.out" }, 0.55);
+
+  [["#s03-doc-cable", 0.30], ["#s03-doc-patent", 0.78], ["#s03-doc-ledger", 1.26]].forEach(function(d){
+    var el = d[0];
+    tl.fromTo(el + " > rect:nth-of-type(1)", { attr: { "stroke-dashoffset": 2200 } },
+              { attr: { "stroke-dashoffset": 0 }, duration: 1.05, ease: "power2.inOut" }, d[1]);
+  });
+
+  tl.fromTo("#s03-fill-rect-1", { attr: { y: -222, height: 0 } },
+            { attr: { y: -222, height: 444 }, duration: 0.95, ease: "power2.out" }, 1.45);
+  tl.fromTo("#s03-fill-rect-2", { attr: { y: -222, height: 0 } },
+            { attr: { y: -222, height: 444 }, duration: 0.95, ease: "power2.out" }, 1.80);
+  tl.fromTo("#s03-fill-rect-3", { attr: { y: -222, height: 0 } },
+            { attr: { y: -222, height: 444 }, duration: 0.95, ease: "power2.out" }, 2.15);
+  tl.set(".s03-doc-base", { opacity: 1 }, 1.05);
+
+  tl.fromTo("#s03-doc-cable", { x: 0, y: 0 }, { x: 0, y: 150, duration: 1.25, ease: "power3.out" }, 2.70);
+  tl.fromTo("#s03-doc-patent", { x: 0, y: 0 }, { x: 44, y: 60, duration: 1.25, ease: "power3.out" }, 2.90);
+  tl.fromTo("#s03-doc-ledger", { x: 0, y: 0 }, { x: 88, y: -30, duration: 1.25, ease: "power3.out" }, 3.10);
+
+  // ── PHASE 2 (5–11s): ledger rows draw; tallies tick; coins drain ─────────
+  tl.fromTo(".s03-tally", { attr: { "stroke-dashoffset": 30 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.30, ease: "power2.out", stagger: 0.22 }, 5.30);
+  tl.fromTo(".s03-coin", { y: 0, opacity: 1 },
+            { y: 330, opacity: 0, duration: 0.62, ease: "power2.in", stagger: 0.17 }, 7.70);
+  tl.to("#s03-doc-ledger", { y: -24, duration: 1.8, ease: "sine.inOut", yoyo: true, repeat: 4 }, 6.4);
+
+  // ── PHASE 3 (11–17s): patent panel rises, seal blooms, bracket sockets ───
+  tl.to("#s03-patent", { y: -12, duration: 0.75, ease: "power2.out" }, 11.00);
+  tl.fromTo("#s03-seal",
+            { attr: { transform: "translate(600,958) rotate(-24) scale(0) translate(-600,-958)" } },
+            { attr: { transform: "translate(600,958) rotate(0) scale(1) translate(-600,-958)" }, duration: 0.62, ease: "back.out(2.4)" }, 11.55);
+  tl.fromTo("#s03-bracket",
+            { attr: { transform: "translate(394,710) scale(0.7) translate(-394,-710)" }, opacity: 0 },
+            { attr: { transform: "translate(394,710) scale(1) translate(-394,-710)" }, opacity: 1, duration: 0.52, ease: "back.out(2.2)" }, 12.75);
+  tl.to("#s03-bracket", { attr: { transform: "translate(394,710) scale(1) translate(-394,-710) translate(0,-4)" }, duration: 1.6, ease: "sine.inOut", yoyo: true, repeat: 4 }, 13.5);
+  tl.to("#s03-seal", { attr: { transform: "translate(600,958) rotate(0) scale(1.03) translate(-600,-958)" }, duration: 1.9, ease: "sine.inOut", yoyo: true, repeat: 3 }, 13.2);
+  tl.fromTo("#s03-survey-line", { attr: { "stroke-dashoffset": 440 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 0.95, ease: "power2.inOut" }, 13.05);
+
+  // ── PHASE 4 (17–24.2s): gallery stamps; terracotta underline sweeps ──────
+  tl.fromTo("#s03-gallery", { attr: { transform: "scale(1.05)" }, opacity: 0 },
+            { attr: { transform: "scale(1)" }, opacity: 0.30, duration: 0.9, ease: "power3.out" }, 16.85);
+  for (var a = 0; a < 17; a++){
+    var arch = "#s03-arch-" + a;
+    tl.fromTo(arch, { attr: { "stroke-dasharray": 620, "stroke-dashoffset": 620 } },
+              { attr: { "stroke-dashoffset": 0 }, duration: 0.9, ease: "power2.out" }, 17.10 + a * 0.11);
+  }
+  tl.fromTo("#s03-underline", { attr: { "stroke-dashoffset": 2000 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 1.55, ease: "power2.inOut" }, 21.20);
+  tl.fromTo("#s03-underline-glow", { opacity: 0 }, { opacity: 0.4, duration: 1.2, ease: "sine.inOut", yoyo: true, repeat: 1 }, 21.30);
+  tl.fromTo("#s03-underline-hi", { opacity: 0 }, { opacity: 0.55, duration: 0.9, ease: "sine.out" }, 21.30);
+
+  // chronology chip seats in the reading plane
+  tl.fromTo("#s03-date-rect", { attr: { width: 0 } }, { attr: { width: 352 }, duration: 0.62, ease: "power3.inOut" }, 17.30);
+  tl.fromTo("#s03-date", { y: 12 }, { y: 0, duration: 0.72, ease: "power2.out" }, 17.30);
+  tl.to("#s03-date", { opacity: 0, duration: 0.26, ease: "power2.in" }, 23.86);
+
+  // living hold
+  tl.fromTo("#s03-stage", { scale: 1.0, x: 0 }, { scale: 1.025, x: 12, y: -8, duration: 24.0, ease: "sine.inOut", transformOrigin: "48% 50%" }, 0.15);
+  tl.fromTo(".s03-mote", { y: 0, x: 0 }, { y: -46, x: 12, duration: 6.9, ease: "sine.inOut", yoyo: true, repeat: 2, stagger: 0.2 }, 1.0);
+
+  // ── TAG ───────────────────────────────────────────────────────────────────
+  tl.fromTo("#s03-tag", { clipPath: "inset(0% 0% 0% 100%)", x: 12 },
+            { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.64, ease: "power3.inOut" }, 3.55);
+  tl.fromTo("#s03-tag-rule", { width: 0 }, { width: 404, duration: 0.55, ease: "power2.out" }, 3.92);
+
+  // ── SEAM 24.0s: stack collapses into a 12px margin rule, exits left ──────
+  tl.to("#s03-tag", { clipPath: "inset(0% 100% 0% 0%)", x: 6, duration: 0.36, ease: "power2.in" }, 23.90);
+  tl.to("#s03-tag-rule", { width: 0, duration: 0.32, ease: "power2.in" }, 23.90);
+  tl.to(["#s03-doc-cable", "#s03-doc-patent", "#s03-doc-ledger"],
+        { x: 0, y: 0, scaleY: 0.02, duration: 0.20, ease: "power3.in", transformOrigin: "50% 50%" }, 24.00);
+  tl.to("#s03-stack", { x: -30, duration: 0.22, ease: "power2.in" }, 24.02);
+  tl.fromTo("#s03-margin-rule", { attr: { "stroke-dashoffset": 1420 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 0.22, ease: "power2.in" }, 24.02);
+  tl.fromTo("#s03-margin-brass", { attr: { "stroke-dashoffset": 1420 } },
+            { attr: { "stroke-dashoffset": 0 }, duration: 0.22, ease: "power2.in" }, 24.04);
+  tl.to("#s03-stage", { x: -34, duration: 0.22, ease: "power2.in" }, 24.02);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>

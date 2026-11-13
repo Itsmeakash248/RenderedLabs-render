@@ -1,0 +1,511 @@
+<!doctype html><html><head><meta charset="utf-8"></head><body><template id="s14-template">
+<style>
+@font-face{font-family:"Instrument Serif";src:url("assets/fonts/InstrumentSerif-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/EBGaramond-normal-400.woff2") format("woff2");font-display:block;}
+@font-face{font-family:"Mono Archive";src:url("assets/fonts/mono-archive-500.woff2") format("woff2");font-weight:500;font-display:block;}
+#root{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;background:transparent;}
+[data-composition-id="s14-first-mirror"] .s14-stage{position:absolute;inset:0;transform-origin:48% 52%;}
+[data-composition-id="s14-first-mirror"] .s14-ground{position:absolute;inset:0;background:
+  radial-gradient(46% 40% at 22% 62%, rgba(255,178,84,0.46) 0%, rgba(255,178,84,0.16) 48%, rgba(255,178,84,0) 76%),
+  radial-gradient(42% 36% at 84% 18%, rgba(255,244,214,0.6) 0%, rgba(255,244,214,0) 72%),
+  linear-gradient(172deg, #FCF4E2 0%, #F7EAD0 36%, #EFDAB8 68%, #E0C49C 100%);}
+[data-composition-id="s14-first-mirror"] .s14-plane{position:absolute;inset:0;width:1920px;height:1080px;display:block;}
+[data-composition-id="s14-first-mirror"] .s14-p-bg{z-index:1;}
+[data-composition-id="s14-first-mirror"] .s14-p-mg{z-index:2;}
+[data-composition-id="s14-first-mirror"] .s14-p-fg{z-index:4;}
+[data-composition-id="s14-first-mirror"] .s14-heat{position:absolute;inset:0;z-index:5;pointer-events:none;mix-blend-mode:screen;
+  background:radial-gradient(58% 54% at 24% 64%, rgba(255,198,112,0.62) 0%, rgba(255,176,84,0.22) 56%, rgba(255,176,84,0) 100%);
+  opacity:0.05;}
+[data-composition-id="s14-first-mirror"] .s14-grain{position:absolute;inset:0;z-index:6;pointer-events:none;
+  background-image:radial-gradient(rgba(43,31,23,0.55) 0.4px, transparent 0.5px);background-size:3px 3px;
+  opacity:0.10;mix-blend-mode:multiply;}
+[data-composition-id="s14-first-mirror"] .s14-vignette{position:absolute;inset:0;z-index:7;pointer-events:none;
+  background:
+    linear-gradient(to top, rgba(43,31,23,0.30) 0%, rgba(43,31,23,0.05) 14%, rgba(43,31,23,0) 30%),
+    linear-gradient(to right, rgba(43,31,23,0.20) 0%, rgba(43,31,23,0.03) 18%, rgba(43,31,23,0) 36%),
+    radial-gradient(118% 96% at 50% 46%, rgba(43,31,23,0) 52%, rgba(43,31,23,0.26) 100%);}
+[data-composition-id="s14-first-mirror"] .s14-tag{position:absolute;left:86px;top:92px;z-index:8;display:flex;align-items:center;gap:14px;
+  padding:12px 26px 12px 18px;border:3px solid #C89D42;border-radius:100px;background:linear-gradient(180deg,#FDFAF4 0%,#F1E7D6 100%);
+  box-shadow:0 12px 30px rgba(43,31,23,0.26),inset 0 1px 0 rgba(255,255,255,0.7);transform-origin:0% 50%;}
+[data-composition-id="s14-first-mirror"] .s14-tag-dot{width:15px;height:15px;border-radius:50%;background:#C2593F;
+  box-shadow:0 0 0 5px rgba(194,89,63,0.20),inset 0 0 0 3px #A8462F;}
+[data-composition-id="s14-first-mirror"] .s14-tag-text{font-family:"Mono Archive",monospace;font-weight:500;font-size:28px;letter-spacing:0.14em;color:#1E1813;white-space:nowrap;}
+[data-composition-id="s14-first-mirror"] .s14-rule{position:absolute;left:86px;top:158px;height:5px;width:0;z-index:8;background:#C2593F;border-radius:4px;
+  box-shadow:0 2px 6px rgba(43,31,23,0.25);}
+[data-composition-id="s14-first-mirror"] .s14-mote{transform-box:fill-box;transform-origin:50% 50%;}
+[data-composition-id="s14-first-mirror"] .s14-mote{transform-box:fill-box;transform-origin:50% 50%;}
+</style>
+
+<div id="root" data-composition-id="s14-first-mirror" data-width="1920" data-height="1080" data-start="0" data-duration="22.464">
+  <div class="s14-stage" id="s14-stage">
+    <div class="s14-ground"></div>
+
+    <!-- BG · furnace mouth, wall, high window -->
+    <svg class="s14-plane s14-p-bg" id="s14-bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s14-wall" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FBF2DE"/><stop offset="0.52" stop-color="#F4E4C6"/><stop offset="1" stop-color="#E2CBA6"/>
+        </linearGradient>
+        <linearGradient id="s14-archin" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#4A2C1C"/><stop offset="0.42" stop-color="#7A3C1C"/>
+          <stop offset="0.74" stop-color="#C46A22"/><stop offset="1" stop-color="#F2B45E"/>
+        </linearGradient>
+        <radialGradient id="s14-fireglow" cx="50%" cy="62%" r="56%">
+          <stop offset="0" stop-color="#FFE9B8" stop-opacity="0.95"/>
+          <stop offset="0.44" stop-color="#FFBB62" stop-opacity="0.5"/>
+          <stop offset="1" stop-color="#E07A22" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="s14-floor" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#D6B990"/><stop offset="0.42" stop-color="#C5A478"/><stop offset="1" stop-color="#A4815A"/>
+        </linearGradient>
+        <linearGradient id="s14-windowlight" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FFF9E8"/><stop offset="0.5" stop-color="#F8E9C8"/><stop offset="1" stop-color="#E9D2A8"/>
+        </linearGradient>
+        <linearGradient id="s14-beam" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#5C4030"/><stop offset="0.6" stop-color="#3A2A1E"/><stop offset="1" stop-color="#241812"/>
+        </linearGradient>
+        <filter id="s14-bblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="30"/></filter>
+        <filter id="s14-hblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="10"/></filter>
+        <filter id="s14-grain" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="2" seed="13" result="n"/>
+          <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.12  0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0.5 0"/>
+        </filter>
+      </defs>
+
+      <rect x="0" y="0" width="1920" height="1080" fill="url(#s14-wall)"/>
+      <g stroke="#8A6B49" stroke-width="3" opacity="0.10">
+        <path d="M0,160 H1920"/><path d="M0,330 H1920"/><path d="M0,500 H1920"/><path d="M0,670 H1920"/>
+        <path d="M240,0 V670"/><path d="M640,0 V670"/><path d="M1040,0 V670"/><path d="M1440,0 V670"/><path d="M1840,0 V670"/>
+      </g>
+
+      <g id="s14-furnace">
+        <g class="s14-archwrap" transform="translate(330,640)"><g class="s14-arch">
+          <path d="M-250,300 L-250,-40 C-250,-190 -140,-280 0,-280 C140,-280 250,-190 250,-40 L250,300 Z"
+                fill="#8A4E28" stroke="#3A2A1E" stroke-width="12"/>
+          <path d="M-200,300 L-200,-30 C-200,-146 -110,-222 0,-222 C110,-222 200,-146 200,-30 L200,300 Z"
+                fill="url(#s14-archin)" stroke="#2B1F17" stroke-width="8"/>
+          <ellipse class="s14-fire" cx="0" cy="230" rx="190" ry="120" fill="url(#s14-fireglow)" opacity="0.6"/>
+          <g stroke="#5C4030" stroke-width="7" opacity="0.5">
+            <path d="M-250,-40 L-200,-30"/><path d="M-250,70 L-200,78"/><path d="M-250,180 L-200,186"/>
+            <path d="M250,-40 L200,-30"/><path d="M250,70 L200,78"/><path d="M250,180 L200,186"/>
+          </g>
+          <g stroke="#FFCE7C" stroke-width="5" opacity="0.55" stroke-linecap="round">
+            <path d="M-120,250 L-40,232"/><path d="M10,262 L96,244"/><path d="M-60,282 L30,268"/>
+          </g>
+          <path d="M-200,300 H200" stroke="#2B1F17" stroke-width="12"/>
+        </g></g>
+        <g id="s14-hood">
+          <path d="M112,356 L112,302 C112,264 176,238 332,238 C488,238 552,264 552,302 L552,356 Z"
+                fill="#8A4E28" stroke="#3A2A1E" stroke-width="11"/>
+          <path d="M156,356 L156,304 C156,280 208,260 332,260 C456,260 508,280 508,304 L508,356 Z"
+                fill="#B4682F" opacity="0.5"/>
+          <path d="M96,232 H568 L548,262 H116 Z" fill="#7C4A28" stroke="#3A2A1E" stroke-width="8"/>
+          <path d="M120,196 H544 L560,226 H104 Z" fill="#96542B" stroke="#3A2A1E" stroke-width="8"/>
+          <g stroke="#3A2A1E" stroke-width="4" opacity="0.4">
+            <path d="M156,306 H508"/><path d="M156,332 H508"/>
+            <path d="M300,170 H364"/><path d="M300,200 H364"/>
+          </g>
+          <g fill="#FFCE7C" opacity="0.5">
+            <circle cx="240" cy="286" r="4"/><circle cx="420" cy="292" r="3"/>
+          </g>
+        </g>
+        <g id="s14-flame">
+          <path d="M300,900 C324,858 336,824 330,794 C360,824 380,856 384,890 C388,918 364,940 334,940 C306,940 288,920 300,900 Z"
+                fill="#FFB85C" opacity="0.55"/>
+          <path d="M318,900 C332,872 340,850 336,832 C354,852 364,874 366,894 C368,912 352,924 334,924 C318,924 310,912 318,900 Z"
+                fill="#FFF0C6" opacity="0.6"/>
+        </g>
+      </g>
+
+      <g id="s14-window">
+        <rect x="1452" y="150" width="380" height="540" fill="url(#s14-windowlight)" stroke="#5C4030" stroke-width="14"/>
+        <rect x="1470" y="168" width="344" height="504" fill="none" stroke="#8A6B49" stroke-width="5" opacity="0.5"/>
+        <g stroke="#5C4030" stroke-width="9">
+          <path d="M1642,160 V680"/><path d="M1460,420 H1834"/>
+        </g>
+        <g fill="#FFF9E8" opacity="0.7">
+          <path d="M1480,200 L1620,176 L1620,300 L1480,300 Z"/>
+          <path d="M1668,180 L1820,206 L1820,300 L1668,300 Z"/>
+        </g>
+        <path d="M1452,690 H1832 L1866,706 H1418 Z" fill="#C9A87C" stroke="#5C4030" stroke-width="6"/>
+        <path d="M1452,150 H1832" stroke="#5C4030" stroke-width="16"/>
+        <g opacity="0.55" stroke="#FFF6DE" stroke-width="6" stroke-linecap="round">
+          <path d="M1500,714 L1560,694"/><path d="M1660,716 L1730,694"/>
+        </g>
+        <ellipse cx="1650" cy="952" rx="250" ry="46" fill="#FFF6DE" opacity="0.32"/>
+      </g>
+
+      <g id="s14-floor">
+        <rect x="0" y="922" width="1920" height="158" fill="url(#s14-floor)"/>
+        <path d="M0,922 H1920" stroke="#3A2A1E" stroke-width="9" opacity="0.42"/>
+        <path d="M0,936 H1920" stroke="#FFF0CE" stroke-width="5" opacity="0.26"/>
+        <g stroke="#8A6B49" stroke-width="4" opacity="0.28">
+          <path d="M200,922 L150,1080"/><path d="M600,922 L590,1080"/><path d="M1000,922 L1020,1080"/>
+          <path d="M1400,922 L1440,1080"/><path d="M1780,922 L1830,1080"/>
+        </g>
+      </g>
+
+      <ellipse cx="360" cy="980" rx="460" ry="120" fill="#E07A22" opacity="0.24" filter="url(#s14-bblur)"/>
+      <rect x="0" y="0" width="1920" height="1080" filter="url(#s14-grain)" opacity="0.055" style="mix-blend-mode:multiply"/>
+
+      <g fill="#FFD98E" opacity="0.5">
+        <circle class="s14-mote" cx="260" cy="300" r="4"/><circle class="s14-mote" cx="760" cy="210" r="3"/>
+        <circle class="s14-mote" cx="1180" cy="330" r="4"/><circle class="s14-mote" cx="1560" cy="800" r="3"/>
+      </g>
+    </svg>
+
+    <!-- MG · pedestal, blowpipe, glass bubble, press, court, date card -->
+    <svg class="s14-plane s14-p-mg" id="s14-mg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s14-stone" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#EFDDBB"/><stop offset="0.5" stop-color="#DCC39C"/><stop offset="1" stop-color="#B9976E"/>
+        </linearGradient>
+        <linearGradient id="s14-pipe" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#6E5338"/><stop offset="0.45" stop-color="#3A2A1E"/><stop offset="1" stop-color="#241812"/>
+        </linearGradient>
+        <radialGradient id="s14-glass" cx="38%" cy="32%" r="70%">
+          <stop offset="0" stop-color="#FFFDF2" stop-opacity="0.95"/>
+          <stop offset="0.42" stop-color="#F7E7C6" stop-opacity="0.62"/>
+          <stop offset="0.78" stop-color="#E9C892" stop-opacity="0.42"/>
+          <stop offset="1" stop-color="#C89D68" stop-opacity="0.55"/>
+        </radialGradient>
+        <linearGradient id="s14-iron" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#7C5C3E"/><stop offset="0.5" stop-color="#3A2A1E"/><stop offset="1" stop-color="#241812"/>
+        </linearGradient>
+        <linearGradient id="s14-cardpaper" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FDF8EA"/><stop offset="0.6" stop-color="#F5E8CC"/><stop offset="1" stop-color="#E4CFAA"/>
+        </linearGradient>
+        <linearGradient id="s14-cloak" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0" stop-color="#4A3524"/><stop offset="1" stop-color="#241812"/>
+        </linearGradient>
+        <filter id="s14-mblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="20"/></filter>
+        <filter id="s14-msoft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="7"/></filter>
+        <filter id="s14-msoft3" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+      </defs>
+
+      <ellipse cx="940" cy="960" rx="440" ry="80" fill="#2B1F17" opacity="0.26" filter="url(#s14-mblur)"/>
+
+      <!-- pedestal -->
+      <g id="s14-pedestal">
+        <path d="M640,912 L1240,912 L1204,946 L676,946 Z" fill="#7C5C3E" stroke="#2B1F17" stroke-width="7"/>
+        <path d="M676,946 L1204,946 L1204,1010 L676,1010 Z" fill="url(#s14-stone)" stroke="#2B1F17" stroke-width="7"/>
+        <path d="M640,912 L676,946 L676,1010 L640,974 Z" fill="#A9855A" stroke="#2B1F17" stroke-width="7"/>
+        <path d="M640,912 L1240,912 L1240,890 L640,890 Z" fill="#EFDDBB" stroke="#2B1F17" stroke-width="7"/>
+        <g stroke="#8A6B49" stroke-width="4" opacity="0.4">
+          <path d="M700,960 H1180"/><path d="M704,984 H1176"/>
+        </g>
+        <g id="s14-tray" transform="translate(1010,884)">
+          <path d="M-150,0 H150 L132,22 H-132 Z" fill="#8A6B49" stroke="#2B1F17" stroke-width="5"/>
+          <g fill="#F7E7C6" stroke="#8A6B49" stroke-width="4">
+            <ellipse cx="-86" cy="-8" rx="42" ry="10"/>
+            <ellipse cx="-8" cy="-12" rx="46" ry="11"/>
+            <ellipse cx="76" cy="-8" rx="40" ry="10"/>
+          </g>
+          <path d="M-128,4 H128" stroke="#FFF0CE" stroke-width="4" opacity="0.4"/>
+        </g>
+      </g>
+
+      <!-- iron easel holding the plate -->
+      <g id="s14-easel" opacity="0">
+        <path d="M884,894 L918,752" stroke="#3A2A1E" stroke-width="13" stroke-linecap="round"/>
+        <path d="M1008,894 L974,752" stroke="#3A2A1E" stroke-width="13" stroke-linecap="round"/>
+        <path d="M866,902 H1026" stroke="#3A2A1E" stroke-width="15" stroke-linecap="round"/>
+        <path d="M910,752 H982" stroke="#3A2A1E" stroke-width="12" stroke-linecap="round"/>
+        <path d="M866,902 H1026" stroke="#C89D42" stroke-width="5" opacity="0.35"/>
+      </g>
+
+      <!-- blowpipe from the furnace -->
+      <g id="s14-pipewrap">
+        <path id="s14-pipepath" d="M330,800 C560,796 700,712 812,520" fill="none" stroke="url(#s14-pipe)" stroke-width="26" stroke-linecap="round"/>
+        <path d="M344,788 C560,782 692,700 800,514" fill="none" stroke="#C9A87C" stroke-width="6" opacity="0.35" stroke-linecap="round"/>
+        <g id="s14-pipecollar" transform="translate(588,782)"><g id="s14-pipecollar-in">
+          <ellipse cx="0" cy="0" rx="34" ry="22" fill="url(#s14-pipe)" stroke="#1E1813" stroke-width="5"/>
+          <ellipse cx="0" cy="-4" rx="22" ry="12" fill="#5C4030" stroke="#1E1813" stroke-width="4"/>
+        </g></g>
+        <path d="M812,520 L846,508" stroke="#3A2A1E" stroke-width="22" stroke-linecap="round"/>
+      </g>
+
+      <!-- glass bubble -->
+      <g id="s14-bubblewrap" transform="translate(946,452)">
+        <g id="s14-bubble">
+          <circle r="120" fill="url(#s14-glass)" stroke="#C9A87C" stroke-width="5"/>
+          <circle r="120" fill="none" stroke="#FFFDF2" stroke-width="9" opacity="0.35"/>
+          <path d="M-84,-62 C-58,-104 -6,-118 40,-102" fill="none" stroke="#FFFDF2" stroke-width="16" opacity="0.75" stroke-linecap="round"/>
+          <path d="M-58,72 C-20,102 34,104 72,78" fill="none" stroke="#F8DCA8" stroke-width="12" opacity="0.5" stroke-linecap="round"/>
+          <ellipse cx="42" cy="-28" rx="26" ry="16" fill="#FFF9E8" opacity="0.7" transform="rotate(-28)"/>
+          <path d="M-102,26 C-66,66 -22,86 24,84" fill="none" stroke="#E08A3C" stroke-width="6" opacity="0.35"/>
+          <circle r="96" fill="none" stroke="#E8B96F" stroke-width="3" opacity="0.4"/>
+        </g>
+      </g>
+
+      <!-- flattening press -->
+      <g id="s14-presswrap" transform="translate(946,196)">
+        <g id="s14-press">
+          <rect x="-14" y="-160" width="28" height="200" fill="url(#s14-iron)" stroke="#1E1813" stroke-width="5"/>
+          <path d="M-176,40 H176 L162,96 H-162 Z" fill="url(#s14-iron)" stroke="#1E1813" stroke-width="8"/>
+          <path d="M-162,96 H162" stroke="#C89D42" stroke-width="6" opacity="0.5"/>
+          <rect x="-108" y="-52" width="216" height="26" rx="8" fill="#5C4030" stroke="#1E1813" stroke-width="5"/>
+          <circle cx="0" cy="-160" r="20" fill="url(#s14-iron)" stroke="#1E1813" stroke-width="5"/>
+        </g>
+      </g>
+
+      <!-- the date card, split into two days -->
+      <g id="s14-card" transform="translate(980,232) scale(1.0)"><g id="s14-card-in">
+        <g id="s14-card-L">
+          <path d="M-152,-92 C-152,-108 -140,-120 -124,-120 L0,-120 L0,120 L-124,120 C-140,120 -152,108 -152,92 Z"
+                fill="url(#s14-cardpaper)" stroke="#1E1813" stroke-width="7"/>
+          <path d="M-140,-96 H-16" stroke="#C89D42" stroke-width="4" opacity="0.55"/>
+          <g fill="#B0832F" opacity="0.55">
+            <circle cx="-124" cy="-64" r="7"/><circle cx="-94" cy="-64" r="7"/><circle cx="-64" cy="-64" r="7"/><circle cx="-34" cy="-64" r="7"/>
+            <circle cx="-124" cy="-32" r="7"/><circle cx="-94" cy="-32" r="7"/><circle cx="-64" cy="-32" r="7"/><circle cx="-34" cy="-32" r="7"/>
+            <circle cx="-124" cy="0" r="7"/><circle cx="-94" cy="0" r="7"/><circle cx="-64" cy="0" r="7"/><circle cx="-34" cy="0" r="7"/>
+            <circle cx="-124" cy="32" r="7"/><circle cx="-34" cy="32" r="7"/><circle cx="-94" cy="32" r="7"/><circle cx="-64" cy="32" r="7"/>
+            <circle cx="-124" cy="64" r="7"/><circle cx="-94" cy="64" r="7"/><circle cx="-64" cy="64" r="7"/><circle cx="-34" cy="64" r="7"/>
+          </g>
+          <circle id="s14-dayA" cx="-124" cy="32" r="20" fill="none" stroke="#C2593F" stroke-width="7"/>
+        </g>
+        <g id="s14-card-R">
+          <path d="M0,-120 L124,-120 C140,-120 152,-108 152,-92 L152,92 C152,108 140,120 124,120 L0,120 Z"
+                fill="url(#s14-cardpaper)" stroke="#1E1813" stroke-width="7"/>
+          <path d="M16,-96 H140" stroke="#C89D42" stroke-width="4" opacity="0.55"/>
+          <g fill="#B0832F" opacity="0.55">
+            <circle cx="34" cy="-64" r="7"/><circle cx="64" cy="-64" r="7"/><circle cx="94" cy="-64" r="7"/><circle cx="124" cy="-64" r="7"/>
+            <circle cx="34" cy="-32" r="7"/><circle cx="64" cy="-32" r="7"/><circle cx="94" cy="-32" r="7"/><circle cx="124" cy="-32" r="7"/>
+            <circle cx="34" cy="0" r="7"/><circle cx="64" cy="0" r="7"/><circle cx="94" cy="0" r="7"/><circle cx="124" cy="0" r="7"/>
+            <circle cx="34" cy="32" r="7"/><circle cx="64" cy="32" r="7"/><circle cx="94" cy="32" r="7"/>
+            <circle cx="124" cy="32" r="7"/>
+            <circle cx="34" cy="64" r="7"/><circle cx="64" cy="64" r="7"/><circle cx="94" cy="64" r="7"/><circle cx="124" cy="64" r="7"/>
+          </g>
+          <circle id="s14-dayB" cx="124" cy="32" r="20" fill="none" stroke="#C2593F" stroke-width="7"/>
+        </g>
+        <path d="M-152,-92 C-152,-108 -140,-120 -124,-120" fill="none" stroke="#F6E8CC" stroke-width="5" opacity="0.6"/>
+      </g></g>
+
+      <!-- the court assembles at the right -->
+      <g id="s14-court">
+        <g class="s14-court-fig" transform="translate(1252,930) scale(1.22)"><g class="s14-court-fig-in">
+          <path d="M-44,74 C-44,20 -28,-14 0,-14 C28,-14 44,20 44,74 Z" fill="url(#s14-cloak)" stroke="#1E1813" stroke-width="4"/>
+          <circle cx="0" cy="-42" r="24" fill="#3A2A1E" stroke="#1E1813" stroke-width="4"/>
+          <path d="M-44,20 C-58,32 -62,50 -60,74" fill="none" stroke="#1E1813" stroke-width="4"/>
+        </g></g>
+        <g class="s14-court-fig" transform="translate(1368,918) scale(1.18)"><g class="s14-court-fig-in">
+          <path d="M-44,74 C-44,20 -28,-14 0,-14 C28,-14 44,20 44,74 Z" fill="url(#s14-cloak)" stroke="#1E1813" stroke-width="4"/>
+          <circle cx="0" cy="-42" r="23" fill="#3A2A1E" stroke="#1E1813" stroke-width="4"/>
+          <path d="M43,18 C56,30 60,48 58,74" fill="none" stroke="#1E1813" stroke-width="4"/>
+        </g></g>
+        <g class="s14-court-fig" transform="translate(1482,936) scale(1.26)"><g class="s14-court-fig-in">
+          <path d="M-46,74 C-46,18 -30,-16 0,-16 C30,-16 46,18 46,74 Z" fill="url(#s14-cloak)" stroke="#1E1813" stroke-width="4"/>
+          <circle cx="0" cy="-44" r="25" fill="#3A2A1E" stroke="#1E1813" stroke-width="4"/>
+          <path d="M-30,-58 C-14,-70 14,-70 30,-58" fill="none" stroke="#C89D42" stroke-width="4" opacity="0.35"/>
+        </g></g>
+        <g class="s14-court-fig" transform="translate(1602,916) scale(1.16)"><g class="s14-court-fig-in">
+          <path d="M-42,74 C-42,20 -26,-14 0,-14 C26,-14 42,20 42,74 Z" fill="url(#s14-cloak)" stroke="#1E1813" stroke-width="4"/>
+          <circle cx="0" cy="-40" r="22" fill="#3A2A1E" stroke="#1E1813" stroke-width="4"/>
+        </g></g>
+        <g class="s14-court-fig" transform="translate(1716,932) scale(1.24)"><g class="s14-court-fig-in">
+          <path d="M-45,74 C-45,18 -29,-16 0,-16 C29,-16 45,18 45,74 Z" fill="url(#s14-cloak)" stroke="#1E1813" stroke-width="4"/>
+          <circle cx="0" cy="-43" r="24" fill="#3A2A1E" stroke="#1E1813" stroke-width="4"/>
+          <path d="M-24,-62 C-8,-72 10,-72 24,-62" fill="none" stroke="#C2593F" stroke-width="5" opacity="0.45"/>
+        </g></g>
+        <g class="s14-court-fig" transform="translate(1836,924) scale(1.18)"><g class="s14-court-fig-in">
+          <path d="M-43,74 C-43,20 -27,-14 0,-14 C27,-14 43,20 43,74 Z" fill="url(#s14-cloak)" stroke="#1E1813" stroke-width="4"/>
+          <circle cx="0" cy="-41" r="23" fill="#3A2A1E" stroke="#1E1813" stroke-width="4"/>
+        </g></g>
+      </g>
+
+      <g fill="#FFF3D8" opacity="0.45">
+        <circle class="s14-mote" cx="700" cy="330" r="4"/><circle class="s14-mote" cx="1120" cy="260" r="3"/>
+        <circle class="s14-mote" cx="1320" cy="430" r="4"/>
+      </g>
+    </svg>
+
+    <!-- FG · pipe collar, then the mirror and its flood -->
+    <svg class="s14-plane s14-p-fg" id="s14-fg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="s14-gilt" x1="0" y1="0" x2="0.3" y2="1">
+          <stop offset="0" stop-color="#FCEBB8"/><stop offset="0.2" stop-color="#E3BB64"/><stop offset="0.48" stop-color="#C89D42"/>
+          <stop offset="0.7" stop-color="#9E742A"/><stop offset="0.9" stop-color="#D9AE56"/><stop offset="1" stop-color="#7E5A1C"/>
+        </linearGradient>
+        <radialGradient id="s14-silver" cx="34%" cy="26%" r="76%">
+          <stop offset="0" stop-color="#FFFDF2"/><stop offset="0.3" stop-color="#FCF1D6"/>
+          <stop offset="0.62" stop-color="#F0D9B0"/><stop offset="0.86" stop-color="#DDBE8E"/><stop offset="1" stop-color="#C9A87C"/>
+        </radialGradient>
+        <linearGradient id="s14-streak" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFF9E8" stop-opacity="0.9"/>
+          <stop offset="0.5" stop-color="#F6DCA8" stop-opacity="0.5"/>
+          <stop offset="1" stop-color="#E0A860" stop-opacity="0"/>
+        </linearGradient>
+        <filter id="s14-fgblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="15"/></filter>
+        <clipPath id="s14-washclip"><rect id="s14-washrect" x="-200" y="-210" width="0" height="420"/></clipPath>
+        <clipPath id="s14-plateclip"><ellipse cx="0" cy="0" rx="200" ry="168"/></clipPath>
+      </defs>
+
+      <g id="s14-collar" filter="url(#s14-fgblur)" opacity="0.96">
+        <path d="M-60,1080 L-60,992 L560,954 L680,1080 Z" fill="#2B1F17"/>
+        <path d="M-60,1010 L580,974" stroke="#4A3524" stroke-width="12" opacity="0.7"/>
+        <ellipse cx="150" cy="1024" rx="54" ry="22" fill="#1E1813" opacity="0.9"/>
+        <rect x="286" y="978" width="196" height="28" rx="13" fill="#1E1813" opacity="0.85" transform="rotate(-4 384 992)"/>
+        <path d="M-40,1044 L600,1008" stroke="#6E5338" stroke-width="8" opacity="0.35"/>
+      </g>
+
+      <g id="s14-mirrorwrap" transform="translate(946,596) scale(0.9)"><g id="s14-mirrorwrap-in">
+        <g id="s14-mirror">
+          <ellipse rx="212" ry="180" fill="url(#s14-gilt)" stroke="#1E1813" stroke-width="8"/>
+          <ellipse rx="196" ry="164" fill="#7E5A1C" opacity="0.5"/>
+          <ellipse rx="188" ry="156" fill="url(#s14-silver)" stroke="#8A6B49" stroke-width="4"/>
+          <g clip-path="url(#s14-plateclip)">
+            <rect x="-200" y="-170" width="400" height="340" fill="url(#s14-silver)"/>
+            <ellipse cx="-64" cy="-58" rx="120" ry="86" fill="#FFFDF2" opacity="0.75"/>
+            <path d="M-200,-40 C-120,-96 -10,-110 120,-84 C160,-76 184,-60 200,-42 L200,-6 C150,-40 60,-52 -30,-40 C-96,-30 -160,-8 -200,18 Z"
+                  fill="#FFF6DE" opacity="0.5"/>
+            <path d="M-176,96 C-80,44 40,36 170,64" fill="none" stroke="#E3BB64" stroke-width="20" opacity="0.35"/>
+            <g id="s14-wash" clip-path="url(#s14-washclip)">
+              <rect x="-200" y="-170" width="400" height="340" fill="#FFF9E8" opacity="0.85"/>
+              <path d="M-200,-80 H200" stroke="#FFFDF2" stroke-width="36" opacity="0.6"/>
+            </g>
+            <path d="M-188,110 C-100,150 20,152 110,120" fill="none" stroke="#C2593F" stroke-width="8" opacity="0.22"/>
+            <g id="s14-reflect" opacity="0">
+              <g fill="#FFF9E8" opacity="0.55">
+                <rect x="52" y="-148" width="104" height="132" rx="4"/>
+                <rect x="52" y="-6" width="104" height="118" rx="4"/>
+                <rect x="164" y="-148" width="42" height="258" rx="4"/>
+              </g>
+              <g stroke="#C89D42" stroke-width="6" opacity="0.4">
+                <path d="M104,-148 V110"/><path d="M52,-14 H156"/>
+              </g>
+              <ellipse cx="-96" cy="96" rx="92" ry="66" fill="#FFB85C" opacity="0.34"/>
+              <ellipse cx="-104" cy="112" rx="70" ry="40" fill="#FFE7AE" opacity="0.3"/>
+              <g fill="#4A3524" opacity="0.5">
+                <path d="M-70,152 C-70,132 -60,120 -46,120 C-32,120 -22,132 -22,152 Z"/><circle cx="-46" cy="108" r="12"/>
+                <path d="M-18,152 C-18,134 -9,124 4,124 C17,124 26,134 26,152 Z"/><circle cx="4" cy="112" r="11"/>
+                <path d="M30,152 C30,136 38,126 50,126 C62,126 70,136 70,152 Z"/><circle cx="50" cy="114" r="10"/>
+              </g>
+              <path d="M-150,-120 C-120,-150 -40,-160 12,-146" fill="none" stroke="#FFFDF2" stroke-width="10" opacity="0.55"/>
+            </g>
+          </g>
+          <ellipse rx="196" ry="164" fill="none" stroke="#FCEBB8" stroke-width="3" opacity="0.6"/>
+          <path d="M-150,-112 C-96,-158 24,-166 92,-134" fill="none" stroke="#FFFDF2" stroke-width="12" opacity="0.7" stroke-linecap="round"/>
+          <g id="s14-mirror-streaks" opacity="0">
+            <path d="M-120,-90 C-40,-130 60,-130 130,-96" fill="none" stroke="#FFF9E8" stroke-width="14" opacity="0.6"/>
+            <path d="M-150,60 C-70,26 40,24 128,52" fill="none" stroke="#FFE3A8" stroke-width="10" opacity="0.5"/>
+          </g>
+        </g>
+        </g>
+      </g>
+
+      <g id="s14-floodwrap" transform="translate(946,596)">
+        <circle id="s14-flood" cx="0" cy="0" r="1" fill="url(#s14-silver)" opacity="0"/>
+        <circle id="s14-floodrim" cx="0" cy="0" r="1" fill="none" stroke="url(#s14-gilt)" stroke-width="30" opacity="0"/>
+        <circle id="s14-floodcore" cx="0" cy="0" r="1" fill="#FBF0D4" opacity="0"/>
+      </g>
+    </svg>
+
+    <div class="s14-heat" id="s14-heat"></div>
+    <div class="s14-grain"></div>
+    <div class="s14-vignette"></div>
+
+    <div class="s14-tag" id="s14-tag">
+      <span class="s14-tag-dot"></span>
+      <span class="s14-tag-text">FEBRUARY 1666</span>
+    </div>
+    <div class="s14-rule" id="s14-rule"></div>
+  </div>
+</div>
+
+<script>
+(function initS14(){
+  var ID = "s14-first-mirror";
+  var tl = gsap.timeline({ paused: true });
+  tl.to({}, { duration: 22.464 }, 0);
+
+  // ── PHASE 1: the furnace opens, the pipe is drawn, the gather forms ──────
+  tl.fromTo("#s14-bg", { scale: 1.05, x: -10, y: -8 }, { scale: 1, x: 0, y: 0, duration: 22.3, ease: "sine.out" }, 0.05);
+  tl.fromTo("#s14-furnace", { opacity: 0 }, { opacity: 1, duration: 1.15, ease: "sine.out" }, 0.25);
+  tl.set(".s14-arch", { scaleY: 0.42, transformOrigin: "50% 100%" }, 0.40);
+  tl.to(".s14-arch", { scaleY: 1, duration: 1.25, ease: "power3.out" }, 0.43);
+  tl.fromTo(".s14-fire", { opacity: 0 }, { opacity: 0.6, duration: 1.4, ease: "sine.out" }, 1.00);
+  tl.fromTo("#s14-window", { y: -34, opacity: 0 }, { y: 0, opacity: 1, duration: 1.0, ease: "power2.out" }, 0.35);
+  tl.fromTo("#s14-floor", { y: 36, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "power2.out" }, 0.60);
+  tl.fromTo("#s14-pedestal", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.85, ease: "power2.out" }, 0.80);
+  tl.fromTo("#s14-pipepath", { attr: { "stroke-dasharray": 780, "stroke-dashoffset": 780 } }, { attr: { "stroke-dashoffset": 0 }, duration: 1.35, ease: "power2.inOut" }, 1.30);
+  tl.set("#s14-pipecollar-in", { scale: 0.4, transformOrigin: "50% 50%" }, 2.06);
+  tl.to("#s14-pipecollar-in", { scale: 1, duration: 0.5, ease: "back.out(2)" }, 2.08);
+  tl.fromTo("#s14-pipecollar-in", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "sine.out" }, 2.08);
+
+  // flame: a low gather that catches and steadies
+  tl.set("#s14-flame", { scaleY: 0.32, transformOrigin: "50% 100%" }, 1.05);
+  tl.to("#s14-flame", { scaleY: 1, duration: 0.55, ease: "back.out(1.8)" }, 1.07);
+  tl.to("#s14-flame", { scaleY: 1.12, scaleX: 0.9, duration: 0.26, ease: "sine.inOut", yoyo: true, repeat: 20 }, 1.70);
+  tl.to("#s14-flame", { opacity: 0.7, duration: 0.32, ease: "sine.inOut", yoyo: true, repeat: 16 }, 1.95);
+
+  // ── PHASE 2: the gather inflates, the press flattens it ──────────────────
+  tl.set("#s14-bubble", { scale: 0.16, transformOrigin: "50% 50%" }, 2.16);
+  tl.to("#s14-bubble", { scale: 1, duration: 1.25, ease: "elastic.out(1,0.62)" }, 2.18);
+  tl.to("#s14-bubble", { scale: 1.08, duration: 2.4, ease: "sine.inOut" }, 3.55);
+  tl.fromTo("#s14-press", { y: -190, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: "power2.out" }, 4.10);
+  tl.to("#s14-press", { y: 116, duration: 0.55, ease: "power3.in" }, 6.55);
+  tl.set("#s14-bubble", { transformOrigin: "50% 50%" }, 6.78);
+  tl.to("#s14-bubble", { scaleY: 0.2, scaleX: 1.46, duration: 0.5, ease: "power3.in" }, 6.80);
+  tl.to("#s14-press", { y: 126, duration: 0.10, ease: "power2.out" }, 7.10);
+  tl.to("#s14-press", { y: -190, opacity: 0, duration: 0.9, ease: "power2.in" }, 7.55);
+
+  // the plate rises out of the press
+  tl.set("#s14-mirrorwrap", { scale: 0.3, transformOrigin: "50% 50%" }, 7.52);
+  tl.to("#s14-mirrorwrap", { scale: 1, duration: 0.92, ease: "power3.out" }, 7.54);
+  tl.fromTo("#s14-mirrorwrap", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "sine.out" }, 7.56);
+  tl.to("#s14-bubble", { opacity: 0, duration: 0.35, ease: "sine.out" }, 7.70);
+  tl.to("#s14-easel", { opacity: 0.92, duration: 0.55, ease: "sine.out" }, 7.62);
+
+  // ── PHASE 3: the silvering wash runs across the plate ────────────────────
+  tl.fromTo("#s14-washrect", { attr: { width: 0 }, x: -200 }, { attr: { width: 400 }, x: 0, duration: 1.5, ease: "power2.inOut" }, 9.10);
+  tl.fromTo("#s14-mirror-streaks", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "sine.out" }, 10.20);
+  tl.fromTo("#s14-reflect", { opacity: 0 }, { opacity: 1, duration: 1.1, ease: "sine.out" }, 10.55);
+  tl.to("#s14-mirrorwrap-in", { y: -12, duration: 5.4, ease: "sine.inOut" }, 11.10);
+
+  // ── PHASE 4: the court arrives, the date card splits ─────────────────────
+  tl.fromTo(".s14-court-fig-in", { y: 96, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out", stagger: 0.16 }, 13.10);
+  tl.fromTo("#s14-card-in", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "power2.out" }, 13.55);
+  tl.set("#s14-card-L", { x: 0 }, 15.06);
+  tl.set("#s14-card-R", { x: 0 }, 15.06);
+  tl.to("#s14-card-L", { x: -62, duration: 0.75, ease: "power3.out" }, 15.10);
+  tl.to("#s14-card-R", { x: 62, duration: 0.75, ease: "power3.out" }, 15.10);
+  tl.set("#s14-dayA", { scale: 0, transformOrigin: "50% 50%" }, 15.52);
+  tl.to("#s14-dayA", { scale: 1, duration: 0.45, ease: "back.out(3)" }, 15.54);
+  tl.set("#s14-dayB", { scale: 0, transformOrigin: "50% 50%" }, 15.82);
+  tl.to("#s14-dayB", { scale: 1, duration: 0.45, ease: "back.out(3)" }, 15.84);
+
+  // ── living hold ──────────────────────────────────────────────────────────
+  tl.fromTo("#s14-stage", { scale: 1, y: 0 }, { scale: 1.035, y: -10, duration: 22.3, ease: "sine.inOut" }, 0.10);
+  tl.to("#s14-heat", { opacity: 0.14, duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: 9 }, 0.80);
+  // the cooling glass breathes: a slow two-way push that fills the quiet beat
+  tl.fromTo("#s14-stage", { scale: 1.0 }, { scale: 1.032, duration: 1.7, ease: "sine.inOut", yoyo: true, repeat: 0 }, 1.00);
+  tl.fromTo(".s14-mote", { y: 0, x: 0 }, { y: -54, x: 12, duration: 7.2, ease: "sine.inOut", yoyo: true, repeat: 1, stagger: 0.24 }, 1.30);
+  tl.to(".s14-fire", { opacity: 0.84, duration: 1.7, ease: "sine.inOut", yoyo: true, repeat: 3 }, 3.00);
+  tl.to("#s14-mirror-streaks", { opacity: 0.55, duration: 2.0, ease: "sine.inOut", yoyo: true, repeat: 2 }, 12.00);
+  tl.to("#s14-mirrorwrap-in", { y: -6, duration: 4.2, ease: "sine.inOut" }, 14.60);
+  tl.to("#s14-card-in", { opacity: 0, duration: 0.45, ease: "sine.in" }, 20.82);
+
+  // ── TAG ──────────────────────────────────────────────────────────────────
+  tl.fromTo("#s14-tag", { clipPath: "inset(0% 100% 0% 0%)", x: -14 }, { clipPath: "inset(0% 0% 0% 0%)", x: 0, duration: 0.6, ease: "power3.inOut" }, 3.60);
+  tl.fromTo("#s14-rule", { width: 0 }, { width: 332, duration: 0.5, ease: "power2.out" }, 3.96);
+
+  // ── SEAM: the plate tips and floods the lens ─────────────────────────────
+  tl.to("#s14-tag", { clipPath: "inset(0% 100% 0% 0%)", duration: 0.16, ease: "power2.in" }, 21.62);
+  tl.to("#s14-rule", { width: 0, duration: 0.16, ease: "power2.in" }, 21.62);
+  tl.set("#s14-mirror", { transformOrigin: "50% 50%" }, 21.70);
+  tl.to("#s14-mirror", { rotation: -9, duration: 0.26, ease: "power2.in" }, 21.74);
+  tl.to("#s14-mirror", { scale: 1.4, duration: 0.34, ease: "power2.in" }, 21.76);
+  tl.set("#s14-flood", { opacity: 1 }, 21.84);
+  tl.set("#s14-floodrim", { opacity: 0.9 }, 21.86);
+  tl.set("#s14-floodcore", { opacity: 0.95 }, 21.90);
+  tl.fromTo("#s14-flood", { attr: { r: 1 } }, { attr: { r: 2600 }, duration: 0.44, ease: "power2.in" }, 21.84);
+  tl.fromTo("#s14-floodrim", { attr: { r: 1 } }, { attr: { r: 2600 }, duration: 0.46, ease: "power2.in" }, 21.86);
+  tl.to("#s14-floodrim", { opacity: 0, duration: 0.18, ease: "sine.out" }, 22.16);
+  tl.fromTo("#s14-floodcore", { attr: { r: 1 } }, { attr: { r: 2100 }, duration: 0.40, ease: "power2.in" }, 21.90);
+  tl.to("#s14-mirror-streaks", { opacity: 1, duration: 0.30, ease: "sine.out" }, 21.86);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+})();
+</script>
+</template></body></html>
